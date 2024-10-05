@@ -1,6 +1,6 @@
 MIF/HEX Update report for SingleCycle
-Fri Sep 20 15:37:15 2024
-Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Sat Oct  5 19:09:43 2024
+Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
 ---------------------
@@ -16,7 +16,7 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2023  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -33,22 +33,25 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-----------------------------------------------------------+
-; MIF/HEX Update Summary                                    ;
-+-----------------------+-----------------------------------+
-; MIF/HEX Update Status ; Failed - Fri Sep 20 15:37:15 2024 ;
-; Revision Name         ; SingleCycle                       ;
-; Top-level Entity Name ; processor                         ;
-; Family                ; MAX 10                            ;
-; Device                ; 10M50DAF484C7G                    ;
-+-----------------------+-----------------------------------+
++---------------------------------------------------------------+
+; MIF/HEX Update Summary                                        ;
++-----------------------+---------------------------------------+
+; MIF/HEX Update Status ; Successful - Sat Oct  5 19:09:43 2024 ;
+; Revision Name         ; SingleCycle                           ;
+; Top-level Entity Name ; processor                             ;
+; Family                ; MAX 10                                ;
+; Device                ; 10M50DAF484C7G                        ;
++-----------------------+---------------------------------------+
 
 
-+--------------------------------+
-; MIF/HEX Update Processed Files ;
-+--------------------------------+
-; File Name                      ;
-+--------------------------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; MIF/HEX Update Processed Files                                                                                           ;
++--------------------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                                ;
++--------------------------------------------------------------------------------------------------------------------------+
+; C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/dataMemoryInitializationFile.mif        ;
+; C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/instructionMemoryInitializationFile.mif ;
++--------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------+
@@ -56,17 +59,17 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime MIF/HEX Update
-    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri Sep 20 15:36:29 2024
+    Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+    Info: Processing started: Sat Oct  5 19:09:43 2024
 Info: Command: quartus_cdb SingleCycle -c SingleCycle --update_mif
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Warning (39023): Can't find Memory Initialization File instructionMemoryIntializationFile.mif -- skipped updates for this file
-Warning (39023): Can't find Memory Initialization File datamemoryintializationfile.mif -- skipped updates for this file
-Error (39022): Found no valid Memory Initialization File to process
-Error: Quartus Prime MIF/HEX Update was unsuccessful. 1 error, 3 warnings
-    Error: Peak virtual memory: 4762 megabytes
-    Error: Processing ended: Fri Sep 20 15:37:15 2024
-    Error: Elapsed time: 00:00:46
-    Error: Total CPU time (on all processors): 00:00:44
+Critical Warning (127004): Memory depth (64) in the design file differs from memory depth (256) in the Memory Initialization File "C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/instructionMemoryInitializationFile.mif" -- truncated remaining initial content value to fit RAM
+Info (39024): Processed the following Memory Initialization File(s)
+    Info (39025): Processed Memory Initialization File C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/dataMemoryInitializationFile.mif File: C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/dataMemoryInitializationFile.mif Line: 0
+    Info (39025): Processed Memory Initialization File C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/instructionMemoryInitializationFile.mif File: C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/instructionMemoryInitializationFile.mif Line: 0
+Info: Quartus Prime MIF/HEX Update was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4735 megabytes
+    Info: Processing ended: Sat Oct  5 19:09:43 2024
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
 
 

@@ -1,6 +1,6 @@
 Flow report for SingleCycle
-Mon Sep 30 17:46:59 2024
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Sat Oct  5 20:09:36 2024
+Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
 ---------------------
@@ -21,7 +21,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2023  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -38,28 +38,28 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Flow Summary                                                                     ;
-+------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Sep 30 17:46:59 2024       ;
-; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name                      ; SingleCycle                                 ;
-; Top-level Entity Name              ; processor                                   ;
-; Family                             ; MAX 10                                      ;
-; Device                             ; 10M50DAF484C7G                              ;
-; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 1,923 / 49,760 ( 4 % )                      ;
-;     Total combinational functions  ; 1,672 / 49,760 ( 3 % )                      ;
-;     Dedicated logic registers      ; 1,030 / 49,760 ( 2 % )                      ;
-; Total registers                    ; 1030                                        ;
-; Total pins                         ; 8 / 360 ( 2 % )                             ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 10,240 / 1,677,312 ( < 1 % )                ;
-; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
-; UFM blocks                         ; 0 / 1 ( 0 % )                               ;
-; ADC blocks                         ; 0 / 2 ( 0 % )                               ;
-+------------------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------------+
+; Flow Summary                                                                        ;
++------------------------------------+------------------------------------------------+
+; Flow Status                        ; Successful - Sat Oct  5 20:09:36 2024          ;
+; Quartus Prime Version              ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
+; Revision Name                      ; SingleCycle                                    ;
+; Top-level Entity Name              ; processor                                      ;
+; Family                             ; MAX 10                                         ;
+; Device                             ; 10M50DAF484C7G                                 ;
+; Timing Models                      ; Final                                          ;
+; Total logic elements               ; 1,894 / 49,760 ( 4 % )                         ;
+;     Total combinational functions  ; 1,672 / 49,760 ( 3 % )                         ;
+;     Dedicated logic registers      ; 1,030 / 49,760 ( 2 % )                         ;
+; Total registers                    ; 1030                                           ;
+; Total pins                         ; 8 / 360 ( 2 % )                                ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 10,240 / 1,677,312 ( < 1 % )                   ;
+; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                                ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                                  ;
+; UFM blocks                         ; 0 / 1 ( 0 % )                                  ;
+; ADC blocks                         ; 0 / 2 ( 0 % )                                  ;
++------------------------------------+------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/30/2024 17:46:27 ;
+; Start date & time ; 10/05/2024 20:09:07 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; SingleCycle         ;
 +-------------------+---------------------+
@@ -78,11 +78,11 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 127913737669627.172770758731100        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 2544320857565.172814814721256          ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; testbench      ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; testbench                              ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
+; EDA_SIMULATION_TOOL                  ; ModelSim (Verilog)                     ; <None>        ; --          ; --             ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_FILE                  ; testbench.v                            ; --            ; --          ; testbench      ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; testbench                              ; --            ; --          ; testbench      ;
@@ -114,12 +114,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:06     ; 1.0                     ; 4853 MB             ; 00:00:02                           ;
-; Fitter               ; 00:00:18     ; 1.8                     ; 6274 MB             ; 00:00:10                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 4702 MB             ; 00:00:00                           ;
-; Timing Analyzer      ; 00:00:02     ; 4.0                     ; 4942 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4668 MB             ; 00:00:00                           ;
-; Total                ; 00:00:29     ; --                      ; --                  ; 00:00:14                           ;
+; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4816 MB             ; 00:00:14                           ;
+; Fitter               ; 00:00:13     ; 1.5                     ; 5808 MB             ; 00:00:23                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4740 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:02     ; 2.2                     ; 4877 MB             ; 00:00:04                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4672 MB             ; 00:00:01                           ;
+; Total                ; 00:00:25     ; --                      ; --                  ; 00:00:44                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -128,11 +128,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-D4SN7QQ  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-D4SN7QQ  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-D4SN7QQ  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-D4SN7QQ  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-D4SN7QQ  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-G6MURCC  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-G6MURCC  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-G6MURCC  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-G6MURCC  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-G6MURCC  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

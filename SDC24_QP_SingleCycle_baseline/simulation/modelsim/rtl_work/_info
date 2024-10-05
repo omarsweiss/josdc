@@ -1,58 +1,53 @@
 m255
 K4
 z2
-!s11f vlog 2020.1 2020.02, Feb 28 2020
 13
 !s112 1.1
 !i10d 8192
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/simulation/modelsim
+Z0 dC:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/simulation/modelsim
 vadder
-Z1 !s110 1727707429
+Z1 !s110 1728144791
 !i10b 1
-!s100 gBM;hF6Ljc_F[zz5jLd422
-Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-Ij8PlQecjQ3L;eWLG:YbgR1
-Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s100 a8FME_cYAzkZ>e^zo8mK;2
+I=HjS[_gBH`Oc0V_CEMI^h2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1727123179
-8C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/adder.v
-FC:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/adder.v
-!i122 8
-L0 3 12
-Z4 OV;L;2020.1;71
+Z3 w1727709935
+8C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/adder.v
+FC:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/adder.v
+L0 3
+Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1727707429.000000
-!s107 C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/adder.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/adder.v|
+Z5 !s108 1728144791.000000
+!s107 C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline|C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/adder.v|
 !i113 1
 Z6 o-vlog01compat -work work
-Z7 !s92 -vlog01compat -work work {+incdir+C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline}
+Z7 !s92 -vlog01compat -work work {+incdir+C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline}
 Z8 tCvgOpt 0
 vALU
 R1
 !i10b 1
-!s100 1W7WH9n>MUlKGnE7=hZiQ1
+!s100 dcL6Z3>iPVlm`SfV:SKYd1
+INCQb4JmEbkaEz7hIY4E:K2
 R2
-IC9`bnBlc=8^IN6CTWBBjH0
-R3
 R0
-w1727539049
-8C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/ALU.v
-FC:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/ALU.v
-!i122 4
-L0 1 51
+w1728144706
+8C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/ALU.v
+FC:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/ALU.v
+L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/ALU.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/ALU.v|
+!s107 C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline|C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/ALU.v|
 !i113 1
 R6
 R7
@@ -61,23 +56,21 @@ n@a@l@u
 vANDGate
 R1
 !i10b 1
-!s100 [7AXbFTB0;hR?Q`mojBNS0
+!s100 gbVgUH3fao6d^>bjmd7J]3
+IMG4FeiR[_ClZjl;34KmbX0
 R2
-I;@1d^8`=S_IeU@@]8ERUJ2
-R3
 R0
-w1726785912
-8C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/ANDGate.v
-FC:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/ANDGate.v
-!i122 9
-L0 1 7
+R3
+8C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/ANDGate.v
+FC:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/ANDGate.v
+L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/ANDGate.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/ANDGate.v|
+!s107 C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/ANDGate.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline|C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/ANDGate.v|
 !i113 1
 R6
 R7
@@ -86,23 +79,21 @@ n@a@n@d@gate
 vcontrolUnit
 R1
 !i10b 1
-!s100 c[aOeA<STGg80SX`^AR422
+!s100 jFLF_dal5>Z6SS3UA3<Vo2
+IJM;:7;4iDbMgH>RBKW<6j2
 R2
-I8YC>8bB=S`MRLnJMX:K040
-R3
 R0
-w1727706850
-8C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/controlUnit.v
-FC:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/controlUnit.v
-!i122 3
-L0 1 118
+R3
+8C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/controlUnit.v
+FC:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/controlUnit.v
+L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/controlUnit.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/controlUnit.v|
+!s107 C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/controlUnit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline|C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/controlUnit.v|
 !i113 1
 R6
 R7
@@ -111,23 +102,21 @@ ncontrol@unit
 vdataMemory
 R1
 !i10b 1
-!s100 `b@m8UV<>2A2XBlWX5zL40
+!s100 X5DjdZSn6n9zo4B^WYWl60
+IaC8ARn:IF;n7GmY31Mz9Z3
 R2
-IW]ojP_no2NGBSoUYeZVFk1
-R3
 R0
-w1726835572
-8C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/dataMemory.v
-FC:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/dataMemory.v
-!i122 11
-L0 40 70
+R3
+8C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/dataMemory.v
+FC:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/dataMemory.v
+Z9 L0 40
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/dataMemory.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/dataMemory.v|
+!s107 C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/dataMemory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline|C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/dataMemory.v|
 !i113 1
 R6
 R7
@@ -136,23 +125,21 @@ ndata@memory
 vinstructionMemory
 R1
 !i10b 1
-!s100 M@N0[ibofIPRMRYTIMSTi1
+!s100 B?2953V4fPi1ZXCaKX1;C3
+IW[o;>KY7F7EjB>L1PBMUB1
 R2
-I<^g87DHz8[AN412miIoE40
-R3
 R0
-w1726835690
-8C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/instructionMemory.v
-FC:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/instructionMemory.v
-!i122 10
-L0 40 62
+R3
+8C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/instructionMemory.v
+FC:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/instructionMemory.v
+R9
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/instructionMemory.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/instructionMemory.v|
+!s107 C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/instructionMemory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline|C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/instructionMemory.v|
 !i113 1
 R6
 R7
@@ -161,47 +148,43 @@ ninstruction@memory
 vmux2x1
 R1
 !i10b 1
-!s100 4M^A:Ag]085:BGa<AUCME3
+!s100 9@GI2f]Q]h88AIAPU@>>i3
+INz>8UR@[]35<T7YRnUI9>0
 R2
-I1RicKS43J9W^_hO@X]8kV1
-R3
 R0
-w1727539111
-8C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/mux2x1.v
-FC:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/mux2x1.v
-!i122 7
-L0 1 13
+R3
+8C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/mux2x1.v
+FC:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/mux2x1.v
+L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/mux2x1.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/mux2x1.v|
+!s107 C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/mux2x1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline|C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/mux2x1.v|
 !i113 1
 R6
 R7
 R8
 vprocessor
-Z9 !s110 1727707428
+!s110 1728144790
 !i10b 1
-!s100 ag]zEWWJd[`9djmjH8e6=1
+!s100 F`^`YclG=E]nUIbW51@VE3
+INOoOdG]P6`S`4Ui9QG?OW3
 R2
-I`:o`kO_PoQ_AD855SR?1@1
-R3
 R0
-w1727540678
-8C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/processor.v
-FC:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/processor.v
-!i122 1
-L0 1 56
+R3
+8C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/processor.v
+FC:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/processor.v
+L0 1
 R4
 r1
 !s85 0
 31
-Z10 !s108 1727707428.000000
-!s107 C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/processor.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/processor.v|
+Z10 !s108 1728144790.000000
+!s107 C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/processor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline|C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/processor.v|
 !i113 1
 R6
 R7
@@ -209,48 +192,44 @@ R8
 vprogramCounter
 R1
 !i10b 1
-!s100 lnb9JBEA2zLXaJ4izi7me1
+!s100 l]3jm5?bS8=5KClKGDa;E3
+IVJF1>=gCoX:8SM2^oCS243
 R2
-IBI]@b_cPfGb4P>Kng1zc[2
-R3
 R0
-w1727122645
-8C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/programCounter.v
-FC:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/programCounter.v
-!i122 6
-L0 1 20
+R3
+8C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/programCounter.v
+FC:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/programCounter.v
+L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/programCounter.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/programCounter.v|
+!s107 C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/programCounter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline|C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/programCounter.v|
 !i113 1
 R6
 R7
 R8
 nprogram@counter
 vregisterFile
-R9
+R1
 !i10b 1
-!s100 ?8`N3Y9;nH?eOR3^[HeXJ0
+!s100 D5SgR0F>4TALg7NE<gS]33
+IIl^266FgiTcHdX6>W8Jb[0
 R2
-I;IVibage3KF9=N<I=3Y4j2
-R3
 R0
-w1726874818
-8C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/registerFile.v
-FC:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/registerFile.v
-!i122 2
-L0 3 36
+R3
+8C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/registerFile.v
+FC:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/registerFile.v
+L0 3
 R4
 r1
 !s85 0
 31
 R10
-!s107 C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/registerFile.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/registerFile.v|
+!s107 C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/registerFile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline|C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/registerFile.v|
 !i113 1
 R6
 R7
@@ -259,23 +238,21 @@ nregister@file
 vSignExtender
 R1
 !i10b 1
-!s100 ASLBO4L1A^oL;3[C;J@o91
+!s100 @`aGSg91l4d870B>Q>l^;2
+I53?H<V6M;A<9]IU7m@=f<0
 R2
-I:?2h?>GmJIWn_@[CXbUF=1
-R3
 R0
-w1727618382
-8C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/signextender.v
-FC:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/signextender.v
-!i122 5
-L0 4 12
+R3
+8C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/signextender.v
+FC:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/signextender.v
+L0 4
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/signextender.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/signextender.v|
+!s107 C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/signextender.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline|C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/signextender.v|
 !i113 1
 R6
 R7
@@ -284,23 +261,21 @@ n@sign@extender
 vtestbench
 R1
 !i10b 1
-!s100 K]hRH=Kj3Xm;O=5=;AJ4o0
+!s100 D^WLHN0@_80lUW@IXkdoU0
+Ic3imc[a[26z6EZmb2aRQR3
 R2
-I^S]3TEL2_HOG8;_c`AMHf0
-R3
 R0
-w1726875241
-8C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/testbench.v
-FC:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/testbench.v
-!i122 12
-L0 2 19
+R3
+8C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/testbench.v
+FC:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/testbench.v
+L0 2
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/testbench.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/Qualifying Phase I, JoSDC/SDC24_QP_SingleCycle_baseline/testbench.v|
+!s107 C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline|C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/testbench.v|
 !i113 1
 R6
 R7

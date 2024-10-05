@@ -35,7 +35,7 @@ module ALU (operand1, operand2, opSel, result, zero );
 			
 			_OR : result = operand1 | operand2;
 			
-			_SLT: result = (operand2 < operand1) ? 1 : 0;
+			_SLT: result = (operand1 < operand2) ? 1 : 0; //switch operand 1 and operand 2
 			default:result =0; //Default case was missing, causing latches, we added it.
 
 		endcase
@@ -44,10 +44,8 @@ module ALU (operand1, operand2, opSel, result, zero );
 	
 	always @ (*) begin 
 		
-		zero = (result == 'b0);
+		zero = (result == 'b0); 
 	
 	end
 
 endmodule 
-// Potential bug, zero always block is sensitive to everything (*), might cause it to reevaluate zero when it does not need to.
-// fix: make it a blocking assignment in the always block above OR make the always block sensitive to (result)

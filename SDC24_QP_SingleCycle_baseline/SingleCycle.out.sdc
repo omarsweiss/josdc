@@ -1,6 +1,6 @@
 ## Generated SDC file "SingleCycle.out.sdc"
 
-## Copyright (C) 2020  Intel Corporation. All rights reserved.
+## Copyright (C) 2023  Intel Corporation. All rights reserved.
 ## Your use of Intel Corporation's design tools, logic functions 
 ## and other software and tools, and any partner logic 
 ## functions, and any output files from any of the foregoing 
@@ -18,9 +18,9 @@
 
 ## VENDOR  "Altera"
 ## PROGRAM "Quartus Prime"
-## VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
+## VERSION "Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition"
 
-## DATE    "Mon Sep 30 18:20:11 2024"
+## DATE    "Sat Oct  5 20:08:54 2024"
 
 ##
 ## DEVICE  "10M50DAF484C7G"
@@ -39,7 +39,7 @@ set_time_format -unit ns -decimal_places 3
 # Create Clock
 #**************************************************************
 
-create_clock -name {clk} -period 50.000 -waveform { 0.000 25.000 } [get_ports { clk }]
+create_clock -name {clk} -period 29.000 -waveform { 0.000 14.500 } [get_ports { clk }]
 
 
 #**************************************************************
