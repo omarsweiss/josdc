@@ -3,6 +3,8 @@ module ALU (operand1, operand2, opSel, result, zero );
 	parameter data_width = 32;
 	parameter sel_width = 3;
 	
+	//easter egg
+	
 	// Inputs
 	// ......
 	
