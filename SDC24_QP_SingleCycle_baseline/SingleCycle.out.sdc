@@ -20,7 +20,7 @@
 ## PROGRAM "Quartus Prime"
 ## VERSION "Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition"
 
-## DATE    "Sat Oct  5 20:08:54 2024"
+## DATE    "Thu Oct 10 22:31:36 2024"
 
 ##
 ## DEVICE  "10M50DAF484C7G"
@@ -86,6 +86,8 @@ set_clock_uncertainty -fall_from [get_clocks {clk}] -fall_to [get_clocks {clk}] 
 # Set False Path
 #**************************************************************
 
+set_false_path -from [get_ports *] 
+set_false_path -to [get_ports {PC[5] PC[0] PC[1] PC[2] PC[3] PC[4]}]
 
 
 #**************************************************************

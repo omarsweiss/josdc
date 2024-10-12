@@ -1,5 +1,5 @@
 Assembler report for SingleCycle
-Sat Oct  5 20:09:31 2024
+Thu Oct 10 22:32:35 2024
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/output_files/SingleCycle.sof
+  5. Assembler Device Options: C:/Users/amr/Desktop/Quartus/phase 1/josdc/SDC24_QP_SingleCycle_baseline/output_files/SingleCycle.sof
   6. Assembler Messages
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sat Oct  5 20:09:31 2024 ;
+; Assembler Status      ; Successful - Thu Oct 10 22:32:35 2024 ;
 ; Revision Name         ; SingleCycle                           ;
 ; Top-level Entity Name ; processor                             ;
 ; Family                ; MAX 10                                ;
@@ -53,23 +53,23 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                                     ;
-+---------------------------------------------------------------------------------------------------------------+
-; File Name                                                                                                     ;
-+---------------------------------------------------------------------------------------------------------------+
-; C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/output_files/SingleCycle.sof ;
-+---------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                             ;
++-------------------------------------------------------------------------------------------------------+
+; File Name                                                                                             ;
++-------------------------------------------------------------------------------------------------------+
+; C:/Users/amr/Desktop/Quartus/phase 1/josdc/SDC24_QP_SingleCycle_baseline/output_files/SingleCycle.sof ;
++-------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/amr/Desktop/Quartus/phase 1 v2/josdc-main/SDC24_QP_SingleCycle_baseline/output_files/SingleCycle.sof ;
-+----------------+------------------------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                                ;
-+----------------+------------------------------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x003F012C                                                                                                             ;
-; Checksum       ; 0x003F012C                                                                                                             ;
-+----------------+------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/amr/Desktop/Quartus/phase 1/josdc/SDC24_QP_SingleCycle_baseline/output_files/SingleCycle.sof ;
++----------------+----------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                        ;
++----------------+----------------------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x003F012C                                                                                                     ;
+; Checksum       ; 0x003F012C                                                                                                     ;
++----------------+----------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -78,13 +78,13 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Sat Oct  5 20:09:29 2024
+    Info: Processing started: Thu Oct 10 22:32:33 2024
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off SingleCycle -c SingleCycle
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4740 megabytes
-    Info: Processing ended: Sat Oct  5 20:09:31 2024
+    Info: Peak virtual memory: 4728 megabytes
+    Info: Processing ended: Thu Oct 10 22:32:35 2024
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
