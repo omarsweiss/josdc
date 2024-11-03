@@ -11,8 +11,8 @@
 	output reg [3:0] ALUOp;//Changed to 4 bits accomodate the added R-type instructions
 	
 	// parameters (opCodes/functs)
-	parameter _RType = 6'h0, _addi = 6'h8, _ori_=6'hd, _xori_=6'he, _andi_=6'hc, _slti_=6'ha _lw = 6'h23, _sw = 6'h2b, _beq = 6'h4, _j_ = 6'h2, _jal_ = 6'h3; 
-	parameter _add_ = 6'h20, _sub_ = 6'h22, _and_ = 6'h24, _or_ = 6'h25, _slt_ = 6'h2a, _xor_ = 6'h26, _nor_ = 6'h27, _sll_ = 6'h0, _srl_= 6'h2, _jr_ = 6'h8
+	parameter _RType = 6'h0, _addi = 6'h8, _ori_=6'hd, _xori_=6'he, _andi_=6'hc, _slti_=6'ha, _lw = 6'h23, _sw = 6'h2b, _beq = 6'h4, _j_ = 6'h2, _jal_ = 6'h3; 
+	parameter _add_ = 6'h20, _sub_ = 6'h22, _and_ = 6'h24, _or_ = 6'h25, _slt_ = 6'h2a, _xor_ = 6'h26, _nor_ = 6'h27, _sll_ = 6'h0, _srl_= 6'h2, _jr_ = 6'h8;
 	//xor,nor,ori,xori,andi,sll,srl,slti,j,jr,jal,bne
 	//pseudo bltz, bgez, sgt
 	
@@ -22,7 +22,7 @@
 	
 		RegDst = 1'b0; Branch = 1'b0; MemReadEn = 1'b0; MemtoReg = 1'b0;
 		MemWriteEn = 1'b0; RegWriteEn = 1'b0; ALUSrc = 1'b0;
-		ALUOp = 3'b0; bne = 1'b0; jump = 1'b0; jal = 1'b0, jr = 1'b0;
+		ALUOp = 3'b0; bne = 1'b0; jump = 1'b0; jal = 1'b0; jr = 1'b0;
 		
 		case(opCode)
 				
@@ -82,10 +82,10 @@
 						jump = 1'b1;
 						bne = 1'b0;
 						jal = 1'b0;
-						jr = 1'b1;
-					
+						jr = 1'b1; //sus
+					end
 					default: ;
-				
+					
 				endcase
 				
 			end
@@ -135,7 +135,7 @@
 				ALUSrc = 1'b0;	// was wrong (1), changed to 0 (fixed)
 				bne =  1'b0;
 			end
-			_ori : begin
+			_ori_ : begin
 				RegDst = 1'b0;
 				Branch = 1'b0;
 				MemReadEn = 1'b0;
@@ -145,7 +145,7 @@
 				RegWriteEn = 1'b1;
 				ALUSrc = 1'b1;	
 			end
-			_xori : begin//added i-type
+			_xori_ : begin//added i-type
 				RegDst = 1'b0;
 				Branch = 1'b0;
 				MemReadEn = 1'b0;
@@ -156,7 +156,7 @@
 				ALUSrc = 1'b1;
 		   end		
 			
-		   _andi : begin
+		   _andi_ : begin
 				RegDst = 1'b0;
 				Branch = 1'b0;
 				MemReadEn = 1'b0;
@@ -166,7 +166,7 @@
 				RegWriteEn = 1'b1;
 				ALUSrc = 1'b1;
 			end	
-			_slti : begin
+			_slti_ : begin
 				RegDst = 1'b0;
 				Branch = 1'b0;
 				MemReadEn = 1'b0;
@@ -186,6 +186,7 @@
 				RegWriteEn = 1'b0;
 				ALUSrc = 1'b0;	
 				bne =  1'b1;//added bne control
+				end
 				
 				_j_ : begin
 				RegDst = 1'b0;
@@ -211,7 +212,7 @@
 				ALUSrc = 1'b0;
 			   jump = 1'b1;
 				bne = 1'b0;
-				jal = 1'b1
+				jal = 1'b1;
 			end
 			
 			default: ;

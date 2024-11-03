@@ -2,14 +2,15 @@ module processor(clk, rst, PC);
 
 	//inputs
 	input clk, rst;
+	output [9:0] PC;
 	//nextpc,pcplus1,pc,adderres take 10 bits from sign extended value for branch adder
 	//outputs
-	output [9:0] PC, nextPC, PCPlus1, adderResult,branchAddress,jaddress,JrAddress; // changed from 6 bits to 10 bits bc 1kb memory
+	wire [9:0]nextPC, PCPlus1, adderResult,branchAddress,jaddress,JrAddress; // changed from 6 bits to 10 bits bc 1kb memory
 	
 	wire [31:0] instruction, writeData, readData1, readData2, extImm, ALUin2, ALUResult, memoryReadData,WBMuxOutput;
 	wire [15:0] imm;
-	wire [5:0] opCode, funct,regAddress;
-	wire [4:0] rs, rt, rd, writeRegister;
+	wire [5:0] opCode, funct;
+	wire [4:0] rs, rt, rd, writeRegister,shamt,regAddress;
 	wire [3:0] ALUOp;//change from 3 to 4
 	wire RegDst, Branch, MemReadEn, MemtoReg, MemWriteEn, RegWriteEn, ALUSrc, zero, PCsrc,bne,jump,jal,jr;//added bne control signal, added jump signal
 	
@@ -54,13 +55,13 @@ module processor(clk, rst, PC);
 	
 	dataMemory DM(.address(ALUResult[7:0]), .clock(~clk), .data(readData2), .rden(MemReadEn), .wren(MemWriteEn), .q(memoryReadData)); 
 	
-	mux2x1 #(32) WBMux(.in1(ALUResult), .in2(memoryReadData), .s(MemtoReg), .out(WBMuxOutPut));//mux inputs were reversed here, fixed,WriteData changed to WBMuxOutput to implement jal
+	mux2x1 #(32) WBMux(.in1(ALUResult), .in2(memoryReadData), .s(MemtoReg), .out(WBMuxOutput));//mux inputs were reversed here, fixed,WriteData changed to WBMuxOutput to implement jal
 	
-   mux2x1 #(32) WritePc(.in1(WBMuxOutput),.in2(PCPlus1),.s(jal),.out(WriteData));
+   mux2x1 #(32) WritePc(.in1(WBMuxOutput),.in2(PCPlus1),.s(jal),.out(writeData));
 	
 	mux2x1 #(10) PCMux(.in1(PCPlus1), .in2(adderResult), .s(PCsrc), .out(branchAddress));//0 gives in1 1 gives in2, changed name from nextPC to branchaddress for jump implementation
 	
-	mux2x1 #(10) JRMux(.in1(jaddress),.in2(readData1[9:0],.s(jr),.out(JrAddress)))
+	mux2x1 #(10) JRMux(.in1(jaddress),.in2(readData1[9:0]),.s(jr),.out(JrAddress));
 	
 	mux2x1 #(10) jumpMux(.in1(branchAddress),.in2(JrAddress),.s(jump),.out(nextPC));
 	
