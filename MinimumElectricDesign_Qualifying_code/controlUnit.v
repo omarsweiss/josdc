@@ -2,7 +2,7 @@
 				   RegDst, Branch, MemReadEn, MemtoReg,
 				   ALUOp, MemWriteEn, RegWriteEn, ALUSrc); //I type and J type instructions are missing
 				   
-		
+		//lol
 	// inputs 
 	input wire [5:0] opCode, funct;
 	

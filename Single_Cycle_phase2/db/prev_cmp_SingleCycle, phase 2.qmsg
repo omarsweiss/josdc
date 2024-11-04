@@ -1,3 +1,0 @@
-{ "Error" "EQCU_INVALID_CHARACTER" ", " "Character , is illegal" {  } {  } 0 20002 "Character %1!s! is illegal" 0 0 "Design Software" 0 -1 1730654663643 ""}
-{ "Error" "EQSYN_INVALID_PROJECT_NAME" "SingleCycle, phase 2 " "Project name \"SingleCycle, phase 2\" is illegal -- project name cannot contain illegal characters" {  } {  } 0 281003 "Project name \"%1!s!\" is illegal -- project name cannot contain illegal characters" 0 0 "Design Software" 0 -1 1730654663643 ""}
-{ "Error" "EFLOW_ERROR_COUNT" "Full Compilation 2 s 0 s " "Quartus Prime Full Compilation was unsuccessful. 2 errors, 0 warnings" {  } {  } 0 293001 "Quartus Prime %1!s! was unsuccessful. %2!d! error%3!s!, %4!d! warning%5!s!" 0 0 "Design Software" 0 -1 1730654664198 ""}

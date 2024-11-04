@@ -1,0 +1,307 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/simulation/modelsim
+vadder
+Z1 !s110 1728581864
+!i10b 1
+!s100 gBM;hF6Ljc_F[zz5jLd422
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I4CG`H__]o7JO_S3oXKO<@0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1728406999
+8C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/adder.v
+FC:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/adder.v
+!i122 8
+L0 3 12
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1728581864.000000
+!s107 C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/adder.v|
+!i113 1
+Z7 o-vlog01compat -work work
+Z8 !s92 -vlog01compat -work work +incdir+C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline
+Z9 tCvgOpt 0
+vALU
+R1
+!i10b 1
+!s100 _hhiZlEzYOMlTfgZBKV;43
+R2
+I2RnIOBM`14?Pji4YY[=W`3
+R3
+R0
+R4
+8C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/ALU.v
+FC:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/ALU.v
+!i122 4
+L0 1 51
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/ALU.v|
+!i113 1
+R7
+R8
+R9
+n@a@l@u
+vANDGate
+R1
+!i10b 1
+!s100 [7AXbFTB0;hR?Q`mojBNS0
+R2
+I9^6JPX=ECe^Q3zCoVm]>=0
+R3
+R0
+R4
+8C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/ANDGate.v
+FC:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/ANDGate.v
+!i122 9
+L0 1 7
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/ANDGate.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/ANDGate.v|
+!i113 1
+R7
+R8
+R9
+n@a@n@d@gate
+vcontrolUnit
+R1
+!i10b 1
+!s100 1FR_DKT_3BKTo<6<T]7880
+R2
+IS9z<k:>HQAb_WXF4SC7[d2
+R3
+R0
+R4
+8C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/controlUnit.v
+FC:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/controlUnit.v
+!i122 3
+L0 1 119
+R5
+r1
+!s85 0
+31
+Z10 !s108 1728581863.000000
+!s107 C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/controlUnit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/controlUnit.v|
+!i113 1
+R7
+R8
+R9
+ncontrol@unit
+vdataMemory
+R1
+!i10b 1
+!s100 `b@m8UV<>2A2XBlWX5zL40
+R2
+IaDT4TogaFYTMK2BD5KOFF1
+R3
+R0
+R4
+8C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/dataMemory.v
+FC:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/dataMemory.v
+!i122 11
+L0 40 70
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/dataMemory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/dataMemory.v|
+!i113 1
+R7
+R8
+R9
+ndata@memory
+vinstructionMemory
+R1
+!i10b 1
+!s100 M@N0[ibofIPRMRYTIMSTi1
+R2
+IDM]MEORTR`CbDoIif?[YA2
+R3
+R0
+R4
+8C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/instructionMemory.v
+FC:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/instructionMemory.v
+!i122 10
+L0 40 62
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/instructionMemory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/instructionMemory.v|
+!i113 1
+R7
+R8
+R9
+ninstruction@memory
+vmux2x1
+R1
+!i10b 1
+!s100 4M^A:Ag]085:BGa<AUCME3
+R2
+I[<UZZF8abmH2f^Fb>L@nN2
+R3
+R0
+R4
+8C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/mux2x1.v
+FC:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/mux2x1.v
+!i122 7
+L0 1 13
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/mux2x1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/mux2x1.v|
+!i113 1
+R7
+R8
+R9
+vprocessor
+Z11 !s110 1728581863
+!i10b 1
+!s100 ag]zEWWJd[`9djmjH8e6=1
+R2
+I[3EZIa]Ikc:9UKclgmCdK2
+R3
+R0
+R4
+8C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/processor.v
+FC:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/processor.v
+!i122 1
+L0 1 56
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/processor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/processor.v|
+!i113 1
+R7
+R8
+R9
+vprogramCounter
+R1
+!i10b 1
+!s100 lnb9JBEA2zLXaJ4izi7me1
+R2
+IGQk[1K8Ec0FbE>YK7mh1R0
+R3
+R0
+R4
+8C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/programCounter.v
+FC:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/programCounter.v
+!i122 6
+L0 1 20
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/programCounter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/programCounter.v|
+!i113 1
+R7
+R8
+R9
+nprogram@counter
+vregisterFile
+R11
+!i10b 1
+!s100 ?8`N3Y9;nH?eOR3^[HeXJ0
+R2
+I2g<?NoObj9bo<[Ih0:Z0m1
+R3
+R0
+R4
+8C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/registerFile.v
+FC:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/registerFile.v
+!i122 2
+L0 3 36
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/registerFile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/registerFile.v|
+!i113 1
+R7
+R8
+R9
+nregister@file
+vSignExtender
+R1
+!i10b 1
+!s100 ASLBO4L1A^oL;3[C;J@o91
+R2
+IF;?@kVOEOM=O3GajCW?`[1
+R3
+R0
+R4
+8C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/signextender.v
+FC:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/signextender.v
+!i122 5
+L0 4 12
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/signextender.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/signextender.v|
+!i113 1
+R7
+R8
+R9
+n@sign@extender
+vtestbench
+R1
+!i10b 1
+!s100 K]hRH=Kj3Xm;O=5=;AJ4o0
+R2
+INe=5Jf1ROWm7L5DhQKnJ>2
+R3
+R0
+R4
+8C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/testbench.v
+FC:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/testbench.v
+!i122 12
+L0 2 19
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/josdc-main/SDC24_QP_SingleCycle_baseline/testbench.v|
+!i113 1
+R7
+R8
+R9

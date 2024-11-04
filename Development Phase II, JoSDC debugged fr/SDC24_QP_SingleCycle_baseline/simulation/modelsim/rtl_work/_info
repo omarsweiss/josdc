@@ -1,0 +1,282 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/simulation/modelsim
+vadder
+Z1 !s110 1730747261
+!i10b 1
+!s100 ^7IPYPl>5Nj6z^bH2cWjm1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IVL;LYznCGaG[e>0FO@3nN0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1730384921
+8C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/adder.v
+FC:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/adder.v
+!i122 9
+L0 3 12
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1730747261.000000
+!s107 C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/adder.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work {+incdir+C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline}
+Z8 tCvgOpt 0
+vALU
+R1
+!i10b 1
+!s100 PPKiLh>H[S`T9`:_QKcEB1
+R2
+IAe`GfPEgInk0^QhWINDW@3
+R3
+R0
+w1730742131
+8C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/ALU.v
+FC:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/ALU.v
+!i122 5
+L0 1 61
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/ALU.v|
+!i113 1
+R6
+R7
+R8
+n@a@l@u
+vcontrolUnit
+R1
+!i10b 1
+!s100 `>IN11hdedMJ]14jz0IjK3
+R2
+IX:F:@CRhKBi?E]ANQ82kH2
+R3
+R0
+w1730746608
+8C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/controlUnit.v
+FC:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/controlUnit.v
+!i122 4
+L0 1 282
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/controlUnit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/controlUnit.v|
+!i113 1
+R6
+R7
+R8
+ncontrol@unit
+vdataMemory
+R1
+!i10b 1
+!s100 `b@m8UV<>2A2XBlWX5zL40
+R2
+ISiiB1gACKBeHEd1^TDzmJ1
+R3
+R0
+w1726835572
+8C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/dataMemory.v
+FC:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/dataMemory.v
+!i122 10
+L0 40 70
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/dataMemory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/dataMemory.v|
+!i113 1
+R6
+R7
+R8
+ndata@memory
+vinstructionMemory
+R1
+!i10b 1
+!s100 MAR_Ob3GTE>oPTzzTc>^b0
+R2
+IbO??E=mA]4ES6IKZ1:=:`1
+R3
+R0
+w1730745562
+8C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/instructionMemory.v
+FC:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/instructionMemory.v
+!i122 0
+L0 40 62
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/instructionMemory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/instructionMemory.v|
+!i113 1
+R6
+R7
+R8
+ninstruction@memory
+vmux2x1
+R1
+!i10b 1
+!s100 4M^A:Ag]085:BGa<AUCME3
+R2
+IicehKe<6BR6]i>[h_Z7Y01
+R3
+R0
+w1727968345
+8C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/mux2x1.v
+FC:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/mux2x1.v
+!i122 8
+L0 1 13
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/mux2x1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/mux2x1.v|
+!i113 1
+R6
+R7
+R8
+vprocessor
+R1
+!i10b 1
+!s100 Tz0O<57n01UCnko:3UWDO1
+R2
+Ia^=1WiMDYmO04L_h>J=P:3
+R3
+R0
+w1730745888
+8C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/processor.v
+FC:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/processor.v
+!i122 2
+L0 1 71
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/processor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/processor.v|
+!i113 1
+R6
+R7
+R8
+vprogramCounter
+R1
+!i10b 1
+!s100 [CfM8e7Lbm4DN9];R21TQ2
+R2
+IHl2W>OP^@<JLQ6N8SfMB]3
+R3
+R0
+w1730736124
+8C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/programCounter.v
+FC:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/programCounter.v
+!i122 7
+L0 1 20
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/programCounter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/programCounter.v|
+!i113 1
+R6
+R7
+R8
+nprogram@counter
+vregisterFile
+R1
+!i10b 1
+!s100 ?8`N3Y9;nH?eOR3^[HeXJ0
+R2
+I0Fj9boc4JVRFMci_;dZUN0
+R3
+R0
+w1726874818
+8C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/registerFile.v
+FC:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/registerFile.v
+!i122 3
+L0 3 36
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/registerFile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/registerFile.v|
+!i113 1
+R6
+R7
+R8
+nregister@file
+vSignExtender
+R1
+!i10b 1
+!s100 ASLBO4L1A^oL;3[C;J@o91
+R2
+I8HT1HA7c1baO23Z_HGH0l3
+R3
+R0
+w1727618382
+8C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/signextender.v
+FC:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/signextender.v
+!i122 6
+L0 4 12
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/signextender.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/signextender.v|
+!i113 1
+R6
+R7
+R8
+n@sign@extender
+vtestbench
+R1
+!i10b 1
+!s100 10k1IdeMmdG9;H=0zgE=S2
+R2
+Io4PPXECSJ:dYkQZLQ<FLV0
+R3
+R0
+w1730739998
+8C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/testbench.v
+FC:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/testbench.v
+!i122 11
+L0 2 19
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline|C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/testbench.v|
+!i113 1
+R6
+R7
+R8
