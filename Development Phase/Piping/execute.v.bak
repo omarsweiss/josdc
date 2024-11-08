@@ -1,0 +1,12 @@
+module execute(input [31:0] readData1_EX, input [31:0] readData2_EX, input []);
+
+
+
+
+
+
+
+
+
+
+endmodule

@@ -1,0 +1,37 @@
+module Comparator5bit (equal, a, b);
+input [4:0] a, b;
+output equal;
+wire w0,w1,w2,w3,w4,w5;
+ XNOR n0(w0,a[0],b[0]);
+ XNOR n1(w1,a[1],b[1]);
+ XNOR n2(w2,a[2],b[2]);
+ XNOR n3(w3,a[3],b[3]);
+ XNOR n4(w4,a[4],b[4]);
+ AND4 A0(w5,w0,w1,w2,w3);
+ AND A1(equal,w5,w4);
+endmodule 
+//////////////////////////////////////////////////////
+
+module ForwardingUnit(ForwardA, ForwardB, EXMEM_Rd, MEMWB_Rd, IDEX_Rs1, IDEX_Rs2, EXMEM_RegWrite, MEMWB_RegWrite);
+input [4:0] EXMEM_Rd, MEMWB_Rd, IDEX_Rs1, IDEX_Rs2;
+input EXMEM_RegWrite, MEMWB_RegWrite;
+output [1:0] ForwardA, ForwardB;
+wire equal0,equal1,equal2,equal3,w0,w1,w2,w3;
+ OR8 or0(w0, EXMEM_Rd[0], EXMEM_Rd[1], EXMEM_Rd[2], EXMEM_Rd[3], EXMEM_Rd[4], 1'b0, 1'b0, 1'b0);
+ OR8 or1(w1, MEMWB_Rd[0], MEMWB_Rd[1], MEMWB_Rd[2], MEMWB_Rd[3], MEMWB_Rd[4], 1'b0, 1'b0, 1'b0);
+//FA[0]
+ Comparator5bit c0(equal0,  EXMEM_Rd, IDEX_Rs1);
+ AND3 and0(ForwardA[0], equal0, w0,EXMEM_RegWrite);
+//FA[1]
+ Comparator5bit c1(equal1, MEMWB_Rd, IDEX_Rs1);
+ INV in(w2, ForwardA[0]);
+ AND4 and1(ForwardA[1], w2, w1, equal1,MEMWB_RegWrite );
+//FB[0]
+ Comparator5bit c2(equal2, EXMEM_Rd, IDEX_Rs2); 
+ AND3 and2(ForwardB[0], equal2, w0, EXMEM_RegWrite);
+//FB[1]
+ Comparator5bit c3(equal3, MEMWB_Rd, IDEX_Rs2);
+ INV in1(w3, ForwardB[0]);
+ AND4 and3(ForwardB[1], w1, w3, equal3, MEMWB_RegWrite);
+
+endmodule
