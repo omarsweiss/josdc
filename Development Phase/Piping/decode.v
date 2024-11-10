@@ -66,6 +66,7 @@ comparator cmp(
 	.In2(fwdB),
 	.bne(bne),
 	.reset(rst),
+	.branch(branch),
 	.branchValid(PCSrc)
 );
 	

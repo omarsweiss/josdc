@@ -9,12 +9,12 @@ module testbench;
 		clk = 0;
 		rst = 0;
 		#4 rst = 1;
-		#400 $stop;
+		#1000 $stop;
 	end
 	
 	always #5 clk = ~clk;
 	
-	processor uut(clk, rst, PC);
+	pipeline uut(clk, rst, PC);
 	
 	
 endmodule

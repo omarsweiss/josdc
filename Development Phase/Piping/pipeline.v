@@ -5,7 +5,7 @@ module pipeline(input clk, input rst, output [9:0] PC);
 
 wire [31:0] instruction, writeData_WB, readData1, readData2, extImm, readData1_EX, readData2_EX, memoryReadData_WB, WBMuxOutput, 
 extImm_EX, aluRes_EX, forwardBRes_EX, aluRes_MEM, aluRes_WB, forwardBRes_MEM, instruction_ID,memoryReadData;
-wire [9:0] reg1Addr, jaddress, adderResult, PCPlus1, PC_ID, PCPlus1_ID, jaddress_ID, adderResult_ID, PCPlus1_EX, PCPlus1_MEM, PCPlus1_WB;
+wire [9:0]  jaddress, adderResult, PCPlus1, PC_ID, PCPlus1_ID, jaddress_ID, adderResult_ID, PCPlus1_EX, PCPlus1_MEM, PCPlus1_WB;
 wire [4:0] shamt, rs, rt, DestReg, shamt_EX, rs_EX, rt_EX, DestReg_EX, DestReg_MEM, DestReg_WB;
 wire [3:0] ALUOp, ALUOp_EX;
 wire [1:0] forwardA, forwardB, fwdAbranch, fwdBbranch;
@@ -20,8 +20,8 @@ MemReadEn_MEM, MemtoReg_MEM, MemWriteEn_MEM, RegWriteEn_MEM, ALUSrc_MEM, jal_MEM
 
 
 fetch fetch(
-.clk(clk), .rst(rst),  .reg1Addr(reg1Addr), .jaddress(jaddress), . hold(hold),
-.PCsrc(PCSrc), .jr(jr),  .jump(jump), .adderResult(adderResult),
+.clk(clk), .rst(rst),  .reg1Addr(readData1[9:0]), .jaddress(jaddress), .hold(hold),
+.PCsrc(PCSrc), .jr(jr),  .jump(jump), .adderResult(adderResult), 
 .PCPlus1(PCPlus1), .PC(PC), .instruction(instruction));
 
 

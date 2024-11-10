@@ -28,7 +28,7 @@ module forwarding_unit(
         ForwardA <= 2'b10;
 		  
       else if (regwrite_wb && (dest_wb != 5'b0) &&
-          !((regwrite_mem && (dest_mem != 5'b0) && (dest_mem != rs_ex)))&& (dest_wb== rs_ex))
+          !((regwrite_mem && (dest_mem != 5'b0) && (dest_mem == rs_ex))) && (dest_wb== rs_ex))
 			 
         ForwardA <= 2'b01;
       else
@@ -43,7 +43,7 @@ module forwarding_unit(
         ForwardB <= 2'b10;
 		  
       else if (regwrite_wb && (dest_wb != 5'b0) &&
-          !((regwrite_mem && (dest_mem != 5'b0) && (dest_mem != rt_ex))) && (dest_wb== rt_ex))
+          !((regwrite_mem && (dest_mem != 5'b0) && (dest_mem == rt_ex))) && (dest_wb== rt_ex))
 			 
         ForwardB <= 2'b01;
       else

@@ -1,5 +1,5 @@
-Analysis & Synthesis report for pipeline
-Mon Nov 11 00:34:25 2024
+Analysis & Elaboration report for pipeline
+Mon Nov 11 01:27:46 2024
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -7,60 +7,47 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. Analysis & Synthesis RAM Summary
-  9. Analysis & Synthesis IP Cores Summary
- 10. Registers Removed During Synthesis
- 11. General Register Statistics
- 12. Inverted Register Statistics
- 13. Registers Packed Into Inferred Megafunctions
- 14. Multiplexer Restructuring Statistics (Restructuring Performed)
- 15. Source assignments for fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component|altsyncram_bce1:auto_generated
- 16. Source assignments for dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated
- 17. Source assignments for IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated|altsyncram_dj51:altsyncram4
- 18. Parameter Settings for User Entity Instance: fetch:fetch|mux2x1:PCMux
- 19. Parameter Settings for User Entity Instance: fetch:fetch|mux2x1:JRMux
- 20. Parameter Settings for User Entity Instance: fetch:fetch|mux2x1:jumpMux
- 21. Parameter Settings for User Entity Instance: fetch:fetch|adder:PCAdder
- 22. Parameter Settings for User Entity Instance: fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component
- 23. Parameter Settings for User Entity Instance: IFID:ifid
- 24. Parameter Settings for User Entity Instance: decode:dcd|controlUnit:CU
- 25. Parameter Settings for User Entity Instance: decode:dcd|mux2x1:RFMux
- 26. Parameter Settings for User Entity Instance: decode:dcd|mux2x1:RegWriteMux
- 27. Parameter Settings for User Entity Instance: decode:dcd|adder:branchAdder
- 28. Parameter Settings for User Entity Instance: decode:dcd|mux4x1:FrdAmux
- 29. Parameter Settings for User Entity Instance: decode:dcd|mux4x1:FrdBmux
- 30. Parameter Settings for User Entity Instance: IDEX:idex
- 31. Parameter Settings for User Entity Instance: execute:exec|mux4x1:frwrda
- 32. Parameter Settings for User Entity Instance: execute:exec|mux4x1:frwrdb
- 33. Parameter Settings for User Entity Instance: execute:exec|mux2x1:ALUMux
- 34. Parameter Settings for User Entity Instance: execute:exec|ALU:alu
- 35. Parameter Settings for User Entity Instance: EXMEM:exmem
- 36. Parameter Settings for User Entity Instance: dataMemory:DM|altsyncram:altsyncram_component
- 37. Parameter Settings for User Entity Instance: MEMWB:memwb
- 38. Parameter Settings for User Entity Instance: mux2x1:WBMux
- 39. Parameter Settings for User Entity Instance: mux2x1:WritePc
- 40. Parameter Settings for Inferred Entity Instance: IDEX:idex|altshift_taps:Q_rtl_0
- 41. altsyncram Parameter Settings by Entity Instance
- 42. altshift_taps Parameter Settings by Entity Instance
- 43. Port Connectivity Checks: "mux2x1:WritePc"
- 44. Port Connectivity Checks: "execute:exec|ALU:alu"
- 45. Port Connectivity Checks: "execute:exec|mux4x1:frwrdb"
- 46. Port Connectivity Checks: "execute:exec|mux4x1:frwrda"
- 47. Port Connectivity Checks: "decode:dcd|mux4x1:FrdBmux"
- 48. Port Connectivity Checks: "decode:dcd|mux4x1:FrdAmux"
- 49. Port Connectivity Checks: "decode:dcd|mux2x1:RegWriteMux"
- 50. Port Connectivity Checks: "IFID:ifid"
- 51. Port Connectivity Checks: "fetch:fetch|adder:PCAdder"
- 52. Post-Synthesis Netlist Statistics for Top Partition
- 53. Elapsed Time Per Partition
- 54. Analysis & Synthesis Messages
- 55. Analysis & Synthesis Suppressed Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Analysis & Elaboration IP Cores Summary
+  5. Source assignments for pipeline:uut|fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component|altsyncram_bce1:auto_generated
+  6. Source assignments for pipeline:uut|dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated
+  7. Parameter Settings for User Entity Instance: pipeline:uut|fetch:fetch|mux2x1:PCMux
+  8. Parameter Settings for User Entity Instance: pipeline:uut|fetch:fetch|mux2x1:JRMux
+  9. Parameter Settings for User Entity Instance: pipeline:uut|fetch:fetch|mux2x1:jumpMux
+ 10. Parameter Settings for User Entity Instance: pipeline:uut|fetch:fetch|adder:PCAdder
+ 11. Parameter Settings for User Entity Instance: pipeline:uut|fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component
+ 12. Parameter Settings for User Entity Instance: pipeline:uut|IFID:ifid
+ 13. Parameter Settings for User Entity Instance: pipeline:uut|decode:dcd|controlUnit:CU
+ 14. Parameter Settings for User Entity Instance: pipeline:uut|decode:dcd|mux2x1:RFMux
+ 15. Parameter Settings for User Entity Instance: pipeline:uut|decode:dcd|mux2x1:RegWriteMux
+ 16. Parameter Settings for User Entity Instance: pipeline:uut|decode:dcd|adder:branchAdder
+ 17. Parameter Settings for User Entity Instance: pipeline:uut|decode:dcd|mux4x1:FrdAmux
+ 18. Parameter Settings for User Entity Instance: pipeline:uut|decode:dcd|mux4x1:FrdBmux
+ 19. Parameter Settings for User Entity Instance: pipeline:uut|IDEX:idex
+ 20. Parameter Settings for User Entity Instance: pipeline:uut|execute:exec|mux4x1:frwrda
+ 21. Parameter Settings for User Entity Instance: pipeline:uut|execute:exec|mux4x1:frwrdb
+ 22. Parameter Settings for User Entity Instance: pipeline:uut|execute:exec|mux2x1:ALUMux
+ 23. Parameter Settings for User Entity Instance: pipeline:uut|execute:exec|ALU:alu
+ 24. Parameter Settings for User Entity Instance: pipeline:uut|EXMEM:exmem
+ 25. Parameter Settings for User Entity Instance: pipeline:uut|dataMemory:DM|altsyncram:altsyncram_component
+ 26. Parameter Settings for User Entity Instance: pipeline:uut|MEMWB:memwb
+ 27. Parameter Settings for User Entity Instance: pipeline:uut|mux2x1:WBMux
+ 28. Parameter Settings for User Entity Instance: pipeline:uut|mux2x1:WritePc
+ 29. altsyncram Parameter Settings by Entity Instance
+ 30. Analysis & Elaboration Settings
+ 31. Port Connectivity Checks: "pipeline:uut|mux2x1:WritePc"
+ 32. Port Connectivity Checks: "pipeline:uut|execute:exec|ALU:alu"
+ 33. Port Connectivity Checks: "pipeline:uut|execute:exec|mux4x1:frwrdb"
+ 34. Port Connectivity Checks: "pipeline:uut|execute:exec|mux4x1:frwrda"
+ 35. Port Connectivity Checks: "pipeline:uut|decode:dcd|mux4x1:FrdBmux"
+ 36. Port Connectivity Checks: "pipeline:uut|decode:dcd|mux4x1:FrdAmux"
+ 37. Port Connectivity Checks: "pipeline:uut|decode:dcd|mux2x1:RegWriteMux"
+ 38. Port Connectivity Checks: "pipeline:uut|IFID:ifid"
+ 39. Port Connectivity Checks: "pipeline:uut|fetch:fetch|adder:PCAdder"
+ 40. Port Connectivity Checks: "pipeline:uut"
+ 41. Analysis & Elaboration Messages
+ 42. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -85,34 +72,462 @@ https://fpgasoftware.intel.com/eula.
 
 
 +-------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                        ;
+; Analysis & Elaboration Summary                                                      ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov 11 00:34:25 2024          ;
+; Analysis & Elaboration Status      ; Successful - Mon Nov 11 01:27:46 2024          ;
 ; Quartus Prime Version              ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                      ; pipeline                                       ;
-; Top-level Entity Name              ; pipeline                                       ;
+; Top-level Entity Name              ; testbench                                      ;
 ; Family                             ; MAX 10                                         ;
-; Total logic elements               ; 3,711                                          ;
-;     Total combinational functions  ; 2,639                                          ;
-;     Dedicated logic registers      ; 1,328                                          ;
-; Total registers                    ; 1328                                           ;
-; Total pins                         ; 12                                             ;
-; Total virtual pins                 ; 0                                              ;
-; Total memory bits                  ; 40,993                                         ;
-; Embedded Multiplier 9-bit elements ; 0                                              ;
-; Total PLLs                         ; 0                                              ;
-; UFM blocks                         ; 0                                              ;
-; ADC blocks                         ; 0                                              ;
+; Total logic elements               ; N/A until Partition Merge                      ;
+;     Total combinational functions  ; N/A until Partition Merge                      ;
+;     Dedicated logic registers      ; N/A until Partition Merge                      ;
+; Total registers                    ; N/A until Partition Merge                      ;
+; Total pins                         ; N/A until Partition Merge                      ;
+; Total virtual pins                 ; N/A until Partition Merge                      ;
+; Total memory bits                  ; N/A until Partition Merge                      ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                      ;
+; Total PLLs                         ; N/A until Partition Merge                      ;
+; UFM blocks                         ; N/A until Partition Merge                      ;
+; ADC blocks                         ; N/A until Partition Merge                      ;
 +------------------------------------+------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration IP Cores Summary                                                                                                        ;
++--------+--------------+---------+--------------+--------------+----------------------------------------------------------+---------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                          ; IP Include File     ;
++--------+--------------+---------+--------------+--------------+----------------------------------------------------------+---------------------+
+; Altera ; RAM: 1-PORT  ; 20.1    ; N/A          ; N/A          ; |testbench|pipeline:uut|dataMemory:DM                    ; dataMemory.v        ;
+; Altera ; ROM: 1-PORT  ; 20.1    ; N/A          ; N/A          ; |testbench|pipeline:uut|fetch:fetch|instructionMemory:IM ; instructionMemory.v ;
++--------+--------------+---------+--------------+--------------+----------------------------------------------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for pipeline:uut|fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component|altsyncram_bce1:auto_generated ;
++---------------------------------+--------------------+------+-----------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                    ;
++---------------------------------+--------------------+------+-----------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                     ;
++---------------------------------+--------------------+------+-----------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Source assignments for pipeline:uut|dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated ;
++---------------------------------+--------------------+------+----------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                 ;
++---------------------------------+--------------------+------+----------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                  ;
++---------------------------------+--------------------+------+----------------------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pipeline:uut|fetch:fetch|mux2x1:PCMux ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; size           ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pipeline:uut|fetch:fetch|mux2x1:JRMux ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; size           ; 10    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pipeline:uut|fetch:fetch|mux2x1:jumpMux ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; size           ; 10    ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pipeline:uut|fetch:fetch|adder:PCAdder ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; size           ; 10    ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pipeline:uut|fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component ;
++------------------------------------+-----------------------------------------+---------------------------------------------+
+; Parameter Name                     ; Value                                   ; Type                                        ;
++------------------------------------+-----------------------------------------+---------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                                       ; Untyped                                     ;
+; AUTO_CARRY_CHAINS                  ; ON                                      ; AUTO_CARRY                                  ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                     ; IGNORE_CARRY                                ;
+; AUTO_CASCADE_CHAINS                ; ON                                      ; AUTO_CASCADE                                ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                     ; IGNORE_CASCADE                              ;
+; WIDTH_BYTEENA                      ; 1                                       ; Untyped                                     ;
+; OPERATION_MODE                     ; ROM                                     ; Untyped                                     ;
+; WIDTH_A                            ; 32                                      ; Signed Integer                              ;
+; WIDTHAD_A                          ; 10                                      ; Signed Integer                              ;
+; NUMWORDS_A                         ; 1024                                    ; Signed Integer                              ;
+; OUTDATA_REG_A                      ; UNREGISTERED                            ; Untyped                                     ;
+; ADDRESS_ACLR_A                     ; NONE                                    ; Untyped                                     ;
+; OUTDATA_ACLR_A                     ; NONE                                    ; Untyped                                     ;
+; WRCONTROL_ACLR_A                   ; NONE                                    ; Untyped                                     ;
+; INDATA_ACLR_A                      ; NONE                                    ; Untyped                                     ;
+; BYTEENA_ACLR_A                     ; NONE                                    ; Untyped                                     ;
+; WIDTH_B                            ; 1                                       ; Untyped                                     ;
+; WIDTHAD_B                          ; 1                                       ; Untyped                                     ;
+; NUMWORDS_B                         ; 1                                       ; Untyped                                     ;
+; INDATA_REG_B                       ; CLOCK1                                  ; Untyped                                     ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                  ; Untyped                                     ;
+; RDCONTROL_REG_B                    ; CLOCK1                                  ; Untyped                                     ;
+; ADDRESS_REG_B                      ; CLOCK1                                  ; Untyped                                     ;
+; OUTDATA_REG_B                      ; UNREGISTERED                            ; Untyped                                     ;
+; BYTEENA_REG_B                      ; CLOCK1                                  ; Untyped                                     ;
+; INDATA_ACLR_B                      ; NONE                                    ; Untyped                                     ;
+; WRCONTROL_ACLR_B                   ; NONE                                    ; Untyped                                     ;
+; ADDRESS_ACLR_B                     ; NONE                                    ; Untyped                                     ;
+; OUTDATA_ACLR_B                     ; NONE                                    ; Untyped                                     ;
+; RDCONTROL_ACLR_B                   ; NONE                                    ; Untyped                                     ;
+; BYTEENA_ACLR_B                     ; NONE                                    ; Untyped                                     ;
+; WIDTH_BYTEENA_A                    ; 1                                       ; Signed Integer                              ;
+; WIDTH_BYTEENA_B                    ; 1                                       ; Untyped                                     ;
+; RAM_BLOCK_TYPE                     ; M9K                                     ; Untyped                                     ;
+; BYTE_SIZE                          ; 8                                       ; Untyped                                     ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                               ; Untyped                                     ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                    ; Untyped                                     ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                    ; Untyped                                     ;
+; INIT_FILE                          ; instructionMemoryInitializationFile.mif ; Untyped                                     ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                  ; Untyped                                     ;
+; MAXIMUM_DEPTH                      ; 0                                       ; Untyped                                     ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS                                  ; Untyped                                     ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                                  ; Untyped                                     ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                                  ; Untyped                                     ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                  ; Untyped                                     ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                         ; Untyped                                     ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                         ; Untyped                                     ;
+; ENABLE_ECC                         ; FALSE                                   ; Untyped                                     ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                   ; Untyped                                     ;
+; WIDTH_ECCSTATUS                    ; 3                                       ; Untyped                                     ;
+; DEVICE_FAMILY                      ; MAX 10                                  ; Untyped                                     ;
+; CBXI_PARAMETER                     ; altsyncram_bce1                         ; Untyped                                     ;
++------------------------------------+-----------------------------------------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pipeline:uut|IFID:ifid ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; size           ; 52    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pipeline:uut|decode:dcd|controlUnit:CU ;
++----------------+--------+-----------------------------------------------------------+
+; Parameter Name ; Value  ; Type                                                      ;
++----------------+--------+-----------------------------------------------------------+
+; _RType         ; 000000 ; Unsigned Binary                                           ;
+; _addi          ; 001000 ; Unsigned Binary                                           ;
+; _ori_          ; 001101 ; Unsigned Binary                                           ;
+; _xori_         ; 001110 ; Unsigned Binary                                           ;
+; _andi_         ; 001100 ; Unsigned Binary                                           ;
+; _slti_         ; 001010 ; Unsigned Binary                                           ;
+; _lw            ; 100011 ; Unsigned Binary                                           ;
+; _sw            ; 101011 ; Unsigned Binary                                           ;
+; _beq           ; 000100 ; Unsigned Binary                                           ;
+; _j_            ; 000010 ; Unsigned Binary                                           ;
+; _jal_          ; 000011 ; Unsigned Binary                                           ;
+; _bne_          ; 000101 ; Unsigned Binary                                           ;
+; _add_          ; 100000 ; Unsigned Binary                                           ;
+; _sub_          ; 100010 ; Unsigned Binary                                           ;
+; _and_          ; 100100 ; Unsigned Binary                                           ;
+; _or_           ; 100101 ; Unsigned Binary                                           ;
+; _slt_          ; 101010 ; Unsigned Binary                                           ;
+; _xor_          ; 100110 ; Unsigned Binary                                           ;
+; _nor_          ; 100111 ; Unsigned Binary                                           ;
+; _sll_          ; 000000 ; Unsigned Binary                                           ;
+; _srl_          ; 000010 ; Unsigned Binary                                           ;
+; _jr_           ; 001000 ; Unsigned Binary                                           ;
++----------------+--------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pipeline:uut|decode:dcd|mux2x1:RFMux ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; size           ; 5     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pipeline:uut|decode:dcd|mux2x1:RegWriteMux ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; size           ; 5     ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pipeline:uut|decode:dcd|adder:branchAdder ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; size           ; 10    ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pipeline:uut|decode:dcd|mux4x1:FrdAmux ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; size           ; 32    ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pipeline:uut|decode:dcd|mux4x1:FrdBmux ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; size           ; 32    ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pipeline:uut|IDEX:idex ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; size           ; 136   ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pipeline:uut|execute:exec|mux4x1:frwrda ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; size           ; 32    ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pipeline:uut|execute:exec|mux4x1:frwrdb ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; size           ; 32    ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pipeline:uut|execute:exec|mux2x1:ALUMux ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; size           ; 32    ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pipeline:uut|execute:exec|ALU:alu ;
++----------------+----------------------------------+----------------------------+
+; Parameter Name ; Value                            ; Type                       ;
++----------------+----------------------------------+----------------------------+
+; data_width     ; 32                               ; Signed Integer             ;
+; sel_width      ; 4                                ; Signed Integer             ;
+; _AND           ; 00000000000000000000000000000010 ; Unsigned Binary            ;
+; _SUB           ; 00000000000000000000000000000001 ; Unsigned Binary            ;
+; _ADD           ; 00000000000000000000000000000000 ; Unsigned Binary            ;
+; _OR            ; 00000000000000000000000000000011 ; Unsigned Binary            ;
+; _SLT           ; 00000000000000000000000000000100 ; Unsigned Binary            ;
+; _XOR           ; 00000000000000000000000000000101 ; Unsigned Binary            ;
+; _NOR           ; 00000000000000000000000000000110 ; Unsigned Binary            ;
+; _SLL           ; 00000000000000000000000000000111 ; Unsigned Binary            ;
+; _SLR           ; 00000000000000000000000000001000 ; Unsigned Binary            ;
++----------------+----------------------------------+----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pipeline:uut|EXMEM:exmem ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; size           ; 84    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pipeline:uut|dataMemory:DM|altsyncram:altsyncram_component ;
++------------------------------------+----------------------------------+---------------------------------+
+; Parameter Name                     ; Value                            ; Type                            ;
++------------------------------------+----------------------------------+---------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                                ; Untyped                         ;
+; AUTO_CARRY_CHAINS                  ; ON                               ; AUTO_CARRY                      ;
+; IGNORE_CARRY_BUFFERS               ; OFF                              ; IGNORE_CARRY                    ;
+; AUTO_CASCADE_CHAINS                ; ON                               ; AUTO_CASCADE                    ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                              ; IGNORE_CASCADE                  ;
+; WIDTH_BYTEENA                      ; 1                                ; Untyped                         ;
+; OPERATION_MODE                     ; SINGLE_PORT                      ; Untyped                         ;
+; WIDTH_A                            ; 32                               ; Signed Integer                  ;
+; WIDTHAD_A                          ; 8                                ; Signed Integer                  ;
+; NUMWORDS_A                         ; 256                              ; Signed Integer                  ;
+; OUTDATA_REG_A                      ; UNREGISTERED                     ; Untyped                         ;
+; ADDRESS_ACLR_A                     ; NONE                             ; Untyped                         ;
+; OUTDATA_ACLR_A                     ; NONE                             ; Untyped                         ;
+; WRCONTROL_ACLR_A                   ; NONE                             ; Untyped                         ;
+; INDATA_ACLR_A                      ; NONE                             ; Untyped                         ;
+; BYTEENA_ACLR_A                     ; NONE                             ; Untyped                         ;
+; WIDTH_B                            ; 1                                ; Untyped                         ;
+; WIDTHAD_B                          ; 1                                ; Untyped                         ;
+; NUMWORDS_B                         ; 1                                ; Untyped                         ;
+; INDATA_REG_B                       ; CLOCK1                           ; Untyped                         ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                           ; Untyped                         ;
+; RDCONTROL_REG_B                    ; CLOCK1                           ; Untyped                         ;
+; ADDRESS_REG_B                      ; CLOCK1                           ; Untyped                         ;
+; OUTDATA_REG_B                      ; UNREGISTERED                     ; Untyped                         ;
+; BYTEENA_REG_B                      ; CLOCK1                           ; Untyped                         ;
+; INDATA_ACLR_B                      ; NONE                             ; Untyped                         ;
+; WRCONTROL_ACLR_B                   ; NONE                             ; Untyped                         ;
+; ADDRESS_ACLR_B                     ; NONE                             ; Untyped                         ;
+; OUTDATA_ACLR_B                     ; NONE                             ; Untyped                         ;
+; RDCONTROL_ACLR_B                   ; NONE                             ; Untyped                         ;
+; BYTEENA_ACLR_B                     ; NONE                             ; Untyped                         ;
+; WIDTH_BYTEENA_A                    ; 1                                ; Signed Integer                  ;
+; WIDTH_BYTEENA_B                    ; 1                                ; Untyped                         ;
+; RAM_BLOCK_TYPE                     ; M9K                              ; Untyped                         ;
+; BYTE_SIZE                          ; 8                                ; Untyped                         ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                        ; Untyped                         ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_WITH_NBE_READ           ; Untyped                         ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ             ; Untyped                         ;
+; INIT_FILE                          ; dataMemoryInitializationFile.mif ; Untyped                         ;
+; INIT_FILE_LAYOUT                   ; PORT_A                           ; Untyped                         ;
+; MAXIMUM_DEPTH                      ; 0                                ; Untyped                         ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS                           ; Untyped                         ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                           ; Untyped                         ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                           ; Untyped                         ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                           ; Untyped                         ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                  ; Untyped                         ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                  ; Untyped                         ;
+; ENABLE_ECC                         ; FALSE                            ; Untyped                         ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                            ; Untyped                         ;
+; WIDTH_ECCSTATUS                    ; 3                                ; Untyped                         ;
+; DEVICE_FAMILY                      ; MAX 10                           ; Untyped                         ;
+; CBXI_PARAMETER                     ; altsyncram_8km1                  ; Untyped                         ;
++------------------------------------+----------------------------------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pipeline:uut|MEMWB:memwb ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; size           ; 82    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pipeline:uut|mux2x1:WBMux ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; size           ; 32    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pipeline:uut|mux2x1:WritePc ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; size           ; 32    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                                          ;
++-------------------------------------------+-------------------------------------------------------------------------------+
+; Name                                      ; Value                                                                         ;
++-------------------------------------------+-------------------------------------------------------------------------------+
+; Number of entity instances                ; 2                                                                             ;
+; Entity Instance                           ; pipeline:uut|fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; ROM                                                                           ;
+;     -- WIDTH_A                            ; 32                                                                            ;
+;     -- NUMWORDS_A                         ; 1024                                                                          ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                  ;
+;     -- WIDTH_B                            ; 1                                                                             ;
+;     -- NUMWORDS_B                         ; 1                                                                             ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                                        ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                  ;
+;     -- RAM_BLOCK_TYPE                     ; M9K                                                                           ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                     ;
+; Entity Instance                           ; pipeline:uut|dataMemory:DM|altsyncram:altsyncram_component                    ;
+;     -- OPERATION_MODE                     ; SINGLE_PORT                                                                   ;
+;     -- WIDTH_A                            ; 32                                                                            ;
+;     -- NUMWORDS_A                         ; 256                                                                           ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                  ;
+;     -- WIDTH_B                            ; 1                                                                             ;
+;     -- NUMWORDS_B                         ; 1                                                                             ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                                        ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                  ;
+;     -- RAM_BLOCK_TYPE                     ; M9K                                                                           ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                     ;
++-------------------------------------------+-------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                              ;
+; Analysis & Elaboration Settings                                                                            ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; 10M50DAF484I7G     ;                    ;
-; Top-level entity name                                            ; pipeline           ; pipeline           ;
+; Top-level entity name                                            ; testbench          ; pipeline           ;
 ; Family name                                                      ; MAX 10             ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -192,766 +607,71 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 6           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
-;     Processor 3            ;   0.1%      ;
-;     Processor 4            ;   0.1%      ;
-;     Processor 5            ;   0.1%      ;
-;     Processor 6            ;   0.1%      ;
-+----------------------------+-------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                               ;
-+-----------------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path        ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                                          ; Library ;
-+-----------------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------------------------------------+---------+
-; dataMemory.v                            ; yes             ; User Wizard-Generated File             ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/dataMemory.v                            ;         ;
-; SignExtender.v                          ; yes             ; User Verilog HDL File                  ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/SignExtender.v                          ;         ;
-; registerFile.v                          ; yes             ; User Verilog HDL File                  ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/registerFile.v                          ;         ;
-; programCounter.v                        ; yes             ; User Verilog HDL File                  ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/programCounter.v                        ;         ;
-; Pipes.v                                 ; yes             ; User Verilog HDL File                  ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/Pipes.v                                 ;         ;
-; pipeline.v                              ; yes             ; User Verilog HDL File                  ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v                              ;         ;
-; mux2x1.v                                ; yes             ; User Verilog HDL File                  ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/mux2x1.v                                ;         ;
-; hazard_detection.v                      ; yes             ; User Verilog HDL File                  ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/hazard_detection.v                      ;         ;
-; ForwardingUnit.v                        ; yes             ; User Verilog HDL File                  ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ForwardingUnit.v                        ;         ;
-; fetch.v                                 ; yes             ; User Verilog HDL File                  ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/fetch.v                                 ;         ;
-; execute.v                               ; yes             ; User Verilog HDL File                  ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/execute.v                               ;         ;
-; decode.v                                ; yes             ; User Verilog HDL File                  ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v                                ;         ;
-; controlUnit.v                           ; yes             ; User Verilog HDL File                  ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/controlUnit.v                           ;         ;
-; comparator.v                            ; yes             ; User Verilog HDL File                  ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/comparator.v                            ;         ;
-; ALU.v                                   ; yes             ; User Verilog HDL File                  ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ALU.v                                   ;         ;
-; adder.v                                 ; yes             ; User Verilog HDL File                  ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/adder.v                                 ;         ;
-; instructionMemory.v                     ; yes             ; User Wizard-Generated File             ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/instructionMemory.v                     ;         ;
-; altsyncram.tdf                          ; yes             ; Megafunction                           ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altsyncram.tdf                                              ;         ;
-; stratix_ram_block.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/stratix_ram_block.inc                                       ;         ;
-; lpm_mux.inc                             ; yes             ; Megafunction                           ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_mux.inc                                                 ;         ;
-; lpm_decode.inc                          ; yes             ; Megafunction                           ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_decode.inc                                              ;         ;
-; aglobal221.inc                          ; yes             ; Megafunction                           ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/aglobal221.inc                                              ;         ;
-; a_rdenreg.inc                           ; yes             ; Megafunction                           ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/a_rdenreg.inc                                               ;         ;
-; altrom.inc                              ; yes             ; Megafunction                           ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altrom.inc                                                  ;         ;
-; altram.inc                              ; yes             ; Megafunction                           ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altram.inc                                                  ;         ;
-; altdpram.inc                            ; yes             ; Megafunction                           ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altdpram.inc                                                ;         ;
-; db/altsyncram_bce1.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/altsyncram_bce1.tdf                  ;         ;
-; instructionmemoryinitializationfile.mif ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/instructionmemoryinitializationfile.mif ;         ;
-; db/altsyncram_8km1.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/altsyncram_8km1.tdf                  ;         ;
-; datamemoryinitializationfile.mif        ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/datamemoryinitializationfile.mif        ;         ;
-; altshift_taps.tdf                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altshift_taps.tdf                                           ;         ;
-; lpm_counter.inc                         ; yes             ; Megafunction                           ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_counter.inc                                             ;         ;
-; lpm_compare.inc                         ; yes             ; Megafunction                           ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_compare.inc                                             ;         ;
-; lpm_constant.inc                        ; yes             ; Megafunction                           ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_constant.inc                                            ;         ;
-; db/shift_taps_vul.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/shift_taps_vul.tdf                   ;         ;
-; db/altsyncram_dj51.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/altsyncram_dj51.tdf                  ;         ;
-; db/add_sub_oed.tdf                      ; yes             ; Auto-Generated Megafunction            ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/add_sub_oed.tdf                      ;         ;
-; db/cntr_s3f.tdf                         ; yes             ; Auto-Generated Megafunction            ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/cntr_s3f.tdf                         ;         ;
-; db/cmpr_erb.tdf                         ; yes             ; Auto-Generated Megafunction            ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/cmpr_erb.tdf                         ;         ;
-; db/cntr_fjg.tdf                         ; yes             ; Auto-Generated Megafunction            ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/cntr_fjg.tdf                         ;         ;
-+-----------------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------------------------------------+---------+
-
-
 +---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 3,711     ;
-;                                             ;           ;
-; Total combinational functions               ; 2639      ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 2096      ;
-;     -- 3 input functions                    ; 450       ;
-;     -- <=2 input functions                  ; 93        ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 2555      ;
-;     -- arithmetic mode                      ; 84        ;
-;                                             ;           ;
-; Total registers                             ; 1328      ;
-;     -- Dedicated logic registers            ; 1328      ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 12        ;
-; Total memory bits                           ; 40993     ;
-;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 1403      ;
-; Total fan-out                               ; 15844     ;
-; Average fan-out                             ; 3.90      ;
-+---------------------------------------------+-----------+
+; Port Connectivity Checks: "pipeline:uut|mux2x1:WritePc" ;
++-------------+-------+----------+------------------------+
+; Port        ; Type  ; Severity ; Details                ;
++-------------+-------+----------+------------------------+
+; in2[31..10] ; Input ; Info     ; Stuck at GND           ;
++-------------+-------+----------+------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                              ;
-+----------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------------------------------------+-------------------+--------------+
-; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                       ; Entity Name       ; Library Name ;
-+----------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------------------------------------+-------------------+--------------+
-; |pipeline                                    ; 2639 (0)            ; 1328 (0)                  ; 40993       ; 0          ; 0            ; 0       ; 0         ; 12   ; 0            ; 0          ; |pipeline                                                                                                 ; pipeline          ; work         ;
-;    |EXMEM:exmem|                             ; 46 (46)             ; 72 (72)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|EXMEM:exmem                                                                                     ; EXMEM             ; work         ;
-;    |IDEX:idex|                               ; 130 (121)           ; 109 (103)                 ; 33          ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|IDEX:idex                                                                                       ; IDEX              ; work         ;
-;       |altshift_taps:Q_rtl_0|                ; 9 (0)               ; 6 (0)                     ; 33          ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|IDEX:idex|altshift_taps:Q_rtl_0                                                                 ; altshift_taps     ; work         ;
-;          |shift_taps_vul:auto_generated|     ; 9 (2)               ; 6 (3)                     ; 33          ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated                                   ; shift_taps_vul    ; work         ;
-;             |altsyncram_dj51:altsyncram4|    ; 0 (0)               ; 0 (0)                     ; 33          ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated|altsyncram_dj51:altsyncram4       ; altsyncram_dj51   ; work         ;
-;             |cntr_fjg:cntr5|                 ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated|cntr_fjg:cntr5                    ; cntr_fjg          ; work         ;
-;             |cntr_s3f:cntr1|                 ; 5 (5)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated|cntr_s3f:cntr1                    ; cntr_s3f          ; work         ;
-;    |IFID:ifid|                               ; 43 (43)             ; 42 (42)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|IFID:ifid                                                                                       ; IFID              ; work         ;
-;    |MEMWB:memwb|                             ; 0 (0)               ; 71 (71)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|MEMWB:memwb                                                                                     ; MEMWB             ; work         ;
-;    |dataMemory:DM|                           ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|dataMemory:DM                                                                                   ; dataMemory        ; work         ;
-;       |altsyncram:altsyncram_component|      ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|dataMemory:DM|altsyncram:altsyncram_component                                                   ; altsyncram        ; work         ;
-;          |altsyncram_8km1:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated                    ; altsyncram_8km1   ; work         ;
-;    |decode:dcd|                              ; 1577 (0)            ; 1024 (0)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|decode:dcd                                                                                      ; decode            ; work         ;
-;       |adder:branchAdder|                    ; 30 (30)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|decode:dcd|adder:branchAdder                                                                    ; adder             ; work         ;
-;       |comparator:cmp|                       ; 43 (43)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|decode:dcd|comparator:cmp                                                                       ; comparator        ; work         ;
-;       |controlUnit:CU|                       ; 21 (21)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|decode:dcd|controlUnit:CU                                                                       ; controlUnit       ; work         ;
-;       |mux2x1:RegWriteMux|                   ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|decode:dcd|mux2x1:RegWriteMux                                                                   ; mux2x1            ; work         ;
-;       |mux4x1:FrdAmux|                       ; 65 (65)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|decode:dcd|mux4x1:FrdAmux                                                                       ; mux4x1            ; work         ;
-;       |mux4x1:FrdBmux|                       ; 95 (95)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|decode:dcd|mux4x1:FrdBmux                                                                       ; mux4x1            ; work         ;
-;       |registerFile:RF|                      ; 1320 (1320)         ; 1024 (1024)               ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|decode:dcd|registerFile:RF                                                                      ; registerFile      ; work         ;
-;    |execute:exec|                            ; 710 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|execute:exec                                                                                    ; execute           ; work         ;
-;       |ALU:alu|                              ; 550 (550)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|execute:exec|ALU:alu                                                                            ; ALU               ; work         ;
-;       |mux2x1:ALUMux|                        ; 32 (32)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|execute:exec|mux2x1:ALUMux                                                                      ; mux2x1            ; work         ;
-;       |mux4x1:frwrda|                        ; 64 (64)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|execute:exec|mux4x1:frwrda                                                                      ; mux4x1            ; work         ;
-;       |mux4x1:frwrdb|                        ; 64 (64)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|execute:exec|mux4x1:frwrdb                                                                      ; mux4x1            ; work         ;
-;    |fetch:fetch|                             ; 20 (0)              ; 10 (0)                    ; 32768       ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|fetch:fetch                                                                                     ; fetch             ; work         ;
-;       |adder:PCAdder|                        ; 10 (10)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|fetch:fetch|adder:PCAdder                                                                       ; adder             ; work         ;
-;       |instructionMemory:IM|                 ; 0 (0)               ; 0 (0)                     ; 32768       ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|fetch:fetch|instructionMemory:IM                                                                ; instructionMemory ; work         ;
-;          |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 32768       ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component                                ; altsyncram        ; work         ;
-;             |altsyncram_bce1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 32768       ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component|altsyncram_bce1:auto_generated ; altsyncram_bce1   ; work         ;
-;       |programCounter:pc|                    ; 10 (10)             ; 10 (10)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|fetch:fetch|programCounter:pc                                                                   ; programCounter    ; work         ;
-;    |forwarding_unit:fw|                      ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|forwarding_unit:fw                                                                              ; forwarding_unit   ; work         ;
-;    |hazard_detection:HDU|                    ; 32 (32)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|hazard_detection:HDU                                                                            ; hazard_detection  ; work         ;
-;    |mux2x1:WBMux|                            ; 32 (32)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|mux2x1:WBMux                                                                                    ; mux2x1            ; work         ;
-;    |mux2x1:WritePc|                          ; 32 (32)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|mux2x1:WritePc                                                                                  ; mux2x1            ; work         ;
-+----------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------------------------------------+-------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                   ;
-+------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+-----------------------------------------+
-; Name                                                                                                       ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF                                     ;
-+------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+-----------------------------------------+
-; IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated|altsyncram_dj51:altsyncram4|ALTSYNCRAM       ; AUTO ; Simple Dual Port ; 3            ; 11           ; 3            ; 11           ; 33    ; None                                    ;
-; dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated|ALTSYNCRAM                    ; M9K  ; Single Port      ; 256          ; 32           ; --           ; --           ; 8192  ; dataMemoryInitializationFile.mif        ;
-; fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component|altsyncram_bce1:auto_generated|ALTSYNCRAM ; M9K  ; ROM              ; 1024         ; 32           ; --           ; --           ; 32768 ; instructionMemoryInitializationFile.mif ;
-+------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+-----------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                            ;
-+--------+--------------+---------+--------------+--------------+--------------------------------------------+---------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                            ; IP Include File     ;
-+--------+--------------+---------+--------------+--------------+--------------------------------------------+---------------------+
-; Altera ; RAM: 1-PORT  ; 20.1    ; N/A          ; N/A          ; |pipeline|dataMemory:DM                    ; dataMemory.v        ;
-; Altera ; ROM: 1-PORT  ; 20.1    ; N/A          ; N/A          ; |pipeline|fetch:fetch|instructionMemory:IM ; instructionMemory.v ;
-+--------+--------------+---------+--------------+--------------+--------------------------------------------+---------------------+
-
-
-+------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                     ;
-+----------------------------------------+-------------------------------+
-; Register name                          ; Reason for Removal            ;
-+----------------------------------------+-------------------------------+
-; IDEX:idex|Q[130]                       ; Merged with IDEX:idex|Q[129]  ;
-; EXMEM:exmem|Q[19]                      ; Merged with EXMEM:exmem|Q[18] ;
-; IDEX:idex|Q[26..41]                    ; Merged with IDEX:idex|Q[25]   ;
-; IDEX:idex|Q[19]                        ; Merged with IDEX:idex|Q[134]  ;
-; IDEX:idex|Q[18]                        ; Merged with IDEX:idex|Q[133]  ;
-; IDEX:idex|Q[17]                        ; Merged with IDEX:idex|Q[132]  ;
-; IDEX:idex|Q[16]                        ; Merged with IDEX:idex|Q[131]  ;
-; IDEX:idex|Q[20]                        ; Merged with IDEX:idex|Q[135]  ;
-; Total Number of Removed Registers = 23 ;                               ;
-+----------------------------------------+-------------------------------+
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 1328  ;
-; Number of registers using Synchronous Clear  ; 25    ;
-; Number of registers using Synchronous Load   ; 18    ;
-; Number of registers using Asynchronous Clear ; 1324  ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1065  ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-------------------------------------------------------------------------------+
-; Inverted Register Statistics                                                  ;
-+---------------------------------------------------------------------+---------+
-; Inverted Register                                                   ; Fan out ;
-+---------------------------------------------------------------------+---------+
-; fetch:fetch|programCounter:pc|PCout[0]                              ; 2       ;
-; fetch:fetch|programCounter:pc|PCout[1]                              ; 2       ;
-; fetch:fetch|programCounter:pc|PCout[2]                              ; 2       ;
-; fetch:fetch|programCounter:pc|PCout[3]                              ; 2       ;
-; fetch:fetch|programCounter:pc|PCout[4]                              ; 2       ;
-; fetch:fetch|programCounter:pc|PCout[5]                              ; 2       ;
-; fetch:fetch|programCounter:pc|PCout[6]                              ; 2       ;
-; fetch:fetch|programCounter:pc|PCout[7]                              ; 2       ;
-; fetch:fetch|programCounter:pc|PCout[8]                              ; 2       ;
-; fetch:fetch|programCounter:pc|PCout[9]                              ; 2       ;
-; IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated|dffe6 ; 11      ;
-; Total number of inverted registers = 11                             ;         ;
-+---------------------------------------------------------------------+---------+
-
-
-+---------------------------------------------------------+
-; Registers Packed Into Inferred Megafunctions            ;
-+------------------------+-------------------+------------+
-; Register Name          ; Megafunction      ; Type       ;
-+------------------------+-------------------+------------+
-; MEMWB:memwb|Q[2..12]   ; IDEX:idex|Q_rtl_0 ; SHIFT_TAPS ;
-; EXMEM:exmem|Q[0..9,15] ; IDEX:idex|Q_rtl_0 ; SHIFT_TAPS ;
-; IDEX:idex|Q[0..9,125]  ; IDEX:idex|Q_rtl_0 ; SHIFT_TAPS ;
-+------------------------+-------------------+------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
-; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |pipeline|IDEX:idex|Q[108]                  ;
-; 3:1                ; 42 bits   ; 84 LEs        ; 42 LEs               ; 42 LEs                 ; Yes        ; |pipeline|IFID:ifid|Q[6]                    ;
-; 65:1               ; 4 bits    ; 172 LEs       ; 52 LEs               ; 120 LEs                ; Yes        ; |pipeline|IDEX:idex|Q[122]                  ;
-; 19:1               ; 8 bits    ; 96 LEs        ; 48 LEs               ; 48 LEs                 ; Yes        ; |pipeline|EXMEM:exmem|Q[70]                 ;
-; 19:1               ; 8 bits    ; 96 LEs        ; 48 LEs               ; 48 LEs                 ; Yes        ; |pipeline|EXMEM:exmem|Q[67]                 ;
-; 20:1               ; 4 bits    ; 52 LEs        ; 28 LEs               ; 24 LEs                 ; Yes        ; |pipeline|EXMEM:exmem|Q[78]                 ;
-; 20:1               ; 4 bits    ; 52 LEs        ; 28 LEs               ; 24 LEs                 ; Yes        ; |pipeline|EXMEM:exmem|Q[59]                 ;
-; 21:1               ; 2 bits    ; 28 LEs        ; 16 LEs               ; 12 LEs                 ; Yes        ; |pipeline|EXMEM:exmem|Q[81]                 ;
-; 21:1               ; 2 bits    ; 28 LEs        ; 16 LEs               ; 12 LEs                 ; Yes        ; |pipeline|EXMEM:exmem|Q[55]                 ;
-; 22:1               ; 2 bits    ; 28 LEs        ; 16 LEs               ; 12 LEs                 ; Yes        ; |pipeline|EXMEM:exmem|Q[83]                 ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |pipeline|decode:dcd|mux4x1:FrdAmux|Mux21   ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |pipeline|decode:dcd|mux4x1:FrdBmux|Mux24   ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |pipeline|execute:exec|mux4x1:frwrda|Mux23  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |pipeline|execute:exec|mux4x1:frwrdb|Mux29  ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |pipeline|fetch:fetch|mux2x1:jumpMux|out[7] ;
-; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; No         ; |pipeline|decode:dcd|registerFile:RF|Mux16  ;
-; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; No         ; |pipeline|decode:dcd|registerFile:RF|Mux47  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component|altsyncram_bce1:auto_generated ;
-+---------------------------------+--------------------+------+----------------------------------------------------------+
-; Assignment                      ; Value              ; From ; To                                                       ;
-+---------------------------------+--------------------+------+----------------------------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                        ;
-+---------------------------------+--------------------+------+----------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------+
-; Source assignments for dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated ;
-+---------------------------------+--------------------+------+---------------------------------------+
-; Assignment                      ; Value              ; From ; To                                    ;
-+---------------------------------+--------------------+------+---------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                     ;
-+---------------------------------+--------------------+------+---------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Source assignments for IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated|altsyncram_dj51:altsyncram4 ;
-+---------------------------------+--------------------+------+----------------------------------------------------+
-; Assignment                      ; Value              ; From ; To                                                 ;
-+---------------------------------+--------------------+------+----------------------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                  ;
-+---------------------------------+--------------------+------+----------------------------------------------------+
-
-
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: fetch:fetch|mux2x1:PCMux ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; size           ; 10    ; Signed Integer                               ;
-+----------------+-------+----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: fetch:fetch|mux2x1:JRMux ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; size           ; 10    ; Signed Integer                               ;
-+----------------+-------+----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: fetch:fetch|mux2x1:jumpMux ;
-+----------------+-------+------------------------------------------------+
-; Parameter Name ; Value ; Type                                           ;
-+----------------+-------+------------------------------------------------+
-; size           ; 10    ; Signed Integer                                 ;
-+----------------+-------+------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: fetch:fetch|adder:PCAdder ;
-+----------------+-------+-----------------------------------------------+
-; Parameter Name ; Value ; Type                                          ;
-+----------------+-------+-----------------------------------------------+
-; size           ; 10    ; Signed Integer                                ;
-+----------------+-------+-----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component ;
-+------------------------------------+-----------------------------------------+--------------------------------+
-; Parameter Name                     ; Value                                   ; Type                           ;
-+------------------------------------+-----------------------------------------+--------------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                                       ; Untyped                        ;
-; AUTO_CARRY_CHAINS                  ; ON                                      ; AUTO_CARRY                     ;
-; IGNORE_CARRY_BUFFERS               ; OFF                                     ; IGNORE_CARRY                   ;
-; AUTO_CASCADE_CHAINS                ; ON                                      ; AUTO_CASCADE                   ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                                     ; IGNORE_CASCADE                 ;
-; WIDTH_BYTEENA                      ; 1                                       ; Untyped                        ;
-; OPERATION_MODE                     ; ROM                                     ; Untyped                        ;
-; WIDTH_A                            ; 32                                      ; Signed Integer                 ;
-; WIDTHAD_A                          ; 10                                      ; Signed Integer                 ;
-; NUMWORDS_A                         ; 1024                                    ; Signed Integer                 ;
-; OUTDATA_REG_A                      ; UNREGISTERED                            ; Untyped                        ;
-; ADDRESS_ACLR_A                     ; NONE                                    ; Untyped                        ;
-; OUTDATA_ACLR_A                     ; NONE                                    ; Untyped                        ;
-; WRCONTROL_ACLR_A                   ; NONE                                    ; Untyped                        ;
-; INDATA_ACLR_A                      ; NONE                                    ; Untyped                        ;
-; BYTEENA_ACLR_A                     ; NONE                                    ; Untyped                        ;
-; WIDTH_B                            ; 1                                       ; Untyped                        ;
-; WIDTHAD_B                          ; 1                                       ; Untyped                        ;
-; NUMWORDS_B                         ; 1                                       ; Untyped                        ;
-; INDATA_REG_B                       ; CLOCK1                                  ; Untyped                        ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                  ; Untyped                        ;
-; RDCONTROL_REG_B                    ; CLOCK1                                  ; Untyped                        ;
-; ADDRESS_REG_B                      ; CLOCK1                                  ; Untyped                        ;
-; OUTDATA_REG_B                      ; UNREGISTERED                            ; Untyped                        ;
-; BYTEENA_REG_B                      ; CLOCK1                                  ; Untyped                        ;
-; INDATA_ACLR_B                      ; NONE                                    ; Untyped                        ;
-; WRCONTROL_ACLR_B                   ; NONE                                    ; Untyped                        ;
-; ADDRESS_ACLR_B                     ; NONE                                    ; Untyped                        ;
-; OUTDATA_ACLR_B                     ; NONE                                    ; Untyped                        ;
-; RDCONTROL_ACLR_B                   ; NONE                                    ; Untyped                        ;
-; BYTEENA_ACLR_B                     ; NONE                                    ; Untyped                        ;
-; WIDTH_BYTEENA_A                    ; 1                                       ; Signed Integer                 ;
-; WIDTH_BYTEENA_B                    ; 1                                       ; Untyped                        ;
-; RAM_BLOCK_TYPE                     ; M9K                                     ; Untyped                        ;
-; BYTE_SIZE                          ; 8                                       ; Untyped                        ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                               ; Untyped                        ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                    ; Untyped                        ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                    ; Untyped                        ;
-; INIT_FILE                          ; instructionMemoryInitializationFile.mif ; Untyped                        ;
-; INIT_FILE_LAYOUT                   ; PORT_A                                  ; Untyped                        ;
-; MAXIMUM_DEPTH                      ; 0                                       ; Untyped                        ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS                                  ; Untyped                        ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL                                  ; Untyped                        ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                                  ; Untyped                        ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                  ; Untyped                        ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                         ; Untyped                        ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                         ; Untyped                        ;
-; ENABLE_ECC                         ; FALSE                                   ; Untyped                        ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                   ; Untyped                        ;
-; WIDTH_ECCSTATUS                    ; 3                                       ; Untyped                        ;
-; DEVICE_FAMILY                      ; MAX 10                                  ; Untyped                        ;
-; CBXI_PARAMETER                     ; altsyncram_bce1                         ; Untyped                        ;
-+------------------------------------+-----------------------------------------+--------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------+
-; Parameter Settings for User Entity Instance: IFID:ifid ;
-+----------------+-------+-------------------------------+
-; Parameter Name ; Value ; Type                          ;
-+----------------+-------+-------------------------------+
-; size           ; 52    ; Signed Integer                ;
-+----------------+-------+-------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: decode:dcd|controlUnit:CU ;
-+----------------+--------+----------------------------------------------+
-; Parameter Name ; Value  ; Type                                         ;
-+----------------+--------+----------------------------------------------+
-; _RType         ; 000000 ; Unsigned Binary                              ;
-; _addi          ; 001000 ; Unsigned Binary                              ;
-; _ori_          ; 001101 ; Unsigned Binary                              ;
-; _xori_         ; 001110 ; Unsigned Binary                              ;
-; _andi_         ; 001100 ; Unsigned Binary                              ;
-; _slti_         ; 001010 ; Unsigned Binary                              ;
-; _lw            ; 100011 ; Unsigned Binary                              ;
-; _sw            ; 101011 ; Unsigned Binary                              ;
-; _beq           ; 000100 ; Unsigned Binary                              ;
-; _j_            ; 000010 ; Unsigned Binary                              ;
-; _jal_          ; 000011 ; Unsigned Binary                              ;
-; _bne_          ; 000101 ; Unsigned Binary                              ;
-; _add_          ; 100000 ; Unsigned Binary                              ;
-; _sub_          ; 100010 ; Unsigned Binary                              ;
-; _and_          ; 100100 ; Unsigned Binary                              ;
-; _or_           ; 100101 ; Unsigned Binary                              ;
-; _slt_          ; 101010 ; Unsigned Binary                              ;
-; _xor_          ; 100110 ; Unsigned Binary                              ;
-; _nor_          ; 100111 ; Unsigned Binary                              ;
-; _sll_          ; 000000 ; Unsigned Binary                              ;
-; _srl_          ; 000010 ; Unsigned Binary                              ;
-; _jr_           ; 001000 ; Unsigned Binary                              ;
-+----------------+--------+----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: decode:dcd|mux2x1:RFMux ;
-+----------------+-------+---------------------------------------------+
-; Parameter Name ; Value ; Type                                        ;
-+----------------+-------+---------------------------------------------+
-; size           ; 5     ; Signed Integer                              ;
-+----------------+-------+---------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: decode:dcd|mux2x1:RegWriteMux ;
-+----------------+-------+---------------------------------------------------+
-; Parameter Name ; Value ; Type                                              ;
-+----------------+-------+---------------------------------------------------+
-; size           ; 5     ; Signed Integer                                    ;
-+----------------+-------+---------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: decode:dcd|adder:branchAdder ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; size           ; 10    ; Signed Integer                                   ;
-+----------------+-------+--------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: decode:dcd|mux4x1:FrdAmux ;
-+----------------+-------+-----------------------------------------------+
-; Parameter Name ; Value ; Type                                          ;
-+----------------+-------+-----------------------------------------------+
-; size           ; 32    ; Signed Integer                                ;
-+----------------+-------+-----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: decode:dcd|mux4x1:FrdBmux ;
-+----------------+-------+-----------------------------------------------+
-; Parameter Name ; Value ; Type                                          ;
-+----------------+-------+-----------------------------------------------+
-; size           ; 32    ; Signed Integer                                ;
-+----------------+-------+-----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------+
-; Parameter Settings for User Entity Instance: IDEX:idex ;
-+----------------+-------+-------------------------------+
-; Parameter Name ; Value ; Type                          ;
-+----------------+-------+-------------------------------+
-; size           ; 136   ; Signed Integer                ;
-+----------------+-------+-------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: execute:exec|mux4x1:frwrda ;
-+----------------+-------+------------------------------------------------+
-; Parameter Name ; Value ; Type                                           ;
-+----------------+-------+------------------------------------------------+
-; size           ; 32    ; Signed Integer                                 ;
-+----------------+-------+------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: execute:exec|mux4x1:frwrdb ;
-+----------------+-------+------------------------------------------------+
-; Parameter Name ; Value ; Type                                           ;
-+----------------+-------+------------------------------------------------+
-; size           ; 32    ; Signed Integer                                 ;
-+----------------+-------+------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: execute:exec|mux2x1:ALUMux ;
-+----------------+-------+------------------------------------------------+
-; Parameter Name ; Value ; Type                                           ;
-+----------------+-------+------------------------------------------------+
-; size           ; 32    ; Signed Integer                                 ;
-+----------------+-------+------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++---------------------------------------------------------------+
+; Port Connectivity Checks: "pipeline:uut|execute:exec|ALU:alu" ;
++------+--------+----------+------------------------------------+
+; Port ; Type   ; Severity ; Details                            ;
++------+--------+----------+------------------------------------+
+; zero ; Output ; Info     ; Explicitly unconnected             ;
++------+--------+----------+------------------------------------+
 
 
 +---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: execute:exec|ALU:alu   ;
-+----------------+----------------------------------+-----------------+
-; Parameter Name ; Value                            ; Type            ;
-+----------------+----------------------------------+-----------------+
-; data_width     ; 32                               ; Signed Integer  ;
-; sel_width      ; 4                                ; Signed Integer  ;
-; _AND           ; 00000000000000000000000000000010 ; Unsigned Binary ;
-; _SUB           ; 00000000000000000000000000000001 ; Unsigned Binary ;
-; _ADD           ; 00000000000000000000000000000000 ; Unsigned Binary ;
-; _OR            ; 00000000000000000000000000000011 ; Unsigned Binary ;
-; _SLT           ; 00000000000000000000000000000100 ; Unsigned Binary ;
-; _XOR           ; 00000000000000000000000000000101 ; Unsigned Binary ;
-; _NOR           ; 00000000000000000000000000000110 ; Unsigned Binary ;
-; _SLL           ; 00000000000000000000000000000111 ; Unsigned Binary ;
-; _SLR           ; 00000000000000000000000000001000 ; Unsigned Binary ;
-+----------------+----------------------------------+-----------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+; Port Connectivity Checks: "pipeline:uut|execute:exec|mux4x1:frwrdb" ;
++------+-------+----------+-------------------------------------------+
+; Port ; Type  ; Severity ; Details                                   ;
++------+-------+----------+-------------------------------------------+
+; in4  ; Input ; Info     ; Stuck at GND                              ;
++------+-------+----------+-------------------------------------------+
 
 
-+----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: EXMEM:exmem ;
-+----------------+-------+---------------------------------+
-; Parameter Name ; Value ; Type                            ;
-+----------------+-------+---------------------------------+
-; size           ; 84    ; Signed Integer                  ;
-+----------------+-------+---------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++---------------------------------------------------------------------+
+; Port Connectivity Checks: "pipeline:uut|execute:exec|mux4x1:frwrda" ;
++------+-------+----------+-------------------------------------------+
+; Port ; Type  ; Severity ; Details                                   ;
++------+-------+----------+-------------------------------------------+
+; in4  ; Input ; Info     ; Stuck at GND                              ;
++------+-------+----------+-------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: dataMemory:DM|altsyncram:altsyncram_component ;
-+------------------------------------+----------------------------------+--------------------+
-; Parameter Name                     ; Value                            ; Type               ;
-+------------------------------------+----------------------------------+--------------------+
-; BYTE_SIZE_BLOCK                    ; 8                                ; Untyped            ;
-; AUTO_CARRY_CHAINS                  ; ON                               ; AUTO_CARRY         ;
-; IGNORE_CARRY_BUFFERS               ; OFF                              ; IGNORE_CARRY       ;
-; AUTO_CASCADE_CHAINS                ; ON                               ; AUTO_CASCADE       ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                              ; IGNORE_CASCADE     ;
-; WIDTH_BYTEENA                      ; 1                                ; Untyped            ;
-; OPERATION_MODE                     ; SINGLE_PORT                      ; Untyped            ;
-; WIDTH_A                            ; 32                               ; Signed Integer     ;
-; WIDTHAD_A                          ; 8                                ; Signed Integer     ;
-; NUMWORDS_A                         ; 256                              ; Signed Integer     ;
-; OUTDATA_REG_A                      ; UNREGISTERED                     ; Untyped            ;
-; ADDRESS_ACLR_A                     ; NONE                             ; Untyped            ;
-; OUTDATA_ACLR_A                     ; NONE                             ; Untyped            ;
-; WRCONTROL_ACLR_A                   ; NONE                             ; Untyped            ;
-; INDATA_ACLR_A                      ; NONE                             ; Untyped            ;
-; BYTEENA_ACLR_A                     ; NONE                             ; Untyped            ;
-; WIDTH_B                            ; 1                                ; Untyped            ;
-; WIDTHAD_B                          ; 1                                ; Untyped            ;
-; NUMWORDS_B                         ; 1                                ; Untyped            ;
-; INDATA_REG_B                       ; CLOCK1                           ; Untyped            ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                           ; Untyped            ;
-; RDCONTROL_REG_B                    ; CLOCK1                           ; Untyped            ;
-; ADDRESS_REG_B                      ; CLOCK1                           ; Untyped            ;
-; OUTDATA_REG_B                      ; UNREGISTERED                     ; Untyped            ;
-; BYTEENA_REG_B                      ; CLOCK1                           ; Untyped            ;
-; INDATA_ACLR_B                      ; NONE                             ; Untyped            ;
-; WRCONTROL_ACLR_B                   ; NONE                             ; Untyped            ;
-; ADDRESS_ACLR_B                     ; NONE                             ; Untyped            ;
-; OUTDATA_ACLR_B                     ; NONE                             ; Untyped            ;
-; RDCONTROL_ACLR_B                   ; NONE                             ; Untyped            ;
-; BYTEENA_ACLR_B                     ; NONE                             ; Untyped            ;
-; WIDTH_BYTEENA_A                    ; 1                                ; Signed Integer     ;
-; WIDTH_BYTEENA_B                    ; 1                                ; Untyped            ;
-; RAM_BLOCK_TYPE                     ; M9K                              ; Untyped            ;
-; BYTE_SIZE                          ; 8                                ; Untyped            ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                        ; Untyped            ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_WITH_NBE_READ           ; Untyped            ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ             ; Untyped            ;
-; INIT_FILE                          ; dataMemoryInitializationFile.mif ; Untyped            ;
-; INIT_FILE_LAYOUT                   ; PORT_A                           ; Untyped            ;
-; MAXIMUM_DEPTH                      ; 0                                ; Untyped            ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS                           ; Untyped            ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL                           ; Untyped            ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                           ; Untyped            ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                           ; Untyped            ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                  ; Untyped            ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                  ; Untyped            ;
-; ENABLE_ECC                         ; FALSE                            ; Untyped            ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                            ; Untyped            ;
-; WIDTH_ECCSTATUS                    ; 3                                ; Untyped            ;
-; DEVICE_FAMILY                      ; MAX 10                           ; Untyped            ;
-; CBXI_PARAMETER                     ; altsyncram_8km1                  ; Untyped            ;
-+------------------------------------+----------------------------------+--------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "pipeline:uut|decode:dcd|mux4x1:FrdBmux" ;
++------+-------+----------+------------------------------------------+
+; Port ; Type  ; Severity ; Details                                  ;
++------+-------+----------+------------------------------------------+
+; in4  ; Input ; Info     ; Stuck at GND                             ;
++------+-------+----------+------------------------------------------+
 
 
-+----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MEMWB:memwb ;
-+----------------+-------+---------------------------------+
-; Parameter Name ; Value ; Type                            ;
-+----------------+-------+---------------------------------+
-; size           ; 82    ; Signed Integer                  ;
-+----------------+-------+---------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "pipeline:uut|decode:dcd|mux4x1:FrdAmux" ;
++------+-------+----------+------------------------------------------+
+; Port ; Type  ; Severity ; Details                                  ;
++------+-------+----------+------------------------------------------+
+; in4  ; Input ; Info     ; Stuck at GND                             ;
++------+-------+----------+------------------------------------------+
 
 
-+-----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mux2x1:WBMux ;
-+----------------+-------+----------------------------------+
-; Parameter Name ; Value ; Type                             ;
-+----------------+-------+----------------------------------+
-; size           ; 32    ; Signed Integer                   ;
-+----------------+-------+----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mux2x1:WritePc ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; size           ; 32    ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: IDEX:idex|altshift_taps:Q_rtl_0 ;
-+----------------+----------------+------------------------------------------------+
-; Parameter Name ; Value          ; Type                                           ;
-+----------------+----------------+------------------------------------------------+
-; WIDTH_BYTEENA  ; 1              ; Untyped                                        ;
-; NUMBER_OF_TAPS ; 1              ; Untyped                                        ;
-; TAP_DISTANCE   ; 3              ; Untyped                                        ;
-; WIDTH          ; 11             ; Untyped                                        ;
-; POWER_UP_STATE ; CLEARED        ; Untyped                                        ;
-; CBXI_PARAMETER ; shift_taps_vul ; Untyped                                        ;
-+----------------+----------------+------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------------------------+
-; altsyncram Parameter Settings by Entity Instance                                                             ;
-+-------------------------------------------+------------------------------------------------------------------+
-; Name                                      ; Value                                                            ;
-+-------------------------------------------+------------------------------------------------------------------+
-; Number of entity instances                ; 2                                                                ;
-; Entity Instance                           ; fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component ;
-;     -- OPERATION_MODE                     ; ROM                                                              ;
-;     -- WIDTH_A                            ; 32                                                               ;
-;     -- NUMWORDS_A                         ; 1024                                                             ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                     ;
-;     -- WIDTH_B                            ; 1                                                                ;
-;     -- NUMWORDS_B                         ; 1                                                                ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                                           ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                     ;
-;     -- RAM_BLOCK_TYPE                     ; M9K                                                              ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                        ;
-; Entity Instance                           ; dataMemory:DM|altsyncram:altsyncram_component                    ;
-;     -- OPERATION_MODE                     ; SINGLE_PORT                                                      ;
-;     -- WIDTH_A                            ; 32                                                               ;
-;     -- NUMWORDS_A                         ; 256                                                              ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                     ;
-;     -- WIDTH_B                            ; 1                                                                ;
-;     -- NUMWORDS_B                         ; 1                                                                ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                                           ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                     ;
-;     -- RAM_BLOCK_TYPE                     ; M9K                                                              ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                        ;
-+-------------------------------------------+------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------+
-; altshift_taps Parameter Settings by Entity Instance          ;
-+----------------------------+---------------------------------+
-; Name                       ; Value                           ;
-+----------------------------+---------------------------------+
-; Number of entity instances ; 1                               ;
-; Entity Instance            ; IDEX:idex|altshift_taps:Q_rtl_0 ;
-;     -- NUMBER_OF_TAPS      ; 1                               ;
-;     -- TAP_DISTANCE        ; 3                               ;
-;     -- WIDTH               ; 11                              ;
-+----------------------------+---------------------------------+
-
-
-+-----------------------------------------------+
-; Port Connectivity Checks: "mux2x1:WritePc"    ;
-+-------------+-------+----------+--------------+
-; Port        ; Type  ; Severity ; Details      ;
-+-------------+-------+----------+--------------+
-; in2[31..10] ; Input ; Info     ; Stuck at GND ;
-+-------------+-------+----------+--------------+
-
-
-+---------------------------------------------------+
-; Port Connectivity Checks: "execute:exec|ALU:alu"  ;
-+------+--------+----------+------------------------+
-; Port ; Type   ; Severity ; Details                ;
-+------+--------+----------+------------------------+
-; zero ; Output ; Info     ; Explicitly unconnected ;
-+------+--------+----------+------------------------+
-
-
-+--------------------------------------------------------+
-; Port Connectivity Checks: "execute:exec|mux4x1:frwrdb" ;
-+------+-------+----------+------------------------------+
-; Port ; Type  ; Severity ; Details                      ;
-+------+-------+----------+------------------------------+
-; in4  ; Input ; Info     ; Stuck at GND                 ;
-+------+-------+----------+------------------------------+
-
-
-+--------------------------------------------------------+
-; Port Connectivity Checks: "execute:exec|mux4x1:frwrda" ;
-+------+-------+----------+------------------------------+
-; Port ; Type  ; Severity ; Details                      ;
-+------+-------+----------+------------------------------+
-; in4  ; Input ; Info     ; Stuck at GND                 ;
-+------+-------+----------+------------------------------+
-
-
-+-------------------------------------------------------+
-; Port Connectivity Checks: "decode:dcd|mux4x1:FrdBmux" ;
-+------+-------+----------+-----------------------------+
-; Port ; Type  ; Severity ; Details                     ;
-+------+-------+----------+-----------------------------+
-; in4  ; Input ; Info     ; Stuck at GND                ;
-+------+-------+----------+-----------------------------+
-
-
-+-------------------------------------------------------+
-; Port Connectivity Checks: "decode:dcd|mux4x1:FrdAmux" ;
-+------+-------+----------+-----------------------------+
-; Port ; Type  ; Severity ; Details                     ;
-+------+-------+----------+-----------------------------+
-; in4  ; Input ; Info     ; Stuck at GND                ;
-+------+-------+----------+-----------------------------+
-
-
-+-----------------------------------------------------------+
-; Port Connectivity Checks: "decode:dcd|mux2x1:RegWriteMux" ;
-+------+-------+----------+---------------------------------+
-; Port ; Type  ; Severity ; Details                         ;
-+------+-------+----------+---------------------------------+
-; in2  ; Input ; Info     ; Stuck at VCC                    ;
-+------+-------+----------+---------------------------------+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "pipeline:uut|decode:dcd|mux2x1:RegWriteMux" ;
++------+-------+----------+----------------------------------------------+
+; Port ; Type  ; Severity ; Details                                      ;
++------+-------+----------+----------------------------------------------+
+; in2  ; Input ; Info     ; Stuck at VCC                                 ;
++------+-------+----------+----------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "IFID:ifid"                                                                               ;
+; Port Connectivity Checks: "pipeline:uut|IFID:ifid"                                                                  ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port      ; Type   ; Severity ; Details                                                                             ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
@@ -959,63 +679,33 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------+
-; Port Connectivity Checks: "fetch:fetch|adder:PCAdder" ;
-+-----------+-------+----------+------------------------+
-; Port      ; Type  ; Severity ; Details                ;
-+-----------+-------+----------+------------------------+
-; in2[9..1] ; Input ; Info     ; Stuck at GND           ;
-; in2[0]    ; Input ; Info     ; Stuck at VCC           ;
-+-----------+-------+----------+------------------------+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "pipeline:uut|fetch:fetch|adder:PCAdder" ;
++-----------+-------+----------+-------------------------------------+
+; Port      ; Type  ; Severity ; Details                             ;
++-----------+-------+----------+-------------------------------------+
+; in2[9..1] ; Input ; Info     ; Stuck at GND                        ;
+; in2[0]    ; Input ; Info     ; Stuck at VCC                        ;
++-----------+-------+----------+-------------------------------------+
 
 
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 12                          ;
-; cycloneiii_ff         ; 1328                        ;
-;     CLR               ; 232                         ;
-;     CLR SCLR          ; 9                           ;
-;     CLR SCLR SLD      ; 16                          ;
-;     CLR SLD           ; 2                           ;
-;     ENA CLR           ; 1065                        ;
-;     plain             ; 4                           ;
-; cycloneiii_lcell_comb ; 2649                        ;
-;     arith             ; 84                          ;
-;         2 data inputs ; 13                          ;
-;         3 data inputs ; 71                          ;
-;     normal            ; 2565                        ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 23                          ;
-;         2 data inputs ; 65                          ;
-;         3 data inputs ; 379                         ;
-;         4 data inputs ; 2096                        ;
-; cycloneiii_ram_block  ; 75                          ;
-;                       ;                             ;
-; Max LUT depth         ; 14.70                       ;
-; Average LUT depth     ; 11.23                       ;
-+-----------------------+-----------------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pipeline:uut"                                                                       ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; PC   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:05     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
+Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Mon Nov 11 00:34:14 2024
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SecondPhasePipeline -c pipeline
+    Info: Processing started: Mon Nov 11 01:27:41 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SecondPhasePipeline -c pipeline --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file datamemory.v
@@ -1058,15 +748,19 @@ Info (12021): Found 1 design units, including 1 entities, in source file adder.v
     Info (12023): Found entity 1: adder File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/adder.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file instructionmemory.v
     Info (12023): Found entity 1: instructionMemory File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/instructionMemory.v Line: 40
-Info (12127): Elaborating entity "pipeline" for the top level hierarchy
-Info (12128): Elaborating entity "fetch" for hierarchy "fetch:fetch" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 25
-Info (12128): Elaborating entity "mux2x1" for hierarchy "fetch:fetch|mux2x1:PCMux" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/fetch.v Line: 11
-Info (12128): Elaborating entity "programCounter" for hierarchy "fetch:fetch|programCounter:pc" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/fetch.v Line: 17
-Info (12128): Elaborating entity "adder" for hierarchy "fetch:fetch|adder:PCAdder" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/fetch.v Line: 18
-Info (12128): Elaborating entity "instructionMemory" for hierarchy "fetch:fetch|instructionMemory:IM" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/fetch.v Line: 19
-Info (12128): Elaborating entity "altsyncram" for hierarchy "fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/instructionMemory.v Line: 82
-Info (12130): Elaborated megafunction instantiation "fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/instructionMemory.v Line: 82
-Info (12133): Instantiated megafunction "fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/instructionMemory.v Line: 82
+Warning (10236): Verilog HDL Implicit Net warning at decode.v(69): created implicit net for "branch" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v Line: 69
+Info (12127): Elaborating entity "testbench" for the top level hierarchy
+Warning (10175): Verilog HDL warning at testbench.v(12): ignoring unsupported system task File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/testbench.v Line: 12
+Warning (10755): Verilog HDL warning at testbench.v(15): assignments to clk create a combinational loop File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/testbench.v Line: 15
+Info (12128): Elaborating entity "pipeline" for hierarchy "pipeline:uut" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/testbench.v Line: 17
+Info (12128): Elaborating entity "fetch" for hierarchy "pipeline:uut|fetch:fetch" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 25
+Info (12128): Elaborating entity "mux2x1" for hierarchy "pipeline:uut|fetch:fetch|mux2x1:PCMux" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/fetch.v Line: 11
+Info (12128): Elaborating entity "programCounter" for hierarchy "pipeline:uut|fetch:fetch|programCounter:pc" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/fetch.v Line: 17
+Info (12128): Elaborating entity "adder" for hierarchy "pipeline:uut|fetch:fetch|adder:PCAdder" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/fetch.v Line: 18
+Info (12128): Elaborating entity "instructionMemory" for hierarchy "pipeline:uut|fetch:fetch|instructionMemory:IM" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/fetch.v Line: 19
+Info (12128): Elaborating entity "altsyncram" for hierarchy "pipeline:uut|fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/instructionMemory.v Line: 82
+Info (12130): Elaborated megafunction instantiation "pipeline:uut|fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/instructionMemory.v Line: 82
+Info (12133): Instantiated megafunction "pipeline:uut|fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/instructionMemory.v Line: 82
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -1084,26 +778,26 @@ Info (12133): Instantiated megafunction "fetch:fetch|instructionMemory:IM|altsyn
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_bce1.tdf
     Info (12023): Found entity 1: altsyncram_bce1 File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/altsyncram_bce1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_bce1" for hierarchy "fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component|altsyncram_bce1:auto_generated" File: c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "IFID" for hierarchy "IFID:ifid" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 29
-Info (12128): Elaborating entity "decode" for hierarchy "decode:dcd" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 36
-Info (12128): Elaborating entity "controlUnit" for hierarchy "decode:dcd|controlUnit:CU" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v Line: 42
-Info (12128): Elaborating entity "mux2x1" for hierarchy "decode:dcd|mux2x1:RFMux" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v Line: 48
-Info (12128): Elaborating entity "registerFile" for hierarchy "decode:dcd|registerFile:RF" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v Line: 54
-Info (12128): Elaborating entity "SignExtender" for hierarchy "decode:dcd|SignExtender:SignExtend" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v Line: 56
-Info (12128): Elaborating entity "mux4x1" for hierarchy "decode:dcd|mux4x1:FrdAmux" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v Line: 60
-Info (12128): Elaborating entity "comparator" for hierarchy "decode:dcd|comparator:cmp" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v Line: 70
-Info (12128): Elaborating entity "hazard_detection" for hierarchy "hazard_detection:HDU" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 47
-Info (12128): Elaborating entity "IDEX" for hierarchy "IDEX:idex" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 52
-Info (12128): Elaborating entity "execute" for hierarchy "execute:exec" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 61
-Info (12128): Elaborating entity "mux2x1" for hierarchy "execute:exec|mux2x1:ALUMux" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/execute.v Line: 20
-Info (12128): Elaborating entity "ALU" for hierarchy "execute:exec|ALU:alu" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/execute.v Line: 22
-Info (12128): Elaborating entity "forwarding_unit" for hierarchy "forwarding_unit:fw" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 73
-Info (12128): Elaborating entity "EXMEM" for hierarchy "EXMEM:exmem" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 82
-Info (12128): Elaborating entity "dataMemory" for hierarchy "dataMemory:DM" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 84
-Info (12128): Elaborating entity "altsyncram" for hierarchy "dataMemory:DM|altsyncram:altsyncram_component" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/dataMemory.v Line: 89
-Info (12130): Elaborated megafunction instantiation "dataMemory:DM|altsyncram:altsyncram_component" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/dataMemory.v Line: 89
-Info (12133): Instantiated megafunction "dataMemory:DM|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/dataMemory.v Line: 89
+Info (12128): Elaborating entity "altsyncram_bce1" for hierarchy "pipeline:uut|fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component|altsyncram_bce1:auto_generated" File: c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "IFID" for hierarchy "pipeline:uut|IFID:ifid" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 29
+Info (12128): Elaborating entity "decode" for hierarchy "pipeline:uut|decode:dcd" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 36
+Info (12128): Elaborating entity "controlUnit" for hierarchy "pipeline:uut|decode:dcd|controlUnit:CU" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v Line: 42
+Info (12128): Elaborating entity "mux2x1" for hierarchy "pipeline:uut|decode:dcd|mux2x1:RFMux" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v Line: 48
+Info (12128): Elaborating entity "registerFile" for hierarchy "pipeline:uut|decode:dcd|registerFile:RF" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v Line: 54
+Info (12128): Elaborating entity "SignExtender" for hierarchy "pipeline:uut|decode:dcd|SignExtender:SignExtend" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v Line: 56
+Info (12128): Elaborating entity "mux4x1" for hierarchy "pipeline:uut|decode:dcd|mux4x1:FrdAmux" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v Line: 60
+Info (12128): Elaborating entity "comparator" for hierarchy "pipeline:uut|decode:dcd|comparator:cmp" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v Line: 71
+Info (12128): Elaborating entity "hazard_detection" for hierarchy "pipeline:uut|hazard_detection:HDU" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 47
+Info (12128): Elaborating entity "IDEX" for hierarchy "pipeline:uut|IDEX:idex" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 52
+Info (12128): Elaborating entity "execute" for hierarchy "pipeline:uut|execute:exec" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 61
+Info (12128): Elaborating entity "mux2x1" for hierarchy "pipeline:uut|execute:exec|mux2x1:ALUMux" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/execute.v Line: 20
+Info (12128): Elaborating entity "ALU" for hierarchy "pipeline:uut|execute:exec|ALU:alu" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/execute.v Line: 22
+Info (12128): Elaborating entity "forwarding_unit" for hierarchy "pipeline:uut|forwarding_unit:fw" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 73
+Info (12128): Elaborating entity "EXMEM" for hierarchy "pipeline:uut|EXMEM:exmem" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 82
+Info (12128): Elaborating entity "dataMemory" for hierarchy "pipeline:uut|dataMemory:DM" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 84
+Info (12128): Elaborating entity "altsyncram" for hierarchy "pipeline:uut|dataMemory:DM|altsyncram:altsyncram_component" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/dataMemory.v Line: 89
+Info (12130): Elaborated megafunction instantiation "pipeline:uut|dataMemory:DM|altsyncram:altsyncram_component" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/dataMemory.v Line: 89
+Info (12133): Instantiated megafunction "pipeline:uut|dataMemory:DM|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/dataMemory.v Line: 89
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "dataMemoryInitializationFile.mif"
@@ -1122,51 +816,21 @@ Info (12133): Instantiated megafunction "dataMemory:DM|altsyncram:altsyncram_com
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_8km1.tdf
     Info (12023): Found entity 1: altsyncram_8km1 File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/altsyncram_8km1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_8km1" for hierarchy "dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated" File: c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "MEMWB" for hierarchy "MEMWB:memwb" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 90
-Info (19000): Inferred 1 megafunctions from design logic
-    Info (276034): Inferred altshift_taps megafunction from the following design logic: "IDEX:idex|Q_rtl_0"
-        Info (286033): Parameter NUMBER_OF_TAPS set to 1
-        Info (286033): Parameter TAP_DISTANCE set to 3
-        Info (286033): Parameter WIDTH set to 11
-Info (12130): Elaborated megafunction instantiation "IDEX:idex|altshift_taps:Q_rtl_0"
-Info (12133): Instantiated megafunction "IDEX:idex|altshift_taps:Q_rtl_0" with the following parameter:
-    Info (12134): Parameter "NUMBER_OF_TAPS" = "1"
-    Info (12134): Parameter "TAP_DISTANCE" = "3"
-    Info (12134): Parameter "WIDTH" = "11"
-Info (12021): Found 1 design units, including 1 entities, in source file db/shift_taps_vul.tdf
-    Info (12023): Found entity 1: shift_taps_vul File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/shift_taps_vul.tdf Line: 31
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_dj51.tdf
-    Info (12023): Found entity 1: altsyncram_dj51 File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/altsyncram_dj51.tdf Line: 28
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_oed.tdf
-    Info (12023): Found entity 1: add_sub_oed File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/add_sub_oed.tdf Line: 23
-Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_s3f.tdf
-    Info (12023): Found entity 1: cntr_s3f File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/cntr_s3f.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_erb.tdf
-    Info (12023): Found entity 1: cmpr_erb File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/cmpr_erb.tdf Line: 23
-Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_fjg.tdf
-    Info (12023): Found entity 1: cntr_fjg File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/cntr_fjg.tdf Line: 26
-Info (13000): Registers with preset signals will power-up high File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/programCounter.v Line: 16
-Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
-Info (286030): Timing-Driven Synthesis is running
+Info (12128): Elaborating entity "altsyncram_8km1" for hierarchy "pipeline:uut|dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated" File: c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "MEMWB" for hierarchy "pipeline:uut|MEMWB:memwb" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 90
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "clk" is missing source, defaulting to GND File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/testbench.v Line: 4
 Info (144001): Generated suppressed messages file C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.map.smsg
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3863 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 10 output pins
-    Info (21061): Implemented 3776 logic cells
-    Info (21064): Implemented 75 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4824 megabytes
-    Info: Processing ended: Mon Nov 11 00:34:25 2024
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:17
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4744 megabytes
+    Info: Processing ended: Mon Nov 11 01:27:46 2024
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:12
 
 
-+------------------------------------------+
-; Analysis & Synthesis Suppressed Messages ;
-+------------------------------------------+
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
 The suppressed messages can be found in C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.map.smsg.
 
 
