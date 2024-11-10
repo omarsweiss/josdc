@@ -105,6 +105,63 @@ def assemble(inp):
   else:
     return 'instruction not found'
 
+def labeling(instructions):
+  labels = {}
+  labeled = []
+  for i,instruction in enumerate(instructions):
+    first = instruction.split()[0]
+    if ':' in first:
+      labels[first[:-1]] = i
+      labeled.append(' '.join(instruction.split()[1:]))
+    else:
+      labeled.append(instruction)
+  for i,instruction in enumerate(labeled):
+    if instruction.split()[0] in ['j','jal']:
+        if instruction.split()[-1] in labels.keys():
+            labeled[i] = ' '.join(instruction.split()[:-1])+' '+str(labels[instruction.split()[-1]])
+    if instruction.split()[0] in ['bne','beq']:
+        if instruction.split()[-1] in labels.keys():
+            labeled[i] = ' '.join(instruction.split()[:-1])+' '+str(labels[instruction.split()[-1]] - i - 1)
+
+  return labeled
+
+      
+def unpseudo(instructions):
+    unpseudoed = []
+    for instruction in instructions.splitlines():
+        label = ''
+        
+        instruction = instruction.replace(",", "").strip()
+        instruction = instruction.split()
+        if ":" in instruction[0]:
+          label = str(instruction[0]) + ' '
+          first = str(instruction[1])
+          instruction = instruction[1:]
+        else:
+          first = str(instruction[0])
+        if first == 'sgt':
+            unpseudoed.append(label +'slt '+str(instruction[1])+' '+str(instruction[3])+' '+str(instruction[2]))
+        elif first == 'li':
+            unpseudoed.append(label +'ori '+str(instruction[1])+' '+'$zero '+str(instruction[1]))
+        elif first == 'blt':
+            unpseudoed.append(label +'slt ' + '$at ' + str(instruction[1])+' '+str(instruction[2]))
+            unpseudoed.append('bne ' + '$at $zero '+ str(instruction[3]))
+        elif first == 'ble':
+            unpseudoed.append(label +'slt ' + '$at ' + str(instruction[2])+' '+str(instruction[1]))
+            unpseudoed.append('beq ' + '$at $zero '+ str(instruction[3]))
+        elif first == 'bgt':
+            unpseudoed.append(label +'slt ' + '$at ' + str(instruction[2])+' '+str(instruction[1]))
+            unpseudoed.append('bne ' + '$at $zero '+ str(instruction[3]))
+        elif first == 'bgt':
+            unpseudoed.append(label +'slt ' + '$at ' + str(instruction[1])+' '+str(instruction[2]))
+            unpseudoed.append('beq ' + '$at $zero '+ str(instruction[3]))
+        else:
+            unpseudoed.append(label + ' '.join(instruction))
+    return unpseudoed
+  
+
+
+
 instructions = """addi $t0, $zero, 10   
     addi $t1, $zero, 20
     add $t2, $t0, $t1   
@@ -121,17 +178,20 @@ instructions = """addi $t0, $zero, 10
     srl $s3, $t1, 1      
     sw $t2, 4($zero)    
     lw $t3, 4($zero)
-    beq $t0, $t1, 1
-    bne $t0, $t1, 2
-    addi $a0, $zero, 1              
-    j 25                  
-    addi $a0, $zero, 2               
-    jal 23              
-    j 25              
-    addi $v0, $zero, 4      
+    beq $t0, $t1, eq    
+    bne $t0, $t1, ne    
+    eq: addi $a0, $zero, 1             
+    j end                  
+    ne: addi $a0, $zero, 2               
+    jal label              
+    j end              
+    label: addi $v0, $zero, 4      
     jr $ra                  
-    addi $t0, $zero, 0 """
+    end: addi $t0, $zero, 0 """
 i = 0 
-for instruction in instructions.splitlines():
-  print(f"{i} : {assemble(instruction.strip())};")
+
+instructions = labeling(unpseudo(instructions.strip()))
+
+for instruction in instructions:
+  print(f"{i} : {assemble(instruction)};")
   i += 1

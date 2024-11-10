@@ -2,7 +2,7 @@
 
 # Phase 2:
 
-1. Fix Assembler : Check(0:Member)
+1. Fix Assembler : Check(1:amr)
 
 2. Hazard & Forwarding check(0:Member)
 
