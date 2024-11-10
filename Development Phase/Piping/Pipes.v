@@ -5,7 +5,7 @@ output [size-1:0] Q;
 reg [size-1:0] Q;
 always @(posedge clk)
 	begin
-     if (reset == 1)
+     if (~reset)
        Q=0;
      else 
        Q=D;
@@ -20,7 +20,7 @@ output [size-1:0] Q;
 reg [size-1:0] Q;
 always @(posedge clk)
 	begin
-     if (reset == 1)
+     if (~reset)
        Q=0;
      else
        Q=D;
@@ -35,7 +35,7 @@ output [size-1:0] Q;
 reg [size-1:0] Q;
 always @(posedge clk)
 	begin
-     if (reset == 1)
+     if (~reset)
        Q=0;
      else 
        Q=D;
@@ -49,7 +49,7 @@ output [size-1:0] Q;
 reg [size-1:0] Q;
 always @(posedge clk)
 	begin
-     if (reset == 1)
+     if (~reset)
        Q=0;
      else 
        Q=D;

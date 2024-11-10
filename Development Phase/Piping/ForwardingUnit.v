@@ -1,12 +1,12 @@
 module forwarding_unit(
-  input [4:0] RS1_IDEX,
-  input [4:0] RS2_IDEX,
-  input [4:0] RD_EXMEM,
-  input [4:0] RD_MEMWB,
+  input [4:0] rs_ex,
+  input [4:0] rt_ex,
+  input [4:0] dest_mem,
+  input [4:0] dest_wb,
   
   input rst,
-  input writeBack_EXMEM,
-  input writeBack_MEMWB,
+  input regwrite_mem,
+  input regwrite_wb,
   output reg [1:0] ForwardA,
   output reg [1:0] ForwardB
 
@@ -14,7 +14,7 @@ module forwarding_unit(
 
   always @(*)
     begin
-    if (rst) begin
+    if (~rst) begin
       ForwardA <= 2'b00;
       ForwardB <= 2'b00;
 
@@ -24,10 +24,12 @@ module forwarding_unit(
 	 
 		begin
       // ForwardA logic
-      if((writeBack_EXMEM && (RD_EXMEM != 5'b0) && (RD_EXMEM == RS1_IDEX)))
+      if((regwrite_mem && (dest_mem != 5'b0) && (dest_mem == rs_ex)))
         ForwardA <= 2'b10;
-      else if (writeBack_MEMWB && (RD_MEMWB != 5'b0) &&
-          !((writeBack_EXMEM && (RD_EXMEM != 5'b0) && (RD_EXMEM != RS1_IDEX)))&& (RD_MEMWB== RS1_IDEX))
+		  
+      else if (regwrite_wb && (dest_wb != 5'b0) &&
+          !((regwrite_mem && (dest_mem != 5'b0) && (dest_mem != rs_ex)))&& (dest_wb== rs_ex))
+			 
         ForwardA <= 2'b01;
       else
         ForwardA <= 2'b00;
@@ -37,10 +39,12 @@ module forwarding_unit(
 		
 		begin
       // ForwardB logic
-      if((writeBack_EXMEM && (RD_EXMEM != 5'b0) && (RD_EXMEM == RS2_IDEX)))
+      if((regwrite_mem && (dest_mem != 5'b0) && (dest_mem == rt_ex)))
         ForwardB <= 2'b10;
-      else if (writeBack_MEMWB && (RD_MEMWB != 5'b0) &&
-          !((writeBack_EXMEM && (RD_EXMEM != 5'b0) && (RD_EXMEM != RS2_IDEX))) && (RD_MEMWB== RS2_IDEX))
+		  
+      else if (regwrite_wb && (dest_wb != 5'b0) &&
+          !((regwrite_mem && (dest_mem != 5'b0) && (dest_mem != rt_ex))) && (dest_wb== rt_ex))
+			 
         ForwardB <= 2'b01;
       else
         ForwardB <= 2'b00;

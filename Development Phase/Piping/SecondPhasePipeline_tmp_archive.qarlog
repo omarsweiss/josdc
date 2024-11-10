@@ -1,0 +1,48 @@
+Quartus Prime Archive log --	C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/SecondPhasePipeline_tmp_archive.qarlog
+
+Archive:	C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/SecondPhasePipeline_tmp_archive.qar
+Date:		Sun Nov 10 18:04:40 2024
+Quartus Prime		22.1std.2 Build 922 07/20/2023 SC Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ALU.v
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ANDGate.v
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ForwardingUnit.v
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/Pipes.v
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/SecondPhasePipeline.qpf
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/SingleCycle.out.sdc
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/SingleCycle.qsf
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/SingleCycle_assignment_defaults.qdf
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/adder.v
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/comparator.v
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/controlUnit.v
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/dataMemory.qip
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/dataMemory.v
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/dataMemoryInitializationFile.mif
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/dataMemory_bb.v
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/dataMemory_inst.v
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/execute.v
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/fetch.v
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/hazard_detection.v
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/instructionMemory.qip
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/instructionMemory.v
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/instructionMemoryInitializationFile.mif
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/instructionMemory_bb.v
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/instructionMemory_syn.v
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/mux2x1.v
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/programCounter.v
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/registerFile.v
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/signextender.v
+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/testbench.v
+	======= Total: 31 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Sun Nov 10 18:04:42 2024
+Source archive file:	C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/SecondPhasePipeline_tmp_archive.qar
+Archive was extracted into	C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Pipings/
+		 - successfully.

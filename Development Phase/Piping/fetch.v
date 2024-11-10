@@ -1,7 +1,9 @@
 module fetch(
-input clk, input rst, input [9:0] reg1Addr, input [9:0] jaddress,
-input PCsrc, input jr, input jump, input [9:0] adderResult,
-output [9:0] PCPlus1, output [9:0] PC, output [31:0] instruction);
+input clk, rst, PCsrc, jr, jump,
+input [9:0] reg1Addr, jaddress,adderResult,
+
+output [9:0] PCPlus1, PC, 
+output [31:0] instruction);
 
 wire [9:0] branchAddress, jrAddress, nextPC;  
 

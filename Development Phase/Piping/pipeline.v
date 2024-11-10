@@ -51,6 +51,18 @@ execute exec(
     .aluRizz_EX(aluRes_EX), .forwardBRizz_EX(forwardBRes_EX)
 );
 
+forwarding_unit fw(
+  .rs_ex(rs_EX),
+  .rt_ex(rt_EX),
+  .dest_mem(DestReg_MEM),
+  .dest_wb(DestReg_WB),
+  .rst(rst),
+  .regwrite_mem(RegWriteEn_MEM),
+  .regwrite_wb(RegWriteEn_WB),
+  
+  .ForwardA(forwardA),
+  .ForwardB(forwardB));
+
 
 
 

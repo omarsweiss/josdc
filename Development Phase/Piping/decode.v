@@ -1,9 +1,13 @@
-module decode(input clk, input rst,
-input [31:0] instruction, input RegWriteEn_WB, input [31:0] writeData_WB, input [4:0] writeRegister_WB, input [9:0] PCPlus1, input jal_WB,
+module decode(input clk, rst, RegWriteEn_WB, jal_WB,
+input [31:0] instruction, writeData_WB, 
+input [4:0] writeRegister_WB, 
+input [9:0] PCPlus1, 
 
-output [9:0] jaddress, output [4:0] shamt, output Branch, output MemReadEn, output MemtoReg, output MemWriteEn, output RegWriteEn, output ALUSrc, output jump, output jr, output jal,
-output [3:0] ALUOp, output [4:0] rs, output [4:0] rt, 
-output [4:0] DestReg, output [31:0] readData1, output [31:0] readData2, output [31:0] extImm, output [9:0] adderResult, output PCSrc);
+output [9:0] jaddress, adderResult,
+output [4:0] shamt, rs, rt, DestReg,
+output Branch, MemReadEn, MemtoReg, MemWriteEn, RegWriteEn, ALUSrc, jump, jr, jal,PCSrc,
+output [3:0] ALUOp, 
+output [31:0] readData1, readData2, extImm);
 
 
 wire [5:0] opCode, funct;

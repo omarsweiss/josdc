@@ -10,7 +10,7 @@ module comparator (
 	
   always @(*)
 	begin
-    if (reset == 1) branchValid <=0;
+    if (~reset) branchValid <=0;
     else begin
 		if((bne && (In1 != In2)) || (!bne && (In1 == In2))) branchValid <= 1;
 		else branchValid <= 0;

@@ -15,6 +15,7 @@ module registerFile (clk, rst, we,
 	// register file (registers)
 	reg [31:0] registers [0:31];
 	
+	
 	// Read from the register file
 	assign readData1 = registers[readRegister1];
    assign readData2 = registers[readRegister2];
@@ -28,7 +29,8 @@ module registerFile (clk, rst, we,
 		end
 		// Write to the register file
 		else if(we) begin
-			registers[writeRegister] <= writeData;
+			if(writeRegister == 'b0) registers[writeRegister] <= writeData;
+			else registers[writeRegister] <= writeData;
 		end
 		// Defualt to prevent latching
 		else;

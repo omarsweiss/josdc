@@ -1,6 +1,12 @@
-module execute(input [31:0] readData1, input [31:0] readData2, input [31:0] aluRes_MEM, input [31:0] aluRes_WB, input [31:0] extImm,
-input [3:0] ALUOp, input ALUSrc, input [1:0] forwardA, input [1:0] forwardB, input [4:0] shamt_EX,
-output [31:0] aluRizz_EX, output [31:0] forwardBRizz_EX);
+module execute(
+input ALUSrc, 
+input [1:0] forwardA, forwardB, 
+input [3:0] ALUOp,
+input [4:0] shamt_EX,
+input [31:0] readData1, readData2, aluRes_MEM, aluRes_WB, extImm,
+
+
+output [31:0] aluRizz_EX, forwardBRizz_EX);
 
 
 wire [31:0] ALUin2, forwardARizz;
