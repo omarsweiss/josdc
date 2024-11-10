@@ -4,7 +4,7 @@
 
 1. Fix Assembler : Check(1:amr)
 
-2. Hazard & Forwarding check(0:Member)
+2. Hazard & Forwarding check(1:amr)
 
 3. SDC files check(0:Member)
 
