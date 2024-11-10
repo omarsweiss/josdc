@@ -1,7 +1,7 @@
-module programCounter (clk, rst, PCin, PCout);
+module programCounter (clk, rst, PCin, PCout, hold);
 	
 	//inputs
-	input clk, rst;
+	input clk, rst, hold;
 	input [9:0] PCin;
 	
 	//outputs 
@@ -12,9 +12,10 @@ module programCounter (clk, rst, PCin, PCout);
 		if(~rst) begin
 			PCout <= 10'b1111111111;// should be all 0's maybe?
 		end
-		else begin
-			PCout <= PCin;
-		end
+		
+		else if(~hold) PCout <= PCin;
+			
+		
 	end
 	
 endmodule

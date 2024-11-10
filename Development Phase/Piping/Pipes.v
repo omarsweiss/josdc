@@ -1,26 +1,28 @@
-module IFID #(parameter size = 96) (Q, D, clk, reset);
-input clk, reset;
-input [size-1:0] D;
-output [size-1:0] Q;
-reg [size-1:0] Q;
-always @(posedge clk)
-	begin
-     if (~reset)
-       Q=0;
-     else 
-       Q=D;
-	end
+module IFID #(parameter size = 96) (Q, D, clk, reset, hold, flush);
+    input clk, reset, hold, flush;
+    input [size-1:0] D;
+    output reg [size-1:0] Q;
 
+    always @(posedge clk or negedge reset) begin
+        if (!reset) 
+            Q <= 0;  
+        else if (flush)
+            Q <= 0;  
+        else if (!hold) 
+            Q <= D;  
+    end
 endmodule
 //////////////////////////////////////////////////////
-module IDEX #(parameter size = 153) (Q, D, clk, reset);
-input clk, reset;
+module IDEX #(parameter size = 153) (Q, D, clk, reset, flush);
+input clk, reset, flush;
 input [size-1:0] D;
 output [size-1:0] Q;
 reg [size-1:0] Q;
-always @(posedge clk)
+always @(posedge clk, negedge reset)
 	begin
-     if (~reset)
+     if (!reset)
+       Q=0;
+	  else if (flush)
        Q=0;
      else
        Q=D;
@@ -33,7 +35,7 @@ input clk, reset;
 input [size-1:0] D;
 output [size-1:0] Q;
 reg [size-1:0] Q;
-always @(posedge clk)
+always @(posedge clk, negedge reset)
 	begin
      if (~reset)
        Q=0;
@@ -47,7 +49,7 @@ input clk, reset;
 input [size-1:0] D;
 output [size-1:0] Q;
 reg [size-1:0] Q;
-always @(posedge clk)
+always @(posedge clk, negedge reset)
 	begin
      if (~reset)
        Q=0;

@@ -8,9 +8,9 @@ extImm_EX, aluRes_EX, forwardBRes_EX, aluRes_MEM, aluRes_WB, forwardBRes_MEM, in
 wire [9:0] reg1Addr, jaddress, adderResult, PCPlus1, PC_ID, PCPlus1_ID, jaddress_ID, adderResult_ID, PCPlus1_EX, PCPlus1_MEM, PCPlus1_WB;
 wire [4:0] shamt, rs, rt, DestReg, shamt_EX, rs_EX, rt_EX, DestReg_EX, DestReg_MEM, DestReg_WB;
 wire [3:0] ALUOp, ALUOp_EX;
-wire [1:0] forwardA, forwardB;
-wire PCSrc, jr, RegWriteEn_WB, Branch, MemReadEn, MemtoReg, MemWriteEn, RegWriteEn, ALUSrc, 
-jump, jal,  MemReadEn_EX, MemtoReg_EX, MemWriteEn_EX, RegWriteEn_EX, ALUSrc_EX, jal_EX,
+wire [1:0] forwardA, forwardB, fwdAbranch, fwdBbranch;
+wire PCSrc, jr, RegWriteEn_WB, Branch, MemReadEn, MemtoReg, MemWriteEn, RegWriteEn, ALUSrc, RegDst,
+jump, jal,  MemReadEn_EX, MemtoReg_EX, MemWriteEn_EX, RegWriteEn_EX, ALUSrc_EX, jal_EX, ld_hazard, branch_hazard, hold,
 MemReadEn_MEM, MemtoReg_MEM, MemWriteEn_MEM, RegWriteEn_MEM, ALUSrc_MEM, jal_MEM, jal_WB, MemtoReg_WB;
 
 
@@ -20,33 +20,42 @@ MemReadEn_MEM, MemtoReg_MEM, MemWriteEn_MEM, RegWriteEn_MEM, ALUSrc_MEM, jal_MEM
 
 
 fetch fetch(
-.clk(clk), .rst(rst),  .reg1Addr(reg1Addr), .jaddress(jaddress),
+.clk(clk), .rst(rst),  .reg1Addr(reg1Addr), .jaddress(jaddress), . hold(hold),
 .PCsrc(PCSrc), .jr(jr),  .jump(jump), .adderResult(adderResult),
 .PCPlus1(PCPlus1), .PC(PC), .instruction(instruction));
 
 
 
-IFID #(52) ifid(.Q({PCPlus1_ID, PC_ID, instruction_ID}), .D({PCPlus1, PC, instruction}), .clk(clk), .reset(rst));
+IFID #(52) ifid(.Q({PCPlus1_ID, PC_ID, instruction_ID}), .D({PCPlus1, PC, instruction}), .clk(clk), .reset(rst), .hold(hold), .flush(branch_hazard));
 
-decode dcd(.clk(clk), .rst(rst),
-.instruction(instruction_ID), .RegWriteEn_WB(RegWriteEn_WB), .writeData_WB(writeData_WB), .writeRegister_WB(DestReg_WB), .PCPlus1(PCPlus1_ID),
+decode dcd(.clk(clk), .rst(rst), 
+.instruction(instruction_ID), .RegWriteEn_WB(RegWriteEn_WB), .writeRegister_WB(DestReg_WB), .PCPlus1(PCPlus1_ID),
 .jaddress(jaddress), .shamt(shamt), .Branch(Branch), .MemReadEn(MemReadEn), .MemtoReg(MemtoReg), .MemWriteEn(MemWriteEn), .RegWriteEn(RegWriteEn), .ALUSrc(ALUSrc), .jump(jump), 
-.jr(jr), .jal(jal), .jal_WB(jal_WB),
-.ALUOp(ALUOp), .rs(rs), .rt(rt), 
+.jr(jr), .jal(jal), .jal_WB(jal_WB), .aluRes_MEM(aluRes_MEM), .writeData_WB(writeData_WB), .ForwardA_branch(fwdAbranch), .ForwardB_branch(fwdBbranch),
+.ALUOp(ALUOp), .rs(rs), .rt(rt), .RegDst(RegDst),
 .DestReg(DestReg), .readData1(readData1), .readData2(readData2), .extImm(extImm), .adderResult(adderResult), .PCSrc(PCSrc));
 
 
 
+hazard_detection HDU(
+  
+  .rs_ID(rs), .rt_ID(rt), .dest_MEM(DestReg_MEM), .dest_EXE(DestReg_EX), .dest_WB(DestReg_WB), 
+  .mem_read_EX(MemReadEn_EX),.branch(Branch), .branchValid(PCSrc), .writeBack_MEM(RegWriteEn_MEM), .writeBack_EX(RegWriteEn_EX), .writeBack_WB(RegWriteEn_WB),
+  .mem_to_reg_MEM(MemtoReg_MEM), .regDest_ID(RegDst), .jump(jump), .jr(jr), .jal(jal),
+  
+  .ld_has_hazard(ld_hazard), .branch_has_hazard(branch_hazard), .hold(hold),
+  .forwardA_Branch(fwdAbranch), .forwardB_Branch(fwdBbranch));
+
 
 IDEX #(136) idex(.Q({shamt_EX, MemReadEn_EX, MemtoReg_EX, MemWriteEn_EX, RegWriteEn_EX, ALUSrc_EX, jal_EX, ALUOp_EX, rs_EX, rt_EX, DestReg_EX, readData1_EX, readData2_EX, extImm_EX, PCPlus1_EX}), 
 .D({shamt, MemReadEn, MemtoReg, MemWriteEn, RegWriteEn, ALUSrc, jal, ALUOp, rs, rt, DestReg, readData1, readData2, extImm, PCPlus1_ID}), 
-.clk(clk), .reset(rst));
+.clk(clk), .reset(rst), .flush(ld_hazard));
 
 
 
 execute exec(
     .readData1(readData1_EX), .readData2(readData2_EX), .aluRes_MEM(aluRes_MEM), 
-    .aluRes_WB(aluRes_WB), .extImm(extImm_EX), .ALUOp(ALUOp_EX), .ALUSrc(ALUSrc_EX), 
+    .aluRes_WB(WBMuxOutput), .extImm(extImm_EX), .ALUOp(ALUOp_EX), .ALUSrc(ALUSrc_EX), 
     .forwardA(forwardA), .forwardB(forwardB), .shamt_EX(shamt_EX), 
     .aluRizz_EX(aluRes_EX), .forwardBRizz_EX(forwardBRes_EX)
 );

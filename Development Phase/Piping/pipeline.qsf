@@ -55,7 +55,6 @@ set_global_assignment -name VERILOG_FILE testbench.v
 set_global_assignment -name VERILOG_FILE SignExtender.v
 set_global_assignment -name VERILOG_FILE registerFile.v
 set_global_assignment -name VERILOG_FILE programCounter.v
-set_global_assignment -name VERILOG_FILE processor.v
 set_global_assignment -name VERILOG_FILE Pipes.v
 set_global_assignment -name VERILOG_FILE pipeline.v
 set_global_assignment -name VERILOG_FILE mux2x1.v

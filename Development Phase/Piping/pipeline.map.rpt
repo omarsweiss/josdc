@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pipeline
-Sun Nov 10 18:22:57 2024
+Mon Nov 11 00:34:25 2024
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -18,42 +18,49 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
  10. Registers Removed During Synthesis
  11. General Register Statistics
  12. Inverted Register Statistics
- 13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Source assignments for fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component|altsyncram_bce1:auto_generated
- 15. Source assignments for dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated
- 16. Parameter Settings for User Entity Instance: fetch:fetch|mux2x1:PCMux
- 17. Parameter Settings for User Entity Instance: fetch:fetch|mux2x1:JRMux
- 18. Parameter Settings for User Entity Instance: fetch:fetch|mux2x1:jumpMux
- 19. Parameter Settings for User Entity Instance: fetch:fetch|adder:PCAdder
- 20. Parameter Settings for User Entity Instance: fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component
- 21. Parameter Settings for User Entity Instance: IFID:ifid
- 22. Parameter Settings for User Entity Instance: decode:dcd|controlUnit:CU
- 23. Parameter Settings for User Entity Instance: decode:dcd|mux2x1:RFMux
- 24. Parameter Settings for User Entity Instance: decode:dcd|mux2x1:RegWriteMux
- 25. Parameter Settings for User Entity Instance: decode:dcd|adder:branchAdder
- 26. Parameter Settings for User Entity Instance: IDEX:idex
- 27. Parameter Settings for User Entity Instance: execute:exec|mux4x1:frwrda
- 28. Parameter Settings for User Entity Instance: execute:exec|mux4x1:frwrdb
- 29. Parameter Settings for User Entity Instance: execute:exec|mux2x1:ALUMux
- 30. Parameter Settings for User Entity Instance: execute:exec|ALU:alu
- 31. Parameter Settings for User Entity Instance: EXMEM:exmem
- 32. Parameter Settings for User Entity Instance: dataMemory:DM|altsyncram:altsyncram_component
- 33. Parameter Settings for User Entity Instance: MEMWB:memwb
- 34. Parameter Settings for User Entity Instance: mux2x1:WBMux
- 35. Parameter Settings for User Entity Instance: mux2x1:WritePc
- 36. altsyncram Parameter Settings by Entity Instance
- 37. Port Connectivity Checks: "mux2x1:WritePc"
- 38. Port Connectivity Checks: "execute:exec|ALU:alu"
- 39. Port Connectivity Checks: "execute:exec|mux4x1:frwrdb"
- 40. Port Connectivity Checks: "execute:exec|mux4x1:frwrda"
- 41. Port Connectivity Checks: "decode:dcd|mux2x1:RegWriteMux"
- 42. Port Connectivity Checks: "decode:dcd"
- 43. Port Connectivity Checks: "IFID:ifid"
- 44. Port Connectivity Checks: "fetch:fetch|adder:PCAdder"
- 45. Post-Synthesis Netlist Statistics for Top Partition
- 46. Elapsed Time Per Partition
- 47. Analysis & Synthesis Messages
- 48. Analysis & Synthesis Suppressed Messages
+ 13. Registers Packed Into Inferred Megafunctions
+ 14. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 15. Source assignments for fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component|altsyncram_bce1:auto_generated
+ 16. Source assignments for dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated
+ 17. Source assignments for IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated|altsyncram_dj51:altsyncram4
+ 18. Parameter Settings for User Entity Instance: fetch:fetch|mux2x1:PCMux
+ 19. Parameter Settings for User Entity Instance: fetch:fetch|mux2x1:JRMux
+ 20. Parameter Settings for User Entity Instance: fetch:fetch|mux2x1:jumpMux
+ 21. Parameter Settings for User Entity Instance: fetch:fetch|adder:PCAdder
+ 22. Parameter Settings for User Entity Instance: fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component
+ 23. Parameter Settings for User Entity Instance: IFID:ifid
+ 24. Parameter Settings for User Entity Instance: decode:dcd|controlUnit:CU
+ 25. Parameter Settings for User Entity Instance: decode:dcd|mux2x1:RFMux
+ 26. Parameter Settings for User Entity Instance: decode:dcd|mux2x1:RegWriteMux
+ 27. Parameter Settings for User Entity Instance: decode:dcd|adder:branchAdder
+ 28. Parameter Settings for User Entity Instance: decode:dcd|mux4x1:FrdAmux
+ 29. Parameter Settings for User Entity Instance: decode:dcd|mux4x1:FrdBmux
+ 30. Parameter Settings for User Entity Instance: IDEX:idex
+ 31. Parameter Settings for User Entity Instance: execute:exec|mux4x1:frwrda
+ 32. Parameter Settings for User Entity Instance: execute:exec|mux4x1:frwrdb
+ 33. Parameter Settings for User Entity Instance: execute:exec|mux2x1:ALUMux
+ 34. Parameter Settings for User Entity Instance: execute:exec|ALU:alu
+ 35. Parameter Settings for User Entity Instance: EXMEM:exmem
+ 36. Parameter Settings for User Entity Instance: dataMemory:DM|altsyncram:altsyncram_component
+ 37. Parameter Settings for User Entity Instance: MEMWB:memwb
+ 38. Parameter Settings for User Entity Instance: mux2x1:WBMux
+ 39. Parameter Settings for User Entity Instance: mux2x1:WritePc
+ 40. Parameter Settings for Inferred Entity Instance: IDEX:idex|altshift_taps:Q_rtl_0
+ 41. altsyncram Parameter Settings by Entity Instance
+ 42. altshift_taps Parameter Settings by Entity Instance
+ 43. Port Connectivity Checks: "mux2x1:WritePc"
+ 44. Port Connectivity Checks: "execute:exec|ALU:alu"
+ 45. Port Connectivity Checks: "execute:exec|mux4x1:frwrdb"
+ 46. Port Connectivity Checks: "execute:exec|mux4x1:frwrda"
+ 47. Port Connectivity Checks: "decode:dcd|mux4x1:FrdBmux"
+ 48. Port Connectivity Checks: "decode:dcd|mux4x1:FrdAmux"
+ 49. Port Connectivity Checks: "decode:dcd|mux2x1:RegWriteMux"
+ 50. Port Connectivity Checks: "IFID:ifid"
+ 51. Port Connectivity Checks: "fetch:fetch|adder:PCAdder"
+ 52. Post-Synthesis Netlist Statistics for Top Partition
+ 53. Elapsed Time Per Partition
+ 54. Analysis & Synthesis Messages
+ 55. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -80,18 +87,18 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Nov 10 18:22:57 2024          ;
+; Analysis & Synthesis Status        ; Successful - Mon Nov 11 00:34:25 2024          ;
 ; Quartus Prime Version              ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                      ; pipeline                                       ;
 ; Top-level Entity Name              ; pipeline                                       ;
 ; Family                             ; MAX 10                                         ;
-; Total logic elements               ; 3,586                                          ;
-;     Total combinational functions  ; 2,594                                          ;
-;     Dedicated logic registers      ; 1,355                                          ;
-; Total registers                    ; 1355                                           ;
+; Total logic elements               ; 3,711                                          ;
+;     Total combinational functions  ; 2,639                                          ;
+;     Dedicated logic registers      ; 1,328                                          ;
+; Total registers                    ; 1328                                           ;
 ; Total pins                         ; 12                                             ;
 ; Total virtual pins                 ; 0                                              ;
-; Total memory bits                  ; 40,960                                         ;
+; Total memory bits                  ; 40,993                                         ;
 ; Embedded Multiplier 9-bit elements ; 0                                              ;
 ; Total PLLs                         ; 0                                              ;
 ; UFM blocks                         ; 0                                              ;
@@ -218,6 +225,7 @@ https://fpgasoftware.intel.com/eula.
 ; Pipes.v                                 ; yes             ; User Verilog HDL File                  ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/Pipes.v                                 ;         ;
 ; pipeline.v                              ; yes             ; User Verilog HDL File                  ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v                              ;         ;
 ; mux2x1.v                                ; yes             ; User Verilog HDL File                  ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/mux2x1.v                                ;         ;
+; hazard_detection.v                      ; yes             ; User Verilog HDL File                  ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/hazard_detection.v                      ;         ;
 ; ForwardingUnit.v                        ; yes             ; User Verilog HDL File                  ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ForwardingUnit.v                        ;         ;
 ; fetch.v                                 ; yes             ; User Verilog HDL File                  ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/fetch.v                                 ;         ;
 ; execute.v                               ; yes             ; User Verilog HDL File                  ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/execute.v                               ;         ;
@@ -240,6 +248,16 @@ https://fpgasoftware.intel.com/eula.
 ; instructionmemoryinitializationfile.mif ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/instructionmemoryinitializationfile.mif ;         ;
 ; db/altsyncram_8km1.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/altsyncram_8km1.tdf                  ;         ;
 ; datamemoryinitializationfile.mif        ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/datamemoryinitializationfile.mif        ;         ;
+; altshift_taps.tdf                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altshift_taps.tdf                                           ;         ;
+; lpm_counter.inc                         ; yes             ; Megafunction                           ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_counter.inc                                             ;         ;
+; lpm_compare.inc                         ; yes             ; Megafunction                           ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_compare.inc                                             ;         ;
+; lpm_constant.inc                        ; yes             ; Megafunction                           ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_constant.inc                                            ;         ;
+; db/shift_taps_vul.tdf                   ; yes             ; Auto-Generated Megafunction            ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/shift_taps_vul.tdf                   ;         ;
+; db/altsyncram_dj51.tdf                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/altsyncram_dj51.tdf                  ;         ;
+; db/add_sub_oed.tdf                      ; yes             ; Auto-Generated Megafunction            ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/add_sub_oed.tdf                      ;         ;
+; db/cntr_s3f.tdf                         ; yes             ; Auto-Generated Megafunction            ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/cntr_s3f.tdf                         ;         ;
+; db/cmpr_erb.tdf                         ; yes             ; Auto-Generated Megafunction            ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/cmpr_erb.tdf                         ;         ;
+; db/cntr_fjg.tdf                         ; yes             ; Auto-Generated Megafunction            ; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/cntr_fjg.tdf                         ;         ;
 +-----------------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -248,31 +266,31 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 3,586     ;
+; Estimated Total logic elements              ; 3,711     ;
 ;                                             ;           ;
-; Total combinational functions               ; 2594      ;
+; Total combinational functions               ; 2639      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 1907      ;
-;     -- 3 input functions                    ; 463       ;
-;     -- <=2 input functions                  ; 224       ;
+;     -- 4 input functions                    ; 2096      ;
+;     -- 3 input functions                    ; 450       ;
+;     -- <=2 input functions                  ; 93        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 2513      ;
-;     -- arithmetic mode                      ; 81        ;
+;     -- normal mode                          ; 2555      ;
+;     -- arithmetic mode                      ; 84        ;
 ;                                             ;           ;
-; Total registers                             ; 1355      ;
-;     -- Dedicated logic registers            ; 1355      ;
+; Total registers                             ; 1328      ;
+;     -- Dedicated logic registers            ; 1328      ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 12        ;
-; Total memory bits                           ; 40960     ;
+; Total memory bits                           ; 40993     ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 1419      ;
-; Total fan-out                               ; 15046     ;
-; Average fan-out                             ; 3.73      ;
+; Maximum fan-out                             ; 1403      ;
+; Total fan-out                               ; 15844     ;
+; Average fan-out                             ; 3.90      ;
 +---------------------------------------------+-----------+
 
 
@@ -281,45 +299,55 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------------------------------------+-------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                       ; Entity Name       ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------------------------------------+-------------------+--------------+
-; |pipeline                                    ; 2594 (0)            ; 1355 (0)                  ; 40960       ; 0          ; 0            ; 0       ; 0         ; 12   ; 0            ; 0          ; |pipeline                                                                                                 ; pipeline          ; work         ;
-;    |EXMEM:exmem|                             ; 264 (264)           ; 83 (83)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|EXMEM:exmem                                                                                     ; EXMEM             ; work         ;
-;    |IDEX:idex|                               ; 119 (119)           ; 114 (114)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|IDEX:idex                                                                                       ; IDEX              ; work         ;
-;    |IFID:ifid|                               ; 42 (42)             ; 42 (42)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|IFID:ifid                                                                                       ; IFID              ; work         ;
-;    |MEMWB:memwb|                             ; 82 (82)             ; 82 (82)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|MEMWB:memwb                                                                                     ; MEMWB             ; work         ;
+; |pipeline                                    ; 2639 (0)            ; 1328 (0)                  ; 40993       ; 0          ; 0            ; 0       ; 0         ; 12   ; 0            ; 0          ; |pipeline                                                                                                 ; pipeline          ; work         ;
+;    |EXMEM:exmem|                             ; 46 (46)             ; 72 (72)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|EXMEM:exmem                                                                                     ; EXMEM             ; work         ;
+;    |IDEX:idex|                               ; 130 (121)           ; 109 (103)                 ; 33          ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|IDEX:idex                                                                                       ; IDEX              ; work         ;
+;       |altshift_taps:Q_rtl_0|                ; 9 (0)               ; 6 (0)                     ; 33          ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|IDEX:idex|altshift_taps:Q_rtl_0                                                                 ; altshift_taps     ; work         ;
+;          |shift_taps_vul:auto_generated|     ; 9 (2)               ; 6 (3)                     ; 33          ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated                                   ; shift_taps_vul    ; work         ;
+;             |altsyncram_dj51:altsyncram4|    ; 0 (0)               ; 0 (0)                     ; 33          ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated|altsyncram_dj51:altsyncram4       ; altsyncram_dj51   ; work         ;
+;             |cntr_fjg:cntr5|                 ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated|cntr_fjg:cntr5                    ; cntr_fjg          ; work         ;
+;             |cntr_s3f:cntr1|                 ; 5 (5)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated|cntr_s3f:cntr1                    ; cntr_s3f          ; work         ;
+;    |IFID:ifid|                               ; 43 (43)             ; 42 (42)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|IFID:ifid                                                                                       ; IFID              ; work         ;
+;    |MEMWB:memwb|                             ; 0 (0)               ; 71 (71)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|MEMWB:memwb                                                                                     ; MEMWB             ; work         ;
 ;    |dataMemory:DM|                           ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|dataMemory:DM                                                                                   ; dataMemory        ; work         ;
 ;       |altsyncram:altsyncram_component|      ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|dataMemory:DM|altsyncram:altsyncram_component                                                   ; altsyncram        ; work         ;
 ;          |altsyncram_8km1:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 8192        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated                    ; altsyncram_8km1   ; work         ;
-;    |decode:dcd|                              ; 1450 (0)            ; 1024 (0)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|decode:dcd                                                                                      ; decode            ; work         ;
-;       |adder:branchAdder|                    ; 31 (31)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|decode:dcd|adder:branchAdder                                                                    ; adder             ; work         ;
+;    |decode:dcd|                              ; 1577 (0)            ; 1024 (0)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|decode:dcd                                                                                      ; decode            ; work         ;
+;       |adder:branchAdder|                    ; 30 (30)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|decode:dcd|adder:branchAdder                                                                    ; adder             ; work         ;
 ;       |comparator:cmp|                       ; 43 (43)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|decode:dcd|comparator:cmp                                                                       ; comparator        ; work         ;
 ;       |controlUnit:CU|                       ; 21 (21)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|decode:dcd|controlUnit:CU                                                                       ; controlUnit       ; work         ;
 ;       |mux2x1:RegWriteMux|                   ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|decode:dcd|mux2x1:RegWriteMux                                                                   ; mux2x1            ; work         ;
-;       |registerFile:RF|                      ; 1352 (1352)         ; 1024 (1024)               ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|decode:dcd|registerFile:RF                                                                      ; registerFile      ; work         ;
-;    |execute:exec|                            ; 554 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|execute:exec                                                                                    ; execute           ; work         ;
-;       |ALU:alu|                              ; 388 (388)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|execute:exec|ALU:alu                                                                            ; ALU               ; work         ;
-;       |mux2x1:ALUMux|                        ; 35 (35)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|execute:exec|mux2x1:ALUMux                                                                      ; mux2x1            ; work         ;
-;       |mux4x1:frwrda|                        ; 65 (65)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|execute:exec|mux4x1:frwrda                                                                      ; mux4x1            ; work         ;
-;       |mux4x1:frwrdb|                        ; 66 (66)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|execute:exec|mux4x1:frwrdb                                                                      ; mux4x1            ; work         ;
+;       |mux4x1:FrdAmux|                       ; 65 (65)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|decode:dcd|mux4x1:FrdAmux                                                                       ; mux4x1            ; work         ;
+;       |mux4x1:FrdBmux|                       ; 95 (95)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|decode:dcd|mux4x1:FrdBmux                                                                       ; mux4x1            ; work         ;
+;       |registerFile:RF|                      ; 1320 (1320)         ; 1024 (1024)               ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|decode:dcd|registerFile:RF                                                                      ; registerFile      ; work         ;
+;    |execute:exec|                            ; 710 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|execute:exec                                                                                    ; execute           ; work         ;
+;       |ALU:alu|                              ; 550 (550)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|execute:exec|ALU:alu                                                                            ; ALU               ; work         ;
+;       |mux2x1:ALUMux|                        ; 32 (32)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|execute:exec|mux2x1:ALUMux                                                                      ; mux2x1            ; work         ;
+;       |mux4x1:frwrda|                        ; 64 (64)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|execute:exec|mux4x1:frwrda                                                                      ; mux4x1            ; work         ;
+;       |mux4x1:frwrdb|                        ; 64 (64)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|execute:exec|mux4x1:frwrdb                                                                      ; mux4x1            ; work         ;
 ;    |fetch:fetch|                             ; 20 (0)              ; 10 (0)                    ; 32768       ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|fetch:fetch                                                                                     ; fetch             ; work         ;
 ;       |adder:PCAdder|                        ; 10 (10)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|fetch:fetch|adder:PCAdder                                                                       ; adder             ; work         ;
 ;       |instructionMemory:IM|                 ; 0 (0)               ; 0 (0)                     ; 32768       ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|fetch:fetch|instructionMemory:IM                                                                ; instructionMemory ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 32768       ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component                                ; altsyncram        ; work         ;
 ;             |altsyncram_bce1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 32768       ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component|altsyncram_bce1:auto_generated ; altsyncram_bce1   ; work         ;
 ;       |programCounter:pc|                    ; 10 (10)             ; 10 (10)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|fetch:fetch|programCounter:pc                                                                   ; programCounter    ; work         ;
-;    |forwarding_unit:fw|                      ; 21 (21)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|forwarding_unit:fw                                                                              ; forwarding_unit   ; work         ;
-;    |mux2x1:WritePc|                          ; 42 (42)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|mux2x1:WritePc                                                                                  ; mux2x1            ; work         ;
+;    |forwarding_unit:fw|                      ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|forwarding_unit:fw                                                                              ; forwarding_unit   ; work         ;
+;    |hazard_detection:HDU|                    ; 32 (32)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|hazard_detection:HDU                                                                            ; hazard_detection  ; work         ;
+;    |mux2x1:WBMux|                            ; 32 (32)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|mux2x1:WBMux                                                                                    ; mux2x1            ; work         ;
+;    |mux2x1:WritePc|                          ; 32 (32)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |pipeline|mux2x1:WritePc                                                                                  ; mux2x1            ; work         ;
 +----------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------------------------------------+-------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                                              ;
-+------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+-----------------------------------------+
-; Name                                                                                                       ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF                                     ;
-+------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+-----------------------------------------+
-; dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated|ALTSYNCRAM                    ; M9K  ; Single Port ; 256          ; 32           ; --           ; --           ; 8192  ; dataMemoryInitializationFile.mif        ;
-; fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component|altsyncram_bce1:auto_generated|ALTSYNCRAM ; M9K  ; ROM         ; 1024         ; 32           ; --           ; --           ; 32768 ; instructionMemoryInitializationFile.mif ;
-+------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+-------+-----------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                   ;
++------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+-----------------------------------------+
+; Name                                                                                                       ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF                                     ;
++------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+-----------------------------------------+
+; IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated|altsyncram_dj51:altsyncram4|ALTSYNCRAM       ; AUTO ; Simple Dual Port ; 3            ; 11           ; 3            ; 11           ; 33    ; None                                    ;
+; dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated|ALTSYNCRAM                    ; M9K  ; Single Port      ; 256          ; 32           ; --           ; --           ; 8192  ; dataMemoryInitializationFile.mif        ;
+; fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component|altsyncram_bce1:auto_generated|ALTSYNCRAM ; M9K  ; ROM              ; 1024         ; 32           ; --           ; --           ; 32768 ; instructionMemoryInitializationFile.mif ;
++------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+-----------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------+
@@ -337,9 +365,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+-------------------------------+
 ; Register name                          ; Reason for Removal            ;
 +----------------------------------------+-------------------------------+
+; IDEX:idex|Q[130]                       ; Merged with IDEX:idex|Q[129]  ;
 ; EXMEM:exmem|Q[19]                      ; Merged with EXMEM:exmem|Q[18] ;
 ; IDEX:idex|Q[26..41]                    ; Merged with IDEX:idex|Q[25]   ;
-; IDEX:idex|Q[130]                       ; Merged with IDEX:idex|Q[129]  ;
 ; IDEX:idex|Q[19]                        ; Merged with IDEX:idex|Q[134]  ;
 ; IDEX:idex|Q[18]                        ; Merged with IDEX:idex|Q[133]  ;
 ; IDEX:idex|Q[17]                        ; Merged with IDEX:idex|Q[132]  ;
@@ -354,33 +382,45 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1355  ;
-; Number of registers using Synchronous Clear  ; 34    ;
-; Number of registers using Synchronous Load   ; 16    ;
-; Number of registers using Asynchronous Clear ; 1034  ;
+; Total registers                              ; 1328  ;
+; Number of registers using Synchronous Clear  ; 25    ;
+; Number of registers using Synchronous Load   ; 18    ;
+; Number of registers using Asynchronous Clear ; 1324  ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1024  ;
+; Number of registers using Clock Enable       ; 1065  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------+
-; Inverted Register Statistics                      ;
-+-----------------------------------------+---------+
-; Inverted Register                       ; Fan out ;
-+-----------------------------------------+---------+
-; fetch:fetch|programCounter:pc|PCout[0]  ; 2       ;
-; fetch:fetch|programCounter:pc|PCout[1]  ; 2       ;
-; fetch:fetch|programCounter:pc|PCout[2]  ; 2       ;
-; fetch:fetch|programCounter:pc|PCout[3]  ; 2       ;
-; fetch:fetch|programCounter:pc|PCout[4]  ; 2       ;
-; fetch:fetch|programCounter:pc|PCout[5]  ; 2       ;
-; fetch:fetch|programCounter:pc|PCout[6]  ; 2       ;
-; fetch:fetch|programCounter:pc|PCout[7]  ; 2       ;
-; fetch:fetch|programCounter:pc|PCout[8]  ; 2       ;
-; fetch:fetch|programCounter:pc|PCout[9]  ; 2       ;
-; Total number of inverted registers = 10 ;         ;
-+-----------------------------------------+---------+
++-------------------------------------------------------------------------------+
+; Inverted Register Statistics                                                  ;
++---------------------------------------------------------------------+---------+
+; Inverted Register                                                   ; Fan out ;
++---------------------------------------------------------------------+---------+
+; fetch:fetch|programCounter:pc|PCout[0]                              ; 2       ;
+; fetch:fetch|programCounter:pc|PCout[1]                              ; 2       ;
+; fetch:fetch|programCounter:pc|PCout[2]                              ; 2       ;
+; fetch:fetch|programCounter:pc|PCout[3]                              ; 2       ;
+; fetch:fetch|programCounter:pc|PCout[4]                              ; 2       ;
+; fetch:fetch|programCounter:pc|PCout[5]                              ; 2       ;
+; fetch:fetch|programCounter:pc|PCout[6]                              ; 2       ;
+; fetch:fetch|programCounter:pc|PCout[7]                              ; 2       ;
+; fetch:fetch|programCounter:pc|PCout[8]                              ; 2       ;
+; fetch:fetch|programCounter:pc|PCout[9]                              ; 2       ;
+; IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated|dffe6 ; 11      ;
+; Total number of inverted registers = 11                             ;         ;
++---------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Registers Packed Into Inferred Megafunctions            ;
++------------------------+-------------------+------------+
+; Register Name          ; Megafunction      ; Type       ;
++------------------------+-------------------+------------+
+; MEMWB:memwb|Q[2..12]   ; IDEX:idex|Q_rtl_0 ; SHIFT_TAPS ;
+; EXMEM:exmem|Q[0..9,15] ; IDEX:idex|Q_rtl_0 ; SHIFT_TAPS ;
+; IDEX:idex|Q[0..9,125]  ; IDEX:idex|Q_rtl_0 ; SHIFT_TAPS ;
++------------------------+-------------------+------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -388,22 +428,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
-; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |pipeline|IDEX:idex|Q[109]                  ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |pipeline|IDEX:idex|Q[108]                  ;
+; 3:1                ; 42 bits   ; 84 LEs        ; 42 LEs               ; 42 LEs                 ; Yes        ; |pipeline|IFID:ifid|Q[6]                    ;
 ; 65:1               ; 4 bits    ; 172 LEs       ; 52 LEs               ; 120 LEs                ; Yes        ; |pipeline|IDEX:idex|Q[122]                  ;
-; 20:1               ; 8 bits    ; 104 LEs       ; 48 LEs               ; 56 LEs                 ; Yes        ; |pipeline|EXMEM:exmem|Q[68]                 ;
-; 20:1               ; 8 bits    ; 104 LEs       ; 48 LEs               ; 56 LEs                 ; Yes        ; |pipeline|EXMEM:exmem|Q[65]                 ;
-; 21:1               ; 4 bits    ; 56 LEs        ; 28 LEs               ; 28 LEs                 ; Yes        ; |pipeline|EXMEM:exmem|Q[79]                 ;
-; 21:1               ; 4 bits    ; 56 LEs        ; 28 LEs               ; 28 LEs                 ; Yes        ; |pipeline|EXMEM:exmem|Q[59]                 ;
-; 22:1               ; 2 bits    ; 28 LEs        ; 16 LEs               ; 12 LEs                 ; Yes        ; |pipeline|EXMEM:exmem|Q[80]                 ;
-; 22:1               ; 2 bits    ; 28 LEs        ; 16 LEs               ; 12 LEs                 ; Yes        ; |pipeline|EXMEM:exmem|Q[55]                 ;
-; 23:1               ; 2 bits    ; 30 LEs        ; 18 LEs               ; 12 LEs                 ; Yes        ; |pipeline|EXMEM:exmem|Q[82]                 ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |pipeline|execute:exec|mux4x1:frwrda|Mux28  ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |pipeline|execute:exec|mux4x1:frwrdb|Mux31  ;
-; 3:1                ; 22 bits   ; 44 LEs        ; 44 LEs               ; 0 LEs                  ; No         ; |pipeline|mux2x1:WritePc|out[26]            ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |pipeline|mux2x1:WritePc|out[6]             ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |pipeline|fetch:fetch|mux2x1:jumpMux|out[9] ;
-; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; No         ; |pipeline|decode:dcd|registerFile:RF|Mux15  ;
-; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; No         ; |pipeline|decode:dcd|registerFile:RF|Mux32  ;
+; 19:1               ; 8 bits    ; 96 LEs        ; 48 LEs               ; 48 LEs                 ; Yes        ; |pipeline|EXMEM:exmem|Q[70]                 ;
+; 19:1               ; 8 bits    ; 96 LEs        ; 48 LEs               ; 48 LEs                 ; Yes        ; |pipeline|EXMEM:exmem|Q[67]                 ;
+; 20:1               ; 4 bits    ; 52 LEs        ; 28 LEs               ; 24 LEs                 ; Yes        ; |pipeline|EXMEM:exmem|Q[78]                 ;
+; 20:1               ; 4 bits    ; 52 LEs        ; 28 LEs               ; 24 LEs                 ; Yes        ; |pipeline|EXMEM:exmem|Q[59]                 ;
+; 21:1               ; 2 bits    ; 28 LEs        ; 16 LEs               ; 12 LEs                 ; Yes        ; |pipeline|EXMEM:exmem|Q[81]                 ;
+; 21:1               ; 2 bits    ; 28 LEs        ; 16 LEs               ; 12 LEs                 ; Yes        ; |pipeline|EXMEM:exmem|Q[55]                 ;
+; 22:1               ; 2 bits    ; 28 LEs        ; 16 LEs               ; 12 LEs                 ; Yes        ; |pipeline|EXMEM:exmem|Q[83]                 ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |pipeline|decode:dcd|mux4x1:FrdAmux|Mux21   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |pipeline|decode:dcd|mux4x1:FrdBmux|Mux24   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |pipeline|execute:exec|mux4x1:frwrda|Mux23  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |pipeline|execute:exec|mux4x1:frwrdb|Mux29  ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |pipeline|fetch:fetch|mux2x1:jumpMux|out[7] ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; No         ; |pipeline|decode:dcd|registerFile:RF|Mux16  ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; No         ; |pipeline|decode:dcd|registerFile:RF|Mux47  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
 
 
@@ -423,6 +464,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------+--------------------+------+---------------------------------------+
 ; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                     ;
 +---------------------------------+--------------------+------+---------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Source assignments for IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated|altsyncram_dj51:altsyncram4 ;
++---------------------------------+--------------------+------+----------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                 ;
++---------------------------------+--------------------+------+----------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                  ;
++---------------------------------+--------------------+------+----------------------------------------------------+
 
 
 +-----------------------------------------------------------------------+
@@ -597,6 +647,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: decode:dcd|mux4x1:FrdAmux ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; size           ; 32    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: decode:dcd|mux4x1:FrdBmux ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; size           ; 32    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +--------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: IDEX:idex ;
 +----------------+-------+-------------------------------+
@@ -758,6 +828,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: IDEX:idex|altshift_taps:Q_rtl_0 ;
++----------------+----------------+------------------------------------------------+
+; Parameter Name ; Value          ; Type                                           ;
++----------------+----------------+------------------------------------------------+
+; WIDTH_BYTEENA  ; 1              ; Untyped                                        ;
+; NUMBER_OF_TAPS ; 1              ; Untyped                                        ;
+; TAP_DISTANCE   ; 3              ; Untyped                                        ;
+; WIDTH          ; 11             ; Untyped                                        ;
+; POWER_UP_STATE ; CLEARED        ; Untyped                                        ;
+; CBXI_PARAMETER ; shift_taps_vul ; Untyped                                        ;
++----------------+----------------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +--------------------------------------------------------------------------------------------------------------+
 ; altsyncram Parameter Settings by Entity Instance                                                             ;
 +-------------------------------------------+------------------------------------------------------------------+
@@ -787,6 +872,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- RAM_BLOCK_TYPE                     ; M9K                                                              ;
 ;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                        ;
 +-------------------------------------------+------------------------------------------------------------------+
+
+
++--------------------------------------------------------------+
+; altshift_taps Parameter Settings by Entity Instance          ;
++----------------------------+---------------------------------+
+; Name                       ; Value                           ;
++----------------------------+---------------------------------+
+; Number of entity instances ; 1                               ;
+; Entity Instance            ; IDEX:idex|altshift_taps:Q_rtl_0 ;
+;     -- NUMBER_OF_TAPS      ; 1                               ;
+;     -- TAP_DISTANCE        ; 3                               ;
+;     -- WIDTH               ; 11                              ;
++----------------------------+---------------------------------+
 
 
 +-----------------------------------------------+
@@ -825,6 +923,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+------------------------------+
 
 
++-------------------------------------------------------+
+; Port Connectivity Checks: "decode:dcd|mux4x1:FrdBmux" ;
++------+-------+----------+-----------------------------+
+; Port ; Type  ; Severity ; Details                     ;
++------+-------+----------+-----------------------------+
+; in4  ; Input ; Info     ; Stuck at GND                ;
++------+-------+----------+-----------------------------+
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "decode:dcd|mux4x1:FrdAmux" ;
++------+-------+----------+-----------------------------+
+; Port ; Type  ; Severity ; Details                     ;
++------+-------+----------+-----------------------------+
+; in4  ; Input ; Info     ; Stuck at GND                ;
++------+-------+----------+-----------------------------+
+
+
 +-----------------------------------------------------------+
 ; Port Connectivity Checks: "decode:dcd|mux2x1:RegWriteMux" ;
 +------+-------+----------+---------------------------------+
@@ -832,15 +948,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+---------------------------------+
 ; in2  ; Input ; Info     ; Stuck at VCC                    ;
 +------+-------+----------+---------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "decode:dcd"                                                                           ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Branch ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------+
@@ -868,25 +975,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 12                          ;
-; cycloneiii_ff         ; 1355                        ;
-;     CLR               ; 10                          ;
-;     ENA CLR           ; 1024                        ;
-;     SCLR              ; 18                          ;
-;     SCLR SLD          ; 16                          ;
-;     plain             ; 287                         ;
-; cycloneiii_lcell_comb ; 2604                        ;
-;     arith             ; 81                          ;
-;         2 data inputs ; 10                          ;
+; cycloneiii_ff         ; 1328                        ;
+;     CLR               ; 232                         ;
+;     CLR SCLR          ; 9                           ;
+;     CLR SCLR SLD      ; 16                          ;
+;     CLR SLD           ; 2                           ;
+;     ENA CLR           ; 1065                        ;
+;     plain             ; 4                           ;
+; cycloneiii_lcell_comb ; 2649                        ;
+;     arith             ; 84                          ;
+;         2 data inputs ; 13                          ;
 ;         3 data inputs ; 71                          ;
-;     normal            ; 2523                        ;
-;         1 data inputs ; 21                          ;
-;         2 data inputs ; 203                         ;
-;         3 data inputs ; 392                         ;
-;         4 data inputs ; 1907                        ;
-; cycloneiii_ram_block  ; 64                          ;
+;     normal            ; 2565                        ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 23                          ;
+;         2 data inputs ; 65                          ;
+;         3 data inputs ; 379                         ;
+;         4 data inputs ; 2096                        ;
+; cycloneiii_ram_block  ; 75                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 14.50                       ;
-; Average LUT depth     ; 9.76                        ;
+; Max LUT depth         ; 14.70                       ;
+; Average LUT depth     ; 11.23                       ;
 +-----------------------+-----------------------------+
 
 
@@ -895,7 +1004,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -905,7 +1014,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Sun Nov 10 18:22:48 2024
+    Info: Processing started: Mon Nov 11 00:34:14 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SecondPhasePipeline -c pipeline
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -919,13 +1028,11 @@ Info (12021): Found 1 design units, including 1 entities, in source file registe
     Info (12023): Found entity 1: registerFile File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/registerFile.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file programcounter.v
     Info (12023): Found entity 1: programCounter File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/programCounter.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file processor.v
-    Info (12023): Found entity 1: processor File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/processor.v Line: 1
 Info (12021): Found 4 design units, including 4 entities, in source file pipes.v
     Info (12023): Found entity 1: IFID File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/Pipes.v Line: 1
     Info (12023): Found entity 2: IDEX File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/Pipes.v Line: 16
-    Info (12023): Found entity 3: EXMEM File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/Pipes.v Line: 31
-    Info (12023): Found entity 4: MEMWB File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/Pipes.v Line: 45
+    Info (12023): Found entity 3: EXMEM File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/Pipes.v Line: 33
+    Info (12023): Found entity 4: MEMWB File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/Pipes.v Line: 47
 Info (12021): Found 1 design units, including 1 entities, in source file pipeline.v
     Info (12023): Found entity 1: pipeline File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 1
 Info (12021): Found 2 design units, including 2 entities, in source file mux2x1.v
@@ -980,19 +1087,20 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alts
 Info (12128): Elaborating entity "altsyncram_bce1" for hierarchy "fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component|altsyncram_bce1:auto_generated" File: c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12128): Elaborating entity "IFID" for hierarchy "IFID:ifid" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 29
 Info (12128): Elaborating entity "decode" for hierarchy "decode:dcd" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 36
-Info (12128): Elaborating entity "controlUnit" for hierarchy "decode:dcd|controlUnit:CU" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v Line: 40
-Info (12128): Elaborating entity "mux2x1" for hierarchy "decode:dcd|mux2x1:RFMux" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v Line: 46
-Info (12128): Elaborating entity "registerFile" for hierarchy "decode:dcd|registerFile:RF" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v Line: 52
-Info (12128): Elaborating entity "SignExtender" for hierarchy "decode:dcd|SignExtender:SignExtend" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v Line: 54
-Info (12128): Elaborating entity "comparator" for hierarchy "decode:dcd|comparator:cmp" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v Line: 64
-Info (12128): Elaborating entity "IDEX" for hierarchy "IDEX:idex" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 43
-Info (12128): Elaborating entity "execute" for hierarchy "execute:exec" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 52
-Info (12128): Elaborating entity "mux4x1" for hierarchy "execute:exec|mux4x1:frwrda" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/execute.v Line: 16
+Info (12128): Elaborating entity "controlUnit" for hierarchy "decode:dcd|controlUnit:CU" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v Line: 42
+Info (12128): Elaborating entity "mux2x1" for hierarchy "decode:dcd|mux2x1:RFMux" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v Line: 48
+Info (12128): Elaborating entity "registerFile" for hierarchy "decode:dcd|registerFile:RF" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v Line: 54
+Info (12128): Elaborating entity "SignExtender" for hierarchy "decode:dcd|SignExtender:SignExtend" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v Line: 56
+Info (12128): Elaborating entity "mux4x1" for hierarchy "decode:dcd|mux4x1:FrdAmux" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v Line: 60
+Info (12128): Elaborating entity "comparator" for hierarchy "decode:dcd|comparator:cmp" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v Line: 70
+Info (12128): Elaborating entity "hazard_detection" for hierarchy "hazard_detection:HDU" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 47
+Info (12128): Elaborating entity "IDEX" for hierarchy "IDEX:idex" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 52
+Info (12128): Elaborating entity "execute" for hierarchy "execute:exec" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 61
 Info (12128): Elaborating entity "mux2x1" for hierarchy "execute:exec|mux2x1:ALUMux" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/execute.v Line: 20
 Info (12128): Elaborating entity "ALU" for hierarchy "execute:exec|ALU:alu" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/execute.v Line: 22
-Info (12128): Elaborating entity "forwarding_unit" for hierarchy "forwarding_unit:fw" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 64
-Info (12128): Elaborating entity "EXMEM" for hierarchy "EXMEM:exmem" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 73
-Info (12128): Elaborating entity "dataMemory" for hierarchy "dataMemory:DM" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 75
+Info (12128): Elaborating entity "forwarding_unit" for hierarchy "forwarding_unit:fw" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 73
+Info (12128): Elaborating entity "EXMEM" for hierarchy "EXMEM:exmem" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 82
+Info (12128): Elaborating entity "dataMemory" for hierarchy "dataMemory:DM" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 84
 Info (12128): Elaborating entity "altsyncram" for hierarchy "dataMemory:DM|altsyncram:altsyncram_component" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/dataMemory.v Line: 89
 Info (12130): Elaborated megafunction instantiation "dataMemory:DM|altsyncram:altsyncram_component" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/dataMemory.v Line: 89
 Info (12133): Instantiated megafunction "dataMemory:DM|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/dataMemory.v Line: 89
@@ -1015,23 +1123,45 @@ Info (12133): Instantiated megafunction "dataMemory:DM|altsyncram:altsyncram_com
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_8km1.tdf
     Info (12023): Found entity 1: altsyncram_8km1 File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/altsyncram_8km1.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_8km1" for hierarchy "dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated" File: c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "MEMWB" for hierarchy "MEMWB:memwb" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 81
+Info (12128): Elaborating entity "MEMWB" for hierarchy "MEMWB:memwb" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 90
+Info (19000): Inferred 1 megafunctions from design logic
+    Info (276034): Inferred altshift_taps megafunction from the following design logic: "IDEX:idex|Q_rtl_0"
+        Info (286033): Parameter NUMBER_OF_TAPS set to 1
+        Info (286033): Parameter TAP_DISTANCE set to 3
+        Info (286033): Parameter WIDTH set to 11
+Info (12130): Elaborated megafunction instantiation "IDEX:idex|altshift_taps:Q_rtl_0"
+Info (12133): Instantiated megafunction "IDEX:idex|altshift_taps:Q_rtl_0" with the following parameter:
+    Info (12134): Parameter "NUMBER_OF_TAPS" = "1"
+    Info (12134): Parameter "TAP_DISTANCE" = "3"
+    Info (12134): Parameter "WIDTH" = "11"
+Info (12021): Found 1 design units, including 1 entities, in source file db/shift_taps_vul.tdf
+    Info (12023): Found entity 1: shift_taps_vul File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/shift_taps_vul.tdf Line: 31
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_dj51.tdf
+    Info (12023): Found entity 1: altsyncram_dj51 File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/altsyncram_dj51.tdf Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_oed.tdf
+    Info (12023): Found entity 1: add_sub_oed File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/add_sub_oed.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_s3f.tdf
+    Info (12023): Found entity 1: cntr_s3f File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/cntr_s3f.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_erb.tdf
+    Info (12023): Found entity 1: cmpr_erb File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/cmpr_erb.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_fjg.tdf
+    Info (12023): Found entity 1: cntr_fjg File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/cntr_fjg.tdf Line: 26
 Info (13000): Registers with preset signals will power-up high File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/programCounter.v Line: 16
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3694 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3863 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 10 output pins
-    Info (21061): Implemented 3618 logic cells
-    Info (21064): Implemented 64 RAM segments
+    Info (21061): Implemented 3776 logic cells
+    Info (21064): Implemented 75 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4864 megabytes
-    Info: Processing ended: Sun Nov 10 18:22:57 2024
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Peak virtual memory: 4824 megabytes
+    Info: Processing ended: Mon Nov 11 00:34:25 2024
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:17
 
 
 +------------------------------------------+

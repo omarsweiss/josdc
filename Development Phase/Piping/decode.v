@@ -1,11 +1,12 @@
 module decode(input clk, rst, RegWriteEn_WB, jal_WB,
-input [31:0] instruction, writeData_WB, 
+input [31:0] instruction, writeData_WB, aluRes_MEM,
 input [4:0] writeRegister_WB, 
 input [9:0] PCPlus1, 
+input [1:0] ForwardA_branch, ForwardB_branch,
 
 output [9:0] jaddress, adderResult,
 output [4:0] shamt, rs, rt, DestReg,
-output Branch, MemReadEn, MemtoReg, MemWriteEn, RegWriteEn, ALUSrc, jump, jr, jal,PCSrc,
+output Branch, MemReadEn, MemtoReg, MemWriteEn, RegWriteEn, ALUSrc, jump, jr, jal,PCSrc,RegDst,
 output [3:0] ALUOp, 
 output [31:0] readData1, readData2, extImm);
 
@@ -13,7 +14,8 @@ output [31:0] readData1, readData2, extImm);
 wire [5:0] opCode, funct;
 wire [4:0] rd, writeRegister, regAddress;
 wire [15:0] imm;
-wire RegDst, bne;
+wire [31:0] fwdA,fwdB;
+wire bne;
 
 
 
@@ -55,9 +57,13 @@ SignExtender SignExtend(.in(imm), .out(extImm));
 adder branchAdder(.in1(PCPlus1), .in2(imm[9:0]), .out(adderResult));
 
 
+mux4x1 #(32) FrdAmux (.in1(readData1), .in2(aluRes_MEM), .in3(writeData_WB), .in4(32'b0), .s(ForwardA_branch), .out(fwdA));
+
+mux4x1 #(32) FrdBmux (.in1(readData2), .in2(aluRes_MEM), .in3(writeData_WB), .in4(32'b0), .s(ForwardB_branch), .out(fwdB));
+
 comparator cmp(
-	.In1(readData1),
-	.In2(readData2),
+	.In1(fwdA),
+	.In2(fwdB),
 	.bne(bne),
 	.reset(rst),
 	.branchValid(PCSrc)
