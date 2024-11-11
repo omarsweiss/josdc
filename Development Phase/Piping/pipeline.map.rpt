@@ -1,5 +1,5 @@
 Analysis & Elaboration report for pipeline
-Mon Nov 11 01:27:46 2024
+Mon Nov 11 21:43:59 2024
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -74,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                      ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Mon Nov 11 01:27:46 2024          ;
+; Analysis & Elaboration Status      ; Successful - Mon Nov 11 21:43:59 2024          ;
 ; Quartus Prime Version              ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                      ; pipeline                                       ;
 ; Top-level Entity Name              ; testbench                                      ;
@@ -704,7 +704,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Mon Nov 11 01:27:41 2024
+    Info: Processing started: Mon Nov 11 21:43:54 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SecondPhasePipeline -c pipeline --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -748,7 +748,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file adder.v
     Info (12023): Found entity 1: adder File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/adder.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file instructionmemory.v
     Info (12023): Found entity 1: instructionMemory File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/instructionMemory.v Line: 40
-Warning (10236): Verilog HDL Implicit Net warning at decode.v(69): created implicit net for "branch" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v Line: 69
 Info (12127): Elaborating entity "testbench" for the top level hierarchy
 Warning (10175): Verilog HDL warning at testbench.v(12): ignoring unsupported system task File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/testbench.v Line: 12
 Warning (10755): Verilog HDL warning at testbench.v(15): assignments to clk create a combinational loop File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/testbench.v Line: 15
@@ -821,9 +820,9 @@ Info (12128): Elaborating entity "MEMWB" for hierarchy "pipeline:uut|MEMWB:memwb
 Warning (12011): Net is missing source, defaulting to GND
     Warning (12110): Net "clk" is missing source, defaulting to GND File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/testbench.v Line: 4
 Info (144001): Generated suppressed messages file C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4744 megabytes
-    Info: Processing ended: Mon Nov 11 01:27:46 2024
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4752 megabytes
+    Info: Processing ended: Mon Nov 11 21:43:59 2024
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:12
 

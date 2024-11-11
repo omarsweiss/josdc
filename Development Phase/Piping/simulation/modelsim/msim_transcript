@@ -13,7 +13,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:28:28 on Nov 11,2024
+# Start time: 21:44:09 on Nov 11,2024
 # vlog -reportprogress 300 -vlog01compat -work altera_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -95,7 +95,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 01:28:28 on Nov 11,2024, Elapsed time: 0:00:00
+# End time: 21:44:10 on Nov 11,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -106,7 +106,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:28:28 on Nov 11,2024
+# Start time: 21:44:10 on Nov 11,2024
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -170,7 +170,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 01:28:28 on Nov 11,2024, Elapsed time: 0:00:00
+# End time: 21:44:10 on Nov 11,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -181,7 +181,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:28:29 on Nov 11,2024
+# Start time: 21:44:10 on Nov 11,2024
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -223,7 +223,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 01:28:29 on Nov 11,2024, Elapsed time: 0:00:00
+# End time: 21:44:10 on Nov 11,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -234,7 +234,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:28:29 on Nov 11,2024
+# Start time: 21:44:10 on Nov 11,2024
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -364,7 +364,7 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 01:28:29 on Nov 11,2024, Elapsed time: 0:00:00
+# End time: 21:44:11 on Nov 11,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -375,7 +375,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:28:29 on Nov 11,2024
+# Start time: 21:44:11 on Nov 11,2024
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -458,7 +458,7 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 01:28:30 on Nov 11,2024, Elapsed time: 0:00:01
+# End time: 21:44:11 on Nov 11,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/fiftyfivenm_ver
@@ -469,7 +469,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work fiftyfivenm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/fiftyfivenm_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:28:30 on Nov 11,2024
+# Start time: 21:44:11 on Nov 11,2024
 # vlog -reportprogress 300 -vlog01compat -work fiftyfivenm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/fiftyfivenm_atoms.v 
 # -- Compiling UDP FIFTYFIVENM_PRIM_DFFE
 # -- Compiling UDP FIFTYFIVENM_PRIM_DFFEAS
@@ -562,15 +562,15 @@
 # 	fiftyfivenm_jtag
 # 	fiftyfivenm_adcblock
 # 	fiftyfivenm_phase_detector
-# End time: 01:28:30 on Nov 11,2024, Elapsed time: 0:00:00
+# End time: 21:44:12 on Nov 11,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work fiftyfivenm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/fiftyfivenm_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:28:30 on Nov 11,2024
+# Start time: 21:44:12 on Nov 11,2024
 # vlog -reportprogress 300 -vlog01compat -work fiftyfivenm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/fiftyfivenm_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 01:28:32 on Nov 11,2024, Elapsed time: 0:00:02
+# End time: 21:44:13 on Nov 11,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -584,57 +584,57 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/dataMemory.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:28:32 on Nov 11,2024
+# Start time: 21:44:13 on Nov 11,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/dataMemory.v 
 # -- Compiling module dataMemory
 # 
 # Top level modules:
 # 	dataMemory
-# End time: 01:28:32 on Nov 11,2024, Elapsed time: 0:00:00
+# End time: 21:44:13 on Nov 11,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/testbench.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:28:32 on Nov 11,2024
+# Start time: 21:44:14 on Nov 11,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/testbench.v 
 # -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 01:28:32 on Nov 11,2024, Elapsed time: 0:00:00
+# End time: 21:44:14 on Nov 11,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/SignExtender.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:28:32 on Nov 11,2024
+# Start time: 21:44:14 on Nov 11,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/SignExtender.v 
 # -- Compiling module SignExtender
 # 
 # Top level modules:
 # 	SignExtender
-# End time: 01:28:32 on Nov 11,2024, Elapsed time: 0:00:00
+# End time: 21:44:14 on Nov 11,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/registerFile.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:28:32 on Nov 11,2024
+# Start time: 21:44:14 on Nov 11,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/registerFile.v 
 # -- Compiling module registerFile
 # 
 # Top level modules:
 # 	registerFile
-# End time: 01:28:32 on Nov 11,2024, Elapsed time: 0:00:00
+# End time: 21:44:14 on Nov 11,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/programCounter.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:28:32 on Nov 11,2024
+# Start time: 21:44:14 on Nov 11,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/programCounter.v 
 # -- Compiling module programCounter
 # 
 # Top level modules:
 # 	programCounter
-# End time: 01:28:32 on Nov 11,2024, Elapsed time: 0:00:00
+# End time: 21:44:14 on Nov 11,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/Pipes.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:28:32 on Nov 11,2024
+# Start time: 21:44:14 on Nov 11,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/Pipes.v 
 # -- Compiling module IFID
 # -- Compiling module IDEX
@@ -646,21 +646,21 @@
 # 	IDEX
 # 	EXMEM
 # 	MEMWB
-# End time: 01:28:32 on Nov 11,2024, Elapsed time: 0:00:00
+# End time: 21:44:14 on Nov 11,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:28:32 on Nov 11,2024
+# Start time: 21:44:14 on Nov 11,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v 
 # -- Compiling module pipeline
 # 
 # Top level modules:
 # 	pipeline
-# End time: 01:28:32 on Nov 11,2024, Elapsed time: 0:00:00
+# End time: 21:44:14 on Nov 11,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/mux2x1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:28:32 on Nov 11,2024
+# Start time: 21:44:14 on Nov 11,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/mux2x1.v 
 # -- Compiling module mux2x1
 # -- Compiling module mux4x1
@@ -668,123 +668,123 @@
 # Top level modules:
 # 	mux2x1
 # 	mux4x1
-# End time: 01:28:32 on Nov 11,2024, Elapsed time: 0:00:00
+# End time: 21:44:14 on Nov 11,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/hazard_detection.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:28:32 on Nov 11,2024
+# Start time: 21:44:14 on Nov 11,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/hazard_detection.v 
 # -- Compiling module hazard_detection
 # 
 # Top level modules:
 # 	hazard_detection
-# End time: 01:28:32 on Nov 11,2024, Elapsed time: 0:00:00
+# End time: 21:44:14 on Nov 11,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ForwardingUnit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:28:32 on Nov 11,2024
+# Start time: 21:44:14 on Nov 11,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ForwardingUnit.v 
 # -- Compiling module forwarding_unit
 # 
 # Top level modules:
 # 	forwarding_unit
-# End time: 01:28:32 on Nov 11,2024, Elapsed time: 0:00:00
+# End time: 21:44:14 on Nov 11,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/fetch.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:28:32 on Nov 11,2024
+# Start time: 21:44:14 on Nov 11,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/fetch.v 
 # -- Compiling module fetch
 # 
 # Top level modules:
 # 	fetch
-# End time: 01:28:32 on Nov 11,2024, Elapsed time: 0:00:00
+# End time: 21:44:14 on Nov 11,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/execute.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:28:32 on Nov 11,2024
+# Start time: 21:44:14 on Nov 11,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/execute.v 
 # -- Compiling module execute
 # 
 # Top level modules:
 # 	execute
-# End time: 01:28:32 on Nov 11,2024, Elapsed time: 0:00:00
+# End time: 21:44:14 on Nov 11,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:28:32 on Nov 11,2024
+# Start time: 21:44:14 on Nov 11,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v 
 # -- Compiling module decode
 # 
 # Top level modules:
 # 	decode
-# End time: 01:28:32 on Nov 11,2024, Elapsed time: 0:00:00
+# End time: 21:44:14 on Nov 11,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/controlUnit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:28:32 on Nov 11,2024
+# Start time: 21:44:14 on Nov 11,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/controlUnit.v 
 # -- Compiling module controlUnit
 # 
 # Top level modules:
 # 	controlUnit
-# End time: 01:28:32 on Nov 11,2024, Elapsed time: 0:00:00
+# End time: 21:44:14 on Nov 11,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/comparator.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:28:32 on Nov 11,2024
+# Start time: 21:44:14 on Nov 11,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/comparator.v 
 # -- Compiling module comparator
 # 
 # Top level modules:
 # 	comparator
-# End time: 01:28:32 on Nov 11,2024, Elapsed time: 0:00:00
+# End time: 21:44:14 on Nov 11,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ALU.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:28:33 on Nov 11,2024
+# Start time: 21:44:14 on Nov 11,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ALU.v 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 01:28:33 on Nov 11,2024, Elapsed time: 0:00:00
+# End time: 21:44:14 on Nov 11,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/adder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:28:33 on Nov 11,2024
+# Start time: 21:44:14 on Nov 11,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/adder.v 
 # -- Compiling module adder
 # 
 # Top level modules:
 # 	adder
-# End time: 01:28:33 on Nov 11,2024, Elapsed time: 0:00:00
+# End time: 21:44:14 on Nov 11,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/instructionMemory.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:28:33 on Nov 11,2024
+# Start time: 21:44:14 on Nov 11,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/instructionMemory.v 
 # -- Compiling module instructionMemory
 # 
 # Top level modules:
 # 	instructionMemory
-# End time: 01:28:33 on Nov 11,2024, Elapsed time: 0:00:00
+# End time: 21:44:14 on Nov 11,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/testbench.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:28:33 on Nov 11,2024
+# Start time: 21:44:14 on Nov 11,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/testbench.v 
 # -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 01:28:33 on Nov 11,2024, Elapsed time: 0:00:00
+# End time: 21:44:14 on Nov 11,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  testbench
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" testbench 
-# Start time: 01:28:33 on Nov 11,2024
+# Start time: 21:44:14 on Nov 11,2024
 # Loading work.testbench
 # Loading work.pipeline
 # Loading work.fetch
@@ -822,10 +822,12 @@
 #    Time: 1004 ns  Iteration: 0  Instance: /testbench
 # Break in Module testbench at C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/testbench.v line 12
 do {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/simulation/modelsim/wave.do}
+run -all
 restart
 run -all
 # ** Note: $stop    : C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/testbench.v(12)
 #    Time: 1004 ns  Iteration: 0  Instance: /testbench
 # Break in Module testbench at C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/testbench.v line 12
-# End time: 01:32:04 on Nov 11,2024, Elapsed time: 0:03:31
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/simulation/modelsim/wave.do}
+# End time: 21:50:30 on Nov 11,2024, Elapsed time: 0:06:16
 # Errors: 0, Warnings: 0
