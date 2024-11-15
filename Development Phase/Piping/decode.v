@@ -3,6 +3,7 @@ input [31:0] instruction, writeData_WB, aluRes_MEM,
 input [4:0] writeRegister_WB, 
 input [9:0] PCPlus1, 
 input [1:0] ForwardA_branch, ForwardB_branch,
+input hold,
 
 output [9:0] jaddress, adderResult,
 output [4:0] shamt, rs, rt, DestReg,
@@ -66,6 +67,7 @@ comparator cmp(
 	.In2(fwdB),
 	.bne(bne),
 	.reset(rst),
+	.hold(hold),
 	.branch(Branch),
 	.branchValid(PCSrc)
 );

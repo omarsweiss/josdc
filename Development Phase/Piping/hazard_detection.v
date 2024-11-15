@@ -16,11 +16,7 @@ wire branch_hold;
 
 assign ld_has_hazard = (mem_read_EX && (rs_ID == dest_EXE || regDest_ID && (rt_ID == dest_EXE))); 
 
-assign branch_has_hazard = (branch && branchValid) || jump || jal || jr;
-
-/*branch forwarding is as follows = 00 => normal value/ 01=> from mem/ 10=> from writeback. a stall will happen
-when dependecy with ex stage for one cycle, the result should appear in memory stage and then forwarded normally and the stall signal becomes 0
-*/
+assign branch_has_hazard = ((branch && branchValid) || jump || jal || jr) && !hold;
 
 
 assign branch_hold = branch && ( ((writeBack_EX && (dest_EXE != 5'b0) ) && ((dest_EXE == rs_ID) || (dest_EXE == rt_ID))) || (mem_to_reg_MEM && ((dest_MEM == rs_ID) || (dest_MEM == rt_ID))));
@@ -29,6 +25,9 @@ assign branch_hold = branch && ( ((writeBack_EX && (dest_EXE != 5'b0) ) && ((des
 assign hold = ld_has_hazard || branch_hold;
 
 
+/*branch forwarding is as follows = 00 => normal value/ 01=> from mem/ 10=> from writeback. a stall will happen
+when dependecy with ex stage for one cycle, the result should appear in memory stage and then forwarded normally and the stall signal becomes 0
+*/
 
 always @(*)begin
 

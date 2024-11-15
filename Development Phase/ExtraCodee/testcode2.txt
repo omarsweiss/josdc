@@ -1,0 +1,32 @@
+
+    lw $t0, 0($zero)      
+    add $t1, $t0, $t0 
+    sub $t2, $t1, $t0 
+    
+    lw $t3, 1($zero)
+    add $t4, $t3, $t3  
+    add $t3, $t4, $t4  
+
+    
+    addi $t5, $zero, 5 
+    add $t5, $t5, $t4  
+
+    addi $t6, $zero, 1 
+    beq $t6, $zero, skip 
+    addi $t6, $t6, 1
+
+    bne $t6, $zero, taken
+    addi $t6, $t6, 1
+    addi $t6, $t6, 1
+
+taken: 
+    addi $t4, $zero, 10
+    lw $t5, val1
+    beq $t5, $t4, skip
+    addi $t6, $t6, 1
+    addi $t6, $t6, 1
+
+
+skip:
+    sw $t6, result     
+    li $v0, 10        

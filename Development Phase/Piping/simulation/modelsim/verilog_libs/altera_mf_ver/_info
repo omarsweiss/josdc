@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/simulation/modelsim
 va_graycounter
-Z1 !s110 1731350651
+Z1 !s110 1731701293
 !i10b 1
 !s100 dbSQenUhE^>zo5H5zAI>X2
 IB7GNNK5L3:=>31ZRV0P[42
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1731350650.000000
+Z7 !s108 1731701292.000000
 Z8 !s107 c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|altera_mf_ver|c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v|
 !i113 1
@@ -366,7 +366,7 @@ R9
 R10
 R11
 vALTERA_DEVICE_FAMILIES
-Z12 !s110 1731350650
+Z12 !s110 1731701292
 !i10b 1
 !s100 Ie0_`X3Yi6=65^n?0c5aN3
 IO1Q^aSdgS@lkiMh9jONl=3
@@ -537,7 +537,7 @@ R9
 R10
 R11
 valtlvds_rx
-R1
+R12
 !i10b 1
 !s100 5>V0J2VHk1QIL0Kb^`oOk3
 I2WZmWPgba?ckB@azV7X401
@@ -642,7 +642,7 @@ R9
 R10
 R11
 valtpll
-R1
+R12
 !i10b 1
 !s100 [SX62M8C0J@z:hfdAbBD;3
 I:@nU24X7LdMHiW@d4AM1`0
@@ -1596,7 +1596,7 @@ R9
 R10
 R11
 vstratix_lvds_rx
-R1
+R12
 !i10b 1
 !s100 iWi`6Rm2^8][31l`]o]GU1
 Ij@Y?SGGQl;0Sj3ioQHd6<3
@@ -1638,7 +1638,7 @@ R9
 R10
 R11
 vstratixgx_dpa_lvds_rx
-R1
+R12
 !i10b 1
 !s100 o@H]oeNFD6;I^ZV32=FWY0
 ITQDHgmz;NcV62VB1zn6=00
@@ -1659,7 +1659,7 @@ R9
 R10
 R11
 vstratixii_lvds_rx
-R1
+R12
 !i10b 1
 !s100 km9L=F?k>jN^Gdd;?>^1e2
 ISQUXz[YkBhjMb7KIFd?D[1

@@ -1,5 +1,5 @@
 Flow report for pipeline
-Mon Nov 11 21:43:59 2024
+Fri Nov 15 23:07:40 2024
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Mon Nov 11 21:43:59 2024          ;
+; Flow Status                        ; Successful - Fri Nov 15 23:07:40 2024          ;
 ; Quartus Prime Version              ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                      ; pipeline                                       ;
 ; Top-level Entity Name              ; testbench                                      ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/11/2024 21:43:54 ;
+; Start date & time ; 11/15/2024 23:07:35 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; pipeline            ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 2544320857565.173135063417196          ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 2544320857565.173170125506488          ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; testbench      ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; testbench                              ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
@@ -112,7 +112,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:05     ; 1.0                     ; 4752 MB             ; 00:00:12                           ;
+; Analysis & Elaboration ; 00:00:05     ; 1.0                     ; 4744 MB             ; 00:00:12                           ;
 ; Total                  ; 00:00:05     ; --                      ; --                  ; 00:00:12                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 

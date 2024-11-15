@@ -4,6 +4,7 @@ module comparator (
   input bne,
   input reset,
   input branch,
+  input hold,
   output reg branchValid
 );
 
@@ -13,7 +14,7 @@ module comparator (
 	begin
     if (~reset) branchValid <=0;
     else begin
-		if(branch&& ((bne && (In1 != In2)) || (!bne && (In1 == In2)))) branchValid <= 1;
+		if(branch && !hold && ((bne && (In1 != In2)) || (!bne && (In1 == In2)))) branchValid <= 1;
 		else branchValid <= 0;
       end
   end

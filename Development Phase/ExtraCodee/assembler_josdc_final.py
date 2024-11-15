@@ -142,7 +142,7 @@ def unpseudo(instructions):
         if first == 'sgt':
             unpseudoed.append(label +'slt '+str(instruction[1])+' '+str(instruction[3])+' '+str(instruction[2]))
         elif first == 'li':
-            unpseudoed.append(label +'ori '+str(instruction[1])+' '+'$zero '+str(instruction[1]))
+            unpseudoed.append(label +'ori '+str(instruction[1])+' '+'$zero '+str(instruction[2]))
         elif first == 'blt':
             unpseudoed.append(label +'slt ' + '$at ' + str(instruction[1])+' '+str(instruction[2]))
             unpseudoed.append('bne ' + '$at $zero '+ str(instruction[3]))
@@ -162,32 +162,27 @@ def unpseudo(instructions):
 
 
 
-instructions = """addi $t0, $zero, 10   
-    addi $t1, $zero, 20
-    add $t2, $t0, $t1   
-    sub $t3, $t1, $t0   
-    and $t4, $t0, $t1
-    or $t5, $t0, $t1       
-    nor $t6, $t0, $t1       
-    xor $t7, $t0, $t1
-    addi $t8, $t0, 10     
-    ori $t9, $t1, 5     
-    xori $s0, $t1, 3       
-    slt $s1, $t0, $t1      
-    sll $s2, $t0, 2      
-    srl $s3, $t1, 1      
-    sw $t2, 4($zero)    
-    lw $t3, 4($zero)
-    beq $t0, $t1, eq    
-    bne $t0, $t1, ne    
-    eq: addi $a0, $zero, 1             
-    j end                  
-    ne: addi $a0, $zero, 2               
-    jal label              
-    j end              
-    label: addi $v0, $zero, 4      
-    jr $ra                  
-    end: addi $t0, $zero, 0 """
+instructions = """lw $t0, 0($zero)      
+    add $t1, $t0, $t0 
+    sub $t2, $t1, $t0 
+    lw $t3, 1($zero)
+    add $t4, $t3, $t3  
+    add $t3, $t4, $t4  
+    addi $t5, $zero, 5 
+    add $t5, $t5, $t4  
+    addi $t6, $zero, 1 
+    beq $t6, $zero, skip 
+    addi $t6, $t6, 1
+    bne $t6, $zero, taken
+    addi $t6, $t6, 1
+    addi $t6, $t6, 1
+taken: addi $t4, $zero, 10
+    lw $t5, 0($zero)
+    beq $t5, $t4, skip
+    addi $t6, $t6, 1
+    addi $t6, $t6, 1
+skip: sw $t6, 4($zero)     
+    li $v0, 10"""
 i = 0 
 
 instructions = labeling(unpseudo(instructions.strip()))

@@ -22,7 +22,7 @@ rst => rst.IN1
 PCsrc => PCsrc.IN1
 jr => jr.IN1
 jump => jump.IN1
-hold => hold.IN1
+hold => _.IN1
 reg1Addr[0] => reg1Addr[0].IN1
 reg1Addr[1] => reg1Addr[1].IN1
 reg1Addr[2] => reg1Addr[2].IN1
@@ -1289,6 +1289,7 @@ ForwardA_branch[0] => ForwardA_branch[0].IN1
 ForwardA_branch[1] => ForwardA_branch[1].IN1
 ForwardB_branch[0] => ForwardB_branch[0].IN1
 ForwardB_branch[1] => ForwardB_branch[1].IN1
+hold => hold.IN1
 jaddress[0] <= imm[0].DB_MAX_OUTPUT_PORT_TYPE
 jaddress[1] <= imm[1].DB_MAX_OUTPUT_PORT_TYPE
 jaddress[2] <= imm[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -6628,7 +6629,8 @@ In2[31] => Equal0.IN32
 bne => always0.IN1
 bne => always0.IN1
 reset => branchValid.OUTPUTSELECT
-branch => always0.IN1
+branch => always0.IN0
+hold => always0.IN1
 branchValid <= branchValid.DB_MAX_OUTPUT_PORT_TYPE
 
 

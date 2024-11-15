@@ -14,8 +14,12 @@ mux2x1 #(10) JRMux(.in1(jaddress),.in2(reg1Addr),.s(jr),.out(jrAddress));
 //branch or jump address
 mux2x1 #(10) jumpMux(.in1(branchAddress),.in2(jrAddress),.s(jump),.out(nextPC));
 
-programCounter pc(.clk(clk), .rst(rst), .PCin(nextPC), .PCout(PC), .hold(hold));
-adder PCAdder(.in1(PC), .in2(10'b1), .out(PCPlus1));
+programCounter pc(.clk(clk), .rst(rst), .PCin(nextPC), .PCout(PC), .hold(1'b0));
+adder PCAdder(.in1(PC), .in2({9'b0,!hold}), .out(PCPlus1));//balling
+
+
+
+
 instructionMemory IM(.address(nextPC), .clock(clk), .q(instruction));
 
 

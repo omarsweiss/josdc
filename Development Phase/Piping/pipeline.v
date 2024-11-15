@@ -33,7 +33,7 @@ decode dcd(.clk(clk), .rst(rst),
 .jaddress(jaddress), .shamt(shamt), .Branch(Branch), .MemReadEn(MemReadEn), .MemtoReg(MemtoReg), .MemWriteEn(MemWriteEn), .RegWriteEn(RegWriteEn), .ALUSrc(ALUSrc), .jump(jump), 
 .jr(jr), .jal(jal), .jal_WB(jal_WB), .aluRes_MEM(aluRes_MEM), .writeData_WB(writeData_WB), .ForwardA_branch(fwdAbranch), .ForwardB_branch(fwdBbranch),
 .ALUOp(ALUOp), .rs(rs), .rt(rt), .RegDst(RegDst),
-.DestReg(DestReg), .readData1(readData1), .readData2(readData2), .extImm(extImm), .adderResult(adderResult), .PCSrc(PCSrc));
+.DestReg(DestReg), .readData1(readData1), .readData2(readData2), .extImm(extImm), .adderResult(adderResult), .PCSrc(PCSrc), .hold(hold));
 
 
 
@@ -80,6 +80,8 @@ EXMEM #(84) exmem(
     .D({aluRes_EX, forwardBRes_EX, MemReadEn_EX, MemtoReg_EX, MemWriteEn_EX, RegWriteEn_EX,  jal_EX, DestReg_EX, PCPlus1_EX}), 
     .clk(clk), .reset(rst)
 );
+
+
 
 dataMemory DM(.address(aluRes_MEM[7:0]), .clock(~clk), .data(forwardBRes_MEM), .rden(MemReadEn_MEM), .wren(MemWriteEn_MEM), .q(memoryReadData));
 

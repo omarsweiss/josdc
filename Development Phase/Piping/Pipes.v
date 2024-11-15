@@ -13,6 +13,7 @@ module IFID #(parameter size = 96) (Q, D, clk, reset, hold, flush);
     end
 endmodule
 //////////////////////////////////////////////////////
+
 module IDEX #(parameter size = 153) (Q, D, clk, reset, flush);
 input clk, reset, flush;
 input [size-1:0] D;
