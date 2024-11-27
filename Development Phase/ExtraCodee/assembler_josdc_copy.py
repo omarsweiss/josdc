@@ -13,38 +13,38 @@ def assemble(inp):
   itype = {'addi':'001000', 'beq':'000100', 'bne':'000101', 'ori':'001101', 'xori':'001110', 'andi':'001100' ,'slti':'001010'}
   jtype = {'j': '000010', 'jr':'000000','jal':'000011'}
   register_map = {
-    "$zero":"00000",
-    "$at": "00001",
-    "$v0": "00010",
-    "$v1": "00011",
-    "$a0": "00100",
-    "$a1": "00101",
-    "$a2": "00110",
-    "$a3": "00111",
-    "$t0": "01000",
-    "$t1": "01001",
-    "$t2": "01010",
-    "$t3": "01011",
-    "$t4": "01100",
-    "$t5": "01101",
-    "$t6": "01110",
-    "$t7": "01111",
-    "$s0": "10000",
-    "$s1": "10001",
-    "$s2": "10010",
-    "$s3": "10011",
-    "$s4": "10100",
-    "$s5": "10101",
-    "$s6": "10110",
-    "$s7": "10111",
-    "$t8": "11000",
-    "$t9": "11001",
-    "$k0": "11010",
-    "$k1": "11011",
-    "$gp": "11100",
-    "$sp": "11101",
-    "$fp": "11110",
-    "$ra": "11111"}
+    "$0":"00000",
+    "$1": "00001",
+    "$2": "00010",
+    "$3": "00011",
+    "$4": "00100",
+    "$5": "00101",
+    "$6": "00110",
+    "$7": "00111",
+    "$8": "01000",
+    "$9": "01001",
+    "$10": "01010",
+    "$11": "01011",
+    "$12": "01100",
+    "$13": "01101",
+    "$14": "01110",
+    "$15": "01111",
+    "$16": "10000",
+    "$17": "10001",
+    "$18": "10010",
+    "$19": "10011",
+    "$20": "10100",
+    "$21": "10101",
+    "$22": "10110",
+    "$23": "10111",
+    "$24": "11000",
+    "$25": "11001",
+    "$26": "11010",
+    "$27": "11011",
+    "$28": "11100",
+    "$29": "11101",
+    "$30": "11110",
+    "$31": "11111"}
 
   if opcode in rtype:
     _,dest,src1, src2 = parts
@@ -142,19 +142,25 @@ def unpseudo(instructions):
         if first == 'sgt':
             unpseudoed.append(label +'slt '+str(instruction[1])+' '+str(instruction[3])+' '+str(instruction[2]))
         elif first == 'li':
-            unpseudoed.append(label +'ori '+str(instruction[1])+' '+'$zero '+str(instruction[2]))
+            unpseudoed.append(label +'ori '+str(instruction[1])+' '+'$0 '+str(instruction[2]))
         elif first == 'blt':
-            unpseudoed.append(label +'slt ' + '$at ' + str(instruction[1])+' '+str(instruction[2]))
-            unpseudoed.append('bne ' + '$at $zero '+ str(instruction[3]))
+            unpseudoed.append(label +'slt ' + '$30 ' + str(instruction[1])+' '+str(instruction[2]))
+            unpseudoed.append('bne ' + '$30 $0 '+ str(instruction[3]))
         elif first == 'ble':
-            unpseudoed.append(label +'slt ' + '$at ' + str(instruction[2])+' '+str(instruction[1]))
-            unpseudoed.append('beq ' + '$at $zero '+ str(instruction[3]))
+            unpseudoed.append(label +'slt ' + '$30 ' + str(instruction[2])+' '+str(instruction[1]))
+            unpseudoed.append('beq ' + '$30 $0 '+ str(instruction[3]))
         elif first == 'bgt':
-            unpseudoed.append(label +'slt ' + '$at ' + str(instruction[2])+' '+str(instruction[1]))
-            unpseudoed.append('bne ' + '$at $zero '+ str(instruction[3]))
+            unpseudoed.append(label +'slt ' + '$30 ' + str(instruction[2])+' '+str(instruction[1]))
+            unpseudoed.append('bne ' + '$30 $0 '+ str(instruction[3]))
         elif first == 'bge':
-            unpseudoed.append(label +'slt ' + '$at ' + str(instruction[1])+' '+str(instruction[2]))
-            unpseudoed.append('beq ' + '$at $zero '+ str(instruction[3]))
+            unpseudoed.append(label +'slt ' + '$30 ' + str(instruction[1])+' '+str(instruction[2]))
+            unpseudoed.append('beq ' + '$30 $0 '+ str(instruction[3]))
+        elif first == 'bltz':
+            unpseudoed.append(label + 'slti '+'$30 ' + str(instruction[1]) + ' 0')
+            unpseudoed.append('bne ' + '$30 $0 ' + str(instruction[2]))
+        elif first == 'bgez':
+            unpseudoed.append(label + 'slti '+'$30 ' + str(instruction[1]) + ' 0')
+            unpseudoed.append('beq ' + '$30 $0 ' + str(instruction[2]))
         else:
             unpseudoed.append(label + ' '.join(instruction))
     return unpseudoed
@@ -162,28 +168,29 @@ def unpseudo(instructions):
 
 
 
-instructions = """lw $t0, 0($zero)      
-    add $t1, $t0, $t0 
-    sub $t2, $t1, $t0 
-    lw $t3, 1($zero)
-    add $t4, $t3, $t3  
-    add $t3, $t4, $t4  
-    addi $t5, $zero, 5 
-    add $t5, $t5, $t4  
-    addi $t6, $zero, 1 
-    beq $t6, $zero, skip 
-    addi $t6, $t6, 1
-    bne $t6, $zero, taken
-    addi $t6, $t6, 1
-    addi $t6, $t6, 1
-taken: addi $t4, $zero, 10
-    lw $t5, 0($zero)
-    beq $t5, $t4, skip
-    addi $t6, $t6, 1
-    addi $t6, $t6, 1
-skip: sw $t6, 4($zero)     
-    li $v0, 10"""
+instructions = """addi $1, $0, 0
+addi $2, $0, B
+addi $3, $0, 7
+loop: slt $7, $2, $1
+bne $0, $7, notFound
+add $4, $2, $1
+srl $5, $4, 1
+lw $6, 0($5)
+beq $3, $6, found
+slt $6, $6, $3
+beq $6, $0, leftHalf
+j rightHalf
+leftHalf: add $2, $5, FFFF # "FFFF=-1"
+j loop
+rightHalf: addi $1, $5, 1
+j loop
+found: add $8, $0, $5
+j finish
+notFound: addi $8, $0, FFFF
+j finish
+finish: addi $0, $0, 0  """
 i = 0 
+instructions = instructions.lower()
 
 instructions = labeling(unpseudo(instructions.strip()))
 
