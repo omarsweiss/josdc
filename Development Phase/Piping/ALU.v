@@ -35,7 +35,7 @@ module ALU (operand1, operand2, opSel, result, zero,shamt);
 			
 			_OR : result = operand1 | operand2;
 			
-			_SLT: result = (operand1 < operand2) ? 1 : 0;//operand1 instead of 2 xd
+			_SLT: result = ($signed(operand1) < $signed(operand2)) ? 1 : 0;//operand1 instead of 2 xd
 			
 			_XOR: result = operand1 ^ operand2;
 			

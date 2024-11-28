@@ -116,6 +116,12 @@ add wave -noupdate -radix decimal /testbench/uut/dcd/FrdBmux/in3
 add wave -noupdate -radix decimal /testbench/uut/dcd/FrdBmux/in4
 add wave -noupdate -radix decimal /testbench/uut/dcd/FrdBmux/out
 add wave -noupdate -radix decimal /testbench/uut/dcd/FrdBmux/s
+add wave -noupdate -divider Dmem
+add wave -noupdate -radix decimal /testbench/uut/DM/address
+add wave -noupdate -radix decimal /testbench/uut/DM/data
+add wave -noupdate -radix decimal /testbench/uut/DM/q
+add wave -noupdate -radix decimal /testbench/uut/DM/rden
+add wave -noupdate -radix decimal /testbench/uut/DM/wren
 add wave -noupdate -divider forwarding
 add wave -noupdate -radix decimal /testbench/uut/exec/frwrda/s
 add wave -noupdate -radix decimal /testbench/uut/exec/frwrda/in1
@@ -128,7 +134,7 @@ add wave -noupdate -radix decimal /testbench/uut/exec/frwrdb/in2
 add wave -noupdate -radix decimal /testbench/uut/exec/frwrdb/in3
 add wave -noupdate -radix decimal /testbench/uut/exec/frwrdb/out
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {229914 ps} 0}
+WaveRestoreCursors {{Cursor 1} {183348 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 244
 configure wave -valuecolwidth 173
@@ -144,4 +150,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {141656 ps} {289544 ps}
+WaveRestoreZoom {157983 ps} {392794 ps}

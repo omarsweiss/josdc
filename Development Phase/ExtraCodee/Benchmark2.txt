@@ -1,0 +1,34 @@
+ADDI $1, $0, -5			 0
+ADDI $2, $0, 5
+ADDI $3, $0, 5
+ADDI $4, $0, 23
+L1: BEQ $2, $3, L2 		4
+addi $0, $0, 0 
+JAL L1
+L2: BNE $2, $3, L3
+L3: addi $0, $0, 0		8
+L4: BLTZ $1, L5			9 10 
+addi $0, $0, 0
+JAL L4
+L5: BGEZ $2, L6			13 14
+addi $0, $0, 0
+JAL L5
+L6: JAL L7			17
+addi $0, $0, 0			18
+JAL L6 				
+L7: JR $4			20
+addi $0, $0, 0			21
+JAL L7			
+L8: addi $0, $0, 0		23
+
+
+1= -5
+2= 5
+3= 5
+4= 23
+first branch taken to L2
+second not taken
+third taken to L5
+fourth taken to L6
+JR to end
+

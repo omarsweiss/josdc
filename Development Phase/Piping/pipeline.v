@@ -3,15 +3,15 @@ module pipeline(input clk, input rst, output [9:0] PC);
 
 
 
-wire [31:0] instruction, writeData_WB, readData1, readData2, extImm, readData1_EX, readData2_EX, memoryReadData_WB, WBMuxOutput, 
+wire [31:0] instruction, writeData_WB, readData1, readData2, extImm, readData1_EX, readData2_EX, memoryReadData_WB, WBMuxOutput, WriteDmem,
 extImm_EX, aluRes_EX, forwardBRes_EX, aluRes_MEM, aluRes_WB, forwardBRes_MEM, instruction_ID,memoryReadData;
 wire [9:0]  jaddress, adderResult, PCPlus1, PC_ID, PCPlus1_ID, jaddress_ID, adderResult_ID, PCPlus1_EX, PCPlus1_MEM, PCPlus1_WB;
-wire [4:0] shamt, rs, rt, DestReg, shamt_EX, rs_EX, rt_EX, DestReg_EX, DestReg_MEM, DestReg_WB;
+wire [4:0] shamt, rs, rt, DestReg, shamt_EX, rs_EX, rt_EX,rt_MEM, DestReg_EX, DestReg_MEM, DestReg_WB;
 wire [3:0] ALUOp, ALUOp_EX;
 wire [1:0] forwardA, forwardB, fwdAbranch, fwdBbranch;
 wire PCSrc, jr, RegWriteEn_WB, Branch, MemReadEn, MemtoReg, MemWriteEn, RegWriteEn, ALUSrc, RegDst,
 jump, jal,  MemReadEn_EX, MemtoReg_EX, MemWriteEn_EX, RegWriteEn_EX, ALUSrc_EX, jal_EX, ld_hazard, branch_hazard, hold,
-MemReadEn_MEM, MemtoReg_MEM, MemWriteEn_MEM, RegWriteEn_MEM, ALUSrc_MEM, jal_MEM, jal_WB, MemtoReg_WB;
+MemReadEn_MEM, MemtoReg_MEM, MemWriteEn_MEM, RegWriteEn_MEM, ALUSrc_MEM, jal_MEM, jal_WB, MemtoReg_WB,memFw;
 
 
   
@@ -63,27 +63,30 @@ execute exec(
 forwarding_unit fw(
   .rs_ex(rs_EX),
   .rt_ex(rt_EX),
+  .rt_mem(rt_MEM),
+  .MemWriteEn_MEM(MemWriteEn_MEM),
   .dest_mem(DestReg_MEM),
   .dest_wb(DestReg_WB),
   .rst(rst),
   .regwrite_mem(RegWriteEn_MEM),
   .regwrite_wb(RegWriteEn_WB),
-  
+  .memFw(memFw),
   .ForwardA(forwardA),
   .ForwardB(forwardB));
 
 
 
 
-EXMEM #(84) exmem(
-    .Q({aluRes_MEM, forwardBRes_MEM, MemReadEn_MEM, MemtoReg_MEM, MemWriteEn_MEM, RegWriteEn_MEM, jal_MEM, DestReg_MEM, PCPlus1_MEM}), 
-    .D({aluRes_EX, forwardBRes_EX, MemReadEn_EX, MemtoReg_EX, MemWriteEn_EX, RegWriteEn_EX,  jal_EX, DestReg_EX, PCPlus1_EX}), 
+EXMEM #(89) exmem(
+    .Q({aluRes_MEM, forwardBRes_MEM, MemReadEn_MEM, MemtoReg_MEM, MemWriteEn_MEM, RegWriteEn_MEM, jal_MEM, DestReg_MEM, PCPlus1_MEM, rt_MEM}), 
+    .D({aluRes_EX, forwardBRes_EX, MemReadEn_EX, MemtoReg_EX, MemWriteEn_EX, RegWriteEn_EX,  jal_EX, DestReg_EX, PCPlus1_EX,rt_EX}), 
     .clk(clk), .reset(rst)
 );
 
 
 
-dataMemory DM(.address(aluRes_MEM[7:0]), .clock(~clk), .data(forwardBRes_MEM), .rden(MemReadEn_MEM), .wren(MemWriteEn_MEM), .q(memoryReadData));
+mux2x1 #(32) memForward(.in1(forwardBRes_MEM), .in2(WBMuxOutput), .s(memFw), .out(WriteDmem) );
+dataMemory DM(.address(aluRes_MEM[7:0]), .clock(~clk), .data(WriteDmem), .rden(MemReadEn_MEM), .wren(MemWriteEn_MEM), .q(memoryReadData));
 
 
 

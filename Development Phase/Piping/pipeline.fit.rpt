@@ -1,5 +1,5 @@
 Fitter report for pipeline
-Fri Nov 15 23:07:18 2024
+Wed Nov 27 18:13:25 2024
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -72,17 +72,17 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                      ;
 +------------------------------------+------------------------------------------------+
-; Fitter Status                      ; Successful - Fri Nov 15 23:07:18 2024          ;
+; Fitter Status                      ; Successful - Wed Nov 27 18:13:25 2024          ;
 ; Quartus Prime Version              ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                      ; pipeline                                       ;
 ; Top-level Entity Name              ; pipeline                                       ;
 ; Family                             ; MAX 10                                         ;
 ; Device                             ; 10M50DAF484I7G                                 ;
 ; Timing Models                      ; Final                                          ;
-; Total logic elements               ; 3,024 / 49,760 ( 6 % )                         ;
-;     Total combinational functions  ; 2,630 / 49,760 ( 5 % )                         ;
-;     Dedicated logic registers      ; 1,296 / 49,760 ( 3 % )                         ;
-; Total registers                    ; 1296                                           ;
+; Total logic elements               ; 2,965 / 49,760 ( 6 % )                         ;
+;     Total combinational functions  ; 2,666 / 49,760 ( 5 % )                         ;
+;     Dedicated logic registers      ; 1,301 / 49,760 ( 3 % )                         ;
+; Total registers                    ; 1301                                           ;
 ; Total pins                         ; 12 / 360 ( 3 % )                               ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 40,993 / 1,677,312 ( 2 % )                     ;
@@ -158,16 +158,16 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
-; Average used               ; 1.30        ;
+; Average used               ; 1.12        ;
 ; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   6.0%      ;
-;     Processor 3            ;   6.0%      ;
-;     Processor 4            ;   5.9%      ;
-;     Processor 5            ;   5.9%      ;
-;     Processor 6            ;   5.9%      ;
+;     Processor 2            ;   2.5%      ;
+;     Processor 3            ;   2.5%      ;
+;     Processor 4            ;   2.5%      ;
+;     Processor 5            ;   2.5%      ;
+;     Processor 6            ;   2.5%      ;
 +----------------------------+-------------+
 
 
@@ -217,8 +217,8 @@ https://fpgasoftware.intel.com/eula.
 ; Type                ; Total [A + B]       ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+---------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                     ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 4078 ) ; 0.00 % ( 0 / 4078 )        ; 0.00 % ( 0 / 4078 )      ;
-;     -- Achieved     ; 0.00 % ( 0 / 4078 ) ; 0.00 % ( 0 / 4078 )        ; 0.00 % ( 0 / 4078 )      ;
+;     -- Requested    ; 0.00 % ( 0 / 4119 ) ; 0.00 % ( 0 / 4119 )        ; 0.00 % ( 0 / 4119 )      ;
+;     -- Achieved     ; 0.00 % ( 0 / 4119 ) ; 0.00 % ( 0 / 4119 )        ; 0.00 % ( 0 / 4119 )      ;
 ;                     ;                     ;                            ;                          ;
 ; Routing (by net)    ;                     ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )    ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -241,7 +241,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 4062 )   ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 4103 )   ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 16 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -257,29 +257,29 @@ The pin-out file can be found in C:/Users/amr/Desktop/Quartus/Minimum electric d
 +---------------------------------------------+----------------------------+
 ; Resource                                    ; Usage                      ;
 +---------------------------------------------+----------------------------+
-; Total logic elements                        ; 3,024 / 49,760 ( 6 % )     ;
-;     -- Combinational with no register       ; 1728                       ;
-;     -- Register only                        ; 394                        ;
-;     -- Combinational with a register        ; 902                        ;
+; Total logic elements                        ; 2,965 / 49,760 ( 6 % )     ;
+;     -- Combinational with no register       ; 1664                       ;
+;     -- Register only                        ; 299                        ;
+;     -- Combinational with a register        ; 1002                       ;
 ;                                             ;                            ;
 ; Logic element usage by number of LUT inputs ;                            ;
-;     -- 4 input functions                    ; 2056                       ;
-;     -- 3 input functions                    ; 438                        ;
+;     -- 4 input functions                    ; 2058                       ;
+;     -- 3 input functions                    ; 472                        ;
 ;     -- <=2 input functions                  ; 136                        ;
-;     -- Register only                        ; 394                        ;
+;     -- Register only                        ; 299                        ;
 ;                                             ;                            ;
 ; Logic elements by mode                      ;                            ;
-;     -- normal mode                          ; 2546                       ;
+;     -- normal mode                          ; 2582                       ;
 ;     -- arithmetic mode                      ; 84                         ;
 ;                                             ;                            ;
-; Total registers*                            ; 1,296 / 51,509 ( 3 % )     ;
-;     -- Dedicated logic registers            ; 1,296 / 49,760 ( 3 % )     ;
+; Total registers*                            ; 1,301 / 51,509 ( 3 % )     ;
+;     -- Dedicated logic registers            ; 1,301 / 49,760 ( 3 % )     ;
 ;     -- I/O registers                        ; 0 / 1,749 ( 0 % )          ;
 ;                                             ;                            ;
-; Total LABs:  partially or completely used   ; 225 / 3,110 ( 7 % )        ;
+; Total LABs:  partially or completely used   ; 219 / 3,110 ( 7 % )        ;
 ; Virtual pins                                ; 0                          ;
 ; I/O pins                                    ; 12 / 360 ( 3 % )           ;
-;     -- Clock pins                           ; 3 / 8 ( 38 % )             ;
+;     -- Clock pins                           ; 2 / 8 ( 25 % )             ;
 ;     -- Dedicated input pins                 ; 1 / 1 ( 100 % )            ;
 ;                                             ;                            ;
 ; M9Ks                                        ; 6 / 182 ( 3 % )            ;
@@ -296,12 +296,12 @@ The pin-out file can be found in C:/Users/amr/Desktop/Quartus/Minimum electric d
 ; Remote update blocks                        ; 0 / 1 ( 0 % )              ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )              ;
 ; Impedance control blocks                    ; 0 / 1 ( 0 % )              ;
-; Average interconnect usage (total/H/V)      ; 2.9% / 2.9% / 3.0%         ;
-; Peak interconnect usage (total/H/V)         ; 39.3% / 38.5% / 40.5%      ;
-; Maximum fan-out                             ; 1305                       ;
+; Average interconnect usage (total/H/V)      ; 2.9% / 2.9% / 3.1%         ;
+; Peak interconnect usage (total/H/V)         ; 53.6% / 53.6% / 53.6%      ;
+; Maximum fan-out                             ; 1310                       ;
 ; Highest non-global fan-out                  ; 245                        ;
-; Total fan-out                               ; 15325                      ;
-; Average fan-out                             ; 3.51                       ;
+; Total fan-out                               ; 15352                      ;
+; Average fan-out                             ; 3.56                       ;
 +---------------------------------------------+----------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -314,26 +314,26 @@ The pin-out file can be found in C:/Users/amr/Desktop/Quartus/Minimum electric d
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 3024 / 49760 ( 6 % ) ; 0 / 49760 ( 0 % )              ;
-;     -- Combinational with no register       ; 1728                 ; 0                              ;
-;     -- Register only                        ; 394                  ; 0                              ;
-;     -- Combinational with a register        ; 902                  ; 0                              ;
+; Total logic elements                        ; 2965 / 49760 ( 6 % ) ; 0 / 49760 ( 0 % )              ;
+;     -- Combinational with no register       ; 1664                 ; 0                              ;
+;     -- Register only                        ; 299                  ; 0                              ;
+;     -- Combinational with a register        ; 1002                 ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
-;     -- 4 input functions                    ; 2056                 ; 0                              ;
-;     -- 3 input functions                    ; 438                  ; 0                              ;
+;     -- 4 input functions                    ; 2058                 ; 0                              ;
+;     -- 3 input functions                    ; 472                  ; 0                              ;
 ;     -- <=2 input functions                  ; 136                  ; 0                              ;
-;     -- Register only                        ; 394                  ; 0                              ;
+;     -- Register only                        ; 299                  ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 2546                 ; 0                              ;
+;     -- normal mode                          ; 2582                 ; 0                              ;
 ;     -- arithmetic mode                      ; 84                   ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total registers                             ; 1296                 ; 0                              ;
-;     -- Dedicated logic registers            ; 1296 / 49760 ( 3 % ) ; 0 / 49760 ( 0 % )              ;
+; Total registers                             ; 1301                 ; 0                              ;
+;     -- Dedicated logic registers            ; 1301 / 49760 ( 3 % ) ; 0 / 49760 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total LABs:  partially or completely used   ; 225 / 3110 ( 7 % )   ; 0 / 3110 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 219 / 3110 ( 7 % )   ; 0 / 3110 ( 0 % )               ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
 ; I/O pins                                    ; 12                   ; 0                              ;
@@ -352,8 +352,8 @@ The pin-out file can be found in C:/Users/amr/Desktop/Quartus/Minimum electric d
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 15350                ; 8                              ;
-;     -- Registered Connections               ; 5698                 ; 0                              ;
+;     -- Total Connections                    ; 15377                ; 8                              ;
+;     -- Registered Connections               ; 5714                 ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
 ;     -- Top                                  ; 0                    ; 0                              ;
@@ -385,8 +385,8 @@ The pin-out file can be found in C:/Users/amr/Desktop/Quartus/Minimum electric d
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; clk  ; M8    ; 2        ; 0            ; 18           ; 14           ; 1305                  ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
-; rst  ; M9    ; 2        ; 0            ; 18           ; 21           ; 1337                  ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
+; clk  ; M8    ; 2        ; 0            ; 18           ; 14           ; 1310                  ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
+; rst  ; M9    ; 2        ; 0            ; 18           ; 21           ; 1342                  ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
@@ -395,16 +395,16 @@ The pin-out file can be found in C:/Users/amr/Desktop/Quartus/Minimum electric d
 +-------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name  ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +-------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
-; PC[0] ; Y11   ; 4        ; 36           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; PC[1] ; V9    ; 3        ; 31           ; 0            ; 28           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; PC[2] ; AA8   ; 3        ; 31           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; PC[3] ; AA9   ; 3        ; 34           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; PC[4] ; AB6   ; 3        ; 29           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; PC[5] ; R11   ; 3        ; 31           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; PC[6] ; AA10  ; 3        ; 34           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; PC[7] ; P11   ; 3        ; 34           ; 0            ; 28           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; PC[8] ; V10   ; 3        ; 31           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; PC[9] ; AB8   ; 3        ; 31           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; PC[0] ; A3    ; 8        ; 26           ; 39           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; PC[1] ; A2    ; 8        ; 26           ; 39           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; PC[2] ; B7    ; 8        ; 34           ; 39           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; PC[3] ; D7    ; 8        ; 29           ; 39           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; PC[4] ; B3    ; 8        ; 26           ; 39           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; PC[5] ; A5    ; 8        ; 31           ; 39           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; PC[6] ; B4    ; 8        ; 26           ; 39           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; PC[7] ; E11   ; 8        ; 36           ; 39           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; PC[8] ; E9    ; 8        ; 29           ; 39           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; PC[9] ; C6    ; 8        ; 29           ; 39           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 +-------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -424,21 +424,21 @@ The pin-out file can be found in C:/Users/amr/Desktop/Quartus/Minimum electric d
 +----------+----------------------------------------------------+--------------------------------+---------------------+------------------+
 
 
-+-----------------------------------------------------------+
-; I/O Bank Usage                                            ;
-+----------+-----------------+---------------+--------------+
-; I/O Bank ; Usage           ; VCCIO Voltage ; VREF Voltage ;
-+----------+-----------------+---------------+--------------+
-; 1A       ; 0 / 16 ( 0 % )  ; 2.5V          ; --           ;
-; 1B       ; 4 / 24 ( 17 % ) ; 2.5V          ; --           ;
-; 2        ; 2 / 36 ( 6 % )  ; 2.5V          ; --           ;
-; 3        ; 9 / 48 ( 19 % ) ; 2.5V          ; --           ;
-; 4        ; 1 / 48 ( 2 % )  ; 2.5V          ; --           ;
-; 5        ; 0 / 40 ( 0 % )  ; 2.5V          ; --           ;
-; 6        ; 0 / 60 ( 0 % )  ; 2.5V          ; --           ;
-; 7        ; 0 / 52 ( 0 % )  ; 2.5V          ; --           ;
-; 8        ; 4 / 36 ( 11 % ) ; 2.5V          ; --           ;
-+----------+-----------------+---------------+--------------+
++------------------------------------------------------------+
+; I/O Bank Usage                                             ;
++----------+------------------+---------------+--------------+
+; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ;
++----------+------------------+---------------+--------------+
+; 1A       ; 0 / 16 ( 0 % )   ; 2.5V          ; --           ;
+; 1B       ; 4 / 24 ( 17 % )  ; 2.5V          ; --           ;
+; 2        ; 2 / 36 ( 6 % )   ; 2.5V          ; --           ;
+; 3        ; 0 / 48 ( 0 % )   ; 2.5V          ; --           ;
+; 4        ; 0 / 48 ( 0 % )   ; 2.5V          ; --           ;
+; 5        ; 0 / 40 ( 0 % )   ; 2.5V          ; --           ;
+; 6        ; 0 / 60 ( 0 % )   ; 2.5V          ; --           ;
+; 7        ; 0 / 52 ( 0 % )   ; 2.5V          ; --           ;
+; 8        ; 14 / 36 ( 39 % ) ; 2.5V          ; --           ;
++----------+------------------+---------------+--------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -447,10 +447,10 @@ The pin-out file can be found in C:/Users/amr/Desktop/Quartus/Minimum electric d
 ; Location ; Pad Number ; I/O Bank ; Pin Name/Usage                                 ; Dir.   ; I/O Standard          ; Voltage ; I/O Type   ; User Assignment ; Bus Hold ; Weak Pull Up ;
 +----------+------------+----------+------------------------------------------------+--------+-----------------------+---------+------------+-----------------+----------+--------------+
 ; A1       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
-; A2       ; 481        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; A3       ; 483        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; A2       ; 481        ; 8        ; PC[1]                                          ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; A3       ; 483        ; 8        ; PC[0]                                          ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; A4       ; 475        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; A5       ; 473        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; A5       ; 473        ; 8        ; PC[5]                                          ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; A6       ; 471        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A7       ; 445        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; A8       ; 447        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -475,9 +475,9 @@ The pin-out file can be found in C:/Users/amr/Desktop/Quartus/Minimum electric d
 ; AA5      ; 157        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; AA6      ; 156        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; AA7      ; 158        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; AA8      ; 165        ; 3        ; PC[2]                                          ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
-; AA9      ; 169        ; 3        ; PC[3]                                          ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
-; AA10     ; 170        ; 3        ; PC[6]                                          ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; AA8      ; 165        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; AA9      ; 169        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; AA10     ; 170        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; AA11     ; 180        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; AA12     ; 182        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; AA13     ; 197        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; --       ; --           ;
@@ -495,9 +495,9 @@ The pin-out file can be found in C:/Users/amr/Desktop/Quartus/Minimum electric d
 ; AB3      ; 147        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; AB4      ; 155        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; AB5      ; 159        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; AB6      ; 161        ; 3        ; PC[4]                                          ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; AB6      ; 161        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; AB7      ; 163        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; AB8      ; 167        ; 3        ; PC[9]                                          ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; AB8      ; 167        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; AB9      ; 171        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; AB10     ; 177        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; AB11     ; 179        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -514,11 +514,11 @@ The pin-out file can be found in C:/Users/amr/Desktop/Quartus/Minimum electric d
 ; AB22     ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; B1       ; 495        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; B2       ; 493        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; B3       ; 484        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; B4       ; 486        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; B3       ; 484        ; 8        ; PC[4]                                          ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; B4       ; 486        ; 8        ; PC[6]                                          ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; B5       ; 485        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; B6       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
-; B7       ; 469        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; B7       ; 469        ; 8        ; PC[2]                                          ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; B8       ; 451        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; B9       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; B10      ; 448        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -539,7 +539,7 @@ The pin-out file can be found in C:/Users/amr/Desktop/Quartus/Minimum electric d
 ; C3       ; 497        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; C4       ; 487        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; C5       ; 489        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; C6       ; 477        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; C6       ; 477        ; 8        ; PC[9]                                          ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; C7       ; 467        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; C8       ; 465        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; C9       ; 450        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -562,7 +562,7 @@ The pin-out file can be found in C:/Users/amr/Desktop/Quartus/Minimum electric d
 ; D4       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; D5       ; 491        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; D6       ; 496        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; D7       ; 479        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; --       ; --           ;
+; D7       ; 479        ; 8        ; PC[3]                                          ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; D8       ; 472        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; D9       ; 474        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; D10      ; 476        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -586,9 +586,9 @@ The pin-out file can be found in C:/Users/amr/Desktop/Quartus/Minimum electric d
 ; E6       ; 498        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; E7       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; E8       ; 488        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; E9       ; 478        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; E9       ; 478        ; 8        ; PC[8]                                          ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; E10      ; 466        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; E11      ; 464        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; E11      ; 464        ; 8        ; PC[7]                                          ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
 ; E12      ; 429        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; E13      ; 430        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; E14      ; 406        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -786,7 +786,7 @@ The pin-out file can be found in C:/Users/amr/Desktop/Quartus/Minimum electric d
 ; P8       ; 96         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; P9       ; 142        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; P10      ; 154        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; P11      ; 166        ; 3        ; PC[7]                                          ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; P11      ; 166        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; P12      ; 178        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; P13      ; 198        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; P14      ; 306        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -808,7 +808,7 @@ The pin-out file can be found in C:/Users/amr/Desktop/Quartus/Minimum electric d
 ; R8       ;            ; --       ; VCCA1                                          ; power  ;                       ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; R9       ; 140        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; R10      ; 152        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; R11      ; 164        ; 3        ; PC[5]                                          ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; R11      ; 164        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; R12      ; 176        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; R13      ; 196        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; R14      ; 294        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -872,8 +872,8 @@ The pin-out file can be found in C:/Users/amr/Desktop/Quartus/Minimum electric d
 ; V6       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; V7       ; 136        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; V8       ; 138        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; V9       ; 160        ; 3        ; PC[1]                                          ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
-; V10      ; 162        ; 3        ; PC[8]                                          ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; V9       ; 160        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
+; V10      ; 162        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; V11      ; 172        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; V12      ; 174        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; V13      ; 192        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -918,7 +918,7 @@ The pin-out file can be found in C:/Users/amr/Desktop/Quartus/Minimum electric d
 ; Y8       ; 143        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; Y9       ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; Y10      ; 168        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
-; Y11      ; 175        ; 4        ; PC[0]                                          ; output ; 2.5 V                 ;         ; Column I/O ; N               ; no       ; Off          ;
+; Y11      ; 175        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; Y12      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; Y13      ; 200        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; Y14      ; 202        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
@@ -971,11 +971,11 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-----------------------------------------------------------------------------------------------------------+-------------------+--------------+
 ; Compilation Hierarchy Node                   ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name                                                                                       ; Entity Name       ; Library Name ;
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-----------------------------------------------------------------------------------------------------------+-------------------+--------------+
-; |pipeline                                    ; 3024 (1)    ; 1296 (0)                  ; 0 (0)         ; 40993       ; 6    ; 1          ; 0            ; 0       ; 0         ; 12   ; 0            ; 1728 (1)     ; 394 (0)           ; 902 (0)          ; 0          ; |pipeline                                                                                                 ; pipeline          ; work         ;
-;    |EXMEM:exmem|                             ; 101 (101)   ; 72 (72)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 29 (29)      ; 31 (31)           ; 41 (41)          ; 0          ; |pipeline|EXMEM:exmem                                                                                     ; EXMEM             ; work         ;
-;    |IDEX:idex|                               ; 143 (132)   ; 109 (103)                 ; 0 (0)         ; 33          ; 1    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 29 (25)      ; 3 (1)             ; 111 (106)        ; 0          ; |pipeline|IDEX:idex                                                                                       ; IDEX              ; work         ;
-;       |altshift_taps:Q_rtl_0|                ; 11 (0)      ; 6 (0)                     ; 0 (0)         ; 33          ; 1    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (0)        ; 2 (0)             ; 5 (0)            ; 0          ; |pipeline|IDEX:idex|altshift_taps:Q_rtl_0                                                                 ; altshift_taps     ; work         ;
-;          |shift_taps_vul:auto_generated|     ; 11 (4)      ; 6 (3)                     ; 0 (0)         ; 33          ; 1    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (0)        ; 2 (2)             ; 5 (2)            ; 0          ; |pipeline|IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated                                   ; shift_taps_vul    ; work         ;
+; |pipeline                                    ; 2965 (1)    ; 1301 (0)                  ; 0 (0)         ; 40993       ; 6    ; 1          ; 0            ; 0       ; 0         ; 12   ; 0            ; 1664 (1)     ; 299 (0)           ; 1002 (0)         ; 0          ; |pipeline                                                                                                 ; pipeline          ; work         ;
+;    |EXMEM:exmem|                             ; 106 (106)   ; 77 (77)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 29 (29)      ; 8 (8)             ; 69 (69)          ; 0          ; |pipeline|EXMEM:exmem                                                                                     ; EXMEM             ; work         ;
+;    |IDEX:idex|                               ; 139 (128)   ; 109 (103)                 ; 0 (0)         ; 33          ; 1    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 29 (24)      ; 2 (0)             ; 108 (104)        ; 0          ; |pipeline|IDEX:idex                                                                                       ; IDEX              ; work         ;
+;       |altshift_taps:Q_rtl_0|                ; 11 (0)      ; 6 (0)                     ; 0 (0)         ; 33          ; 1    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (0)        ; 2 (0)             ; 4 (0)            ; 0          ; |pipeline|IDEX:idex|altshift_taps:Q_rtl_0                                                                 ; altshift_taps     ; work         ;
+;          |shift_taps_vul:auto_generated|     ; 11 (4)      ; 6 (3)                     ; 0 (0)         ; 33          ; 1    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (1)        ; 2 (2)             ; 4 (1)            ; 0          ; |pipeline|IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated                                   ; shift_taps_vul    ; work         ;
 ;             |altsyncram_dj51:altsyncram4|    ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 33          ; 1    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |pipeline|IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated|altsyncram_dj51:altsyncram4       ; altsyncram_dj51   ; work         ;
 ;             |cntr_fjg:cntr5|                 ; 2 (2)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0          ; |pipeline|IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated|cntr_fjg:cntr5                    ; cntr_fjg          ; work         ;
 ;             |cntr_s3f:cntr1|                 ; 5 (5)       ; 2 (2)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 2 (2)            ; 0          ; |pipeline|IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated|cntr_s3f:cntr1                    ; cntr_s3f          ; work         ;
@@ -984,30 +984,31 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;    |dataMemory:DM|                           ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 8192        ; 1    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |pipeline|dataMemory:DM                                                                                   ; dataMemory        ; work         ;
 ;       |altsyncram:altsyncram_component|      ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 8192        ; 1    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |pipeline|dataMemory:DM|altsyncram:altsyncram_component                                                   ; altsyncram        ; work         ;
 ;          |altsyncram_8km1:auto_generated|    ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 8192        ; 1    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |pipeline|dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated                    ; altsyncram_8km1   ; work         ;
-;    |decode:dcd|                              ; 1913 (0)    ; 1024 (0)                  ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 885 (0)      ; 358 (0)           ; 670 (0)          ; 0          ; |pipeline|decode:dcd                                                                                      ; decode            ; work         ;
+;    |decode:dcd|                              ; 1836 (0)    ; 1024 (0)                  ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 807 (0)      ; 287 (0)           ; 742 (0)          ; 0          ; |pipeline|decode:dcd                                                                                      ; decode            ; work         ;
 ;       |adder:branchAdder|                    ; 10 (10)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 0 (0)            ; 0          ; |pipeline|decode:dcd|adder:branchAdder                                                                    ; adder             ; work         ;
 ;       |comparator:cmp|                       ; 48 (48)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 48 (48)      ; 0 (0)             ; 0 (0)            ; 0          ; |pipeline|decode:dcd|comparator:cmp                                                                       ; comparator        ; work         ;
 ;       |controlUnit:CU|                       ; 18 (18)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (14)      ; 0 (0)             ; 4 (4)            ; 0          ; |pipeline|decode:dcd|controlUnit:CU                                                                       ; controlUnit       ; work         ;
-;       |mux2x1:RegWriteMux|                   ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (3)            ; 0          ; |pipeline|decode:dcd|mux2x1:RegWriteMux                                                                   ; mux2x1            ; work         ;
-;       |mux4x1:FrdAmux|                       ; 57 (57)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 52 (52)      ; 0 (0)             ; 5 (5)            ; 0          ; |pipeline|decode:dcd|mux4x1:FrdAmux                                                                       ; mux4x1            ; work         ;
-;       |mux4x1:FrdBmux|                       ; 71 (71)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 68 (68)      ; 0 (0)             ; 3 (3)            ; 0          ; |pipeline|decode:dcd|mux4x1:FrdBmux                                                                       ; mux4x1            ; work         ;
-;       |registerFile:RF|                      ; 1717 (1717) ; 1024 (1024)               ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 693 (693)    ; 358 (358)         ; 666 (666)        ; 0          ; |pipeline|decode:dcd|registerFile:RF                                                                      ; registerFile      ; work         ;
-;    |execute:exec|                            ; 711 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 683 (0)      ; 0 (0)             ; 28 (0)           ; 0          ; |pipeline|execute:exec                                                                                    ; execute           ; work         ;
-;       |ALU:alu|                              ; 550 (550)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 533 (533)    ; 0 (0)             ; 17 (17)          ; 0          ; |pipeline|execute:exec|ALU:alu                                                                            ; ALU               ; work         ;
+;       |mux2x1:RegWriteMux|                   ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0          ; |pipeline|decode:dcd|mux2x1:RegWriteMux                                                                   ; mux2x1            ; work         ;
+;       |mux4x1:FrdAmux|                       ; 57 (57)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 53 (53)      ; 0 (0)             ; 4 (4)            ; 0          ; |pipeline|decode:dcd|mux4x1:FrdAmux                                                                       ; mux4x1            ; work         ;
+;       |mux4x1:FrdBmux|                       ; 71 (71)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 66 (66)      ; 0 (0)             ; 5 (5)            ; 0          ; |pipeline|decode:dcd|mux4x1:FrdBmux                                                                       ; mux4x1            ; work         ;
+;       |registerFile:RF|                      ; 1637 (1637) ; 1024 (1024)               ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 613 (613)    ; 287 (287)         ; 737 (737)        ; 0          ; |pipeline|decode:dcd|registerFile:RF                                                                      ; registerFile      ; work         ;
+;    |execute:exec|                            ; 711 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 690 (0)      ; 0 (0)             ; 21 (0)           ; 0          ; |pipeline|execute:exec                                                                                    ; execute           ; work         ;
+;       |ALU:alu|                              ; 550 (550)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 535 (535)    ; 0 (0)             ; 15 (15)          ; 0          ; |pipeline|execute:exec|ALU:alu                                                                            ; ALU               ; work         ;
 ;       |mux2x1:ALUMux|                        ; 32 (32)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 32 (32)      ; 0 (0)             ; 0 (0)            ; 0          ; |pipeline|execute:exec|mux2x1:ALUMux                                                                      ; mux2x1            ; work         ;
-;       |mux4x1:frwrda|                        ; 65 (65)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 62 (62)      ; 0 (0)             ; 3 (3)            ; 0          ; |pipeline|execute:exec|mux4x1:frwrda                                                                      ; mux4x1            ; work         ;
-;       |mux4x1:frwrdb|                        ; 64 (64)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 56 (56)      ; 0 (0)             ; 8 (8)            ; 0          ; |pipeline|execute:exec|mux4x1:frwrdb                                                                      ; mux4x1            ; work         ;
-;    |fetch:fetch|                             ; 45 (0)      ; 10 (0)                    ; 0 (0)         ; 32768       ; 4    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 34 (0)       ; 0 (0)             ; 11 (0)           ; 0          ; |pipeline|fetch:fetch                                                                                     ; fetch             ; work         ;
+;       |mux4x1:frwrda|                        ; 65 (65)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 60 (60)      ; 0 (0)             ; 5 (5)            ; 0          ; |pipeline|execute:exec|mux4x1:frwrda                                                                      ; mux4x1            ; work         ;
+;       |mux4x1:frwrdb|                        ; 64 (64)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 63 (63)      ; 0 (0)             ; 1 (1)            ; 0          ; |pipeline|execute:exec|mux4x1:frwrdb                                                                      ; mux4x1            ; work         ;
+;    |fetch:fetch|                             ; 45 (0)      ; 10 (0)                    ; 0 (0)         ; 32768       ; 4    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 35 (0)       ; 0 (0)             ; 10 (0)           ; 0          ; |pipeline|fetch:fetch                                                                                     ; fetch             ; work         ;
 ;       |adder:PCAdder|                        ; 10 (10)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 0 (0)            ; 0          ; |pipeline|fetch:fetch|adder:PCAdder                                                                       ; adder             ; work         ;
 ;       |instructionMemory:IM|                 ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 32768       ; 4    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |pipeline|fetch:fetch|instructionMemory:IM                                                                ; instructionMemory ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 32768       ; 4    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |pipeline|fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component                                ; altsyncram        ; work         ;
 ;             |altsyncram_bce1:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 32768       ; 4    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |pipeline|fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component|altsyncram_bce1:auto_generated ; altsyncram_bce1   ; work         ;
-;       |mux2x1:jumpMux|                       ; 25 (25)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 24 (24)      ; 0 (0)             ; 1 (1)            ; 0          ; |pipeline|fetch:fetch|mux2x1:jumpMux                                                                      ; mux2x1            ; work         ;
+;       |mux2x1:jumpMux|                       ; 25 (25)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 25 (25)      ; 0 (0)             ; 0 (0)            ; 0          ; |pipeline|fetch:fetch|mux2x1:jumpMux                                                                      ; mux2x1            ; work         ;
 ;       |programCounter:pc|                    ; 10 (10)     ; 10 (10)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 10 (10)          ; 0          ; |pipeline|fetch:fetch|programCounter:pc                                                                   ; programCounter    ; work         ;
-;    |forwarding_unit:fw|                      ; 20 (20)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 10 (10)          ; 0          ; |pipeline|forwarding_unit:fw                                                                              ; forwarding_unit   ; work         ;
-;    |hazard_detection:HDU|                    ; 31 (31)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 28 (28)      ; 0 (0)             ; 3 (3)            ; 0          ; |pipeline|hazard_detection:HDU                                                                            ; hazard_detection  ; work         ;
-;    |mux2x1:WBMux|                            ; 32 (32)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 30 (30)          ; 0          ; |pipeline|mux2x1:WBMux                                                                                    ; mux2x1            ; work         ;
+;    |forwarding_unit:fw|                      ; 24 (24)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 15 (15)      ; 0 (0)             ; 9 (9)            ; 0          ; |pipeline|forwarding_unit:fw                                                                              ; forwarding_unit   ; work         ;
+;    |hazard_detection:HDU|                    ; 31 (31)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 25 (25)      ; 0 (0)             ; 6 (6)            ; 0          ; |pipeline|hazard_detection:HDU                                                                            ; hazard_detection  ; work         ;
+;    |mux2x1:WBMux|                            ; 32 (32)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 31 (31)          ; 0          ; |pipeline|mux2x1:WBMux                                                                                    ; mux2x1            ; work         ;
 ;    |mux2x1:WritePc|                          ; 32 (32)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 26 (26)      ; 0 (0)             ; 6 (6)            ; 0          ; |pipeline|mux2x1:WritePc                                                                                  ; mux2x1            ; work         ;
+;    |mux2x1:memForward|                       ; 32 (32)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 27 (27)          ; 0          ; |pipeline|mux2x1:memForward                                                                               ; mux2x1            ; work         ;
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-----------------------------------------------------------------------------------------------------------+-------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1027,7 +1028,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; PC[7] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; PC[8] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; PC[9] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; rst   ; Input    ; (6) 815 ps    ; --            ; --                    ; --  ; --   ;
+; rst   ; Input    ; (0) 0 ps      ; (6) 815 ps    ; --                    ; --  ; --   ;
 ; clk   ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 +-------+----------+---------------+---------------+-----------------------+-----+------+
 
@@ -1038,49 +1039,49 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout                           ; Pad To Core Index ; Setting ;
 +-----------------------------------------------+-------------------+---------+
 ; rst                                           ;                   ;         ;
-;      - fetch:fetch|mux2x1:jumpMux|out[7]~2    ; 0                 ; 6       ;
-;      - fetch:fetch|mux2x1:jumpMux|out[0]~5    ; 0                 ; 6       ;
-;      - hazard_detection:HDU|branch_has_hazard ; 0                 ; 6       ;
-;      - IFID:ifid|Q[31]~11                     ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrda|Mux15~0     ; 0                 ; 6       ;
-;      - forwarding_unit:fw|ForwardA[0]~3       ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrdb|Mux15~0     ; 0                 ; 6       ;
-;      - forwarding_unit:fw|ForwardB[0]~3       ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrda|Mux16~0     ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrdb|Mux16~0     ; 0                 ; 6       ;
-;      - forwarding_unit:fw|ForwardA[1]~4       ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrdb|Mux17~0     ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrda|Mux18~0     ; 0                 ; 6       ;
-;      - forwarding_unit:fw|ForwardB[1]~4       ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrdb|Mux19~0     ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrda|Mux22~0     ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrda|Mux23~0     ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrdb|Mux23~0     ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrdb|Mux24~0     ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrda|Mux25~0     ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrdb|Mux25~0     ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrda|Mux26~0     ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrdb|Mux26~0     ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrda|Mux27~0     ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrdb|Mux27~0     ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrdb|Mux28~0     ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrda|Mux29~0     ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrdb|Mux29~0     ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrdb|Mux30~0     ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrdb|Mux31~0     ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrda|Mux1~0      ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrda|Mux2~0      ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrda|Mux3~0      ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrda|Mux6~0      ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrda|Mux9~0      ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrdb|Mux14~0     ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrdb|Mux12~0     ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrdb|Mux10~0     ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrdb|Mux9~0      ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrdb|Mux7~0      ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrdb|Mux4~0      ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrdb|Mux3~0      ; 0                 ; 6       ;
-;      - execute:exec|mux4x1:frwrdb|Mux2~0      ; 0                 ; 6       ;
+;      - fetch:fetch|mux2x1:jumpMux|out[8]~2    ; 1                 ; 6       ;
+;      - fetch:fetch|mux2x1:jumpMux|out[0]~5    ; 1                 ; 6       ;
+;      - hazard_detection:HDU|branch_has_hazard ; 1                 ; 6       ;
+;      - IFID:ifid|Q[31]~11                     ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrda|Mux15~0     ; 1                 ; 6       ;
+;      - forwarding_unit:fw|ForwardA[0]~3       ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrdb|Mux15~0     ; 1                 ; 6       ;
+;      - forwarding_unit:fw|ForwardB[0]~3       ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrda|Mux16~0     ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrdb|Mux16~0     ; 1                 ; 6       ;
+;      - forwarding_unit:fw|ForwardA[1]~4       ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrdb|Mux17~0     ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrda|Mux18~0     ; 1                 ; 6       ;
+;      - forwarding_unit:fw|ForwardB[1]~4       ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrdb|Mux19~0     ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrda|Mux22~0     ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrda|Mux23~0     ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrdb|Mux23~0     ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrdb|Mux24~0     ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrda|Mux25~0     ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrdb|Mux25~0     ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrda|Mux26~0     ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrdb|Mux26~0     ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrda|Mux27~0     ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrdb|Mux27~0     ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrdb|Mux28~0     ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrda|Mux29~0     ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrdb|Mux29~0     ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrdb|Mux30~0     ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrdb|Mux31~0     ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrda|Mux1~0      ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrda|Mux2~0      ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrda|Mux3~0      ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrda|Mux6~0      ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrda|Mux9~0      ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrdb|Mux14~0     ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrdb|Mux12~0     ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrdb|Mux10~0     ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrdb|Mux9~0      ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrdb|Mux7~0      ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrdb|Mux4~0      ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrdb|Mux3~0      ; 1                 ; 6       ;
+;      - execute:exec|mux4x1:frwrdb|Mux2~0      ; 1                 ; 6       ;
 ; clk                                           ;                   ;         ;
 +-----------------------------------------------+-------------------+---------+
 
@@ -1090,50 +1091,50 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; Name                                                                                              ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +---------------------------------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; EXMEM:exmem|Q[17]                                                                                 ; FF_X43_Y14_N15     ; 2       ; Write enable ; no     ; --                   ; --               ; --                        ;
-; EXMEM:exmem|Q[18]                                                                                 ; FF_X39_Y17_N15     ; 4       ; Read enable  ; no     ; --                   ; --               ; --                        ;
-; EXMEM:exmem|Q[61]~46                                                                              ; LCCOMB_X45_Y17_N12 ; 8       ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; EXMEM:exmem|Q[70]~24                                                                              ; LCCOMB_X44_Y20_N30 ; 8       ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; EXMEM:exmem|Q[79]~27                                                                              ; LCCOMB_X44_Y20_N28 ; 21      ; Sync. load   ; no     ; --                   ; --               ; --                        ;
-; IDEX:idex|Q[124]                                                                                  ; FF_X41_Y16_N1      ; 25      ; Sync. load   ; no     ; --                   ; --               ; --                        ;
-; IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated|cntr_fjg:cntr5|counter_comb_bita0~0 ; LCCOMB_X32_Y15_N2  ; 2       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated|dffe6                               ; FF_X32_Y15_N21     ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
-; clk                                                                                               ; PIN_M8             ; 1303    ; Clock        ; yes    ; Global Clock         ; GCLK3            ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~1                                                             ; LCCOMB_X27_Y22_N4  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~10                                                            ; LCCOMB_X37_Y23_N18 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~11                                                            ; LCCOMB_X27_Y22_N6  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~13                                                            ; LCCOMB_X27_Y22_N16 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~15                                                            ; LCCOMB_X38_Y22_N22 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~16                                                            ; LCCOMB_X27_Y22_N10 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~17                                                            ; LCCOMB_X37_Y23_N8  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~19                                                            ; LCCOMB_X34_Y23_N26 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~21                                                            ; LCCOMB_X37_Y23_N22 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~22                                                            ; LCCOMB_X37_Y23_N24 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~23                                                            ; LCCOMB_X37_Y23_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~24                                                            ; LCCOMB_X38_Y22_N16 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~25                                                            ; LCCOMB_X42_Y24_N28 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~26                                                            ; LCCOMB_X37_Y23_N28 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~27                                                            ; LCCOMB_X37_Y23_N14 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~28                                                            ; LCCOMB_X27_Y22_N28 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~29                                                            ; LCCOMB_X38_Y22_N14 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~3                                                             ; LCCOMB_X27_Y22_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~30                                                            ; LCCOMB_X27_Y22_N26 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~31                                                            ; LCCOMB_X37_Y23_N12 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~32                                                            ; LCCOMB_X39_Y22_N8  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~33                                                            ; LCCOMB_X37_Y23_N10 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~34                                                            ; LCCOMB_X27_Y22_N0  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~35                                                            ; LCCOMB_X38_Y23_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~36                                                            ; LCCOMB_X39_Y22_N6  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~37                                                            ; LCCOMB_X42_Y24_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~38                                                            ; LCCOMB_X41_Y22_N8  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~39                                                            ; LCCOMB_X41_Y22_N18 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~4                                                             ; LCCOMB_X27_Y22_N24 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~5                                                             ; LCCOMB_X27_Y22_N14 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~7                                                             ; LCCOMB_X37_Y23_N0  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; decode:dcd|registerFile:RF|Decoder0~9                                                             ; LCCOMB_X27_Y22_N20 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; hazard_detection:HDU|hold~2                                                                       ; LCCOMB_X37_Y15_N4  ; 45      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; hazard_detection:HDU|ld_has_hazard~6                                                              ; LCCOMB_X39_Y16_N30 ; 116     ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; rst                                                                                               ; PIN_M9             ; 1294    ; Async. clear ; yes    ; Global Clock         ; GCLK4            ; --                        ;
+; EXMEM:exmem|Q[22]                                                                                 ; FF_X35_Y23_N5      ; 3       ; Write enable ; no     ; --                   ; --               ; --                        ;
+; EXMEM:exmem|Q[23]                                                                                 ; FF_X32_Y23_N23     ; 4       ; Read enable  ; no     ; --                   ; --               ; --                        ;
+; EXMEM:exmem|Q[72]~46                                                                              ; LCCOMB_X32_Y18_N4  ; 8       ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; EXMEM:exmem|Q[75]~24                                                                              ; LCCOMB_X39_Y18_N4  ; 8       ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; EXMEM:exmem|Q[83]~27                                                                              ; LCCOMB_X32_Y18_N24 ; 21      ; Sync. load   ; no     ; --                   ; --               ; --                        ;
+; IDEX:idex|Q[124]                                                                                  ; FF_X32_Y23_N25     ; 25      ; Sync. load   ; no     ; --                   ; --               ; --                        ;
+; IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated|cntr_fjg:cntr5|counter_comb_bita0~0 ; LCCOMB_X32_Y23_N10 ; 2       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated|dffe6                               ; FF_X32_Y23_N1      ; 1       ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; clk                                                                                               ; PIN_M8             ; 1308    ; Clock        ; yes    ; Global Clock         ; GCLK3            ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~1                                                             ; LCCOMB_X39_Y29_N28 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~10                                                            ; LCCOMB_X43_Y29_N22 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~11                                                            ; LCCOMB_X40_Y23_N20 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~13                                                            ; LCCOMB_X36_Y30_N0  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~15                                                            ; LCCOMB_X40_Y23_N4  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~16                                                            ; LCCOMB_X39_Y29_N12 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~17                                                            ; LCCOMB_X39_Y23_N0  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~19                                                            ; LCCOMB_X43_Y28_N22 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~21                                                            ; LCCOMB_X43_Y29_N24 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~22                                                            ; LCCOMB_X43_Y29_N10 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~23                                                            ; LCCOMB_X43_Y28_N8  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~24                                                            ; LCCOMB_X39_Y23_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~25                                                            ; LCCOMB_X36_Y30_N2  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~26                                                            ; LCCOMB_X40_Y23_N22 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~27                                                            ; LCCOMB_X43_Y29_N8  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~28                                                            ; LCCOMB_X36_Y30_N4  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~29                                                            ; LCCOMB_X36_Y30_N22 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~3                                                             ; LCCOMB_X40_Y23_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~30                                                            ; LCCOMB_X36_Y30_N16 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~31                                                            ; LCCOMB_X43_Y29_N30 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~32                                                            ; LCCOMB_X36_Y30_N14 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~33                                                            ; LCCOMB_X36_Y30_N24 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~34                                                            ; LCCOMB_X43_Y29_N12 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~35                                                            ; LCCOMB_X43_Y29_N2  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~36                                                            ; LCCOMB_X40_Y23_N12 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~37                                                            ; LCCOMB_X39_Y29_N22 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~38                                                            ; LCCOMB_X40_Y23_N6  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~39                                                            ; LCCOMB_X43_Y28_N14 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~4                                                             ; LCCOMB_X40_Y23_N0  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~5                                                             ; LCCOMB_X39_Y29_N2  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~7                                                             ; LCCOMB_X39_Y23_N6  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; decode:dcd|registerFile:RF|Decoder0~9                                                             ; LCCOMB_X40_Y23_N14 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; hazard_detection:HDU|hold~2                                                                       ; LCCOMB_X27_Y23_N16 ; 45      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; hazard_detection:HDU|ld_has_hazard~6                                                              ; LCCOMB_X31_Y23_N22 ; 116     ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; rst                                                                                               ; PIN_M9             ; 1299    ; Async. clear ; yes    ; Global Clock         ; GCLK4            ; --                        ;
 +---------------------------------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1142,8 +1143,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; clk  ; PIN_M8   ; 1303    ; 613                                  ; Global Clock         ; GCLK3            ; --                        ;
-; rst  ; PIN_M9   ; 1294    ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
+; clk  ; PIN_M8   ; 1308    ; 173                                  ; Global Clock         ; GCLK3            ; --                        ;
+; rst  ; PIN_M9   ; 1299    ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -1152,9 +1153,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-----------------------------------------+----------------------------------------------------------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
 ; Name                                                                                                       ; Type ; Mode             ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size  ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M9Ks ; MIF                                     ; Location                                                       ; Mixed Width RDW Mode ; Port A RDW Mode        ; Port B RDW Mode        ; ECC Mode ; ECC Pipeline Registers ; Fits in MLABs ;
 +------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-----------------------------------------+----------------------------------------------------------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
-; IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated|altsyncram_dj51:altsyncram4|ALTSYNCRAM       ; AUTO ; Simple Dual Port ; Single Clock ; 3            ; 11           ; 3            ; 11           ; yes                    ; no                      ; yes                    ; yes                     ; 33    ; 3                           ; 11                          ; 3                           ; 11                          ; 33                  ; 1    ; None                                    ; M9K_X33_Y15_N0                                                 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
-; dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated|ALTSYNCRAM                    ; M9K  ; Single Port      ; Single Clock ; 256          ; 32           ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 8192  ; 256                         ; 32                          ; --                          ; --                          ; 8192                ; 1    ; dataMemoryInitializationFile.mif        ; M9K_X53_Y21_N0                                                 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
-; fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component|altsyncram_bce1:auto_generated|ALTSYNCRAM ; M9K  ; ROM              ; Single Clock ; 1024         ; 32           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 32768 ; 1024                        ; 32                          ; --                          ; --                          ; 32768               ; 4    ; instructionMemoryInitializationFile.mif ; M9K_X33_Y17_N0, M9K_X33_Y14_N0, M9K_X33_Y16_N0, M9K_X33_Y18_N0 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
+; IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated|altsyncram_dj51:altsyncram4|ALTSYNCRAM       ; AUTO ; Simple Dual Port ; Single Clock ; 3            ; 11           ; 3            ; 11           ; yes                    ; no                      ; yes                    ; yes                     ; 33    ; 3                           ; 11                          ; 3                           ; 11                          ; 33                  ; 1    ; None                                    ; M9K_X33_Y23_N0                                                 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
+; dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated|ALTSYNCRAM                    ; M9K  ; Single Port      ; Single Clock ; 256          ; 32           ; --           ; --           ; yes                    ; yes                     ; --                     ; --                      ; 8192  ; 256                         ; 32                          ; --                          ; --                          ; 8192                ; 1    ; dataMemoryInitializationFile.mif        ; M9K_X33_Y22_N0                                                 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
+; fetch:fetch|instructionMemory:IM|altsyncram:altsyncram_component|altsyncram_bce1:auto_generated|ALTSYNCRAM ; M9K  ; ROM              ; Single Clock ; 1024         ; 32           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 32768 ; 1024                        ; 32                          ; --                          ; --                          ; 32768               ; 4    ; instructionMemoryInitializationFile.mif ; M9K_X33_Y26_N0, M9K_X33_Y28_N0, M9K_X33_Y27_N0, M9K_X33_Y25_N0 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
 +------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-----------------------------------------+----------------------------------------------------------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
@@ -1340,179 +1341,180 @@ RAM content values are presented in the following format: (Binary) (Octal) (Deci
 +-----------------------+-------------------------+
 ; Routing Resource Type ; Usage                   ;
 +-----------------------+-------------------------+
-; Block interconnects   ; 5,728 / 148,641 ( 4 % ) ;
-; C16 interconnects     ; 59 / 5,382 ( 1 % )      ;
-; C4 interconnects      ; 3,363 / 106,704 ( 3 % ) ;
-; Direct links          ; 667 / 148,641 ( < 1 % ) ;
+; Block interconnects   ; 5,624 / 148,641 ( 4 % ) ;
+; C16 interconnects     ; 60 / 5,382 ( 1 % )      ;
+; C4 interconnects      ; 3,358 / 106,704 ( 3 % ) ;
+; Direct links          ; 646 / 148,641 ( < 1 % ) ;
 ; Global clocks         ; 2 / 20 ( 10 % )         ;
-; Local interconnects   ; 1,531 / 49,760 ( 3 % )  ;
+; Local interconnects   ; 1,471 / 49,760 ( 3 % )  ;
 ; NSLEEPs               ; 0 / 500 ( 0 % )         ;
-; R24 interconnects     ; 91 / 5,406 ( 2 % )      ;
-; R4 interconnects      ; 4,251 / 147,764 ( 3 % ) ;
+; R24 interconnects     ; 87 / 5,406 ( 2 % )      ;
+; R4 interconnects      ; 4,283 / 147,764 ( 3 % ) ;
 +-----------------------+-------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                          ;
 +---------------------------------------------+-------------------------------+
-; Number of Logic Elements  (Average = 13.44) ; Number of LABs  (Total = 225) ;
+; Number of Logic Elements  (Average = 13.54) ; Number of LABs  (Total = 219) ;
 +---------------------------------------------+-------------------------------+
-; 1                                           ; 5                             ;
-; 2                                           ; 5                             ;
-; 3                                           ; 6                             ;
-; 4                                           ; 7                             ;
-; 5                                           ; 5                             ;
+; 1                                           ; 4                             ;
+; 2                                           ; 4                             ;
+; 3                                           ; 1                             ;
+; 4                                           ; 14                            ;
+; 5                                           ; 2                             ;
 ; 6                                           ; 4                             ;
 ; 7                                           ; 2                             ;
-; 8                                           ; 6                             ;
-; 9                                           ; 2                             ;
-; 10                                          ; 2                             ;
+; 8                                           ; 5                             ;
+; 9                                           ; 3                             ;
+; 10                                          ; 3                             ;
 ; 11                                          ; 3                             ;
-; 12                                          ; 5                             ;
-; 13                                          ; 6                             ;
-; 14                                          ; 5                             ;
-; 15                                          ; 19                            ;
-; 16                                          ; 143                           ;
+; 12                                          ; 6                             ;
+; 13                                          ; 5                             ;
+; 14                                          ; 10                            ;
+; 15                                          ; 9                             ;
+; 16                                          ; 144                           ;
 +---------------------------------------------+-------------------------------+
 
 
 +--------------------------------------------------------------------+
 ; LAB-wide Signals                                                   ;
 +------------------------------------+-------------------------------+
-; LAB-wide Signals  (Average = 2.51) ; Number of LABs  (Total = 225) ;
+; LAB-wide Signals  (Average = 2.43) ; Number of LABs  (Total = 219) ;
 +------------------------------------+-------------------------------+
-; 1 Async. clear                     ; 200                           ;
-; 1 Clock                            ; 200                           ;
-; 1 Clock enable                     ; 28                            ;
-; 1 Sync. clear                      ; 6                             ;
-; 1 Sync. load                       ; 8                             ;
-; 2 Clock enables                    ; 123                           ;
+; 1 Async. clear                     ; 187                           ;
+; 1 Clock                            ; 187                           ;
+; 1 Clock enable                     ; 24                            ;
+; 1 Sync. clear                      ; 9                             ;
+; 1 Sync. load                       ; 7                             ;
+; 2 Clock enables                    ; 118                           ;
 +------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Signals Sourced  (Average = 19.05) ; Number of LABs  (Total = 225) ;
+; Number of Signals Sourced  (Average = 19.32) ; Number of LABs  (Total = 219) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 1                             ;
 ; 1                                            ; 3                             ;
 ; 2                                            ; 4                             ;
 ; 3                                            ; 3                             ;
-; 4                                            ; 2                             ;
-; 5                                            ; 5                             ;
-; 6                                            ; 6                             ;
-; 7                                            ; 4                             ;
-; 8                                            ; 5                             ;
+; 4                                            ; 1                             ;
+; 5                                            ; 0                             ;
+; 6                                            ; 14                            ;
+; 7                                            ; 0                             ;
+; 8                                            ; 2                             ;
 ; 9                                            ; 2                             ;
 ; 10                                           ; 2                             ;
-; 11                                           ; 3                             ;
-; 12                                           ; 3                             ;
-; 13                                           ; 3                             ;
-; 14                                           ; 2                             ;
-; 15                                           ; 4                             ;
-; 16                                           ; 22                            ;
-; 17                                           ; 8                             ;
-; 18                                           ; 16                            ;
-; 19                                           ; 14                            ;
-; 20                                           ; 19                            ;
-; 21                                           ; 8                             ;
-; 22                                           ; 8                             ;
-; 23                                           ; 4                             ;
-; 24                                           ; 15                            ;
+; 11                                           ; 5                             ;
+; 12                                           ; 4                             ;
+; 13                                           ; 2                             ;
+; 14                                           ; 3                             ;
+; 15                                           ; 8                             ;
+; 16                                           ; 23                            ;
+; 17                                           ; 11                            ;
+; 18                                           ; 12                            ;
+; 19                                           ; 9                             ;
+; 20                                           ; 11                            ;
+; 21                                           ; 6                             ;
+; 22                                           ; 11                            ;
+; 23                                           ; 6                             ;
+; 24                                           ; 12                            ;
 ; 25                                           ; 7                             ;
 ; 26                                           ; 11                            ;
 ; 27                                           ; 7                             ;
-; 28                                           ; 10                            ;
-; 29                                           ; 2                             ;
-; 30                                           ; 4                             ;
-; 31                                           ; 6                             ;
-; 32                                           ; 12                            ;
+; 28                                           ; 8                             ;
+; 29                                           ; 8                             ;
+; 30                                           ; 8                             ;
+; 31                                           ; 5                             ;
+; 32                                           ; 10                            ;
 +----------------------------------------------+-------------------------------+
 
 
 +----------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                          ;
 +--------------------------------------------------+-------------------------------+
-; Number of Signals Sourced Out  (Average = 11.88) ; Number of LABs  (Total = 225) ;
+; Number of Signals Sourced Out  (Average = 12.16) ; Number of LABs  (Total = 219) ;
 +--------------------------------------------------+-------------------------------+
 ; 0                                                ; 1                             ;
-; 1                                                ; 8                             ;
-; 2                                                ; 7                             ;
-; 3                                                ; 7                             ;
+; 1                                                ; 6                             ;
+; 2                                                ; 13                            ;
+; 3                                                ; 3                             ;
 ; 4                                                ; 10                            ;
-; 5                                                ; 5                             ;
-; 6                                                ; 9                             ;
-; 7                                                ; 8                             ;
-; 8                                                ; 12                            ;
-; 9                                                ; 13                            ;
-; 10                                               ; 15                            ;
-; 11                                               ; 17                            ;
-; 12                                               ; 18                            ;
-; 13                                               ; 15                            ;
-; 14                                               ; 13                            ;
-; 15                                               ; 14                            ;
-; 16                                               ; 6                             ;
-; 17                                               ; 3                             ;
-; 18                                               ; 14                            ;
-; 19                                               ; 1                             ;
+; 5                                                ; 6                             ;
+; 6                                                ; 7                             ;
+; 7                                                ; 11                            ;
+; 8                                                ; 17                            ;
+; 9                                                ; 9                             ;
+; 10                                               ; 11                            ;
+; 11                                               ; 14                            ;
+; 12                                               ; 14                            ;
+; 13                                               ; 11                            ;
+; 14                                               ; 16                            ;
+; 15                                               ; 6                             ;
+; 16                                               ; 7                             ;
+; 17                                               ; 6                             ;
+; 18                                               ; 7                             ;
+; 19                                               ; 11                            ;
 ; 20                                               ; 6                             ;
 ; 21                                               ; 4                             ;
-; 22                                               ; 2                             ;
-; 23                                               ; 1                             ;
+; 22                                               ; 4                             ;
+; 23                                               ; 3                             ;
 ; 24                                               ; 6                             ;
 ; 25                                               ; 1                             ;
 ; 26                                               ; 3                             ;
-; 27                                               ; 3                             ;
-; 28                                               ; 2                             ;
+; 27                                               ; 2                             ;
+; 28                                               ; 1                             ;
 ; 29                                               ; 1                             ;
+; 30                                               ; 2                             ;
 +--------------------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Distinct Inputs  (Average = 25.04) ; Number of LABs  (Total = 225) ;
+; Number of Distinct Inputs  (Average = 25.34) ; Number of LABs  (Total = 219) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
 ; 1                                            ; 0                             ;
 ; 2                                            ; 1                             ;
-; 3                                            ; 2                             ;
-; 4                                            ; 1                             ;
+; 3                                            ; 0                             ;
+; 4                                            ; 3                             ;
 ; 5                                            ; 1                             ;
-; 6                                            ; 3                             ;
-; 7                                            ; 4                             ;
-; 8                                            ; 0                             ;
-; 9                                            ; 6                             ;
-; 10                                           ; 3                             ;
-; 11                                           ; 8                             ;
-; 12                                           ; 6                             ;
+; 6                                            ; 1                             ;
+; 7                                            ; 1                             ;
+; 8                                            ; 1                             ;
+; 9                                            ; 13                            ;
+; 10                                           ; 2                             ;
+; 11                                           ; 4                             ;
+; 12                                           ; 4                             ;
 ; 13                                           ; 3                             ;
 ; 14                                           ; 4                             ;
 ; 15                                           ; 1                             ;
-; 16                                           ; 4                             ;
-; 17                                           ; 6                             ;
-; 18                                           ; 5                             ;
-; 19                                           ; 3                             ;
-; 20                                           ; 6                             ;
-; 21                                           ; 7                             ;
-; 22                                           ; 9                             ;
-; 23                                           ; 6                             ;
-; 24                                           ; 12                            ;
-; 25                                           ; 6                             ;
-; 26                                           ; 9                             ;
-; 27                                           ; 4                             ;
-; 28                                           ; 5                             ;
-; 29                                           ; 6                             ;
-; 30                                           ; 6                             ;
-; 31                                           ; 9                             ;
-; 32                                           ; 11                            ;
-; 33                                           ; 12                            ;
+; 16                                           ; 2                             ;
+; 17                                           ; 4                             ;
+; 18                                           ; 9                             ;
+; 19                                           ; 5                             ;
+; 20                                           ; 7                             ;
+; 21                                           ; 6                             ;
+; 22                                           ; 8                             ;
+; 23                                           ; 13                            ;
+; 24                                           ; 9                             ;
+; 25                                           ; 9                             ;
+; 26                                           ; 3                             ;
+; 27                                           ; 6                             ;
+; 28                                           ; 3                             ;
+; 29                                           ; 5                             ;
+; 30                                           ; 7                             ;
+; 31                                           ; 4                             ;
+; 32                                           ; 6                             ;
+; 33                                           ; 7                             ;
 ; 34                                           ; 9                             ;
-; 35                                           ; 8                             ;
-; 36                                           ; 10                            ;
-; 37                                           ; 9                             ;
-; 38                                           ; 19                            ;
+; 35                                           ; 9                             ;
+; 36                                           ; 12                            ;
+; 37                                           ; 15                            ;
+; 38                                           ; 21                            ;
 +----------------------------------------------+-------------------------------+
 
 
@@ -1638,27 +1640,20 @@ Note: For more information on problematic transfers, consider running the Fitter
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                                                                                                        ;
-+-------------------+--------------------------------------------------------------------------------------------------------------+-------------------+
-; Source Register   ; Destination Register                                                                                         ; Delay Added in ns ;
-+-------------------+--------------------------------------------------------------------------------------------------------------+-------------------+
-; IFID:ifid|Q[20]   ; IDEX:idex|Q[110]                                                                                             ; 0.151             ;
-; EXMEM:exmem|Q[21] ; dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated|ram_block1a1~porta_datain_reg0  ; 0.038             ;
-; EXMEM:exmem|Q[31] ; dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated|ram_block1a11~porta_datain_reg0 ; 0.038             ;
-; EXMEM:exmem|Q[47] ; dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated|ram_block1a27~porta_datain_reg0 ; 0.038             ;
-; EXMEM:exmem|Q[46] ; dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated|ram_block1a26~porta_datain_reg0 ; 0.038             ;
-; EXMEM:exmem|Q[22] ; dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated|ram_block1a2~porta_datain_reg0  ; 0.038             ;
-; EXMEM:exmem|Q[27] ; dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated|ram_block1a7~porta_datain_reg0  ; 0.038             ;
-; EXMEM:exmem|Q[26] ; dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated|ram_block1a6~porta_datain_reg0  ; 0.038             ;
-; EXMEM:exmem|Q[25] ; dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated|ram_block1a5~porta_datain_reg0  ; 0.038             ;
-; EXMEM:exmem|Q[24] ; dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated|ram_block1a4~porta_datain_reg0  ; 0.038             ;
-; EXMEM:exmem|Q[40] ; dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated|ram_block1a20~porta_datain_reg0 ; 0.038             ;
-; EXMEM:exmem|Q[35] ; dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated|ram_block1a15~porta_datain_reg0 ; 0.038             ;
-; EXMEM:exmem|Q[49] ; dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated|ram_block1a29~porta_datain_reg0 ; 0.038             ;
-; EXMEM:exmem|Q[45] ; dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated|ram_block1a25~porta_datain_reg0 ; 0.038             ;
-+-------------------+--------------------------------------------------------------------------------------------------------------+-------------------+
-Note: This table only shows the top 14 path(s) that have the largest delay added for hold.
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                                                                                                                                                                                   ;
++-------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+-------------------+
+; Source Register                                                                                 ; Destination Register                                                                                                      ; Delay Added in ns ;
++-------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+-------------------+
+; IFID:ifid|Q[12]                                                                                 ; IDEX:idex|Q[107]                                                                                                          ; 0.139             ;
+; IFID:ifid|Q[14]                                                                                 ; IDEX:idex|Q[109]                                                                                                          ; 0.135             ;
+; IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated|dffe3a[0]                         ; IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated|altsyncram_dj51:altsyncram4|ram_block7a0~portb_address_reg0 ; 0.093             ;
+; IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated|cntr_s3f:cntr1|counter_reg_bit[0] ; IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated|altsyncram_dj51:altsyncram4|ram_block7a0~porta_address_reg0 ; 0.093             ;
+; IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated|cntr_s3f:cntr1|counter_reg_bit[1] ; IDEX:idex|altshift_taps:Q_rtl_0|shift_taps_vul:auto_generated|altsyncram_dj51:altsyncram4|ram_block7a0~porta_address_reg0 ; 0.092             ;
+; IFID:ifid|Q[15]                                                                                 ; IDEX:idex|Q[25]                                                                                                           ; 0.091             ;
+; IFID:ifid|Q[10]                                                                                 ; IDEX:idex|Q[135]                                                                                                          ; 0.091             ;
++-------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+-------------------+
+Note: This table only shows the top 7 path(s) that have the largest delay added for hold.
 
 
 +-----------------+
@@ -1711,14 +1706,14 @@ Info (176353): Automatically promoted node clk~input (placed in PIN M8 (CLK1n, D
 Info (176353): Automatically promoted node rst~input (placed in PIN M9 (CLK1p, DIFFIO_RX_L36p, DIFFOUT_L36p, High_Speed)) File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 1
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node fetch:fetch|mux2x1:jumpMux|out[7]~2 File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/mux2x1.v Line: 8
+        Info (176357): Destination node fetch:fetch|mux2x1:jumpMux|out[8]~2 File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/mux2x1.v Line: 8
         Info (176357): Destination node fetch:fetch|mux2x1:jumpMux|out[0]~5 File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/mux2x1.v Line: 8
         Info (176357): Destination node hazard_detection:HDU|branch_has_hazard File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/hazard_detection.v Line: 11
         Info (176357): Destination node IFID:ifid|Q[31]~11 File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/Pipes.v Line: 9
         Info (176357): Destination node execute:exec|mux4x1:frwrda|Mux15~0 File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/mux2x1.v Line: 26
-        Info (176357): Destination node forwarding_unit:fw|ForwardA[0]~3 File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ForwardingUnit.v Line: 10
+        Info (176357): Destination node forwarding_unit:fw|ForwardA[0]~3 File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ForwardingUnit.v Line: 11
         Info (176357): Destination node execute:exec|mux4x1:frwrdb|Mux15~0 File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/mux2x1.v Line: 26
-        Info (176357): Destination node forwarding_unit:fw|ForwardB[0]~3 File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ForwardingUnit.v Line: 13
+        Info (176357): Destination node forwarding_unit:fw|ForwardB[0]~3 File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ForwardingUnit.v Line: 12
         Info (176357): Destination node execute:exec|mux4x1:frwrda|Mux16~0 File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/mux2x1.v Line: 26
         Info (176357): Destination node execute:exec|mux4x1:frwrdb|Mux16~0 File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/mux2x1.v Line: 26
         Info (176358): Non-global destination nodes limited to 10 nodes
@@ -1745,14 +1740,14 @@ Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:04
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:05
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 2% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 30% of the available device resources in the region that extends from location X33_Y11 to location X44_Y21
+    Info (170196): Router estimated peak interconnect usage is 37% of the available device resources in the region that extends from location X33_Y22 to location X44_Y32
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:13
-Info (11888): Total time spent on timing analysis during the Fitter is 1.17 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:45
+Info (11888): Total time spent on timing analysis during the Fitter is 1.33 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1760,10 +1755,10 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Info (144001): Generated suppressed messages file C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 5847 megabytes
-    Info: Processing ended: Fri Nov 15 23:07:18 2024
-    Info: Elapsed time: 00:00:24
-    Info: Total CPU time (on all processors): 00:00:40
+    Info: Peak virtual memory: 5850 megabytes
+    Info: Processing ended: Wed Nov 27 18:13:26 2024
+    Info: Elapsed time: 00:00:57
+    Info: Total CPU time (on all processors): 00:01:12
 
 
 +----------------------------+

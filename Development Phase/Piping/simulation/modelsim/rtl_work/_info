@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/simulation/modelsim
 vadder
-Z1 !s110 1731701296
+Z1 !s110 1732803985
 !i10b 1
 !s100 =WhcodDhF8B1e195TQ<ZE2
 IbJV1>N^AjW1RC?TC4N59=0
@@ -23,7 +23,7 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1731701296.000000
+Z5 !s108 1732803985.000000
 !s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/adder.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/adder.v|
 !i113 1
@@ -33,11 +33,11 @@ Z8 tCvgOpt 0
 vALU
 R1
 !i10b 1
-!s100 `fC<T;1OZ9;h^DKKCk:RJ0
-IAR?<HdZ2[8:goWePa[0G]1
+!s100 3a[meDhSJQR3R6174;f8R1
+IAC3hO<=UfF^bCEX;@CkoI2
 R2
 R0
-R3
+w1732720337
 8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ALU.v
 FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ALU.v
 L0 1
@@ -213,11 +213,11 @@ R8
 vforwarding_unit
 R1
 !i10b 1
-!s100 Bi_SLJJze9a5Qlh4B@GTS3
-I2;JFfY:1?z]XRh@;5;EmP0
+!s100 k5AKUZ7EE5336fU9YT1:O0
+I;R_ILS3dPnil1aXfmg3^g0
 R2
 R0
-w1731277528
+w1732719631
 8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ForwardingUnit.v
 FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ForwardingUnit.v
 L0 1
@@ -393,11 +393,11 @@ R8
 vpipeline
 R1
 !i10b 1
-!s100 4bC7kXFGcK6PTEF_DXj`Z1
-IMOAz94<dBZn4Ml7^D=zHl1
+!s100 <QWb@8^z:TUWfV5fz_om>2
+IoQj9HGc`S`=;VG>M1n]222
 R2
 R0
-w1731701203
+w1732719655
 8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v
 FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v
 L0 1

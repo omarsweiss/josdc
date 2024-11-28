@@ -168,27 +168,36 @@ def unpseudo(instructions):
 
 
 
-instructions = """addi $1, $0, 0
-addi $2, $0, B
-addi $3, $0, 7
-loop: slt $7, $2, $1
-bne $0, $7, notFound
-add $4, $2, $1
-srl $5, $4, 1
-lw $6, 0($5)
-beq $3, $6, found
-slt $6, $6, $3
-beq $6, $0, leftHalf
-j rightHalf
-leftHalf: add $2, $5, FFFF # "FFFF=-1"
-j loop
-rightHalf: addi $1, $5, 1
-j loop
-found: add $8, $0, $5
-j finish
-notFound: addi $8, $0, FFFF
-j finish
-finish: addi $0, $0, 0  """
+instructions = """ORI $2, $0, 0
+XORI $10, $0, 0
+ADDI $20, $0, 10
+ADD $5, $0, $0
+ADDI $1, $0, 1
+ADDI $22, $0, -1
+LOOP1: ADD $5, $1, $0 
+LW $15, 0($5)
+OR $10, $15, $0
+ADDI $2, $1, -1
+LOOP2: ADD $6, $2, $0 
+LW $16, 0($6)
+SGT $25, $2, $22
+SGT $26, $16, $10
+AND $27, $26, $25
+BEQ $27, $0, EXIT2
+ADDI $7, $2, 1
+SW $16, 0($7)
+ADDI $2, $2, -1
+J LOOP2
+EXIT2: ADDI $7, $2, 1
+SW $10, 0($7)
+ADDI $1, $1, 1
+SLT $28, $1, $20
+BNE $28, $0, LOOP1
+FINISH: SLL $0, $0, 0
+l3: lw $12, 0($13)
+addi $13, $13, 1
+bne $13, $20, l3
+SLL $0, $0, 0"""
 i = 0 
 instructions = instructions.lower()
 

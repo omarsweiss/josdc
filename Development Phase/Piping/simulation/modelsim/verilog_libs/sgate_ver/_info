@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/simulation/modelsim
 vio_buf_opdrn
-Z1 !s110 1731701292
+Z1 !s110 1732803981
 !i10b 1
 !s100 VhizJG_UoJ<b<SS=?:bCT2
 IB>0D[1JQGNFgEZ0B6EVK[2
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1731701292.000000
+Z7 !s108 1732803981.000000
 Z8 !s107 c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|sgate_ver|c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v|
 !i113 1

@@ -1,5 +1,5 @@
 Analysis & Elaboration report for pipeline
-Fri Nov 15 23:07:40 2024
+Thu Nov 28 17:26:09 2024
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -30,25 +30,26 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
  22. Parameter Settings for User Entity Instance: pipeline:uut|execute:exec|mux2x1:ALUMux
  23. Parameter Settings for User Entity Instance: pipeline:uut|execute:exec|ALU:alu
  24. Parameter Settings for User Entity Instance: pipeline:uut|EXMEM:exmem
- 25. Parameter Settings for User Entity Instance: pipeline:uut|dataMemory:DM|altsyncram:altsyncram_component
- 26. Parameter Settings for User Entity Instance: pipeline:uut|MEMWB:memwb
- 27. Parameter Settings for User Entity Instance: pipeline:uut|mux2x1:WBMux
- 28. Parameter Settings for User Entity Instance: pipeline:uut|mux2x1:WritePc
- 29. altsyncram Parameter Settings by Entity Instance
- 30. Analysis & Elaboration Settings
- 31. Port Connectivity Checks: "pipeline:uut|mux2x1:WritePc"
- 32. Port Connectivity Checks: "pipeline:uut|execute:exec|ALU:alu"
- 33. Port Connectivity Checks: "pipeline:uut|execute:exec|mux4x1:frwrdb"
- 34. Port Connectivity Checks: "pipeline:uut|execute:exec|mux4x1:frwrda"
- 35. Port Connectivity Checks: "pipeline:uut|decode:dcd|mux4x1:FrdBmux"
- 36. Port Connectivity Checks: "pipeline:uut|decode:dcd|mux4x1:FrdAmux"
- 37. Port Connectivity Checks: "pipeline:uut|decode:dcd|mux2x1:RegWriteMux"
- 38. Port Connectivity Checks: "pipeline:uut|IFID:ifid"
- 39. Port Connectivity Checks: "pipeline:uut|fetch:fetch|adder:PCAdder"
- 40. Port Connectivity Checks: "pipeline:uut|fetch:fetch|programCounter:pc"
- 41. Port Connectivity Checks: "pipeline:uut"
- 42. Analysis & Elaboration Messages
- 43. Analysis & Elaboration Suppressed Messages
+ 25. Parameter Settings for User Entity Instance: pipeline:uut|mux2x1:memForward
+ 26. Parameter Settings for User Entity Instance: pipeline:uut|dataMemory:DM|altsyncram:altsyncram_component
+ 27. Parameter Settings for User Entity Instance: pipeline:uut|MEMWB:memwb
+ 28. Parameter Settings for User Entity Instance: pipeline:uut|mux2x1:WBMux
+ 29. Parameter Settings for User Entity Instance: pipeline:uut|mux2x1:WritePc
+ 30. altsyncram Parameter Settings by Entity Instance
+ 31. Analysis & Elaboration Settings
+ 32. Port Connectivity Checks: "pipeline:uut|mux2x1:WritePc"
+ 33. Port Connectivity Checks: "pipeline:uut|execute:exec|ALU:alu"
+ 34. Port Connectivity Checks: "pipeline:uut|execute:exec|mux4x1:frwrdb"
+ 35. Port Connectivity Checks: "pipeline:uut|execute:exec|mux4x1:frwrda"
+ 36. Port Connectivity Checks: "pipeline:uut|decode:dcd|mux4x1:FrdBmux"
+ 37. Port Connectivity Checks: "pipeline:uut|decode:dcd|mux4x1:FrdAmux"
+ 38. Port Connectivity Checks: "pipeline:uut|decode:dcd|mux2x1:RegWriteMux"
+ 39. Port Connectivity Checks: "pipeline:uut|IFID:ifid"
+ 40. Port Connectivity Checks: "pipeline:uut|fetch:fetch|adder:PCAdder"
+ 41. Port Connectivity Checks: "pipeline:uut|fetch:fetch|programCounter:pc"
+ 42. Port Connectivity Checks: "pipeline:uut"
+ 43. Analysis & Elaboration Messages
+ 44. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -75,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                      ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Fri Nov 15 23:07:40 2024          ;
+; Analysis & Elaboration Status      ; Successful - Thu Nov 28 17:26:09 2024          ;
 ; Quartus Prime Version              ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                      ; pipeline                                       ;
 ; Top-level Entity Name              ; testbench                                      ;
@@ -395,8 +396,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+----------------------------------------------+
 ; Parameter Name ; Value ; Type                                         ;
 +----------------+-------+----------------------------------------------+
-; size           ; 84    ; Signed Integer                               ;
+; size           ; 89    ; Signed Integer                               ;
 +----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pipeline:uut|mux2x1:memForward ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; size           ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -713,7 +724,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Fri Nov 15 23:07:35 2024
+    Info: Processing started: Thu Nov 28 17:26:03 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SecondPhasePipeline -c pipeline --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -800,9 +811,9 @@ Info (12128): Elaborating entity "IDEX" for hierarchy "pipeline:uut|IDEX:idex" F
 Info (12128): Elaborating entity "execute" for hierarchy "pipeline:uut|execute:exec" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 61
 Info (12128): Elaborating entity "mux2x1" for hierarchy "pipeline:uut|execute:exec|mux2x1:ALUMux" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/execute.v Line: 20
 Info (12128): Elaborating entity "ALU" for hierarchy "pipeline:uut|execute:exec|ALU:alu" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/execute.v Line: 22
-Info (12128): Elaborating entity "forwarding_unit" for hierarchy "pipeline:uut|forwarding_unit:fw" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 73
-Info (12128): Elaborating entity "EXMEM" for hierarchy "pipeline:uut|EXMEM:exmem" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 82
-Info (12128): Elaborating entity "dataMemory" for hierarchy "pipeline:uut|dataMemory:DM" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 86
+Info (12128): Elaborating entity "forwarding_unit" for hierarchy "pipeline:uut|forwarding_unit:fw" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 75
+Info (12128): Elaborating entity "EXMEM" for hierarchy "pipeline:uut|EXMEM:exmem" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 84
+Info (12128): Elaborating entity "dataMemory" for hierarchy "pipeline:uut|dataMemory:DM" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 89
 Info (12128): Elaborating entity "altsyncram" for hierarchy "pipeline:uut|dataMemory:DM|altsyncram:altsyncram_component" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/dataMemory.v Line: 89
 Info (12130): Elaborated megafunction instantiation "pipeline:uut|dataMemory:DM|altsyncram:altsyncram_component" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/dataMemory.v Line: 89
 Info (12133): Instantiated megafunction "pipeline:uut|dataMemory:DM|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/dataMemory.v Line: 89
@@ -825,14 +836,14 @@ Info (12133): Instantiated megafunction "pipeline:uut|dataMemory:DM|altsyncram:a
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_8km1.tdf
     Info (12023): Found entity 1: altsyncram_8km1 File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/db/altsyncram_8km1.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_8km1" for hierarchy "pipeline:uut|dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8km1:auto_generated" File: c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "MEMWB" for hierarchy "pipeline:uut|MEMWB:memwb" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 92
+Info (12128): Elaborating entity "MEMWB" for hierarchy "pipeline:uut|MEMWB:memwb" File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v Line: 95
 Warning (12011): Net is missing source, defaulting to GND
     Warning (12110): Net "clk" is missing source, defaulting to GND File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/testbench.v Line: 4
 Info (144001): Generated suppressed messages file C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.map.smsg
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4744 megabytes
-    Info: Processing ended: Fri Nov 15 23:07:40 2024
-    Info: Elapsed time: 00:00:05
+    Info: Peak virtual memory: 4748 megabytes
+    Info: Processing ended: Thu Nov 28 17:26:09 2024
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:12
 
 

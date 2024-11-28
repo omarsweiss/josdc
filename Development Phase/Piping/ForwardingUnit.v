@@ -3,21 +3,27 @@ module forwarding_unit(
   input [4:0] rt_ex,
   input [4:0] dest_mem,
   input [4:0] dest_wb,
-  
+  input [4:0] rt_mem,
   input rst,
   input regwrite_mem,
   input regwrite_wb,
+  input MemWriteEn_MEM,
   output reg [1:0] ForwardA,
-  output reg [1:0] ForwardB
+  output reg [1:0] ForwardB,
+  output reg memFw
 
   );
+  
+  always @(*) begin
+		if (dest_wb == rt_mem && MemWriteEn_MEM) memFw <= 1'b1;
+		else memFw <= 1'b0;
+		end
 
   always @(*)
     begin
     if (~rst) begin
       ForwardA <= 2'b00;
       ForwardB <= 2'b00;
-
     end 
 	 
     else begin
