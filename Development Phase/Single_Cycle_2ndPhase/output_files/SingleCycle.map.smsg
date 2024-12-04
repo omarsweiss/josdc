@@ -1,2 +1,2 @@
-Info (10281): Verilog HDL Declaration information at processor.v(5): object "PC" differs only in case from object "pc" in the same scope File: D:/Development/JoSDC/josdc/Development Phase/Single_Cycle_2ndPhase/processor.v Line: 5
-Warning (10268): Verilog HDL information at registerFile.v(22): always construct contains both blocking and non-blocking assignments File: D:/Development/JoSDC/josdc/Development Phase/Single_Cycle_2ndPhase/registerFile.v Line: 22
+Info (10281): Verilog HDL Declaration information at processor.v(5): object "PC" differs only in case from object "pc" in the same scope File: C:/Users/firas/Developement/josdc/josdc/Development Phase/Single_Cycle_2ndPhase/processor.v Line: 5
+Warning (10268): Verilog HDL information at registerFile.v(22): always construct contains both blocking and non-blocking assignments File: C:/Users/firas/Developement/josdc/josdc/Development Phase/Single_Cycle_2ndPhase/registerFile.v Line: 22

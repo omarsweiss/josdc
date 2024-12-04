@@ -2,7 +2,8 @@ module fetch(
 input clk, rst, PCsrc, jr, jump, hold,
 input [9:0] reg1Addr, jaddress,adderResult,
 
-output [9:0] PCPlus1, PC, 
+output [9:0] PCPlus1, PC,
+ 
 output [31:0] instruction);
 
 wire [9:0] branchAddress, jrAddress, nextPC;  
@@ -15,7 +16,7 @@ mux2x1 #(10) JRMux(.in1(jaddress),.in2(reg1Addr),.s(jr),.out(jrAddress));
 mux2x1 #(10) jumpMux(.in1(branchAddress),.in2(jrAddress),.s(jump),.out(nextPC));
 
 programCounter pc(.clk(clk), .rst(rst), .PCin(nextPC), .PCout(PC), .hold(1'b0));
-adder PCAdder(.in1(PC), .in2({9'b0,!hold}), .out(PCPlus1));//balling
+adder PCAdder(.in1(PC), .in2({9'b0,!hold}), .out(PCPlus1));
 
 
 

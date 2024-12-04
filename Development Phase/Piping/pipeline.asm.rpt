@@ -1,6 +1,6 @@
 Assembler report for pipeline
-Wed Nov 27 18:13:29 2024
-Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Fri Nov 29 21:32:56 2024
+Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
 ---------------------
@@ -10,7 +10,7 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.sof
+  5. Assembler Device Options: C:/Users/firas/Developement/josdc/josdc/Development Phase/Piping/pipeline.sof
   6. Assembler Messages
 
 
@@ -18,7 +18,7 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2023  Intel Corporation. All rights reserved.
+Copyright (C) 2024  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed Nov 27 18:13:29 2024 ;
+; Assembler Status      ; Successful - Fri Nov 29 21:32:56 2024 ;
 ; Revision Name         ; pipeline                              ;
 ; Top-level Entity Name ; pipeline                              ;
 ; Family                ; MAX 10                                ;
@@ -53,23 +53,23 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
-+--------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                  ;
-+--------------------------------------------------------------------------------------------+
-; File Name                                                                                  ;
-+--------------------------------------------------------------------------------------------+
-; C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.sof ;
-+--------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Assembler Generated Files                                                     ;
++-------------------------------------------------------------------------------+
+; File Name                                                                     ;
++-------------------------------------------------------------------------------+
+; C:/Users/firas/Developement/josdc/josdc/Development Phase/Piping/pipeline.sof ;
++-------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.sof ;
-+----------------+-----------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                             ;
-+----------------+-----------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x0049D536                                                                                          ;
-; Checksum       ; 0x0049D536                                                                                          ;
-+----------------+-----------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/firas/Developement/josdc/josdc/Development Phase/Piping/pipeline.sof ;
++----------------+----------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                ;
++----------------+----------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x0049E2D0                                                                             ;
+; Checksum       ; 0x0049E2D0                                                                             ;
++----------------+----------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -77,16 +77,16 @@ https://fpgasoftware.intel.com/eula.
 +--------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
-    Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Wed Nov 27 18:13:27 2024
+    Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+    Info: Processing started: Fri Nov 29 21:32:53 2024
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off SecondPhasePipeline -c pipeline
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4733 megabytes
-    Info: Processing ended: Wed Nov 27 18:13:29 2024
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 4730 megabytes
+    Info: Processing ended: Fri Nov 29 21:32:56 2024
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 

@@ -1,6 +1,6 @@
 Fitter report for SingleCycle
-Mon Nov 04 22:10:16 2024
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Fri Nov 29 23:29:43 2024
+Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
 ---------------------
@@ -49,7 +49,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2020  Intel Corporation. All rights reserved.
+Copyright (C) 2024  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -66,28 +66,28 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Fitter Summary                                                                   ;
-+------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Mon Nov 04 22:10:16 2024       ;
-; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name                      ; SingleCycle                                 ;
-; Top-level Entity Name              ; processor                                   ;
-; Family                             ; MAX 10                                      ;
-; Device                             ; 10M50DAF484C7G                              ;
-; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 2,480 / 49,760 ( 5 % )                      ;
-;     Total combinational functions  ; 2,172 / 49,760 ( 4 % )                      ;
-;     Dedicated logic registers      ; 1,034 / 49,760 ( 2 % )                      ;
-; Total registers                    ; 1034                                        ;
-; Total pins                         ; 12 / 360 ( 3 % )                            ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 10,240 / 1,677,312 ( < 1 % )                ;
-; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
-; UFM blocks                         ; 0 / 1 ( 0 % )                               ;
-; ADC blocks                         ; 0 / 2 ( 0 % )                               ;
-+------------------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------------+
+; Fitter Summary                                                                      ;
++------------------------------------+------------------------------------------------+
+; Fitter Status                      ; Successful - Fri Nov 29 23:29:43 2024          ;
+; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
+; Revision Name                      ; SingleCycle                                    ;
+; Top-level Entity Name              ; processor                                      ;
+; Family                             ; MAX 10                                         ;
+; Device                             ; 10M50DAF484C7G                                 ;
+; Timing Models                      ; Final                                          ;
+; Total logic elements               ; 2,480 / 49,760 ( 5 % )                         ;
+;     Total combinational functions  ; 2,172 / 49,760 ( 4 % )                         ;
+;     Dedicated logic registers      ; 1,034 / 49,760 ( 2 % )                         ;
+; Total registers                    ; 1034                                           ;
+; Total pins                         ; 12 / 360 ( 3 % )                               ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 10,240 / 1,677,312 ( < 1 % )                   ;
+; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                                ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                                  ;
+; UFM blocks                         ; 0 / 1 ( 0 % )                                  ;
+; ADC blocks                         ; 0 / 2 ( 0 % )                                  ;
++------------------------------------+------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -154,21 +154,18 @@ https://fpgasoftware.intel.com/eula.
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
 ; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
-; Average used               ; 1.76        ;
-; Maximum used               ; 12          ;
+; Average used               ; 1.36        ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   7.2%      ;
-;     Processor 3            ;   7.1%      ;
+;     Processor 2            ;   7.3%      ;
+;     Processor 3            ;   7.2%      ;
 ;     Processor 4            ;   7.1%      ;
-;     Processor 5            ;   7.0%      ;
+;     Processor 5            ;   7.1%      ;
 ;     Processor 6            ;   7.0%      ;
-;     Processor 7            ;   7.0%      ;
-;     Processor 8            ;   6.9%      ;
-;     Processors 9-12        ;   6.7%      ;
 +----------------------------+-------------+
 
 
@@ -210,7 +207,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/output_files/SingleCycle.pin.
+The pin-out file can be found in C:/Users/firas/Developement/josdc/josdc/Development Phase/Single_Cycle_2ndPhase/output_files/SingleCycle.pin.
 
 
 +----------------------------------------------------------------------------+
@@ -1398,7 +1395,7 @@ RAM content values are presented in the following format: (Binary) (Octal) (Deci
 +-----------------+
 ; Fitter Messages ;
 +-----------------+
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (119006): Selected device 10M50DAF484C7G for design "SingleCycle"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
@@ -1439,9 +1436,9 @@ Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node clk~input (placed in PIN M8 (CLK1n, DIFFIO_RX_L36n, DIFFOUT_L36n, High_Speed)) File: C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/processor.v Line: 4
+Info (176353): Automatically promoted node clk~input (placed in PIN M8 (CLK1n, DIFFIO_RX_L36n, DIFFOUT_L36n, High_Speed)) File: C:/Users/firas/Developement/josdc/josdc/Development Phase/Single_Cycle_2ndPhase/processor.v Line: 4
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G3
-Info (176353): Automatically promoted node rst~input (placed in PIN M9 (CLK1p, DIFFIO_RX_L36p, DIFFOUT_L36p, High_Speed)) File: C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/processor.v Line: 4
+Info (176353): Automatically promoted node rst~input (placed in PIN M9 (CLK1p, DIFFIO_RX_L36p, DIFFOUT_L36p, High_Speed)) File: C:/Users/firas/Developement/josdc/josdc/Development Phase/Single_Cycle_2ndPhase/processor.v Line: 4
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
 Info (176233): Starting register packing
 Info (176235): Finished register packing
@@ -1466,30 +1463,30 @@ Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:05
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:06
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 2% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 34% of the available device resources in the region that extends from location X22_Y22 to location X32_Y32
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:13
-Info (11888): Total time spent on timing analysis during the Fitter is 1.48 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:20
+Info (11888): Total time spent on timing analysis during the Fitter is 2.18 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:03
-Info (144001): Generated suppressed messages file C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/output_files/SingleCycle.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/firas/Developement/josdc/josdc/Development Phase/Single_Cycle_2ndPhase/output_files/SingleCycle.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 6275 megabytes
-    Info: Processing ended: Mon Nov 04 22:10:17 2024
-    Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Peak virtual memory: 5858 megabytes
+    Info: Processing ended: Fri Nov 29 23:29:44 2024
+    Info: Elapsed time: 00:00:39
+    Info: Total CPU time (on all processors): 00:00:39
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/GIGABYT/Desktop/puter/Development Phase II, JoSDC/SDC24_QP_SingleCycle_baseline/output_files/SingleCycle.fit.smsg.
+The suppressed messages can be found in C:/Users/firas/Developement/josdc/josdc/Development Phase/Single_Cycle_2ndPhase/output_files/SingleCycle.fit.smsg.
 
 
