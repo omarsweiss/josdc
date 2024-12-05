@@ -1,0 +1,483 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/simulation/modelsim
+vadder
+Z1 !s110 1733433131
+!i10b 1
+!s100 =WhcodDhF8B1e195TQ<ZE2
+I`JEKP82z8G?Vjm4GJ_QY61
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1731248562
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/adder.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/adder.v
+L0 3
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1733433131.000000
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/adder.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work {+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement}
+Z8 tCvgOpt 0
+vALU
+R1
+!i10b 1
+!s100 3a[meDhSJQR3R6174;f8R1
+I4mQ>7ikKkj3WJa2eGn?aZ1
+R2
+R0
+w1732720337
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/ALU.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/ALU.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/ALU.v|
+!i113 1
+R6
+R7
+R8
+n@a@l@u
+vcontrolUnit
+Z9 !s110 1733433130
+!i10b 1
+!s100 daYol2AQFC6Emj?3Oa<Ko1
+I3m75:WD@d70YbQmN<7Zl20
+R2
+R0
+R3
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/controlUnit.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/controlUnit.v
+L0 1
+R4
+r1
+!s85 0
+31
+Z10 !s108 1733433130.000000
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/controlUnit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/controlUnit.v|
+!i113 1
+R6
+R7
+R8
+ncontrol@unit
+vdataMemory
+R9
+!i10b 1
+!s100 X5DjdZSn6n9zo4B^WYWl60
+I9G1k^]DfRnZFV?AoRO2W81
+R2
+R0
+w1733413194
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/dataMemory.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/dataMemory.v
+Z11 L0 40
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/dataMemory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/dataMemory.v|
+!i113 1
+R6
+R7
+R8
+ndata@memory
+vdecode
+R9
+!i10b 1
+!s100 ??Cn@6>=dZ2lWmFCQ=QVF2
+ISTn_1To[gmjjQO5<nR9`n1
+R2
+R0
+w1733401127
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/decode.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/decode.v
+L0 1
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/decode.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/decode.v|
+!i113 1
+R6
+R7
+R8
+vexecute
+R9
+!i10b 1
+!s100 Sz[H^REECjT[elC39XS0b3
+I8MB;ZSdbfJP;lJa6[i;:Y1
+R2
+R0
+w1733416601
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/execute.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/execute.v
+L0 1
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/execute.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/execute.v|
+!i113 1
+R6
+R7
+R8
+vEXMEM
+R9
+!i10b 1
+!s100 jmQ`Q]X<iMmOJmG>BB_kn0
+IEb?K8e]aSc;czjnhBcI;F1
+R2
+R0
+Z12 w1731697898
+Z13 8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/Pipes.v
+Z14 FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/Pipes.v
+L0 34
+R4
+r1
+!s85 0
+31
+R10
+Z15 !s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/Pipes.v|
+Z16 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/Pipes.v|
+!i113 1
+R6
+R7
+R8
+n@e@x@m@e@m
+vfetch
+R9
+!i10b 1
+!s100 ]4>o`n;z9l]NNF;Lb:[[X1
+I5;?0fDEd3dA2<L=FVm4EW0
+R2
+R0
+w1733433014
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/fetch.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/fetch.v
+L0 1
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/fetch.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/fetch.v|
+!i113 1
+R6
+R7
+R8
+vforwarding_unit
+R9
+!i10b 1
+!s100 k5AKUZ7EE5336fU9YT1:O0
+Ih<ZFSh^C3ajJ18;caj_6C0
+R2
+R0
+w1732719631
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/ForwardingUnit.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/ForwardingUnit.v
+L0 1
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/ForwardingUnit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/ForwardingUnit.v|
+!i113 1
+R6
+R7
+R8
+vhazard_detection
+R9
+!i10b 1
+!s100 >bNL=:;;?7K?nHgzJm^ST2
+InQbCF4m9bK39=;U_0zP7K0
+R2
+R0
+w1733405130
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/hazard_detection.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/hazard_detection.v
+L0 2
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/hazard_detection.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/hazard_detection.v|
+!i113 1
+R6
+R7
+R8
+vIDEX
+R9
+!i10b 1
+!s100 LKWG]@UOWoKP9OE<e><NE0
+IBQ@dAzK2;F:M0>enhd<C03
+R2
+R0
+R12
+R13
+R14
+L0 17
+R4
+r1
+!s85 0
+31
+R10
+R15
+R16
+!i113 1
+R6
+R7
+R8
+n@i@d@e@x
+vIFID
+R9
+!i10b 1
+!s100 NJa0cJ`OXPJ7egJ5z9ZOA1
+IlTWC]2zc]L7;i;oiJHHW71
+R2
+R0
+R12
+R13
+R14
+L0 1
+R4
+r1
+!s85 0
+31
+R10
+R15
+R16
+!i113 1
+R6
+R7
+R8
+n@i@f@i@d
+vinstructionMemory
+R9
+!i10b 1
+!s100 49ic<nISV69ARfnKkckWf0
+IiBW=6mB7J3z@<][`fmB1a1
+R2
+R0
+w1733424476
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/instructionMemory.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/instructionMemory.v
+R11
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/instructionMemory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/instructionMemory.v|
+!i113 1
+R6
+R7
+R8
+ninstruction@memory
+vMEMWB
+R9
+!i10b 1
+!s100 7J?P99Ez0TA2gI^mz>O_]1
+IdX@QOQ7o;]=Unhc==3Q9f0
+R2
+R0
+R12
+R13
+R14
+L0 48
+R4
+r1
+!s85 0
+31
+R10
+R15
+R16
+!i113 1
+R6
+R7
+R8
+n@m@e@m@w@b
+vmux2x1
+R9
+!i10b 1
+!s100 9@GI2f]Q]h88AIAPU@>>i3
+I]V?WY8Z:ET7mUYH[liIU31
+R2
+R0
+R3
+Z17 8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/mux2x1.v
+Z18 FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/mux2x1.v
+L0 1
+R4
+r1
+!s85 0
+31
+R10
+Z19 !s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/mux2x1.v|
+Z20 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/mux2x1.v|
+!i113 1
+R6
+R7
+R8
+vmux4x1
+R9
+!i10b 1
+!s100 nAQZOOJ:]m^iX812:IzbJ1
+I9a<=CoC`N6NXDFKUSmkKO2
+R2
+R0
+R3
+R17
+R18
+L0 15
+R4
+r1
+!s85 0
+31
+R10
+R19
+R20
+!i113 1
+R6
+R7
+R8
+vpipeline
+R9
+!i10b 1
+!s100 Hn;@_WWP[m9`oP<GQCRVG3
+I=oNhdIg3mS>F:HDCKMf1[3
+R2
+R0
+w1733427228
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/pipeline.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/pipeline.v
+L0 1
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/pipeline.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/pipeline.v|
+!i113 1
+R6
+R7
+R8
+vprogramCounter
+R9
+!i10b 1
+!s100 ?@C^H4UM<RK^<o6;jgT8G0
+I93cRXeD1Zmff9:^14[U`H3
+R2
+R0
+w1733417754
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/programCounter.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/programCounter.v
+L0 1
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/programCounter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/programCounter.v|
+!i113 1
+R6
+R7
+R8
+nprogram@counter
+vregisterFile
+R9
+!i10b 1
+!s100 eT35`CF98MS`gV`bFUY0O3
+I<f<JbI2^Beg1gCD_BkR;b3
+R2
+R0
+w1731249351
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/registerFile.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/registerFile.v
+L0 3
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/registerFile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/registerFile.v|
+!i113 1
+R6
+R7
+R8
+nregister@file
+vSignExtender
+R9
+!i10b 1
+!s100 @`aGSg91l4d870B>Q>l^;2
+In[L7>3W]dzUTPaL1Llc631
+R2
+R0
+R3
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/SignExtender.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/SignExtender.v
+L0 4
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/SignExtender.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/SignExtender.v|
+!i113 1
+R6
+R7
+R8
+n@sign@extender
+vtestbench
+R1
+!i10b 1
+!s100 `HK7=0i1=g3XE0m8UQho=0
+IzAboiO5cTZKjBX]^]@g;a1
+R2
+R0
+w1731275900
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/testbench.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/testbench.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/testbench.v|
+!i113 1
+R6
+R7
+R8

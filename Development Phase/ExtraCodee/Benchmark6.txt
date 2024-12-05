@@ -1,30 +1,30 @@
-ORI $2, $0, 0
-XORI $10, $0, 0
+ORI $2, $0, 0		0
+XORI $10, $0, 0		
 ADDI $20, $0, 10
 ADD $5, $0, $0
 ADDI $1, $0, 1
-ADDI $22, $0, -1
+ADDI $22, $0, -1	5
 LOOP1: ADD $5, $1, $0 
 LW $15, 0($5)
 OR $10, $15, $0
 ADDI $2, $1, -1
-LOOP2: ADD $6, $2, $0 
+LOOP2: ADD $6, $2, $0	10 
 LW $16, 0($6)
 SGT $25, $2, $22
 SGT $26, $16, $10
 AND $27, $26, $25
-BEQ $27, $0, EXIT2
+BEQ $27, $0, EXIT2	15	
 ADDI $7, $2, 1
 SW $16, 0($7)
 ADDI $2, $2, -1
 J LOOP2
-EXIT2: ADDI $7, $2, 1
+EXIT2: ADDI $7, $2, 1	20
 SW $10, 0($7)
 ADDI $1, $1, 1
 SLT $28, $1, $20
 BNE $28, $0, LOOP1
-FINISH: SLL $0, $0, 0
-l3: lw $12, 0($13)
+FINISH: SLL $0, $0, 0	25
+l3: lw $12, 0($13)	
 addi $13, $13, 1
 bne $13, $20, l3
 SLL $0, $0, 0

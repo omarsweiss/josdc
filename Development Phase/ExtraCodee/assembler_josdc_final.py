@@ -162,27 +162,32 @@ def unpseudo(instructions):
 
 
 
-instructions = """lw $t0, 0($zero)      
-    add $t1, $t0, $t0 
-    sub $t2, $t1, $t0 
-    lw $t3, 1($zero)
-    add $t4, $t3, $t3  
-    add $t3, $t4, $t4  
-    addi $t5, $zero, 5 
-    add $t5, $t5, $t4  
-    addi $t6, $zero, 1 
-    beq $t6, $zero, skip 
-    addi $t6, $t6, 1
-    bne $t6, $zero, taken
-    addi $t6, $t6, 1
-    addi $t6, $t6, 1
-taken: addi $t4, $zero, 10
-    lw $t5, 0($zero)
-    beq $t5, $t4, skip
-    addi $t6, $t6, 1
-    addi $t6, $t6, 1
-skip: sw $t6, 4($zero)     
-    li $v0, 10"""
+instructions = """    addi $t0, $zero, 10   
+    addi $t1, $zero, 20
+    add $t2, $t0, $t1   
+    sub $t3, $t1, $t0   
+    and $t4, $t0, $t1
+    or $t5, $t0, $t1       
+    nor $t6, $t0, $t1       
+    xor $t7, $t0, $t1
+    addi $t8, $t0, 10     
+    ori $t9, $t1, 5     
+    xori $s0, $t1, 3       
+    slt $s1, $t0, $t1   
+    sll $s2, $t0, 2      
+    srl $s3, $t1, 1      
+    sw $t2, 4($zero)    
+    lw $t3, 4($zero) 
+    beq $t0, $t1, 1 
+    bne $t0, $t1, 2  
+    addi $a0, $zero, 1             
+    j 25                
+    addi $a0, $zero, 2              
+    jal 23   			       
+    j 25              		
+    addi $v0, $zero, 4          
+    jr $ra                  	
+    addi $t0, $zero, 0 """
 i = 0 
 
 instructions = labeling(unpseudo(instructions.strip()))

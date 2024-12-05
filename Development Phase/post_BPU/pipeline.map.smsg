@@ -1,0 +1,3 @@
+Warning (10268): Verilog HDL information at registerFile.v(24): always construct contains both blocking and non-blocking assignments File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/registerFile.v Line: 24
+Info (10281): Verilog HDL Declaration information at fetch.v(3): object "BranchAddress" differs only in case from object "branchAddress" in the same scope File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/fetch.v Line: 3
+Info (10281): Verilog HDL Declaration information at fetch.v(5): object "PC" differs only in case from object "pc" in the same scope File: C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/fetch.v Line: 5
