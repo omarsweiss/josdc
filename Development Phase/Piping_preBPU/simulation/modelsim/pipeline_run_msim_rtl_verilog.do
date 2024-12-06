@@ -34,26 +34,26 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/dataMemory.v}
-vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/testbench.v}
-vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/SignExtender.v}
-vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/registerFile.v}
-vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/programCounter.v}
-vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/Pipes.v}
-vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v}
-vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/mux2x1.v}
-vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/hazard_detection.v}
-vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ForwardingUnit.v}
-vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/fetch.v}
-vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/execute.v}
-vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v}
-vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/controlUnit.v}
-vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/comparator.v}
-vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ALU.v}
-vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/adder.v}
-vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/instructionMemory.v}
+vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/dataMemory.v}
+vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/testbench.v}
+vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/SignExtender.v}
+vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/registerFile.v}
+vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/programCounter.v}
+vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/Pipes.v}
+vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/pipeline.v}
+vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/mux2x1.v}
+vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/hazard_detection.v}
+vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/ForwardingUnit.v}
+vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/fetch.v}
+vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/execute.v}
+vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/decode.v}
+vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/controlUnit.v}
+vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/comparator.v}
+vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/ALU.v}
+vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/adder.v}
+vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/instructionMemory.v}
 
-vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/testbench.v}
+vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/testbench.v}
 
 vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  testbench
 

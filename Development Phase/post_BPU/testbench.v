@@ -6,7 +6,7 @@ module testbench;
 	wire [9:0] PC;
 	
 	initial begin
-		clk = 0;
+		clk = 1;
 		rst = 0;
 		#4 rst = 1;
 		#1000 $stop;

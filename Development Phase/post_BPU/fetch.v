@@ -1,28 +1,44 @@
 module fetch(
-input clk, rst, taken, jr, hold,Branch_EX,
-input [9:0] reg1Addr,PCPlus1_EX, BranchAddress,
-
-output [9:0] PCPlus1, PC, 
+input clk, rst, taken, jr, hold,Branch_EX, prediction_EX,
+input [9:0] reg1Addr,PCPlus1_EX, BranchAddress_EX, Branch_state_EX,
+output prediction,
+output [9:0] PCPlus1, PC, Branch_state_F, BranchAddress_F,
 output [31:0] instruction);
 
 reg [9:0] nextPC;
-wire [9:0] branchAddress, address;   
+wire [9:0] address;   
 wire [5:0] opCode;
-
+wire [4:0] Branch_state;
+wire Branch_F, misprediction, jump;
 
 assign opCode = instruction[31:26];
 assign address = instruction[9:0];
-
-
+assign Branch_state_F = {5'b0,Branch_state};
+assign jump = (opCode == 6'h2 || opCode == 6'h3);
 
 always @(*) begin
-	if(~rst) nextPC <= 10'b0000000000;
-	else if (!taken & Branch_EX) nextPC <= PCPlus1_EX;
-	else if (jr) nextPC <= reg1Addr;
-	else if (opCode == 6'h2 || opCode == 6'h3) nextPC <= address;
-	else if (opCode == 6'h4 || opCode == 6'h5) nextPC <= address + PCPlus1;
-	else nextPC <= PCPlus1;
+    casez ({rst, misprediction, jr, taken, Branch_F, jump})
+        6'b0zzzzz:        nextPC = 10'b0000000000;      // Reset condition
+        6'b11z1zz:        nextPC = BranchAddress_EX;    // Misprediction, taken branch
+        6'b11z0zz:        nextPC = PCPlus1_EX;         // Misprediction, not taken
+        6'b10100z:        nextPC = reg1Addr;           // Jump register
+        6'b100001:        nextPC = address;            // J-type instruction
+        6'b100010: begin                               // Branch decision
+            nextPC = prediction ? BranchAddress_F : PCPlus1;
+        end
+        default:         nextPC = PCPlus1;            // Default case
+    endcase
 end
+
+assign Branch_F = (opCode == 6'h4 || opCode == 6'h5);
+assign BranchAddress_F = address + PCPlus1;
+assign misprediction = prediction_EX ^ taken;
+
+
+Gshare_predict bpu(.clk(clk),.rst(rst),.prediction(prediction),.state_index(Branch_state),.Branch_F(Branch_F),
+.taken(taken),.Branch_EX(Branch_EX),.prev_idx(Branch_state_EX[4:0]),.brn_pc(PC));
+
+
 
 
 
@@ -32,11 +48,6 @@ adder PCAdder(.in1(PC), .in2(10'b1), .out(PCPlus1));
 programCounter pc(.clk(clk), .rst(rst), .PCin(nextPC), .PCout(PC), .hold(hold));
 
 instructionMemory IM(.address(PC), .clock(~clk), .q(instruction));
-
-
-
-
-
 
 
 endmodule

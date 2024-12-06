@@ -5,7 +5,7 @@ module hazard_detection(
      
   input  mem_read_EX,branch, branchValid,  regDest_ID,
   
-  input jr,
+  input jr, prediction,
   
   output  ld_has_hazard, branch_has_hazard
 
@@ -14,7 +14,7 @@ module hazard_detection(
 
 assign ld_has_hazard = (mem_read_EX && (rs_ID == dest_EXE || regDest_ID && (rt_ID == dest_EXE))); 
 
-assign branch_has_hazard = ((branch && !branchValid) || jr) && !ld_has_hazard;
+assign branch_has_hazard = ((prediction ^ branchValid) || jr) && !ld_has_hazard;
 
 
 

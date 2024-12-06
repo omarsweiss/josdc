@@ -13,7 +13,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:40:09 on Dec 05,2024
+# Start time: 23:23:02 on Dec 06,2024
 # vlog -reportprogress 300 -vlog01compat -work altera_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -95,7 +95,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 21:40:10 on Dec 05,2024, Elapsed time: 0:00:01
+# End time: 23:23:03 on Dec 06,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -106,7 +106,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:40:10 on Dec 05,2024
+# Start time: 23:23:03 on Dec 06,2024
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -170,7 +170,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 21:40:10 on Dec 05,2024, Elapsed time: 0:00:00
+# End time: 23:23:03 on Dec 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -181,7 +181,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:40:10 on Dec 05,2024
+# Start time: 23:23:03 on Dec 06,2024
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -223,7 +223,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 21:40:10 on Dec 05,2024, Elapsed time: 0:00:00
+# End time: 23:23:03 on Dec 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -234,7 +234,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:40:10 on Dec 05,2024
+# Start time: 23:23:03 on Dec 06,2024
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -364,7 +364,7 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 21:40:11 on Dec 05,2024, Elapsed time: 0:00:01
+# End time: 23:23:06 on Dec 06,2024, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -375,7 +375,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:40:11 on Dec 05,2024
+# Start time: 23:23:06 on Dec 06,2024
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -458,7 +458,7 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 21:40:12 on Dec 05,2024, Elapsed time: 0:00:01
+# End time: 23:23:08 on Dec 06,2024, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/fiftyfivenm_ver
@@ -469,7 +469,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work fiftyfivenm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/fiftyfivenm_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:40:12 on Dec 05,2024
+# Start time: 23:23:09 on Dec 06,2024
 # vlog -reportprogress 300 -vlog01compat -work fiftyfivenm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/fiftyfivenm_atoms.v 
 # -- Compiling UDP FIFTYFIVENM_PRIM_DFFE
 # -- Compiling UDP FIFTYFIVENM_PRIM_DFFEAS
@@ -562,234 +562,80 @@
 # 	fiftyfivenm_jtag
 # 	fiftyfivenm_adcblock
 # 	fiftyfivenm_phase_detector
-# End time: 21:40:12 on Dec 05,2024, Elapsed time: 0:00:00
+# End time: 23:23:11 on Dec 06,2024, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work fiftyfivenm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/fiftyfivenm_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:40:12 on Dec 05,2024
+# Start time: 23:23:11 on Dec 06,2024
 # vlog -reportprogress 300 -vlog01compat -work fiftyfivenm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/fiftyfivenm_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 21:40:14 on Dec 05,2024, Elapsed time: 0:00:02
+# End time: 23:23:13 on Dec 06,2024, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
-do {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/simulation/modelsim/wave.do}
-# onerror {resume}
-# quietly WaveActivateNextPane {} 0
-# add wave -noupdate /testbench/clk
-# add wave -noupdate /testbench/rst
-# add wave -noupdate /testbench/uut/fetch/pc/hold
-# add wave -noupdate -radix decimal /testbench/PC
-# add wave -noupdate -radix decimal /testbench/uut/fetch/PCPlus1
-# add wave -noupdate -radix decimal /testbench/uut/fetch/pc/PCin
-# add wave -noupdate -divider -height 25 FETCH
-# add wave -noupdate -radix hexadecimal /testbench/uut/fetch/instruction
-# add wave -noupdate -radix decimal /testbench/uut/fetch/nextPC
-# add wave -noupdate -divider -height 25 DECODE
-# add wave -noupdate -radix unsigned /testbench/uut/dcd/RF/writeRegister
-# add wave -noupdate -radix unsigned /testbench/uut/PCPlus1_ID
-# add wave -noupdate -radix unsigned /testbench/uut/DestReg
-# add wave -noupdate -radix unsigned /testbench/uut/rs
-# add wave -noupdate -radix unsigned /testbench/uut/rt
-# add wave -noupdate -radix decimal /testbench/uut/readData1
-# add wave -noupdate -radix decimal /testbench/uut/readData2
-# add wave -noupdate -divider registers
-# add wave -noupdate -radix decimal /testbench/uut/dcd/RF/writeData
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[0]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[1]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[2]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[3]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[4]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[5]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[6]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[7]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[8]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[9]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[10]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[11]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[12]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[13]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[14]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[15]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[16]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[17]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[18]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[19]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[20]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[21]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[22]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[23]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[24]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[25]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[26]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[27]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[28]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[29]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[30]}
-# add wave -noupdate -radix decimal {/testbench/uut/dcd/RF/registers[31]}
-# add wave -noupdate -divider cu
-# add wave -noupdate /testbench/uut/dcd/CU/ALUOp
-# add wave -noupdate /testbench/uut/dcd/CU/ALUSrc
-# add wave -noupdate /testbench/uut/dcd/CU/bne
-# add wave -noupdate /testbench/uut/dcd/CU/Branch
-# add wave -noupdate /testbench/uut/dcd/CU/funct
-# add wave -noupdate /testbench/uut/dcd/CU/jal
-# add wave -noupdate /testbench/uut/dcd/CU/jr
-# add wave -noupdate /testbench/uut/dcd/CU/jump
-# add wave -noupdate /testbench/uut/dcd/CU/MemReadEn
-# add wave -noupdate /testbench/uut/dcd/CU/MemtoReg
-# add wave -noupdate /testbench/uut/dcd/CU/MemWriteEn
-# add wave -noupdate /testbench/uut/dcd/CU/opCode
-# add wave -noupdate /testbench/uut/dcd/CU/RegDst
-# add wave -noupdate /testbench/uut/dcd/CU/RegWriteEn
-# add wave -noupdate -divider -height 25 EXECUTE
-# add wave -noupdate -radix unsigned /testbench/uut/PCPlus1_EX
-# add wave -noupdate -radix decimal /testbench/uut/fw/rs_ex
-# add wave -noupdate -radix decimal /testbench/uut/fw/rt_ex
-# add wave -noupdate -radix decimal /testbench/uut/fw/dest_mem
-# add wave -noupdate -radix decimal /testbench/uut/fw/dest_wb
-# add wave -noupdate -radix decimal /testbench/uut/fw/rst
-# add wave -noupdate -radix decimal /testbench/uut/fw/regwrite_mem
-# add wave -noupdate /testbench/uut/fw/regwrite_wb
-# add wave -noupdate /testbench/uut/fw/ForwardA
-# add wave -noupdate /testbench/uut/fw/ForwardB
-# add wave -noupdate -radix decimal /testbench/uut/exec/alu/operand1
-# add wave -noupdate -radix decimal /testbench/uut/exec/alu/operand2
-# add wave -noupdate -radix decimal /testbench/uut/exec/alu/opSel
-# add wave -noupdate -radix decimal /testbench/uut/exec/alu/result
-# add wave -noupdate -divider HDU
-# add wave -noupdate /testbench/uut/HDU/forwardA_Branch
-# add wave -noupdate /testbench/uut/HDU/forwardB_Branch
-# add wave -noupdate /testbench/uut/HDU/hold
-# add wave -noupdate /testbench/uut/HDU/branch_has_hazard
-# add wave -noupdate /testbench/uut/HDU/ld_has_hazard
-# add wave -noupdate /testbench/uut/HDU/branch_hold
-# add wave -noupdate -divider {flushes uwu}
-# add wave -noupdate -radix hexadecimal /testbench/uut/idex/D
-# add wave -noupdate /testbench/uut/idex/flush
-# add wave -noupdate -radix hexadecimal /testbench/uut/idex/Q
-# add wave -noupdate -radix hexadecimal -childformat {{{/testbench/uut/ifid/D[51]} -radix hexadecimal} {{/testbench/uut/ifid/D[50]} -radix hexadecimal} {{/testbench/uut/ifid/D[49]} -radix hexadecimal} {{/testbench/uut/ifid/D[48]} -radix hexadecimal} {{/testbench/uut/ifid/D[47]} -radix hexadecimal} {{/testbench/uut/ifid/D[46]} -radix hexadecimal} {{/testbench/uut/ifid/D[45]} -radix hexadecimal} {{/testbench/uut/ifid/D[44]} -radix hexadecimal} {{/testbench/uut/ifid/D[43]} -radix hexadecimal} {{/testbench/uut/ifid/D[42]} -radix hexadecimal} {{/testbench/uut/ifid/D[41]} -radix hexadecimal} {{/testbench/uut/ifid/D[40]} -radix hexadecimal} {{/testbench/uut/ifid/D[39]} -radix hexadecimal} {{/testbench/uut/ifid/D[38]} -radix hexadecimal} {{/testbench/uut/ifid/D[37]} -radix hexadecimal} {{/testbench/uut/ifid/D[36]} -radix hexadecimal} {{/testbench/uut/ifid/D[35]} -radix hexadecimal} {{/testbench/uut/ifid/D[34]} -radix hexadecimal} {{/testbench/uut/ifid/D[33]} -radix hexadecimal} {{/testbench/uut/ifid/D[32]} -radix hexadecimal} {{/testbench/uut/ifid/D[31]} -radix hexadecimal} {{/testbench/uut/ifid/D[30]} -radix hexadecimal} {{/testbench/uut/ifid/D[29]} -radix hexadecimal} {{/testbench/uut/ifid/D[28]} -radix hexadecimal} {{/testbench/uut/ifid/D[27]} -radix hexadecimal} {{/testbench/uut/ifid/D[26]} -radix hexadecimal} {{/testbench/uut/ifid/D[25]} -radix hexadecimal} {{/testbench/uut/ifid/D[24]} -radix hexadecimal} {{/testbench/uut/ifid/D[23]} -radix hexadecimal} {{/testbench/uut/ifid/D[22]} -radix hexadecimal} {{/testbench/uut/ifid/D[21]} -radix hexadecimal} {{/testbench/uut/ifid/D[20]} -radix hexadecimal} {{/testbench/uut/ifid/D[19]} -radix hexadecimal} {{/testbench/uut/ifid/D[18]} -radix hexadecimal} {{/testbench/uut/ifid/D[17]} -radix hexadecimal} {{/testbench/uut/ifid/D[16]} -radix hexadecimal} {{/testbench/uut/ifid/D[15]} -radix hexadecimal} {{/testbench/uut/ifid/D[14]} -radix hexadecimal} {{/testbench/uut/ifid/D[13]} -radix hexadecimal} {{/testbench/uut/ifid/D[12]} -radix hexadecimal} {{/testbench/uut/ifid/D[11]} -radix hexadecimal} {{/testbench/uut/ifid/D[10]} -radix hexadecimal} {{/testbench/uut/ifid/D[9]} -radix hexadecimal} {{/testbench/uut/ifid/D[8]} -radix hexadecimal} {{/testbench/uut/ifid/D[7]} -radix hexadecimal} {{/testbench/uut/ifid/D[6]} -radix hexadecimal} {{/testbench/uut/ifid/D[5]} -radix hexadecimal} {{/testbench/uut/ifid/D[4]} -radix hexadecimal} {{/testbench/uut/ifid/D[3]} -radix hexadecimal} {{/testbench/uut/ifid/D[2]} -radix hexadecimal} {{/testbench/uut/ifid/D[1]} -radix hexadecimal} {{/testbench/uut/ifid/D[0]} -radix hexadecimal}} -subitemconfig {{/testbench/uut/ifid/D[51]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[50]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[49]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[48]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[47]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[46]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[45]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[44]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[43]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[42]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[41]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[40]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[39]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[38]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[37]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[36]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[35]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[34]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[33]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[32]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[31]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[30]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[29]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[28]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[27]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[26]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[25]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[24]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[23]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[22]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[21]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[20]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[19]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[18]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[17]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[16]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[15]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[14]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[13]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[12]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[11]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[10]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[9]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[8]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[7]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[6]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[5]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[4]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[3]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[2]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[1]} {-height 15 -radix hexadecimal} {/testbench/uut/ifid/D[0]} {-height 15 -radix hexadecimal}} /testbench/uut/ifid/D
-# add wave -noupdate /testbench/uut/ifid/flush
-# add wave -noupdate /testbench/uut/ifid/hold
-# add wave -noupdate -radix hexadecimal /testbench/uut/ifid/Q
-# add wave -noupdate -divider comparator
-# add wave -noupdate -radix unsigned /testbench/uut/dcd/cmp/bne
-# add wave -noupdate -radix unsigned /testbench/uut/dcd/cmp/branch
-# add wave -noupdate -radix unsigned /testbench/uut/dcd/cmp/branchValid
-# add wave -noupdate -radix unsigned /testbench/uut/dcd/cmp/In1
-# add wave -noupdate -radix unsigned /testbench/uut/dcd/cmp/In2
-# add wave -noupdate -divider {forward A mux}
-# add wave -noupdate -radix decimal /testbench/uut/dcd/FrdAmux/in1
-# add wave -noupdate -radix decimal /testbench/uut/dcd/FrdAmux/in2
-# add wave -noupdate -radix decimal /testbench/uut/dcd/FrdAmux/in3
-# add wave -noupdate -radix decimal /testbench/uut/dcd/FrdAmux/in4
-# add wave -noupdate -radix decimal /testbench/uut/dcd/FrdAmux/out
-# add wave -noupdate -radix decimal /testbench/uut/dcd/FrdAmux/s
-# add wave -noupdate -divider {forward B mux}
-# add wave -noupdate -radix decimal /testbench/uut/dcd/FrdBmux/in1
-# add wave -noupdate -radix decimal /testbench/uut/dcd/FrdBmux/in2
-# add wave -noupdate -radix decimal /testbench/uut/dcd/FrdBmux/in3
-# add wave -noupdate -radix decimal /testbench/uut/dcd/FrdBmux/in4
-# add wave -noupdate -radix decimal /testbench/uut/dcd/FrdBmux/out
-# add wave -noupdate -radix decimal /testbench/uut/dcd/FrdBmux/s
-# add wave -noupdate -divider Dmem
-# add wave -noupdate -radix decimal /testbench/uut/DM/address
-# add wave -noupdate -radix decimal /testbench/uut/DM/data
-# add wave -noupdate -radix decimal /testbench/uut/DM/q
-# add wave -noupdate -radix decimal /testbench/uut/DM/rden
-# add wave -noupdate -radix decimal /testbench/uut/DM/wren
-# add wave -noupdate -divider forwarding
-# add wave -noupdate -radix decimal /testbench/uut/exec/frwrda/s
-# add wave -noupdate -radix decimal /testbench/uut/exec/frwrda/in1
-# add wave -noupdate -radix decimal /testbench/uut/exec/frwrda/in2
-# add wave -noupdate -radix decimal /testbench/uut/exec/frwrda/in3
-# add wave -noupdate -radix decimal /testbench/uut/exec/frwrda/out
-# add wave -noupdate -radix binary /testbench/uut/exec/frwrdb/s
-# add wave -noupdate -radix decimal /testbench/uut/exec/frwrdb/in1
-# add wave -noupdate -radix decimal /testbench/uut/exec/frwrdb/in2
-# add wave -noupdate -radix decimal /testbench/uut/exec/frwrdb/in3
-# add wave -noupdate -radix decimal /testbench/uut/exec/frwrdb/out
-# TreeUpdate [SetDefaultTree]
-# WaveRestoreCursors {{Cursor 1} {183348 ps} 0}
-# quietly wave cursor active 1
-# configure wave -namecolwidth 244
-# configure wave -valuecolwidth 173
-# configure wave -justifyvalue left
-# configure wave -signalnamewidth 0
-# configure wave -snapdistance 10
-# configure wave -datasetprefix 0
-# configure wave -rowmargin 4
-# configure wave -childrowmargin 2
-# configure wave -gridoffset 0
-# configure wave -gridperiod 1
-# configure wave -griddelta 40
-# configure wave -timeline 0
-# configure wave -timelineunits ns
-# update
-# WaveRestoreZoom {157983 ps} {392794 ps}
 # vlib rtl_work
 # vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap work rtl_work 
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/dataMemory.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/dataMemory.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:40:20 on Dec 05,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/dataMemory.v 
+# Start time: 23:23:13 on Dec 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/dataMemory.v 
 # -- Compiling module dataMemory
 # 
 # Top level modules:
 # 	dataMemory
-# End time: 21:40:20 on Dec 05,2024, Elapsed time: 0:00:00
+# End time: 23:23:13 on Dec 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/testbench.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/testbench.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:40:20 on Dec 05,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/testbench.v 
+# Start time: 23:23:13 on Dec 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/testbench.v 
 # -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 21:40:20 on Dec 05,2024, Elapsed time: 0:00:00
+# End time: 23:23:13 on Dec 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/SignExtender.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/SignExtender.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:40:20 on Dec 05,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/SignExtender.v 
+# Start time: 23:23:14 on Dec 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/SignExtender.v 
 # -- Compiling module SignExtender
 # 
 # Top level modules:
 # 	SignExtender
-# End time: 21:40:20 on Dec 05,2024, Elapsed time: 0:00:00
+# End time: 23:23:14 on Dec 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/registerFile.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/registerFile.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:40:20 on Dec 05,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/registerFile.v 
+# Start time: 23:23:14 on Dec 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/registerFile.v 
 # -- Compiling module registerFile
 # 
 # Top level modules:
 # 	registerFile
-# End time: 21:40:20 on Dec 05,2024, Elapsed time: 0:00:00
+# End time: 23:23:14 on Dec 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/programCounter.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/programCounter.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:40:20 on Dec 05,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/programCounter.v 
+# Start time: 23:23:14 on Dec 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/programCounter.v 
 # -- Compiling module programCounter
 # 
 # Top level modules:
 # 	programCounter
-# End time: 21:40:20 on Dec 05,2024, Elapsed time: 0:00:00
+# End time: 23:23:14 on Dec 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/Pipes.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/Pipes.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:40:20 on Dec 05,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/Pipes.v 
+# Start time: 23:23:14 on Dec 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/Pipes.v 
 # -- Compiling module IFID
 # -- Compiling module IDEX
 # -- Compiling module EXMEM
@@ -800,145 +646,145 @@ do {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Pipin
 # 	IDEX
 # 	EXMEM
 # 	MEMWB
-# End time: 21:40:20 on Dec 05,2024, Elapsed time: 0:00:00
+# End time: 23:23:14 on Dec 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/pipeline.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:40:20 on Dec 05,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v 
+# Start time: 23:23:14 on Dec 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/pipeline.v 
 # -- Compiling module pipeline
 # 
 # Top level modules:
 # 	pipeline
-# End time: 21:40:20 on Dec 05,2024, Elapsed time: 0:00:00
+# End time: 23:23:14 on Dec 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/mux2x1.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/mux2x1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:40:20 on Dec 05,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/mux2x1.v 
+# Start time: 23:23:15 on Dec 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/mux2x1.v 
 # -- Compiling module mux2x1
 # -- Compiling module mux4x1
 # 
 # Top level modules:
 # 	mux2x1
 # 	mux4x1
-# End time: 21:40:20 on Dec 05,2024, Elapsed time: 0:00:00
+# End time: 23:23:15 on Dec 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/hazard_detection.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/hazard_detection.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:40:20 on Dec 05,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/hazard_detection.v 
+# Start time: 23:23:15 on Dec 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/hazard_detection.v 
 # -- Compiling module hazard_detection
 # 
 # Top level modules:
 # 	hazard_detection
-# End time: 21:40:20 on Dec 05,2024, Elapsed time: 0:00:00
+# End time: 23:23:15 on Dec 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ForwardingUnit.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/ForwardingUnit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:40:20 on Dec 05,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ForwardingUnit.v 
+# Start time: 23:23:15 on Dec 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/ForwardingUnit.v 
 # -- Compiling module forwarding_unit
 # 
 # Top level modules:
 # 	forwarding_unit
-# End time: 21:40:20 on Dec 05,2024, Elapsed time: 0:00:00
+# End time: 23:23:15 on Dec 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/fetch.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/fetch.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:40:20 on Dec 05,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/fetch.v 
+# Start time: 23:23:15 on Dec 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/fetch.v 
 # -- Compiling module fetch
 # 
 # Top level modules:
 # 	fetch
-# End time: 21:40:20 on Dec 05,2024, Elapsed time: 0:00:00
+# End time: 23:23:15 on Dec 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/execute.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/execute.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:40:20 on Dec 05,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/execute.v 
+# Start time: 23:23:15 on Dec 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/execute.v 
 # -- Compiling module execute
 # 
 # Top level modules:
 # 	execute
-# End time: 21:40:20 on Dec 05,2024, Elapsed time: 0:00:00
+# End time: 23:23:15 on Dec 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/decode.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:40:20 on Dec 05,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v 
+# Start time: 23:23:15 on Dec 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/decode.v 
 # -- Compiling module decode
 # 
 # Top level modules:
 # 	decode
-# End time: 21:40:20 on Dec 05,2024, Elapsed time: 0:00:00
+# End time: 23:23:15 on Dec 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/controlUnit.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/controlUnit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:40:20 on Dec 05,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/controlUnit.v 
+# Start time: 23:23:15 on Dec 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/controlUnit.v 
 # -- Compiling module controlUnit
 # 
 # Top level modules:
 # 	controlUnit
-# End time: 21:40:20 on Dec 05,2024, Elapsed time: 0:00:00
+# End time: 23:23:15 on Dec 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/comparator.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/comparator.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:40:20 on Dec 05,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/comparator.v 
+# Start time: 23:23:16 on Dec 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/comparator.v 
 # -- Compiling module comparator
 # 
 # Top level modules:
 # 	comparator
-# End time: 21:40:20 on Dec 05,2024, Elapsed time: 0:00:00
+# End time: 23:23:16 on Dec 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ALU.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/ALU.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:40:20 on Dec 05,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ALU.v 
+# Start time: 23:23:16 on Dec 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/ALU.v 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 21:40:20 on Dec 05,2024, Elapsed time: 0:00:00
+# End time: 23:23:16 on Dec 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/adder.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/adder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:40:20 on Dec 05,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/adder.v 
+# Start time: 23:23:16 on Dec 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/adder.v 
 # -- Compiling module adder
 # 
 # Top level modules:
 # 	adder
-# End time: 21:40:20 on Dec 05,2024, Elapsed time: 0:00:00
+# End time: 23:23:16 on Dec 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/instructionMemory.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/instructionMemory.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:40:20 on Dec 05,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/instructionMemory.v 
+# Start time: 23:23:16 on Dec 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/instructionMemory.v 
 # -- Compiling module instructionMemory
 # 
 # Top level modules:
 # 	instructionMemory
-# End time: 21:40:20 on Dec 05,2024, Elapsed time: 0:00:00
+# End time: 23:23:16 on Dec 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/testbench.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/Piping_preBPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/testbench.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:40:20 on Dec 05,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/testbench.v 
+# Start time: 23:23:16 on Dec 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU" C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/testbench.v 
 # -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 21:40:20 on Dec 05,2024, Elapsed time: 0:00:00
+# End time: 23:23:16 on Dec 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  testbench
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" testbench 
-# Start time: 21:40:20 on Dec 05,2024
+# Start time: 23:23:16 on Dec 06,2024
 # Loading work.testbench
 # Loading work.pipeline
 # Loading work.fetch
@@ -972,14 +818,15 @@ do {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Pipin
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Note: $stop    : C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/testbench.v(12)
+# ** Note: $stop    : C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/testbench.v(12)
 #    Time: 1004 ns  Iteration: 0  Instance: /testbench
-# Break in Module testbench at C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/testbench.v line 12
-do {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/simulation/modelsim/wave.do}
+# Break in Module testbench at C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/testbench.v line 12
+do {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/simulation/modelsim/wave.do}
 restart
 run -all
-# ** Note: $stop    : C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/testbench.v(12)
+# ** Note: $stop    : C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/testbench.v(12)
 #    Time: 1004 ns  Iteration: 0  Instance: /testbench
-# Break in Module testbench at C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/testbench.v line 12
-# End time: 21:41:07 on Dec 05,2024, Elapsed time: 0:00:47
+# Break in Module testbench at C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/testbench.v line 12
+run -all
+# End time: 23:25:08 on Dec 06,2024, Elapsed time: 0:01:52
 # Errors: 0, Warnings: 0

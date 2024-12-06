@@ -9,12 +9,12 @@ z2
 cModel Technology
 dC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/simulation/modelsim
 valt_bidir_buf
-Z0 !s110 1733433126
+Z0 !s110 1733521840
 !i10b 1
 !s100 `k9N_NNE[omlCfHHm=PO53
 ID:iD7Z8K2@]7`ebSaEY3@3
 Z1 VDg1SIo80bB@j0V0VzS_@n1
-Z2 dC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/BPUimplement/simulation/modelsim
+Z2 dC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/post_BPU/simulation/modelsim
 Z3 w1689955498
 Z4 8c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v
 Z5 Fc:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1733433126.000000
+Z7 !s108 1733521840.000000
 Z8 !s107 c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|altera_ver|c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v|
 !i113 1

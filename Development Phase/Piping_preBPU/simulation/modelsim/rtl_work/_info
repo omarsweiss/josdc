@@ -7,47 +7,47 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/simulation/modelsim
+Z0 dC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/simulation/modelsim
 vadder
-Z1 !s110 1733424020
+Z1 !s110 1733516596
 !i10b 1
 !s100 =WhcodDhF8B1e195TQ<ZE2
-IbJV1>N^AjW1RC?TC4N59=0
+IW^cE6<aFLEQLNC2JnUHn[2
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
 Z3 w1731248562
-8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/adder.v
-FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/adder.v
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/adder.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/adder.v
 L0 3
 Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1733424020.000000
-!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/adder.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/adder.v|
+Z5 !s108 1733516596.000000
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/adder.v|
 !i113 1
 Z6 o-vlog01compat -work work
-Z7 !s92 -vlog01compat -work work {+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping}
+Z7 !s92 -vlog01compat -work work {+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU}
 Z8 tCvgOpt 0
 vALU
 R1
 !i10b 1
 !s100 3a[meDhSJQR3R6174;f8R1
-IAC3hO<=UfF^bCEX;@CkoI2
+I]:P=zNhbYc64O6JhK]Yh`3
 R2
 R0
 w1732720337
-8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ALU.v
-FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ALU.v
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/ALU.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/ALU.v
 L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ALU.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ALU.v|
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/ALU.v|
 !i113 1
 R6
 R7
@@ -57,244 +57,244 @@ vcomparator
 R1
 !i10b 1
 !s100 Mki^N]3]O1iaS6HAWBOk>0
-I10m<KQF<>We<PIXd[gUd33
+IRlk5F5gT_n6SH[Gk]IIT20
 R2
 R0
 w1731701129
-8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/comparator.v
-FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/comparator.v
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/comparator.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/comparator.v
 L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/comparator.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/comparator.v|
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/comparator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/comparator.v|
 !i113 1
 R6
 R7
 R8
 vcontrolUnit
-R1
+Z9 !s110 1733516595
 !i10b 1
 !s100 daYol2AQFC6Emj?3Oa<Ko1
-IhF;3UCaH:cHzoT^X]?V800
+IDU36ZH]jgE7e:mkBA7R=D2
 R2
 R0
 R3
-8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/controlUnit.v
-FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/controlUnit.v
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/controlUnit.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/controlUnit.v
 L0 1
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/controlUnit.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/controlUnit.v|
+Z10 !s108 1733516595.000000
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/controlUnit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/controlUnit.v|
 !i113 1
 R6
 R7
 R8
 ncontrol@unit
 vdataMemory
-R1
+!s110 1733516593
 !i10b 1
 !s100 X5DjdZSn6n9zo4B^WYWl60
-IMla^[fkd5=Xc0Qj]BWHCQ0
+IY1YV<R_FW?9KcG7n0M16G1
 R2
 R0
 R3
-8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/dataMemory.v
-FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/dataMemory.v
-Z9 L0 40
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/dataMemory.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/dataMemory.v
+Z11 L0 40
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/dataMemory.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/dataMemory.v|
+!s108 1733516593.000000
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/dataMemory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/dataMemory.v|
 !i113 1
 R6
 R7
 R8
 ndata@memory
 vdecode
-R1
+R9
 !i10b 1
 !s100 XDbRXIBmNjoM9;<o8Q_0M0
-IzclH]UTPkZLXbzQ4X_?jL0
+IPYPfU1LI0Qh8JA^UQ7h3H1
 R2
 R0
 w1732910014
-8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v
-FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/decode.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/decode.v
 L0 1
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/decode.v|
+R10
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/decode.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/decode.v|
 !i113 1
 R6
 R7
 R8
 vexecute
-R1
+R9
 !i10b 1
 !s100 gKWm=^EBkU:ZM2@[@LEm62
-I5I2k<ZC70c24CFPlZ@lGl3
+IM=>16gb:K;;?nJDiWj_Pf3
 R2
 R0
 w1731250663
-8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/execute.v
-FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/execute.v
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/execute.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/execute.v
 L0 1
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/execute.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/execute.v|
+R10
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/execute.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/execute.v|
 !i113 1
 R6
 R7
 R8
 vEXMEM
-R1
+Z12 !s110 1733516594
 !i10b 1
 !s100 jmQ`Q]X<iMmOJmG>BB_kn0
-I4Z[4_oPFU=@hVP[i2oaff0
+ICE]QhYZNXMmo[mTBkIMEW3
 R2
 R0
-Z10 w1731697898
-Z11 8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/Pipes.v
-Z12 FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/Pipes.v
+Z13 w1731697898
+Z14 8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/Pipes.v
+Z15 FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/Pipes.v
 L0 34
 R4
 r1
 !s85 0
 31
-R5
-Z13 !s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/Pipes.v|
-Z14 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/Pipes.v|
+Z16 !s108 1733516594.000000
+Z17 !s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/Pipes.v|
+Z18 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/Pipes.v|
 !i113 1
 R6
 R7
 R8
 n@e@x@m@e@m
 vfetch
-R1
+R9
 !i10b 1
 !s100 TKRY11^jj8DdomTEfYzV_2
-Ic5RlI8HSHEiGCg?e7E<T?0
+I3R2N;JlEZSkcEOW498]zX0
 R2
 R0
 w1732911352
-8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/fetch.v
-FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/fetch.v
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/fetch.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/fetch.v
 L0 1
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/fetch.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/fetch.v|
+R10
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/fetch.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/fetch.v|
 !i113 1
 R6
 R7
 R8
 vforwarding_unit
-R1
+R9
 !i10b 1
 !s100 k5AKUZ7EE5336fU9YT1:O0
-I;R_ILS3dPnil1aXfmg3^g0
+I168LGN:?67zW2mIn^RLFj0
 R2
 R0
 w1732719631
-8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ForwardingUnit.v
-FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ForwardingUnit.v
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/ForwardingUnit.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/ForwardingUnit.v
 L0 1
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ForwardingUnit.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/ForwardingUnit.v|
+R10
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/ForwardingUnit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/ForwardingUnit.v|
 !i113 1
 R6
 R7
 R8
 vhazard_detection
-R1
+R9
 !i10b 1
 !s100 =L48[>0HoEd8zi7f;<_g_2
-IVCKC6Q^D4hoWEf28E;b2d1
+IYAa=l^I?=e>jGWdRE[AcB3
 R2
 R0
 w1731700558
-8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/hazard_detection.v
-FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/hazard_detection.v
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/hazard_detection.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/hazard_detection.v
 L0 2
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/hazard_detection.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/hazard_detection.v|
+R10
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/hazard_detection.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/hazard_detection.v|
 !i113 1
 R6
 R7
 R8
 vIDEX
-R1
+R12
 !i10b 1
 !s100 LKWG]@UOWoKP9OE<e><NE0
-ISz0E>A]1?zPI9IU]NFnSL3
+Ic2_T6:B7SaRcB<j979PS73
 R2
 R0
-R10
-R11
-R12
+R13
+R14
+R15
 L0 17
 R4
 r1
 !s85 0
 31
-R5
-R13
-R14
+R16
+R17
+R18
 !i113 1
 R6
 R7
 R8
 n@i@d@e@x
 vIFID
-R1
+R12
 !i10b 1
 !s100 NJa0cJ`OXPJ7egJ5z9ZOA1
-IaieKJ;=ZVH@j0gYdZK>3@2
+IB5QdJWBWJgEJkCLRa?ja;1
 R2
 R0
-R10
-R11
-R12
+R13
+R14
+R15
 L0 1
 R4
 r1
 !s85 0
 31
-R5
-R13
-R14
+R16
+R17
+R18
 !i113 1
 R6
 R7
@@ -304,178 +304,178 @@ vinstructionMemory
 R1
 !i10b 1
 !s100 5kNL`TQZU5eC;Z`Z18CeE2
-I_d8n_]S<g5M`ZaTeFRBOa2
+I3=MBTVadNLSEBL8W]G[4a3
 R2
 R0
 R3
-8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/instructionMemory.v
-FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/instructionMemory.v
-R9
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/instructionMemory.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/instructionMemory.v
+R11
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/instructionMemory.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/instructionMemory.v|
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/instructionMemory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/instructionMemory.v|
 !i113 1
 R6
 R7
 R8
 ninstruction@memory
 vMEMWB
-R1
+R12
 !i10b 1
 !s100 7J?P99Ez0TA2gI^mz>O_]1
-IL68@NNeNY70bNHha@f`in1
+IC5VlnUQzQa>Kd8nU[>A2F1
 R2
 R0
-R10
-R11
-R12
+R13
+R14
+R15
 L0 48
 R4
 r1
 !s85 0
 31
-R5
-R13
-R14
-!i113 1
-R6
-R7
-R8
-n@m@e@m@w@b
-vmux2x1
-R1
-!i10b 1
-!s100 9@GI2f]Q]h88AIAPU@>>i3
-I<:jWU74P;`1zb;W[c;[i_2
-R2
-R0
-R3
-Z15 8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/mux2x1.v
-Z16 FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/mux2x1.v
-L0 1
-R4
-r1
-!s85 0
-31
-R5
-Z17 !s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/mux2x1.v|
-Z18 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/mux2x1.v|
-!i113 1
-R6
-R7
-R8
-vmux4x1
-R1
-!i10b 1
-!s100 nAQZOOJ:]m^iX812:IzbJ1
-IbDX190S;Q:NFhE:1=_X_Z0
-R2
-R0
-R3
-R15
 R16
-L0 15
-R4
-r1
-!s85 0
-31
-R5
 R17
 R18
 !i113 1
 R6
 R7
 R8
-vpipeline
-R1
+n@m@e@m@w@b
+vmux2x1
+R9
 !i10b 1
-!s100 <QWb@8^z:TUWfV5fz_om>2
-IoQj9HGc`S`=;VG>M1n]222
+!s100 9@GI2f]Q]h88AIAPU@>>i3
+IZa?RNOB`jV=P=>J@HCjTA0
 R2
 R0
-w1732719655
-8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v
-FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v
+R3
+Z19 8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/mux2x1.v
+Z20 FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/mux2x1.v
 L0 1
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/pipeline.v|
+R10
+Z21 !s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/mux2x1.v|
+Z22 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/mux2x1.v|
+!i113 1
+R6
+R7
+R8
+vmux4x1
+R9
+!i10b 1
+!s100 nAQZOOJ:]m^iX812:IzbJ1
+ISJ7ZVP_28AQ<4@KVemfCj3
+R2
+R0
+R3
+R19
+R20
+L0 15
+R4
+r1
+!s85 0
+31
+R10
+R21
+R22
+!i113 1
+R6
+R7
+R8
+vpipeline
+R12
+!i10b 1
+!s100 <QWb@8^z:TUWfV5fz_om>2
+INSD4[>eJSVnIZ<6S2M[[j0
+R2
+R0
+w1732719655
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/pipeline.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/pipeline.v
+L0 1
+R4
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/pipeline.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/pipeline.v|
 !i113 1
 R6
 R7
 R8
 vprogramCounter
-R1
+R12
 !i10b 1
 !s100 SQ<K5@i3A>DAJEH0<R6[S0
-IR4Eh6:N6GS_6lDmgm5;aS2
+IIERM3mafGhonRa86E<l=31
 R2
 R0
 w1731274154
-8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/programCounter.v
-FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/programCounter.v
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/programCounter.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/programCounter.v
 L0 1
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/programCounter.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/programCounter.v|
+R16
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/programCounter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/programCounter.v|
 !i113 1
 R6
 R7
 R8
 nprogram@counter
 vregisterFile
-R1
+R12
 !i10b 1
 !s100 eT35`CF98MS`gV`bFUY0O3
-Im@QFgA5emlaXKB;9WZn<i1
+Ib9[K[zm4@?bHJc>niKV:i0
 R2
 R0
 w1731249351
-8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/registerFile.v
-FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/registerFile.v
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/registerFile.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/registerFile.v
 L0 3
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/registerFile.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/registerFile.v|
+R16
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/registerFile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/registerFile.v|
 !i113 1
 R6
 R7
 R8
 nregister@file
 vSignExtender
-R1
+R12
 !i10b 1
 !s100 @`aGSg91l4d870B>Q>l^;2
-IN]D10zIVcV8A_X>B3nU5M0
+I8ePSWe2LziMS21aJ;OHOM0
 R2
 R0
 R3
-8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/SignExtender.v
-FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/SignExtender.v
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/SignExtender.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/SignExtender.v
 L0 4
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/SignExtender.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/SignExtender.v|
+R16
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/SignExtender.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/SignExtender.v|
 !i113 1
 R6
 R7
@@ -485,20 +485,20 @@ vtestbench
 R1
 !i10b 1
 !s100 `HK7=0i1=g3XE0m8UQho=0
-IUHXXfBMk7RUg:hnOK6HfZ3
+IUE235`bHH4ILj]b^M[HY`0
 R2
 R0
 w1731275900
-8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/testbench.v
-FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/testbench.v
+8C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/testbench.v
+FC:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/testbench.v
 L0 2
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/testbench.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping/testbench.v|
+!s107 C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU|C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/Piping_preBPU/testbench.v|
 !i113 1
 R6
 R7

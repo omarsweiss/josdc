@@ -5,13 +5,15 @@ module pipeline(input clk, input rst, output [9:0] PC);
 
 wire [31:0] instruction, writeData_WB, readData1, readData2, extImm, readData1_EX, readData2_EX, memoryReadData_WB, WBMuxOutput, WriteDmem,
 extImm_EX, aluRes_EX, forwardBRes_EX, aluRes_MEM, aluRes_WB, forwardBRes_MEM, instruction_ID,memoryReadData;
-wire [9:0]  jaddress, adderResult, PCPlus1, PC_ID, PCPlus1_ID, jaddress_ID, adderResult_ID, PCPlus1_EX, PCPlus1_MEM, PCPlus1_WB;
+wire [9:0]  jaddress, adderResult, PCPlus1, PC_ID, PCPlus1_ID, jaddress_ID, adderResult_ID, PCPlus1_EX, PCPlus1_MEM, 
+PCPlus1_WB,Branch_state_F, BranchAddress_F, BranchAddress_ID, Branch_state_ID,BranchAddress_EX, Branch_state_EX ;
 wire [4:0] shamt, rs, rt, DestReg, shamt_EX, rs_EX, rt_EX,rt_MEM, DestReg_EX, DestReg_MEM, DestReg_WB;
 wire [3:0] ALUOp, ALUOp_EX;
 wire [1:0] forwardA, forwardB, fwdAbranch, fwdBbranch;
 wire taken, jr, RegWriteEn_WB, Branch,Branch_EX, MemReadEn, MemtoReg, MemWriteEn, RegWriteEn, ALUSrc, RegDst,jr_EX, bne, bne_EX,
 jump, jal,  MemReadEn_EX, MemtoReg_EX, MemWriteEn_EX, RegWriteEn_EX, ALUSrc_EX, jal_EX, ld_hazard, branch_hazard,
-MemReadEn_MEM, MemtoReg_MEM, MemWriteEn_MEM, RegWriteEn_MEM, ALUSrc_MEM, jal_MEM, jal_WB, MemtoReg_WB,memFw;
+MemReadEn_MEM, MemtoReg_MEM, MemWriteEn_MEM, RegWriteEn_MEM, ALUSrc_MEM, jal_MEM, jal_WB, MemtoReg_WB,memFw, prediction_F,
+prediction_ID,prediction_EX;
 
 
   
@@ -20,13 +22,14 @@ MemReadEn_MEM, MemtoReg_MEM, MemWriteEn_MEM, RegWriteEn_MEM, ALUSrc_MEM, jal_MEM
 
 
 fetch fetch(
-.clk(clk), .rst(rst),  .reg1Addr(readData1_EX[9:0]), .hold(ld_hazard),
+.clk(clk), .rst(rst),  .reg1Addr(readData1_EX[9:0]), .hold(ld_hazard), .prediction(prediction_F), .prediction_EX(prediction_EX),
 .taken(taken), .jr(jr_EX), .PCPlus1(PCPlus1), .PC(PC), .Branch_EX(Branch_EX),
-.instruction(instruction),.PCPlus1_EX(PCPlus1_EX),.BranchAddress());
+.instruction(instruction),.PCPlus1_EX(PCPlus1_EX),.BranchAddress_EX(BranchAddress_EX),
+.Branch_state_F(Branch_state_F), .Branch_state_EX(Branch_state_EX), .BranchAddress_F(BranchAddress_F));
 
 
-
-IFID #(42) ifid(.Q({PCPlus1_ID, instruction_ID}), .D({PCPlus1, instruction}), .clk(clk), .reset(rst), .hold(ld_hazard), .flush(branch_hazard));
+IFID #(63) ifid(.Q({PCPlus1_ID, instruction_ID, BranchAddress_ID, Branch_state_ID, prediction_ID}), 
+.D({PCPlus1, instruction, BranchAddress_F, Branch_state_F, prediction_F}), .clk(clk), .reset(rst), .hold(ld_hazard), .flush(branch_hazard));
 
 
 
@@ -45,14 +48,14 @@ hazard_detection HDU(
   
   .rs_ID(rs), .rt_ID(rt), .dest_EXE(DestReg_EX),
   .mem_read_EX(MemReadEn_EX),.branch(Branch_EX), .branchValid(taken),
-  .regDest_ID(RegDst), .jr(jr_EX),
+  .regDest_ID(RegDst), .jr(jr_EX), .prediction(prediction_EX),
   
   .ld_has_hazard(ld_hazard), .branch_has_hazard(branch_hazard));
   
   
   
-IDEX #(139) idex(.Q({shamt_EX, MemReadEn_EX, MemtoReg_EX, MemWriteEn_EX, RegWriteEn_EX, ALUSrc_EX, jal_EX, ALUOp_EX, rs_EX, rt_EX, DestReg_EX, readData1_EX, readData2_EX, extImm_EX, PCPlus1_EX, Branch_EX, bne_EX, jr_EX}), 
-.D({shamt, MemReadEn, MemtoReg, MemWriteEn, RegWriteEn, ALUSrc, jal, ALUOp, rs, rt, DestReg, readData1, readData2, extImm, PCPlus1_ID, Branch, bne, jr}), 
+IDEX #(160) idex(.Q({shamt_EX, MemReadEn_EX, MemtoReg_EX, MemWriteEn_EX, RegWriteEn_EX, ALUSrc_EX, jal_EX, ALUOp_EX, rs_EX, rt_EX, DestReg_EX, readData1_EX, readData2_EX, extImm_EX, PCPlus1_EX, Branch_EX, bne_EX, jr_EX,BranchAddress_EX, Branch_state_EX, prediction_EX}), 
+.D({shamt, MemReadEn, MemtoReg, MemWriteEn, RegWriteEn, ALUSrc, jal, ALUOp, rs, rt, DestReg, readData1, readData2, extImm, PCPlus1_ID, Branch, bne, jr, BranchAddress_ID, Branch_state_ID, prediction_ID}), 
 .clk(clk), .reset(rst), .flush(ld_hazard | branch_hazard));
 
 
