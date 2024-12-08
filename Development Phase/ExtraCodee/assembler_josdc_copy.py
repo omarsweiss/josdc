@@ -172,24 +172,10 @@ instructions = """ADDI $1, $0, -5
 ADDI $2, $0, 5
 ADDI $3, $0, 5
 ADDI $4, $0, 23
-L1: BEQ $2, $3, L2 		
-addi $0, $0, 0 
-JAL L1
-L2: BNE $2, $3, L3
-L3: addi $0, $0, 0		
-L4: BLTZ $1, L5			
-addi $0, $0, 0
-JAL L4
-L5: BGEZ $2, L6			
-addi $0, $0, 0
-JAL L5
-L6: JAL L7			
-addi $0, $0, 0			
-JAL L6 				
-L7: JR $4			
-addi $0, $0, 0			
-JAL L7			
-L8: addi $0, $0, 0		
+ADDI $0, $0, 0
+ADDI $0, $0, 0
+SUB $5, $2, $4
+	
 """
 i = 0 
 instructions = instructions.lower()
