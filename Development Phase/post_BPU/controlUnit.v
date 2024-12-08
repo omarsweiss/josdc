@@ -15,7 +15,7 @@
 	parameter _add_ = 6'h20, _sub_ = 6'h22, _and_ = 6'h24, _or_ = 6'h25, _slt_ = 6'h2a, _xor_ = 6'h26, _nor_ = 6'h27, _sll_ = 6'h0, _srl_= 6'h2, _jr_ = 6'h8;
 	//xor,nor,ori,xori,andi,sll,srl,slti,j,jr,jal,bne
 	//pseudo bltz, bgez, sgt
-	
+
 	// unit logic - generate signals
 	
 	always @(*) begin
