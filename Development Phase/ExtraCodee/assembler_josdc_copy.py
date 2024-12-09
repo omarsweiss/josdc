@@ -171,8 +171,10 @@ def unpseudo(instructions):
 instructions = """ADDI $1, $0, -5			 
 ADDI $2, $0, 5
 ADDI $3, $0, 5
-ADDI $4, $0, 23
 ADDI $0, $0, 0
+beq $2, $3, L1
+ADDI $4, $0, 23
+L1: ADDI $0, $0, 0
 ADDI $0, $0, 0
 SUB $5, $2, $4
 	
