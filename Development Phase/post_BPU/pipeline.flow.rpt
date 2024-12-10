@@ -1,5 +1,5 @@
 Flow report for pipeline
-Sat Dec  7 00:54:20 2024
+Sat Dec  7 13:06:16 2024
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -22,7 +22,7 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sat Dec  7 00:54:20 2024 ;
+; EDA Netlist Writer Status ; Successful - Sat Dec  7 13:06:16 2024 ;
 ; Revision Name             ; pipeline                              ;
 ; Top-level Entity Name     ; pipeline                              ;
 ; Family                    ; MAX 10                                ;
@@ -53,17 +53,17 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Sat Dec  7 00:54:20 2024          ;
+; Flow Status                        ; Successful - Sat Dec  7 13:06:16 2024          ;
 ; Quartus Prime Version              ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                      ; pipeline                                       ;
 ; Top-level Entity Name              ; pipeline                                       ;
 ; Family                             ; MAX 10                                         ;
 ; Device                             ; 10M50DAF484C7G                                 ;
 ; Timing Models                      ; Final                                          ;
-; Total logic elements               ; 2,761 / 49,760 ( 6 % )                         ;
-;     Total combinational functions  ; 2,608 / 49,760 ( 5 % )                         ;
-;     Dedicated logic registers      ; 1,429 / 49,760 ( 3 % )                         ;
-; Total registers                    ; 1429                                           ;
+; Total logic elements               ; 2,701 / 49,760 ( 5 % )                         ;
+;     Total combinational functions  ; 2,534 / 49,760 ( 5 % )                         ;
+;     Dedicated logic registers      ; 1,377 / 49,760 ( 3 % )                         ;
+; Total registers                    ; 1377                                           ;
 ; Total pins                         ; 12 / 360 ( 3 % )                               ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 40,960 / 1,677,312 ( 2 % )                     ;
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/07/2024 00:53:47 ;
+; Start date & time ; 12/07/2024 13:05:42 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; pipeline            ;
 +-------------------+---------------------+
@@ -90,7 +90,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                            ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                      ; 2544320857565.173352202744804          ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                      ; 2544320857565.173356594222464          ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME                   ; NA                                     ; --            ; --          ; testbench      ;
 ; EDA_GENERATE_RTL_SIMULATION_COMMAND_SCRIPT ; On                                     ; --            ; --          ; eda_simulation ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH       ; testbench                              ; --            ; --          ; eda_simulation ;
@@ -124,12 +124,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4823 MB             ; 00:00:15                           ;
-; Fitter               ; 00:00:15     ; 1.4                     ; 5810 MB             ; 00:00:28                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 4722 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:02     ; 2.2                     ; 4895 MB             ; 00:00:05                           ;
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4835 MB             ; 00:00:16                           ;
+; Fitter               ; 00:00:15     ; 1.4                     ; 5825 MB             ; 00:00:29                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4734 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:02     ; 2.2                     ; 4881 MB             ; 00:00:04                           ;
 ; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4688 MB             ; 00:00:01                           ;
-; Total                ; 00:00:29     ; --                      ; --                  ; 00:00:51                           ;
+; Total                ; 00:00:30     ; --                      ; --                  ; 00:00:52                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

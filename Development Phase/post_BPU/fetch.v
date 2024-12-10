@@ -8,22 +8,23 @@ output [31:0] instruction);
 reg [9:0] nextPC;
 wire [9:0] address;   
 wire [5:0] opCode;
-wire [4:0] Branch_state;
+wire [2:0] Branch_state;
 wire Branch_F, misprediction, jump;
 
 assign opCode = instruction[31:26];
 assign address = instruction[9:0];
-assign Branch_state_F = {5'b0,Branch_state};
+assign Branch_state_F = {7'b0,Branch_state};
 assign jump = (opCode == 6'h2 || opCode == 6'h3);
 
 always @(*) begin
-    casez ({rst, misprediction, jr, taken, Branch_F, jump})
-        6'b0zzzzz:        nextPC = 10'b0000000000;      // Reset condition
-        6'b11z1zz:        nextPC = BranchAddress_EX;    // Misprediction, taken branch
-        6'b11z0zz:        nextPC = PCPlus1_EX;         // Misprediction, not taken
-        6'b10100z:        nextPC = reg1Addr;           // Jump register
-        6'b100001:        nextPC = address;            // J-type instruction
-        6'b100010: begin                               // Branch decision
+    casez ({rst, misprediction, jr, Branch_F, jump})
+        5'b0zzzz:        nextPC = 10'b0000000000;      // Reset condition
+        5'b11zzz: begin
+				nextPC = taken? BranchAddress_EX : PCPlus1_EX;    // Misprediction
+				end
+        5'b101zz:        nextPC = reg1Addr;           // Jump register
+        5'b100z1:        nextPC = address;            // J-type instruction
+        5'b10010: begin                               // Branch decision
             nextPC = prediction ? BranchAddress_F : PCPlus1;
         end
         default:         nextPC = PCPlus1;            // Default case
@@ -36,7 +37,7 @@ assign misprediction = prediction_EX ^ taken;
 
 
 Gshare_predict bpu(.clk(clk),.rst(rst),.prediction(prediction),.state_index(Branch_state),.Branch_F(Branch_F),
-.taken(taken),.Branch_EX(Branch_EX),.prev_idx(Branch_state_EX[4:0]),.brn_pc(PC));
+.taken(taken),.Branch_EX(Branch_EX),.prev_idx(Branch_state_EX[2:0]),.brn_pc(PC));
 
 
 

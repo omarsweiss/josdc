@@ -1,7 +1,7 @@
 
 module Gshare_predict
   #(
-    parameter GSHARE_BITS_NUM = 5,
+    parameter GSHARE_BITS_NUM = 3,
     parameter OPTION_OPERAND_WIDTH = 10
     )
    (
@@ -42,11 +42,11 @@ module Gshare_predict
 									  
 
    always @(posedge clk) begin
-      if (rst) begin
+      if (~rst) begin
          brn_hist_reg <= 0;
          
          for(i = 0; i < FSM_NUM; i = i + 1) begin
-            state[i] <= STATE_WEAKLY_TAKEN;
+            state[i] <= STATE_STRONGLY_TAKEN;
          end
       end else begin
 

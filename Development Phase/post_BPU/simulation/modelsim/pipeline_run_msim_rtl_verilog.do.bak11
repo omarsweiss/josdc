@@ -36,7 +36,6 @@ vmap work rtl_work
 
 vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/post_BPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/post_BPU/instructionMemory.v}
 vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/post_BPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/post_BPU/dataMemory.v}
-vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/post_BPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/post_BPU/testbench.v}
 vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/post_BPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/post_BPU/SignExtender.v}
 vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/post_BPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/post_BPU/registerFile.v}
 vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minimum\ electric\ design/Development\ Phase/post_BPU {C:/Users/amr/Desktop/Quartus/Minimum electric design/Development Phase/post_BPU/programCounter.v}
