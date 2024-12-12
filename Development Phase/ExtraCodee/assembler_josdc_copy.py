@@ -168,14 +168,15 @@ def unpseudo(instructions):
 
 
 
-instructions = """ADDI $1, $0, -5			 
+instructions = """ADDI $1, $0, -5
+lw $8, 0($0)
+ADDI $9, $8, 0			 
 ADDI $2, $0, 5
 ADDI $3, $0, 5
-ADDI $0, $0, 0
-ADDI $0, $0, 0
+add $12, $2, $3
 BEQ $2, $3, L1
 L2: ADDI $4, $0, 23
-j 9
+j 10
 L1: BEQ $2, $3, L2
 ADDI $0, $0, 0
 SUB $5, $2, $4
