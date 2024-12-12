@@ -172,9 +172,9 @@ instructions = """ADDI $1, $0, -5
 ADDI $2, $0, 5
 ADDI $3, $0, 5
 ADDI $0, $0, 0
-beq $2, $3, L1
+BEQ $2, $6, L1
 ADDI $4, $0, 23
-L1: ADDI $0, $0, 0
+L1: ADDI $7, $0, 4
 ADDI $0, $0, 0
 SUB $5, $2, $4
 	
