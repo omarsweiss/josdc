@@ -1,16 +1,16 @@
 |pipeline
 clk => clk.IN6
-rst => rst.IN7
-PC[0] << fetch:fetch.PC
-PC[1] << fetch:fetch.PC
-PC[2] << fetch:fetch.PC
-PC[3] << fetch:fetch.PC
-PC[4] << fetch:fetch.PC
-PC[5] << fetch:fetch.PC
-PC[6] << fetch:fetch.PC
-PC[7] << fetch:fetch.PC
-PC[8] << fetch:fetch.PC
-PC[9] << fetch:fetch.PC
+rst => rst.IN8
+PC[0] <= fetch:fetch.PC
+PC[1] <= fetch:fetch.PC
+PC[2] <= fetch:fetch.PC
+PC[3] <= fetch:fetch.PC
+PC[4] <= fetch:fetch.PC
+PC[5] <= fetch:fetch.PC
+PC[6] <= fetch:fetch.PC
+PC[7] <= fetch:fetch.PC
+PC[8] <= fetch:fetch.PC
+PC[9] <= fetch:fetch.PC
 
 
 |pipeline|fetch:fetch
@@ -7084,6 +7084,7 @@ extImm[28] => extImm[28].IN1
 extImm[29] => extImm[29].IN1
 extImm[30] => extImm[30].IN1
 extImm[31] => extImm[31].IN1
+reset => reset.IN1
 aluRizz_EX[0] <= ALU:alu.result
 aluRizz_EX[1] <= ALU:alu.result
 aluRizz_EX[2] <= ALU:alu.result

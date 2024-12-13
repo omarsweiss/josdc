@@ -31,6 +31,7 @@ always @(*) begin
     endcase
 end
 
+
 assign Branch_F = (opCode == 6'h4 || opCode == 6'h5);
 assign BranchAddress_F = address + PCPlus1;
 assign misprediction = prediction_EX ^ taken;

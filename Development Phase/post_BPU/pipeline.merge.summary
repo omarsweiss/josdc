@@ -1,0 +1,16 @@
+Partition Merge Status : Successful - Thu Dec 12 12:25:55 2024
+Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Revision Name : pipeline
+Top-level Entity Name : pipeline
+Family : MAX 10
+Total logic elements : 18,015
+    Total combinational functions : 6,426
+    Dedicated logic registers : 14,205
+Total registers : 14205
+Total pins : 12
+Total virtual pins : 0
+Total memory bits : 305,664
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

@@ -3,14 +3,14 @@ module pipeline(input clk, input rst, output [9:0] PC);
 
 
 
-wire [31:0] instruction, writeData_WB, readData1, readData2, extImm, readData1_EX, readData2_EX, memoryReadData_WB, WBMuxOutput, WriteDmem,
+(* preserve *) wire [31:0] instruction, writeData_WB, readData1, readData2, extImm, readData1_EX, readData2_EX, memoryReadData_WB, WBMuxOutput, WriteDmem,
 extImm_EX, aluRes_EX, forwardBRes_EX, aluRes_MEM, aluRes_WB, forwardBRes_MEM, instruction_ID,memoryReadData;
-wire [9:0]  jaddress, adderResult, PCPlus1, PC_ID, PCPlus1_ID, jaddress_ID, adderResult_ID, PCPlus1_EX, PCPlus1_MEM, 
+(* preserve *) wire [9:0]  jaddress, adderResult, PCPlus1, PC_ID, PCPlus1_ID, jaddress_ID, adderResult_ID, PCPlus1_EX, PCPlus1_MEM, 
 PCPlus1_WB,Branch_state_F, BranchAddress_F, BranchAddress_ID, Branch_state_ID,BranchAddress_EX, Branch_state_EX ;
-wire [4:0] shamt, rs, rt, DestReg, shamt_EX, rs_EX, rt_EX,rt_MEM, DestReg_EX, DestReg_MEM, DestReg_WB;
-wire [3:0] ALUOp, ALUOp_EX;
-wire [1:0] forwardA, forwardB, fwdAbranch, fwdBbranch;
-wire taken, jr, RegWriteEn_WB, Branch,Branch_EX, MemReadEn, MemtoReg, MemWriteEn, RegWriteEn, ALUSrc, RegDst,jr_EX, bne, bne_EX,
+(* preserve *) wire [4:0] shamt, rs, rt, DestReg, shamt_EX, rs_EX, rt_EX,rt_MEM, DestReg_EX, DestReg_MEM, DestReg_WB;
+(* preserve *) wire [3:0] ALUOp, ALUOp_EX;
+(* preserve *) wire [1:0] forwardA, forwardB, fwdAbranch, fwdBbranch;
+(* preserve *) wire taken, jr, RegWriteEn_WB, Branch,Branch_EX, MemReadEn, MemtoReg, MemWriteEn, RegWriteEn, ALUSrc, RegDst,jr_EX, bne, bne_EX,
 jump, jal,  MemReadEn_EX, MemtoReg_EX, MemWriteEn_EX, RegWriteEn_EX, ALUSrc_EX, jal_EX, ld_hazard, branch_hazard,
 MemReadEn_MEM, MemtoReg_MEM, MemWriteEn_MEM, RegWriteEn_MEM, ALUSrc_MEM, jal_MEM, jal_WB, MemtoReg_WB,memFw, prediction_F,
 prediction_ID,prediction_EX;
@@ -63,7 +63,7 @@ IDEX #(160) idex(.Q({shamt_EX, MemReadEn_EX, MemtoReg_EX, MemWriteEn_EX, RegWrit
 execute exec(
     .readData1(readData1_EX), .readData2(readData2_EX), .aluRes_MEM(aluRes_MEM), 
     .aluRes_WB(WBMuxOutput), .extImm(extImm_EX), .ALUOp(ALUOp_EX), .ALUSrc(ALUSrc_EX), 
-    .forwardA(forwardA), .forwardB(forwardB), .shamt_EX(shamt_EX), 
+    .forwardA(forwardA), .forwardB(forwardB), .shamt_EX(shamt_EX), .reset(rst),
     .aluRizz_EX(aluRes_EX), .forwardBRizz_EX(forwardBRes_EX),.taken(taken), .Branch(Branch_EX), .bne(bne_EX));
 
 

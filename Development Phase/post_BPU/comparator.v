@@ -1,3 +1,4 @@
+
 module comparator (
   input [31:0] In1,
   input [31:0] In2,
@@ -11,11 +12,12 @@ module comparator (
 
 	
   always @(*)
+  
 	begin
-    if (~reset) branchValid <=0;
+    if (~reset) branchValid =0;
     else begin
-		if(branch && !hold && ((bne && (In1 != In2)) || (!bne && (In1 == In2)))) branchValid <= 1;
-		else branchValid <= 0;
+		if(branch && (!hold) && ((bne && (In1 != In2)) || (!bne && (In1 == In2)))) branchValid = 1;
+		else branchValid = 0;
       end
   end
 
