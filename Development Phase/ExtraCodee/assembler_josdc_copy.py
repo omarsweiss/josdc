@@ -168,32 +168,15 @@ def unpseudo(instructions):
 
 
 
-instructions = """  ORI  $2, $0, 0            
-  XORI $10, $0, 0            
-  ADDI $20, $0, 10   
-  ADD  $5, $0, $0     
-  ADDI $1, $0, 1            
-  ADDI $22, $0, -1   
-LOOP1: ADD  $5, $1, $0  
-  LW   $15, 0($5)  
-  OR   $10, $15, $0 
-  ADDI $2, $1, -1  
-LOOP2: ADD  $6, $2, $0   
-  LW   $16, 0($6)   
-  SGT  $25, $2, $22 
-  SGT  $26, $16, $10 
-  AND  $27, $26, $25 
-  BEQ  $27, $0, EXIT2 
-  ADDI $7, $2, 1  
-  SW   $16, 0($7) 
-  ADDI $2, $2, -1 
-  J  LOOP2 
-EXIT2: ADDI $7, $2, 1  
-  SW $10, 0($7) 
-  ADDI $1, $1, 1 
-  SLT  $28, $1, $20 
-  BNE  $28, $0, LOOP1 
-FINISH: SLL $0, $0, 0
+instructions = """ addi $1, $0, 4
+lw $5, 0($1)
+addi $2, $5, 0
+beq $1, $2, exit
+addi $4, $0, 23
+j 7
+exit: addi $4, $0, 50
+sll $0, $0, 0
+  
 
 """
 i = 0 
