@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Tue Jan 28 17:27:34 2025
+Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Revision Name : processor
+Top-level Entity Name : reservation_station
+Family : MAX 10
+Total logic elements : 862
+    Total combinational functions : 862
+    Dedicated logic registers : 399
+Total registers : 399
+Total pins : 196
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0
