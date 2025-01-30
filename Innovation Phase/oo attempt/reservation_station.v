@@ -3,8 +3,9 @@ input clk, rst, val1_r, val2_r, write,
 input [4:0] rs_tag, rt_tag, dest_tag, alu_res_tag,
 input [5:0] control, 
 input [31:0] val1, val2, alu_res,
-output reg [31:0] op1, op2, 
-output reg [4:0] dest_out
+output reg [31:0] op1, op2, op1_2, op2_2, 
+output reg [4:0] dest_out, dest_out2,
+output reg full
 );
 
 reg [4:0] rs [3:0];
@@ -16,12 +17,14 @@ reg [31:0] values2 [3:0];
 reg [3:0] busy;
 reg [1:0] ready [3:0];
 reg [1:0] pointer;
-reg slot_found, disp_found;
+reg slot_found, disp_found, disp_found2;
+assign full = busy[0]&busy[1]&busy[2]&busy[3];
 
 always @(posedge clk, negedge rst) begin
 	integer i,j,k,w;
 	slot_found = 0;
 	disp_found = 0;
+	disp_found2 = 0;
 	
 	if(~rst) begin
 		pointer = 0;
@@ -88,6 +91,17 @@ always @(posedge clk, negedge rst) begin
 				pointer = pointer + 1'b1;
 				disp_found = 1'b1;
 			end
+			else if(ready[pointer + w] == 2'b11 && ~disp_found2) begin
+				dest_out2 = dest[pointer + w];
+				op1_2 = values1 [pointer + w];
+				op2_2 = values2 [pointer + w];
+				ready[pointer + w] = 2'b00;
+				busy[pointer + w] = 1'b0;
+				pointer = pointer + 1'b1;
+				disp_found2 = 1'b1;
+			
+			end
+			
 		
 		
 	end

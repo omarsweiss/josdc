@@ -1,0 +1,63 @@
+module InstructionQueue #(
+    parameter QUEUE_SIZE = 8,   // Number of instructions the queue can hold
+    parameter INSTR_WIDTH = 32  // Instruction bit width
+)(
+    input wire clk,             // Clock signal
+    input wire reset,           // Reset signal
+    input wire enqueue,         // Signal to enqueue an instruction
+    input wire [INSTR_WIDTH-1:0] instr_in, // Incoming instruction
+    input wire stall,           // Stall signal from RS (prevents issuing)
+    output reg [INSTR_WIDTH-1:0] instr_out, // Instruction to issue
+    output reg valid_out,        // Valid flag for issued instruction
+    output reg full,             // Queue full flag
+    output reg empty             // Queue empty flag
+);
+
+    // Instruction storage and valid bits
+    reg [INSTR_WIDTH-1:0] queue [0:QUEUE_SIZE-1];
+    reg valid [0:QUEUE_SIZE-1]; // Valid bit for each entry
+
+    // Head and tail pointers for circular buffer
+    reg [$clog2(QUEUE_SIZE):0] head, tail;
+    integer i;
+
+    always @(posedge clk or posedge reset) begin
+        if (reset) begin
+            head <= 0;
+            tail <= 0;
+            full <= 0;
+            empty <= 1;
+            valid_out <= 0;
+            instr_out <= 0;
+            for (i = 0; i < QUEUE_SIZE; i = i + 1) begin
+                queue[i] <= 0;
+                valid[i] <= 0;
+            end
+        end else begin
+            // Enqueue logic (only if not full)
+            if (enqueue && !full) begin
+                queue[tail] <= instr_in;
+                valid[tail] <= 1;
+                tail <= (tail + 1) % QUEUE_SIZE;
+            end
+
+            // Update full/empty flags
+            full <= (head == (tail + 1) % QUEUE_SIZE);
+            empty <= (head == tail);
+
+            // Issue logic (only if not stalled)
+            if (!empty && !valid_out && !stall) begin
+                instr_out <= queue[head];
+                valid_out <= valid[head];
+            end
+
+            // Remove instruction from queue when not stalled
+            if (!stall) begin
+                valid[head] <= 0;
+                head <= (head + 1) % QUEUE_SIZE;
+                valid_out <= 0;
+            end
+        end
+    end
+
+endmodule
