@@ -1,15 +1,15 @@
-Fitter Status : Successful - Tue Jan 28 17:27:58 2025
-Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Fitter Status : Successful - Fri Jan 31 20:50:18 2025
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : processor
-Top-level Entity Name : reservation_station
+Top-level Entity Name : processor
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 863 / 49,760 ( 2 % )
-    Total combinational functions : 863 / 49,760 ( 2 % )
-    Dedicated logic registers : 399 / 49,760 ( < 1 % )
-Total registers : 399
-Total pins : 196 / 360 ( 54 % )
+Total logic elements : 11 / 49,760 ( < 1 % )
+    Total combinational functions : 11 / 49,760 ( < 1 % )
+    Dedicated logic registers : 10 / 49,760 ( < 1 % )
+Total registers : 10
+Total pins : 12 / 360 ( 3 % )
 Total virtual pins : 0
 Total memory bits : 0 / 1,677,312 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )

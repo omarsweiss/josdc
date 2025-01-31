@@ -8,9 +8,9 @@ module InstructionQueue #(
     input wire [INSTR_WIDTH-1:0] instr_in, // Incoming instruction
     input wire stall,           // Stall signal from RS (prevents issuing)
     output reg [INSTR_WIDTH-1:0] instr_out, // Instruction to issue
-    output reg valid_out,        // Valid flag for issued instruction
     output reg full,             // Queue full flag
-    output reg empty             // Queue empty flag
+    output reg write,				//Flag to enable writing on the RS
+	 output reg empty             // Queue empty flag
 );
 
     // Instruction storage and valid bits
@@ -18,7 +18,7 @@ module InstructionQueue #(
     reg valid [0:QUEUE_SIZE-1]; // Valid bit for each entry
 
     // Head and tail pointers for circular buffer
-    reg [$clog2(QUEUE_SIZE):0] head, tail;
+    reg [2:0] head, tail;
     integer i;
 
     always @(posedge clk or posedge reset) begin
@@ -27,7 +27,6 @@ module InstructionQueue #(
             tail <= 0;
             full <= 0;
             empty <= 1;
-            valid_out <= 0;
             instr_out <= 0;
             for (i = 0; i < QUEUE_SIZE; i = i + 1) begin
                 queue[i] <= 0;
@@ -46,16 +45,16 @@ module InstructionQueue #(
             empty <= (head == tail);
 
             // Issue logic (only if not stalled)
-            if (!empty && !valid_out && !stall) begin
+            if (!empty && !stall) begin
                 instr_out <= queue[head];
-                valid_out <= valid[head];
+					 write = 1'b1;
+					 
             end
 
             // Remove instruction from queue when not stalled
             if (!stall) begin
                 valid[head] <= 0;
                 head <= (head + 1) % QUEUE_SIZE;
-                valid_out <= 0;
             end
         end
     end

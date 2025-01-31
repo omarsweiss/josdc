@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "MAX 10"
 set_global_assignment -name DEVICE 10M50DAF484C7G
-set_global_assignment -name TOP_LEVEL_ENTITY reservation_station
+set_global_assignment -name TOP_LEVEL_ENTITY processor
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 22.1STD.2
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:14:00  JANUARY 26, 2025"
 set_global_assignment -name LAST_QUARTUS_VERSION "23.1std.1 Lite Edition"
@@ -58,6 +58,9 @@ set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
 set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 7
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VERILOG_FILE Pipes.v
+set_global_assignment -name QIP_FILE dataMemory.qip
+set_global_assignment -name VERILOG_FILE mux2x1.v
 set_global_assignment -name VERILOG_FILE SignExtender.v
 set_global_assignment -name VERILOG_FILE registerFile.v
 set_global_assignment -name VERILOG_FILE controlUnit.v
@@ -67,8 +70,10 @@ set_global_assignment -name VERILOG_FILE programCounter.v
 set_global_assignment -name VERILOG_FILE ROB.v
 set_global_assignment -name VERILOG_FILE RAT.v
 set_global_assignment -name VERILOG_FILE reservation_station.v
+set_global_assignment -name VERILOG_FILE InstructionQueue.v
+set_global_assignment -name VERILOG_FILE processor.v
+set_global_assignment -name NUM_PARALLEL_PROCESSORS 4
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name VERILOG_FILE InstructionQueue.v

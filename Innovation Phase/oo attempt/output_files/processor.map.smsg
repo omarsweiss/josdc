@@ -1,1 +1,2 @@
-Warning (10268): Verilog HDL information at registerFile.v(24): always construct contains both blocking and non-blocking assignments File: C:/Users/amr/Desktop/Quartus/oo attempt/registerFile.v Line: 24
+Warning (10268): Verilog HDL information at registerFile.v(24): always construct contains both blocking and non-blocking assignments File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/registerFile.v Line: 24
+Warning (10268): Verilog HDL information at InstructionQueue.v(24): always construct contains both blocking and non-blocking assignments File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/InstructionQueue.v Line: 24
