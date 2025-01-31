@@ -1,5 +1,5 @@
 module InstructionQueue #(
-    parameter QUEUE_SIZE = 8,   // Number of instructions the queue can hold
+    parameter QUEUE_SIZE = 4'd8,   // Number of instructions the queue can hold
     parameter INSTR_WIDTH = 32  // Instruction bit width
 )(
     input wire clk,             // Clock signal
@@ -18,11 +18,15 @@ module InstructionQueue #(
     reg valid [0:QUEUE_SIZE-1]; // Valid bit for each entry
 
     // Head and tail pointers for circular buffer
-    reg [2:0] head, tail;
-    integer i;
-
-    always @(posedge clk or posedge reset) begin
-        if (reset) begin
+    reg [3:0] head, tail;
+    // Update full/empty flags
+	 always @(*) begin : name2
+		full = (head == (tail + 1) % QUEUE_SIZE);
+		empty = (head == tail);
+	end
+    always @(posedge clk or negedge reset) begin : name
+		integer i;
+        if (~reset) begin
             head <= 0;
             tail <= 0;
             full <= 0;
@@ -36,26 +40,20 @@ module InstructionQueue #(
             // Enqueue logic (only if not full)
             if (enqueue && !full) begin
                 queue[tail] <= instr_in;
-                valid[tail] <= 1;
-                tail <= (tail + 1) % QUEUE_SIZE;
+                valid[tail] <= 1'b1;
+                tail <= (tail + 4'd1) % QUEUE_SIZE;
             end
-
-            // Update full/empty flags
-            full <= (head == (tail + 1) % QUEUE_SIZE);
-            empty <= (head == tail);
-
             // Issue logic (only if not stalled)
             if (!empty && !stall) begin
                 instr_out <= queue[head];
 					 write = 1'b1;
-					 
+					 valid[head] <= 0;
+                head <= (head + 4'd1) % QUEUE_SIZE;
             end
-
-            // Remove instruction from queue when not stalled
-            if (!stall) begin
-                valid[head] <= 0;
-                head <= (head + 1) % QUEUE_SIZE;
-            end
+				else begin
+					instr_out = 0;
+					write = 1'b0;
+				end
         end
     end
 

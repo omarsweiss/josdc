@@ -23,7 +23,7 @@ reg [1:0] pointer;
 reg slot_found, disp_found, disp_found2;
 assign full = busy[0]&busy[1]&busy[2]&busy[3];
 
-always @(posedge clk, negedge rst) begin
+always @(posedge clk, negedge rst) begin : name 
 	integer i,j,k,w;
 	slot_found = 0;
 	disp_found = 0;

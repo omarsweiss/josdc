@@ -1,16 +1,15 @@
-module programCounter (clk, rst, PCin, PCout, hold);
-	
+module programCounter(
 	//inputs
-	input clk, rst, hold;
-	input [9:0] PCin;
+	input clk, rst, hold,
+	input [7:0] PCin,
 	
 	//outputs 
-	output reg [9:0] PCout;
-	
+	output reg [7:0] PCout
+	);
 	//Counter logic
 	always@(posedge clk, negedge rst) begin
 		if(~rst) begin
-			PCout <= 10'b1111111111;// should be all 0's maybe?
+			PCout <= 8'b0;
 		end
 		
 		else if(~hold) PCout <= PCin;

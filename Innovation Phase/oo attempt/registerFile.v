@@ -1,13 +1,13 @@
 // register file contains 32 register
 
-module registerFile (clk, rst, we, 
-					 readRegister1, readRegister2, writeRegister,
-					 writeData, readData1, readData2);
+module registerFile (clk, rst, we, we2, 
+					 readRegister1, readRegister2, writeRegister, writeRegister2,
+					 writeData, writeData2, readData1, readData2);
 
 	// inputs
-	input wire clk, rst, we;
-	input wire [4:0] readRegister1, readRegister2, writeRegister;
-	input wire [31:0] writeData;
+	input wire clk, rst, we, we2;
+	input wire [4:0] readRegister1, readRegister2, writeRegister, writeRegister2;
+	input wire [31:0] writeData, writeData2;
 	
 	// outputs
 	output [31:0] readData1, readData2;
@@ -32,6 +32,10 @@ module registerFile (clk, rst, we,
 		else if(we) begin
 			if(writeRegister == 'b0) registers[writeRegister] <= writeData;
 			else registers[writeRegister] <= writeData;
+			if(we2) begin
+				if(writeRegister2 == 'b0) registers[writeRegister2] <= writeData2;
+				else registers[writeRegister2] <= writeData2;
+			end
 		end
 		// Defualt to prevent latching
 		else;

@@ -2,14 +2,14 @@ module ROB #(
     parameter QUEUE_SIZE = 32   // Number of instructions the queue can hold
 ) 
 (
-input clk,rst,write, write2, read,
+input clk,rst,write, write2,
 input [4:0] dest_reg, val_idx, val_idx2,
 input [31:0] value, value2,
 output reg [4:0] tag,
-output reg [4:0] commit_addr,
-output reg [31:0] commit_val,
+output reg [4:0] commit_addr, commit_addr2,
+output reg [31:0] commit_val, commit_val2,
 output reg full,
-output reg write_rf, write_rat //Set when commiting to write on the RF
+output reg commit1, commit2, write_rat//Set when commiting to write on the RF
 );
 
 reg [4:0] dest_regs [31:0];
@@ -20,7 +20,7 @@ reg [4:0] issue_p,commit_p;
 
 
 
-always @(posedge clk, negedge rst) begin
+always @(posedge clk, negedge rst) begin : name
 	integer i;
 	full = (commit_p == (issue_p + 1) % QUEUE_SIZE);
 	if (~rst) begin
@@ -59,8 +59,15 @@ always @(posedge clk, negedge rst) begin
 			commit_addr = dest_regs[commit_p];
 			commit_val = values [commit_p];
 			commit_p = commit_p +5'b1;
-			write_rf = 1'b1;
+			commit1 = 1'b1;
+			if (ready[commit_p] == 1) begin
+				commit_addr2 = dest_regs[commit_p];
+				commit_val2 = values [commit_p];
+				commit_p = commit_p +5'b1;
+				commit2 = 1'b1;
+			end
 		end
+		
 		
 		
 	end

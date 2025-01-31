@@ -8,7 +8,7 @@ output wire allocated_rs, allocated_rt
 reg [4:0] tags [31:0];
 reg allocated [31:0] ; //this is set to zero if the tag points to a register and set to 1 if the tag points to an ROB entry
 
-always @(posedge clk, negedge rst) begin
+always @(posedge clk, negedge rst) begin : name
 	integer i;
 	if(~rst) begin
 		
