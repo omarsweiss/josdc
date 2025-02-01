@@ -34,6 +34,7 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
+vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/oo\ attempt {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v}
 vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/oo\ attempt {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/adder.v}
 vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/oo\ attempt {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/mux2x1.v}
 vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/oo\ attempt {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/SignExtender.v}

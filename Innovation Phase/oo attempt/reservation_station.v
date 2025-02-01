@@ -51,6 +51,32 @@ module reservation_station (
             // Dispatch Logic: Issue up to 2 ready instructions per cycle
             disp_found = 0;
             disp_found2 = 0;
+				// Issue logic: Find an available slot and store instruction
+            if (write) begin
+                for (j = 0; j < 4; j = j + 1) begin
+                    if (~busy[j] && ~slot_found) begin
+                        ops[j] = control;
+                        dest[j] = dest_tag;
+                        
+                        if (val1_r) begin
+                            values1[j] = val1;
+                            ready[j][0] = 1;
+                        end else begin
+                            rs[j] = rs_tag;
+                        end
+                        
+                        if (val2_r) begin
+                            values2[j] = val2;
+                            ready[j][1] = 1;
+                        end else begin
+                            rt[j] = rt_tag;
+                        end
+                        
+                        busy[j] = 1;
+                        slot_found = 1'b1;
+                    end
+                end
+            end
             for (w = 0; w < 4; w = w + 1) begin
                 if (ready[(pointer + w) % 4] == 2'b11 && ~disp_found) begin
                     dest_out = dest[(pointer + w) % 4];
@@ -109,32 +135,7 @@ module reservation_station (
                     end
                 end
 
-            // Issue logic: Find an available slot and store instruction
-            if (write) begin
-                for (j = 0; j < 4; j = j + 1) begin
-                    if (~busy[j] && ~slot_found) begin
-                        ops[j] = control;
-                        dest[j] = dest_tag;
-                        
-                        if (val1_r) begin
-                            values1[j] = val1;
-                            ready[j][0] = 1;
-                        end else begin
-                            rs[j] = rs_tag;
-                        end
-                        
-                        if (val2_r) begin
-                            values2[j] = val2;
-                            ready[j][1] = 1;
-                        end else begin
-                            rt[j] = rt_tag;
-                        end
-                        
-                        busy[j] = 1;
-                        slot_found = 1'b1;
-                    end
-                end
-            end
+            
 
             
             end

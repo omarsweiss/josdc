@@ -36,13 +36,13 @@ module InstructionQueue #(
             end
         end else begin
             // Enqueue logic (only if not full)
-            if (enqueue && !full) begin
+            if (enqueue && !full&&~valid[tail]) begin
                 queue[tail] <= instr_in;
                 valid[tail] <= 1'b1;
                 tail <= (tail + 4'd1) % QUEUE_SIZE;
             end
             // Issue logic (only if not stalled)
-            if (!empty && !stall) begin
+            if (!empty && !stall&&valid[head] ) begin
                 instr_out <= queue[head];
 					 write = 1'b1;
 					 valid[head] <= 0;

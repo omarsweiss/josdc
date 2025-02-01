@@ -15,7 +15,7 @@ output reg commit1, commit2, write_rat//Set when commiting to write on the RF
 reg [4:0] dest_regs [31:0];
 reg [31:0] values [31:0];
 reg [31:0] ready;
-reg [4:0] issue_p,commit_p;
+reg [4:0] issue_p, commit_p;
 
 
 always @(*) begin : name2
@@ -43,7 +43,7 @@ always @(posedge clk, negedge rst) begin : name
 			dest_regs[issue_p] = dest_reg;
 			ready[issue_p] = 0;
 
-			issue_p = issue_p + 5'b1;
+			issue_p = (issue_p + 5'b1)%32;
 		end
 		//From the common data bus
 		if (write) begin
@@ -60,14 +60,14 @@ always @(posedge clk, negedge rst) begin : name
 			commit_val = values [commit_p];
 			commit1 = 1'b1;
 			ready[commit_p] = 1'b0;
-			if (ready[commit_p + 5'd1] == 1) begin
-				commit_addr2 = dest_regs[commit_p + 5'd1];
-				commit_val2 = values [commit_p + 5'd1];
-				commit_p = commit_p +5'd2;
+			if (ready[(commit_p + 5'd1)%32] == 1) begin
+				commit_addr2 = dest_regs[(commit_p + 5'd1)%32];
+				commit_val2 = values [(commit_p + 5'd1)%32];
+				commit_p = (commit_p +5'd2)%32;
 				commit2 = 1'b1;
-				ready[commit_p + 5'd1] = 1'b0; 
+				ready[(commit_p + 5'd1)%32] = 1'b0; 
 			end
-			else commit_p = commit_p +5'd1;
+			else commit_p = (commit_p + 5'd1)%32;
 		end
 		
 		
