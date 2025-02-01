@@ -1,17 +1,17 @@
-Fitter Status : Successful - Sat Feb  1 15:49:41 2025
+Fitter Status : Successful - Sat Feb  1 19:12:36 2025
 Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : processor
 Top-level Entity Name : processor
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 9 / 49,760 ( < 1 % )
-    Total combinational functions : 9 / 49,760 ( < 1 % )
-    Dedicated logic registers : 8 / 49,760 ( < 1 % )
-Total registers : 8
-Total pins : 10 / 360 ( 3 % )
+Total logic elements : 9,654 / 49,760 ( 19 % )
+    Total combinational functions : 9,515 / 49,760 ( 19 % )
+    Dedicated logic registers : 3,341 / 49,760 ( 7 % )
+Total registers : 3341
+Total pins : 34 / 360 ( 9 % )
 Total virtual pins : 0
-Total memory bits : 0 / 1,677,312 ( 0 % )
+Total memory bits : 8,192 / 1,677,312 ( < 1 % )
 Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
 UFM blocks : 0 / 1 ( 0 % )

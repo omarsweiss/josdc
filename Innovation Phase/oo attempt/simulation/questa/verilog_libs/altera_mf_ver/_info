@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/simulation/questa
 va_graycounter
-Z1 !s110 1738407460
+Z1 !s110 1738426442
 !i10b 1
 !s100 dbSQenUhE^>zo5H5zAI>X2
 IlYUSkEQHR_d2lVIo5OnUZ3
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1738407459.000000
+Z7 !s108 1738426441.000000
 Z8 !s107 c:/intelfpga/23.1std/quartus/eda/sim_lib/altera_mf.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|altera_mf_ver|c:/intelfpga/23.1std/quartus/eda/sim_lib/altera_mf.v|
 !i113 1
@@ -366,7 +366,7 @@ R9
 R10
 R11
 vALTERA_DEVICE_FAMILIES
-Z12 !s110 1738407459
+R1
 !i10b 1
 !s100 Ie0_`X3Yi6=65^n?0c5aN3
 ImkhmiARVo`9A@MP[AB^I93
@@ -388,7 +388,7 @@ R10
 R11
 n@a@l@t@e@r@a_@d@e@v@i@c@e_@f@a@m@i@l@i@e@s
 vALTERA_MF_HINT_EVALUATION
-R12
+R1
 !i10b 1
 !s100 PH5i_RH6C@2cMRnc4>ae12
 Ih:hZPAJCmWnfIf>fEKY^B3
@@ -410,7 +410,7 @@ R10
 R11
 n@a@l@t@e@r@a_@m@f_@h@i@n@t_@e@v@a@l@u@a@t@i@o@n
 vALTERA_MF_MEMORY_INITIALIZATION
-R12
+R1
 !i10b 1
 !s100 nTma^h04MOBz8;HdmmAdW1
 IABiA;oHgIMgO]0Kd0Yj0g3
@@ -831,7 +831,7 @@ R9
 R10
 R11
 varm_m_cntr
-R12
+R1
 !i10b 1
 !s100 aE>Dk`dHV;WL1F5DL`IJe0
 IX]c[KaG=;2kCF8aNAmNe=2
@@ -1125,7 +1125,7 @@ R9
 R10
 R11
 vdffp
-R12
+R1
 !i10b 1
 !s100 SnNjJNaU3KC[OThjodVFi2
 IzfMZ4jMM3lXF2iJ?;gM4=3
@@ -1230,7 +1230,7 @@ R9
 R10
 R11
 vlcell
-R12
+R1
 !i10b 1
 !s100 5QGV:R[KdXJ5TR1bkQiUU0
 I7cOCYHh=U1TIMlUonSeVg0
@@ -1361,7 +1361,7 @@ R10
 R11
 n@m@f_cycloneiiigl_scale_cntr
 vMF_pll_reg
-R12
+R1
 !i10b 1
 !s100 0HDLA_Ae606hC35WQ6^7]2
 I>KG<8Gik^MbE<dEg;CB7h1
@@ -1383,7 +1383,7 @@ R10
 R11
 n@m@f_pll_reg
 vMF_stratix_pll
-R12
+R1
 !i10b 1
 !s100 kITDCAAk7nE?EU[@=@9Oo1
 IWHLc?Q4OGFKnd^_9A_oIL0
@@ -1470,7 +1470,7 @@ R9
 R10
 R11
 vpll_iobuf
-R12
+R1
 !i10b 1
 !s100 Y>n^z1AP@XWBOng[;X`=B1
 I8o_`o[zXD`W57al`Th7nO2
@@ -1785,7 +1785,7 @@ R9
 R10
 R11
 vstx_m_cntr
-R12
+R1
 !i10b 1
 !s100 ?>o7Q<XCBPSD4HoGd5:>A0
 IaPfGkH?YP[b_<HeQN3aBP0
@@ -1806,7 +1806,7 @@ R9
 R10
 R11
 vstx_n_cntr
-R12
+R1
 !i10b 1
 !s100 ?P@b:4DafJ_^m9ka]DFD53
 ID^0mLj3;J?XCW1oUSGD=f0
@@ -1827,7 +1827,7 @@ R9
 R10
 R11
 vstx_scale_cntr
-R12
+R1
 !i10b 1
 !s100 a@[2eTC]]LIFm0QFl5WUj2
 I1@SR`T87<4V>b_H=J@R5W0

@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/simulation/questa
 vlpm_abs
-Z1 !s110 1738407459
+Z1 !s110 1738426441
 !i10b 1
 !s100 O9i<YS?ECZC8XU2m2T>HQ0
 IX>0j6cdm<BTCOh_AFO15n0
@@ -23,14 +23,14 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1738407458.000000
+Z7 !s108 1738426441.000000
 Z8 !s107 c:/intelfpga/23.1std/quartus/eda/sim_lib/220model.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|lpm_ver|c:/intelfpga/23.1std/quartus/eda/sim_lib/220model.v|
 !i113 1
 Z10 o-vlog01compat -work lpm_ver
 Z11 tCvgOpt 0
 vlpm_add_sub
-Z12 !s110 1738407458
+R1
 !i10b 1
 !s100 F?SK4NkV;2lfzWh1<UGXX1
 Io<S96WC[LkYMSE[OK5oB33
@@ -51,7 +51,7 @@ R9
 R10
 R11
 vlpm_and
-R12
+R1
 !i10b 1
 !s100 =VzM;OhZJQ@Wjl;2UNDFd0
 I]T@SE>zJGENUV>DLa36T51
@@ -93,7 +93,7 @@ R9
 R10
 R11
 vlpm_bustri
-R12
+R1
 !i10b 1
 !s100 J0ek53f5aGEe08O]9M7g41
 IfJc<BTSaMheEjHikaGj8A1
@@ -114,7 +114,7 @@ R9
 R10
 R11
 vlpm_clshift
-R12
+R1
 !i10b 1
 !s100 CP<i@cgQUkc]3i2];nPVY1
 IP:_c13k9Y`[;Sb]WGV2^I2
@@ -135,7 +135,7 @@ R9
 R10
 R11
 vlpm_compare
-R12
+R1
 !i10b 1
 !s100 HQ<EAlR:a2A5A=OK;22fi1
 I;IW9b`lbSobC7z93aiVdb1
@@ -156,7 +156,7 @@ R9
 R10
 R11
 vlpm_constant
-R12
+R1
 !i10b 1
 !s100 FkMf<gh?_E[^916k78`m>1
 IRmbZJbF7_m@n5PZem6?H=0
@@ -198,7 +198,7 @@ R9
 R10
 R11
 vlpm_decode
-R12
+R1
 !i10b 1
 !s100 9gcEgnXo<S5MFjD`]mj9V3
 IKbWI=8L@0B];2KI`NmHYc1
@@ -219,7 +219,7 @@ R9
 R10
 R11
 vLPM_DEVICE_FAMILIES
-R12
+R1
 !i10b 1
 !s100 Vmk]JQUO8I;QjWc9g7CYA2
 I2T[N;4W68oFaH7MngogR^1
@@ -388,7 +388,7 @@ R9
 R10
 R11
 vLPM_HINT_EVALUATION
-R12
+R1
 !i10b 1
 !s100 `WKMS]SM@JbIe0gCi<3f82
 I<=B`N08F>``8OOmFJbcMa3
@@ -431,7 +431,7 @@ R9
 R10
 R11
 vlpm_inv
-R12
+R1
 !i10b 1
 !s100 ^?DV;oC5m>1zlEkCWIQzM1
 IiX=iY]nz<AegZf0Co>8LM2
@@ -473,7 +473,7 @@ R9
 R10
 R11
 vLPM_MEMORY_INITIALIZATION
-R12
+R1
 !i10b 1
 !s100 DR_SV_J4fzH0gTOLESO6;1
 IeHnd_5OL7bDQ0lcDfO0gd1
@@ -495,7 +495,7 @@ R10
 R11
 n@l@p@m_@m@e@m@o@r@y_@i@n@i@t@i@a@l@i@z@a@t@i@o@n
 vlpm_mult
-R12
+R1
 !i10b 1
 !s100 c@WEh7lH>@G6PFA3ZG8WE1
 I5_Ij_5T0d_UhL;6a8[zJ71
@@ -516,7 +516,7 @@ R9
 R10
 R11
 vlpm_mux
-R12
+R1
 !i10b 1
 !s100 27TaUnFLk_F<gH`najTXL3
 ICJOQcDRoLOW^PXa9<TFW43
@@ -537,7 +537,7 @@ R9
 R10
 R11
 vlpm_or
-R12
+R1
 !i10b 1
 !s100 PVk12KKE0fG4m[5a;LJV22
 I9kJP;X7OM>Lb<kZmTVzko3
@@ -684,7 +684,7 @@ R9
 R10
 R11
 vlpm_xor
-R12
+R1
 !i10b 1
 !s100 5BXY01B<ogg>d2@mk^Kmo0
 IdQdeWb2^TNNEf^j:==9U^1

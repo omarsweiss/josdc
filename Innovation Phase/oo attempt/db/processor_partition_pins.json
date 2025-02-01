@@ -4,35 +4,131 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "PC[0]",
+					"name" : "whateverthefuck[0]",
 					"strict" : false
 				},
 				{
-					"name" : "PC[1]",
+					"name" : "whateverthefuck[1]",
 					"strict" : false
 				},
 				{
-					"name" : "PC[2]",
+					"name" : "whateverthefuck[2]",
 					"strict" : false
 				},
 				{
-					"name" : "PC[3]",
+					"name" : "whateverthefuck[3]",
 					"strict" : false
 				},
 				{
-					"name" : "PC[4]",
+					"name" : "whateverthefuck[4]",
 					"strict" : false
 				},
 				{
-					"name" : "PC[5]",
+					"name" : "whateverthefuck[5]",
 					"strict" : false
 				},
 				{
-					"name" : "PC[6]",
+					"name" : "whateverthefuck[6]",
 					"strict" : false
 				},
 				{
-					"name" : "PC[7]",
+					"name" : "whateverthefuck[7]",
+					"strict" : false
+				},
+				{
+					"name" : "whateverthefuck[8]",
+					"strict" : false
+				},
+				{
+					"name" : "whateverthefuck[9]",
+					"strict" : false
+				},
+				{
+					"name" : "whateverthefuck[10]",
+					"strict" : false
+				},
+				{
+					"name" : "whateverthefuck[11]",
+					"strict" : false
+				},
+				{
+					"name" : "whateverthefuck[12]",
+					"strict" : false
+				},
+				{
+					"name" : "whateverthefuck[13]",
+					"strict" : false
+				},
+				{
+					"name" : "whateverthefuck[14]",
+					"strict" : false
+				},
+				{
+					"name" : "whateverthefuck[15]",
+					"strict" : false
+				},
+				{
+					"name" : "whateverthefuck[16]",
+					"strict" : false
+				},
+				{
+					"name" : "whateverthefuck[17]",
+					"strict" : false
+				},
+				{
+					"name" : "whateverthefuck[18]",
+					"strict" : false
+				},
+				{
+					"name" : "whateverthefuck[19]",
+					"strict" : false
+				},
+				{
+					"name" : "whateverthefuck[20]",
+					"strict" : false
+				},
+				{
+					"name" : "whateverthefuck[21]",
+					"strict" : false
+				},
+				{
+					"name" : "whateverthefuck[22]",
+					"strict" : false
+				},
+				{
+					"name" : "whateverthefuck[23]",
+					"strict" : false
+				},
+				{
+					"name" : "whateverthefuck[24]",
+					"strict" : false
+				},
+				{
+					"name" : "whateverthefuck[25]",
+					"strict" : false
+				},
+				{
+					"name" : "whateverthefuck[26]",
+					"strict" : false
+				},
+				{
+					"name" : "whateverthefuck[27]",
+					"strict" : false
+				},
+				{
+					"name" : "whateverthefuck[28]",
+					"strict" : false
+				},
+				{
+					"name" : "whateverthefuck[29]",
+					"strict" : false
+				},
+				{
+					"name" : "whateverthefuck[30]",
+					"strict" : false
+				},
+				{
+					"name" : "whateverthefuck[31]",
 					"strict" : false
 				},
 				{

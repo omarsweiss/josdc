@@ -1,5 +1,4 @@
-module processor(input clk, input rst,
-output [7:0] PC);
+module processor(input clk, input rst, output [9:0] PC);
 
 wire rs_full, iq_full, write_on_rs_rob, iq_empty, Branch, MemReadEn, MemtoReg, MemWriteEn, RegWriteEn, ALUSrc, jr, jal, regdst, bne, write_on_rs_idiss, write_rob,
 rob_full, write_rf, write_rat, ALUSrc_idiss, allocated_rs, allocated_rt, write_rob2, jump, zero, zero2, commit1, commit2;
@@ -7,21 +6,20 @@ wire [3:0] ALUOp, ALUOp_idiss;
 wire [4:0] rd, rt,rs,  writeRegister, regAddress, DestReg, DestReg_idiss, rs_idiss, rt_idiss, val_idx, rob_tag, commit_addr, commit_addr2, wb_entry, wb_entry2, rs_rat, rt_rat,
 shamt, shamt_idiss, dest_out, dest_out2;
 wire [5:0] opCode, funct;
-wire [7:0] PCplus;
+wire [9:0] PCplus;
 wire [8:0] control_out1, control_out2;
 wire [15:0] imm;
 wire [31:0] instruction, iq_instruction, wb_value, commit_val, commit_val2, imm_ext, imm_ext_idiss, data1, data2, alu_res, alu_res2, val2,
 op1, op2, op1_2, op2_2;
 
 
-
 /////////////////Fetch from IM////////////
 
 
-adder PCAdder(.in1(PC), .in2(8'd1), .out(PCplus));
+adder PCAdder(.in1(PC), .in2(10'd1), .out(PCplus));
 programCounter pc(clk, rst, 1'b0, PCplus, PC);
 instructionMemory IM(.address(PC), .clock(~clk), .q(instruction));
-
+assign whateverthefuck = commit_val;
 
 InstructionQueue IQ(
     .clk(clk),             // Clock signal

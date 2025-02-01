@@ -19,13 +19,13 @@ module reservation_station (
     reg [3:0] busy;
     reg [1:0] ready [3:0];
     reg [1:0] pointer;
-    
+    reg slot_found, disp_found, disp_found2;
     assign full = &busy;  // Checks if all 4 entries are busy
 
     always @(posedge clk or negedge rst) begin : name
         integer i, j, k, w;
-        reg slot_found, disp_found, disp_found2;
         
+        slot_found = 1'b0;
         if (~rst) begin
             pointer = 0;
             for (i = 0; i < 4; i = i + 1) begin
@@ -60,7 +60,6 @@ module reservation_station (
                     write_rob = 1;
                     ready[(pointer + w) % 4] = 0;
                     busy[(pointer + w) % 4] = 0;
-                    pointer = pointer + 1;
                     disp_found = 1;
                 end 
                 else if (ready[(pointer + w) % 4] == 2'b11 && ~disp_found2) begin
@@ -71,11 +70,10 @@ module reservation_station (
                     write_rob2 = 1;
                     ready[(pointer + w) % 4] = 0;
                     busy[(pointer + w) % 4] = 0;
-                    pointer = pointer + 1;
                     disp_found2 = 1;
                 end
             end
-
+				pointer = (pointer + 1)%4;
             if (~disp_found) begin
                 dest_out = 0;
                 op1 = 0;
@@ -93,26 +91,25 @@ module reservation_station (
 				// Broadcast logic: Check if an ALU result is available for any pending instruction
             for (k = 0; k < 4; k = k + 1) begin
                 if (busy[k]) begin
-                    if (alu_res_tag == rs[k]) begin
+                    if (alu_res_tag == rs[k] && ~ready[k][0]) begin
                         values1[k] = alu_res;
                         ready[k][0] = 1;
                     end
-                    if (alu_res_tag == rt[k]) begin
+                    if (alu_res_tag == rt[k]&& ~ready[k][1]) begin
                         values2[k] = alu_res;
                         ready[k][1] = 1;
                     end
-                    if (alu_res_tag2 == rs[k]) begin
+                    if (alu_res_tag2 == rs[k]&& ~ready[k][0]) begin
                         values1[k] = alu_res2;
                         ready[k][0] = 1;
                     end
-                    if (alu_res_tag2 == rt[k]) begin
+                    if (alu_res_tag2 == rt[k]&& ~ready[k][1]) begin
                         values2[k] = alu_res2;
                         ready[k][1] = 1;
                     end
                 end
 
             // Issue logic: Find an available slot and store instruction
-            slot_found = 1'b0;
             if (write) begin
                 for (j = 0; j < 4; j = j + 1) begin
                     if (~busy[j] && ~slot_found) begin
