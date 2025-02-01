@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/simulation/questa
 valt_bidir_buf
-Z1 !s110 1738360115
+Z1 !s110 1738407457
 !i10b 1
 !s100 `k9N_NNE[omlCfHHm=PO53
 IN[z50d=SAYg7kEWzeK^XV2
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1738360115.000000
+Z7 !s108 1738407457.000000
 Z8 !s107 c:/intelfpga/23.1std/quartus/eda/sim_lib/altera_primitives.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|altera_ver|c:/intelfpga/23.1std/quartus/eda/sim_lib/altera_primitives.v|
 !i113 1
@@ -618,7 +618,7 @@ R9
 R10
 R11
 UPRIM_GDFF_HIGH
-Z12 !s110 1738360116
+Z12 !s110 1738407458
 !i10b 1
 !s100 SScBZ?gdYFgRTOVYmj^Jh2
 I0@F:T?zlkn;RY9aWS]5aD1
@@ -662,7 +662,7 @@ R10
 R11
 n@p@r@i@m_@g@d@f@f_@h@i@g@h_@s@c@l@r_@p@r@i@o@r@i@t@y
 UPRIM_GDFF_LOW
-R1
+R12
 !i10b 1
 !s100 7L1J7:`k0Sb@DRnEAUf5b0
 IQ[6Sd;V<lMf>T?5o^CTRV3

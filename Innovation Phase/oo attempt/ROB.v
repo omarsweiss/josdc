@@ -2,7 +2,7 @@ module ROB #(
     parameter QUEUE_SIZE = 32   // Number of instructions the queue can hold
 ) 
 (
-input clk,rst,write, write2,
+input clk,rst,issue, write, write2,
 input [4:0] dest_reg, val_idx, val_idx2,
 input [31:0] value, value2,
 output reg [4:0] tag,
@@ -18,14 +18,18 @@ reg [31:0] ready;
 reg [4:0] issue_p,commit_p;
 
 
-
+always @(*) begin : name2
+		full = (commit_p == (issue_p + 1) % QUEUE_SIZE);
+		tag = issue_p;
+		if(~full && issue) write_rat = 1'b1; //Write on RAT
+		else write_rat=0;
+end
 
 always @(posedge clk, negedge rst) begin : name
 	integer i;
-	full = (commit_p == (issue_p + 1) % QUEUE_SIZE);
+	
 	if (~rst) begin
 		ready = 0;
-		write_rat=0;
 		issue_p=0;
 		commit_p=0;
 		for(i=0; i<32; i = i + 1) begin
@@ -35,15 +39,11 @@ always @(posedge clk, negedge rst) begin : name
 	end
 	else begin
 		//Write on the ROB when an instruction is issued.
-		if(~full) begin 
+		if(~full&&issue) begin 
 			dest_regs[issue_p] = dest_reg;
 			ready[issue_p] = 0;
-			tag = issue_p;
-			write_rat = 1'b1; //Write on RAT
+
 			issue_p = issue_p + 5'b1;
-		end
-		else begin 
-			write_rat = 0;
 		end
 		//From the common data bus
 		if (write) begin

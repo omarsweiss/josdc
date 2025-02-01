@@ -29,8 +29,6 @@ module InstructionQueue #(
         if (~reset) begin
             head <= 0;
             tail <= 0;
-            full <= 0;
-            empty <= 1;
             instr_out <= 0;
             for (i = 0; i < QUEUE_SIZE; i = i + 1) begin
                 queue[i] <= 0;

@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/simulation/questa
 vadder
-Z1 !s110 1738360145
+Z1 !s110 1738414501
 !i10b 1
 !s100 N^gF7mFIXmS<CYZ86L@0C0
 I=2hKG`HFB@Wki;]@dN5J?2
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1738360145.000000
+Z4 !s108 1738414501.000000
 !s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/adder.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/adder.v|
 !i113 1
@@ -54,13 +54,13 @@ R6
 R7
 n@a@l@u
 vcontrolUnit
-R1
+Z8 !s110 1738414502
 !i10b 1
 !s100 daYol2AQFC6Emj?3Oa<Ko1
 INkG@X:Z;[MKB[M`0bZ5ze1
 R2
 R0
-Z8 w1738185505
+Z9 w1738185505
 8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/controlUnit.v
 FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/controlUnit.v
 L0 1
@@ -68,7 +68,7 @@ R3
 r1
 !s85 0
 31
-R4
+Z10 !s108 1738414502.000000
 !s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/controlUnit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/controlUnit.v|
 !i113 1
@@ -77,76 +77,76 @@ R6
 R7
 ncontrol@unit
 vEXMEM
-R1
+R8
 !i10b 1
 !s100 jmQ`Q]X<iMmOJmG>BB_kn0
 Il=hFO^12GX?7>lQ@VZEWC1
 R2
 R0
-Z9 w1738336530
-Z10 8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/Pipes.v
-Z11 FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/Pipes.v
+Z11 w1738336530
+Z12 8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/Pipes.v
+Z13 FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/Pipes.v
 L0 34
 R3
 r1
 !s85 0
 31
-R4
-Z12 !s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/Pipes.v|
-Z13 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/Pipes.v|
+R10
+Z14 !s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/Pipes.v|
+Z15 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/Pipes.v|
 !i113 1
 R5
 R6
 R7
 n@e@x@m@e@m
 vIDISS
-R1
+R8
 !i10b 1
 !s100 h`AO@9X<je`fkFTXG]]d:1
 Ii9Eb4OnPN<9Vakn`bnGzU0
 R2
 R0
-R9
-R10
 R11
+R12
+R13
 L0 17
 R3
 r1
 !s85 0
 31
-R4
-R12
-R13
+R10
+R14
+R15
 !i113 1
 R5
 R6
 R7
 n@i@d@i@s@s
 vIFID
-R1
+R8
 !i10b 1
 !s100 NJa0cJ`OXPJ7egJ5z9ZOA1
 IS<=V=fDR?o7QC14SU2P243
 R2
 R0
-R9
-R10
 R11
+R12
+R13
 L0 1
 R3
 r1
 !s85 0
 31
-R4
-R12
-R13
+R10
+R14
+R15
 !i113 1
 R5
 R6
 R7
 n@i@f@i@d
 vinstructionMemory
-R1
+R8
 !i10b 1
 !s100 B?2953V4fPi1ZXCaKX1;C3
 IHg>bFBg]UBQ]mLGkY6@gb3
@@ -160,7 +160,7 @@ R3
 r1
 !s85 0
 31
-R4
+R10
 !s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/instructionMemory.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/instructionMemory.v|
 !i113 1
@@ -169,13 +169,13 @@ R6
 R7
 ninstruction@memory
 vInstructionQueue
-!s110 1738360619
+R8
 !i10b 1
-!s100 b]GP_bV=i]<738I5Q<]9e3
-I=Cge:ZMVJP>PVJWQR1=Y12
+!s100 H^mo56ZnW23hbdSdNZi[V1
+InSTTm=37g0iRCV>j<an_K1
 R2
 R0
-w1738360614
+w1738407334
 8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/InstructionQueue.v
 FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/InstructionQueue.v
 L0 1
@@ -183,7 +183,7 @@ R3
 r1
 !s85 0
 31
-!s108 1738360619.000000
+R10
 !s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/InstructionQueue.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/InstructionQueue.v|
 !i113 1
@@ -192,80 +192,80 @@ R6
 R7
 n@instruction@queue
 vMEMWB
-R1
+R8
 !i10b 1
 !s100 7J?P99Ez0TA2gI^mz>O_]1
 I[5@Jaj9`Cd7m@`?5aXRSJ0
 R2
 R0
-R9
-R10
 R11
+R12
+R13
 L0 48
 R3
 r1
 !s85 0
 31
-R4
-R12
-R13
+R10
+R14
+R15
 !i113 1
 R5
 R6
 R7
 n@m@e@m@w@b
 vmux2x1
-R1
+R8
 !i10b 1
 !s100 9@GI2f]Q]h88AIAPU@>>i3
 IfLQ6UUQTOMHK?9=`Y<[OW3
 R2
 R0
-Z14 w1733474990
-Z15 8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/mux2x1.v
-Z16 FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/mux2x1.v
+Z16 w1733474990
+Z17 8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/mux2x1.v
+Z18 FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/mux2x1.v
 L0 1
 R3
 r1
 !s85 0
 31
-R4
-Z17 !s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/mux2x1.v|
-Z18 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/mux2x1.v|
+R10
+Z19 !s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/mux2x1.v|
+Z20 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/mux2x1.v|
 !i113 1
 R5
 R6
 R7
 vmux4x1
-R1
+R8
 !i10b 1
 !s100 nAQZOOJ:]m^iX812:IzbJ1
 IiZbT?9>mcRN`UJl0zEN6A2
 R2
 R0
-R14
-R15
 R16
+R17
+R18
 L0 15
 R3
 r1
 !s85 0
 31
-R4
-R17
-R18
+R10
+R19
+R20
 !i113 1
 R5
 R6
 R7
 vprocessor
-R1
+Z21 !s110 1738414503
 !i10b 1
-!s100 fkS?9?mLicnIgnd:k;3gE0
-I4IZc9_=GVGQm0H7N;zZ=N3
+!s100 HWSf[OhHGR8RHj7^CYY4<0
+I3@O1P0oKm<Y6?eNJhH[bh3
 R2
 R0
-w1738355612
+w1738413364
 8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/processor.v
 FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/processor.v
 L0 1
@@ -273,7 +273,7 @@ R3
 r1
 !s85 0
 31
-R4
+Z22 !s108 1738414503.000000
 !s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/processor.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/processor.v|
 !i113 1
@@ -281,7 +281,7 @@ R5
 R6
 R7
 vprogramCounter
-!s110 1738361301
+R21
 !i10b 1
 !s100 `<U_MUAo9^8ZH3n2]=i421
 IhgTW0@Z]gFF[1^YBTTh9;2
@@ -295,7 +295,7 @@ R3
 r1
 !s85 0
 31
-!s108 1738361301.000000
+R22
 !s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/programCounter.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/programCounter.v|
 !i113 1
@@ -304,13 +304,13 @@ R6
 R7
 nprogram@counter
 vRAT
-R1
+R21
 !i10b 1
-!s100 LLBCRQg[LHdfeSN;[?Qoc0
-I?BlQ87B9aadeN[lg>HN:a3
+!s100 iDMTa>8I:Wb@_KV5^B=jC1
+IXR;h[FYNo2l8N?`<oVBKM1
 R2
 R0
-w1738357797
+w1738410839
 8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/RAT.v
 FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/RAT.v
 L0 1
@@ -318,7 +318,7 @@ R3
 r1
 !s85 0
 31
-R4
+R22
 !s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/RAT.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/RAT.v|
 !i113 1
@@ -327,7 +327,7 @@ R6
 R7
 n@r@a@t
 vregisterFile
-R1
+R21
 !i10b 1
 !s100 ;EVb@6OaX:Vm?0ekR^:l^3
 I=ob_kYeAWld6BZRVLH9bP0
@@ -341,7 +341,7 @@ R3
 r1
 !s85 0
 31
-R4
+R22
 !s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/registerFile.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/registerFile.v|
 !i113 1
@@ -350,13 +350,13 @@ R6
 R7
 nregister@file
 vreservation_station
-R1
+R21
 !i10b 1
-!s100 XblLkPWzB?l<aLK79HIfg3
-IjmQfGF>Qf:XRzK:j26>db0
+!s100 1^17ZmJK@5`D[VPcXc><71
+IVfOa^nZohCi;NN?6fd9Eb0
 R2
 R0
-w1738357815
+w1738414498
 8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/reservation_station.v
 FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/reservation_station.v
 L0 1
@@ -364,7 +364,7 @@ R3
 r1
 !s85 0
 31
-R4
+R22
 !s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/reservation_station.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/reservation_station.v|
 !i113 1
@@ -372,13 +372,13 @@ R5
 R6
 R7
 vROB
-R1
+R21
 !i10b 1
-!s100 fSQVEDP4Wa;zCP6@69:;>1
-Id2W6EjjB7g`VMBDG`IGc50
+!s100 a271g9;ZWQD6AkdLabfZ:3
+IZMKWdn;AIi4MIi?;f:SR^1
 R2
 R0
-w1738357722
+w1738412044
 8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/ROB.v
 FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/ROB.v
 L0 1
@@ -386,7 +386,7 @@ R3
 r1
 !s85 0
 31
-R4
+R22
 !s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/ROB.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/ROB.v|
 !i113 1
@@ -395,13 +395,13 @@ R6
 R7
 n@r@o@b
 vSignExtender
-R1
+R21
 !i10b 1
 !s100 @`aGSg91l4d870B>Q>l^;2
 I7kkB;f`Kldn5<H]4A^o?L0
 R2
 R0
-R8
+R9
 8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/SignExtender.v
 FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/SignExtender.v
 L0 4
@@ -409,7 +409,7 @@ R3
 r1
 !s85 0
 31
-R4
+R22
 !s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/SignExtender.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/SignExtender.v|
 !i113 1
@@ -418,7 +418,7 @@ R6
 R7
 n@sign@extender
 vtestbench
-!s110 1738361050
+R21
 !i10b 1
 !s100 Fo<BoQSbC<3E5A8bVCVPZ0
 I:FFYQQb7oG1Q7R[E;05gM1
@@ -432,7 +432,7 @@ R3
 r1
 !s85 0
 31
-!s108 1738361050.000000
+R22
 !s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v|
 !i113 1

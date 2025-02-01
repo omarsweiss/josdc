@@ -25,11 +25,11 @@ always @(posedge clk, negedge rst) begin : name
 		end
 		if (free && allocated[tag_done] == 1) begin
 			allocated[tag_done] = 0;
-			tags[tag_done] = 5'b0;
+			tags[tag_done] = tag_done;
 		end
 		if (free2 && allocated[tag_done2] == 1) begin
 			allocated[tag_done2] = 0;
-			tags[tag_done2] = 5'b0;
+			tags[tag_done2] = tag_done;
 		end
 		else;
 	end 
