@@ -77,6 +77,26 @@ module reservation_station (
                     end
                 end
             end
+				// Broadcast logic: Check if an ALU result is available for any pending instruction
+            for (k = 0; k < 4; k = k + 1) begin
+                if (busy[k]) begin
+                    if (alu_res_tag == rs[k] && ~ready[k][0]) begin
+                        values1[k] = alu_res;
+                        ready[k][0] = 1;
+                    end
+                    if (alu_res_tag == rt[k]&& ~ready[k][1]) begin
+                        values2[k] = alu_res;
+                        ready[k][1] = 1;
+                    end
+                    if (alu_res_tag2 == rs[k]&& ~ready[k][0]) begin
+                        values1[k] = alu_res2;
+                        ready[k][0] = 1;
+                    end
+                    if (alu_res_tag2 == rt[k]&& ~ready[k][1]) begin
+                        values2[k] = alu_res2;
+                        ready[k][1] = 1;
+                    end
+                end
             for (w = 0; w < 4; w = w + 1) begin
                 if (ready[(pointer + w) % 4] == 2'b11 && ~disp_found) begin
                     dest_out = dest[(pointer + w) % 4];
@@ -114,26 +134,7 @@ module reservation_station (
                 control_out2 = 0;
                 write_rob2 = 0;
             end
-				// Broadcast logic: Check if an ALU result is available for any pending instruction
-            for (k = 0; k < 4; k = k + 1) begin
-                if (busy[k]) begin
-                    if (alu_res_tag == rs[k] && ~ready[k][0]) begin
-                        values1[k] = alu_res;
-                        ready[k][0] = 1;
-                    end
-                    if (alu_res_tag == rt[k]&& ~ready[k][1]) begin
-                        values2[k] = alu_res;
-                        ready[k][1] = 1;
-                    end
-                    if (alu_res_tag2 == rs[k]&& ~ready[k][0]) begin
-                        values1[k] = alu_res2;
-                        ready[k][0] = 1;
-                    end
-                    if (alu_res_tag2 == rt[k]&& ~ready[k][1]) begin
-                        values2[k] = alu_res2;
-                        ready[k][1] = 1;
-                    end
-                end
+				
 
             
 

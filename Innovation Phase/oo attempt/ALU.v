@@ -43,7 +43,7 @@ module ALU (operand1, operand2, opSel, result, zero,shamt);
 			
 			_SLL: result = operand1 << shamt;
 			
-			_SLR: result = operand1 >> shamt;
+			_SLR: result = $signed(operand1>>shamt);
 			
 			
 			default:result =0; //Default case was missing, causing latches, we added it.

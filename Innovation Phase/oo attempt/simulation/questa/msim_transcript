@@ -13,7 +13,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {c:/intelfpga/23.1std/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:24:33 on Feb 01,2025
+# Start time: 16:58:14 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work altera_ver c:/intelfpga/23.1std/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -95,7 +95,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 23:24:34 on Feb 01,2025, Elapsed time: 0:00:01
+# End time: 16:58:15 on Feb 02,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -106,7 +106,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {c:/intelfpga/23.1std/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:24:34 on Feb 01,2025
+# Start time: 16:58:15 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/intelfpga/23.1std/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -170,7 +170,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 23:24:34 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 16:58:16 on Feb 02,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -181,7 +181,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {c:/intelfpga/23.1std/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:24:34 on Feb 01,2025
+# Start time: 16:58:16 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/intelfpga/23.1std/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -223,7 +223,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 23:24:34 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 16:58:16 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -234,7 +234,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {c:/intelfpga/23.1std/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:24:34 on Feb 01,2025
+# Start time: 16:58:17 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/intelfpga/23.1std/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -364,7 +364,7 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 23:24:35 on Feb 01,2025, Elapsed time: 0:00:01
+# End time: 16:58:18 on Feb 02,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -375,7 +375,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {c:/intelfpga/23.1std/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:24:35 on Feb 01,2025
+# Start time: 16:58:18 on Feb 02,2025
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/intelfpga/23.1std/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -458,7 +458,7 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 23:24:36 on Feb 01,2025, Elapsed time: 0:00:01
+# End time: 16:58:20 on Feb 02,2025, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/fiftyfivenm_ver
@@ -469,7 +469,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work fiftyfivenm_ver {c:/intelfpga/23.1std/quartus/eda/sim_lib/fiftyfivenm_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:24:36 on Feb 01,2025
+# Start time: 16:58:23 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work fiftyfivenm_ver c:/intelfpga/23.1std/quartus/eda/sim_lib/fiftyfivenm_atoms.v 
 # -- Compiling UDP FIFTYFIVENM_PRIM_DFFE
 # -- Compiling UDP FIFTYFIVENM_PRIM_DFFEAS
@@ -562,15 +562,15 @@
 # 	fiftyfivenm_jtag
 # 	fiftyfivenm_adcblock
 # 	fiftyfivenm_phase_detector
-# End time: 23:24:37 on Feb 01,2025, Elapsed time: 0:00:01
+# End time: 16:58:24 on Feb 02,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work fiftyfivenm_ver {c:/intelfpga/23.1std/quartus/eda/sim_lib/mentor/fiftyfivenm_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:24:37 on Feb 01,2025
+# Start time: 16:58:25 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work fiftyfivenm_ver c:/intelfpga/23.1std/quartus/eda/sim_lib/mentor/fiftyfivenm_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 23:24:39 on Feb 01,2025, Elapsed time: 0:00:02
+# End time: 16:58:28 on Feb 02,2025, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -584,27 +584,27 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/oo\ attempt {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:24:40 on Feb 01,2025
+# Start time: 16:58:28 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v 
 # -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 23:24:40 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 16:58:28 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/oo\ attempt {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/adder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:24:40 on Feb 01,2025
+# Start time: 16:58:28 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/adder.v 
 # -- Compiling module adder
 # 
 # Top level modules:
 # 	adder
-# End time: 23:24:40 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 16:58:28 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/oo\ attempt {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/mux2x1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:24:40 on Feb 01,2025
+# Start time: 16:58:28 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/mux2x1.v 
 # -- Compiling module mux2x1
 # -- Compiling module mux4x1
@@ -612,122 +612,122 @@
 # Top level modules:
 # 	mux2x1
 # 	mux4x1
-# End time: 23:24:40 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 16:58:29 on Feb 02,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/oo\ attempt {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/SignExtender.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:24:40 on Feb 01,2025
+# Start time: 16:58:29 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/SignExtender.v 
 # -- Compiling module SignExtender
 # 
 # Top level modules:
 # 	SignExtender
-# End time: 23:24:40 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 16:58:29 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/oo\ attempt {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/registerFile.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:24:40 on Feb 01,2025
+# Start time: 16:58:29 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/registerFile.v 
 # -- Compiling module registerFile
 # 
 # Top level modules:
 # 	registerFile
-# End time: 23:24:40 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 16:58:29 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/oo\ attempt {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/controlUnit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:24:40 on Feb 01,2025
+# Start time: 16:58:29 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/controlUnit.v 
 # -- Compiling module controlUnit
 # 
 # Top level modules:
 # 	controlUnit
-# End time: 23:24:40 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 16:58:29 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/oo\ attempt {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/ALU.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:24:40 on Feb 01,2025
+# Start time: 16:58:29 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/ALU.v 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 23:24:40 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 16:58:29 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/oo\ attempt {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/instructionMemory.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:24:40 on Feb 01,2025
+# Start time: 16:58:29 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/instructionMemory.v 
 # -- Compiling module instructionMemory
 # 
 # Top level modules:
 # 	instructionMemory
-# End time: 23:24:40 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 16:58:29 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/oo\ attempt {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/programCounter.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:24:40 on Feb 01,2025
+# Start time: 16:58:29 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/programCounter.v 
 # -- Compiling module programCounter
 # 
 # Top level modules:
 # 	programCounter
-# End time: 23:24:40 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 16:58:29 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/oo\ attempt {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/ROB.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:24:40 on Feb 01,2025
+# Start time: 16:58:30 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/ROB.v 
 # -- Compiling module ROB
 # 
 # Top level modules:
 # 	ROB
-# End time: 23:24:40 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 16:58:30 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/oo\ attempt {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/RAT.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:24:40 on Feb 01,2025
+# Start time: 16:58:30 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/RAT.v 
 # -- Compiling module RAT
 # 
 # Top level modules:
 # 	RAT
-# End time: 23:24:40 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 16:58:30 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/oo\ attempt {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/reservation_station.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:24:40 on Feb 01,2025
+# Start time: 16:58:30 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/reservation_station.v 
 # -- Compiling module reservation_station
 # 
 # Top level modules:
 # 	reservation_station
-# End time: 23:24:40 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 16:58:30 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/oo\ attempt {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/InstructionQueue.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:24:40 on Feb 01,2025
+# Start time: 16:58:30 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/InstructionQueue.v 
 # -- Compiling module InstructionQueue
 # 
 # Top level modules:
 # 	InstructionQueue
-# End time: 23:24:40 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 16:58:30 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/oo\ attempt {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/processor.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:24:40 on Feb 01,2025
+# Start time: 16:58:30 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/processor.v 
 # -- Compiling module processor
 # 
 # Top level modules:
 # 	processor
-# End time: 23:24:40 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 16:58:30 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim -gui -l msim_transcript work.testbench -Lf work -Lf altera_mf_ver
 # vsim -gui -l msim_transcript work.testbench -Lf work -Lf altera_mf_ver 
-# Start time: 23:25:03 on Feb 01,2025
+# Start time: 16:58:49 on Feb 02,2025
 # Loading work.testbench
 # Loading work.processor
 # Loading work.adder
@@ -753,70 +753,59 @@ run -all
 # ** Note: $stop    : C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v(12)
 #    Time: 1004 ns  Iteration: 0  Instance: /testbench
 # Break in Module testbench at C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v line 12
-add wave -position 5  sim:/testbench/uut/IQ/queue
-restart
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v(17): [PCDPC] - Port size (10) does not match connection size (8) for port 'PC'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/processor.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/processor.v
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v(12)
-#    Time: 1004 ns  Iteration: 0  Instance: /testbench
-# Break in Module testbench at C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v line 12
 vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/adder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:36:22 on Feb 01,2025
+# Start time: 17:11:23 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/adder.v 
 # -- Compiling module adder
 # 
 # Top level modules:
 # 	adder
-# End time: 23:36:22 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 17:11:23 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/ALU.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:36:22 on Feb 01,2025
+# Start time: 17:11:23 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/ALU.v 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 23:36:22 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 17:11:23 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/controlUnit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:36:22 on Feb 01,2025
+# Start time: 17:11:23 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/controlUnit.v 
 # -- Compiling module controlUnit
 # 
 # Top level modules:
 # 	controlUnit
-# End time: 23:36:22 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 17:11:23 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/instructionMemory.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:36:22 on Feb 01,2025
+# Start time: 17:11:23 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/instructionMemory.v 
 # -- Compiling module instructionMemory
 # 
 # Top level modules:
 # 	instructionMemory
-# End time: 23:36:22 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 17:11:23 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/InstructionQueue.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:36:22 on Feb 01,2025
+# Start time: 17:11:23 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/InstructionQueue.v 
 # -- Compiling module InstructionQueue
 # 
 # Top level modules:
 # 	InstructionQueue
-# End time: 23:36:22 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 17:11:23 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/mux2x1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:36:22 on Feb 01,2025
+# Start time: 17:11:23 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/mux2x1.v 
 # -- Compiling module mux2x1
 # -- Compiling module mux4x1
@@ -824,11 +813,11 @@ vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/I
 # Top level modules:
 # 	mux2x1
 # 	mux4x1
-# End time: 23:36:22 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 17:11:23 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/mux2x1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:36:22 on Feb 01,2025
+# Start time: 17:11:23 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/mux2x1.v 
 # -- Compiling module mux2x1
 # -- Compiling module mux4x1
@@ -836,87 +825,87 @@ vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/I
 # Top level modules:
 # 	mux2x1
 # 	mux4x1
-# End time: 23:36:22 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 17:11:23 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/processor.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:36:22 on Feb 01,2025
+# Start time: 17:11:23 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/processor.v 
 # -- Compiling module processor
 # 
 # Top level modules:
 # 	processor
-# End time: 23:36:22 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 17:11:23 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/programCounter.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:36:22 on Feb 01,2025
+# Start time: 17:11:23 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/programCounter.v 
 # -- Compiling module programCounter
 # 
 # Top level modules:
 # 	programCounter
-# End time: 23:36:22 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 17:11:23 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/RAT.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:36:22 on Feb 01,2025
+# Start time: 17:11:23 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/RAT.v 
 # -- Compiling module RAT
 # 
 # Top level modules:
 # 	RAT
-# End time: 23:36:22 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 17:11:23 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/registerFile.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:36:22 on Feb 01,2025
+# Start time: 17:11:23 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/registerFile.v 
 # -- Compiling module registerFile
 # 
 # Top level modules:
 # 	registerFile
-# End time: 23:36:22 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 17:11:23 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/reservation_station.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:36:22 on Feb 01,2025
+# Start time: 17:11:23 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/reservation_station.v 
 # -- Compiling module reservation_station
 # 
 # Top level modules:
 # 	reservation_station
-# End time: 23:36:22 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 17:11:23 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/ROB.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:36:22 on Feb 01,2025
+# Start time: 17:11:23 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/ROB.v 
 # -- Compiling module ROB
 # 
 # Top level modules:
 # 	ROB
-# End time: 23:36:22 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 17:11:24 on Feb 02,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/SignExtender.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:36:23 on Feb 01,2025
+# Start time: 17:11:24 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/SignExtender.v 
 # -- Compiling module SignExtender
 # 
 # Top level modules:
 # 	SignExtender
-# End time: 23:36:23 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 17:11:24 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:36:23 on Feb 01,2025
+# Start time: 17:11:24 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v 
 # -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 23:36:23 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 17:11:24 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 restart
 # Loading work.testbench
@@ -944,57 +933,57 @@ run -all
 # Break in Module testbench at C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v line 12
 vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/adder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:38:33 on Feb 01,2025
+# Start time: 17:14:37 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/adder.v 
 # -- Compiling module adder
 # 
 # Top level modules:
 # 	adder
-# End time: 23:38:33 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 17:14:37 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/ALU.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:38:34 on Feb 01,2025
+# Start time: 17:14:37 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/ALU.v 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 23:38:34 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 17:14:37 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/controlUnit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:38:34 on Feb 01,2025
+# Start time: 17:14:37 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/controlUnit.v 
 # -- Compiling module controlUnit
 # 
 # Top level modules:
 # 	controlUnit
-# End time: 23:38:34 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 17:14:37 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/instructionMemory.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:38:34 on Feb 01,2025
+# Start time: 17:14:37 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/instructionMemory.v 
 # -- Compiling module instructionMemory
 # 
 # Top level modules:
 # 	instructionMemory
-# End time: 23:38:34 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 17:14:37 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/InstructionQueue.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:38:34 on Feb 01,2025
+# Start time: 17:14:37 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/InstructionQueue.v 
 # -- Compiling module InstructionQueue
 # 
 # Top level modules:
 # 	InstructionQueue
-# End time: 23:38:34 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 17:14:37 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/mux2x1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:38:34 on Feb 01,2025
+# Start time: 17:14:37 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/mux2x1.v 
 # -- Compiling module mux2x1
 # -- Compiling module mux4x1
@@ -1002,11 +991,11 @@ vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/I
 # Top level modules:
 # 	mux2x1
 # 	mux4x1
-# End time: 23:38:34 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 17:14:37 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/mux2x1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:38:34 on Feb 01,2025
+# Start time: 17:14:37 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/mux2x1.v 
 # -- Compiling module mux2x1
 # -- Compiling module mux4x1
@@ -1014,87 +1003,420 @@ vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/I
 # Top level modules:
 # 	mux2x1
 # 	mux4x1
-# End time: 23:38:34 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 17:14:37 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/processor.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:38:34 on Feb 01,2025
+# Start time: 17:14:37 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/processor.v 
 # -- Compiling module processor
 # 
 # Top level modules:
 # 	processor
-# End time: 23:38:34 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 17:14:37 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/programCounter.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:38:34 on Feb 01,2025
+# Start time: 17:14:37 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/programCounter.v 
 # -- Compiling module programCounter
 # 
 # Top level modules:
 # 	programCounter
-# End time: 23:38:34 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 17:14:38 on Feb 02,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/RAT.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:38:34 on Feb 01,2025
+# Start time: 17:14:38 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/RAT.v 
 # -- Compiling module RAT
 # 
 # Top level modules:
 # 	RAT
-# End time: 23:38:34 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 17:14:38 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/registerFile.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:38:34 on Feb 01,2025
+# Start time: 17:14:38 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/registerFile.v 
 # -- Compiling module registerFile
 # 
 # Top level modules:
 # 	registerFile
-# End time: 23:38:34 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 17:14:38 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/reservation_station.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:38:34 on Feb 01,2025
+# Start time: 17:14:38 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/reservation_station.v 
 # -- Compiling module reservation_station
 # 
 # Top level modules:
 # 	reservation_station
-# End time: 23:38:34 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 17:14:38 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/ROB.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:38:34 on Feb 01,2025
+# Start time: 17:14:38 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/ROB.v 
 # -- Compiling module ROB
 # 
 # Top level modules:
 # 	ROB
-# End time: 23:38:34 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 17:14:38 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/SignExtender.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:38:34 on Feb 01,2025
+# Start time: 17:14:38 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/SignExtender.v 
 # -- Compiling module SignExtender
 # 
 # Top level modules:
 # 	SignExtender
-# End time: 23:38:34 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 17:14:38 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 23:38:34 on Feb 01,2025
+# Start time: 17:14:38 on Feb 02,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v 
 # -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 23:38:34 on Feb 01,2025, Elapsed time: 0:00:00
+# End time: 17:14:38 on Feb 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Break key hit
+restart
+# Loading work.testbench
+# Loading work.processor
+# Loading work.adder
+# Loading work.programCounter
+# Loading work.instructionMemory
+# Loading work.InstructionQueue
+# Loading work.controlUnit
+# Loading work.mux2x1
+# Loading work.SignExtender
+# Loading work.ROB
+# Loading work.RAT
+# Loading work.registerFile
+# Loading work.reservation_station
+# Loading work.ALU
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v(17): [PCDPC] - Port size (10) does not match connection size (8) for port 'PC'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/processor.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/processor.v
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v(12)
+#    Time: 1004 ns  Iteration: 0  Instance: /testbench
+# Break in Module testbench at C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v line 12
+vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/adder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:17 on Feb 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/adder.v 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 17:15:17 on Feb 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/ALU.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:17 on Feb 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/ALU.v 
+# -- Compiling module ALU
+# ** Error: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/ALU.v(46): Incorrect number of arguments in $signed function.
+# ** Error: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/ALU.v(46): Verilog Compiler exiting
+# End time: 17:15:17 on Feb 02,2025, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# C:/intelFPGA/18.1/modelsim_ase/win32aloem/vlog failed.
+vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/controlUnit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:17 on Feb 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/controlUnit.v 
+# -- Compiling module controlUnit
+# 
+# Top level modules:
+# 	controlUnit
+# End time: 17:15:17 on Feb 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/instructionMemory.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:17 on Feb 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/instructionMemory.v 
+# -- Compiling module instructionMemory
+# 
+# Top level modules:
+# 	instructionMemory
+# End time: 17:15:17 on Feb 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/InstructionQueue.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:17 on Feb 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/InstructionQueue.v 
+# -- Compiling module InstructionQueue
+# 
+# Top level modules:
+# 	InstructionQueue
+# End time: 17:15:17 on Feb 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/mux2x1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:17 on Feb 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/mux2x1.v 
+# -- Compiling module mux2x1
+# -- Compiling module mux4x1
+# 
+# Top level modules:
+# 	mux2x1
+# 	mux4x1
+# End time: 17:15:17 on Feb 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/mux2x1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:17 on Feb 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/mux2x1.v 
+# -- Compiling module mux2x1
+# -- Compiling module mux4x1
+# 
+# Top level modules:
+# 	mux2x1
+# 	mux4x1
+# End time: 17:15:17 on Feb 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/processor.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:17 on Feb 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/processor.v 
+# -- Compiling module processor
+# 
+# Top level modules:
+# 	processor
+# End time: 17:15:17 on Feb 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/programCounter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:17 on Feb 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/programCounter.v 
+# -- Compiling module programCounter
+# 
+# Top level modules:
+# 	programCounter
+# End time: 17:15:18 on Feb 02,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/RAT.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:18 on Feb 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/RAT.v 
+# -- Compiling module RAT
+# 
+# Top level modules:
+# 	RAT
+# End time: 17:15:18 on Feb 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/registerFile.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:18 on Feb 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/registerFile.v 
+# -- Compiling module registerFile
+# 
+# Top level modules:
+# 	registerFile
+# End time: 17:15:18 on Feb 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/reservation_station.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:18 on Feb 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/reservation_station.v 
+# -- Compiling module reservation_station
+# 
+# Top level modules:
+# 	reservation_station
+# End time: 17:15:18 on Feb 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/ROB.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:18 on Feb 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/ROB.v 
+# -- Compiling module ROB
+# 
+# Top level modules:
+# 	ROB
+# End time: 17:15:18 on Feb 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/SignExtender.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:18 on Feb 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/SignExtender.v 
+# -- Compiling module SignExtender
+# 
+# Top level modules:
+# 	SignExtender
+# End time: 17:15:18 on Feb 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:18 on Feb 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 17:15:18 on Feb 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/adder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:40 on Feb 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/adder.v 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 17:15:40 on Feb 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/ALU.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:40 on Feb 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/ALU.v 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 17:15:40 on Feb 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/controlUnit.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:40 on Feb 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/controlUnit.v 
+# -- Compiling module controlUnit
+# 
+# Top level modules:
+# 	controlUnit
+# End time: 17:15:40 on Feb 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/instructionMemory.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:40 on Feb 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/instructionMemory.v 
+# -- Compiling module instructionMemory
+# 
+# Top level modules:
+# 	instructionMemory
+# End time: 17:15:40 on Feb 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/InstructionQueue.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:40 on Feb 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/InstructionQueue.v 
+# -- Compiling module InstructionQueue
+# 
+# Top level modules:
+# 	InstructionQueue
+# End time: 17:15:40 on Feb 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/mux2x1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:40 on Feb 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/mux2x1.v 
+# -- Compiling module mux2x1
+# -- Compiling module mux4x1
+# 
+# Top level modules:
+# 	mux2x1
+# 	mux4x1
+# End time: 17:15:40 on Feb 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/mux2x1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:40 on Feb 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/mux2x1.v 
+# -- Compiling module mux2x1
+# -- Compiling module mux4x1
+# 
+# Top level modules:
+# 	mux2x1
+# 	mux4x1
+# End time: 17:15:40 on Feb 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/processor.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:40 on Feb 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/processor.v 
+# -- Compiling module processor
+# 
+# Top level modules:
+# 	processor
+# End time: 17:15:40 on Feb 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/programCounter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:40 on Feb 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/programCounter.v 
+# -- Compiling module programCounter
+# 
+# Top level modules:
+# 	programCounter
+# End time: 17:15:41 on Feb 02,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/RAT.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:41 on Feb 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/RAT.v 
+# -- Compiling module RAT
+# 
+# Top level modules:
+# 	RAT
+# End time: 17:15:41 on Feb 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/registerFile.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:41 on Feb 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/registerFile.v 
+# -- Compiling module registerFile
+# 
+# Top level modules:
+# 	registerFile
+# End time: 17:15:41 on Feb 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/reservation_station.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:41 on Feb 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/reservation_station.v 
+# -- Compiling module reservation_station
+# 
+# Top level modules:
+# 	reservation_station
+# End time: 17:15:41 on Feb 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/ROB.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:41 on Feb 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/ROB.v 
+# -- Compiling module ROB
+# 
+# Top level modules:
+# 	ROB
+# End time: 17:15:41 on Feb 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/SignExtender.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:41 on Feb 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/SignExtender.v 
+# -- Compiling module SignExtender
+# 
+# Top level modules:
+# 	SignExtender
+# End time: 17:15:41 on Feb 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt} {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:15:41 on Feb 02,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 17:15:41 on Feb 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 restart
 # Loading work.testbench
@@ -1120,75 +1442,5 @@ run -all
 # ** Note: $stop    : C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v(12)
 #    Time: 1004 ns  Iteration: 0  Instance: /testbench
 # Break in Module testbench at C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v line 12
-add wave -position 5  sim:/testbench/uut/IQ/head
-add wave -position 6  sim:/testbench/uut/IQ/tail
-add wave -position 5  sim:/testbench/uut/IQ/empty
-add wave -position 6  sim:/testbench/uut/IQ/full
-restart
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v(17): [PCDPC] - Port size (10) does not match connection size (8) for port 'PC'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/processor.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/processor.v
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v(12)
-#    Time: 1004 ns  Iteration: 0  Instance: /testbench
-# Break in Module testbench at C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v line 12
-add wave -position 3  sim:/testbench/uut/IQ/enqueue
-restart
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v(17): [PCDPC] - Port size (10) does not match connection size (8) for port 'PC'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/processor.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/processor.v
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v(12)
-#    Time: 1004 ns  Iteration: 0  Instance: /testbench
-# Break in Module testbench at C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v line 12
-add wave -position 3  sim:/testbench/uut/IQ/stall
-run -all
-restart
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v(17): [PCDPC] - Port size (10) does not match connection size (8) for port 'PC'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/processor.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/processor.v
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v(12)
-#    Time: 1004 ns  Iteration: 0  Instance: /testbench
-# Break in Module testbench at C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v line 12
-add wave -position 147  sim:/testbench/uut/alu1/shamt
-restart
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v(17): [PCDPC] - Port size (10) does not match connection size (8) for port 'PC'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/processor.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/processor.v
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v(12)
-#    Time: 1004 ns  Iteration: 0  Instance: /testbench
-# Break in Module testbench at C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v line 12
-add wave -position end  sim:/testbench/uut/alu2/result
-add wave -position 157  sim:/testbench/uut/alu2/operand1
-add wave -position 158  sim:/testbench/uut/alu2/operand2
-restart
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v(17): [PCDPC] - Port size (10) does not match connection size (8) for port 'PC'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/processor.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/processor.v
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/simulation/questa/wave.do}
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# ** Note: $stop    : C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v(12)
-#    Time: 1004 ns  Iteration: 0  Instance: /testbench
-# Break in Module testbench at C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/testbench.v line 12
-# WARNING: No extended dataflow license exists
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
-# End time: 00:00:53 on Feb 02,2025, Elapsed time: 0:35:50
-# Errors: 7, Warnings: 10
+# End time: 17:35:00 on Feb 02,2025, Elapsed time: 0:36:11
+# Errors: 3, Warnings: 4
