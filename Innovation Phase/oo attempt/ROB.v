@@ -16,15 +16,12 @@ reg [4:0] dest_regs [31:0];
 reg [31:0] values [31:0];
 reg [31:0] ready;
 reg [4:0] issue_p, commit_p;
-
-
 always @(*) begin : name2
 		full = (commit_p == (issue_p + 1) % QUEUE_SIZE);
 		tag = issue_p;
 		if(~full && issue) write_rat = 1'b1; //Write on RAT
 		else write_rat=0;
 end
-
 always @(posedge clk, negedge rst) begin : name
 	integer i;
 	
@@ -69,15 +66,6 @@ always @(posedge clk, negedge rst) begin : name
 			end
 			else commit_p = (commit_p + 5'd1)%32;
 		end
-		
-		
-		
 	end
-	
-
 end
-
-
-
-
 endmodule
