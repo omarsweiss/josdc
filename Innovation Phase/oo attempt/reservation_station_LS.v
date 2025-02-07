@@ -73,7 +73,7 @@ module reservation_station_LS(
 			if (write) begin
 				 sw[issue_p] = mem_write;
 				 immediate[issue_p] = imm;
-				 data_tag[issue_p] = rt_tag;
+				 data_tag[issue_p] = mem_write ? rt_tag : sw_tag_in;
 				 busy[issue_p] = 1'b1;
 				 sw_tags[issue_p] = sw_tag_in;
 				 if(mem_write && data_r)begin
@@ -137,7 +137,8 @@ module reservation_station_LS(
 				sw_tag_out = sw_tags[disp_p];
 				if ((~commit_sw1 && busy[(disp_p + 1)%8] && ready[(disp_p + 1)%8][0] && (~sw[(disp_p + 1)%8] || ready[(disp_p + 1)%8][1])) && ~((immediate[disp_p] + reg_addr[disp_p]) == (immediate[(disp_p + 1)%8] + reg_addr[(disp_p + 1)%8]))) begin
 					disp2 = 1'b1;
-					mem_write_out2 = sw [(disp_p + 1)%8];
+					
+					mem_write_out2 = sw[(disp_p + 1)%8];
 					address_out2 = immediate[(disp_p + 1)%8] + reg_addr[(disp_p + 1)%8];
 					data_out2 = data[(disp_p + 1)%8];
 					dest_out2 = data_tag[(disp_p + 1)%8];

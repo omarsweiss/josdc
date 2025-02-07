@@ -63,14 +63,20 @@ module store_buffer(
         data[disp_p] <= data_in;
 		  busy[disp_p] <= 1'b1;
         if (sw_in2)begin
-			address[(disp_p + 1) % 8] <= address_in;
-			data[(disp_p + 1) % 8] <= data_in;
+			address[(disp_p + 1) % 8] <= address_in2;
+			data[(disp_p + 1) % 8] <= data_in2;
 			busy[(disp_p + 1) % 8] <= 1'b1;
 			disp_p <= disp_p + 3'd2;
 			end
 		  else disp_p <= disp_p + 3'd1;
       end
-
+		
+		if (sw_in2 && ~sw_in1)begin
+			address[disp_p] <= address_in2;
+			data[disp_p ] <= data_in2;
+			busy[disp_p ] <= 1'b1;
+			disp_p <= disp_p + 3'd1;
+		end
 		
 		
       // Dispatch logic
@@ -101,14 +107,14 @@ module store_buffer(
     
       // Commit logic
       if (commit) begin
-          sw_out <= 1'b1;
-          data_out <= data[commit_p];
-          address_out <= address[commit_p];
+          sw_out2 <= 1'b1;
+          data_out2 <= data[commit_p];
+          address_out2 <= address[commit_p];
 			 busy[commit_p] <=0;
 		  if(commit2)begin
-				sw_out2 <= 1'b1;
-				data_out2 <= data[(commit_p + 1) % 8];
-				address_out2 <= address[(commit_p + 1) % 8];
+				sw_out <= 1'b1;
+				data_out <= data[(commit_p + 1) % 8];
+				address_out <= address[(commit_p + 1) % 8];
 				busy[(commit_p + 1) % 8] <=0;
 				commit_p <= commit_p + 3'd2;
 		  end

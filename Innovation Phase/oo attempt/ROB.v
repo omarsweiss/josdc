@@ -85,15 +85,16 @@ always @(posedge clk, negedge rst) begin : name
 			commit_addr = dest_regs[commit_p];
 			commit_val = values [commit_p];
 			commit_SW = store[commit_p];
-			commit1 = 1'b1;
+			commit1 = ~commit_SW ;
 			ready[commit_p] = 1'b0;
 			if (ready[(commit_p + 5'd1)%32] == 1) begin
 				commit_addr2 = dest_regs[(commit_p + 5'd1)%32];
 				commit_val2 = values [(commit_p + 5'd1)%32];
 				commit_SW2 = store[(commit_p + 5'd1)%32];
-				commit_p = commit_p +5'd2;
-				commit2 = 1'b1;
-				ready[(commit_p + 5'd1)%32] = 1'b0; 
+				
+				commit2 =  ~commit_SW2 ;
+				ready[(commit_p + 5'd1)%32] = 1'b0;
+				commit_p = commit_p +5'd2;	
 			end
 			else commit_p = commit_p + 5'd1;
 		end
