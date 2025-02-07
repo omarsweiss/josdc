@@ -1,13 +1,13 @@
  module controlUnit(opCode, funct,
 				   RegDst, Branch, MemReadEn, MemtoReg,
-				   ALUOp, MemWriteEn, RegWriteEn, ALUSrc,bne,jump,jal,jr); //I type and J type instructions are missing, and added bne for bneq instruction, added jump ctrl signal, added jr ctrl signal
+				   ALUOp, MemWriteEn, RegWriteEn, ALUSrc,bne,jump,jal,jr, arithmetic); //I type and J type instructions are missing, and added bne for bneq instruction, added jump ctrl signal, added jr ctrl signal
 				   
 		
 	// inputs 
 	input wire [5:0] opCode, funct;
 	
 	// outputs (signals)
-	output reg RegDst, Branch, MemReadEn, MemtoReg, MemWriteEn, RegWriteEn, ALUSrc,bne,jump,jal,jr;
+	output reg RegDst, Branch, MemReadEn, MemtoReg, MemWriteEn, RegWriteEn, ALUSrc,bne,jump,jal,jr, arithmetic;
 	output reg [3:0] ALUOp;//Changed to 4 bits accomodate the added R-type instructions
 	
 	// parameters (opCodes/functs)
@@ -19,7 +19,7 @@
 	// unit logic - generate signals
 	
 	always @(*) begin
-	
+		arithmetic = 1'b0;
 		RegDst = 1'b0; Branch = 1'b0; MemReadEn = 1'b0; MemtoReg = 1'b0;
 		MemWriteEn = 1'b0; RegWriteEn = 1'b0; ALUSrc = 1'b0;
 		ALUOp = 3'b0; bne = 1'b0; jump = 1'b0; jal = 1'b0; jr = 1'b0;
@@ -27,7 +27,7 @@
 		case(opCode)
 				
 			_RType : begin
-				
+				arithmetic= 1'b1;
 				
 				
 					
@@ -140,6 +140,7 @@
 						bne = 1'b0;
 						jal = 1'b0;
 						jr = 1'b1; //sus
+						arithmetic = 1'b0;
 					end
 					default: ;
 					
@@ -149,13 +150,15 @@
 				
 			_addi : begin
 				RegDst = 1'b0;
+				arithmetic= 1'b1;
 				Branch = 1'b0;
 				MemReadEn = 1'b0;
 				MemtoReg = 1'b0;
 				ALUOp = 4'b0000;
 				MemWriteEn = 1'b0;
 				RegWriteEn = 1'b1;
-				ALUSrc = 1'b1;				
+				ALUSrc = 1'b1;	
+					
 			end
 				
 			_lw : begin
@@ -194,6 +197,7 @@
 			end
 			_ori_ : begin
 				RegDst = 1'b0;
+				arithmetic= 1'b1;
 				Branch = 1'b0;
 				MemReadEn = 1'b0;
 				MemtoReg = 1'b0;
@@ -204,6 +208,7 @@
 			end
 			_xori_ : begin//added i-type
 				RegDst = 1'b0;
+				arithmetic= 1'b1;
 				Branch = 1'b0;
 				MemReadEn = 1'b0;
 				MemtoReg = 1'b0;
@@ -215,6 +220,7 @@
 			
 		   _andi_ : begin
 				RegDst = 1'b0;
+				arithmetic= 1'b1;
 				Branch = 1'b0;
 				MemReadEn = 1'b0;
 				MemtoReg = 1'b0;
@@ -225,6 +231,7 @@
 			end	
 			_slti_ : begin
 				RegDst = 1'b0;
+				arithmetic= 1'b1;
 				Branch = 1'b0;
 				MemReadEn = 1'b0;
 				MemtoReg = 1'b0;

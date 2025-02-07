@@ -1,0 +1,148 @@
+module LSQ(
+input clk, rst, ld_in, sw_in, reg_ready, data_ready, commit,
+input [31:0] offset,
+input [31:0] reg_val, data_val, alu_res1, alu_res2, ld_res,
+input [4:0] data_reg, addr_reg,alu_res_tag,alu_res_tag2, ld_res_tag
+output sw_out, ld_out, full, ld_found,
+output [4:0] dest_reg,
+output [31:0] address_out, data_out
+);
+
+
+
+reg [4:0] rs [7:0];
+reg [4:0] rt [7:0];
+reg [31:0] imm [7:0];
+reg [31:0] data [7:0];
+reg [31:0] reg_values [7:0]; 
+reg [31:0] final_addr [7:0];
+reg [7:0] sw,ld;
+reg [1:0] ready [7:0];
+reg [2:0] issue_p, commit_p;
+reg disp_found;
+
+always @(posedge clk, negedge rst) begin
+	integer i,k;
+	if(~rst) begin
+		issue_p = 0;
+		commit_p = 0;
+		for(i = 0; i < 8; i = i + 1) begin 
+			rs[i] = 0;
+			rt[i] = 0;
+			imm[i] = 0;
+			data[i] = 0;
+			reg_values[i] = 0;
+			sw[i] = 0;
+			ld[i] = 0;
+			ready[i] = 0;
+			final_addr[i] = 0;
+		end
+	else begin 
+	
+			//issue in LSQ
+		if(sw_in) begin 
+			sw[issue_p] = 1'b1;
+			ld[issue_p] = 1'b0;
+			imm[issue_p] = offset;
+			if(data_ready) begin
+				data[issue_p] = data_val;
+				ready[issue_p][1] = 1'b1;
+			else rt[issue_p] = rt_in;
+			if(reg_ready) begin
+				ready[issue_p][0] = 1'b1;
+				reg_values[issue_p] = reg_val;
+				final_addr[issue_p] = offset + reg_val;
+				end
+ 			else rs[issue_p] = rs_in;
+			isuue_p = (issue_p + 8'b1) % 8;
+		end
+		if(ld_in) begin 
+			sw[issue_p] = 1'b0;
+			ld[issue_p] = 1'b1;
+			imm[issue_p] = offset;
+			rt[issue_p] = rt_in;
+			if(reg_ready) begin 
+				reg_values[issue_p] = reg_val;
+				final_addr[issue_p] = offset + reg_val;
+				ld_r[issue_p] = 1'b1;
+				end
+			else rs[issue_p] = rs_in;
+			isuue_p = (issue_p + 8'b1) % 8;
+		end
+		
+		
+		for (k = 0; k < 8; k = k + 1) begin //broadcast
+			 if (sw[k] || ld[k]) begin
+				  if (alu_res_tag == rs[k] && ~ready[k][0]) begin
+						reg_values[k] = alu_res1;
+						final_addr[k] = imm[k] + alu_res1;
+						ready[k][0] = 1;
+				  end
+				  if (alu_res_tag == rt[k]&& ~ready[k][1] && sw[k]) begin
+						data[k] = alu_res;
+						ready[k][1] = 1;
+				  end
+				  if (alu_res_tag2 == rs[k] && ~ready[k][0]) begin
+						reg_values[k] = alu_res2;
+						final_addr[k] = imm[k] + alu_res2;
+						ready[k][0] = 1;
+				  end
+				  if (alu_res_tag == rt[k]&& ~ready[k][1] && sw[k]) begin
+						data[k] = alu_res;
+						ready[k][1] = 1;
+				  end
+				  if (ld_res_tag == rs[k] && ~ready[k][0]) begin
+						reg_values[k] = ld_res;
+						final_addr[k] = imm[k] + alu_res1;
+						ready[k][0] = 1;
+				  end
+				  if (ld_res_tag == rt[k]&& ~ready[k][1] && sw[k]) begin
+						data[k] = ld_res;
+						ready[k][1] = 1;
+				  end
+			 end
+			 
+		
+			if(sw[commit_p] && commit) begin
+				data_out = data[commit_p];
+				address_out = final_addr[commit_p];
+				sw_out = 1'b1;
+				ld_out = 0;
+				commit_p = (commit_p +1)%8;
+			end
+			 else begin
+				for (j = 0; j < 8; j = j + 1) begin //load dispatch
+					
+					if(ld[(commit + j)%8] && ready[(commit_p + j)%8][0] && ~break) begin
+						ld_found = 0;
+						ld_out = 1'b1;
+						address_out = final_addr[(commit + j)%8];
+						dest_reg = rt[(commit + j)%8];
+						for(w = 1; w < 8; w = w + 1) begin
+							if(final_addr[(commit_p + j)%8] == final_addr[(commit_p + j -w)%8] && sw[(commit_p + j -w)%8] &&ready[(commit_p + j -w)%8][0] && ready[(commit_p + j -w)%8][1] && ~break2)
+								data_out = data[(commit_p + j -w)%8];
+								ld_found = 1'b1;
+							end
+							if(j == w) break2 = 1'b1;
+						end
+					end
+					if(issue_p  == (commit_p + j)%8) break = 1'b1;
+				end
+			end
+			
+			if(commit && ld[commit_p])begin
+				commit_p = (commit_p +1)%8;
+			end
+		
+	
+		
+	end
+
+
+
+
+
+
+
+
+endmodule
