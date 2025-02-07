@@ -1,8 +1,8 @@
 module RAT (
 input clk,rst, write, free, free2,
 input [4:0] dest_in, tag_in, rs_in, rt_in, tag_done, tag_done2,
-output [4:0] rs_out, rt_out,
-output wire allocated_rs, allocated_rt
+output  reg [4:0] rs_out, rt_out,
+output reg allocated_rs, allocated_rt
 );
 
 reg [4:0] tags [31:0];
@@ -18,11 +18,9 @@ always @(posedge clk, negedge rst) begin : name
 			allocated[i] = 1'b0;
 		end
 	end
-	else begin 
-		if (write) begin
-			tags[dest_in] = tag_in;
-			allocated[dest_in] = 1'b1; 
-		end
+	else begin
+		rs_out = tags[rs_in];
+		rt_out = tags[rt_in];
 		if (free && allocated[tag_done] == 1) begin
 			allocated[tag_done] = 0;
 			tags[tag_done] = tag_done;
@@ -32,12 +30,17 @@ always @(posedge clk, negedge rst) begin : name
 			tags[tag_done2] = tag_done;
 		end
 		else;
+
+		if (write) begin
+			tags[dest_in] = tag_in;
+			allocated[dest_in] = 1'b1; 
+		end		
+		
+		allocated_rs = allocated[rs_in];
+		allocated_rt = allocated[rt_in];
 	end 
 end
 
-assign rs_out = tags[rs_in];
-assign rt_out = tags[rt_in];
-assign allocated_rs = allocated[rs_in];
-assign allocated_rt = allocated[rt_in];
+
 
 endmodule

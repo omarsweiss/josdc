@@ -1,22 +1,19 @@
-|testbench
-
-
-|testbench|processor:uut
+|processor
 clk => clk.IN5
 rst => rst.IN6
-PC[0] <= PC[0].DB_MAX_OUTPUT_PORT_TYPE
-PC[1] <= PC[1].DB_MAX_OUTPUT_PORT_TYPE
-PC[2] <= PC[2].DB_MAX_OUTPUT_PORT_TYPE
-PC[3] <= PC[3].DB_MAX_OUTPUT_PORT_TYPE
-PC[4] <= PC[4].DB_MAX_OUTPUT_PORT_TYPE
-PC[5] <= PC[5].DB_MAX_OUTPUT_PORT_TYPE
-PC[6] <= PC[6].DB_MAX_OUTPUT_PORT_TYPE
-PC[7] <= PC[7].DB_MAX_OUTPUT_PORT_TYPE
-PC[8] <= PC[8].DB_MAX_OUTPUT_PORT_TYPE
-PC[9] <= PC[9].DB_MAX_OUTPUT_PORT_TYPE
+PC[0] << PC[0].DB_MAX_OUTPUT_PORT_TYPE
+PC[1] << PC[1].DB_MAX_OUTPUT_PORT_TYPE
+PC[2] << PC[2].DB_MAX_OUTPUT_PORT_TYPE
+PC[3] << PC[3].DB_MAX_OUTPUT_PORT_TYPE
+PC[4] << PC[4].DB_MAX_OUTPUT_PORT_TYPE
+PC[5] << PC[5].DB_MAX_OUTPUT_PORT_TYPE
+PC[6] << PC[6].DB_MAX_OUTPUT_PORT_TYPE
+PC[7] << PC[7].DB_MAX_OUTPUT_PORT_TYPE
+PC[8] << PC[8].DB_MAX_OUTPUT_PORT_TYPE
+PC[9] << PC[9].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|testbench|processor:uut|adder:PCAdder
+|processor|adder:PCAdder
 in1[0] => Add0.IN10
 in1[1] => Add0.IN9
 in1[2] => Add0.IN8
@@ -49,7 +46,7 @@ out[8] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 out[9] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|testbench|processor:uut|programCounter:pc
+|processor|programCounter:pc
 clk => PCout[0]~reg0.CLK
 clk => PCout[1]~reg0.CLK
 clk => PCout[2]~reg0.CLK
@@ -102,7 +99,7 @@ PCout[8] <= PCout[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 PCout[9] <= PCout[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|testbench|processor:uut|instructionMemory:IM
+|processor|instructionMemory:IM
 address[0] => address[0].IN1
 address[1] => address[1].IN1
 address[2] => address[2].IN1
@@ -148,7 +145,7 @@ q[30] <= altsyncram:altsyncram_component.q_a
 q[31] <= altsyncram:altsyncram_component.q_a
 
 
-|testbench|processor:uut|instructionMemory:IM|altsyncram:altsyncram_component
+|processor|instructionMemory:IM|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -247,7 +244,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|testbench|processor:uut|instructionMemory:IM|altsyncram:altsyncram_component|altsyncram_11g1:auto_generated
+|processor|instructionMemory:IM|altsyncram:altsyncram_component|altsyncram_11g1:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -634,7 +631,7 @@ q_a[30] <= ram_block1a30.PORTADATAOUT
 q_a[31] <= ram_block1a31.PORTADATAOUT
 
 
-|testbench|processor:uut|InstructionQueue:IQ
+|processor|InstructionQueue:IQ
 clk => valid[7].CLK
 clk => valid[6].CLK
 clk => valid[5].CLK
@@ -1540,7 +1537,7 @@ write <= write~reg0.DB_MAX_OUTPUT_PORT_TYPE
 empty <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|testbench|processor:uut|controlUnit:cu
+|processor|controlUnit:cu
 opCode[0] => Decoder1.IN5
 opCode[1] => Decoder1.IN4
 opCode[2] => Decoder1.IN3
@@ -1570,7 +1567,7 @@ jal <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
 jr <= jr.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|testbench|processor:uut|mux2x1:immMux
+|processor|mux2x1:immMux
 in1[0] => out.DATAB
 in1[1] => out.DATAB
 in1[2] => out.DATAB
@@ -1593,7 +1590,7 @@ out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[4] <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|testbench|processor:uut|SignExtender:se
+|processor|SignExtender:se
 in[0] => out[0].DATAIN
 in[1] => out[1].DATAIN
 in[2] => out[2].DATAIN
@@ -1660,7 +1657,7 @@ out[30] <= in[15].DB_MAX_OUTPUT_PORT_TYPE
 out[31] <= in[15].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|testbench|processor:uut|ROB:rob
+|processor|ROB:rob
 clk => commit2~reg0.CLK
 clk => commit_val2[0]~reg0.CLK
 clk => commit_val2[1]~reg0.CLK
@@ -8681,7 +8678,7 @@ commit2 <= commit2~reg0.DB_MAX_OUTPUT_PORT_TYPE
 write_rat <= always1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|testbench|processor:uut|RAT:rat
+|processor|RAT:rat
 clk => allocated[0].CLK
 clk => allocated[1].CLK
 clk => allocated[2].CLK
@@ -9839,7 +9836,7 @@ allocated_rs <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
 allocated_rt <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|testbench|processor:uut|registerFile:rf
+|processor|registerFile:rf
 clk => registers[31][0].CLK
 clk => registers[31][1].CLK
 clk => registers[31][2].CLK
@@ -16380,7 +16377,7 @@ readData2[30] <= Mux33.DB_MAX_OUTPUT_PORT_TYPE
 readData2[31] <= Mux32.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|testbench|processor:uut|mux2x1:immVal
+|processor|mux2x1:immVal
 in1[0] => out.DATAB
 in1[1] => out.DATAB
 in1[2] => out.DATAB
@@ -16511,7 +16508,7 @@ out[30] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[31] <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|testbench|processor:uut|reservation_station:rsarithmetic
+|processor|reservation_station:rsarithmetic
 clk => op2_2[0]~reg0.CLK
 clk => op2_2[1]~reg0.CLK
 clk => op2_2[2]~reg0.CLK
@@ -19333,7 +19330,7 @@ write_rob2 <= write_rob2~reg0.DB_MAX_OUTPUT_PORT_TYPE
 full <= WideAnd0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|testbench|processor:uut|ALU:alu1
+|processor|ALU:alu1
 operand1[0] => Add0.IN32
 operand1[0] => Add1.IN64
 operand1[0] => result.IN0
@@ -19955,7 +19952,7 @@ shamt[4] => ShiftLeft0.IN1
 shamt[4] => ShiftRight0.IN1
 
 
-|testbench|processor:uut|ALU:alu2
+|processor|ALU:alu2
 operand1[0] => Add0.IN32
 operand1[0] => Add1.IN64
 operand1[0] => result.IN0
