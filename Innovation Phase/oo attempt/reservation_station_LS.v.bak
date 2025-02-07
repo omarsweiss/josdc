@@ -1,0 +1,148 @@
+module reservation_station_LS(
+	 input clk, rst, data_r, reg_r, write, mem_write,
+    input [4:0] rs_tag, rt_tag, alu_res_tag, alu_res_tag2, ld_tag,
+    input [31:0] val1, val2,imm, alu_res, alu_res2, ld_res,
+    output reg [31:0] address_out, data_out,  
+    output reg [4:0] dest_out,
+    output reg mem_write_out,
+    output wire full
+);
+
+
+
+	 reg [4:0] rs [3:0];
+    reg [4:0] rt [3:0];
+    reg [3:0] SW;
+    reg [31:0] immediate [3:0];
+    reg [31:0] data [3:0];
+	 reg [31:0] reg_addr [3:0];
+    reg [3:0] busy;
+    reg [1:0] ready [3:0];
+    reg [1:0] pointer;
+    reg slot_found, disp_found;
+	 
+    assign full = &busy;  // Checks if all 4 entries are busy
+
+	
+	 always @(posedge clk or negedge rst) begin : name
+	  integer i, j, k, w;
+	  
+	  slot_found = 1'b0;
+	  if (~rst) begin
+			pointer = 0;
+			mem_write_out = 0;
+			for (i = 0; i < 4; i = i + 1) begin
+				 rs[i] = 0;
+				 rt[i] = 0;
+				 SW[i] = 0;
+				 immediate[i] = 0;
+				 data[i] = 0;
+				 reg_addr[i] = 0;
+				 ready[i] = 0;
+				 busy[i] = 0;
+				 ops[i] = 0;
+			end
+	  end 
+	  else begin
+			
+
+			// Dispatch Logic: Issue up to 2 ready instructions per cycle
+			disp_found = 0;
+			// Issue logic: Find an available slot and store instruction
+			if (write) begin
+				 for (j = 0; j < 4; j = j + 1) begin
+					  if (~busy[j] && ~slot_found) begin
+							immediate[j] = imm;
+							SW[j] = mem_write;
+							
+							if (reg_r) begin
+								 reg_addr[j] = val1;
+								 ready[j][0] = 1;
+							end else begin
+								 rs[j] = rs_tag;
+							end
+							
+							if (data_r && mem_write) begin
+								 data[j] = val2;
+								 ready[j][1] = 1;
+							end else begin
+								 rt[j] = rt_tag;
+							end
+							
+							busy[j] = 1;
+							slot_found = 1'b1;
+					  end
+				 end
+			end
+			// Broadcast logic: Check if an ALU result is available for any pending instruction
+			for (k = 0; k < 4; k = k + 1) begin
+				 if (busy[k]) begin
+					  if (alu_res_tag == rs[k] && ~ready[k][0]) begin
+							reg_addr[k] = alu_res;
+							ready[k][0] = 1;
+					  end
+					  if (alu_res_tag == rt[k]&& ~ready[k][1] && SW[k]) begin
+							data[k] = alu_res;
+							ready[k][1] = 1;
+					  end
+					  if (alu_res_tag2 == rs[k]&& ~ready[k][0]) begin
+							reg_addr[k] = alu_res2;
+							ready[k][0] = 1;
+					  end
+					  if (alu_res_tag2 == rt[k]&& ~ready[k][1] && SW[k]) begin
+							data[k] = alu_res2;
+							ready[k][1] = 1;
+					  end
+					  if (ld_tag == rs[k]&& ~ready[k][0]) begin
+							reg_addr[k] = ld_res;
+							ready[k][0] = 1;
+					  end
+					  if (ld_tag == rt[k]&& ~ready[k][1] && SW[k]) begin
+							data[k] = ld_res;
+							ready[k][1] = 1;
+					  end
+				 end
+			end
+			
+			
+			for (w = 0; w < 4; w = w + 1) begin
+				 if (ready[(pointer + w) % 4] == 2'b11 && SW[(pointer + w) % 4] && ~disp_found) begin
+					  
+					  address_out = reg_addr[(pointer + w) % 4] + immediate[(pointer + w) % 4];
+					  data_out = data[(pointer + w) % 4];
+					  mem_write_out = SW[(pointer + w) % 4];
+					  
+					  ready[(pointer + w) % 4] = 0;
+					  busy[(pointer + w) % 4] = 0;
+					  disp_found = 1;
+				 end 
+				 else if (ready[(pointer + w) % 4][0] && ~disp_found)begin
+						address_out = reg_addr[(pointer + w) % 4] + immediate[(pointer + w) % 4];
+					  dest_out = rt[(pointer + w) % 4];
+					  mem_write_out = SW[(pointer + w) % 4];
+					  
+					  ready[(pointer + w) % 4] = 0;
+					  busy[(pointer + w) % 4] = 0;
+					  disp_found = 1;
+				 end
+			end
+			pointer = (pointer + 1)%4;
+			if (~disp_found) begin
+				 dest_out = 0;
+				 op1 = 0;
+				 op2 = 0;
+				 control_out1 = 0;
+				 write_rob = 0;
+			end
+			
+
+			
+
+			
+			
+		end
+	end
+	
+	
+
+endmodule

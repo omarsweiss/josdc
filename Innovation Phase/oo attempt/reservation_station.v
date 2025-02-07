@@ -1,8 +1,8 @@
 module reservation_station (
-    input clk, rst, val1_r, val2_r, write,
-    input [4:0] rs_tag, rt_tag, dest_tag, alu_res_tag, alu_res_tag2,
+    input clk, rst, val1_r, val2_r, write, alu_w_r, alu_w_r2, ld_write, ld_write2,
+    input [4:0] rs_tag, rt_tag, dest_tag, alu_res_tag, alu_res_tag2, ld_tag,ld_tag2,
     input [8:0] control, 
-    input [31:0] val1, val2, alu_res, alu_res2,
+    input [31:0] val1, val2, alu_res, alu_res2, ld_value,ld_value2,
     output reg [31:0] op1, op2, op1_2, op2_2, 
     output reg [4:0] dest_out, dest_out2,
     output reg [8:0] control_out1, control_out2,
@@ -80,23 +80,40 @@ module reservation_station (
 				// Broadcast logic: Check if an ALU result is available for any pending instruction
             for (k = 0; k < 4; k = k + 1) begin
                 if (busy[k]) begin
-                    if (alu_res_tag == rs[k] && ~ready[k][0]) begin
+                    if (alu_res_tag == rs[k] && ~ready[k][0] && alu_w_r) begin
                         values1[k] = alu_res;
                         ready[k][0] = 1;
                     end
-                    if (alu_res_tag == rt[k]&& ~ready[k][1]) begin
+                    if (alu_res_tag == rt[k]&& ~ready[k][1] && alu_w_r) begin
                         values2[k] = alu_res;
                         ready[k][1] = 1;
                     end
-                    if (alu_res_tag2 == rs[k]&& ~ready[k][0]) begin
+                    if (alu_res_tag2 == rs[k]&& ~ready[k][0] && alu_w_r2) begin
                         values1[k] = alu_res2;
                         ready[k][0] = 1;
                     end
-                    if (alu_res_tag2 == rt[k]&& ~ready[k][1]) begin
+                    if (alu_res_tag2 == rt[k]&& ~ready[k][1] && alu_w_r2) begin
                         values2[k] = alu_res2;
                         ready[k][1] = 1;
                     end
+						  if (ld_tag == rs[k]&& ~ready[k][0] && ld_write) begin
+                        values1[k] = ld_value;
+                        ready[k][0] = 1;
+                    end
+                    if (ld_tag == rt[k]&& ~ready[k][1] && ld_write) begin
+                        values2[k] = ld_value;
+                        ready[k][1] = 1;
+                    end
+						  if (ld_tag2 == rs[k]&& ~ready[k][0] && ld_write2) begin
+                        values1[k] = ld_value2;
+                        ready[k][0] = 1;
+                    end
+                    if (ld_tag2 == rt[k]&& ~ready[k][1] && ld_write2) begin
+                        values2[k] = ld_value2;
+                        ready[k][1] = 1;
+                    end
                 end
+				end
             for (w = 0; w < 4; w = w + 1) begin
                 if (ready[(pointer + w) % 4] == 2'b11 && ~disp_found) begin
                     dest_out = dest[(pointer + w) % 4];
@@ -119,7 +136,7 @@ module reservation_station (
                     disp_found2 = 1;
                 end
             end
-				pointer = (pointer + 1)%4;
+				pointer = pointer + 2'b1;
             if (~disp_found) begin
                 dest_out = 0;
                 op1 = 0;
@@ -139,7 +156,7 @@ module reservation_station (
             
 
             
-            end
+            
         end
     end
 endmodule

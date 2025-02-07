@@ -10,7 +10,7 @@ cModel Technology
 Z0 dC:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/simulation/questa
 valtera_arriav_pll
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1738909245
+Z2 !s110 1738504698
 !i10b 1
 !s100 =P7CDUZSG9W8kBfd_h_CR2
 ISCPSM9YVQ3QF2cTCCARJi3
@@ -26,7 +26,7 @@ Z8 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z9 !s108 1738909244.000000
+Z9 !s108 1738504698.000000
 Z10 !s107 c:/intelfpga/23.1std/quartus/eda/sim_lib/altera_lnsim.sv|
 Z11 !s90 -reportprogress|300|-sv|-work|altera_lnsim_ver|c:/intelfpga/23.1std/quartus/eda/sim_lib/altera_lnsim.sv|
 !i113 1
@@ -34,7 +34,7 @@ Z12 o-sv -work altera_lnsim_ver
 Z13 tCvgOpt 0
 valtera_arriavgz_pll
 R1
-R2
+Z14 !s110 1738504700
 !i10b 1
 !s100 PnzYkRDf[^JQ60IY?obQ81
 IUFCNhkad`[MegaX9]4<AT1
@@ -58,7 +58,7 @@ R12
 R13
 valtera_cyclonev_pll
 R1
-R2
+R14
 !i10b 1
 !s100 U4^4W[J=U[lZS_GSLES__0
 I^2@bl>5[Yh1ci2hg^ejPn1
@@ -105,7 +105,7 @@ R12
 R13
 valtera_iopll
 R1
-R2
+R14
 !i10b 1
 !s100 _9k;l@K^X:TTbUV9B<I?T2
 IZTnO<zm^id@Yc@IcZNnZ<2
@@ -129,7 +129,7 @@ R12
 R13
 valtera_iopll_rotation_lcells
 R1
-R2
+R14
 !i10b 1
 !s100 e4c;jYV0<f;]zJeBoP4SJ0
 IHKgf[g^ezb9bz25?L<;JI3
@@ -249,8 +249,8 @@ R12
 R13
 valtera_pll
 R1
-Z14 DXx4 work 22 altera_lnsim_functions 0 22 8>N[?<ekEz<:gUgcMe;5<2
-R2
+Z15 DXx4 work 22 altera_lnsim_functions 0 22 8>N[?<ekEz<:gUgcMe;5<2
+R14
 !i10b 1
 !s100 70^LJ]1>U?lOo@]CMb``Z3
 IjInM@d<CzWJUIEnCf]^hK3
@@ -274,7 +274,7 @@ R12
 R13
 valtera_pll_dps_lcell_comb
 R1
-R2
+R14
 !i10b 1
 !s100 45;a=6R1g_C9]b>liI=1^0
 I0DP`j=hfGakQLG55jY4DY0
@@ -754,7 +754,7 @@ R12
 R13
 vcommon_28nm_mlab_cell_core
 R1
-R14
+R15
 R2
 !i10b 1
 !s100 IK<hnF5_TFz^e;R1NDml41
@@ -827,7 +827,7 @@ R12
 R13
 vcommon_28nm_ram_block
 R1
-R14
+R15
 R2
 !i10b 1
 !s100 ;PfTB3^k^SiY4SFz[DZbj1
@@ -948,7 +948,7 @@ R12
 R13
 vdprio_init
 R1
-R2
+R14
 !i10b 1
 !s100 hAagkBdbzhE40f]X:U@<N2
 I96RaEhYJi>;JcRMn`^7aZ1
@@ -972,7 +972,7 @@ R12
 R13
 vdps_extra_kick
 R1
-R2
+R14
 !i10b 1
 !s100 ]>EJQ7?BfU6QTPRGiNIPC2
 IXOMiPBaNj7flX@=[>cM<f2
@@ -996,7 +996,7 @@ R12
 R13
 vdps_pulse_gen
 R1
-R2
+R14
 !i10b 1
 !s100 IWhZelP2H[T=Kc6W_hGc@0
 If5UZ?5;:`IYBnHzU^0Yf;1
@@ -1020,7 +1020,7 @@ R12
 R13
 vdps_pulse_gen_fourteennm_iopll
 R1
-R2
+R14
 !i10b 1
 !s100 j;=nDN]XdSL2IzkPne:hH2
 I53GN3jc4;MQlCje_m6QR>0
@@ -1044,7 +1044,7 @@ R12
 R13
 vdps_pulse_gen_iopll
 R1
-R2
+R14
 !i10b 1
 !s100 `P<B_P?Jjm1iHhRdIJcTl3
 IBP?g>dL:0GaC<1aJXCO2M1
@@ -1068,7 +1068,7 @@ R12
 R13
 vfourteennm_altera_iopll
 R1
-R2
+R14
 !i10b 1
 !s100 [KKEk4bOGS0_UF[aV]0mV2
 ImIMQnRf>mP_^VkI62P48S3
@@ -1092,8 +1092,8 @@ R12
 R13
 Xfourteennm_iopll_functions
 R1
+R15
 R14
-R2
 !i10b 1
 !s100 kaR4]:ZK<EIL33lZNjP5a2
 IIR`5gl98]KGVfnANC`L[W3
@@ -1116,9 +1116,9 @@ R12
 R13
 vfourteennm_simple_iopll
 R1
+R15
+Z16 DXx4 work 26 fourteennm_iopll_functions 0 22 IR`5gl98]KGVfnANC`L[W3
 R14
-Z15 DXx4 work 26 fourteennm_iopll_functions 0 22 IR`5gl98]KGVfnANC`L[W3
-R2
 !i10b 1
 !s100 hUFD^T@=5=`=PjmWJZ17I1
 IkDEz6gzg5nm`L15ad@MAN3
@@ -1142,9 +1142,9 @@ R12
 R13
 vfourteennm_sub_iopll
 R1
-R14
 R15
-R2
+R16
+R14
 !i10b 1
 !s100 44bPaXLn<SXYU^09>MN6a0
 IXGSo@5F_`=aH2<mS<ZL]l3
@@ -1168,7 +1168,7 @@ R12
 R13
 vgeneric_14nm_mlab_cell_impl
 R1
-R14
+R15
 R2
 !i10b 1
 !s100 eI?UE`Jl>SmE;NX[3`f0@0
@@ -1193,7 +1193,7 @@ R12
 R13
 vgeneric_28nm_hp_mlab_cell_impl
 R1
-R14
+R15
 R2
 !i10b 1
 !s100 c5DlV3l[l^UzBL<ZgF1JU3
@@ -1218,7 +1218,7 @@ R12
 R13
 vgeneric_28nm_lc_mlab_cell_impl
 R1
-R14
+R15
 R2
 !i10b 1
 !s100 C3bjQFoCn?Oh@>X6=g2lV2
@@ -1243,7 +1243,7 @@ R12
 R13
 vgeneric_cdr
 R1
-R14
+R15
 R2
 !i10b 1
 !s100 eUM?cHB][=F@Qj3Qh]jT;3
@@ -1268,7 +1268,7 @@ R12
 R13
 vgeneric_device_pll
 R1
-R14
+R15
 R2
 !i10b 1
 !s100 06J>giFG9c`3oMYg4g]d^1
@@ -1365,7 +1365,7 @@ R12
 R13
 vgeneric_pll
 R1
-R14
+R15
 DXx4 work 28 altera_generic_pll_functions 0 22 2Y`gfVj_`^:@Cgani9LzN3
 R2
 !i10b 1
@@ -1391,7 +1391,7 @@ R12
 R13
 viopll_bootstrap
 R1
-R2
+R14
 !i10b 1
 !s100 >U`adL0fTZ3ZO78@V^3SX2
 IfE2dZEf8l_JzY=okNSK`C1
@@ -1415,7 +1415,7 @@ R12
 R13
 vtwentynm_iopll_arlol
 R1
-R2
+R14
 !i10b 1
 !s100 dDTQEjD?T?4?[VFJ01GmZ3
 I4>^PXoM0LWK=n>E`_S7180
@@ -1439,7 +1439,7 @@ R12
 R13
 vtwentynm_iopll_ip
 R1
-R2
+R14
 !i10b 1
 !s100 I596TL__6hd2=?e?g8J_C3
 INF?^aCRFEPDabT4onPGEL1

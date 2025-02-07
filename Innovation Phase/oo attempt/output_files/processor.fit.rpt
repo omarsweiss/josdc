@@ -1,6 +1,6 @@
 Fitter report for processor
-Fri Feb  7 15:54:53 2025
-Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Fri Feb  7 18:52:43 2025
+Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
 ---------------------
@@ -46,7 +46,7 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2024  Intel Corporation. All rights reserved.
+Copyright (C) 2023  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -66,8 +66,8 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                      ;
 +------------------------------------+------------------------------------------------+
-; Fitter Status                      ; Successful - Fri Feb  7 15:54:53 2025          ;
-; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
+; Fitter Status                      ; Successful - Fri Feb  7 18:52:43 2025          ;
+; Quartus Prime Version              ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                      ; processor                                      ;
 ; Top-level Entity Name              ; processor                                      ;
 ; Family                             ; MAX 10                                         ;
@@ -200,7 +200,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/output_files/processor.pin.
+The pin-out file can be found in C:/Users/amr/Desktop/Quartus/minimum 2/josdc/Innovation Phase/oo attempt/output_files/processor.pin.
 
 
 +---------------------------------------------------------------------+
@@ -1243,9 +1243,9 @@ Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node clk~input (placed in PIN M8 (CLK1n, DIFFIO_RX_L36n, DIFFOUT_L36n, High_Speed)) File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/processor.v Line: 1
+Info (176353): Automatically promoted node clk~input (placed in PIN M8 (CLK1n, DIFFIO_RX_L36n, DIFFOUT_L36n, High_Speed)) File: C:/Users/amr/Desktop/Quartus/minimum 2/josdc/Innovation Phase/oo attempt/processor.v Line: 1
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G3
-Info (176353): Automatically promoted node rst~input (placed in PIN M9 (CLK1p, DIFFIO_RX_L36p, DIFFOUT_L36p, High_Speed)) File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/processor.v Line: 1
+Info (176353): Automatically promoted node rst~input (placed in PIN M9 (CLK1p, DIFFIO_RX_L36p, DIFFOUT_L36p, High_Speed)) File: C:/Users/amr/Desktop/Quartus/minimum 2/josdc/Innovation Phase/oo attempt/processor.v Line: 1
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
 Info (176233): Starting register packing
 Info (176235): Finished register packing
@@ -1277,23 +1277,23 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.15 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.12 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
-Info (144001): Generated suppressed messages file C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/output_files/processor.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/amr/Desktop/Quartus/minimum 2/josdc/Innovation Phase/oo attempt/output_files/processor.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 5641 megabytes
-    Info: Processing ended: Fri Feb  7 15:54:53 2025
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:10
+    Info: Peak virtual memory: 5637 megabytes
+    Info: Processing ended: Fri Feb  7 18:52:43 2025
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:08
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/firas/Developement/josdc/josdc/Innovation Phase/oo attempt/output_files/processor.fit.smsg.
+The suppressed messages can be found in C:/Users/amr/Desktop/Quartus/minimum 2/josdc/Innovation Phase/oo attempt/output_files/processor.fit.smsg.
 
 
