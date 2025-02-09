@@ -168,15 +168,13 @@ def unpseudo(instructions):
 
 
 
-instructions = """ addi $1, $0, 600     
-sw $1, 48($0)        
-lw $2, 48($0)        
-addi $3, $2, 70      
-sw $3, 52($0)        
-lw $4, 52($0)        
-addi $5, $4, 80      
-sw $5, 56($0)        
-lw $6, 56($0)     
+instructions = """             addi $1, $0, 1000     
+        jal func              
+        addi $2, $0, 2000     
+func:   addi $3, $0, 3000     
+        addi $4, $31, 0       
+        jr $4                 
+        addi $5, $0, 4000     
 """
 i = 0 
 instructions = instructions.lower()

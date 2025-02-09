@@ -1,15 +1,15 @@
 module processor(input clk, input rst, output [9:0] PC);
 
 wire rs_full, iq_full, write_on_rs_rob, iq_empty, Branch, MemReadEn, MemtoReg, MemWriteEn, RegWriteEn, 
-ALUSrc, jr, jal,arithmetic, regdst, bne, write_on_rs_idiss, write_rob,
-rob_full, write_rf, write_rat, ALUSrc_idiss, allocated_rs, allocated_rt, 
+ALUSrc, jr_cu, jal,arithmetic, regdst, bne, write_on_rs_idiss, write_rob, hold_iq,
+rob_full, write_rf, write_rat, ALUSrc_idiss, allocated_rs, allocated_rt,jr_out, 
 write_rob2, jump, zero, zero2, commit1, commit2,SW_en,SW_en2,LS_disp,LS_disp2,buff_sw,buff_sw2,
 LS_RS_full,SW_buff_full,buff_ld,buff_ld2,alu_wr,alu_wr2,commit_sw,commit_sw2,ld_found,ld_found2;
 wire [3:0] ALUOp, ALUOp_idiss;
 wire [4:0] rd, rt,rs,  writeRegister, regAddress, DestReg, DestReg_idiss, rs_idiss, rt_idiss, val_idx, rob_tag, commit_addr, commit_addr2, wb_entry, wb_entry2, rs_rat, rt_rat,
 shamt, shamt_idiss, dest_out, dest_out2,L_dest,L_dest2,sw_tag_disp,sw_tag_disp2;
 wire [5:0] opCode, funct;
-wire [9:0] PCplus;
+wire [9:0] PCplus,jal_address,jr_addr,jr_final_addr;
 wire [8:0] control_out1, control_out2;
 wire [15:0] imm;
 wire [31:0] instruction, iq_instruction, wb_value, commit_val, commit_val2, imm_ext, imm_ext_idiss, data1, data2, alu_res, alu_res2, val2,
@@ -19,19 +19,18 @@ op1, op2, op1_2, op2_2,LS_addr,LS_addr2,S_data,S_data2,buff_addr,buff_addr2,buff
 
 reg [4:0] ld_dest,ld_dest2;
 
-
+assign out = commit_val;
 /////////////////Fetch from IM////////////
 
 
-adder PCAdder(.in1(PC), .in2(10'd1), .out(PCplus));
-programCounter pc(clk, rst, 1'b0, PCplus, PC);
-instructionMemory IM(.address(PC), .clock(~clk), .q(instruction));
+fetch Fetch( .clk(clk),.rst(rst),.PC(PC),.jr_in((jr_cu && ~allocated_rs) || jr_out),.jr_address(jr_final_addr),.instruction(instruction),
+				.jump(jump),.hold(hold_iq));
 
 
 InstructionQueue IQ(
     .clk(clk),             // Clock signal
     .reset(rst),           // Reset signal
-    .enqueue(1'b1),         // Signal to enqueue an instruction
+    .enqueue(~jump && ~hold_iq),         // Signal to enqueue an instruction
     .instr_in(instruction), // Incoming instruction
     .stall(rs_full),           // Stall signal from RS (prevents issuing)
     .instr_out(iq_instruction), // Instruction to issue
@@ -45,25 +44,20 @@ assign rt = iq_instruction[20:16];
 assign rd = iq_instruction[15:11];
 assign imm = iq_instruction[15:0];
 assign shamt = iq_instruction[10:6];
+assign jal_address = iq_instruction[9:0];
 
 
 
 controlUnit cu(.opCode(iq_instruction[31:26]), .funct(iq_instruction[5:0]),
 				   .RegDst(regdst), .Branch(Branch), .MemReadEn(MemReadEn), .MemtoReg(MemtoReg),
-				   .ALUOp(ALUOp), .MemWriteEn(MemWriteEn), .RegWriteEn(RegWriteEn), .ALUSrc(ALUSrc),.bne(bne),.jump(jump),.jal(jal),.jr(jr),.arithmetic(arithmetic));
+				   .ALUOp(ALUOp), .MemWriteEn(MemWriteEn), .RegWriteEn(RegWriteEn), .ALUSrc(ALUSrc),.bne(bne),.jump(),.jal(jal),.jr(jr_cu),.arithmetic(arithmetic));
 
 
 mux2x1 #(5) immMux(.in1(rt), .in2(rd), .s(regdst), .out(DestReg));
 
 SignExtender se(.in(imm), .out(imm_ext));
 
-//Added a pipeline here to seperate the CU from the renaming stage. Can be removed if found inconvenient.
-/*IDISS #(58) idiss(
-.Q({DestReg_idiss, rs_idiss, rt_idiss, imm_ext_idiss, ALUOp_idiss, write_on_rs_idiss, ALUSrc_idiss, shamt_idiss}), 
-.D({DestReg, rs, rt, imm_ext, ALUOp, write_on_rs, ALUSrc, shamt}), 
-.clk(clk), .reset(rst), .flush(1'b0));
-*/
-////////////renaming starts////////////////
+
 ROB rob(
 .clk(clk),
 .rst(rst),
@@ -75,6 +69,7 @@ ROB rob(
 .ld_write(buff_ld),
 .ld_write2(buff_ld2),
 .SW_in(MemWriteEn),
+.jal(jal),
 .dest_reg(DestReg),
 .sw_disp_tag(sw_tag_disp),
 .sw_disp_tag2(sw_tag_disp2),
@@ -82,6 +77,7 @@ ROB rob(
 .val_idx2(dest_out2),
 .ld_dest(ld_dest),
 .ld_dest2(ld_dest2),
+.jal_address(jal_address),
 .value(alu_res),
 .value2(alu_res2),
 .ld_value(ld_res),
@@ -98,6 +94,7 @@ ROB rob(
 .commit_SW(commit_sw),
 .commit_SW2(commit_sw2)
 );
+
 
 
 RAT rat(
@@ -121,6 +118,15 @@ RAT rat(
 registerFile rf(.clk(clk), .rst(rst), .we(commit1), .we2(commit2), 
 .readRegister1(rs), .readRegister2(rt), .writeRegister(commit_addr), .writeRegister2(commit_addr2),
 .writeData(commit_val), .writeData2(commit_val2), .readData1(data1), .readData2(data2));
+
+
+jr_rs JR_reg(
+ .clk(clk), .rst(rst), .jr_in(jr_cu), .alloc(allocated_rs),
+.tag_jr(rs_rat), .alu_res_tag(dest_out), .alu_res_tag2(dest_out2), .ld_dest(ld_dest),.ld_dest2(ld_dest2),
+.value(alu_res), .value2(alu_res2), .ld_value(ld_res), .ld_value2(ld_res2), .jr_out(jr_out),.jr_addr(jr_addr));
+
+mux2x1 #(10) jr_address(.in1(data1[9:0]), .in2(jr_addr), .s(jr_out), .out(jr_final_addr));
+
 					 
 /////////Mux for the imm value/////////////
 mux2x1 #(32) immVal(.in1(data2), .in2(imm_ext), .s(ALUSrc), .out(val2));

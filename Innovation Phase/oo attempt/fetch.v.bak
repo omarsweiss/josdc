@@ -1,0 +1,30 @@
+module fetch (
+input clk,rst,
+output [9:0] PC,
+output [31:0] instruction
+);
+
+wire [9:0] pcplus, j_address;
+wire [5:0] opcode;
+reg [9:0] pcin;
+
+
+assign pcplus = PC +10'b1;
+assign opcode = instruction[31:26];
+assign j_address = instruction[9:0];
+
+ 
+
+programCounter pc(clk, rst, 1'b0, , PC);
+instructionMemory IM(.address(PC), .clock(~clk), .q(instruction));
+
+
+
+always@(*) begin
+	if(opcode == 6'h2 || 6'h3) pcin = jaddress;
+	else pcin = pcplus;
+	
+end
+
+
+endmodule

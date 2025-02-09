@@ -2,8 +2,9 @@ module ROB #(
     parameter QUEUE_SIZE = 32   // Number of instructions the queue can hold
 ) 
 (
-input clk,rst,issue, write, write2,ld_write,ld_write2, SW_in, sw_disp, sw_disp2,
+input clk,rst,issue, write, write2,ld_write,ld_write2, SW_in, sw_disp, sw_disp2, jal,
 input [4:0] dest_reg, val_idx, val_idx2, ld_dest,ld_dest2, sw_disp_tag, sw_disp_tag2,
+input [9:0] jal_address,
 input [31:0] value, value2, ld_value,ld_value2,
 output reg [4:0] tag,
 output reg [4:0] commit_addr, commit_addr2,
@@ -52,11 +53,23 @@ always @(posedge clk, negedge rst) begin : name
 		commit_SW2 = 0;
 		//Write on the ROB when an instruction is issued.
 		if(~full&&issue) begin 
-			dest_regs[issue_p] = dest_reg;
-			ready[issue_p] = 0;
-			store[issue_p] = SW_in;
-			issue_p = issue_p + 5'b1;
+			if (jal) begin
+				dest_regs[issue_p] = 5'b11111;
+				ready[issue_p] = 1;
+				values[issue_p] = {22'b0,jal_address};
+				store[issue_p] = SW_in;
+				issue_p = issue_p + 5'b1;
+			end else begin
+				dest_regs[issue_p] = dest_reg;
+				ready[issue_p] = 0;
+				store[issue_p] = SW_in;
+				issue_p = issue_p + 5'b1;
+			end
 		end
+		
+		
+		
+		
 		//From the common data bus
 		if (write) begin
 			values[val_idx] = value;
@@ -80,6 +93,7 @@ always @(posedge clk, negedge rst) begin : name
 		if(sw_disp2) begin	
 			ready[sw_disp_tag2] = 1;
 		end
+		
 		//When a commit is possible. can make double commit by adding a for loop that checks twice.
 		if (ready[commit_p] == 1) begin
 			commit_addr = dest_regs[commit_p];

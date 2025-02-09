@@ -272,7 +272,7 @@
 				MemtoReg = 1'b0;
 				ALUOp = 4'b0000;
 				MemWriteEn = 1'b0;
-				RegWriteEn = 1'b1;
+				RegWriteEn = 1'b0;
 				ALUSrc = 1'b0;
 			   jump = 1'b1;
 				bne = 1'b0;

@@ -32,15 +32,16 @@ always @(posedge clk, negedge rst) begin : name
 			allocated[tag_done2] = 0;
 			tags[tag_done2] = tag_done;
 		end
+		
 		if (write) begin
 			
 			tags[dest_in] = tag_in;
 			allocated[dest_in] = 1'b1;
 		end
 		else;
-		
 		allocated_rs = allocated[rs_in];
 		allocated_rt = allocated[rt_in];
+		
 	end 
 end
 
