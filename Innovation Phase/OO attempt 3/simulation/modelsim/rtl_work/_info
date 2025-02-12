@@ -1,0 +1,261 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/simulation/modelsim
+vALU
+Z1 !s110 1739397512
+!i10b 1
+!s100 aE7E7zY^bB173>MS>5Nze1
+IO>8[8_I;2c`1DnKEU?;jS2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1738591478
+8C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/ALU.v
+FC:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/ALU.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1739397512.000000
+!s107 C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3|C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/ALU.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work {+incdir+C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3}
+Z7 tCvgOpt 0
+n@a@l@u
+vcontrolUnit
+R1
+!i10b 1
+!s100 >S;o_dnaf<][H^Ao1<L7a0
+IF5A1i]Cm>:AFWn[K_il8j1
+R2
+R0
+w1739029308
+8C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/controlUnit.v
+FC:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/controlUnit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/controlUnit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3|C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/controlUnit.v|
+!i113 1
+R5
+R6
+R7
+ncontrol@unit
+vinstructionMemory
+R1
+!i10b 1
+!s100 d;1O9V1SO6D3OYS0E994P3
+IkIBNJfJ9g2>BVn[VH>zOo1
+R2
+R0
+w1739383950
+8C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/instructionMemory.v
+FC:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/instructionMemory.v
+L0 40
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/instructionMemory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3|C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/instructionMemory.v|
+!i113 1
+R5
+R6
+R7
+ninstruction@memory
+vprocessor
+R1
+!i10b 1
+!s100 B2:3QTNSz:[6?366oONVC0
+IZA3aHLWPH;ZUHC8l3K4cM0
+R2
+R0
+w1739397500
+8C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/processor.v
+FC:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/processor.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/processor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3|C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/processor.v|
+!i113 1
+R5
+R6
+R7
+vprogramCounter
+R1
+!i10b 1
+!s100 [_5BD;o3^oWLoh:1Qb1=K3
+I59kk5R?::8S;6Xb0[7UGl3
+R2
+R0
+w1739397436
+8C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/programCounter.v
+FC:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/programCounter.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/programCounter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3|C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/programCounter.v|
+!i113 1
+R5
+R6
+R7
+nprogram@counter
+vRAT
+R1
+!i10b 1
+!s100 8XYOY3b3BLMG87R4k`0U91
+IY`HP^[`?=nW5]=icg;?c72
+R2
+R0
+w1739382998
+8C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/RAT.v
+FC:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/RAT.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/RAT.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3|C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/RAT.v|
+!i113 1
+R5
+R6
+R7
+n@r@a@t
+vregisterFile
+R1
+!i10b 1
+!s100 S7fc>cB3VVmcKk1YifRE01
+Im3SX?VOfHM^m]:CL2WbVM0
+R2
+R0
+w1739395862
+8C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/registerFile.v
+FC:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/registerFile.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/registerFile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3|C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/registerFile.v|
+!i113 1
+R5
+R6
+R7
+nregister@file
+vReservationStation_Arithmetic
+R1
+!i10b 1
+!s100 5W^^GiGZWNQ7n;6=aIo0i0
+IAKE0]VM0=O2efV;em;ST90
+R2
+R0
+w1739392386
+8C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v
+FC:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3|C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v|
+!i113 1
+R5
+R6
+R7
+n@reservation@station_@arithmetic
+vROB
+R1
+!i10b 1
+!s100 @[SGkJh=9nY9il^HDS1Fk2
+I;8`Ri7DWN?XFR=90ZWV_n3
+R2
+R0
+w1739387217
+8C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/ROB.v
+FC:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/ROB.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/ROB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3|C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/ROB.v|
+!i113 1
+R5
+R6
+R7
+n@r@o@b
+vSignExtender
+R1
+!i10b 1
+!s100 @`aGSg91l4d870B>Q>l^;2
+I=kG6Bddef^7e3Cez4l4g92
+R2
+R0
+w1738591300
+8C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/SignExtender.v
+FC:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/SignExtender.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/SignExtender.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3|C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/SignExtender.v|
+!i113 1
+R5
+R6
+R7
+n@sign@extender
+vtestbench
+R1
+!i10b 1
+!s100 Fo<BoQSbC<3E5A8bVCVPZ0
+Ib60gW_K8f^zj0HUHC;==H2
+R2
+R0
+w1738507479
+8C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/testbench.v
+FC:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/testbench.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3|C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/OO attempt 3/testbench.v|
+!i113 1
+R5
+R6
+R7

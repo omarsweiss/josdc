@@ -1,0 +1,52 @@
+module processor(input clk,input rst, output [9:0] PC);
+
+
+wire [9:0] pc_in;
+wire [31:0] first_instr_im, second_instr_im;
+reg [31:0] first_instr, second_instr;
+
+assign pc_in = PC + 10'd2;
+
+
+programCounter pc(.clk(clk), .rst(rst), .PCin(pc_in), .PCout(PC), .hold(hold));
+
+
+instructionMemory IM(.address_a(PC),.address_b(PC + 10'b1),.clock(clk),.q_a(first_instr_im),.q_b(second_instr_im));
+
+always @(posedge clk, negedge rst) begin
+	
+	if(~rst)begin
+		first_instr <= 0;
+		second_instr <= 0;
+	end
+	else
+		first_instr <= first_instr_im;
+		second_instr <= second_instr_im;
+	end
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+endmodule

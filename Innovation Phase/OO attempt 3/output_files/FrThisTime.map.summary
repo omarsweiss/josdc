@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Thu Feb 13 00:45:46 2025
+Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Revision Name : FrThisTime
+Top-level Entity Name : processor
+Family : MAX 10
+Total logic elements : 13,590
+    Total combinational functions : 13,382
+    Dedicated logic registers : 2,815
+Total registers : 2815
+Total pins : 44
+Total virtual pins : 0
+Total memory bits : 32,768
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0
