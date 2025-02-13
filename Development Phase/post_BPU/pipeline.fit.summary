@@ -1,12 +1,12 @@
-Fitter Status : Successful - Fri Dec 13 14:35:56 2024
-Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Fitter Status : Successful - Thu Feb 13 13:42:35 2025
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : pipeline
 Top-level Entity Name : pipeline
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 16,245 / 49,760 ( 33 % )
-    Total combinational functions : 6,573 / 49,760 ( 13 % )
+Total logic elements : 16,193 / 49,760 ( 33 % )
+    Total combinational functions : 6,586 / 49,760 ( 13 % )
     Dedicated logic registers : 14,250 / 49,760 ( 29 % )
 Total registers : 14250
 Total pins : 12 / 360 ( 3 % )

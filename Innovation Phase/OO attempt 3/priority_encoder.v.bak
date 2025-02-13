@@ -1,0 +1,19 @@
+// A simple combinational priority encoder module
+module priority_encoder #(parameter WIDTH = 4) (
+    input  [WIDTH-1:0] in,
+    output reg [$clog2(WIDTH)-1:0] index,
+    output valid
+);
+  assign valid = |in;  // valid if any bit is 1
+
+  always @(*) begin
+    // Here, lower-numbered slots have higher priority.
+    casex (in)
+      4'bxxx1: index = 2'd0;
+      4'bxx10: index = 2'd1;
+      4'bx100: index = 2'd2;
+      4'b1000: index = 2'd3;
+      default: index = 0;
+    endcase
+  end
+endmodule

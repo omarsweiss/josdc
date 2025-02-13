@@ -36,8 +36,8 @@ assign rt2_tag = tags[rt2];
 assign rt2_ready = ready[rt2];
 assign rt2_rob  = rob[rt2];
 
-assign dest1_tag = tags[DestReg1];
-assign dest2_tag = tags[DestReg2];
+assign dest1_tag = tag1;
+assign dest2_tag = tag2;
 
 always @(posedge clk , negedge rst) begin : name
     integer i;
@@ -50,13 +50,13 @@ always @(posedge clk , negedge rst) begin : name
         end
     end
     else begin
-        if (RegWrite1 && ~((DestReg1 != DestReg2)&& RegWrite2) && ~stall) begin
+        if (RegWrite1 && ~((DestReg1 == DestReg2)&& RegWrite2) && ~stall &&~(DestReg1 ==5'b0)) begin
             tags[DestReg1] <= tag1;
             ready[DestReg1] <= 1'b0;
             rob[DestReg1] <= 1'b0;
                 
         end
-        if(RegWrite2 && ~stall) begin
+        if(RegWrite2 && ~stall && ~(DestReg2 ==5'b0)) begin
             tags[DestReg2] <= tag2;
             ready[DestReg2] <= 1'b0;
             rob[DestReg2] <= 1'b0;

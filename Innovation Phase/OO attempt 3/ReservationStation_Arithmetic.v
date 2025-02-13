@@ -1,6 +1,6 @@
 module ReservationStation_Arithmetic #(parameter size = 8)(
     input clk, input rst, input stall, input arithmetic1, input arithmetic2, //If an instruction is arithmetic or otherwise
-    input ready_rs1, ready_rt1, ready_rs2, ready_rt2, //If the corresponding field is ready or not
+    input ready_rs1, ready_rt1, ready_rs2, ready_rt2, regwrite1, regwrite2, //If the corresponding field is ready or not
     input [4:0] rs1_tag, rt1_tag, rs2_tag, rt2_tag, dest1_tag, dest2_tag, dest1, dest2, //Tags from the RAT
     input [8:0] control1, control2, //Control signals for the ALUs
     input [31:0] val1_1, val2_1, val1_2, val2_2, //Operand Values
@@ -36,24 +36,56 @@ reg [31:0] val2 [size -1: 0];
 
 reg[2:0] issue1, issue2, disp1, disp2;
 
+  // Create a 8-bit ready vector. A slot is ready for dispatch if both operands are ready.
+  wire [7:0] ready_vector;
+  assign ready_vector[0] = (ready_rs[0]&&ready_rt[0]);
+  assign ready_vector[1] = (ready_rs[1]&&ready_rt[1]);
+  assign ready_vector[2] = (ready_rs[2]&&ready_rt[2]);
+  assign ready_vector[3] = (ready_rs[3]&&ready_rt[3]);
+	assign ready_vector[4] = (ready_rs[4]&&ready_rt[4]);
+  assign ready_vector[5] = (ready_rs[5]&&ready_rt[5]);
+  assign ready_vector[6] = (ready_rs[6]&&ready_rt[6]);
+  assign ready_vector[7] = (ready_rs[7]&&ready_rt[7]);
+  // First dispatch: use a priority encoder to select the first ready slot.
+  wire [2:0] slot1;
+  wire valid1;
+  priority_encoder #(8) pe1 (
+      .in(ready_vector),
+      .index(slot1),
+      .valid(valid1)
+  );
+
+  // Mask out the first selected slot for the second encoder.
+  wire [7:0] mask;
+  assign mask = 8'b00000001 << slot1; // one-hot mask for the first slot
+  wire [7:0] ready_vector_masked;
+  assign ready_vector_masked = ready_vector & ~mask;
+
+  // Second dispatch: select the next ready slot.
+  wire [2:0] slot2;
+  wire valid2;
+  priority_encoder #(8) pe2 (
+      .in(ready_vector_masked),
+      .index(slot2),
+      .valid(valid2)
+  );
+
+assign control_out1 = control[slot1];
+assign control_out2 = control[slot2];
+assign dest1_out = dst[slot1];
+assign dest2_out = dst[slot2];
+assign dest1_tag_out = dst_tag[slot1];
+assign dest2_tag_out = dst_tag[slot2];
 
 
-assign control_out1 = control[issue1];
-assign control_out2 = control[issue2];
-assign dest1_out = dst[issue1];
-assign dest2_out = dst[issue2];
-assign dest1_tag_out = dst_tag[issue1];
-assign dest2_tag_out = dst_tag[issue2];
+assign val1_1_out = val1[slot1];
+assign val2_1_out = val2[slot1];
+assign val1_2_out = val1[slot2];
+assign val2_2_out = val2[slot2];
 
 
-assign val1_1_out = val1[issue1];
-assign val2_1_out = val2[issue1];
-assign val1_2_out = val1[issue2];
-assign val2_2_out = val2[issue2];
-
-
-assign write1 = write[issue1];
-assign write2 = write[issue2];
+assign write1 = write[slot1];
+assign write2 = write[slot2];
 assign full_RSA = (disp1 >= size -2) | ((disp2 >= size -2 ) & (arithmetic1 & arithmetic2));
 always @(posedge clk, negedge rst) begin : name
 
@@ -61,7 +93,7 @@ always @(posedge clk, negedge rst) begin : name
 
     integer i, j;
 
-    reg i1, i2, d1, d2;
+    reg[2:0] i1, i2, d1, d2;
 
     if(~rst) begin
         for (i = 0; i<size; i= i+1) begin
@@ -78,7 +110,10 @@ always @(posedge clk, negedge rst) begin : name
             val2 [i] <= 0;
 
         end
-
+			i1 = 0;
+			i2 = 0;
+			d1 = 0;
+			d2 = 0;
         issue1<=0;
         issue2<=0;
         disp1<=0;
@@ -87,7 +122,7 @@ always @(posedge clk, negedge rst) begin : name
 
     else begin
         //Insert the instructions in their slots 
-        if((arithmetic1 | arithmetic2) && ~stall) begin
+        if((arithmetic1 | arithmetic2) && ~stall &&(arithmetic1?~(dest1 == 5'b0):~(dest2==5'b0))) begin
             busy[disp1] <= 1'b1;
             ready_rs[disp1] <= arithmetic1? ready_rs1:ready_rs2;
             ready_rt[disp1] <= arithmetic1? ready_rt1:ready_rt2;
@@ -98,9 +133,9 @@ always @(posedge clk, negedge rst) begin : name
             dst_tag[disp1] <= arithmetic1? dest1_tag: dest2_tag;
             val1[disp1] <= arithmetic1? val1_1: val1_2;
             val2[disp1] <= arithmetic1? val2_1:val2_2;
-            write[disp1] <= arithmetic1? write1:write2;
+            write[disp1] <= arithmetic1? regwrite1:regwrite2;
         end
-        if ((arithmetic1 & arithmetic2) && ~stall) begin
+        if ((arithmetic1 & arithmetic2) && ~stall && ~(dest2==5'b0)) begin
             busy[disp2] <= 1'b1;
             ready_rs[disp2] <= ready_rs2;
             ready_rt[disp2] <= ready_rt2;
@@ -111,7 +146,7 @@ always @(posedge clk, negedge rst) begin : name
             dst_tag[disp2] <= dest2_tag;
             val1[disp2] <= val1_2;
             val2[disp2] <= val2_2;
-            write[disp2] <= write2;
+            write[disp2] <= regwrite2;
         end
 
 
@@ -158,48 +193,32 @@ always @(posedge clk, negedge rst) begin : name
             end
         end
         //==========================================================================
-        d1 = size-1; //Default Value
-        d2 = size-1;
+        d1 = 3'd7; //Default Value
+        d2 = 3'd7;
         for (i=size-1; i>0; i=i-1 ) begin
-            if(~busy[i] && (disp1 != i) && (disp2 != i)) d1 = i;
+            if(~busy[i] && ~((disp1 == i)&&(arithmetic1?~(dest1 == 5'b0):~(dest2==5'b0))) && ~((disp2 == i)&&~(dest2==5'b0))) d1 = i;
         end
         for (i =size -2 ; i>0; i= i-1 ) begin
-            if(~busy[i] && (i != d1) &&(disp1 != i) && (disp2 != i)) d2 = i;            
+            if(~busy[i] && (i != d1) &&~((disp1 == i)&&(arithmetic1?~(dest1 == 5'b0):~(dest2==5'b0))) && ~((disp2 == i)&&~(dest2==5'b0))) d2 = i;            
         end
 
         //Give priority to index 0
-        if(~busy[0] && (disp1 != 0) && (disp2 != 0)) begin
+        if(~busy[0] && ~((disp1 == 0)&&(arithmetic1?~(dest1 == 5'b0):~(dest2==5'b0))) && ~((disp2 == 0)&&~(dest2==5'b0))) begin
             d2 = d1;
             d1 = 0;
         end
         if(d1 >= size-2) begin
-            d1 = issue1;
-            d2 = issue2;
+            d1 = slot1;
+            d2 = slot2;
         end
         disp1 <= d1;
         disp2 <= d2;
-    
- 
-
-        i1 = size -2;
-        i2 = size -2;
-        for (i = size - 2; i > 0; i = i - 1) begin
-            if (busy[i] && ready_rs[i] && ready_rt[i] && (issue1 != i) & (issue2 != i)) i1 = i;
-        end
-
-        for(i = size - 2; i>0; i= i-1) begin
-            if (busy[i] && ready_rs[i] && ready_rt[i] && (i1 != i) & (issue1 != i) && (i != issue2)) i2 = i;
-        end
-
-        //Give priority to index 0
-        if(busy[0] && (issue1 != 0) && (issue2 != 0) && ready_rs[0] && ready_rt[0]) begin
-            i2 = i1;
-            i1 = 0;
-        end
-        issue1 <= i1;
-        issue2 <= i2;
-        busy[issue1] = 0;
-        busy[issue2] = 0;
+        busy[slot1] = 0;
+        busy[slot2] = 0;
+		  ready_rs[slot1] <= 0;
+        ready_rt[slot1] <= 0;
+		  ready_rs[slot2] <= 0;
+        ready_rt[slot2] <= 0;
     end
 end
 

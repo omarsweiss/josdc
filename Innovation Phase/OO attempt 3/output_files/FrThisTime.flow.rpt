@@ -1,6 +1,6 @@
 Flow report for FrThisTime
-Thu Feb 13 00:49:13 2025
-Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Thu Feb 13 13:33:04 2025
+Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
 ---------------------
@@ -21,7 +21,7 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2023  Intel Corporation. All rights reserved.
+Copyright (C) 2024  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -41,17 +41,17 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Thu Feb 13 00:49:13 2025          ;
-; Quartus Prime Version              ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
+; Flow Status                        ; Successful - Thu Feb 13 13:33:04 2025          ;
+; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; FrThisTime                                     ;
 ; Top-level Entity Name              ; processor                                      ;
 ; Family                             ; MAX 10                                         ;
 ; Device                             ; 10M50DAF484C7G                                 ;
 ; Timing Models                      ; Final                                          ;
-; Total logic elements               ; 13,511 / 49,760 ( 27 % )                       ;
-;     Total combinational functions  ; 13,382 / 49,760 ( 27 % )                       ;
-;     Dedicated logic registers      ; 2,783 / 49,760 ( 6 % )                         ;
-; Total registers                    ; 2783                                           ;
+; Total logic elements               ; 15,292 / 49,760 ( 31 % )                       ;
+;     Total combinational functions  ; 15,217 / 49,760 ( 31 % )                       ;
+;     Dedicated logic registers      ; 3,357 / 49,760 ( 7 % )                         ;
+; Total registers                    ; 3357                                           ;
 ; Total pins                         ; 44 / 360 ( 12 % )                              ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 32,768 / 1,677,312 ( 2 % )                     ;
@@ -67,42 +67,48 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/13/2025 00:45:13 ;
+; Start date & time ; 02/13/2025 13:28:39 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; FrThisTime          ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                               ;
-+-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
-+-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 2544320857565.173939671224248          ; --            ; --          ; --                                ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation                    ;
-; EDA_SIMULATION_TOOL                 ; ModelSim (Verilog)                     ; <None>        ; --          ; --                                ;
-; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --                                ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --                                ;
-; MISC_FILE                           ; instructionMemory_bb.v                 ; --            ; --          ; --                                ;
-; MISC_FILE                           ; instructionMemory_syn.v                ; --            ; --          ; --                                ;
-; NUM_PARALLEL_PROCESSORS             ; All                                    ; --            ; --          ; --                                ;
-; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                      ; --            ; --          ; --                                ;
-; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                      ; --            ; --          ; --                                ;
-; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                             ; --            ; --          ; --                                ;
-; OUTPUT_IO_TIMING_NEAR_END_VMEAS     ; Half Vccio                             ; --            ; --          ; --                                ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; processor   ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; processor   ; Top                               ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; processor   ; Top                               ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --                                ;
-; TOP_LEVEL_ENTITY                    ; processor                              ; FrThisTime    ; --          ; --                                ;
-+-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                ;
++--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
+; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
++--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID                ; 2546174103540.173944251818392          ; --            ; --          ; --                                ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; testbench                         ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; testbench                              ; --            ; --          ; eda_simulation                    ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                  ; QuestaSim (Verilog)                    ; <None>        ; --          ; --                                ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_FILE                  ; testbench.v                            ; --            ; --          ; testbench                         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; testbench                              ; --            ; --          ; testbench                         ;
+; EDA_TEST_BENCH_NAME                  ; testbench                              ; --            ; --          ; eda_simulation                    ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --                                ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --                                ;
+; MISC_FILE                            ; instructionMemory_bb.v                 ; --            ; --          ; --                                ;
+; MISC_FILE                            ; instructionMemory_syn.v                ; --            ; --          ; --                                ;
+; NUM_PARALLEL_PROCESSORS              ; All                                    ; --            ; --          ; --                                ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS       ; Half Signal Swing                      ; --            ; --          ; --                                ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS       ; Half Signal Swing                      ; --            ; --          ; --                                ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS      ; Half Vccio                             ; --            ; --          ; --                                ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS      ; Half Vccio                             ; --            ; --          ; --                                ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; processor   ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; processor   ; Top                               ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; processor   ; Top                               ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --                                ;
+; TOP_LEVEL_ENTITY                     ; processor                              ; FrThisTime    ; --          ; --                                ;
++--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -110,12 +116,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:33     ; 1.0                     ; 4936 MB             ; 00:00:40                           ;
-; Fitter               ; 00:03:11     ; 1.2                     ; 5989 MB             ; 00:04:32                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4776 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:06     ; 3.3                     ; 4975 MB             ; 00:00:19                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4715 MB             ; 00:00:02                           ;
-; Total                ; 00:03:55     ; --                      ; --                  ; 00:05:35                           ;
+; Analysis & Synthesis ; 00:00:55     ; 1.0                     ; 4934 MB             ; 00:01:03                           ;
+; Fitter               ; 00:03:05     ; 1.4                     ; 5965 MB             ; 00:05:26                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4866 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:12     ; 3.0                     ; 5046 MB             ; 00:00:33                           ;
+; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4751 MB             ; 00:00:03                           ;
+; Total                ; 00:04:18     ; --                      ; --                  ; 00:07:08                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -124,11 +130,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-G6MURCC  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-G6MURCC  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-G6MURCC  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-G6MURCC  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-G6MURCC  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; patrik           ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; patrik           ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; patrik           ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; patrik           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; patrik           ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

@@ -15,18 +15,22 @@ RS_val1_1,RS_val2_1,RS_val1_2,RS_val2_2,val1_1_out,val2_1_out,val1_2_out,val2_2_
 
 reg [31:0] first_instr, second_instr,alu1_res_pipe,alu2_res_pipe, rs1_frwd_data,rt1_frwd_data,rs2_frwd_data, rt2_frwd_data;
 reg alu1_wr_pipe,alu2_wr_pipe,rs1_frwd,rt1_frwd,rs2_frwd,rt2_frwd;
-reg [4:0] arith_dest1_pipe,arith_dest2_pipe,arith_tag1_pipe,arith_tag2_pipe;
-
+reg [4:0] arith_dest1_pipe,arith_dest2_pipe,arith_tag1_pipe,arith_tag2_pipe, tag1_dependent, tag2_dependent;
+wire first_nop, second_nop, nop;
+reg tag1_dependent_flag, tag2_dependent_flag;
 
 assign pc_in = PC + 10'd2;
 assign stall = rob_full | full_RSA;
+assign nop = first_nop | second_nop;
+assign first_nop   = (alu_src ? (first_instr[20:16] == 5'b0) : (first_instr[15:11] == 5'b0)) & RegWrite1;	
+assign second_nop  = (alu_src2 ? (second_instr[20:16] == 5'b0) : (second_instr[15:11] == 5'b0)) & RegWrite2;
 
 assign out = commit_data1;
 
 programCounter pc(.clk(clk), .rst(rst), .PCin(pc_in), .PCout(PC), .hold(0));
 
 
-instructionMemory IM(.address_a(PC),.address_b(PC + 10'b1),.clock(clk),.q_a(first_instr_im),.q_b(second_instr_im));
+instructionMemory IM(.address_a(PC),.address_b(PC + 10'b1),.clock(~clk),.q_a(first_instr_im),.q_b(second_instr_im));
 
 always @(posedge clk, negedge rst) begin
 
@@ -102,7 +106,7 @@ RAT rat( .clk(clk), .rst(rst),
 ROB rob(
 
 .clk(clk), .rst(rst), .stall(stall), .alu_res_en(alu1_wr_pipe), .alu_res_en2(alu2_wr_pipe), .ld_r(0), .ld_r2(0), .sw_r(0), .sw_r2(0), 
-.branch_r(0), .prediction(0), .branch_result(0), .nop(0), .one_instr(0),
+.branch_r(0), .prediction(0), .branch_result(0), .nop(nop), .one_instr(0),
 .alu_dest(arith_dest1_pipe), .alu_dest2(arith_dest2_pipe), .ld_dest(0),.ld_dest2(0), .sw_tag(0), .sw_tag2(0), .branch_tag(0), .alu_tag(arith_tag1_pipe), .alu_tag2(arith_tag2_pipe),
 .ld_tag(0),.ld_tag2(0), .ghr_BR(0), .read_tag1(rs1_tag), .read_tag2(rt1_tag), .read_tag1_2(rs2_tag), .read_tag2_2(rt2_tag),
 .next_addr_BR(0), .b_addr_BR(0), .alu_val(alu1_res_pipe) , .alu_val2(alu2_res_pipe), .ld_val(0) , .ld_val2(0),
@@ -123,11 +127,30 @@ ROB rob(
 
 
 assign RS_val1_1 = rs1_ready ? readData1_1 : rs_data_rob1;
-assign RS_val2_1 = rt1_ready ? readData2_1 : rt_data_rob1;
+assign RS_val2_1 = ~alu_src ? rt1_ready ? readData2_1 : rt_data_rob1 : immediate;
 
 assign RS_val1_2 = rs2_ready ? readData1_2 : rs_data_rob2;
-assign RS_val2_2 = rt2_ready ? readData2_2 : rt_data_rob2;
+assign RS_val2_2 = ~alu_src2 ? rt2_ready ? readData2_2 : rt_data_rob2 : immediate2;
 
+always @(*) begin
+	if(dest_reg == rs2)begin
+		tag1_dependent = dest1_tag;
+		tag1_dependent_flag= 1'b1;
+	end
+	else begin
+		tag1_dependent = 0;
+		tag1_dependent_flag= 1'b0;
+	end
+	if(dest_reg == rt2) begin
+		tag2_dependent = dest1_tag;
+		tag2_dependent_flag = 1'b1;
+	end
+	else begin
+		tag2_dependent = 0;
+		tag2_dependent_flag = 1'b0;
+	end
+
+end
 
 // forwarding
 
@@ -147,11 +170,11 @@ always@(*) begin
 		end
 		
 		////////////////////////////////////////////////////////////////////////
-		if (alu1_wr_pipe & (arith_tag1_pipe == rt1_tag)) begin
+		if (alu1_wr_pipe & (arith_tag1_pipe == rt1_tag) & ~alu_src) begin
 			rt1_frwd = 1'b1;
 			rt1_frwd_data = alu1_res_pipe;
 		end
-		else if (alu2_wr_pipe & (arith_tag2_pipe == rt1_tag)) begin
+		else if (alu2_wr_pipe & (arith_tag2_pipe == rt1_tag) & ~alu_src) begin
 			rt1_frwd = 1'b1;
 			rt1_frwd_data = alu2_res_pipe;
 		end
@@ -175,11 +198,11 @@ always@(*) begin
 		end
 		
 		////////////////////////////////////////////////////////////////////////
-		if (alu1_wr_pipe & (arith_tag1_pipe == rt2_tag)) begin
+		if (alu1_wr_pipe & (arith_tag1_pipe == rt2_tag) & ~alu_src2) begin
 			rt2_frwd = 1'b1;
 			rt2_frwd_data = alu1_res_pipe;
 		end
-		else if (alu2_wr_pipe & (arith_tag2_pipe == rt2_tag)) begin
+		else if (alu2_wr_pipe & (arith_tag2_pipe == rt2_tag) & ~alu_src2) begin
 			rt2_frwd = 1'b1;
 			rt2_frwd_data = alu2_res_pipe;
 		end
@@ -193,14 +216,14 @@ end
 /////////////////////////////////////////////
 ReservationStation_Arithmetic RS_arith(
     .clk(clk), .rst(rst),  .stall(stall), .arithmetic1(arithmetic1),  .arithmetic2(arithmetic2),
-    .ready_rs1(rs1_ready | rs1_rob | rs1_frwd), .ready_rt1(rt1_ready | rt1_rob | rt1_frwd), .ready_rs2(rs2_ready | rs2_rob |rs2_frwd), .ready_rt2(rt2_ready| rt2_rob |rt2_frwd), 
-    .rs1_tag(rs1_tag), .rt1_tag(rt1_tag), .rs2_tag(rs2_tag), .rt2_tag(rt2_tag), .dest1_tag(dest1_tag), .dest2_tag(dest2_tag), .dest1(dest_reg), .dest2(dest_reg2), 
+    .ready_rs1(rs1_ready | rs1_rob | rs1_frwd ), .ready_rt1(rt1_ready | rt1_rob | rt1_frwd|alu_src), .ready_rs2((rs2_ready | rs2_rob |rs2_frwd) & ~tag1_dependent_flag), .ready_rt2((rt2_ready| rt2_rob |rt2_frwd|alu_src2)& ~tag2_dependent_flag), 
+    .rs1_tag(rs1_tag), .rt1_tag(rt1_tag), .rs2_tag(tag1_dependent_flag? tag1_dependent:rs2_tag), .rt2_tag(tag2_dependent_flag? tag2_dependent:rt2_tag), .dest1_tag(dest1_tag), .dest2_tag(dest2_tag), .dest1(dest_reg), .dest2(dest_reg2), 
     .control1({alu_op,shamt}), .control2({alu_op2,shamt2}), 
     .val1_1(rs1_frwd? rs1_frwd_data: RS_val1_1), .val2_1(rt1_frwd? rt1_frwd_data: RS_val2_1), .val1_2(rs2_frwd? rs2_frwd_data: RS_val1_2), .val2_2(rt2_frwd? rt2_frwd_data: RS_val2_2),
 	 
     .alu1_wr(alu1_wr_pipe), .alu2_wr(alu2_wr_pipe), .ld1_wr(0), .ld2_wr(0),
     .alu1_res_tag(arith_tag1_pipe), .alu2_res_tag(arith_tag2_pipe), .ld1_res_tag(0), .ld2_res_tag(0),
-    .alu1_res(alu1_res_pipe), .alu2_res(alu2_res_pipe), .ld1_res(0), .ld2_res(0),
+    .alu1_res(alu1_res_pipe), .alu2_res(alu2_res_pipe), .ld1_res(0), .ld2_res(0), .regwrite1(RegWrite1), .regwrite2(RegWrite2),
     
     
     .write1(alu1_wr), .write2(alu2_wr),

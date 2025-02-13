@@ -1,14 +1,14 @@
-Fitter Status : Successful - Thu Feb 13 00:48:58 2025
-Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Fitter Status : Successful - Thu Feb 13 13:32:40 2025
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : FrThisTime
 Top-level Entity Name : processor
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 13,511 / 49,760 ( 27 % )
-    Total combinational functions : 13,382 / 49,760 ( 27 % )
-    Dedicated logic registers : 2,783 / 49,760 ( 6 % )
-Total registers : 2783
+Total logic elements : 15,292 / 49,760 ( 31 % )
+    Total combinational functions : 15,217 / 49,760 ( 31 % )
+    Dedicated logic registers : 3,357 / 49,760 ( 7 % )
+Total registers : 3357
 Total pins : 44 / 360 ( 12 % )
 Total virtual pins : 0
 Total memory bits : 32,768 / 1,677,312 ( 2 % )

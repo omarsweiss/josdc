@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Fri Dec 13 14:34:52 2024
-Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Analysis & Synthesis Status : Successful - Thu Feb 13 13:40:38 2025
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : pipeline
 Top-level Entity Name : pipeline
 Family : MAX 10
-Total logic elements : 18,174
-    Total combinational functions : 6,570
+Total logic elements : 18,187
+    Total combinational functions : 6,583
     Dedicated logic registers : 14,282
 Total registers : 14282
 Total pins : 12

@@ -1,0 +1,283 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/simulation/questa
+vALU
+Z1 !s110 1739442463
+!i10b 1
+!s100 aE7E7zY^bB173>MS>5Nze1
+Ii85Wf`d5lFMmmm8>M_5570
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1739397730
+8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ALU.v
+FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ALU.v
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1739442463.000000
+!s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ALU.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work {+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3}
+Z8 tCvgOpt 0
+n@a@l@u
+vcontrolUnit
+R1
+!i10b 1
+!s100 >S;o_dnaf<][H^Ao1<L7a0
+IAfRdTFTYHOAZJ5;e:O2PW2
+R2
+R0
+R3
+8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/controlUnit.v
+FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/controlUnit.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/controlUnit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/controlUnit.v|
+!i113 1
+R6
+R7
+R8
+ncontrol@unit
+vinstructionMemory
+Z9 !s110 1739442464
+!i10b 1
+!s100 d;1O9V1SO6D3OYS0E994P3
+IN^T<i1OEAHD[B@2PbNWK]3
+R2
+R0
+w1739432745
+8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/instructionMemory.v
+FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/instructionMemory.v
+L0 40
+R4
+r1
+!s85 0
+31
+Z10 !s108 1739442464.000000
+!s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/instructionMemory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/instructionMemory.v|
+!i113 1
+R6
+R7
+R8
+ninstruction@memory
+vpriority_encoder
+R9
+!i10b 1
+!s100 VZX_KQZU`5I3CFef?5?Ph2
+I;2GRf]^ZR]iSc[oimY_DY2
+R2
+R0
+w1739438802
+8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/priority_encoder.v
+FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/priority_encoder.v
+L0 2
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/priority_encoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/priority_encoder.v|
+!i113 1
+R6
+R7
+R8
+vprocessor
+R9
+!i10b 1
+!s100 1@lQbHe?iP`ab:n7PBla50
+Il=Sf:1SeLGemo@D@UfX8V3
+R2
+R0
+w1739442434
+8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v
+FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v
+L0 1
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v|
+!i113 1
+R6
+R7
+R8
+vprogramCounter
+R1
+!i10b 1
+!s100 4C@TDZ5?`k@@B<g8aNjie0
+IBah?Bf4oCae;QGYK1=b3l0
+R2
+R0
+w1739435208
+8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/programCounter.v
+FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/programCounter.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/programCounter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/programCounter.v|
+!i113 1
+R6
+R7
+R8
+nprogram@counter
+vRAT
+R1
+!i10b 1
+!s100 fMNaYX[C[z28VY71He>8j2
+I@_Pm`^3h;MiSUDYT99Hk;1
+R2
+R0
+w1739440181
+8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v
+FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v|
+!i113 1
+R6
+R7
+R8
+n@r@a@t
+vregisterFile
+R1
+!i10b 1
+!s100 S7fc>cB3VVmcKk1YifRE01
+IBL1]<bUW>5KKn34k8l;hM3
+R2
+R0
+R3
+8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/registerFile.v
+FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/registerFile.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/registerFile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/registerFile.v|
+!i113 1
+R6
+R7
+R8
+nregister@file
+vReservationStation_Arithmetic
+R1
+!i10b 1
+!s100 GidLSj8e?_IK<GQ=Vg6121
+I2Sb>VQ]Z=Oz[:nYW_n7Cn3
+R2
+R0
+w1739440803
+8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v
+FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v|
+!i113 1
+R6
+R7
+R8
+n@reservation@station_@arithmetic
+vROB
+R9
+!i10b 1
+!s100 n7j@`VRNM`kd:Lhb<2bjZ3
+IbiAACPbPANTC`GlG<Ud531
+R2
+R0
+w1739434739
+8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
+FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
+L0 1
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v|
+!i113 1
+R6
+R7
+R8
+n@r@o@b
+vSignExtender
+R1
+!i10b 1
+!s100 @`aGSg91l4d870B>Q>l^;2
+I3h_Rf3TleKXY84Z3X>`R43
+R2
+R0
+R3
+8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/SignExtender.v
+FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/SignExtender.v
+L0 4
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/SignExtender.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/SignExtender.v|
+!i113 1
+R6
+R7
+R8
+n@sign@extender
+vtestbench
+R9
+!i10b 1
+!s100 Fo<BoQSbC<3E5A8bVCVPZ0
+IRBfibTOIQ?7DB`Y=5ScnM0
+R2
+R0
+w1739434248
+8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/testbench.v
+FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/testbench.v
+L0 2
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/testbench.v|
+!i113 1
+R6
+R7
+R8

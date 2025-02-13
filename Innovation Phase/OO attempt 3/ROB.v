@@ -110,7 +110,7 @@ always @(posedge clk, negedge rst) begin: name
 		end
 			
 		
-		if (~stall && one_instr) begin //issue one instr
+		if (~stall && one_instr && ~nop) begin //Dispatch one instr
 			disp_p <= disp_p + 5'd1;
 			ready[disp_p] <= 0;
 			sw[disp_p] <= 0;
@@ -118,7 +118,7 @@ always @(posedge clk, negedge rst) begin: name
 			data[disp_p] <= 0;
 		
 		end
-		else if (~stall && ~one_instr) begin //issue two instr
+		else if (~stall &&~nop) begin //Dispatch two instr
 			disp_p <= disp_p + 5'd2;
 			ready[disp_p] <= 0;
 			sw[disp_p] <= 0;
