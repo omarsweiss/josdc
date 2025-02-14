@@ -13,7 +13,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {c:/intelfpga/23.1std/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:27:35 on Feb 13,2025
+# Start time: 17:26:59 on Feb 13,2025
 # vlog -reportprogress 300 -vlog01compat -work altera_ver c:/intelfpga/23.1std/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -95,7 +95,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 13:27:36 on Feb 13,2025, Elapsed time: 0:00:01
+# End time: 17:26:59 on Feb 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -106,7 +106,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {c:/intelfpga/23.1std/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:27:36 on Feb 13,2025
+# Start time: 17:27:00 on Feb 13,2025
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/intelfpga/23.1std/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -170,7 +170,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 13:27:37 on Feb 13,2025, Elapsed time: 0:00:01
+# End time: 17:27:00 on Feb 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -181,7 +181,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {c:/intelfpga/23.1std/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:27:37 on Feb 13,2025
+# Start time: 17:27:00 on Feb 13,2025
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/intelfpga/23.1std/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -223,7 +223,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 13:27:37 on Feb 13,2025, Elapsed time: 0:00:00
+# End time: 17:27:01 on Feb 13,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -234,7 +234,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {c:/intelfpga/23.1std/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:27:37 on Feb 13,2025
+# Start time: 17:27:01 on Feb 13,2025
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/intelfpga/23.1std/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -364,7 +364,7 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 13:27:38 on Feb 13,2025, Elapsed time: 0:00:01
+# End time: 17:27:02 on Feb 13,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -375,7 +375,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {c:/intelfpga/23.1std/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:27:39 on Feb 13,2025
+# Start time: 17:27:02 on Feb 13,2025
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/intelfpga/23.1std/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -458,7 +458,7 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 13:27:39 on Feb 13,2025, Elapsed time: 0:00:00
+# End time: 17:27:03 on Feb 13,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/fiftyfivenm_ver
@@ -469,7 +469,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work fiftyfivenm_ver {c:/intelfpga/23.1std/quartus/eda/sim_lib/fiftyfivenm_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:27:39 on Feb 13,2025
+# Start time: 17:27:03 on Feb 13,2025
 # vlog -reportprogress 300 -vlog01compat -work fiftyfivenm_ver c:/intelfpga/23.1std/quartus/eda/sim_lib/fiftyfivenm_atoms.v 
 # -- Compiling UDP FIFTYFIVENM_PRIM_DFFE
 # -- Compiling UDP FIFTYFIVENM_PRIM_DFFEAS
@@ -562,15 +562,15 @@
 # 	fiftyfivenm_jtag
 # 	fiftyfivenm_adcblock
 # 	fiftyfivenm_phase_detector
-# End time: 13:27:40 on Feb 13,2025, Elapsed time: 0:00:01
+# End time: 17:27:04 on Feb 13,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work fiftyfivenm_ver {c:/intelfpga/23.1std/quartus/eda/sim_lib/mentor/fiftyfivenm_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:27:40 on Feb 13,2025
+# Start time: 17:27:04 on Feb 13,2025
 # vlog -reportprogress 300 -vlog01compat -work fiftyfivenm_ver c:/intelfpga/23.1std/quartus/eda/sim_lib/mentor/fiftyfivenm_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 13:27:43 on Feb 13,2025, Elapsed time: 0:00:03
+# End time: 17:27:06 on Feb 13,2025, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -584,139 +584,149 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/OO\ attempt\ 3 {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/testbench.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:27:43 on Feb 13,2025
+# Start time: 17:27:07 on Feb 13,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/testbench.v 
 # -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 13:27:43 on Feb 13,2025, Elapsed time: 0:00:00
+# End time: 17:27:07 on Feb 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/OO\ attempt\ 3 {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/SignExtender.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:27:43 on Feb 13,2025
+# Start time: 17:27:07 on Feb 13,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/SignExtender.v 
 # -- Compiling module SignExtender
 # 
 # Top level modules:
 # 	SignExtender
-# End time: 13:27:43 on Feb 13,2025, Elapsed time: 0:00:00
+# End time: 17:27:07 on Feb 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/OO\ attempt\ 3 {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:27:43 on Feb 13,2025
+# Start time: 17:27:07 on Feb 13,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v 
 # -- Compiling module ReservationStation_Arithmetic
 # 
 # Top level modules:
 # 	ReservationStation_Arithmetic
-# End time: 13:27:43 on Feb 13,2025, Elapsed time: 0:00:00
+# End time: 17:27:07 on Feb 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/OO\ attempt\ 3 {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/registerFile.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:27:43 on Feb 13,2025
+# Start time: 17:27:07 on Feb 13,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/registerFile.v 
 # -- Compiling module registerFile
 # 
 # Top level modules:
 # 	registerFile
-# End time: 13:27:43 on Feb 13,2025, Elapsed time: 0:00:00
+# End time: 17:27:07 on Feb 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/OO\ attempt\ 3 {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:27:43 on Feb 13,2025
+# Start time: 17:27:07 on Feb 13,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v 
 # -- Compiling module RAT
 # 
 # Top level modules:
 # 	RAT
-# End time: 13:27:43 on Feb 13,2025, Elapsed time: 0:00:00
+# End time: 17:27:07 on Feb 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/OO\ attempt\ 3 {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/programCounter.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:27:43 on Feb 13,2025
+# Start time: 17:27:07 on Feb 13,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/programCounter.v 
 # -- Compiling module programCounter
 # 
 # Top level modules:
 # 	programCounter
-# End time: 13:27:43 on Feb 13,2025, Elapsed time: 0:00:00
+# End time: 17:27:07 on Feb 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/OO\ attempt\ 3 {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ALU.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:27:43 on Feb 13,2025
+# Start time: 17:27:07 on Feb 13,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ALU.v 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 13:27:43 on Feb 13,2025, Elapsed time: 0:00:00
+# End time: 17:27:07 on Feb 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/OO\ attempt\ 3 {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/controlUnit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:27:43 on Feb 13,2025
+# Start time: 17:27:07 on Feb 13,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/controlUnit.v 
 # -- Compiling module controlUnit
 # 
 # Top level modules:
 # 	controlUnit
-# End time: 13:27:43 on Feb 13,2025, Elapsed time: 0:00:00
+# End time: 17:27:07 on Feb 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/OO\ attempt\ 3 {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:27:44 on Feb 13,2025
+# Start time: 17:27:07 on Feb 13,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v 
 # -- Compiling module ROB
 # 
 # Top level modules:
 # 	ROB
-# End time: 13:27:44 on Feb 13,2025, Elapsed time: 0:00:00
+# End time: 17:27:07 on Feb 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/OO\ attempt\ 3 {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/instructionMemory.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:27:44 on Feb 13,2025
+# Start time: 17:27:07 on Feb 13,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/instructionMemory.v 
 # -- Compiling module instructionMemory
 # 
 # Top level modules:
 # 	instructionMemory
-# End time: 13:27:44 on Feb 13,2025, Elapsed time: 0:00:00
+# End time: 17:27:07 on Feb 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/OO\ attempt\ 3 {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:27:44 on Feb 13,2025
+# Start time: 17:27:07 on Feb 13,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v 
 # -- Compiling module processor
 # 
 # Top level modules:
 # 	processor
-# End time: 13:27:44 on Feb 13,2025, Elapsed time: 0:00:00
+# End time: 17:27:07 on Feb 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/OO\ attempt\ 3 {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/priority_encoder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:27:44 on Feb 13,2025
+# Start time: 17:27:07 on Feb 13,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/priority_encoder.v 
 # -- Compiling module priority_encoder
 # 
 # Top level modules:
 # 	priority_encoder
-# End time: 13:27:44 on Feb 13,2025, Elapsed time: 0:00:00
+# End time: 17:27:07 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/OO\ attempt\ 3 {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/INT_REG.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:27:08 on Feb 13,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/INT_REG.v 
+# -- Compiling module INT_REG
+# 
+# Top level modules:
+# 	INT_REG
+# End time: 17:27:08 on Feb 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/OO\ attempt\ 3 {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/testbench.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:27:44 on Feb 13,2025
+# Start time: 17:27:08 on Feb 13,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/testbench.v 
 # -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 13:27:44 on Feb 13,2025, Elapsed time: 0:00:00
+# End time: 17:27:08 on Feb 13,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  testbench
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" testbench 
-# Start time: 13:27:44 on Feb 13,2025
+# Start time: 17:27:08 on Feb 13,2025
 # Loading work.testbench
 # Loading work.processor
 # Loading work.programCounter
@@ -730,6 +740,7 @@
 # Loading work.ReservationStation_Arithmetic
 # Loading work.priority_encoder
 # Loading work.ALU
+# Loading work.INT_REG
 # Loading altera_mf_ver.altsyncram_body
 # Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
@@ -738,68 +749,70 @@
 # ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/testbench.v(17): [PCDPC] - Port size (10) does not match connection size (8) for port 'PC'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(1).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v
 # ** Warning: (vsim-3722) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/testbench.v(17): [TFMPC] - Missing connection for port 'out'.
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'hold'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/programCounter.v(1).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(37): [PCDPC] - Port size (1) does not match connection size (32) for port 'hold'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/programCounter.v(1).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/pc File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/programCounter.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(82): [PCDPC] - Port size (32) does not match connection size (16) for port 'out'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/SignExtender.v(4).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(89): [PCDPC] - Port size (32) does not match connection size (16) for port 'out'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/SignExtender.v(4).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/se1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/SignExtender.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(83): [PCDPC] - Port size (32) does not match connection size (16) for port 'out'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/SignExtender.v(4).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(90): [PCDPC] - Port size (32) does not match connection size (16) for port 'out'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/SignExtender.v(4).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/se2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/SignExtender.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(92): [PCDPC] - Port size (1) does not match connection size (32) for port 'ld1_wr'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v(2).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(99): [PCDPC] - Port size (1) does not match connection size (32) for port 'ld1_wr'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v(2).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rat File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(92): [PCDPC] - Port size (1) does not match connection size (32) for port 'ld2_wr'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v(2).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(99): [PCDPC] - Port size (1) does not match connection size (32) for port 'ld2_wr'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v(2).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rat File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(92): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld1_res_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v(3).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(99): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld1_res_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rat File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(92): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld2_res_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v(3).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(99): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld2_res_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rat File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(92): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld1_dest'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v(3).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(99): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld1_dest'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rat File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(92): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld2_dest'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v(3).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(99): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld2_dest'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rat File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (1) does not match connection size (32) for port 'ld_r'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (1) does not match connection size (32) for port 'ld_r'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (1) does not match connection size (32) for port 'ld_r2'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (1) does not match connection size (32) for port 'ld_r2'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (1) does not match connection size (32) for port 'sw_r'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (1) does not match connection size (32) for port 'sw_r'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (1) does not match connection size (32) for port 'sw_r2'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (1) does not match connection size (32) for port 'sw_r2'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (1) does not match connection size (32) for port 'branch_r'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (1) does not match connection size (32) for port 'branch_r'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (1) does not match connection size (32) for port 'prediction'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (1) does not match connection size (32) for port 'prediction'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (1) does not match connection size (32) for port 'branch_result'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (1) does not match connection size (32) for port 'branch_result'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (1) does not match connection size (32) for port 'one_instr'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (1) does not match connection size (32) for port 'one_instr'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld_dest'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld_dest'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld_dest2'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld_dest2'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (5) does not match connection size (32) for port 'sw_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (5) does not match connection size (32) for port 'sw_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (5) does not match connection size (32) for port 'sw_tag2'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (5) does not match connection size (32) for port 'sw_tag2'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (5) does not match connection size (32) for port 'branch_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (5) does not match connection size (32) for port 'branch_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld_tag2'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld_tag2'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (5) does not match connection size (32) for port 'ghr_BR'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (5) does not match connection size (32) for port 'ghr_BR'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (8) does not match connection size (32) for port 'next_addr_BR'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(5).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (8) does not match connection size (32) for port 'next_addr_BR'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(5).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (8) does not match connection size (32) for port 'b_addr_BR'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(6).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (8) does not match connection size (32) for port 'b_addr_BR'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(6).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(217): [PCDPC] - Port size (1) does not match connection size (32) for port 'ld1_wr'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v(7).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(224): [PCDPC] - Port size (1) does not match connection size (32) for port 'ld1_wr'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v(7).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/RS_arith File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(217): [PCDPC] - Port size (1) does not match connection size (32) for port 'ld2_wr'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v(7).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(224): [PCDPC] - Port size (1) does not match connection size (32) for port 'ld2_wr'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v(7).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/RS_arith File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(217): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld1_res_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v(8).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(224): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld1_res_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v(8).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/RS_arith File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(217): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld2_res_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v(8).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(224): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld2_res_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v(8).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/RS_arith File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(264): [PCDPC] - Port size (5) does not match connection size (1) for port 'dst_R'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/INT_REG.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_INT_REG1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/INT_REG.v
 # 
 # add wave *
 # view structure
@@ -819,73 +832,162 @@ restart
 # ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/testbench.v(17): [PCDPC] - Port size (10) does not match connection size (8) for port 'PC'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(1).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v
 # ** Warning: (vsim-3722) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/testbench.v(17): [TFMPC] - Missing connection for port 'out'.
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(30): [PCDPC] - Port size (1) does not match connection size (32) for port 'hold'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/programCounter.v(1).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(37): [PCDPC] - Port size (1) does not match connection size (32) for port 'hold'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/programCounter.v(1).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/pc File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/programCounter.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(82): [PCDPC] - Port size (32) does not match connection size (16) for port 'out'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/SignExtender.v(4).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(89): [PCDPC] - Port size (32) does not match connection size (16) for port 'out'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/SignExtender.v(4).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/se1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/SignExtender.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(83): [PCDPC] - Port size (32) does not match connection size (16) for port 'out'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/SignExtender.v(4).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(90): [PCDPC] - Port size (32) does not match connection size (16) for port 'out'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/SignExtender.v(4).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/se2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/SignExtender.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(92): [PCDPC] - Port size (1) does not match connection size (32) for port 'ld1_wr'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v(2).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(99): [PCDPC] - Port size (1) does not match connection size (32) for port 'ld1_wr'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v(2).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rat File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(92): [PCDPC] - Port size (1) does not match connection size (32) for port 'ld2_wr'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v(2).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(99): [PCDPC] - Port size (1) does not match connection size (32) for port 'ld2_wr'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v(2).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rat File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(92): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld1_res_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v(3).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(99): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld1_res_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rat File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(92): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld2_res_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v(3).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(99): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld2_res_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rat File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(92): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld1_dest'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v(3).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(99): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld1_dest'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rat File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(92): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld2_dest'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v(3).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(99): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld2_dest'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rat File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (1) does not match connection size (32) for port 'ld_r'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (1) does not match connection size (32) for port 'ld_r'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (1) does not match connection size (32) for port 'ld_r2'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (1) does not match connection size (32) for port 'ld_r2'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (1) does not match connection size (32) for port 'sw_r'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (1) does not match connection size (32) for port 'sw_r'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (1) does not match connection size (32) for port 'sw_r2'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (1) does not match connection size (32) for port 'sw_r2'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (1) does not match connection size (32) for port 'branch_r'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (1) does not match connection size (32) for port 'branch_r'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (1) does not match connection size (32) for port 'prediction'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (1) does not match connection size (32) for port 'prediction'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (1) does not match connection size (32) for port 'branch_result'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (1) does not match connection size (32) for port 'branch_result'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (1) does not match connection size (32) for port 'one_instr'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (1) does not match connection size (32) for port 'one_instr'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld_dest'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld_dest'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld_dest2'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld_dest2'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (5) does not match connection size (32) for port 'sw_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (5) does not match connection size (32) for port 'sw_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (5) does not match connection size (32) for port 'sw_tag2'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (5) does not match connection size (32) for port 'sw_tag2'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (5) does not match connection size (32) for port 'branch_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (5) does not match connection size (32) for port 'branch_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld_tag2'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld_tag2'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (5) does not match connection size (32) for port 'ghr_BR'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (5) does not match connection size (32) for port 'ghr_BR'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (8) does not match connection size (32) for port 'next_addr_BR'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(5).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (8) does not match connection size (32) for port 'next_addr_BR'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(5).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(106): [PCDPC] - Port size (8) does not match connection size (32) for port 'b_addr_BR'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(6).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (8) does not match connection size (32) for port 'b_addr_BR'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(6).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(217): [PCDPC] - Port size (1) does not match connection size (32) for port 'ld1_wr'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v(7).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(224): [PCDPC] - Port size (1) does not match connection size (32) for port 'ld1_wr'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v(7).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/RS_arith File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(217): [PCDPC] - Port size (1) does not match connection size (32) for port 'ld2_wr'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v(7).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(224): [PCDPC] - Port size (1) does not match connection size (32) for port 'ld2_wr'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v(7).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/RS_arith File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(217): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld1_res_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v(8).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(224): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld1_res_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v(8).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/RS_arith File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(217): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld2_res_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v(8).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(224): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld2_res_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v(8).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/RS_arith File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(264): [PCDPC] - Port size (5) does not match connection size (1) for port 'dst_R'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/INT_REG.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_INT_REG1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/INT_REG.v
 run -all
 # Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
 # Time: 0  Instance: testbench.uut.IM.altsyncram_component.m_default.altsyncram_inst
 # ** Note: $stop    : C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/testbench.v(12)
 #    Time: 1004 ns  Iteration: 0  Instance: /testbench
 # Break in Module testbench at C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/testbench.v line 12
-# End time: 13:36:46 on Feb 13,2025, Elapsed time: 0:09:02
-# Errors: 0, Warnings: 68
+add wave -position end  sim:/testbench/uut/RS_arith/val1_1_out
+add wave -position end  sim:/testbench/uut/RS_arith/val2_1_out
+add wave -position end  sim:/testbench/uut/RS_arith/val1_2_out
+add wave -position end  sim:/testbench/uut/RS_arith/val2_2_out
+restart
+# ** Warning: (vsim-3017) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/testbench.v(17): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/testbench.v(17): [PCDPC] - Port size (10) does not match connection size (8) for port 'PC'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v
+# ** Warning: (vsim-3722) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/testbench.v(17): [TFMPC] - Missing connection for port 'out'.
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(37): [PCDPC] - Port size (1) does not match connection size (32) for port 'hold'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/programCounter.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/pc File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/programCounter.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(89): [PCDPC] - Port size (32) does not match connection size (16) for port 'out'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/SignExtender.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/se1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/SignExtender.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(90): [PCDPC] - Port size (32) does not match connection size (16) for port 'out'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/SignExtender.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/se2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/SignExtender.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(99): [PCDPC] - Port size (1) does not match connection size (32) for port 'ld1_wr'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rat File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(99): [PCDPC] - Port size (1) does not match connection size (32) for port 'ld2_wr'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rat File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(99): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld1_res_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rat File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(99): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld2_res_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rat File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(99): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld1_dest'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rat File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(99): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld2_dest'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rat File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/RAT.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (1) does not match connection size (32) for port 'ld_r'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (1) does not match connection size (32) for port 'ld_r2'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (1) does not match connection size (32) for port 'sw_r'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (1) does not match connection size (32) for port 'sw_r2'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (1) does not match connection size (32) for port 'branch_r'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (1) does not match connection size (32) for port 'prediction'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (1) does not match connection size (32) for port 'branch_result'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (1) does not match connection size (32) for port 'one_instr'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld_dest'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld_dest2'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (5) does not match connection size (32) for port 'sw_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (5) does not match connection size (32) for port 'sw_tag2'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (5) does not match connection size (32) for port 'branch_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld_tag2'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (5) does not match connection size (32) for port 'ghr_BR'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (8) does not match connection size (32) for port 'next_addr_BR'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(113): [PCDPC] - Port size (8) does not match connection size (32) for port 'b_addr_BR'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/rob File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ROB.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(224): [PCDPC] - Port size (1) does not match connection size (32) for port 'ld1_wr'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/RS_arith File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(224): [PCDPC] - Port size (1) does not match connection size (32) for port 'ld2_wr'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/RS_arith File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(224): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld1_res_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/RS_arith File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(224): [PCDPC] - Port size (5) does not match connection size (32) for port 'ld2_res_tag'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/RS_arith File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v(264): [PCDPC] - Port size (5) does not match connection size (1) for port 'dst_R'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/INT_REG.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_INT_REG1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/INT_REG.v
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: testbench.uut.IM.altsyncram_component.m_default.altsyncram_inst
+# ** Note: $stop    : C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/testbench.v(12)
+#    Time: 1004 ns  Iteration: 0  Instance: /testbench
+# Break in Module testbench at C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/testbench.v line 12
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/simulation/questa/wave.do}
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# End time: 17:31:00 on Feb 13,2025, Elapsed time: 0:03:52
+# Errors: 2, Warnings: 106

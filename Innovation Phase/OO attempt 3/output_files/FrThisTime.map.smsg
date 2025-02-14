@@ -1,7 +1,7 @@
 Warning (10268): Verilog HDL information at ReservationStation_Arithmetic.v(90): always construct contains both blocking and non-blocking assignments File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/ReservationStation_Arithmetic.v Line: 90
 Warning (10268): Verilog HDL information at registerFile.v(26): always construct contains both blocking and non-blocking assignments File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/registerFile.v Line: 26
-Warning (10273): Verilog HDL warning at processor.v(169): extended using "x" or "z" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v Line: 169
-Warning (10273): Verilog HDL warning at processor.v(183): extended using "x" or "z" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v Line: 183
-Warning (10273): Verilog HDL warning at processor.v(197): extended using "x" or "z" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v Line: 197
-Warning (10273): Verilog HDL warning at processor.v(211): extended using "x" or "z" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v Line: 211
+Warning (10273): Verilog HDL warning at processor.v(176): extended using "x" or "z" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v Line: 176
+Warning (10273): Verilog HDL warning at processor.v(190): extended using "x" or "z" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v Line: 190
+Warning (10273): Verilog HDL warning at processor.v(204): extended using "x" or "z" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v Line: 204
+Warning (10273): Verilog HDL warning at processor.v(218): extended using "x" or "z" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v Line: 218
 Info (10281): Verilog HDL Declaration information at processor.v(1): object "PC" differs only in case from object "pc" in the same scope File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v Line: 1

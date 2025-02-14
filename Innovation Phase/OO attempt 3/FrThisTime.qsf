@@ -86,7 +86,11 @@ set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testbench
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testbench -section_id testbench
 set_global_assignment -name EDA_TEST_BENCH_FILE testbench.v -section_id testbench
 set_global_assignment -name VERILOG_FILE priority_encoder.v
+set_global_assignment -name VERILOG_FILE INT_REG.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION ON
+set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_RETIMING ON
+set_global_assignment -name ROUTER_REGISTER_DUPLICATION OFF
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

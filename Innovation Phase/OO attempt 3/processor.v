@@ -13,11 +13,18 @@ wire [31:0] first_instr_im, second_instr_im,readData1_1,readData2_1,readData1_2,
 RS_val1_1,RS_val2_1,RS_val1_2,RS_val2_2,val1_1_out,val2_1_out,val1_2_out,val2_2_out,alu2_result,alu1_result,commit_data1,commit_data2;
 
 
-reg [31:0] first_instr, second_instr,alu1_res_pipe,alu2_res_pipe, rs1_frwd_data,rt1_frwd_data,rs2_frwd_data, rt2_frwd_data;
-reg alu1_wr_pipe,alu2_wr_pipe,rs1_frwd,rt1_frwd,rs2_frwd,rt2_frwd;
-reg [4:0] arith_dest1_pipe,arith_dest2_pipe,arith_tag1_pipe,arith_tag2_pipe, tag1_dependent, tag2_dependent;
+wire [31:0] alu1_res_pipe,alu2_res_pipe;
+wire alu1_wr_pipe,alu2_wr_pipe;
+wire [4:0] arith_dest1_pipe,arith_dest2_pipe,arith_tag1_pipe,arith_tag2_pipe;
+
+reg[31:0] rs1_frwd_data,rt1_frwd_data,rs2_frwd_data, rt2_frwd_data, first_instr, second_instr;
 wire first_nop, second_nop, nop;
+reg rs1_frwd,rt1_frwd,rs2_frwd,rt2_frwd;
+
+
 reg tag1_dependent_flag, tag2_dependent_flag;
+reg [4:0] tag1_dependent, tag2_dependent;
+
 
 assign pc_in = PC + 10'd2;
 assign stall = rob_full | full_RSA;
@@ -253,29 +260,32 @@ ALU alu2(
 );
 
 
-always @(posedge clk, negedge rst) begin
-	if(~rst) begin
-		alu1_res_pipe <= 0;
-		alu2_res_pipe <= 0;
-		alu1_wr_pipe <= 0;
-		alu2_wr_pipe <= 0;
-		arith_dest1_pipe <= 0;
-		arith_dest2_pipe <= 0;
-		arith_tag1_pipe <= 0;
-		arith_tag2_pipe <= 0;
-	end
-	else begin
-		alu1_res_pipe <= alu1_result;
-		alu2_res_pipe <= alu2_result;
-		alu1_wr_pipe <= alu1_wr;
-		alu2_wr_pipe <= alu2_wr;
-		arith_dest1_pipe <= arith_dest1_out;
-		arith_dest2_pipe <= arith_dest2_out;
-		arith_tag1_pipe <= arith_tag1;
-		arith_tag2_pipe <= arith_tag2;
-	end
 
-end
+INT_REG u_INT_REG1(
+    .clk     ( clk     ),
+    .rst     ( rst     ),
+    .we_EX   ( alu1_wr   ),
+    .dst_EX  ( arith_dest1_out),
+    .tag_EX  ( arith_tag1  ),
+    .data_EX ( alu1_result),
+    .we_R    ( alu1_wr_pipe   ),
+    .dst_R   ( rith_dest1_pipe   ),
+    .tag_R   ( arith_tag1_pipe   ),
+    .data_R  ( alu1_res_pipe  )
+);
+INT_REG u_INT_REG2(
+    .clk     ( clk     ),
+    .rst     ( rst     ),
+    .we_EX   ( alu2_wr   ),
+    .dst_EX  ( arith_dest2_out ),
+    .tag_EX  ( arith_tag2),
+    .data_EX ( alu2_result),
+    .we_R    (alu2_wr_pipe),
+    .dst_R   ( arith_dest2_pipe),
+    .tag_R   ( arith_tag2_pipe),
+    .data_R  (alu2_res_pipe)
+);
+
 
 
 

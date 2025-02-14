@@ -46,6 +46,7 @@ vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/In
 vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/OO\ attempt\ 3 {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/instructionMemory.v}
 vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/OO\ attempt\ 3 {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/processor.v}
 vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/OO\ attempt\ 3 {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/priority_encoder.v}
+vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/OO\ attempt\ 3 {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/INT_REG.v}
 
 vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/OO\ attempt\ 3 {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/OO attempt 3/testbench.v}
 

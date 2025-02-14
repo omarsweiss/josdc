@@ -12,6 +12,9 @@ add wave -noupdate /testbench/PC
 add wave -noupdate /testbench/clk
 add wave -noupdate /testbench/rst
 add wave -noupdate /testbench/PC
+add wave -noupdate /testbench/clk
+add wave -noupdate /testbench/rst
+add wave -noupdate /testbench/PC
 add wave -noupdate -radix unsigned /testbench/uut/first_instr_im
 add wave -noupdate -radix unsigned /testbench/uut/second_instr_im
 add wave -noupdate -radix unsigned /testbench/uut/second_instr
@@ -63,12 +66,16 @@ add wave -noupdate -radix unsigned /testbench/uut/RS_arith/rt2_tag
 add wave -noupdate -radix unsigned /testbench/uut/RS_arith/rt1_tag
 add wave -noupdate -radix unsigned /testbench/uut/RS_arith/rs2_tag
 add wave -noupdate -radix unsigned /testbench/uut/RS_arith/rs1_tag
-add wave -noupdate -radix unsigned -childformat {{{/testbench/uut/RS_arith/ready_rt[7]} -radix unsigned} {{/testbench/uut/RS_arith/ready_rt[6]} -radix unsigned} {{/testbench/uut/RS_arith/ready_rt[5]} -radix unsigned} {{/testbench/uut/RS_arith/ready_rt[4]} -radix unsigned} {{/testbench/uut/RS_arith/ready_rt[3]} -radix unsigned} {{/testbench/uut/RS_arith/ready_rt[2]} -radix unsigned} {{/testbench/uut/RS_arith/ready_rt[1]} -radix unsigned} {{/testbench/uut/RS_arith/ready_rt[0]} -radix unsigned}} -expand -subitemconfig {{/testbench/uut/RS_arith/ready_rt[7]} {-height 15 -radix unsigned} {/testbench/uut/RS_arith/ready_rt[6]} {-height 15 -radix unsigned} {/testbench/uut/RS_arith/ready_rt[5]} {-height 15 -radix unsigned} {/testbench/uut/RS_arith/ready_rt[4]} {-height 15 -radix unsigned} {/testbench/uut/RS_arith/ready_rt[3]} {-height 15 -radix unsigned} {/testbench/uut/RS_arith/ready_rt[2]} {-height 15 -radix unsigned} {/testbench/uut/RS_arith/ready_rt[1]} {-height 15 -radix unsigned} {/testbench/uut/RS_arith/ready_rt[0]} {-height 15 -radix unsigned}} /testbench/uut/RS_arith/ready_rt
-add wave -noupdate -radix unsigned -childformat {{{/testbench/uut/RS_arith/ready_rs[7]} -radix unsigned} {{/testbench/uut/RS_arith/ready_rs[6]} -radix unsigned} {{/testbench/uut/RS_arith/ready_rs[5]} -radix unsigned} {{/testbench/uut/RS_arith/ready_rs[4]} -radix unsigned} {{/testbench/uut/RS_arith/ready_rs[3]} -radix unsigned} {{/testbench/uut/RS_arith/ready_rs[2]} -radix unsigned} {{/testbench/uut/RS_arith/ready_rs[1]} -radix unsigned} {{/testbench/uut/RS_arith/ready_rs[0]} -radix unsigned}} -expand -subitemconfig {{/testbench/uut/RS_arith/ready_rs[7]} {-height 15 -radix unsigned} {/testbench/uut/RS_arith/ready_rs[6]} {-height 15 -radix unsigned} {/testbench/uut/RS_arith/ready_rs[5]} {-height 15 -radix unsigned} {/testbench/uut/RS_arith/ready_rs[4]} {-height 15 -radix unsigned} {/testbench/uut/RS_arith/ready_rs[3]} {-height 15 -radix unsigned} {/testbench/uut/RS_arith/ready_rs[2]} {-height 15 -radix unsigned} {/testbench/uut/RS_arith/ready_rs[1]} {-height 15 -radix unsigned} {/testbench/uut/RS_arith/ready_rs[0]} {-height 15 -radix unsigned}} /testbench/uut/RS_arith/ready_rs
+add wave -noupdate -radix unsigned -childformat {{{/testbench/uut/RS_arith/ready_rt[7]} -radix unsigned} {{/testbench/uut/RS_arith/ready_rt[6]} -radix unsigned} {{/testbench/uut/RS_arith/ready_rt[5]} -radix unsigned} {{/testbench/uut/RS_arith/ready_rt[4]} -radix unsigned} {{/testbench/uut/RS_arith/ready_rt[3]} -radix unsigned} {{/testbench/uut/RS_arith/ready_rt[2]} -radix unsigned} {{/testbench/uut/RS_arith/ready_rt[1]} -radix unsigned} {{/testbench/uut/RS_arith/ready_rt[0]} -radix unsigned}} -subitemconfig {{/testbench/uut/RS_arith/ready_rt[7]} {-height 15 -radix unsigned} {/testbench/uut/RS_arith/ready_rt[6]} {-height 15 -radix unsigned} {/testbench/uut/RS_arith/ready_rt[5]} {-height 15 -radix unsigned} {/testbench/uut/RS_arith/ready_rt[4]} {-height 15 -radix unsigned} {/testbench/uut/RS_arith/ready_rt[3]} {-height 15 -radix unsigned} {/testbench/uut/RS_arith/ready_rt[2]} {-height 15 -radix unsigned} {/testbench/uut/RS_arith/ready_rt[1]} {-height 15 -radix unsigned} {/testbench/uut/RS_arith/ready_rt[0]} {-height 15 -radix unsigned}} /testbench/uut/RS_arith/ready_rt
+add wave -noupdate -radix unsigned -childformat {{{/testbench/uut/RS_arith/ready_rs[7]} -radix unsigned} {{/testbench/uut/RS_arith/ready_rs[6]} -radix unsigned} {{/testbench/uut/RS_arith/ready_rs[5]} -radix unsigned} {{/testbench/uut/RS_arith/ready_rs[4]} -radix unsigned} {{/testbench/uut/RS_arith/ready_rs[3]} -radix unsigned} {{/testbench/uut/RS_arith/ready_rs[2]} -radix unsigned} {{/testbench/uut/RS_arith/ready_rs[1]} -radix unsigned} {{/testbench/uut/RS_arith/ready_rs[0]} -radix unsigned}} -subitemconfig {{/testbench/uut/RS_arith/ready_rs[7]} {-height 15 -radix unsigned} {/testbench/uut/RS_arith/ready_rs[6]} {-height 15 -radix unsigned} {/testbench/uut/RS_arith/ready_rs[5]} {-height 15 -radix unsigned} {/testbench/uut/RS_arith/ready_rs[4]} {-height 15 -radix unsigned} {/testbench/uut/RS_arith/ready_rs[3]} {-height 15 -radix unsigned} {/testbench/uut/RS_arith/ready_rs[2]} {-height 15 -radix unsigned} {/testbench/uut/RS_arith/ready_rs[1]} {-height 15 -radix unsigned} {/testbench/uut/RS_arith/ready_rs[0]} {-height 15 -radix unsigned}} /testbench/uut/RS_arith/ready_rs
 add wave -noupdate /testbench/uut/RS_arith/write1
 add wave -noupdate /testbench/uut/RS_arith/write2
+add wave -noupdate -radix unsigned /testbench/uut/RS_arith/val1_1_out
+add wave -noupdate -radix unsigned /testbench/uut/RS_arith/val2_1_out
+add wave -noupdate -radix unsigned /testbench/uut/RS_arith/val1_2_out
+add wave -noupdate -radix unsigned /testbench/uut/RS_arith/val2_2_out
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {9047 ps} 0}
+WaveRestoreCursors {{Cursor 1} {55740 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 324
 configure wave -valuecolwidth 100

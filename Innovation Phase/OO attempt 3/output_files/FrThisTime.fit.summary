@@ -1,14 +1,14 @@
-Fitter Status : Successful - Thu Feb 13 13:32:40 2025
+Fitter Status : Successful - Thu Feb 13 18:39:53 2025
 Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : FrThisTime
 Top-level Entity Name : processor
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 15,292 / 49,760 ( 31 % )
-    Total combinational functions : 15,217 / 49,760 ( 31 % )
-    Dedicated logic registers : 3,357 / 49,760 ( 7 % )
-Total registers : 3357
+Total logic elements : 16,213 / 49,760 ( 33 % )
+    Total combinational functions : 16,122 / 49,760 ( 32 % )
+    Dedicated logic registers : 3,429 / 49,760 ( 7 % )
+Total registers : 3429
 Total pins : 44 / 360 ( 12 % )
 Total virtual pins : 0
 Total memory bits : 32,768 / 1,677,312 ( 2 % )

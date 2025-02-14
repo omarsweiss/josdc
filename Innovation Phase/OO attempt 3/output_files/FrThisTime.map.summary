@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Thu Feb 13 13:29:34 2025
+Analysis & Synthesis Status : Successful - Thu Feb 13 18:37:23 2025
 Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : FrThisTime
 Top-level Entity Name : processor
 Family : MAX 10
-Total logic elements : 15,441
-    Total combinational functions : 15,217
-    Dedicated logic registers : 3,389
-Total registers : 3389
+Total logic elements : 16,374
+    Total combinational functions : 16,122
+    Dedicated logic registers : 3,461
+Total registers : 3461
 Total pins : 44
 Total virtual pins : 0
 Total memory bits : 32,768
