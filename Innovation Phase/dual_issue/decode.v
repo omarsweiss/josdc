@@ -60,7 +60,7 @@ registerFile rf(.clk(clk), .rst(rst),.we1(regWrite1_WB), .we2(regWrite2_WB),
 					 
 					 .writeRegister1(regAddress1),.writeRegister2(regAddress2),
 					 
-					 .writeData1(writeData1_WB),.writeData2(writeData1_WB),
+					 .writeData1(writeData1_WB),.writeData2(writeData2_WB),
 					 
 					 .readData1_1(readData1_1), .readData2_1(readData2_1), .readData1_2(readData1_2), .readData2_2(readData2_2));
 					 

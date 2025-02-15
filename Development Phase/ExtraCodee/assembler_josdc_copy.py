@@ -168,64 +168,40 @@ def unpseudo(instructions):
 
 
 
-instructions = """  addi $1,  $0, 10
-addi $2,  $0, 20
-addi $13, $0, 5
-addi $8,  $0, 30
-addi $4,  $0,  5
-addi $21, $0,  10
-addi $31, $0, 7
-add  $3,  $1,  $2
-add  $14, $13, $13
-sll  $31, $31, 1
-sub  $5,  $3,  $1
+instructions = """ addi $1, $0, 0
+addi $2, $0, 11
+addi $3, $0, 7
 SLL $0, $0, 0
-andi $6,  $5,  15
+loop: slt $7, $2, $1
 SLL $0, $0, 0
-sll  $7,  $6,  2
 SLL $0, $0, 0
-sub  $9,  $8,  $7
+bne $0, $7, notFound
+add $4, $2, $1
 SLL $0, $0, 0
-addi $10, $9,  2
+srl $5, $4, 1
 SLL $0, $0, 0
-ori  $11, $10, 1
+lw $6, 0($5)
 SLL $0, $0, 0
-nor  $12, $11, $7
 SLL $0, $0, 0
-sub  $15, $14, $12
 SLL $0, $0, 0
-andi $16, $15, 15
 SLL $0, $0, 0
-sll  $17, $16, 1
+beq $3, $6, found
+slt $6, $6, $3
 SLL $0, $0, 0
-addi $18, $17, 1
 SLL $0, $0, 0
-nor  $19, $18, $16
+beq $6, $0, leftHalf
 SLL $0, $0, 0
-add  $20, $19, $14
-SLL $0, $0, 0
-andi $22, $20, 10
-SLL $0, $0, 0
-ori  $23, $22, 5
-SLL $0, $0, 0
-nor  $24, $23, $21
-SLL $0, $0, 0
-sll  $25, $24, 2
-SLL $0, $0, 0
-addi $26, $25, 1
-SLL $0, $0, 0
-addi $27, $26, 1
-SLL $0, $0, 0
-nor  $28, $27, $25
-SLL $0, $0, 0
-add  $29, $28, $20
-SLL $0, $0, 0
-sub  $30, $29, $28
-SLL $0, $0, 0
-add  $31, $31, $30
-SLL $0, $0, 0
-nor  $31, $31, $29
-SLL $0, $0, 0    
+j rightHalf
+leftHalf: add $2, $5, -1"
+j loop
+rightHalf: addi $1, $5, 1
+j loop
+found: add $8, $0, $5
+j finish
+notFound: addi $8, $0, -1
+j finish
+finish: addi $0, $0, 0
+SLL $0, $0, 0  
 """
 i = 0 
 instructions = instructions.lower()

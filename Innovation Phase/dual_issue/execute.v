@@ -41,25 +41,25 @@ always @(*) begin
 			3'b010: ForwardB1_EX = aluRes1_WB; // wb 1 should be 2
 			3'b011: ForwardB1_EX = aluRes2_MEM; // mem 2 should be 3
 			3'b100: ForwardB1_EX = aluRes2_WB; // wb 2 should be 4
-			default:ForwardB1_EX = readData1_1;
+			default:ForwardB1_EX = readData2_1;
 		endcase
 		
-		case (ForwardA_1) 
+		case (ForwardA_2) 
 			3'b000: ForwardA2_EX = readData1_2;
 			3'b001: ForwardA2_EX = aluRes1_MEM; // mem 1 should be 1
 			3'b010: ForwardA2_EX = aluRes1_WB; // wb 1 should be 2
 			3'b011: ForwardA2_EX = aluRes2_MEM; // mem 2 should be 3
 			3'b100: ForwardA2_EX = aluRes2_WB; // wb 2 should be 4
-			default:ForwardA2_EX = readData1_1;
+			default:ForwardA2_EX = readData1_2;
 		endcase
 		
-		case (ForwardA_1) 
+		case (ForwardB_2) 
 			3'b000: ForwardB2_EX = readData2_2;
 			3'b001: ForwardB2_EX = aluRes1_MEM; // mem 1 should be 1
 			3'b010: ForwardB2_EX = aluRes1_WB; // wb 1 should be 2
 			3'b011: ForwardB2_EX = aluRes2_MEM; // mem 2 should be 3
 			3'b100: ForwardB2_EX = aluRes2_WB; // wb 2 should be 4
-			default:ForwardB2_EX = readData1_1;
+			default:ForwardB2_EX = readData2_2;
 		endcase
 		
 	end

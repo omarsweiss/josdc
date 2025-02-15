@@ -54,12 +54,11 @@ end
 
 
 always @(*) begin
-    casez ({rst, correct_en ,jr, jump_1, jump_2})
-        5'b0zzzz: nextPC_out = 10'b0000000000;      // Reset condition
-        5'b11zzz: nextPC_out = correction;
-		  5'b101zz: nextPC_out = reg1Addr;           // Jump register
-        5'b1001z: nextPC_out = address_1;            // J-type instruction
-		  5'b10001: nextPC_out = address_2;
+    casez ({rst, jr, jump_1, jump_2})
+        4'b0zzz: nextPC_out = 10'b0000000000;      // Reset condition
+		  4'b11zz: nextPC_out = reg1Addr;           // Jump register
+        4'b101z: nextPC_out = address_1;            // J-type instruction
+		  4'b1001: nextPC_out = address_2;
         default:    nextPC_out = pc_plus;		  // Default case
     endcase
 end

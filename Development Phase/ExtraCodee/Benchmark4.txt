@@ -10,7 +10,7 @@ beq $3, $6, found
 slt $6, $6, $3
 beq $6, $0, leftHalf
 j rightHalf
-leftHalf: add $2, $5, -1"
+leftHalf: add $2, $5, -1
 j loop
 rightHalf: addi $1, $5, 1
 j loop
