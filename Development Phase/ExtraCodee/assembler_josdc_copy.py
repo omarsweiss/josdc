@@ -168,6 +168,7 @@ def unpseudo(instructions):
 
 
 
+<<<<<<< HEAD
 instructions = """ addi $1, $0, 0
 addi $2, $0, 11
 addi $3, $0, 7
@@ -202,6 +203,38 @@ notFound: addi $8, $0, -1
 j finish
 finish: addi $0, $0, 0
 SLL $0, $0, 0  
+=======
+instructions = """ SLT $7 $2 $1
+SLL $0 $0 0
+SLL $0 $0 0
+BNE $0 $7 notFound
+ADD $4 $2 $1
+SLL $0 $0 0
+SRL $5 $4 1
+SLL $0 $0 0
+LW $6 $5 0x0
+SLL $0 $0 0
+SLL $0 $0 0
+SLL $0 $0 0
+SLL $0 $0 0
+BEQ $3 $6 found
+SLT $6 $6 $3
+SLL $0 $0 0
+SLL $0 $0 0
+BEQ $6 $0 leftHalf
+SLL $0, $0, 0
+j rightHalf
+leftHalf: ADD $2 $5 0xFFFF
+J loop
+rightHalf: ADDI $1 $5 0x1
+J loop
+found: ADD $8 $0 $5
+J finish
+notFound: ADDI $8 $0 0xFFFF
+J finish
+finish: SLL $0, $0, 0
+SLL $0, $0, 0 
+>>>>>>> fe1efbcfda597901b6eaad69dbf5b15460e2be28
 """
 i = 0 
 instructions = instructions.lower()
