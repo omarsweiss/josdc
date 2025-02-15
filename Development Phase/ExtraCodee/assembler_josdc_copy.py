@@ -168,60 +168,36 @@ def unpseudo(instructions):
 
 
 
-instructions = """  ADDI $1 $0 10
-ADDI $2 $0 20
-ADDI $13 $0 5
-ADDI $8 $0 30
-ADD $3 $1 $2
-ADD $14 $13 $13
-SUB $5 $3 $1
-ADDI $4 $0 5
-ANDI $6 $5 15
-ADDI $21 $0 10
-SLL $7 $6 2
-ADDI $31 $0 7
-SUB $9 $8 $7
-SLL $31 $31 1
-ADDI $10 $9 2
+instructions = """ SLT $7 $2 $1
 SLL $0 $0 0
-ORI $11 $10 1
 SLL $0 $0 0
-NOR $12 $11 $7
+BNE $0 $7 notFound
+ADD $4 $2 $1
 SLL $0 $0 0
-SUB $15 $14 $12
+SRL $5 $4 1
 SLL $0 $0 0
-ANDI $16 $15 15
+LW $6 $5 0x0
 SLL $0 $0 0
-SLL $17 $16 1
 SLL $0 $0 0
-ADDI $18 $17 1
 SLL $0 $0 0
-NOR $19 $18 $16
 SLL $0 $0 0
-ADD $20 $19 $14
+BEQ $3 $6 found
+SLT $6 $6 $3
 SLL $0 $0 0
-ANDI $22 $20 10
 SLL $0 $0 0
-ORI $23 $22 5
-SLL $0 $0 0
-NOR $24 $23 $21
-SLL $0 $0 0
-SLL $25 $24 2
-SLL $0 $0 0
-ADDI $26 $25 1
-SLL $0 $0 0
-ADDI $27 $26 1
-SLL $0 $0 0
-NOR $28 $27 $25
-SLL $0 $0 0
-ADD $29 $28 $20
-SLL $0 $0 0
-SUB $30 $29 $28
-SLL $0 $0 0
-ADD $31 $31 $30
-SLL $0 $0 0
-NOR $31 $31 $29
-SLL $0 $0 0   
+BEQ $6 $0 leftHalf
+SLL $0, $0, 0
+j rightHalf
+leftHalf: ADD $2 $5 0xFFFF
+J loop
+rightHalf: ADDI $1 $5 0x1
+J loop
+found: ADD $8 $0 $5
+J finish
+notFound: ADDI $8 $0 0xFFFF
+J finish
+finish: SLL $0, $0, 0
+SLL $0, $0, 0 
 """
 i = 0 
 instructions = instructions.lower()
