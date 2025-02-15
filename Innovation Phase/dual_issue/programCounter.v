@@ -10,7 +10,7 @@ module programCounter (clk, rst, PCin, PCout, hold);
 	//Counter logic
 	always@(posedge clk, negedge rst) begin
 		if(~rst) begin
-			PCout <= 10'b1111111110;// should be all 0's maybe?
+			PCout <= 10'b0;// should be all 0's maybe?
 		end
 		
 		else if(~hold) PCout <= PCin;

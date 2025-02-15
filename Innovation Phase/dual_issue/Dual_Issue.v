@@ -50,8 +50,8 @@ t_pipe u_t_pipe(
     .correction        ( correction_t        ),
     .writeData1_WB     ( writeData1_WB     ),
     .writeData2_WB     ( writeData2_WB     ),
-    .aluRes1_WB        ( aluRes1_WB        ),
-    .aluRes2_WB        ( aluRes2_WB        ),
+    .aluRes1_WB        ( WBMuxOutput1        ),
+    .aluRes2_WB        ( WBMuxOutput2        ),
     .Branch1           ( Branch1_t           ),
     .Branch2           ( Branch2_t           ),
     .taken1            ( taken1_t            ),
@@ -90,7 +90,9 @@ t_pipe u_t_pipe(
 	 .Branch1_MEM		  ( Branch1_MEM_t			),
 	 .Branch2_MEM		  ( Branch2_MEM_t			),
 	 .Branch1_EX		  ( Branch1_EX_t			),
-	 .Branch2_EX		  ( Branch2_EX_t			)
+	 .Branch2_EX		  ( Branch2_EX_t			),
+	 .aluRes1_MEM_fwd		(	aluRes1_MEM			),
+	 .aluRes2_MEM_fwd		(	aluRes2_MEM		)
 );
 
 
@@ -114,8 +116,8 @@ not_t_pipe u_not_t_pipe(
     .correction        ( correction_n        ),
     .writeData1_WB     ( writeData1_WB     ),
     .writeData2_WB     ( writeData2_WB     ),
-    .aluRes1_WB        ( aluRes1_WB        ),
-    .aluRes2_WB        ( aluRes2_WB        ),
+    .aluRes1_WB        ( WBMuxOutput1        ),
+    .aluRes2_WB        ( WBMuxOutput2        ),
     .Branch1           ( Branch1_n           ),
     .Branch2           ( Branch2_n           ),
     .taken1            ( taken1_n            ),
@@ -152,7 +154,9 @@ not_t_pipe u_not_t_pipe(
 	 .BranchAddress_1_ID (BTA1),
 	 .BranchAddress_2_ID (BTA2),
 	 .Branch1_EX		  ( Branch1_EX_n			),
-	 .Branch2_EX		  ( Branch2_EX_n			)
+	 .Branch2_EX		  ( Branch2_EX_n			),
+	 .aluRes1_MEM_fwd		(	aluRes1_MEM			),
+	 .aluRes2_MEM_fwd		(	aluRes2_MEM		)
 );
 
 branch_control u_branch_control(
@@ -292,7 +296,7 @@ mux2x1 #(32) WBMux2(.in1(aluRes2_WB), .in2(Dmem_res2_WB), .s(MemtoReg2_WB), .out
 	
 	
 mux2x1 #(32) WritePc1(.in1(WBMuxOutput1),.in2({22'b0,return_addr1_WB}),.s(jal1_WB),.out(writeData1_WB));
-mux2x1 #(32) WritePc2(.in1(WBMuxOutput1),.in2({22'b0,return_addr2_WB}),.s(jal2_WB),.out(writeData2_WB));
+mux2x1 #(32) WritePc2(.in1(WBMuxOutput2),.in2({22'b0,return_addr2_WB}),.s(jal2_WB),.out(writeData2_WB));
 	
 
 	

@@ -1,13 +1,13 @@
 module not_t_pipe(input clk,input rst,
 input flush_IFID, flush_IDEX, correct_en,jal1_WB,jal2_WB,regWrite1_WB,regWrite2_WB,
 
-input [1:0] ForwardA_1,ForwardB_1,ForwardA_2,ForwardB_2,
+input [2:0] ForwardA_1,ForwardB_1,ForwardA_2,ForwardB_2,
 
 input [4:0] writeReg1_WB,writeReg2_WB,
  
 input [9:0] correction,
 
-input [31:0]writeData1_WB,writeData2_WB,aluRes1_WB,aluRes2_WB,
+input [31:0]writeData1_WB,writeData2_WB,aluRes1_WB,aluRes2_WB,aluRes1_MEM_fwd,aluRes2_MEM_fwd,
 
 output Branch1,Branch2, taken1, taken2, taken1_MEM,  MemReadEn1_MEM, MemtoReg1_MEM, MemWriteEn1_MEM, RegWriteEn1_MEM,jal1_MEM,
  taken2_MEM,  MemReadEn2_MEM, MemtoReg2_MEM, MemWriteEn2_MEM, RegWriteEn2_MEM,jal2_MEM, Branch2_EX,Branch1_EX,
@@ -21,9 +21,9 @@ output [31:0] aluRes1_MEM, forwardBRes1_MEM, aluRes2_MEM, forwardBRes2_MEM
 
 wire [31:0] instruction_1,instruction_2,readData1_1,readData2_1,readData1_2,readData2_2,extImm1,
 extImm2,readData1_1_EX, readData2_1_EX, extImm1_EX,readData1_2_EX, readData2_2_EX, extImm2_EX,
-ForwardB1_EX,ForwardB2_EX,aluRes1,aluRes2;
+ForwardB1_EX,ForwardB2_EX,aluRes1,aluRes2,instruction1_ID,instruction2_ID;
 
-wire [9:0] return_addr1,return_addr2,reg1Addr,instruction2_ID,return_addr1_ID,instruction1_ID,return_addr1_EX,
+wire [9:0] return_addr1,return_addr2,reg1Addr,return_addr1_ID,return_addr1_EX,
 BranchAddress_1,BranchAddress_2;
 
 wire [4:0] shamt1,shamt2,rs1,rt1,rs2,rt2,destReg1,destReg2,shamt1_EX,shamt2_EX, DestReg1_EX, DestReg2_EX;
@@ -49,7 +49,7 @@ assign   ld_hazard =   (MemReadEn1_EX && (rs1 == DestReg1_EX || RegDst1 && (rt1 
 assign   jr_hazard = (jr1 || jr2) && !ld_hazard; 
 ////////////////////////////////////////
  
- 
+
  
  
 fetch_not_taken u_fetch_not_taken(
@@ -84,6 +84,7 @@ IFID #(52) ifid2(.Q({return_addr2_ID, instruction2_ID,BranchAddress_2_ID}),
 					 .D({return_addr2, instruction_2,BranchAddress_2}),
 
 					 .clk(clk), .reset(rst), .hold(ld_hazard ), .flush(flush_second || jr_hazard || flush_IFID)); ///////////////////////////////////////
+
 
 
 decode u_decode(
@@ -173,9 +174,9 @@ execute u_execute(
     .extImm2      ( extImm2_EX      ),
     .readData1_2  ( readData1_2_EX  ),
     .readData2_2  ( readData2_2_EX  ),
-    .aluRes1_MEM  ( aluRes1_MEM  ),
+    .aluRes1_MEM  ( aluRes1_MEM_fwd  ),
     .aluRes1_WB   ( aluRes1_WB   ),
-    .aluRes2_MEM  ( aluRes2_MEM  ),
+    .aluRes2_MEM  ( aluRes1_MEM_fwd  ),
     .aluRes2_WB   ( aluRes2_WB   ),
     .ForwardB1_EX ( ForwardB1_EX ),
     .ForwardB2_EX ( ForwardB2_EX ),

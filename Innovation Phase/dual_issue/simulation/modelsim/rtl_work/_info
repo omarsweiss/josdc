@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/simulation/modelsim
 vALU
-Z1 !s110 1739616757
+Z1 !s110 1739657219
 !i10b 1
 !s100 3a[meDhSJQR3R6174;f8R1
 IePAk?ej==;kABaE6C53f[1
@@ -23,7 +23,7 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1739616757.000000
+Z5 !s108 1739657219.000000
 !s107 C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/ALU.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue|C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/ALU.v|
 !i113 1
@@ -32,7 +32,7 @@ Z7 !s92 -vlog01compat -work work {+incdir+C:/Users/amr/Desktop/Quartus/Minumum 3
 Z8 tCvgOpt 0
 n@a@l@u
 vbranch_control
-R1
+Z9 !s110 1739657220
 !i10b 1
 !s100 =RCLgoMNXcg]nF`XnggZG3
 I2:^9ao:fnlX^`4JTiafV11
@@ -46,7 +46,7 @@ R4
 r1
 !s85 0
 31
-R5
+Z10 !s108 1739657220.000000
 !s107 C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/branch_control.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue|C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/branch_control.v|
 !i113 1
@@ -99,7 +99,7 @@ R7
 R8
 ncontrol@unit
 vdataMemory
-R1
+R9
 !i10b 1
 !s100 iE@ASNNg4B@>emQk4FK]E0
 IfBBgcjSm5=aDU7C9ijEO=3
@@ -108,12 +108,12 @@ R0
 w1739568117
 8C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/dataMemory.v
 FC:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/dataMemory.v
-Z9 L0 40
+Z11 L0 40
 R4
 r1
 !s85 0
 31
-R5
+R10
 !s107 C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/dataMemory.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue|C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/dataMemory.v|
 !i113 1
@@ -122,13 +122,13 @@ R7
 R8
 ndata@memory
 vdecode
-R1
+R9
 !i10b 1
-!s100 eDI>CeifzMa:cFGUYB5RK3
-IPagBU5Jam<XebBo<B8g>B1
+!s100 :7C<ECOZNL:B^4VV8zDFd1
+I8Jz]E_@cnTXkoToDcoh5E3
 R2
 R0
-w1739560855
+w1739648136
 8C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/decode.v
 FC:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/decode.v
 L0 1
@@ -144,13 +144,13 @@ R6
 R7
 R8
 vDual_Issue
-R1
+R9
 !i10b 1
-!s100 QSUk_44Wi[R[5m?[@GlZ90
-IU^X^VV`d@eGHRA2;jFKl@2
+!s100 GEY=CLi[o0_mze?T;`e870
+IH4UYmG2Sc>a<m[@XVVX^?3
 R2
 R0
-w1739616718
+w1739656336
 8C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/Dual_Issue.v
 FC:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/Dual_Issue.v
 L0 1
@@ -158,7 +158,7 @@ R4
 r1
 !s85 0
 31
-R5
+R10
 !s107 C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/Dual_Issue.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue|C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/Dual_Issue.v|
 !i113 1
@@ -167,13 +167,13 @@ R7
 R8
 n@dual_@issue
 vexecute
-R1
+R9
 !i10b 1
-!s100 @[a@hOJI:^8Y6<3@Ajeid2
-I0@5M6QQfPzH<F77Z7KIQA2
+!s100 V=10VHKfV>BLIjJch7V]M3
+IfHNn9fec:71H8BTXbJ:Hn2
 R2
 R0
-w1739516786
+w1739648830
 8C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/execute.v
 FC:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/execute.v
 L0 1
@@ -181,7 +181,7 @@ R4
 r1
 !s85 0
 31
-R5
+R10
 !s107 C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/execute.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue|C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/execute.v|
 !i113 1
@@ -189,21 +189,21 @@ R6
 R7
 R8
 vEXMEM
-Z10 !s110 1739616756
+R1
 !i10b 1
 !s100 m`M6jRHIkbO2gG_8Y]Mjo1
 IdRIfIYF1HOzC]Q`jIcIze2
 R2
 R0
-Z11 w1739606708
-Z12 8C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/Pipes.v
-Z13 FC:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/Pipes.v
+Z12 w1739606708
+Z13 8C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/Pipes.v
+Z14 FC:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/Pipes.v
 L0 34
 R4
 r1
 !s85 0
 31
-Z14 !s108 1739616756.000000
+R5
 Z15 !s107 C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/Pipes.v|
 Z16 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue|C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/Pipes.v|
 !i113 1
@@ -212,13 +212,13 @@ R7
 R8
 n@e@x@m@e@m
 vfetch_not_taken
-R1
+R9
 !i10b 1
-!s100 >4m@]U6G6mh_V4@ek`ocF0
-IBKhAa^o1jHo3@6Cog`lzz3
+!s100 TJ@fz6`W2j[@Fb]=RGAZK1
+ICl=o7`M<TE3CXU[0bVYSe3
 R2
 R0
-w1739602873
+w1739645899
 8C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/fetch_not_taken.v
 FC:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/fetch_not_taken.v
 L0 1
@@ -226,7 +226,7 @@ R4
 r1
 !s85 0
 31
-R5
+R10
 !s107 C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/fetch_not_taken.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue|C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/fetch_not_taken.v|
 !i113 1
@@ -236,11 +236,11 @@ R8
 vfetch_taken
 R1
 !i10b 1
-!s100 d;Z3F<hQh[;6NI0b8kOA63
-I_`XM;[]kHhHb8G1zoGa9H3
+!s100 9B9d@T4lX>]DYa=FKQ<a:2
+IgHYEJ9JFz1DPEUD22;hkT2
 R2
 R0
-w1739561650
+w1739646005
 8C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/fetch_taken.v
 FC:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/fetch_taken.v
 L0 1
@@ -258,11 +258,11 @@ R8
 vforwarding_unit
 R1
 !i10b 1
-!s100 YU`Q8_JN762:L`fCN[YGS1
-I2CcDmXN]Td:J1cYS6Nc<A3
+!s100 h<0AnJ>h1bl=be@do]QeV0
+I]1UUX`m3?n[]iN7:;4>oO2
 R2
 R0
-w1739552721
+w1739649055
 8C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/ForwardingUnit.v
 FC:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/ForwardingUnit.v
 L0 1
@@ -270,7 +270,7 @@ R4
 r1
 !s85 0
 31
-R14
+R5
 !s107 C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/ForwardingUnit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue|C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/ForwardingUnit.v|
 !i113 1
@@ -278,21 +278,21 @@ R6
 R7
 R8
 vIDEX
-R10
+R1
 !i10b 1
 !s100 MCR_l@FgkmhF9W=lFJ3j:1
 Ia<DDXNM?OEb4L8?fb?kdb0
 R2
 R0
-R11
 R12
 R13
+R14
 L0 17
 R4
 r1
 !s85 0
 31
-R14
+R5
 R15
 R16
 !i113 1
@@ -301,21 +301,21 @@ R7
 R8
 n@i@d@e@x
 vIFID
-R10
+R1
 !i10b 1
 !s100 NJa0cJ`OXPJ7egJ5z9ZOA1
 I?07:0zMLFi5Jd1<;NP?Dz2
 R2
 R0
-R11
 R12
 R13
+R14
 L0 1
 R4
 r1
 !s85 0
 31
-R14
+R5
 R15
 R16
 !i113 1
@@ -333,7 +333,7 @@ R0
 w1739465448
 8C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/instructionMemory.v
 FC:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/instructionMemory.v
-R9
+R11
 R4
 r1
 !s85 0
@@ -347,21 +347,21 @@ R7
 R8
 ninstruction@memory
 vMEMWB
-R10
+R1
 !i10b 1
 !s100 bhgH7K7O@S52a`hFHnAQi2
 I7bX4z7]HYKHSbD7L_hNki3
 R2
 R0
-R11
 R12
 R13
+R14
 L0 53
 R4
 r1
 !s85 0
 31
-R14
+R5
 R15
 R16
 !i113 1
@@ -370,7 +370,7 @@ R7
 R8
 n@m@e@m@w@b
 vmux2x1
-R10
+R1
 !i10b 1
 !s100 9@GI2f]Q]h88AIAPU@>>i3
 IDYoaWSX`:_Ac8aX1Y49k[1
@@ -384,7 +384,7 @@ R4
 r1
 !s85 0
 31
-R14
+R5
 Z20 !s107 C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/mux2x1.v|
 Z21 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue|C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/mux2x1.v|
 !i113 1
@@ -392,7 +392,7 @@ R6
 R7
 R8
 vmux4x1
-R10
+R1
 !i10b 1
 !s100 nAQZOOJ:]m^iX812:IzbJ1
 ISkPQAc=D0K;Wm0TYAV:]X1
@@ -406,7 +406,7 @@ R4
 r1
 !s85 0
 31
-R14
+R5
 R20
 R21
 !i113 1
@@ -414,13 +414,13 @@ R6
 R7
 R8
 vnot_t_pipe
-R1
+R9
 !i10b 1
-!s100 59jn0gfVVU4zLZD9hLzbm0
-I@A[dazm`XX9;1GQTA6PbD1
+!s100 ]D0FG<ZifK0gFFfHf]:oP0
+IT6=dDelXQMEePJ]?BZ3Hl2
 R2
 R0
-Z22 w1739616720
+w1739653510
 8C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/not_t_pipe.v
 FC:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/not_t_pipe.v
 L0 1
@@ -428,7 +428,7 @@ R4
 r1
 !s85 0
 31
-R5
+R10
 !s107 C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/not_t_pipe.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue|C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/not_t_pipe.v|
 !i113 1
@@ -436,13 +436,13 @@ R6
 R7
 R8
 vprogramCounter
-R10
+R1
 !i10b 1
-!s100 [_5BD;o3^oWLoh:1Qb1=K3
-IZ[53X]`^FH:>i2LgiWMSb0
+!s100 K<O=g4X6I;OgZKWmFH0m51
+IWIG_QQBEndFcmJDH6>HYh1
 R2
 R0
-w1739616426
+w1739656915
 8C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/programCounter.v
 FC:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/programCounter.v
 L0 1
@@ -450,7 +450,7 @@ R4
 r1
 !s85 0
 31
-R14
+R5
 !s107 C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/programCounter.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue|C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/programCounter.v|
 !i113 1
@@ -459,7 +459,7 @@ R7
 R8
 nprogram@counter
 vregisterFile
-R10
+R1
 !i10b 1
 !s100 S`BCzm4_DMg8WgE5j_Zm71
 IFzJoX=TXMz8AXog6bnYC52
@@ -473,7 +473,7 @@ R4
 r1
 !s85 0
 31
-R14
+R5
 !s107 C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/registerFile.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue|C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/registerFile.v|
 !i113 1
@@ -482,7 +482,7 @@ R7
 R8
 nregister@file
 vSignExtender
-R10
+R1
 !i10b 1
 !s100 @`aGSg91l4d870B>Q>l^;2
 I^nFCEF9>SD8e08eB:25XK1
@@ -496,7 +496,7 @@ R4
 r1
 !s85 0
 31
-R14
+R5
 !s107 C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/SignExtender.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue|C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/SignExtender.v|
 !i113 1
@@ -505,13 +505,13 @@ R7
 R8
 n@sign@extender
 vt_pipe
-R10
+R1
 !i10b 1
-!s100 Pn?hD3BdzX]o4=e7A1izG3
-I40nYmnUG5ae[8<eelBd4`3
+!s100 >Cmi=h:UcQ1TcG8f:>d]53
+IAlBC_^L9IjBMFVGJhZJH00
 R2
 R0
-R22
+w1739653509
 8C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/t_pipe.v
 FC:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/t_pipe.v
 L0 1
@@ -519,7 +519,7 @@ R4
 r1
 !s85 0
 31
-R14
+R5
 !s107 C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/t_pipe.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue|C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/t_pipe.v|
 !i113 1
@@ -527,7 +527,7 @@ R6
 R7
 R8
 vtestbench
-R1
+R9
 !i10b 1
 !s100 L:Cgd8AnERL=U4RNHBK6N2
 IZWz4LD<W`70FeROF@Rl?<3
@@ -541,7 +541,7 @@ R4
 r1
 !s85 0
 31
-R5
+R10
 !s107 C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/testbench.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue|C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/testbench.v|
 !i113 1

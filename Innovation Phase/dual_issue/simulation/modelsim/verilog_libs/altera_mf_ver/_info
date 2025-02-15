@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/simulation/modelsim
 va_graycounter
-Z1 !s110 1739616753
+Z1 !s110 1739657216
 !i10b 1
 !s100 dbSQenUhE^>zo5H5zAI>X2
 IB7GNNK5L3:=>31ZRV0P[42
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1739616753.000000
+Z7 !s108 1739657215.000000
 Z8 !s107 c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|altera_mf_ver|c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v|
 !i113 1
@@ -366,7 +366,7 @@ R9
 R10
 R11
 vALTERA_DEVICE_FAMILIES
-R1
+Z12 !s110 1739657215
 !i10b 1
 !s100 Ie0_`X3Yi6=65^n?0c5aN3
 IO1Q^aSdgS@lkiMh9jONl=3
@@ -388,7 +388,7 @@ R10
 R11
 n@a@l@t@e@r@a_@d@e@v@i@c@e_@f@a@m@i@l@i@e@s
 vALTERA_MF_HINT_EVALUATION
-R1
+R12
 !i10b 1
 !s100 PH5i_RH6C@2cMRnc4>ae12
 Ic^Xh?cbSn=k=?`5B17eKS3
@@ -410,7 +410,7 @@ R10
 R11
 n@a@l@t@e@r@a_@m@f_@h@i@n@t_@e@v@a@l@u@a@t@i@o@n
 vALTERA_MF_MEMORY_INITIALIZATION
-R1
+R12
 !i10b 1
 !s100 nTma^h04MOBz8;HdmmAdW1
 I1H0kK<VB:eXiCVa0>^T>_1
@@ -831,7 +831,7 @@ R9
 R10
 R11
 varm_m_cntr
-R1
+R12
 !i10b 1
 !s100 aE>Dk`dHV;WL1F5DL`IJe0
 IR`7OVA8ZS?IUeTTO[Y6oE1
@@ -852,7 +852,7 @@ R9
 R10
 R11
 varm_n_cntr
-R1
+R12
 !i10b 1
 !s100 XVOhjdU?l`B?8Uf;M45`N2
 I@Ge]102B;akXE@WaTb9P10
@@ -873,7 +873,7 @@ R9
 R10
 R11
 varm_scale_cntr
-R1
+R12
 !i10b 1
 !s100 j]gN?cGBNo4nUKi^cZIh[0
 Iz=m3V?I7XG4APLlc?dLXK2
@@ -1125,7 +1125,7 @@ R9
 R10
 R11
 vdffp
-R1
+R12
 !i10b 1
 !s100 SnNjJNaU3KC[OThjodVFi2
 IGaFIZ0k@cc22z;B_A78dg2
@@ -1230,7 +1230,7 @@ R9
 R10
 R11
 vlcell
-R1
+R12
 !i10b 1
 !s100 5QGV:R[KdXJ5TR1bkQiUU0
 IKR6=OEW;e]dUBeSJW_7ml3
@@ -1361,7 +1361,7 @@ R10
 R11
 n@m@f_cycloneiiigl_scale_cntr
 vMF_pll_reg
-R1
+R12
 !i10b 1
 !s100 0HDLA_Ae606hC35WQ6^7]2
 IiSWU0eB>jHbnX64<[E=Sf2
@@ -1383,7 +1383,7 @@ R10
 R11
 n@m@f_pll_reg
 vMF_stratix_pll
-R1
+R12
 !i10b 1
 !s100 kITDCAAk7nE?EU[@=@9Oo1
 IoR9biA^cPW=:>IJ=S1Xlb0
@@ -1470,7 +1470,7 @@ R9
 R10
 R11
 vpll_iobuf
-R1
+R12
 !i10b 1
 !s100 Y>n^z1AP@XWBOng[;X`=B1
 IQfo5FH:_C8_^oYPNZ2CD_1
@@ -1785,7 +1785,7 @@ R9
 R10
 R11
 vstx_m_cntr
-R1
+R12
 !i10b 1
 !s100 ?>o7Q<XCBPSD4HoGd5:>A0
 I1S?Q<E1k_mWF<ei<kAjTj2
@@ -1806,7 +1806,7 @@ R9
 R10
 R11
 vstx_n_cntr
-R1
+R12
 !i10b 1
 !s100 ?P@b:4DafJ_^m9ka]DFD53
 I6319hK3gPh4V1ljj9B<E42
@@ -1827,7 +1827,7 @@ R9
 R10
 R11
 vstx_scale_cntr
-R1
+R12
 !i10b 1
 !s100 a@[2eTC]]LIFm0QFl5WUj2
 Ij]Af`A=1OIN[IL0onPHon0

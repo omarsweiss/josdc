@@ -60,7 +60,7 @@ module forwarding_unit(
       else if (regwrite2_mem && (dest2_mem != 5'b0) && (dest2_mem== rs1_ex))
         ForwardA1 <= 3'b011;
 		  
-      else if (regwrite2_wb && (dest2_wb != 5'b0) && (dest2_wb== rs1_ex))
+      else if (regwrite1_wb && (dest1_wb != 5'b0) && (dest1_wb== rs1_ex))
         ForwardA1 <= 3'b010;
 		  
 		else if (regwrite2_wb && (dest2_wb != 5'b0) && (dest2_wb== rs1_ex))
@@ -77,7 +77,7 @@ module forwarding_unit(
       else if (regwrite2_mem && (dest2_mem != 5'b0) && (dest2_mem== rs2_ex))
         ForwardA2 <= 3'b011;
 		  
-      else if (regwrite2_wb && (dest2_wb != 5'b0) && (dest2_wb== rs2_ex))
+      else if (regwrite1_wb && (dest1_wb != 5'b0) && (dest1_wb== rs2_ex))
         ForwardA2 <= 3'b010;
 		  
 		else if (regwrite2_wb && (dest2_wb != 5'b0) && (dest2_wb== rs2_ex))
@@ -93,7 +93,7 @@ module forwarding_unit(
       else if (regwrite2_mem && (dest2_mem != 5'b0) && (dest2_mem== rt1_ex))
         ForwardB1 <= 3'b011;
 		  
-      else if (regwrite2_wb && (dest2_wb != 5'b0) && (dest2_wb== rt1_ex))
+      else if (regwrite1_wb && (dest1_wb != 5'b0) && (dest1_wb== rt1_ex))
         ForwardB1 <= 3'b010;
 		  
 		else if (regwrite2_wb && (dest2_wb != 5'b0) && (dest2_wb== rt1_ex))
@@ -109,7 +109,7 @@ module forwarding_unit(
       else if (regwrite2_mem && (dest2_mem != 5'b0) && (dest2_mem== rt2_ex))
         ForwardB2 <= 3'b011;
 		  
-      else if (regwrite2_wb && (dest2_wb != 5'b0) && (dest2_wb== rt2_ex))
+      else if (regwrite1_wb && (dest1_wb != 5'b0) && (dest1_wb== rt2_ex))
         ForwardB2 <= 3'b010;
 		  
 		else if (regwrite2_wb && (dest2_wb != 5'b0) && (dest2_wb== rt2_ex))
