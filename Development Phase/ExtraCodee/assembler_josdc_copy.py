@@ -168,36 +168,28 @@ def unpseudo(instructions):
 
 
 
-instructions = """ SLT $7 $2 $1
-SLL $0 $0 0
-SLL $0 $0 0
-BNE $0 $7 notFound
-ADD $4 $2 $1
-SLL $0 $0 0
-SRL $5 $4 1
-SLL $0 $0 0
-LW $6 $5 0x0
-SLL $0 $0 0
-SLL $0 $0 0
-SLL $0 $0 0
-SLL $0 $0 0
-BEQ $3 $6 found
-SLT $6 $6 $3
-SLL $0 $0 0
-SLL $0 $0 0
-BEQ $6 $0 leftHalf
-SLL $0, $0, 0
-j rightHalf
-leftHalf: ADD $2 $5 0xFFFF
-J loop
-rightHalf: ADDI $1 $5 0x1
-J loop
-found: ADD $8 $0 $5
-J finish
-notFound: ADDI $8 $0 0xFFFF
-J finish
-finish: SLL $0, $0, 0
-SLL $0, $0, 0 
+instructions = """ ADDI $1, $0, -5			 
+ADDI $2, $0, 5
+ADDI $3, $0, 5
+ADDI $4, $0, 23
+L1: BEQ $2, $3, L2 		
+addi $0, $0, 0 
+JAL L1
+L2: BNE $2, $3, L3
+L3: addi $0, $0, 0		
+L4: BLTZ $1, L5			 
+addi $0, $0, 0
+JAL L4
+L5: BGEZ $2, L6			
+addi $0, $0, 0
+JAL L5
+L6: JAL L7			
+addi $0, $0, 0			
+JAL L6 				
+L7: JR $4			
+addi $0, $0, 0			
+JAL L7			
+L8: addi $0, $0, 0		
 """
 i = 0 
 instructions = instructions.lower()
