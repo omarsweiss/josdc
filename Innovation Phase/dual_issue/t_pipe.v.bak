@@ -1,0 +1,119 @@
+module t_pipe(input clk,input rst);
+
+wire [31:0] instruction_1,instruction_2,readData1_1,readData2_1,readData1_2,readData2_2,extImm1,extImm2,
+
+
+wire [9:0] return_addr1,return_addr2,reg1Addr,correction,BranchAddress_1,BranchAddress_2,return_addr2_ID,instruction2_ID,return_addr1_ID,instruction1_ID
+BranchAddress1_ID,
+
+
+wire [4:0] shamt1,shamt2,rs1,rt1,rs2,rt2,destReg1,destReg2
+
+wire [3:0] AluOp1,AluOp2
+
+
+wire  correct_en, flush_second,Branch1, MemReadEn1, MemtoReg1, MemWriteEn1, RegWriteEn1, ALUSrc1, jr1, jal1, RegDst1, bne1,jump1,
+ Branch2, MemReadEn2, MemtoReg2, MemWriteEn2, RegWriteEn2, ALUSrc2, jr2, jal2, RegDst2, bne2,jump2
+
+fetch_taken u_fetch_taken(
+    .clk           ( clk ),
+    .rst           ( rst           ),
+    .jr            (             ),
+    .hold          (           ),
+	 .BranchAddress_1 (BranchAddress_1 ),
+	 .BranchAddress_1 (BranchAddress_2 ),
+    .correct_en    ( correct_en    ),
+    .reg1Addr      ( reg1Addr      ),
+    .correction    ( correction    ),
+    .flush_second  ( flush_second  ),
+    .return_addr1  ( return_addr1  ),
+    .return_addr2  ( return_addr2  ),
+    .instruction_1 ( instruction_1 ),
+    .instruction_2  ( instruction_2  )
+);
+
+
+
+
+IFID #(52) ifid1(.Q({return_addr1_ID, instruction1_ID, BranchAddress1_ID}),
+ 
+					 .D({return_addr1, instruction_1, BranchAddress_1}),
+
+					 .clk(clk), .reset(rst), .hold(), .flush()); ///////////////////////////////////////
+
+IFID #(52) ifid2(.Q({return_addr2_ID, instruction2_ID, BranchAddress2_ID}),
+ 
+					 .D({return_addr2, instruction_2, BranchAddress_2}),
+
+					 .clk(clk), .reset(rst), .hold(), .flush(flush_second )); ///////////////////////////////////////
+
+
+decode u_decode1(
+    .clk            ( clk            ),
+    .rst            ( rst            ),
+    .jal1_WB        (         ),
+    .jal2_WB        (         ),
+    .regWrite1_WB   (    ),
+    .regWrite2_WB   (    ),
+    .writeReg1_WB   (    ),
+    .writeReg2_WB   (    ),
+    .instruction1   ( instruction1_ID   ),
+    .instruction2   ( instruction2_ID   ),
+    .writeData1_WB  (   ),
+    .writeData2_WB  (   ),
+    .shamt1         ( shamt1         ),
+    .shamt2         ( shamt2         ),
+    .rs1            ( rs1            ),
+    .rt1            ( rt1            ),
+    .rs2            ( rs2            ),
+    .rt2            ( rt2            ),
+    .destReg1_WB    (     ),
+    .destReg2_WB    (     ),
+	 .destReg1       ( destReg1       ),
+	 .destReg2       ( destReg2       ),
+    .Branch1        ( Branch1        ),
+    .MemReadEn1     ( MemReadEn1     ),
+    .MemtoReg1      ( MemtoReg1      ),
+    .MemWriteEn1    ( MemWriteEn1    ),
+    .RegWriteEn1    ( RegWriteEn1    ),
+    .ALUSrc1        ( ALUSrc1        ),
+    .jr1            ( jr1            ),
+    .jal1           ( jal1           ),
+    .RegDst1        ( RegDst1        ),
+    .bne1           ( bne1           ),
+    .jump1 	        ( jump1 	       ),
+	 .Branch2        ( Branch2        ),
+    .MemReadEn2     ( MemReadEn2     ),
+    .MemtoReg2      ( MemtoReg2      ),
+    .MemWriteEn2    ( MemWriteEn2    ),
+    .RegWriteEn2    ( RegWriteEn2    ),
+    .ALUSrc2        ( ALUSrc2        ),
+    .jr2            ( jr2            ),
+    .jal2           ( jal2           ),
+    .RegDst2        ( RegDst2        ),
+    .bne2           ( bne2           ),
+    .jump2   	     ( jump2   	    ),
+	 .AluOp1         ( AluOp1         ),
+    .AluOp2         ( AluOp2         ),
+    .readData1_1    ( readData1_1    ),
+    .readData2_1    ( readData2_1    ),
+    .extImm1        ( extImm1        ),
+    .readData1_2    ( readData1_2    ),
+    .readData2_2    ( readData2_2    ),
+    .extImm2        ( extImm2        )
+);
+
+
+IDEX #(160) idex1(.Q({shamt1_EX, MemReadEn1_EX, MemtoReg1_EX, MemWriteEn1_EX, RegWriteEn1_EX, ALUSrc1_EX, jal1_EX, ALUOp1_EX, rs1_EX, rt1_EX, DestReg1_EX, readData1_1_EX, readData2_1_EX, extImm1_EX, return_addr1_EX, Branch1_EX, bne1_EX, jr1_EX,BranchAddress1_EX}), 
+.D({shamt1, MemReadEn1, MemtoReg1, MemWriteEn1, RegWriteEn1, ALUSrc1, jal1, AluOp1, rs1, rt1, destReg1, readData1_1, readData2_1, extImm1, return_addr1_ID, Branch1, bne1, jr1, BranchAddress1_ID}), 
+.clk(clk), .reset(rst), .flush());
+
+
+
+IDEX #(160) idex2(.Q({shamt2_EX, MemReadEn2_EX, MemtoReg2_EX, MemWriteEn2_EX, RegWriteEn2_EX, ALUSrc2_EX, jal2_EX, ALUOp2_EX, rs2_EX, rt2_EX, DestReg2_EX, readData1_2_EX, readData2_2_EX, extImm2_EX, return_addr2_EX, Branch2_EX, bne2_EX, jr2_EX,BranchAddress2_EX}), 
+.D({shamt2, MemReadEn2, MemtoReg2, MemWriteEn2, RegWriteEn2, ALUSrc2, jal2, AluOp2, rs2, rt2, destReg2, readData1_2, readData2_2, extImm2, return_addr2_ID, Branch2, bne2, jr2, BranchAddress2_ID}), 
+.clk(clk), .reset(rst), .flush());
+
+
+
+endmodule

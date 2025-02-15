@@ -1,0 +1,51 @@
+module fetch_taken(
+input clk,rst,jr, hold,
+input [9:0] reg1Addr, correction,
+output [9:0] pc_plus,
+output [31:0] instruction_1, instruction_2
+);
+
+
+
+reg [9:0] nextPC;
+wire [9:0] adress_1, address_2;
+wire [5:0] opcode1, opcode2;
+wire jump;
+
+assign opcode1 = instruction_1[31:26];
+assign opcode2 = instruction_2[31:26];
+assign adress_1 = instruction_1[9:0];
+assign adress_2 = instruction_2[9:0];
+assign jump_1 = (opcode_1 == 6'h2 || opcode_1 == 6'h3);
+assign jump_2 = (opcode_2 == 6'h2 || opcode_2 == 6'h3);
+assign pc_plus = PC + 10'd2;
+assign Branch_1 = (opcode1 == 6'h4 || opcode1 == 6'h5);
+assign Branch_2 = (opcode2 == 6'h4 || opcode2 == 6'h5);
+
+assign BranchAddress_1 = address_1 + (pc_plus - 1'b1);
+assign BranchAddress_2 = address_2 + pc_plus;
+
+
+
+always @(*) begin
+    casez ({rst,jr, Branch_1, jump_1, Branch_2, jump_2})
+        6'b0zzzzz: nextPC = 10'b0000000000;      // Reset condition
+        6'b11zzzz: nextPC = reg1Addr;           // Jump register
+        6'b101zzz: nextPC = BranchAddress_1;       
+        6'b1001zz: nextPC = address_1;            // J-type instruction
+        6'b10001z: nextPC = BranchAddress_2
+		  6'b10001z: nextPC = address_2
+        default:         nextPC = PCPlus1;            // Default case
+    endcase
+end
+
+
+
+programCounter pc(.clk(clk), .rst(rst), .PCin(nextPC), .PCout(PC), .hold(hold));
+
+instructionMemory IM(.address_a(PC), .address_a(PC + 10'b1), .clock(~clk), .q_a(instruction_1), .q_b(instruction_2));
+
+
+
+
+endmodule

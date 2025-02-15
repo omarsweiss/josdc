@@ -1,0 +1,35 @@
+module dual_issue(input clk,input rst);
+
+wire [31:0] instruction_1,instruction_2,
+wire [9:0] return_addr1,return_addr2,reg1Addr,correction_taken
+wire jr1,hold, correct_en_taken, flush_second_taken
+
+fetch_taken u_fetch_taken(
+    .clk           ( clk           ),
+    .rst           ( rst           ),
+    .jr            ( jr            ),
+    .hold          ( hold          ),
+    .correct_en    ( correct_en    ),
+    .reg1Addr      ( reg1Addr      ),
+    .correction    ( correction    ),
+    .flush_second  ( flush_second  ),
+    .return_addr1  ( return_addr1  ),
+    .return_addr2  ( return_addr2  ),
+    .instruction_1 ( instruction_1 ),
+    .instruction_2  ( instruction_2  )
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+endmodule
