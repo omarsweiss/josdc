@@ -168,6 +168,7 @@ def unpseudo(instructions):
 
 
 
+<<<<<<< HEAD
 instructions = """ main: ORI $2, $0, 0
 ORI $3, $0, 0
 ORI $4, $0, 0
@@ -182,6 +183,40 @@ SLL $0, $0, 0
 JR $31
 finish: SLL $0, $0, 0 
 SLL $0, $0, 0 
+=======
+instructions = """ORI $2 , $0, 0
+ADDI $20, $0, 10
+XORI $31, $0, 1
+ANDI $5 , $0, 0
+LW $10, 0($5)
+LW $15, 0($5)
+LOOP: ADDI $2, $2, 1
+SLL $0, $0, 0
+SLT $25 $2 $20
+SLL $0, $0, 0
+SLL $0, $0, 0
+BNE $25, $31, END
+ADD $5, $2, $0
+SLL $0, $0, 0
+LW $16, 0($5)
+SLL $0, $0, 0
+SLL $0, $0, 0
+SLL $0, $0, 0
+SLT $26 $10 $16
+SLL $0, $0, 0
+SLL $0, $0, 0
+BEQ $26, $0, MIN
+OR $10, $16, $0
+J LOOP
+MIN: SLT $27, $16, $15
+SLL $0, $0, 0
+SLL $0, $0, 0
+BEQ $27, $0, LOOP
+ADD $15, $16, $0
+J LOOP
+END: addi $0, $0, 0
+SLL $0, $0, 0
+>>>>>>> 3ee36b25edcf07e51e3de3323b054ec34c092532
 """
 i = 0 
 instructions = instructions.lower()
