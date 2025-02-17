@@ -2,7 +2,10 @@ module IFID #(parameter size = 96) (Q, D, clk, reset, hold, flush);
     input clk, reset, hold, flush;
     input [size-1:0] D;
     output reg [size-1:0] Q;
+initial begin 
+	Q = 200'b0;
 
+end 
     always @(posedge clk or negedge reset) begin
         if (!reset) 
             Q <= 0;  
@@ -19,10 +22,15 @@ input clk, reset, flush;
 input [size-1:0] D;
 output [size-1:0] Q;
 reg [size-1:0] Q;
+
+initial begin 
+	Q = 200'b0;
+
+end 
 always @(posedge clk, negedge reset)
 	begin
      if (!reset)
-       Q<=0;
+       Q<=200'b0;
 	  else if (flush)
        Q<=0;
      else

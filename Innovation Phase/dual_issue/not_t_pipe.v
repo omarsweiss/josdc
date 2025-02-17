@@ -1,7 +1,7 @@
 module not_t_pipe(input clk,input rst,
 input flush_IFID, flush_IDEX, correct_en,jal1_WB,jal2_WB,regWrite1_WB,regWrite2_WB,
 
-input [2:0] ForwardA_1,ForwardB_1,ForwardA_2,ForwardB_2,
+input [4:0] ForwardA_1,ForwardB_1,ForwardA_2,ForwardB_2,
 
 input [4:0] writeReg1_WB,writeReg2_WB,
  
@@ -10,8 +10,9 @@ input [9:0] correction,
 input [31:0]writeData1_WB,writeData2_WB,aluRes1_WB,aluRes2_WB,aluRes1_MEM_fwd,aluRes2_MEM_fwd,
 
 output Branch1,Branch2, taken1, taken2, taken1_MEM,  MemReadEn1_MEM, MemtoReg1_MEM, MemWriteEn1_MEM, RegWriteEn1_MEM,jal1_MEM,
- taken2_MEM,  MemReadEn2_MEM, MemtoReg2_MEM, MemWriteEn2_MEM, RegWriteEn2_MEM,jal2_MEM, Branch2_EX,Branch1_EX,
-output [4:0]  DestReg1_MEM, rt1_MEM, DestReg2_MEM, rt2_MEM,rs2_EX, rt2_EX,rs1_EX, rt1_EX,
+ taken2_MEM,  MemReadEn2_MEM, MemtoReg2_MEM, MemWriteEn2_MEM, RegWriteEn2_MEM,jal2_MEM, Branch2_EX,Branch1_EX,RegWriteEn1_EX,RegWriteEn2_EX,
+ 
+output [4:0]  DestReg1_MEM, rt1_MEM, DestReg2_MEM, rt2_MEM,rs1,rt1,rs2,rt2,destReg1,destReg2, DestReg1_EX, DestReg2_EX,
 
 output [9:0] return_addr2_ID, return_addr2_EX, return_addr1_MEM, return_addr2_MEM, next_pc_out,BranchAddress_1_ID,BranchAddress_2_ID,
 
@@ -26,15 +27,15 @@ ForwardB1_EX,ForwardB2_EX,aluRes1,aluRes2,instruction1_ID,instruction2_ID;
 wire [9:0] return_addr1,return_addr2,reg1Addr,return_addr1_ID,return_addr1_EX,
 BranchAddress_1,BranchAddress_2;
 
-wire [4:0] shamt1,shamt2,rs1,rt1,rs2,rt2,destReg1,destReg2,shamt1_EX,shamt2_EX, DestReg1_EX, DestReg2_EX;
+wire [4:0] shamt1,shamt2,rs2_EX, rt2_EX,rs1_EX, rt1_EX,shamt1_EX,shamt2_EX;
 
 wire [3:0] AluOp1,AluOp2,ALUOp1_EX,ALUOp2_EX;
 
 
 wire  ld_hazard,jr_hazard, flush_second, MemReadEn1, MemtoReg1, MemWriteEn1, RegWriteEn1, ALUSrc1, jr1, jal1, RegDst1, bne1,jump1,
  MemReadEn2, MemtoReg2, MemWriteEn2, RegWriteEn2, ALUSrc2, jr2, jal2, RegDst2, bne2,jump2,MemReadEn1_EX, MemtoReg1_EX, 
- MemWriteEn1_EX, RegWriteEn1_EX,ALUSrc1_EX, jal1_EX, bne1_EX, jr1_EX,MemReadEn2_EX, MemtoReg2_EX, 
- MemWriteEn2_EX, RegWriteEn2_EX,ALUSrc2_EX, jal2_EX, bne2_EX, jr2_EX;
+ MemWriteEn1_EX,ALUSrc1_EX, jal1_EX, bne1_EX, jr1_EX,MemReadEn2_EX, MemtoReg2_EX, 
+ MemWriteEn2_EX,ALUSrc2_EX, jal2_EX, bne2_EX, jr2_EX;
 
 
  
@@ -46,7 +47,7 @@ assign   ld_hazard =   (MemReadEn1_EX && (rs1 == DestReg1_EX || RegDst1 && (rt1 
 							||(MemReadEn1_EX && (rs2 == DestReg1_EX || RegDst2 && (rt2 == DestReg1_EX)))
 							||(MemReadEn2_EX && (rs2 == DestReg2_EX || RegDst2 && (rt2 == DestReg2_EX)));
 						
-assign   jr_hazard = (jr1 || jr2) && !ld_hazard; 
+assign   jr_hazard = (jr1_EX || jr2_EX) && !ld_hazard; 
 ////////////////////////////////////////
  
 
@@ -96,8 +97,8 @@ decode u_decode(
     .regWrite2_WB   ( regWrite2_WB   ),
     .writeReg1_WB   ( writeReg1_WB   ),
     .writeReg2_WB   ( writeReg2_WB   ),
-    .instruction1   ( instruction1_ID   ),
-    .instruction2   ( instruction2_ID   ),
+    .instruction1   ( instruction1_ID ),
+    .instruction2   ( instruction2_ID),
     .writeData1_WB  ( writeData1_WB  ),
     .writeData2_WB  ( writeData2_WB  ),
     .shamt1         ( shamt1         ),
@@ -106,6 +107,14 @@ decode u_decode(
     .rt1            ( rt1            ),
     .rs2            ( rs2            ),
     .rt2            ( rt2            ),
+	 .ForwardA1   ( ForwardA_1      ),
+    .ForwardB1   ( ForwardB_1      ),
+    .ForwardA2   ( ForwardA_2      ),
+    .ForwardB2   ( ForwardB_2      ),
+    .aluRes1_EX     ( aluRes1     ),
+    .aluRes2_EX     ( aluRes2     ),
+    .aluRes1_MEM    ( aluRes1_MEM_fwd    ),
+    .aluRes2_MEM    ( aluRes2_MEM_fwd    ), 
 	 .destReg1       ( destReg1       ),
 	 .destReg2       ( destReg2       ),
     .Branch1        ( Branch1        ),
@@ -160,10 +169,6 @@ execute u_execute(
     .ALUSrc2      ( ALUSrc2_EX      ),
     .bne1         ( bne1_EX         ),
     .bne2         ( bne2_EX         ),
-    .ForwardA_1   ( ForwardA_1   ),
-    .ForwardB_1   ( ForwardB_1   ),
-    .ForwardA_2   ( ForwardA_2   ),
-    .ForwardB_2   ( ForwardB_2   ),
     .ALUOp1       ( ALUOp1_EX       ),
     .ALUOp2       ( ALUOp2_EX       ),
     .shamt1_EX    ( shamt1_EX    ),
@@ -174,12 +179,6 @@ execute u_execute(
     .extImm2      ( extImm2_EX      ),
     .readData1_2  ( readData1_2_EX  ),
     .readData2_2  ( readData2_2_EX  ),
-    .aluRes1_MEM  ( aluRes1_MEM_fwd  ),
-    .aluRes1_WB   ( aluRes1_WB   ),
-    .aluRes2_MEM  ( aluRes1_MEM_fwd  ),
-    .aluRes2_WB   ( aluRes2_WB   ),
-    .ForwardB1_EX ( ForwardB1_EX ),
-    .ForwardB2_EX ( ForwardB2_EX ),
     .aluRes1      ( aluRes1      ),
     .aluRes2      ( aluRes2      ),
     .taken1       ( taken1       ),
@@ -189,16 +188,17 @@ execute u_execute(
 
 
 
+
 EXMEM #(90) exmem1(
     .Q({aluRes1_MEM, forwardBRes1_MEM, MemReadEn1_MEM, MemtoReg1_MEM, MemWriteEn1_MEM, RegWriteEn1_MEM, jal1_MEM, DestReg1_MEM, return_addr1_MEM, rt1_MEM,taken1_MEM}), 
-    .D({aluRes1, ForwardB1_EX, MemReadEn1_EX, MemtoReg1_EX, MemWriteEn1_EX, RegWriteEn1_EX,  jal1_EX, DestReg1_EX, return_addr1_EX,rt1_EX,taken1}), 
+    .D({aluRes1, readData2_1_EX, MemReadEn1_EX, MemtoReg1_EX, MemWriteEn1_EX, RegWriteEn1_EX,  jal1_EX, DestReg1_EX, return_addr1_EX,rt1_EX,taken1}), 
     .clk(clk), .reset(rst)
 );
 
 
 EXMEM #(90) exmem2(
     .Q({aluRes2_MEM, forwardBRes2_MEM, MemReadEn2_MEM, MemtoReg2_MEM, MemWriteEn2_MEM, RegWriteEn2_MEM, jal2_MEM, DestReg2_MEM, return_addr2_MEM, rt2_MEM,taken2_MEM}), 
-    .D({aluRes2, ForwardB2_EX, MemReadEn2_EX, MemtoReg2_EX, MemWriteEn2_EX, RegWriteEn2_EX,  jal2_EX, DestReg2_EX, return_addr2_EX,rt2_EX,taken2}), 
+    .D({aluRes2, readData2_2_EX, MemReadEn2_EX, MemtoReg2_EX, MemWriteEn2_EX, RegWriteEn2_EX,  jal2_EX, DestReg2_EX, return_addr2_EX,rt2_EX,taken2}), 
     .clk(clk), .reset(rst)
 );
 

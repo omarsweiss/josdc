@@ -1,0 +1,13 @@
+
+SIM ?= modelsim
+TOPLEVEL_LANG ?= verilog
+
+VERILOG_SOURCES += C:\Users\amr\Desktop\Quartus\Minumum 3\josdc\Innovation Phase\dual_issue
+
+
+TOPLEVEL = Dual_Issue
+
+MODULE = import_cocotb
+
+
+include C:\Users\amr\anaconda3\Lib\site-packages\cocotb

@@ -1,19 +1,21 @@
 module decode(
 input clk, rst, jal1_WB,jal2_WB, regWrite1_WB, regWrite2_WB,
+input [4:0] ForwardA1,ForwardB1,ForwardA2,ForwardB2,
 input [4:0] writeReg1_WB, writeReg2_WB,
-input [31:0] instruction1, instruction2, writeData1_WB, writeData2_WB,
+input [31:0] instruction1, instruction2, writeData1_WB, writeData2_WB, aluRes1_EX, aluRes2_EX,aluRes1_MEM, aluRes2_MEM,
  
 output[4:0] shamt1, shamt2, rs1, rt1, rs2, rt2, destReg1,destReg2,
 output Branch1, MemReadEn1, MemtoReg1, MemWriteEn1, RegWriteEn1, ALUSrc1, jr1, jal1, RegDst1, bne1,jump1,
  Branch2, MemReadEn2, MemtoReg2, MemWriteEn2, RegWriteEn2, ALUSrc2, jr2, jal2, RegDst2, bne2,jump2,
 output [3:0] AluOp1,AluOp2, 
-output [31:0] readData1_1, readData2_1, extImm1,readData1_2, readData2_2, extImm2
+output [31:0] readData1_1, readData2_1,readData1_2, readData2_2, 
+output [31:0] extImm2, extImm1
 );
 
 
-
+wire [31:0] readData1_1_rf, readData2_1_rf, readData1_2_rf, readData2_2_rf;
 wire [5:0] opCode1, funct1,opCode2, funct2;
-wire [4:0] rd1, writeRegister1, regAddress1, rd2, writeRegister2, regAddress2;
+wire [4:0] rd1, regAddress1, rd2, regAddress2;
 wire [15:0] imm1,imm2;
 
 assign opCode1 = instruction1[31:26];
@@ -62,7 +64,35 @@ registerFile rf(.clk(clk), .rst(rst),.we1(regWrite1_WB), .we2(regWrite2_WB),
 					 
 					 .writeData1(writeData1_WB),.writeData2(writeData2_WB),
 					 
-					 .readData1_1(readData1_1), .readData2_1(readData2_1), .readData1_2(readData1_2), .readData2_2(readData2_2));
+					 .readData1_1(readData1_1_rf), .readData2_1(readData2_1_rf), .readData1_2(readData1_2_rf), .readData2_2(readData2_2_rf));
+					 
+					 
+					 
+assign readData1_1 = ({32{ForwardA1[0]}} & readData1_1_rf) |
+                     ({32{ForwardA1[1]}} & aluRes1_EX) |
+                     ({32{ForwardA1[2]}} & aluRes1_MEM) |
+                     ({32{ForwardA1[3]}} & aluRes2_EX) |
+                     ({32{ForwardA1[4]}} & aluRes2_MEM);
+			
+assign readData2_1 = ({32{ForwardB1[0]}} & readData2_1_rf) |
+                     ({32{ForwardB1[1]}} & aluRes1_EX) |
+                     ({32{ForwardB1[2]}} & aluRes1_MEM) |
+                     ({32{ForwardB1[3]}} & aluRes2_EX) |
+                     ({32{ForwardB1[4]}} & aluRes2_MEM);	
+							
+assign readData1_2 = ({32{ForwardA2[0]}} & readData1_2_rf) |
+                     ({32{ForwardA2[1]}} & aluRes1_EX) |
+                     ({32{ForwardA2[2]}} & aluRes1_MEM) |
+                     ({32{ForwardA2[3]}} & aluRes2_EX) |
+                     ({32{ForwardA2[4]}} & aluRes2_MEM);
+							
+assign readData2_2 = ({32{ForwardB2[0]}} & readData2_2_rf) |
+                     ({32{ForwardB2[1]}} & aluRes1_EX) |
+                     ({32{ForwardB2[2]}} & aluRes1_MEM) |
+                     ({32{ForwardB2[3]}} & aluRes2_EX) |
+                     ({32{ForwardB2[4]}} & aluRes2_MEM);		 
+	
+					 	 
 					 
 					 
 SignExtender SignExtend1(.in(imm1), .out(extImm1));

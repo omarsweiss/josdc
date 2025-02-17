@@ -13,10 +13,10 @@ output reg [9:0] correction_n, correction_t
 always @(posedge clk, negedge rst)begin
 	if (~rst) pipe_valid <= 1'b1;
 	else begin
-		if (((Branch1_t || Branch2_t) && (taken1_t || taken2_t)) || ((Branch1_n || Branch2_n) && (taken1_n || taken2_n))) begin
+		if (((Branch1_t || Branch2_t) && (taken1_t || taken2_t)) && pipe_valid || ((Branch1_n || Branch2_n) && (taken1_n || taken2_n))&& ~pipe_valid) begin
 			pipe_valid <= 1'b1;
 		end
-		if (((Branch1_t || Branch2_t) && ~(taken1_t || taken2_t)) || ((Branch1_n || Branch2_n) && ~(taken1_n || taken2_n))) begin
+		if (((Branch1_t || Branch2_t) && ~(taken1_t || taken2_t) && pipe_valid) || ((Branch1_n || Branch2_n) && ~(taken1_n || taken2_n)) && ~pipe_valid) begin
 			pipe_valid <= 1'b0;
 		end
 	end

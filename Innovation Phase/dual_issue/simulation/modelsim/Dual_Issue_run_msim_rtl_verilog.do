@@ -53,6 +53,7 @@ vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minumum\ 3/jo
 vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minumum\ 3/josdc/Innovation\ Phase/dual_issue {C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/Dual_Issue.v}
 vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minumum\ 3/josdc/Innovation\ Phase/dual_issue {C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/dataMemory.v}
 vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minumum\ 3/josdc/Innovation\ Phase/dual_issue {C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/branch_control.v}
+vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minumum\ 3/josdc/Innovation\ Phase/dual_issue {C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/mux_test.v}
 
 vlog -vlog01compat -work work +incdir+C:/Users/amr/Desktop/Quartus/Minumum\ 3/josdc/Innovation\ Phase/dual_issue {C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/testbench.v}
 

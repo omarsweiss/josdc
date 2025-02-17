@@ -30,18 +30,20 @@ module registerFile (clk, rst, we1, we2,
 			for(i=0; i<32; i = i + 1) registers[i] = 0;
 		end
 		// Write to the register file
-		else if(we1) begin
-			if(writeRegister1 == 'b0) registers[writeRegister1] <= 0;
-			else registers[writeRegister1] <= writeData1;
-			
+		else begin
+			if(we1) begin
+				if(writeRegister1 == 'b0) registers[writeRegister1] <= 0;
+				else registers[writeRegister1] <= writeData1;
+			end	
 			if(we2) begin
 				if(writeRegister2 == 'b0) registers[writeRegister2] <= 0;
 				else registers[writeRegister2] <= writeData2;
 			
 			end
+			else ;
 		end
-		// Defualt to prevent latching
-		else;
+		
+		
 		
 	end
 
