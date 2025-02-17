@@ -168,98 +168,38 @@ def unpseudo(instructions):
 
 
 
-<<<<<<< HEAD
-instructions = """ ADDI $1, $0, -5			 
-ADDI $2, $0, 5
-ADDI $3, $0, 5
-ADDI $4, $0, 23
-L1: BEQ $2, $3, L2 		
-addi $0, $0, 0 
-JAL L1
-L2: BNE $2, $3, L3
-L3: addi $0, $0, 0		
-L4: BLTZ $1, L5			 
-addi $0, $0, 0
-JAL L4
-L5: BGEZ $2, L6			
-addi $0, $0, 0
-JAL L5
-L6: JAL L7			
-addi $0, $0, 0			
-JAL L6 				
-L7: JR $4			
-addi $0, $0, 0			
-JAL L7			
-L8: addi $0, $0, 0		
-=======
-<<<<<<< HEAD
-instructions = """ addi $1, $0, 0
-addi $2, $0, 11
-addi $3, $0, 7
+instructions = """ORI $2 , $0, 0
+ADDI $20, $0, 10
+XORI $31, $0, 1
+ANDI $5 , $0, 0
+LW $10, 0($5)
+LW $15, 0($5)
+LOOP: ADDI $2, $2, 1
 SLL $0, $0, 0
-loop: slt $7, $2, $1
+SLT $25 $2 $20
 SLL $0, $0, 0
 SLL $0, $0, 0
-bne $0, $7, notFound
-add $4, $2, $1
+BNE $25, $31, END
+ADD $5, $2, $0
 SLL $0, $0, 0
-srl $5, $4, 1
-SLL $0, $0, 0
-lw $6, 0($5)
+LW $16, 0($5)
 SLL $0, $0, 0
 SLL $0, $0, 0
 SLL $0, $0, 0
-SLL $0, $0, 0
-beq $3, $6, found
-slt $6, $6, $3
+SLT $26 $10 $16
 SLL $0, $0, 0
 SLL $0, $0, 0
-beq $6, $0, leftHalf
+BEQ $26, $0, MIN
+OR $10, $16, $0
+J LOOP
+MIN: SLT $27, $16, $15
 SLL $0, $0, 0
-j rightHalf
-leftHalf: add $2, $5, -1"
-j loop
-rightHalf: addi $1, $5, 1
-j loop
-found: add $8, $0, $5
-j finish
-notFound: addi $8, $0, -1
-j finish
-finish: addi $0, $0, 0
-SLL $0, $0, 0  
-=======
-instructions = """ SLT $7 $2 $1
-SLL $0 $0 0
-SLL $0 $0 0
-BNE $0 $7 notFound
-ADD $4 $2 $1
-SLL $0 $0 0
-SRL $5 $4 1
-SLL $0 $0 0
-LW $6 $5 0x0
-SLL $0 $0 0
-SLL $0 $0 0
-SLL $0 $0 0
-SLL $0 $0 0
-BEQ $3 $6 found
-SLT $6 $6 $3
-SLL $0 $0 0
-SLL $0 $0 0
-BEQ $6 $0 leftHalf
 SLL $0, $0, 0
-j rightHalf
-leftHalf: ADD $2 $5 0xFFFF
-J loop
-rightHalf: ADDI $1 $5 0x1
-J loop
-found: ADD $8 $0 $5
-J finish
-notFound: ADDI $8 $0 0xFFFF
-J finish
-finish: SLL $0, $0, 0
-SLL $0, $0, 0 
->>>>>>> fe1efbcfda597901b6eaad69dbf5b15460e2be28
->>>>>>> 0661dfe284a6c1e6f7c3391331f70a64739dcf4e
+BEQ $27, $0, LOOP
+ADD $15, $16, $0
+J LOOP
+END: addi $0, $0, 0
+SLL $0, $0, 0
 """
 i = 0 
 instructions = instructions.lower()

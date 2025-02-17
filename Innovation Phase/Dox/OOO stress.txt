@@ -78,7 +78,7 @@ nor  $31, $31, $29       # NOR $31 with $29
 
 
 
-fuck this ^^^^^^^^^^^^^^^^^^^^^^^^^
+
 
 better version below: 
 
@@ -225,7 +225,20 @@ Final Register Values:
 
 
 
-+
+addi $1,  $0, 10
+addi $2,  $0, 20
+addi $13, $0, 5
+addi $8,  $0, 30
+add  $3,  $1,  $2
+add  $14, $13, $13
+sub  $5,  $3,  $1
+addi $4,  $0,  5
+andi $6,  $5,  15
+addi $21, $0,  10
+sll  $7,  $6,  2
+addi $31, $0, 7
+sub  $9,  $8,  $7
+sll  $31, $31, 1
 addi $10, $9,  2
 SLL $0, $0, 0
 ori  $11, $10, 1
