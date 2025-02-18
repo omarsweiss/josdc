@@ -1,6 +1,6 @@
 EDA Netlist Writer report for Dual_Issue
-Mon Feb 17 18:50:04 2025
-Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Tue Feb 18 11:40:18 2025
+Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
 ---------------------
@@ -17,7 +17,7 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2023  Intel Corporation. All rights reserved.
+Copyright (C) 2024  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Feb 17 18:50:04 2025 ;
+; EDA Netlist Writer Status ; Successful - Tue Feb 18 11:40:18 2025 ;
 ; Revision Name             ; Dual_Issue                            ;
 ; Top-level Entity Name     ; Dual_Issue                            ;
 ; Family                    ; MAX 10                                ;
@@ -45,34 +45,34 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------+---------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------+
-; Simulation Settings                                                                                                    ;
-+---------------------------------------------------------------------------------------------------+--------------------+
-; Option                                                                                            ; Setting            ;
-+---------------------------------------------------------------------------------------------------+--------------------+
-; Tool Name                                                                                         ; ModelSim (Verilog) ;
-; Generate functional simulation netlist                                                            ; On                 ;
-; Truncate long hierarchy paths                                                                     ; Off                ;
-; Map illegal HDL characters                                                                        ; Off                ;
-; Flatten buses into individual nodes                                                               ; Off                ;
-; Maintain hierarchy                                                                                ; Off                ;
-; Bring out device-wide set/reset signals as ports                                                  ; Off                ;
-; Enable glitch filtering                                                                           ; Off                ;
-; Do not write top level VHDL entity                                                                ; Off                ;
-; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                ;
-; Architecture name in VHDL output netlist                                                          ; structure          ;
-; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                ;
-; Generate third-party EDA tool command script for gate-level simulation                            ; Off                ;
-+---------------------------------------------------------------------------------------------------+--------------------+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulation Settings                                                                                                     ;
++---------------------------------------------------------------------------------------------------+---------------------+
+; Option                                                                                            ; Setting             ;
++---------------------------------------------------------------------------------------------------+---------------------+
+; Tool Name                                                                                         ; QuestaSim (Verilog) ;
+; Generate functional simulation netlist                                                            ; On                  ;
+; Truncate long hierarchy paths                                                                     ; Off                 ;
+; Map illegal HDL characters                                                                        ; Off                 ;
+; Flatten buses into individual nodes                                                               ; Off                 ;
+; Maintain hierarchy                                                                                ; Off                 ;
+; Bring out device-wide set/reset signals as ports                                                  ; Off                 ;
+; Enable glitch filtering                                                                           ; Off                 ;
+; Do not write top level VHDL entity                                                                ; Off                 ;
+; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                 ;
+; Architecture name in VHDL output netlist                                                          ; structure           ;
+; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                 ;
+; Generate third-party EDA tool command script for gate-level simulation                            ; Off                 ;
++---------------------------------------------------------------------------------------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                 ;
-+------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                            ;
-+------------------------------------------------------------------------------------------------------------+
-; C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/simulation/modelsim/Dual_Issue.vo ;
-+------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                          ;
++-----------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                     ;
++-----------------------------------------------------------------------------------------------------+
+; C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/simulation/questa/Dual_Issue.vo ;
++-----------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -80,14 +80,14 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Mon Feb 17 18:50:03 2025
+    Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+    Info: Processing started: Tue Feb 18 11:40:15 2025
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Dual_Issue -c Dual_Issue
-Info (204019): Generated file Dual_Issue.vo in folder "C:/Users/amr/Desktop/Quartus/Minumum 3/josdc/Innovation Phase/dual_issue/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Dual_Issue.vo in folder "C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/simulation/questa/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4713 megabytes
-    Info: Processing ended: Mon Feb 17 18:50:04 2025
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 4735 megabytes
+    Info: Processing ended: Tue Feb 18 11:40:18 2025
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 
