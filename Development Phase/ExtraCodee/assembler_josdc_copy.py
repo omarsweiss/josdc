@@ -1,8 +1,8 @@
 def to_twos_complement(value, bits=16):
    
-    if value < 0:
-        value = (1 << bits) + value  
-    return format(value, f"0{bits}b")
+  if value < 0:
+      value = (1 << bits) + value  
+  return format(value, f"0{bits}b")
 
 def assemble(inp):
   parts = inp.replace(",", "").split()
