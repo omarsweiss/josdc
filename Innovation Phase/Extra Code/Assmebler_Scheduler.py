@@ -536,35 +536,34 @@ def assembler(instructions_in):
 
 
 instructions = """\
-ADDI $13, $0, 20
-ADD $11, $0, $0
-LOOP1: 
-XOR $21, $11, $0
-# this line is commented, use it for byte addressing memory
-# SLL $21, $11, 2
-ADD $12, $0, $0
-LOOP2: 
-XOR $22, $12, $0
-# this line is commented, use it for byte addressing memory
-# SLL $22, $12, 2
-LW $8, 0x0($21)
-LW $9, 0x0($22)
-IF: 
-SLT $10, $8, $9
-BEQ $10, $0, ENDIF
-ADD $3, $8, $0
-ADD $8, $9, $0
-ADD $9, $3, $0
-SW $8, 0x0($21)
-SW $9, 0x0($22)
-ENDIF: 
-ADDI $12, $12, 1
-SLT $10, $12, $13
-BNE $10, $0, LOOP2
-ADDI $11, $11, 1
-SLT $10, $11, $13
-BNE $10, $0, LOOP1
-NOP
+# Initialize registers
+ADDI $2 , $0, 5 # $2 = 5
+ADDI $3 , $0, 10 # $3 = 10
+ANDI $31, $0, 0x0 # $31 = 0
+ADD $31 ,$0, $3
+ADD $3 , $0, $2
+ADD $2 , $0, $31
+# For word addressable # For Byte Addressable
+Sw $2, 0x1($0) 
+Sw $3, 0x2($0) 
+ADDI $4 , $0, 15 # $4 = 15
+ADDI $5 , $0, 20 # $5 = 20
+ADD $5 , $4, $5
+SUB $4 , $5, $4
+SUB $5 , $5, $4
+# For word addressable # For Byte Addressable
+Sw $4, 0x3($0) 
+Sw $5, 0x4($0) 
+ADDI $6, $0 , 25 # $6 = 25
+ADDI $7, $0 , 30 # $7 = 30
+XOR $6, $6 , $7
+XOR $7, $6 , $7
+XOR $6, $6 , $7
+# For word addressable # For Byte Addressable
+Sw $6, 0x5($0) 
+Sw $7, 0x6($0) 
+NOP # (NOP equals to SLL $0, $0, 0)
+
 """
 
 
