@@ -23,8 +23,10 @@ def runCpu():
     class PipelineState:
         def __init__(self):
             self.cycle = 0
-            self.ifidFlush = 0
-            self.idexFlush = 0
+            self.ifidFlushT = 0
+            self.idexFlushT = 0
+            self.ifidFlushNT = 0
+            self.idexFlushNT = 0
             self.branchflushcount = 0
             self.branchInstruction  = 0
             self.histReg = 0
@@ -45,6 +47,8 @@ def runCpu():
             self.prediction = 0
             self.stateIndex = 0
             self.last = 0
+            self.inst2T = Instruction(0)
+            self.inst2NT = Instruction(0)
             self.data = 0 # any data, depending on the stage. signals are interpreted directly w/o a CU so no need for multiple signals 
             self.done = 0
             self.flush = 0
@@ -188,82 +192,88 @@ def runCpu():
         IF_ID.last = 0
         if IF_ID.done:
             return
-        elif state.ifidFlush:
-            IF_ID.instruction1 = Instruction(0)
-            IF_ID.instructionVal1 = 0
+        
+        if state.pcT < len(instructions):
+            inst1T = Instruction(instructions[state.pcT])
+        else: 
+            IF_ID.last = 1
             inst1T = Instruction(0)
-            IF_ID.instruction2 = Instruction(0)
-            IF_ID.instructionVal2 = 0
+            
+        if (state.pcT + 1) < len(instructions):
+            inst2T = Instruction(instructions[state.pcT +1])
+        else: 
+            IF_ID.last = 1
             inst2T = Instruction(0)
-        else:
-            if state.pcT < len(instructions):
-                inst1T = Instruction(instructions[state.pcT])
-            else: 
-                IF_ID.last = 1
+            
+        if state.pcNT < len(instructions):
+            inst1NT = Instruction(instructions[state.pcNT])
+        else: 
+            IF_ID.last = 1
+            inst1NT = Instruction(0)  
+            
+        if (state.pcNT + 1) < len(instructions):
+            inst2NT = Instruction(instructions[state.pcNT +1])
+        else: 
+            IF_ID.last = 1
+            inst2NT = Instruction(0)
+            
+        if state.ifidFlushT or state.ifidFlushNT:
+            if state.ifidFlushT:
+                IF_ID.last = 0
                 inst1T = Instruction(0)
-                
-            if (state.pcT + 1) < len(instructions):
-                inst2T = Instruction(instructions[state.pcT +1])
-            else: 
-                IF_ID.last = 1
                 inst2T = Instruction(0)
-                
-            if state.pcNT < len(instructions):
-                inst1NT = Instruction(instructions[state.pcNT])
-            else: 
-                IF_ID.last = 1
-                inst1NT = Instruction(0)  
-                
-            if (state.pcNT + 1) < len(instructions):
-                inst2NT = Instruction(instructions[state.pcNT +1])
-            else: 
-                IF_ID.last = 1
+                state.ifidFlushT = 0
+            if state.ifidFlushNT:
+                IF_ID.last = 0
+                inst1NT = Instruction(0)
                 inst2NT = Instruction(0)
-            #Taken Path=============================
-            IF_ID.thisPCT = state.pcT
-            IF_ID.instruction1T = inst1T
-            IF_ID.instructionVal1T = inst1T.instructionVal
-            IF_ID.instruction2T = inst2T
-            IF_ID.instructionVal2T = inst2T.instructionVal
-            if ((opcodes[inst2T.opcode] == 'beq' or opcodes[inst2T.opcode] =='bne' )):
-                state.branchInstruction +=1
-            IF_ID.rs1T = inst1T.rs
-            IF_ID.rt1T = inst1T.rt
-            IF_ID.rs2T = inst2T.rs
-            IF_ID.rt2T = inst2T.rt
-            IF_ID.pcp2T = state.pcT+2
-            #Statically assume taken
-            if ((opcodes[inst2T.opcode] == 'beq' or opcodes[inst2T.opcode] =='bne' )):
-                state.pcT = state.pcT +2+ signed(inst2T.imm )& 0b1111111111
-                
-            elif opcodes[inst2T.opcode] == 'j' or opcodes[inst2T.opcode] =='jal':
-                state.pcT = inst2T.imm &0b1111111111
-                
-            elif opcodes[inst2T.opcode] == 'rtype' and rtypes[inst2T.funct] == 'jr':
-                state.pcT = state.registers[inst2T.rs2] & 0b1111111111
-                
-            else: 
-                state.pcT += 2
-                
-            #Not taken Path=========================
-            IF_ID.thisPCNT = state.pcNT
-            IF_ID.instruction1NT = inst1NT
-            IF_ID.instructionVal1NT = inst1NT.instructionVal
-            IF_ID.instruction2NT = inst2NT
-            IF_ID.instructionVal2NT = inst2NT.instructionVal
-            if ((opcodes[inst2NT.opcode] == 'beq' or opcodes[inst2NT.opcode] =='bne' )):
-                state.branchInstruction +=1
-            IF_ID.rs1NT = inst1NT.rs
-            IF_ID.rt1NT = inst1NT.rt
-            IF_ID.rs2NT = inst2NT.rs
-            IF_ID.rt2NT = inst2NT.rt
-            IF_ID.pcp2NT = state.pcNT+2
-            if opcodes[inst2NT.opcode] == 'j' or opcodes[inst2NT.opcode] =='jal':
-                state.pcNT = inst2NT.imm &0b1111111111
-            elif opcodes[inst2NT.opcode] == 'rtype' and rtypes[inst2NT.funct] == 'jr':
-                state.pcNT = state.registers[inst2NT.rs2] & 0b1111111111
-            else: 
-                state.pcNT += 2
+                state.ifidFlushNT = 0
+            
+        #Taken Path=============================
+        IF_ID.thisPCT = state.pcT
+        IF_ID.instruction1T = inst1T
+        IF_ID.instructionVal1T = inst1T.instructionVal
+        IF_ID.instruction2T = inst2T
+        IF_ID.instructionVal2T = inst2T.instructionVal
+        if ((opcodes[inst2T.opcode] == 'beq' or opcodes[inst2T.opcode] =='bne' )):
+            state.branchInstruction +=1
+        IF_ID.rs1T = inst1T.rs
+        IF_ID.rt1T = inst1T.rt
+        IF_ID.rs2T = inst2T.rs
+        IF_ID.rt2T = inst2T.rt
+        IF_ID.pcp2T = state.pcT+2
+        #Statically assume taken
+        if ((opcodes[inst2T.opcode] == 'beq' or opcodes[inst2T.opcode] =='bne' )):
+            state.pcT = state.pcT +2+ signed(inst2T.imm )& 0b1111111111
+            
+        elif opcodes[inst2T.opcode] == 'j' or opcodes[inst2T.opcode] =='jal':
+            state.pcT = inst2T.imm &0b1111111111
+            
+        elif opcodes[inst2T.opcode] == 'rtype' and rtypes[inst2T.funct] == 'jr':
+            state.pcT = state.registers[inst2T.rs2] & 0b1111111111
+            
+        else: 
+            state.pcT += 2
+            
+        #Not taken Path=========================
+        IF_ID.thisPCNT = state.pcNT
+        IF_ID.instruction1NT = inst1NT
+        IF_ID.instructionVal1NT = inst1NT.instructionVal
+        IF_ID.instruction2NT = inst2NT
+        IF_ID.instructionVal2NT = inst2NT.instructionVal
+        if ((opcodes[inst2NT.opcode] == 'beq' or opcodes[inst2NT.opcode] =='bne' )):
+            state.branchInstruction +=1
+        IF_ID.rs1NT = inst1NT.rs
+        IF_ID.rt1NT = inst1NT.rt
+        IF_ID.rs2NT = inst2NT.rs
+        IF_ID.rt2NT = inst2NT.rt
+        IF_ID.pcp2NT = state.pcNT+2
+        if opcodes[inst2NT.opcode] == 'j' or opcodes[inst2NT.opcode] =='jal':
+            state.pcNT = inst2NT.imm &0b1111111111
+        elif opcodes[inst2NT.opcode] == 'rtype' and rtypes[inst2NT.funct] == 'jr':
+            state.pcNT = state.registers[inst2NT.rs] & 0b1111111111
+        else: 
+            state.pcNT += 2
                 
         IF_ID.nextpcT = state.pcT
         IF_ID.nextpcNT = state.pcNT #The taken path takes this value if the its branch was incorrect
@@ -315,19 +325,14 @@ def runCpu():
         
         inst1T = IF_ID.instruction1T
         inst2T = IF_ID.instruction2T
-        if state.idexFlush:
+        if state.idexFlushT:
             ID_EX.instruction1T = Instruction(0)
             ID_EX.instructionVal1T = 0
             inst1T = Instruction(0)
             ID_EX.instruction2T = Instruction(0)
             ID_EX.instructionVal2T = 0
             inst2T = Instruction(0)
-            ID_EX.instruction1NT = Instruction(0)
-            ID_EX.instructionVal1NT = 0
-            inst1NT = Instruction(0)
-            ID_EX.instruction2NT = Instruction(0)
-            ID_EX.instructionVal2NT = 0
-            inst2NT = Instruction(0)
+            state.idexFlushT = 0
         
         if opcodes[inst1T.opcode] == 'rtype':
             ID_EX.readData1_1T = state.registers[inst1T.rs]
@@ -367,19 +372,15 @@ def runCpu():
         
         inst1NT = IF_ID.instruction1NT
         inst2NT = IF_ID.instruction2NT
-        if state.idexFlush:
+        if state.idexFlushNT:
             ID_EX.instruction1NT = Instruction(0)
             ID_EX.instructionVal1NT = 0
             inst1NT = Instruction(0)
             ID_EX.instruction2NT = Instruction(0)
             ID_EX.instructionVal2NT = 0
             inst2NT = Instruction(0)
-            ID_EX.instruction1NT = Instruction(0)
-            ID_EX.instructionVal1NT = 0
-            inst1NT = Instruction(0)
-            ID_EX.instruction2NT = Instruction(0)
-            ID_EX.instructionVal2NT = 0
-            inst2NT = Instruction(0)
+            state.idexFlushNT = 0
+
         
         if opcodes[inst1NT.opcode] == 'rtype':
             ID_EX.readData1_1NT = state.registers[inst1NT.rs]
@@ -427,7 +428,7 @@ def runCpu():
         
         
         
-    def execute(state,ID_EX, EX_MEM):
+    def execute(state,ID_EX, EX_MEM, IF_ID):
         if not ID_EX.done: 
             return
         EX_MEM.last =0
@@ -439,6 +440,10 @@ def runCpu():
         EX_MEM.imm_2 = 0
         EX_MEM.readData1_2 = 0
         EX_MEM.instruction2 = Instruction(0)
+        data1T = 0
+        data2T = 0
+        data1NT = 0
+        data2NT = 0
         inst1T = ID_EX.instruction1T
         inst2T = ID_EX.instruction2T
         inst1NT = ID_EX.instruction1NT
@@ -611,15 +616,28 @@ def runCpu():
             
         if opcodes[inst2T.opcode] == 'bne' or opcodes[inst2T.opcode] == 'beq':
             if state.taken:
-                state.pcNT = state.pcT
+                if IF_ID.inst2T and opcodes[IF_ID.inst2T.opcode] == 'beq' or opcodes[IF_ID.inst2T.opcode] == 'beq':
+                    state.pcNT = IF_ID.pcp2T
+                    state.idexFlushNT = 1
+                else:
+                    state.pcNT = state.pcT
+                    state.idexFlushNT = 1
+
             else:
                 state.pcT = state.pcNT
+                state.idexFlushT = 1
                 
         if opcodes[inst2NT.opcode] == 'bne' or opcodes[inst2NT.opcode] == 'beq':
             if state.taken:
                 state.pcNT = state.pcT
+                state.idexFlushNT = 1
             else:
-                state.pcT = state.pcNT   
+                if IF_ID.inst2NT and opcodes[IF_ID.inst2NT.opcode] == 'beq' or opcodes[IF_ID.inst2NT.opcode] == 'beq' :
+                    state.pcT = IF_ID.pcp2NT +signed(IF_ID.inst2NT.imm )& 0b1111111111
+                    state.idexFlushT = 1
+                else:
+                    state.pcT = state.pcNT
+                    state.idexFlushT = 1   
         
                 
         taken = state.taken              
@@ -670,25 +688,57 @@ def runCpu():
         if not EX_MEM.done: #checks if exeucte is executing or not
             return
         inst1 = EX_MEM.instruction1
-        MEM_WB.data1 = EX_MEM.data1
+        op1 = 0
+        op12 = 0
+        datastored = 0
+        datastored2 = 0
         inst2 = EX_MEM.instruction2
-        MEM_WB.data2 = EX_MEM.data2
-        
-        if opcodes[inst1.opcode] == 'lw':
-            MEM_WB.data1 = state.memory[EX_MEM.op1 + EX_MEM.imm_1]
-        elif opcodes[inst1.opcode] == 'sw':
-            state.memory[EX_MEM.op1 + EX_MEM.imm_1] = MEM_WB.data1
+        if MEM_WB.instruction1:
+            writewb1 = 1 if MEM_WB.instruction1.opcode not in notWrites else 0
+        if MEM_WB.instruction2:   
+            writewb2 = 1 if MEM_WB.instruction2.opcode not in notWrites else 0
             
+        if opcodes[inst1.opcode] == 'lw':
+            data1 = state.memory[EX_MEM.op1 + EX_MEM.imm_1]
+        elif opcodes[inst1.opcode] == 'sw':
+            if writewb2 and MEM_WB.destreg2 == inst1.rs and MEM_WB.destreg2 !=0:
+                op1 = MEM_WB.data2  
+            elif writewb1 and MEM_WB.destreg1 == inst1.rs and MEM_WB.destreg1 !=0:
+                op1 = MEM_WB.data1
+            else:
+                op1 = EX_MEM.op1  
+            if writewb2 and MEM_WB.destreg2 == inst1.rt and MEM_WB.destreg2 !=0:
+                datastored = MEM_WB.data2
+            elif writewb1 and MEM_WB.destreg1 == inst1.rt and MEM_WB.destreg1 !=0:
+                datastored = MEM_WB.data1
+            else:
+                datastored = EX_MEM.data1  
+            state.memory[op1 + EX_MEM.imm_1] = datastored
+           
         if opcodes[inst2.opcode] == 'lw':
-            MEM_WB.data2 = state.memory[EX_MEM.op1_2 + EX_MEM.imm_2]
+            data2 = state.memory[EX_MEM.op1_2 + EX_MEM.imm_2]
         elif opcodes[inst2.opcode] == 'sw':
-            state.memory[EX_MEM.op1_2 + EX_MEM.imm_2] = MEM_WB.data2
+            if writewb2 and MEM_WB.destreg2 == inst2.rs and MEM_WB.destreg2 !=0:
+                op12 = MEM_WB.data2  
+            elif writewb1 and MEM_WB.destreg1 == inst2.rs and MEM_WB.destreg1 !=0:
+                op12 = MEM_WB.data1
+            else:
+                op12 = EX_MEM.op1  
+            if writewb2 and MEM_WB.destreg2 == inst2.rt and MEM_WB.destreg2 !=0:
+                datastored2 = MEM_WB.data2
+            elif writewb1 and MEM_WB.destreg1 == inst2.rt and MEM_WB.destreg1 !=0:
+                datastored2 = MEM_WB.data1
+            else:
+                datastored2 = EX_MEM.data1
+                
+            state.memory[op12 + EX_MEM.imm_2] = datastored2
         
         MEM_WB.instruction1 = inst1
         MEM_WB.instructionVal1 = inst1.instructionVal
         MEM_WB.instruction2 = inst2
         MEM_WB.instructionVal2 = inst2.instructionVal
-        
+        MEM_WB.data1 = EX_MEM.data1 if opcodes[inst1.opcode] != 'lw' else data1
+        MEM_WB.data2 = EX_MEM.data2 if opcodes[inst2.opcode] != 'lw' else data2
         MEM_WB.rs1 = inst1.rs
         MEM_WB.rt1 = inst1.rt
         MEM_WB.rd1 = inst1.rd
@@ -721,32 +771,45 @@ def runCpu():
             
         if opcodes[inst2.opcode] != 'sw' and opcodes[inst2.opcode] !='j' and opcodes[inst2.opcode] !='jal' and opcodes[inst2.opcode] !='bne' and opcodes[inst2.opcode] !='beq':
             state.registers[inst2.rd if opcodes[inst2.opcode] == 'rtype' else inst2.rt] = MEM_WB.data2
+            
+        if opcodes[inst2.opcode] == 'jal':
+            state.registers[31] = MEM_WB.thisPC + 2
         MEM_WB.done = 0
+        
+        
+        
+        
     def printState(stages):
         for stage, reg in stages.items():
                 print(f"{stage}: \n")
                 for signal, value in vars(reg).items():
                     print(f"{signal}: {value}")
                 print("-"*20)
-        
+                
+    def read_binary_file(filename):
+        binary_values = []
 
+        with open(filename, 'r') as file:
+            for line in file:
+                if '0x' in line:
+                    binary_values.append(int(line.strip(), 16))
+                else: 
+                    binary_values.append(int(line.strip()))  # Remove any whitespace or newline characters
+
+        return binary_values
+
+# Example usage
+    filename = "Innovation Phase\Extra Code\dmem.txt"
+    binary_array = read_binary_file(filename)
+    print(f'\nValues in the memory: \n{binary_array}\n')    
+    #Initialize the pipeline state
     IF_ID = PipelineRegister()
     ID_EX = PipelineRegister()
     EX_MEM = PipelineRegister()
     MEM_WB = PipelineRegister()
     state = PipelineState()
-    state.memory[0] = 11
-    state.memory[1] = 4
-    state.memory[2] = 14
-    state.memory[3] = 7
-    state.memory[4] = 931
-    state.memory[5] = 12
-    state.memory[6] = 152
-    state.memory[7] = 172
-    state.memory[8] = 201
-    state.memory[9] = 213
-    state.memory[10] = 3
-    state.memory[10] = 5
+    for i in range(len(binary_array)):
+        state.memory[i] = binary_array[i]
         
     cycle = 0
     countofstalls = 0
@@ -771,12 +834,16 @@ def runCpu():
         #else:
             #state.ifidFlush = 0
             #state.idexFlush = 0
-        execute(state, ID_EX, EX_MEM)
+        execute(state, ID_EX, EX_MEM, IF_ID)
         decode(state, IF_ID, ID_EX)
         fetch(state, instructions, IF_ID)
-
+        
         #pipeline register states
         printState(stages)
+        print(f"{"-"*50}")
+        for i in range(32):
+            print(f"M{i:2}: {state.memory[i]}")
+        print(f"{"-"*50}")
         cycle +=1
     state.pc = 0
 
@@ -793,7 +860,7 @@ def runCpu():
     def printMemory(memory):
         print ("\nFinal mem values:")
         print(f"{"-"*50}")
-        for i in range(15):
+        for i in range(32):
             print(f"M{i:2}: {memory[i]}")
         print(f"{"-"*50}")
     printMemory(state.memory)

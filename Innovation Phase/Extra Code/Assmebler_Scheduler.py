@@ -220,18 +220,14 @@ def schedule(instructions_in):
                 if is_boundary(line1):
                     # Finalize any existing non-boundary segment.
                     if current_segment:
-                        # If the boundary isn't a label, add it to the current segment.
-                        if not is_label(line1):
-                            current_segment.append(line1)
-                            segments.append(current_segment)
-                        else:
-                            segments.append(current_segment)
-                            segments.append([line1])
-                        
+                        segments.append(current_segment)
+                        segments.append([line1])
                         current_segment = []
+                            
                     else:
                         # If there's no current segment, the boundary becomes its own segment.
                         segments.append([line1])
+                
                 else:
                     # Non-boundary line: add to the current segment.
                     current_segment.append(line1)
@@ -540,36 +536,35 @@ def assembler(instructions_in):
 
 
 instructions = """\
-    main:
-# Initialize registers
-ORI $2 , $0, 0x0
-ADDI $20, $0, 0xA
-XORI $31, $0, 0x1
-ANDI $5 , $0, 0x0
-LW $10, 0x0($5)
-LW $15, 0x0($5)
-LOOP:
-ADDI $2, $2, 1
-SGT $25, $20, $2
-BNE $25, $31, END
-# Choose one of these Insertion based on your memory
-# For Word addressable # For byte addressable
-# ADD $5, $2, $0 # SLL $5, $2, 2
-LW $16, 0x0($5)
-SGT $26, $16, $10
-BEQ $26, $0, MIN
-OR $10, $16, $0
-J LOOP
-MIN:
-SLT $27, $16, $15
-BEQ $27, $0, LOOP
-ADD $15, $16, $0
-J LOOP
-END:
-NOP # (NOP equals to SLL $0, $0, 0)
-
-
-
+ADDI $13, $0, 20
+ADD $11, $0, $0
+LOOP1: 
+XOR $21, $11, $0
+# this line is commented, use it for byte addressing memory
+# SLL $21, $11, 2
+ADD $12, $0, $0
+LOOP2: 
+XOR $22, $12, $0
+# this line is commented, use it for byte addressing memory
+# SLL $22, $12, 2
+LW $8, 0x0($21)
+LW $9, 0x0($22)
+IF: 
+SLT $10, $8, $9
+BEQ $10, $0, ENDIF
+ADD $3, $8, $0
+ADD $8, $9, $0
+ADD $9, $3, $0
+SW $8, 0x0($21)
+SW $9, 0x0($22)
+ENDIF: 
+ADDI $12, $12, 1
+SLT $10, $12, $13
+BNE $10, $0, LOOP2
+ADDI $11, $11, 1
+SLT $10, $11, $13
+BNE $10, $0, LOOP1
+NOP
 """
 
 

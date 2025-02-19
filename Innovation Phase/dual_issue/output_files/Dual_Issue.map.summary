@@ -1,16 +1,16 @@
-Analysis & Synthesis Status : Successful - Tue Feb 18 11:38:04 2025
+Analysis & Elaboration Status : Successful - Wed Feb 19 20:25:53 2025
 Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : Dual_Issue
-Top-level Entity Name : Dual_Issue
+Top-level Entity Name : testbench
 Family : MAX 10
-Total logic elements : 11,794
-    Total combinational functions : 11,602
-    Dedicated logic registers : 2,029
-Total registers : 2029
-Total pins : 66
-Total virtual pins : 0
-Total memory bits : 131,072
-Embedded Multiplier 9-bit elements : 0
-Total PLLs : 0
-UFM blocks : 0
-ADC blocks : 0
+Total logic elements : N/A until Partition Merge
+    Total combinational functions : N/A until Partition Merge
+    Dedicated logic registers : N/A until Partition Merge
+Total registers : N/A until Partition Merge
+Total pins : N/A until Partition Merge
+Total virtual pins : N/A until Partition Merge
+Total memory bits : N/A until Partition Merge
+Embedded Multiplier 9-bit elements : N/A until Partition Merge
+Total PLLs : N/A until Partition Merge
+UFM blocks : N/A until Partition Merge
+ADC blocks : N/A until Partition Merge

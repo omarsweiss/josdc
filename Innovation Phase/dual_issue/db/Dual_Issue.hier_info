@@ -1,73 +1,76 @@
-|Dual_Issue
+|testbench
+
+
+|testbench|Dual_Issue:uut
 clk => clk.IN5
 rst => rst.IN7
-out1[0] << writeData1_WB[0].DB_MAX_OUTPUT_PORT_TYPE
-out1[1] << writeData1_WB[1].DB_MAX_OUTPUT_PORT_TYPE
-out1[2] << writeData1_WB[2].DB_MAX_OUTPUT_PORT_TYPE
-out1[3] << writeData1_WB[3].DB_MAX_OUTPUT_PORT_TYPE
-out1[4] << writeData1_WB[4].DB_MAX_OUTPUT_PORT_TYPE
-out1[5] << writeData1_WB[5].DB_MAX_OUTPUT_PORT_TYPE
-out1[6] << writeData1_WB[6].DB_MAX_OUTPUT_PORT_TYPE
-out1[7] << writeData1_WB[7].DB_MAX_OUTPUT_PORT_TYPE
-out1[8] << writeData1_WB[8].DB_MAX_OUTPUT_PORT_TYPE
-out1[9] << writeData1_WB[9].DB_MAX_OUTPUT_PORT_TYPE
-out1[10] << writeData1_WB[10].DB_MAX_OUTPUT_PORT_TYPE
-out1[11] << writeData1_WB[11].DB_MAX_OUTPUT_PORT_TYPE
-out1[12] << writeData1_WB[12].DB_MAX_OUTPUT_PORT_TYPE
-out1[13] << writeData1_WB[13].DB_MAX_OUTPUT_PORT_TYPE
-out1[14] << writeData1_WB[14].DB_MAX_OUTPUT_PORT_TYPE
-out1[15] << writeData1_WB[15].DB_MAX_OUTPUT_PORT_TYPE
-out1[16] << writeData1_WB[16].DB_MAX_OUTPUT_PORT_TYPE
-out1[17] << writeData1_WB[17].DB_MAX_OUTPUT_PORT_TYPE
-out1[18] << writeData1_WB[18].DB_MAX_OUTPUT_PORT_TYPE
-out1[19] << writeData1_WB[19].DB_MAX_OUTPUT_PORT_TYPE
-out1[20] << writeData1_WB[20].DB_MAX_OUTPUT_PORT_TYPE
-out1[21] << writeData1_WB[21].DB_MAX_OUTPUT_PORT_TYPE
-out1[22] << writeData1_WB[22].DB_MAX_OUTPUT_PORT_TYPE
-out1[23] << writeData1_WB[23].DB_MAX_OUTPUT_PORT_TYPE
-out1[24] << writeData1_WB[24].DB_MAX_OUTPUT_PORT_TYPE
-out1[25] << writeData1_WB[25].DB_MAX_OUTPUT_PORT_TYPE
-out1[26] << writeData1_WB[26].DB_MAX_OUTPUT_PORT_TYPE
-out1[27] << writeData1_WB[27].DB_MAX_OUTPUT_PORT_TYPE
-out1[28] << writeData1_WB[28].DB_MAX_OUTPUT_PORT_TYPE
-out1[29] << writeData1_WB[29].DB_MAX_OUTPUT_PORT_TYPE
-out1[30] << writeData1_WB[30].DB_MAX_OUTPUT_PORT_TYPE
-out1[31] << writeData1_WB[31].DB_MAX_OUTPUT_PORT_TYPE
-out2[0] << writeData2_WB[0].DB_MAX_OUTPUT_PORT_TYPE
-out2[1] << writeData2_WB[1].DB_MAX_OUTPUT_PORT_TYPE
-out2[2] << writeData2_WB[2].DB_MAX_OUTPUT_PORT_TYPE
-out2[3] << writeData2_WB[3].DB_MAX_OUTPUT_PORT_TYPE
-out2[4] << writeData2_WB[4].DB_MAX_OUTPUT_PORT_TYPE
-out2[5] << writeData2_WB[5].DB_MAX_OUTPUT_PORT_TYPE
-out2[6] << writeData2_WB[6].DB_MAX_OUTPUT_PORT_TYPE
-out2[7] << writeData2_WB[7].DB_MAX_OUTPUT_PORT_TYPE
-out2[8] << writeData2_WB[8].DB_MAX_OUTPUT_PORT_TYPE
-out2[9] << writeData2_WB[9].DB_MAX_OUTPUT_PORT_TYPE
-out2[10] << writeData2_WB[10].DB_MAX_OUTPUT_PORT_TYPE
-out2[11] << writeData2_WB[11].DB_MAX_OUTPUT_PORT_TYPE
-out2[12] << writeData2_WB[12].DB_MAX_OUTPUT_PORT_TYPE
-out2[13] << writeData2_WB[13].DB_MAX_OUTPUT_PORT_TYPE
-out2[14] << writeData2_WB[14].DB_MAX_OUTPUT_PORT_TYPE
-out2[15] << writeData2_WB[15].DB_MAX_OUTPUT_PORT_TYPE
-out2[16] << writeData2_WB[16].DB_MAX_OUTPUT_PORT_TYPE
-out2[17] << writeData2_WB[17].DB_MAX_OUTPUT_PORT_TYPE
-out2[18] << writeData2_WB[18].DB_MAX_OUTPUT_PORT_TYPE
-out2[19] << writeData2_WB[19].DB_MAX_OUTPUT_PORT_TYPE
-out2[20] << writeData2_WB[20].DB_MAX_OUTPUT_PORT_TYPE
-out2[21] << writeData2_WB[21].DB_MAX_OUTPUT_PORT_TYPE
-out2[22] << writeData2_WB[22].DB_MAX_OUTPUT_PORT_TYPE
-out2[23] << writeData2_WB[23].DB_MAX_OUTPUT_PORT_TYPE
-out2[24] << writeData2_WB[24].DB_MAX_OUTPUT_PORT_TYPE
-out2[25] << writeData2_WB[25].DB_MAX_OUTPUT_PORT_TYPE
-out2[26] << writeData2_WB[26].DB_MAX_OUTPUT_PORT_TYPE
-out2[27] << writeData2_WB[27].DB_MAX_OUTPUT_PORT_TYPE
-out2[28] << writeData2_WB[28].DB_MAX_OUTPUT_PORT_TYPE
-out2[29] << writeData2_WB[29].DB_MAX_OUTPUT_PORT_TYPE
-out2[30] << writeData2_WB[30].DB_MAX_OUTPUT_PORT_TYPE
-out2[31] << writeData2_WB[31].DB_MAX_OUTPUT_PORT_TYPE
+out1[0] <= writeData1_WB[0].DB_MAX_OUTPUT_PORT_TYPE
+out1[1] <= writeData1_WB[1].DB_MAX_OUTPUT_PORT_TYPE
+out1[2] <= writeData1_WB[2].DB_MAX_OUTPUT_PORT_TYPE
+out1[3] <= writeData1_WB[3].DB_MAX_OUTPUT_PORT_TYPE
+out1[4] <= writeData1_WB[4].DB_MAX_OUTPUT_PORT_TYPE
+out1[5] <= writeData1_WB[5].DB_MAX_OUTPUT_PORT_TYPE
+out1[6] <= writeData1_WB[6].DB_MAX_OUTPUT_PORT_TYPE
+out1[7] <= writeData1_WB[7].DB_MAX_OUTPUT_PORT_TYPE
+out1[8] <= writeData1_WB[8].DB_MAX_OUTPUT_PORT_TYPE
+out1[9] <= writeData1_WB[9].DB_MAX_OUTPUT_PORT_TYPE
+out1[10] <= writeData1_WB[10].DB_MAX_OUTPUT_PORT_TYPE
+out1[11] <= writeData1_WB[11].DB_MAX_OUTPUT_PORT_TYPE
+out1[12] <= writeData1_WB[12].DB_MAX_OUTPUT_PORT_TYPE
+out1[13] <= writeData1_WB[13].DB_MAX_OUTPUT_PORT_TYPE
+out1[14] <= writeData1_WB[14].DB_MAX_OUTPUT_PORT_TYPE
+out1[15] <= writeData1_WB[15].DB_MAX_OUTPUT_PORT_TYPE
+out1[16] <= writeData1_WB[16].DB_MAX_OUTPUT_PORT_TYPE
+out1[17] <= writeData1_WB[17].DB_MAX_OUTPUT_PORT_TYPE
+out1[18] <= writeData1_WB[18].DB_MAX_OUTPUT_PORT_TYPE
+out1[19] <= writeData1_WB[19].DB_MAX_OUTPUT_PORT_TYPE
+out1[20] <= writeData1_WB[20].DB_MAX_OUTPUT_PORT_TYPE
+out1[21] <= writeData1_WB[21].DB_MAX_OUTPUT_PORT_TYPE
+out1[22] <= writeData1_WB[22].DB_MAX_OUTPUT_PORT_TYPE
+out1[23] <= writeData1_WB[23].DB_MAX_OUTPUT_PORT_TYPE
+out1[24] <= writeData1_WB[24].DB_MAX_OUTPUT_PORT_TYPE
+out1[25] <= writeData1_WB[25].DB_MAX_OUTPUT_PORT_TYPE
+out1[26] <= writeData1_WB[26].DB_MAX_OUTPUT_PORT_TYPE
+out1[27] <= writeData1_WB[27].DB_MAX_OUTPUT_PORT_TYPE
+out1[28] <= writeData1_WB[28].DB_MAX_OUTPUT_PORT_TYPE
+out1[29] <= writeData1_WB[29].DB_MAX_OUTPUT_PORT_TYPE
+out1[30] <= writeData1_WB[30].DB_MAX_OUTPUT_PORT_TYPE
+out1[31] <= writeData1_WB[31].DB_MAX_OUTPUT_PORT_TYPE
+out2[0] <= writeData2_WB[0].DB_MAX_OUTPUT_PORT_TYPE
+out2[1] <= writeData2_WB[1].DB_MAX_OUTPUT_PORT_TYPE
+out2[2] <= writeData2_WB[2].DB_MAX_OUTPUT_PORT_TYPE
+out2[3] <= writeData2_WB[3].DB_MAX_OUTPUT_PORT_TYPE
+out2[4] <= writeData2_WB[4].DB_MAX_OUTPUT_PORT_TYPE
+out2[5] <= writeData2_WB[5].DB_MAX_OUTPUT_PORT_TYPE
+out2[6] <= writeData2_WB[6].DB_MAX_OUTPUT_PORT_TYPE
+out2[7] <= writeData2_WB[7].DB_MAX_OUTPUT_PORT_TYPE
+out2[8] <= writeData2_WB[8].DB_MAX_OUTPUT_PORT_TYPE
+out2[9] <= writeData2_WB[9].DB_MAX_OUTPUT_PORT_TYPE
+out2[10] <= writeData2_WB[10].DB_MAX_OUTPUT_PORT_TYPE
+out2[11] <= writeData2_WB[11].DB_MAX_OUTPUT_PORT_TYPE
+out2[12] <= writeData2_WB[12].DB_MAX_OUTPUT_PORT_TYPE
+out2[13] <= writeData2_WB[13].DB_MAX_OUTPUT_PORT_TYPE
+out2[14] <= writeData2_WB[14].DB_MAX_OUTPUT_PORT_TYPE
+out2[15] <= writeData2_WB[15].DB_MAX_OUTPUT_PORT_TYPE
+out2[16] <= writeData2_WB[16].DB_MAX_OUTPUT_PORT_TYPE
+out2[17] <= writeData2_WB[17].DB_MAX_OUTPUT_PORT_TYPE
+out2[18] <= writeData2_WB[18].DB_MAX_OUTPUT_PORT_TYPE
+out2[19] <= writeData2_WB[19].DB_MAX_OUTPUT_PORT_TYPE
+out2[20] <= writeData2_WB[20].DB_MAX_OUTPUT_PORT_TYPE
+out2[21] <= writeData2_WB[21].DB_MAX_OUTPUT_PORT_TYPE
+out2[22] <= writeData2_WB[22].DB_MAX_OUTPUT_PORT_TYPE
+out2[23] <= writeData2_WB[23].DB_MAX_OUTPUT_PORT_TYPE
+out2[24] <= writeData2_WB[24].DB_MAX_OUTPUT_PORT_TYPE
+out2[25] <= writeData2_WB[25].DB_MAX_OUTPUT_PORT_TYPE
+out2[26] <= writeData2_WB[26].DB_MAX_OUTPUT_PORT_TYPE
+out2[27] <= writeData2_WB[27].DB_MAX_OUTPUT_PORT_TYPE
+out2[28] <= writeData2_WB[28].DB_MAX_OUTPUT_PORT_TYPE
+out2[29] <= writeData2_WB[29].DB_MAX_OUTPUT_PORT_TYPE
+out2[30] <= writeData2_WB[30].DB_MAX_OUTPUT_PORT_TYPE
+out2[31] <= writeData2_WB[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Dual_Issue|t_pipe:u_t_pipe
+|testbench|Dual_Issue:uut|t_pipe:u_t_pipe
 clk => clk.IN8
 rst => rst.IN8
 flush_IFID => comb.IN1
@@ -593,7 +596,7 @@ forwardBRes2_MEM[30] <= EXMEM:exmem2.Q
 forwardBRes2_MEM[31] <= EXMEM:exmem2.Q
 
 
-|Dual_Issue|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken
+|testbench|Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken
 clk => clk.IN1
 rst => rst.IN1
 jr => Decoder0.IN1
@@ -786,7 +789,7 @@ nextPC_out[8] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 nextPC_out[9] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Dual_Issue|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|programCounter:pc
+|testbench|Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|programCounter:pc
 clk => PCout[0]~reg0.CLK
 clk => PCout[1]~reg0.CLK
 clk => PCout[2]~reg0.CLK
@@ -839,7 +842,7 @@ hold => PCout[2]~reg0.ENA
 hold => PCout[1]~reg0.ENA
 
 
-|Dual_Issue|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM
+|testbench|Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM
 address_a[0] => address_a[0].IN1
 address_a[1] => address_a[1].IN1
 address_a[2] => address_a[2].IN1
@@ -927,7 +930,7 @@ q_b[30] <= altsyncram:altsyncram_component.q_b
 q_b[31] <= altsyncram:altsyncram_component.q_b
 
 
-|Dual_Issue|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM|altsyncram:altsyncram_component
+|testbench|Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -1097,7 +1100,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|Dual_Issue|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM|altsyncram:altsyncram_component|altsyncram_as52:auto_generated
+|testbench|Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM|altsyncram:altsyncram_component|altsyncram_as52:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -1900,7 +1903,7 @@ q_b[30] <= ram_block1a30.PORTBDATAOUT
 q_b[31] <= ram_block1a31.PORTBDATAOUT
 
 
-|Dual_Issue|t_pipe:u_t_pipe|IFID:ifid1
+|testbench|Dual_Issue:uut|t_pipe:u_t_pipe|IFID:ifid1
 Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -2215,7 +2218,7 @@ flush => Q.OUTPUTSELECT
 flush => Q.OUTPUTSELECT
 
 
-|Dual_Issue|t_pipe:u_t_pipe|IFID:ifid2
+|testbench|Dual_Issue:uut|t_pipe:u_t_pipe|IFID:ifid2
 Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -2530,7 +2533,7 @@ flush => Q.OUTPUTSELECT
 flush => Q.OUTPUTSELECT
 
 
-|Dual_Issue|t_pipe:u_t_pipe|decode:u_decode
+|testbench|Dual_Issue:uut|t_pipe:u_t_pipe|decode:u_decode
 clk => clk.IN1
 rst => rst.IN1
 jal1_WB => regAddress1.OUTPUTSELECT
@@ -4099,7 +4102,7 @@ extImm1[30] <= SignExtender:SignExtend1.out
 extImm1[31] <= SignExtender:SignExtend1.out
 
 
-|Dual_Issue|t_pipe:u_t_pipe|decode:u_decode|controlUnit:CU1
+|testbench|Dual_Issue:uut|t_pipe:u_t_pipe|decode:u_decode|controlUnit:CU1
 opCode[0] => Decoder1.IN5
 opCode[1] => Decoder1.IN4
 opCode[2] => Decoder1.IN3
@@ -4129,7 +4132,7 @@ jal <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
 jr <= jr.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Dual_Issue|t_pipe:u_t_pipe|decode:u_decode|controlUnit:CU2
+|testbench|Dual_Issue:uut|t_pipe:u_t_pipe|decode:u_decode|controlUnit:CU2
 opCode[0] => Decoder1.IN5
 opCode[1] => Decoder1.IN4
 opCode[2] => Decoder1.IN3
@@ -4159,7 +4162,7 @@ jal <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
 jr <= jr.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Dual_Issue|t_pipe:u_t_pipe|decode:u_decode|registerFile:rf
+|testbench|Dual_Issue:uut|t_pipe:u_t_pipe|decode:u_decode|registerFile:rf
 clk => registers[31][0].CLK
 clk => registers[31][1].CLK
 clk => registers[31][2].CLK
@@ -11094,7 +11097,7 @@ readData2_2[30] <= Mux97.DB_MAX_OUTPUT_PORT_TYPE
 readData2_2[31] <= Mux96.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Dual_Issue|t_pipe:u_t_pipe|decode:u_decode|SignExtender:SignExtend1
+|testbench|Dual_Issue:uut|t_pipe:u_t_pipe|decode:u_decode|SignExtender:SignExtend1
 in[0] => out[0].DATAIN
 in[1] => out[1].DATAIN
 in[2] => out[2].DATAIN
@@ -11161,7 +11164,7 @@ out[30] <= in[15].DB_MAX_OUTPUT_PORT_TYPE
 out[31] <= in[15].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Dual_Issue|t_pipe:u_t_pipe|decode:u_decode|SignExtender:SignExtend2
+|testbench|Dual_Issue:uut|t_pipe:u_t_pipe|decode:u_decode|SignExtender:SignExtend2
 in[0] => out[0].DATAIN
 in[1] => out[1].DATAIN
 in[2] => out[2].DATAIN
@@ -11228,7 +11231,7 @@ out[30] <= in[15].DB_MAX_OUTPUT_PORT_TYPE
 out[31] <= in[15].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Dual_Issue|t_pipe:u_t_pipe|IDEX:idex1
+|testbench|Dual_Issue:uut|t_pipe:u_t_pipe|IDEX:idex1
 Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -12031,7 +12034,7 @@ flush => Q.OUTPUTSELECT
 flush => Q.OUTPUTSELECT
 
 
-|Dual_Issue|t_pipe:u_t_pipe|IDEX:idex2
+|testbench|Dual_Issue:uut|t_pipe:u_t_pipe|IDEX:idex2
 Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -12834,7 +12837,7 @@ flush => Q.OUTPUTSELECT
 flush => Q.OUTPUTSELECT
 
 
-|Dual_Issue|t_pipe:u_t_pipe|execute:u_execute
+|testbench|Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute
 rst => rst.IN2
 Branch1 => Branch1.IN1
 Branch2 => Branch2.IN1
@@ -13182,7 +13185,7 @@ taken1 <= comparator:comp1.branchValid
 taken2 <= comparator:comp2.branchValid
 
 
-|Dual_Issue|t_pipe:u_t_pipe|execute:u_execute|ALU:alu1
+|testbench|Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute|ALU:alu1
 operand1[0] => Add0.IN32
 operand1[0] => Add1.IN64
 operand1[0] => result.IN0
@@ -13804,7 +13807,7 @@ shamt[4] => ShiftLeft0.IN1
 shamt[4] => ShiftRight0.IN1
 
 
-|Dual_Issue|t_pipe:u_t_pipe|execute:u_execute|ALU:alu2
+|testbench|Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute|ALU:alu2
 operand1[0] => Add0.IN32
 operand1[0] => Add1.IN64
 operand1[0] => result.IN0
@@ -14426,7 +14429,7 @@ shamt[4] => ShiftLeft0.IN1
 shamt[4] => ShiftRight0.IN1
 
 
-|Dual_Issue|t_pipe:u_t_pipe|execute:u_execute|comparator:comp1
+|testbench|Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute|comparator:comp1
 In1[0] => Equal0.IN31
 In1[1] => Equal0.IN30
 In1[2] => Equal0.IN29
@@ -14499,7 +14502,7 @@ hold => always0.IN1
 branchValid <= branchValid.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Dual_Issue|t_pipe:u_t_pipe|execute:u_execute|comparator:comp2
+|testbench|Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute|comparator:comp2
 In1[0] => Equal0.IN31
 In1[1] => Equal0.IN30
 In1[2] => Equal0.IN29
@@ -14572,7 +14575,7 @@ hold => always0.IN1
 branchValid <= branchValid.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Dual_Issue|t_pipe:u_t_pipe|EXMEM:exmem1
+|testbench|Dual_Issue:uut|t_pipe:u_t_pipe|EXMEM:exmem1
 Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -14975,7 +14978,7 @@ reset => Q[98]~reg0.ACLR
 reset => Q[99]~reg0.ACLR
 
 
-|Dual_Issue|t_pipe:u_t_pipe|EXMEM:exmem2
+|testbench|Dual_Issue:uut|t_pipe:u_t_pipe|EXMEM:exmem2
 Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -15378,7 +15381,7 @@ reset => Q[98]~reg0.ACLR
 reset => Q[99]~reg0.ACLR
 
 
-|Dual_Issue|not_t_pipe:u_not_t_pipe
+|testbench|Dual_Issue:uut|not_t_pipe:u_not_t_pipe
 clk => clk.IN8
 rst => rst.IN9
 flush_IFID => comb.IN1
@@ -15902,7 +15905,7 @@ forwardBRes2_MEM[30] <= EXMEM:exmem2.Q
 forwardBRes2_MEM[31] <= EXMEM:exmem2.Q
 
 
-|Dual_Issue|not_t_pipe:u_not_t_pipe|fetch_not_taken:u_fetch_not_taken
+|testbench|Dual_Issue:uut|not_t_pipe:u_not_t_pipe|fetch_not_taken:u_fetch_not_taken
 clk => clk.IN1
 rst => rst.IN1
 jr => Decoder0.IN1
@@ -16056,7 +16059,7 @@ instruction_2[30] <= instructionMemory:IM_nt.q_b
 instruction_2[31] <= instructionMemory:IM_nt.q_b
 
 
-|Dual_Issue|not_t_pipe:u_not_t_pipe|fetch_not_taken:u_fetch_not_taken|programCounter:pc
+|testbench|Dual_Issue:uut|not_t_pipe:u_not_t_pipe|fetch_not_taken:u_fetch_not_taken|programCounter:pc
 clk => PCout[0]~reg0.CLK
 clk => PCout[1]~reg0.CLK
 clk => PCout[2]~reg0.CLK
@@ -16109,7 +16112,7 @@ hold => PCout[2]~reg0.ENA
 hold => PCout[1]~reg0.ENA
 
 
-|Dual_Issue|not_t_pipe:u_not_t_pipe|fetch_not_taken:u_fetch_not_taken|instructionMemory:IM_nt
+|testbench|Dual_Issue:uut|not_t_pipe:u_not_t_pipe|fetch_not_taken:u_fetch_not_taken|instructionMemory:IM_nt
 address_a[0] => address_a[0].IN1
 address_a[1] => address_a[1].IN1
 address_a[2] => address_a[2].IN1
@@ -16197,7 +16200,7 @@ q_b[30] <= altsyncram:altsyncram_component.q_b
 q_b[31] <= altsyncram:altsyncram_component.q_b
 
 
-|Dual_Issue|not_t_pipe:u_not_t_pipe|fetch_not_taken:u_fetch_not_taken|instructionMemory:IM_nt|altsyncram:altsyncram_component
+|testbench|Dual_Issue:uut|not_t_pipe:u_not_t_pipe|fetch_not_taken:u_fetch_not_taken|instructionMemory:IM_nt|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -16367,7 +16370,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|Dual_Issue|not_t_pipe:u_not_t_pipe|fetch_not_taken:u_fetch_not_taken|instructionMemory:IM_nt|altsyncram:altsyncram_component|altsyncram_as52:auto_generated
+|testbench|Dual_Issue:uut|not_t_pipe:u_not_t_pipe|fetch_not_taken:u_fetch_not_taken|instructionMemory:IM_nt|altsyncram:altsyncram_component|altsyncram_as52:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -17170,7 +17173,7 @@ q_b[30] <= ram_block1a30.PORTBDATAOUT
 q_b[31] <= ram_block1a31.PORTBDATAOUT
 
 
-|Dual_Issue|not_t_pipe:u_not_t_pipe|IFID:ifid1
+|testbench|Dual_Issue:uut|not_t_pipe:u_not_t_pipe|IFID:ifid1
 Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -17485,7 +17488,7 @@ flush => Q.OUTPUTSELECT
 flush => Q.OUTPUTSELECT
 
 
-|Dual_Issue|not_t_pipe:u_not_t_pipe|IFID:ifid2
+|testbench|Dual_Issue:uut|not_t_pipe:u_not_t_pipe|IFID:ifid2
 Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -17800,7 +17803,7 @@ flush => Q.OUTPUTSELECT
 flush => Q.OUTPUTSELECT
 
 
-|Dual_Issue|not_t_pipe:u_not_t_pipe|decode:u_decode
+|testbench|Dual_Issue:uut|not_t_pipe:u_not_t_pipe|decode:u_decode
 clk => clk.IN1
 rst => rst.IN1
 jal1_WB => regAddress1.OUTPUTSELECT
@@ -19369,7 +19372,7 @@ extImm1[30] <= SignExtender:SignExtend1.out
 extImm1[31] <= SignExtender:SignExtend1.out
 
 
-|Dual_Issue|not_t_pipe:u_not_t_pipe|decode:u_decode|controlUnit:CU1
+|testbench|Dual_Issue:uut|not_t_pipe:u_not_t_pipe|decode:u_decode|controlUnit:CU1
 opCode[0] => Decoder1.IN5
 opCode[1] => Decoder1.IN4
 opCode[2] => Decoder1.IN3
@@ -19399,7 +19402,7 @@ jal <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
 jr <= jr.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Dual_Issue|not_t_pipe:u_not_t_pipe|decode:u_decode|controlUnit:CU2
+|testbench|Dual_Issue:uut|not_t_pipe:u_not_t_pipe|decode:u_decode|controlUnit:CU2
 opCode[0] => Decoder1.IN5
 opCode[1] => Decoder1.IN4
 opCode[2] => Decoder1.IN3
@@ -19429,7 +19432,7 @@ jal <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
 jr <= jr.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Dual_Issue|not_t_pipe:u_not_t_pipe|decode:u_decode|registerFile:rf
+|testbench|Dual_Issue:uut|not_t_pipe:u_not_t_pipe|decode:u_decode|registerFile:rf
 clk => registers[31][0].CLK
 clk => registers[31][1].CLK
 clk => registers[31][2].CLK
@@ -26364,7 +26367,7 @@ readData2_2[30] <= Mux97.DB_MAX_OUTPUT_PORT_TYPE
 readData2_2[31] <= Mux96.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Dual_Issue|not_t_pipe:u_not_t_pipe|decode:u_decode|SignExtender:SignExtend1
+|testbench|Dual_Issue:uut|not_t_pipe:u_not_t_pipe|decode:u_decode|SignExtender:SignExtend1
 in[0] => out[0].DATAIN
 in[1] => out[1].DATAIN
 in[2] => out[2].DATAIN
@@ -26431,7 +26434,7 @@ out[30] <= in[15].DB_MAX_OUTPUT_PORT_TYPE
 out[31] <= in[15].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Dual_Issue|not_t_pipe:u_not_t_pipe|decode:u_decode|SignExtender:SignExtend2
+|testbench|Dual_Issue:uut|not_t_pipe:u_not_t_pipe|decode:u_decode|SignExtender:SignExtend2
 in[0] => out[0].DATAIN
 in[1] => out[1].DATAIN
 in[2] => out[2].DATAIN
@@ -26498,7 +26501,7 @@ out[30] <= in[15].DB_MAX_OUTPUT_PORT_TYPE
 out[31] <= in[15].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Dual_Issue|not_t_pipe:u_not_t_pipe|IDEX:idex1
+|testbench|Dual_Issue:uut|not_t_pipe:u_not_t_pipe|IDEX:idex1
 Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -27301,7 +27304,7 @@ flush => Q.OUTPUTSELECT
 flush => Q.OUTPUTSELECT
 
 
-|Dual_Issue|not_t_pipe:u_not_t_pipe|IDEX:idex2
+|testbench|Dual_Issue:uut|not_t_pipe:u_not_t_pipe|IDEX:idex2
 Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -28104,7 +28107,7 @@ flush => Q.OUTPUTSELECT
 flush => Q.OUTPUTSELECT
 
 
-|Dual_Issue|not_t_pipe:u_not_t_pipe|execute:u_execute
+|testbench|Dual_Issue:uut|not_t_pipe:u_not_t_pipe|execute:u_execute
 rst => rst.IN2
 Branch1 => Branch1.IN1
 Branch2 => Branch2.IN1
@@ -28452,7 +28455,7 @@ taken1 <= comparator:comp1.branchValid
 taken2 <= comparator:comp2.branchValid
 
 
-|Dual_Issue|not_t_pipe:u_not_t_pipe|execute:u_execute|ALU:alu1
+|testbench|Dual_Issue:uut|not_t_pipe:u_not_t_pipe|execute:u_execute|ALU:alu1
 operand1[0] => Add0.IN32
 operand1[0] => Add1.IN64
 operand1[0] => result.IN0
@@ -29074,7 +29077,7 @@ shamt[4] => ShiftLeft0.IN1
 shamt[4] => ShiftRight0.IN1
 
 
-|Dual_Issue|not_t_pipe:u_not_t_pipe|execute:u_execute|ALU:alu2
+|testbench|Dual_Issue:uut|not_t_pipe:u_not_t_pipe|execute:u_execute|ALU:alu2
 operand1[0] => Add0.IN32
 operand1[0] => Add1.IN64
 operand1[0] => result.IN0
@@ -29696,7 +29699,7 @@ shamt[4] => ShiftLeft0.IN1
 shamt[4] => ShiftRight0.IN1
 
 
-|Dual_Issue|not_t_pipe:u_not_t_pipe|execute:u_execute|comparator:comp1
+|testbench|Dual_Issue:uut|not_t_pipe:u_not_t_pipe|execute:u_execute|comparator:comp1
 In1[0] => Equal0.IN31
 In1[1] => Equal0.IN30
 In1[2] => Equal0.IN29
@@ -29769,7 +29772,7 @@ hold => always0.IN1
 branchValid <= branchValid.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Dual_Issue|not_t_pipe:u_not_t_pipe|execute:u_execute|comparator:comp2
+|testbench|Dual_Issue:uut|not_t_pipe:u_not_t_pipe|execute:u_execute|comparator:comp2
 In1[0] => Equal0.IN31
 In1[1] => Equal0.IN30
 In1[2] => Equal0.IN29
@@ -29842,7 +29845,7 @@ hold => always0.IN1
 branchValid <= branchValid.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Dual_Issue|not_t_pipe:u_not_t_pipe|EXMEM:exmem1
+|testbench|Dual_Issue:uut|not_t_pipe:u_not_t_pipe|EXMEM:exmem1
 Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -30205,7 +30208,7 @@ reset => Q[88]~reg0.ACLR
 reset => Q[89]~reg0.ACLR
 
 
-|Dual_Issue|not_t_pipe:u_not_t_pipe|EXMEM:exmem2
+|testbench|Dual_Issue:uut|not_t_pipe:u_not_t_pipe|EXMEM:exmem2
 Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -30568,7 +30571,7 @@ reset => Q[88]~reg0.ACLR
 reset => Q[89]~reg0.ACLR
 
 
-|Dual_Issue|branch_control:u_branch_control
+|testbench|Dual_Issue:uut|branch_control:u_branch_control
 clk => pipe_valid~reg0.CLK
 rst => flush_IFID_t.OUTPUTSELECT
 rst => flush_IDEX_t.OUTPUTSELECT
@@ -30722,7 +30725,7 @@ correction_t[8] <= correction_t.DB_MAX_OUTPUT_PORT_TYPE
 correction_t[9] <= correction_t.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Dual_Issue|forwarding_unit:u_forwarding_unit_t
+|testbench|Dual_Issue:uut|forwarding_unit:u_forwarding_unit_t
 rs1_ID[0] => Equal4.IN4
 rs1_ID[0] => Equal5.IN4
 rs1_ID[0] => Equal6.IN4
@@ -31013,7 +31016,7 @@ memFw2[0] <= memFw2.DB_MAX_OUTPUT_PORT_TYPE
 memFw2[1] <= memFw2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Dual_Issue|forwarding_unit:u_forwarding_unit_n
+|testbench|Dual_Issue:uut|forwarding_unit:u_forwarding_unit_n
 rs1_ID[0] => Equal4.IN4
 rs1_ID[0] => Equal5.IN4
 rs1_ID[0] => Equal6.IN4
@@ -31304,7 +31307,7 @@ memFw2[0] <= memFw2.DB_MAX_OUTPUT_PORT_TYPE
 memFw2[1] <= memFw2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Dual_Issue|mux_test:memMUX
+|testbench|Dual_Issue:uut|mux_test:memMUX
 data0x[0] => sub_wire1[0].IN1
 data0x[1] => sub_wire1[1].IN1
 data0x[2] => sub_wire1[2].IN1
@@ -31848,7 +31851,7 @@ result[178] <= lpm_mux:LPM_MUX_component.result
 result[179] <= lpm_mux:LPM_MUX_component.result
 
 
-|Dual_Issue|mux_test:memMUX|lpm_mux:LPM_MUX_component
+|testbench|Dual_Issue:uut|mux_test:memMUX|lpm_mux:LPM_MUX_component
 data[0][0] => mux_59c:auto_generated.data[0]
 data[0][1] => mux_59c:auto_generated.data[1]
 data[0][2] => mux_59c:auto_generated.data[2]
@@ -32395,7 +32398,7 @@ result[178] <= mux_59c:auto_generated.result[178]
 result[179] <= mux_59c:auto_generated.result[179]
 
 
-|Dual_Issue|mux_test:memMUX|lpm_mux:LPM_MUX_component|mux_59c:auto_generated
+|testbench|Dual_Issue:uut|mux_test:memMUX|lpm_mux:LPM_MUX_component|mux_59c:auto_generated
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
@@ -33298,7 +33301,7 @@ sel[0] => result_node[0].IN0
 sel[0] => _.IN0
 
 
-|Dual_Issue|dataMemory:DM
+|testbench|Dual_Issue:uut|dataMemory:DM
 address_a[0] => address_a[0].IN1
 address_a[1] => address_a[1].IN1
 address_a[2] => address_a[2].IN1
@@ -33454,7 +33457,7 @@ q_b[30] <= altsyncram:altsyncram_component.q_b
 q_b[31] <= altsyncram:altsyncram_component.q_b
 
 
-|Dual_Issue|dataMemory:DM|altsyncram:altsyncram_component
+|testbench|Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component
 wren_a => altsyncram_3pl2:auto_generated.wren_a
 rden_a => ~NO_FANOUT~
 wren_b => altsyncram_3pl2:auto_generated.wren_b
@@ -33626,7 +33629,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|Dual_Issue|dataMemory:DM|altsyncram:altsyncram_component|altsyncram_3pl2:auto_generated
+|testbench|Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component|altsyncram_3pl2:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -34557,7 +34560,7 @@ wren_b => ram_block1a30.PORTBWE
 wren_b => ram_block1a31.PORTBWE
 
 
-|Dual_Issue|mux2x1:WBMux1
+|testbench|Dual_Issue:uut|mux2x1:WBMux1
 in1[0] => out.DATAB
 in1[1] => out.DATAB
 in1[2] => out.DATAB
@@ -34688,7 +34691,7 @@ out[30] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[31] <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Dual_Issue|mux2x1:WBMux2
+|testbench|Dual_Issue:uut|mux2x1:WBMux2
 in1[0] => out.DATAB
 in1[1] => out.DATAB
 in1[2] => out.DATAB
@@ -34819,7 +34822,7 @@ out[30] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[31] <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Dual_Issue|MEMWB:memwb1
+|testbench|Dual_Issue:uut|MEMWB:memwb1
 Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -35150,7 +35153,7 @@ reset => Q[80]~reg0.ACLR
 reset => Q[81]~reg0.ACLR
 
 
-|Dual_Issue|MEMWB:memwb2
+|testbench|Dual_Issue:uut|MEMWB:memwb2
 Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -35481,7 +35484,7 @@ reset => Q[80]~reg0.ACLR
 reset => Q[81]~reg0.ACLR
 
 
-|Dual_Issue|mux2x1:WritePc1
+|testbench|Dual_Issue:uut|mux2x1:WritePc1
 in1[0] => out.DATAB
 in1[1] => out.DATAB
 in1[2] => out.DATAB
@@ -35612,7 +35615,7 @@ out[30] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[31] <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Dual_Issue|mux2x1:WritePc2
+|testbench|Dual_Issue:uut|mux2x1:WritePc2
 in1[0] => out.DATAB
 in1[1] => out.DATAB
 in1[2] => out.DATAB
