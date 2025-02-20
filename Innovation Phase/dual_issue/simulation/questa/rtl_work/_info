@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/simulation/questa
 vALU
-Z1 !s110 1740061519
+Z1 !s110 1740077424
 !i10b 1
 !s100 3a[meDhSJQR3R6174;f8R1
 IRnoPMD7VgidnTj15VcMmZ2
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1740061519.000000
+Z4 !s108 1740077424.000000
 !s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/ALU.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/ALU.v|
 !i113 1
@@ -105,10 +105,10 @@ R1
 IOD[QY]@Won8CoacMlc57H3
 R2
 R0
-R8
+Z9 w1740073549
 8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v
 FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v
-Z9 L0 40
+Z10 L0 40
 R3
 r1
 !s85 0
@@ -128,7 +128,7 @@ R1
 I[>585ofTET@e]NB^R9WLg3
 R2
 R0
-Z10 w1739866631
+Z11 w1739866631
 8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/decode.v
 FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/decode.v
 L0 1
@@ -146,11 +146,11 @@ R7
 vDual_Issue
 R1
 !i10b 1
-!s100 aLmFgW6hlHR_^I]boa0k@0
-IYa17@_>D^P]e1o:9gVA7b1
+!s100 <Y[KFhXb0ARU^[e:JG=fI0
+IhzWmMb5l_QLR^YmHoTPF=3
 R2
 R0
-w1740042689
+w1740077328
 8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v
 FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v
 L0 1
@@ -173,7 +173,7 @@ R1
 IQOS^@0n97V[;lkmFKDeY]3
 R2
 R0
-R10
+R11
 8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/execute.v
 FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/execute.v
 L0 1
@@ -189,23 +189,23 @@ R5
 R6
 R7
 vEXMEM
-Z11 !s110 1740061518
+Z12 !s110 1740077423
 !i10b 1
-!s100 YeOQK6?0NXE96XSmoL8SR2
-IC]jZD3RB<?[`?SZg8j7>g0
+!s100 oQF[@z=n17Q8E26iG1FMn0
+IfRV3U96V>>flaBQh@LMkn2
 R2
 R0
-R10
-Z12 8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-Z13 FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-L0 42
+Z13 w1740076575
+Z14 8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
+Z15 FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
+L0 36
 R3
 r1
 !s85 0
 31
-Z14 !s108 1740061518.000000
-Z15 !s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v|
-Z16 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v|
+Z16 !s108 1740077423.000000
+Z17 !s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v|
+Z18 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v|
 !i113 1
 R5
 R6
@@ -214,11 +214,11 @@ n@e@x@m@e@m
 vfetch_not_taken
 R1
 !i10b 1
-!s100 TJ@fz6`W2j[@Fb]=RGAZK1
-IW2TXPXB;58<3aE7nkNF8f1
+!s100 aYDlS]2hhSM6l;OT5k]Nl2
+IjT`@ooKiA<3JzO:n26h5i2
 R2
 R0
-Z17 w1739658589
+w1740073619
 8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/fetch_not_taken.v
 FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/fetch_not_taken.v
 L0 1
@@ -236,11 +236,11 @@ R7
 vfetch_taken
 R1
 !i10b 1
-!s100 9B9d@T4lX>]DYa=FKQ<a:2
-IhQiLSX1NEHmEDgoJmdmiL3
+!s100 2Yd4aVR=lMYmA;i]F_cZm1
+IiiG;g=]a:KHKLa:61>Am[2
 R2
 R0
-R17
+Z19 w1740073621
 8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/fetch_taken.v
 FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/fetch_taken.v
 L0 1
@@ -256,7 +256,7 @@ R5
 R6
 R7
 vforwarding_unit
-R11
+R1
 !i10b 1
 !s100 Nb49emP4B]n>@<L8e[@o80
 IgjVP9kQ4L32F<T6[[OLPo2
@@ -270,7 +270,7 @@ R3
 r1
 !s85 0
 31
-R14
+R4
 !s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/ForwardingUnit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/ForwardingUnit.v|
 !i113 1
@@ -278,46 +278,46 @@ R5
 R6
 R7
 vIDEX
-R11
+R12
 !i10b 1
-!s100 16Sml5Khz@5__4?E=j:gO1
-IQWBP[DBiJVW27XC1W3LYg1
+!s100 FzYMfZRbZLeijhab:nAd23
+I5JWaCzIoVcBm1;GeD;W^W0
 R2
 R0
-R10
-R12
 R13
-L0 20
+R14
+R15
+L0 17
 R3
 r1
 !s85 0
 31
-R14
-R15
 R16
+R17
+R18
 !i113 1
 R5
 R6
 R7
 n@i@d@e@x
 vIFID
-R11
+R12
 !i10b 1
-!s100 AADDh=LK;e=F:XHNlbone1
-I^ko99kCh2Gez?[4>zE8nk0
+!s100 NJa0cJ`OXPJ7egJ5z9ZOA1
+IS^0je@Lfj`P^YaWf2gc?11
 R2
 R0
-R10
-R12
 R13
+R14
+R15
 L0 1
 R3
 r1
 !s85 0
 31
-R14
-R15
 R16
+R17
+R18
 !i113 1
 R5
 R6
@@ -330,10 +330,10 @@ R1
 IXhkzXOBKNM_aZD6BNNYIk3
 R2
 R0
-R8
+R9
 8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/instructionMemory.v
 FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/instructionMemory.v
-R9
+R10
 R3
 r1
 !s85 0
@@ -347,90 +347,68 @@ R6
 R7
 ninstruction@memory
 vMEMWB
-R11
+R12
 !i10b 1
-!s100 dcl1cRV0OdnRg7WXYV]H31
-I7PHSIifcfF^EJFAab=>=E3
+!s100 gKP56fHjF;Foj0felX^Rz3
+IQFR:MbTQbQahz8`ICfh;F1
 R2
 R0
-R10
-R12
 R13
-L0 61
+R14
+R15
+L0 55
 R3
 r1
 !s85 0
 31
-R14
-R15
 R16
+R17
+R18
 !i113 1
 R5
 R6
 R7
 n@m@e@m@w@b
 vmux2x1
-R11
+R12
 !i10b 1
 !s100 9@GI2f]Q]h88AIAPU@>>i3
 Ie9GT8;IXWCoALJU_B7f`O1
 R2
 R0
 R8
-Z18 8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux2x1.v
-Z19 FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux2x1.v
+Z20 8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux2x1.v
+Z21 FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux2x1.v
 L0 1
 R3
 r1
 !s85 0
 31
-R14
-Z20 !s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux2x1.v|
-Z21 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux2x1.v|
+R16
+Z22 !s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux2x1.v|
+Z23 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux2x1.v|
 !i113 1
 R5
 R6
 R7
 vmux4x1
-R11
+R12
 !i10b 1
 !s100 nAQZOOJ:]m^iX812:IzbJ1
 IM[IfngJ4Y^YIZ7]lLO8[60
 R2
 R0
 R8
-R18
-R19
+R20
+R21
 L0 15
 R3
 r1
 !s85 0
 31
-R14
-R20
-R21
-!i113 1
-R5
-R6
-R7
-vmux_test
-R1
-!i10b 1
-!s100 F0HY4>`?L9afSE9B7[OYk1
-IjCA[=i]aRaYIXnXl[1fH>0
-R2
-R0
-Z22 w1739866632
-8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v
-FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v
-R9
-R3
-r1
-!s85 0
-31
-R4
-!s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v|
+R16
+R22
+R23
 !i113 1
 R5
 R6
@@ -442,7 +420,7 @@ R1
 IMzZTUWZYZPRLVaHOinQzR0
 R2
 R0
-w1740059645
+R19
 8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/not_t_pipe.v
 FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/not_t_pipe.v
 L0 1
@@ -458,13 +436,13 @@ R5
 R6
 R7
 vprogramCounter
-R11
+R1
 !i10b 1
 !s100 K<O=g4X6I;OgZKWmFH0m51
 ISj2RCYIz^id^Z;`[0Rz5h3
 R2
 R0
-R17
+R9
 8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/programCounter.v
 FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/programCounter.v
 L0 1
@@ -472,7 +450,7 @@ R3
 r1
 !s85 0
 31
-R14
+R4
 !s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/programCounter.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/programCounter.v|
 !i113 1
@@ -481,13 +459,13 @@ R6
 R7
 nprogram@counter
 vregisterFile
-R11
+R1
 !i10b 1
 !s100 ^<<<2J931DmkVnU>Egl3E2
 IjWb>CCG<W42C_kY813n=C3
 R2
 R0
-R22
+w1739866632
 8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/registerFile.v
 FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/registerFile.v
 L0 3
@@ -495,7 +473,7 @@ R3
 r1
 !s85 0
 31
-R14
+R16
 !s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/registerFile.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/registerFile.v|
 !i113 1
@@ -504,7 +482,7 @@ R6
 R7
 nregister@file
 vSignExtender
-R11
+R12
 !i10b 1
 !s100 @`aGSg91l4d870B>Q>l^;2
 Imn>eViL]P0l;D9^ec5CEa1
@@ -518,7 +496,7 @@ R3
 r1
 !s85 0
 31
-R14
+R16
 !s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/SignExtender.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/SignExtender.v|
 !i113 1
@@ -527,13 +505,13 @@ R6
 R7
 n@sign@extender
 vt_pipe
-R11
+R12
 !i10b 1
 !s100 04EK;j?0[<m1@H[aKH;VE1
 I_L5FNUMJdibaGzXimgn:A3
 R2
 R0
-w1740059609
+w1740073620
 8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v
 FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v
 L0 1
@@ -541,7 +519,7 @@ R3
 r1
 !s85 0
 31
-R14
+R16
 !s107 C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue|C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v|
 !i113 1
@@ -555,7 +533,7 @@ R1
 IQGnkb8gHPa^J^VAT1ena;3
 R2
 R0
-w1740060914
+w1740073550
 8C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/testbench.v
 FC:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/testbench.v
 L0 2

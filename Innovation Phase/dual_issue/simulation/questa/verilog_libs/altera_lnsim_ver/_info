@@ -10,7 +10,7 @@ cModel Technology
 Z0 dC:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/simulation/questa
 valtera_arriav_pll
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1740061514
+Z2 !s110 1740077419
 !i10b 1
 !s100 =P7CDUZSG9W8kBfd_h_CR2
 ISCPSM9YVQ3QF2cTCCARJi3
@@ -26,7 +26,7 @@ Z8 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z9 !s108 1740061514.000000
+Z9 !s108 1740077419.000000
 Z10 !s107 c:/intelfpga/23.1std/quartus/eda/sim_lib/altera_lnsim.sv|
 Z11 !s90 -reportprogress|300|-sv|-work|altera_lnsim_ver|c:/intelfpga/23.1std/quartus/eda/sim_lib/altera_lnsim.sv|
 !i113 1
@@ -129,7 +129,7 @@ R12
 R13
 valtera_iopll_rotation_lcells
 R1
-Z14 !s110 1740061515
+Z14 !s110 1740077420
 !i10b 1
 !s100 e4c;jYV0<f;]zJeBoP4SJ0
 IHKgf[g^ezb9bz25?L<;JI3
@@ -1020,7 +1020,7 @@ R12
 R13
 vdps_pulse_gen_fourteennm_iopll
 R1
-R14
+R2
 !i10b 1
 !s100 j;=nDN]XdSL2IzkPne:hH2
 I53GN3jc4;MQlCje_m6QR>0
@@ -1068,7 +1068,7 @@ R12
 R13
 vfourteennm_altera_iopll
 R1
-R14
+R2
 !i10b 1
 !s100 [KKEk4bOGS0_UF[aV]0mV2
 ImIMQnRf>mP_^VkI62P48S3
@@ -1093,7 +1093,7 @@ R13
 Xfourteennm_iopll_functions
 R1
 R15
-R14
+R2
 !i10b 1
 !s100 kaR4]:ZK<EIL33lZNjP5a2
 IIR`5gl98]KGVfnANC`L[W3
@@ -1118,7 +1118,7 @@ vfourteennm_simple_iopll
 R1
 R15
 Z16 DXx4 work 26 fourteennm_iopll_functions 0 22 IR`5gl98]KGVfnANC`L[W3
-R14
+R2
 !i10b 1
 !s100 hUFD^T@=5=`=PjmWJZ17I1
 IkDEz6gzg5nm`L15ad@MAN3

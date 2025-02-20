@@ -1,5 +1,5 @@
 Assembler report for Dual_Issue
-Thu Feb 20 17:02:20 2025
+Thu Feb 20 21:41:39 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Feb 20 17:02:20 2025 ;
+; Assembler Status      ; Successful - Thu Feb 20 21:41:39 2025 ;
 ; Revision Name         ; Dual_Issue                            ;
 ; Top-level Entity Name ; Dual_Issue                            ;
 ; Family                ; MAX 10                                ;
@@ -67,8 +67,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------+----------------------------------------------------------------------------------------------------------+
 ; Option         ; Setting                                                                                                  ;
 +----------------+----------------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x00AA03BC                                                                                               ;
-; Checksum       ; 0x00AA03BC                                                                                               ;
+; JTAG usercode  ; 0x00B091AB                                                                                               ;
+; Checksum       ; 0x00B091AB                                                                                               ;
 +----------------+----------------------------------------------------------------------------------------------------------+
 
 
@@ -78,14 +78,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Thu Feb 20 17:02:16 2025
+    Info: Processing started: Thu Feb 20 21:41:36 2025
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Dual_Issue -c Dual_Issue
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4851 megabytes
-    Info: Processing ended: Thu Feb 20 17:02:20 2025
-    Info: Elapsed time: 00:00:04
+    Info: Processing ended: Thu Feb 20 21:41:39 2025
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
 

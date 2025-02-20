@@ -67,7 +67,8 @@ end
 programCounter pc(.clk(clk), .rst(rst), .PCin(nextPC), .PCout(PC), .hold(hold));
 
 
-instructionMemory IM_nt(.address_a(PC), .address_b(PC + 10'b1), .clock(~clk), .q_a(instruction_1), .q_b(instruction_2));
+instructionMemory IM_nt(.address_a(nextPC), .address_b(nextPC + 10'b1), .clock(clk), .q_a(instruction_1), .q_b(instruction_2));
+
 
 
 endmodule

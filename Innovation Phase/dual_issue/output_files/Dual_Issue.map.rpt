@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Dual_Issue
-Thu Feb 20 17:24:29 2025
+Thu Feb 20 21:52:37 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -35,40 +35,38 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
  27. Parameter Settings for User Entity Instance: Dual_Issue:uut|not_t_pipe:u_not_t_pipe|execute:u_execute|ALU:alu2
  28. Parameter Settings for User Entity Instance: Dual_Issue:uut|not_t_pipe:u_not_t_pipe|EXMEM:exmem1
  29. Parameter Settings for User Entity Instance: Dual_Issue:uut|not_t_pipe:u_not_t_pipe|EXMEM:exmem2
- 30. Parameter Settings for User Entity Instance: Dual_Issue:uut|mux_test:memMUX|lpm_mux:LPM_MUX_component
- 31. Parameter Settings for User Entity Instance: Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component
- 32. Parameter Settings for User Entity Instance: Dual_Issue:uut|mux2x1:WBMux1
- 33. Parameter Settings for User Entity Instance: Dual_Issue:uut|mux2x1:WBMux2
- 34. Parameter Settings for User Entity Instance: Dual_Issue:uut|MEMWB:memwb1
- 35. Parameter Settings for User Entity Instance: Dual_Issue:uut|MEMWB:memwb2
- 36. Parameter Settings for User Entity Instance: Dual_Issue:uut|mux2x1:WritePc1
- 37. Parameter Settings for User Entity Instance: Dual_Issue:uut|mux2x1:WritePc2
- 38. altsyncram Parameter Settings by Entity Instance
- 39. Analysis & Elaboration Settings
- 40. Port Connectivity Checks: "Dual_Issue:uut|mux2x1:WritePc2"
- 41. Port Connectivity Checks: "Dual_Issue:uut|mux2x1:WritePc1"
- 42. Port Connectivity Checks: "Dual_Issue:uut|MEMWB:memwb2"
- 43. Port Connectivity Checks: "Dual_Issue:uut|MEMWB:memwb1"
- 44. Port Connectivity Checks: "Dual_Issue:uut|dataMemory:DM"
- 45. Port Connectivity Checks: "Dual_Issue:uut|mux_test:memMUX"
- 46. Port Connectivity Checks: "Dual_Issue:uut|forwarding_unit:u_forwarding_unit_n"
- 47. Port Connectivity Checks: "Dual_Issue:uut|not_t_pipe:u_not_t_pipe|IDEX:idex2"
- 48. Port Connectivity Checks: "Dual_Issue:uut|not_t_pipe:u_not_t_pipe|IDEX:idex1"
- 49. Port Connectivity Checks: "Dual_Issue:uut|not_t_pipe:u_not_t_pipe|decode:u_decode"
- 50. Port Connectivity Checks: "Dual_Issue:uut|not_t_pipe:u_not_t_pipe"
- 51. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|EXMEM:exmem2"
- 52. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|EXMEM:exmem1"
- 53. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute|comparator:comp2"
- 54. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute|comparator:comp1"
- 55. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute|ALU:alu2"
- 56. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute|ALU:alu1"
- 57. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|IDEX:idex2"
- 58. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|IDEX:idex1"
- 59. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|decode:u_decode"
- 60. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe"
- 61. Port Connectivity Checks: "Dual_Issue:uut"
- 62. Analysis & Elaboration Messages
- 63. Analysis & Elaboration Suppressed Messages
+ 30. Parameter Settings for User Entity Instance: Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component
+ 31. Parameter Settings for User Entity Instance: Dual_Issue:uut|mux2x1:WBMux1
+ 32. Parameter Settings for User Entity Instance: Dual_Issue:uut|mux2x1:WBMux2
+ 33. Parameter Settings for User Entity Instance: Dual_Issue:uut|MEMWB:memwb1
+ 34. Parameter Settings for User Entity Instance: Dual_Issue:uut|MEMWB:memwb2
+ 35. Parameter Settings for User Entity Instance: Dual_Issue:uut|mux2x1:WritePc1
+ 36. Parameter Settings for User Entity Instance: Dual_Issue:uut|mux2x1:WritePc2
+ 37. altsyncram Parameter Settings by Entity Instance
+ 38. Analysis & Elaboration Settings
+ 39. Port Connectivity Checks: "Dual_Issue:uut|mux2x1:WritePc2"
+ 40. Port Connectivity Checks: "Dual_Issue:uut|mux2x1:WritePc1"
+ 41. Port Connectivity Checks: "Dual_Issue:uut|MEMWB:memwb2"
+ 42. Port Connectivity Checks: "Dual_Issue:uut|MEMWB:memwb1"
+ 43. Port Connectivity Checks: "Dual_Issue:uut|dataMemory:DM"
+ 44. Port Connectivity Checks: "Dual_Issue:uut|forwarding_unit:u_forwarding_unit_n"
+ 45. Port Connectivity Checks: "Dual_Issue:uut|not_t_pipe:u_not_t_pipe|IDEX:idex2"
+ 46. Port Connectivity Checks: "Dual_Issue:uut|not_t_pipe:u_not_t_pipe|IDEX:idex1"
+ 47. Port Connectivity Checks: "Dual_Issue:uut|not_t_pipe:u_not_t_pipe|decode:u_decode"
+ 48. Port Connectivity Checks: "Dual_Issue:uut|not_t_pipe:u_not_t_pipe"
+ 49. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|EXMEM:exmem2"
+ 50. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|EXMEM:exmem1"
+ 51. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute|comparator:comp2"
+ 52. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute|comparator:comp1"
+ 53. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute|ALU:alu2"
+ 54. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute|ALU:alu1"
+ 55. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|IDEX:idex2"
+ 56. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|IDEX:idex1"
+ 57. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|decode:u_decode"
+ 58. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe"
+ 59. Port Connectivity Checks: "Dual_Issue:uut"
+ 60. Analysis & Elaboration Messages
+ 61. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -95,7 +93,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                      ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Thu Feb 20 17:24:29 2025          ;
+; Analysis & Elaboration Status      ; Successful - Thu Feb 20 21:52:37 2025          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; Dual_Issue                                     ;
 ; Top-level Entity Name              ; testbench                                      ;
@@ -136,7 +134,6 @@ https://fpgasoftware.intel.com/eula.
 ; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                                                                             ; IP Include File     ;
 +--------+--------------+---------+--------------+--------------+-------------------------------------------------------------------------------------------------------------+---------------------+
 ; Altera ; RAM: 2-PORT  ; 22.1    ; N/A          ; N/A          ; |testbench|Dual_Issue:uut|dataMemory:DM                                                                     ; dataMemory.v        ;
-; Altera ; LPM_MUX      ; 22.1    ; N/A          ; N/A          ; |testbench|Dual_Issue:uut|mux_test:memMUX                                                                   ; mux_test.v          ;
 ; Altera ; ROM: 2-PORT  ; 22.1    ; N/A          ; N/A          ; |testbench|Dual_Issue:uut|not_t_pipe:u_not_t_pipe|fetch_not_taken:u_fetch_not_taken|instructionMemory:IM_nt ; instructionMemory.v ;
 ; Altera ; ROM: 2-PORT  ; 22.1    ; N/A          ; N/A          ; |testbench|Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM                    ; instructionMemory.v ;
 +--------+--------------+---------+--------------+--------------+-------------------------------------------------------------------------------------------------------------+---------------------+
@@ -615,25 +612,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Dual_Issue:uut|mux_test:memMUX|lpm_mux:LPM_MUX_component ;
-+------------------------+---------+--------------------------------------------------------------------+
-; Parameter Name         ; Value   ; Type                                                               ;
-+------------------------+---------+--------------------------------------------------------------------+
-; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY                                                         ;
-; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY                                                       ;
-; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE                                                       ;
-; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE                                                     ;
-; LPM_WIDTH              ; 180     ; Signed Integer                                                     ;
-; LPM_SIZE               ; 2       ; Signed Integer                                                     ;
-; LPM_WIDTHS             ; 1       ; Signed Integer                                                     ;
-; LPM_PIPELINE           ; 0       ; Untyped                                                            ;
-; CBXI_PARAMETER         ; mux_59c ; Untyped                                                            ;
-; DEVICE_FAMILY          ; MAX 10  ; Untyped                                                            ;
-+------------------------+---------+--------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +-----------------------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component ;
 +------------------------------------+----------------------------------+-----------------------------------+
@@ -932,19 +910,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Dual_Issue:uut|mux_test:memMUX"                                                                                                                                   ;
-+-----------------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port            ; Type   ; Severity ; Details                                                                                                                                                ;
-+-----------------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; data0x          ; Input  ; Warning  ; Input port expression (178 bits) is smaller than the input port (180 bits) it drives.  Extra input bit(s) "data0x[179..178]" will be connected to GND. ;
-; data1x          ; Input  ; Warning  ; Input port expression (178 bits) is smaller than the input port (180 bits) it drives.  Extra input bit(s) "data1x[179..178]" will be connected to GND. ;
-; result          ; Output ; Warning  ; Output or bidir port (180 bits) is wider than the port expression (178 bits) it drives; bit(s) "result[179..178]" have no fanouts                      ;
-; result[113..82] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                    ;
-; result[1..0]    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                    ;
-+-----------------+--------+----------+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
 +------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "Dual_Issue:uut|forwarding_unit:u_forwarding_unit_n"                                   ;
 +--------+--------+----------+-------------------------------------------------------------------------------------+
@@ -987,17 +952,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Dual_Issue:uut|not_t_pipe:u_not_t_pipe"                                                        ;
-+-----------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port            ; Type   ; Severity ; Details                                                                             ;
-+-----------------+--------+----------+-------------------------------------------------------------------------------------+
-; taken1_MEM      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; taken2_MEM      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; destReg1        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; destReg2        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; return_addr2_EX ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-----------------+--------+----------+-------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Dual_Issue:uut|not_t_pipe:u_not_t_pipe"                                                         ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port             ; Type   ; Severity ; Details                                                                             ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; taken1_MEM       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; MemReadEn1_MEM   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; taken2_MEM       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; destReg1         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; destReg2         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; MemReadEn2_MEM   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; return_addr2_EX  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; forwardBRes2_MEM ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1094,12 +1062,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Port              ; Type   ; Severity ; Details                                                                             ;
 +-------------------+--------+----------+-------------------------------------------------------------------------------------+
 ; taken1_MEM        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; MemReadEn1_MEM    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; taken2_MEM        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; destReg1          ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; destReg2          ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; MemReadEn2_MEM    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; return_addr2_EX   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; BranchAddress1_EX ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; BranchAddress2_EX ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; forwardBRes2_MEM  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; Branch1_MEM       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; Branch2_MEM       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +-------------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -1121,7 +1092,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Thu Feb 20 17:24:21 2025
+    Info: Processing started: Thu Feb 20 21:52:28 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Dual_Issue -c Dual_Issue --analysis_and_elaboration
 Info (16303): Aggressive Performance optimization mode selected -- timing performance will be prioritized at the potential cost of increased logic area and compilation time
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -1132,9 +1103,9 @@ Info (12021): Found 2 design units, including 2 entities, in source file mux2x1.
     Info (12023): Found entity 2: mux4x1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux2x1.v Line: 15
 Info (12021): Found 4 design units, including 4 entities, in source file pipes.v
     Info (12023): Found entity 1: IFID File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v Line: 1
-    Info (12023): Found entity 2: IDEX File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v Line: 20
-    Info (12023): Found entity 3: EXMEM File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v Line: 42
-    Info (12023): Found entity 4: MEMWB File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v Line: 61
+    Info (12023): Found entity 2: IDEX File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v Line: 17
+    Info (12023): Found entity 3: EXMEM File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v Line: 36
+    Info (12023): Found entity 4: MEMWB File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v Line: 55
 Info (12021): Found 1 design units, including 1 entities, in source file t_pipe.v
     Info (12023): Found entity 1: t_pipe File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file signextender.v
@@ -1177,6 +1148,9 @@ Info (12127): Elaborating entity "testbench" for the top level hierarchy
 Warning (10175): Verilog HDL warning at testbench.v(12): ignoring unsupported system task File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/testbench.v Line: 12
 Warning (10755): Verilog HDL warning at testbench.v(15): assignments to clk create a combinational loop File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/testbench.v Line: 15
 Info (12128): Elaborating entity "Dual_Issue" for hierarchy "Dual_Issue:uut" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/testbench.v Line: 17
+Warning (10036): Verilog HDL or VHDL warning at Dual_Issue.v(23): object "MemReadEn2_MEM" assigned a value but never read File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v Line: 23
+Warning (10036): Verilog HDL or VHDL warning at Dual_Issue.v(23): object "MemReadEn1_MEM" assigned a value but never read File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v Line: 23
+Warning (10036): Verilog HDL or VHDL warning at Dual_Issue.v(28): object "forwardBRes2_MEM" assigned a value but never read File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v Line: 28
 Info (12128): Elaborating entity "t_pipe" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v Line: 112
 Info (12128): Elaborating entity "fetch_taken" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v Line: 77
 Info (12128): Elaborating entity "programCounter" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|programCounter:pc" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/fetch_taken.v Line: 67
@@ -1212,14 +1186,11 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alts
     Info (12023): Found entity 1: altsyncram_as52 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/db/altsyncram_as52.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_as52" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM|altsyncram:altsyncram_component|altsyncram_as52:auto_generated" File: c:/intelfpga/23.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12128): Elaborating entity "IFID" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|IFID:ifid1" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v Line: 86
-Warning (10230): Verilog HDL assignment warning at Pipes.v(6): truncated value with size 200 to match size of target (52) File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v Line: 6
 Info (12128): Elaborating entity "decode" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|decode:u_decode" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v Line: 154
 Info (12128): Elaborating entity "controlUnit" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|decode:u_decode|controlUnit:CU1" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/decode.v Line: 41
 Info (12128): Elaborating entity "registerFile" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|decode:u_decode|registerFile:rf" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/decode.v Line: 67
 Info (12128): Elaborating entity "SignExtender" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|decode:u_decode|SignExtender:SignExtend1" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/decode.v Line: 98
 Info (12128): Elaborating entity "IDEX" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|IDEX:idex1" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v Line: 159
-Warning (10230): Verilog HDL assignment warning at Pipes.v(27): truncated value with size 200 to match size of target (160) File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v Line: 27
-Warning (10230): Verilog HDL assignment warning at Pipes.v(33): truncated value with size 200 to match size of target (160) File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v Line: 33
 Info (12128): Elaborating entity "execute" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v Line: 190
 Info (12128): Elaborating entity "ALU" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute|ALU:alu1" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/execute.v Line: 23
 Info (12128): Elaborating entity "comparator" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute|comparator:comp1" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/execute.v Line: 27
@@ -1229,18 +1200,7 @@ Info (12128): Elaborating entity "fetch_not_taken" for hierarchy "Dual_Issue:uut
 Info (12128): Elaborating entity "EXMEM" for hierarchy "Dual_Issue:uut|not_t_pipe:u_not_t_pipe|EXMEM:exmem1" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/not_t_pipe.v Line: 202
 Info (12128): Elaborating entity "branch_control" for hierarchy "Dual_Issue:uut|branch_control:u_branch_control" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v Line: 223
 Info (12128): Elaborating entity "forwarding_unit" for hierarchy "Dual_Issue:uut|forwarding_unit:u_forwarding_unit_t" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v Line: 252
-Info (12128): Elaborating entity "mux_test" for hierarchy "Dual_Issue:uut|mux_test:memMUX" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v Line: 296
-Info (12128): Elaborating entity "lpm_mux" for hierarchy "Dual_Issue:uut|mux_test:memMUX|lpm_mux:LPM_MUX_component" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v Line: 69
-Info (12130): Elaborated megafunction instantiation "Dual_Issue:uut|mux_test:memMUX|lpm_mux:LPM_MUX_component" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v Line: 69
-Info (12133): Instantiated megafunction "Dual_Issue:uut|mux_test:memMUX|lpm_mux:LPM_MUX_component" with the following parameter: File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v Line: 69
-    Info (12134): Parameter "lpm_size" = "2"
-    Info (12134): Parameter "lpm_type" = "LPM_MUX"
-    Info (12134): Parameter "lpm_width" = "180"
-    Info (12134): Parameter "lpm_widths" = "1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/mux_59c.tdf
-    Info (12023): Found entity 1: mux_59c File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/db/mux_59c.tdf Line: 23
-Info (12128): Elaborating entity "mux_59c" for hierarchy "Dual_Issue:uut|mux_test:memMUX|lpm_mux:LPM_MUX_component|mux_59c:auto_generated" File: c:/intelfpga/23.1std/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
-Info (12128): Elaborating entity "dataMemory" for hierarchy "Dual_Issue:uut|dataMemory:DM" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v Line: 318
+Info (12128): Elaborating entity "dataMemory" for hierarchy "Dual_Issue:uut|dataMemory:DM" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v Line: 325
 Info (12128): Elaborating entity "altsyncram" for hierarchy "Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v Line: 98
 Info (12130): Elaborated megafunction instantiation "Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v Line: 98
 Info (12133): Instantiated megafunction "Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v Line: 98
@@ -1274,16 +1234,16 @@ Info (12133): Instantiated megafunction "Dual_Issue:uut|dataMemory:DM|altsyncram
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_3pl2.tdf
     Info (12023): Found entity 1: altsyncram_3pl2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/db/altsyncram_3pl2.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_3pl2" for hierarchy "Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component|altsyncram_3pl2:auto_generated" File: c:/intelfpga/23.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "mux2x1" for hierarchy "Dual_Issue:uut|mux2x1:WBMux1" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v Line: 321
-Info (12128): Elaborating entity "MEMWB" for hierarchy "Dual_Issue:uut|MEMWB:memwb1" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v Line: 327
+Info (12128): Elaborating entity "mux2x1" for hierarchy "Dual_Issue:uut|mux2x1:WBMux1" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v Line: 328
+Info (12128): Elaborating entity "MEMWB" for hierarchy "Dual_Issue:uut|MEMWB:memwb1" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v Line: 334
 Warning (12011): Net is missing source, defaulting to GND
     Warning (12110): Net "clk" is missing source, defaulting to GND File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/testbench.v Line: 4
-Warning (12241): 10 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 9 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (144001): Generated suppressed messages file C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/output_files/Dual_Issue.map.smsg
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 8 warnings
     Info: Peak virtual memory: 4803 megabytes
-    Info: Processing ended: Thu Feb 20 17:24:29 2025
-    Info: Elapsed time: 00:00:08
+    Info: Processing ended: Thu Feb 20 21:52:37 2025
+    Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:19
 
 

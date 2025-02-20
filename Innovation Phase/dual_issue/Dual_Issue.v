@@ -282,8 +282,15 @@ forwarding_unit u_forwarding_unit_n(
 
 
 
+assign {aluRes1_MEM,aluRes2_MEM,forwardBRes2_MEM ,forwardBRes1_MEM ,return_addr2_MEM ,return_addr1_MEM ,rt2_MEM ,rt1_MEM ,DestReg2_MEM ,
+								DestReg1_MEM ,jal2_MEM ,jal1_MEM ,RegWriteEn2_MEM ,RegWriteEn1_MEM ,MemWriteEn2_MEM ,MemWriteEn1_MEM ,
+								MemtoReg2_MEM ,MemtoReg1_MEM ,MemReadEn2_MEM ,MemReadEn1_MEM } = taken_pipe ? {aluRes1_MEM_t,aluRes2_MEM_t,forwardBRes2_MEM_t,forwardBRes1_MEM_t,return_addr2_MEM_t,return_addr1_MEM_t,rt2_MEM_t,rt1_MEM_t,DestReg2_MEM_t,
+								DestReg1_MEM_t,jal2_MEM_t,jal1_MEM_t,RegWriteEn2_MEM_t,RegWriteEn1_MEM_t,MemWriteEn2_MEM_t,MemWriteEn1_MEM_t,
+								MemtoReg2_MEM_t,MemtoReg1_MEM_t,MemReadEn2_MEM_t,MemReadEn1_MEM_t} : {aluRes1_MEM_n,aluRes2_MEM_n,forwardBRes2_MEM_n,forwardBRes1_MEM_n,return_addr2_MEM_n,return_addr1_MEM_n,rt2_MEM_n,rt1_MEM_n,DestReg2_MEM_n,
+								DestReg1_MEM_n,jal2_MEM_n,jal1_MEM_n,RegWriteEn2_MEM_n,RegWriteEn1_MEM_n,MemWriteEn2_MEM_n,MemWriteEn1_MEM_n,
+						MemtoReg2_MEM_n,MemtoReg1_MEM_n,MemReadEn2_MEM_n,MemReadEn1_MEM_n};
 
- mux_test memMUX (
+/* mux_test memMUX (
 	.data0x({aluRes1_MEM_n,aluRes2_MEM_n,forwardBRes2_MEM_n,forwardBRes1_MEM_n,return_addr2_MEM_n,return_addr1_MEM_n,rt2_MEM_n,rt1_MEM_n,DestReg2_MEM_n,
 								DestReg1_MEM_n,jal2_MEM_n,jal1_MEM_n,RegWriteEn2_MEM_n,RegWriteEn1_MEM_n,MemWriteEn2_MEM_n,MemWriteEn1_MEM_n,
 								MemtoReg2_MEM_n,MemtoReg1_MEM_n,MemReadEn2_MEM_n,MemReadEn1_MEM_n}),
@@ -294,7 +301,7 @@ forwarding_unit u_forwarding_unit_n(
 	.result({aluRes1_MEM,aluRes2_MEM,forwardBRes2_MEM ,forwardBRes1_MEM ,return_addr2_MEM ,return_addr1_MEM ,rt2_MEM ,rt1_MEM ,DestReg2_MEM ,
 								DestReg1_MEM ,jal2_MEM ,jal1_MEM ,RegWriteEn2_MEM ,RegWriteEn1_MEM ,MemWriteEn2_MEM ,MemWriteEn1_MEM ,
 								MemtoReg2_MEM ,MemtoReg1_MEM ,MemReadEn2_MEM ,MemReadEn1_MEM }));
-
+*/
 
 
 always @(*) begin
