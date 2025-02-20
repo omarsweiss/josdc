@@ -1,0 +1,27 @@
+onerror {resume}
+quietly WaveActivateNextPane {} 0
+add wave -noupdate /testbench/clk
+add wave -noupdate /testbench/rst
+add wave -noupdate /testbench/out1
+add wave -noupdate /testbench/out2
+add wave -noupdate -radix unsigned /testbench/uut/u_t_pipe/u_fetch_taken/PC
+add wave -noupdate -radix unsigned /testbench/uut/u_not_t_pipe/u_fetch_not_taken/PC
+add wave -noupdate -radix unsigned -childformat {{{/testbench/uut/u_t_pipe/u_decode/rf/registers[0]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[1]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[2]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[3]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[4]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[5]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[6]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[7]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[8]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[9]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[10]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[11]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[12]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[13]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[14]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[15]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[16]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[17]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[18]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[19]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[20]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[21]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[22]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[23]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[24]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[25]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[26]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[27]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[28]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[29]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[30]} -radix unsigned} {{/testbench/uut/u_t_pipe/u_decode/rf/registers[31]} -radix unsigned}} -expand -subitemconfig {{/testbench/uut/u_t_pipe/u_decode/rf/registers[0]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[1]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[2]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[3]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[4]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[5]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[6]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[7]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[8]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[9]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[10]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[11]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[12]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[13]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[14]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[15]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[16]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[17]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[18]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[19]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[20]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[21]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[22]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[23]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[24]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[25]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[26]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[27]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[28]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[29]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[30]} {-radix unsigned} {/testbench/uut/u_t_pipe/u_decode/rf/registers[31]} {-radix unsigned}} /testbench/uut/u_t_pipe/u_decode/rf/registers
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {0 ps} 0}
+quietly wave cursor active 0
+configure wave -namecolwidth 150
+configure wave -valuecolwidth 117
+configure wave -justifyvalue left
+configure wave -signalnamewidth 0
+configure wave -snapdistance 10
+configure wave -datasetprefix 0
+configure wave -rowmargin 4
+configure wave -childrowmargin 2
+configure wave -gridoffset 0
+configure wave -gridperiod 1
+configure wave -griddelta 40
+configure wave -timeline 0
+configure wave -timelineunits ns
+update
+WaveRestoreZoom {39003050 ps} {39004027 ps}

@@ -1,20 +1,22 @@
 module t_pipe(input clk,input rst,
-input flush_IFID, flush_IDEX, correct_en,jal1_WB,jal2_WB,regWrite1_WB,regWrite2_WB,
+input flush_IFID, flush_IDEX, correct_en,jal1_WB,jal2_WB,regWrite1_WB,regWrite2_WB, jr1_in, jr2_in,
 
 input [4:0] ForwardA_1,ForwardB_1,ForwardA_2,ForwardB_2,
 
 input [4:0] writeReg1_WB,writeReg2_WB,
  
-input [9:0] correction,
+input [9:0] correction,jr_addr1_in,jr_addr2_in,
 
 input [31:0]writeData1_WB,writeData2_WB, aluRes1_WB,aluRes2_WB,aluRes1_MEM_fwd,aluRes2_MEM_fwd,
 
 output Branch1,Branch2, taken1, taken2, taken1_MEM,  MemReadEn1_MEM, MemtoReg1_MEM, MemWriteEn1_MEM, RegWriteEn1_MEM,jal1_MEM,
  taken2_MEM,  MemReadEn2_MEM, MemtoReg2_MEM, MemWriteEn2_MEM, RegWriteEn2_MEM,jal2_MEM, Branch1_MEM,Branch2_MEM, Branch2_EX, Branch1_EX,RegWriteEn1_EX,RegWriteEn2_EX,
+ jr1_out,jr2_out,
 
 output [4:0]  DestReg1_MEM, rt1_MEM, DestReg2_MEM, rt2_MEM,rs1,rt1,rs2,rt2,destReg1,destReg2, DestReg1_EX, DestReg2_EX,
 
 output [9:0] return_addr2_ID, return_addr2_EX, return_addr1_MEM, return_addr2_MEM,BranchAddress1_EX, BranchAddress2_EX,next_pc_out,
+jr_addr1_out, jr_addr2_out,
 
 output [31:0] aluRes1_MEM, forwardBRes1_MEM, aluRes2_MEM, forwardBRes2_MEM
       
@@ -38,16 +40,19 @@ wire  ld_hazard,jr_hazard, flush_second, MemReadEn1, MemtoReg1, MemWriteEn1, Reg
  MemWriteEn2_EX,ALUSrc2_EX, jal2_EX, bne2_EX, jr2_EX;
 
 
- 
- 
+assign jr1_out = jr1_EX;
+assign jr2_out = jr2_EX;
+assign jr_addr1_out = readData1_1_EX[9:0] ;
+assign jr_addr2_out = readData1_2_EX[9:0] ;
+
 /////////////////////////////////////////
  
-assign   ld_hazard =   (MemReadEn1_EX && (rs1 == DestReg1_EX || RegDst1 && (rt1 == DestReg1_EX)))
-							||(MemReadEn2_EX && (rs1 == DestReg2_EX || RegDst1 && (rt1 == DestReg2_EX)))
-							||(MemReadEn1_EX && (rs2 == DestReg1_EX || RegDst2 && (rt2 == DestReg1_EX)))
-							||(MemReadEn2_EX && (rs2 == DestReg2_EX || RegDst2 && (rt2 == DestReg2_EX)));
+assign   ld_hazard =   (MemReadEn1_EX && ((rs1 == DestReg1_EX) || (RegDst1 || Branch1 || MemWriteEn1) &&(rt1 == DestReg1_EX)))
+							||(MemReadEn2_EX && ((rs1 == DestReg2_EX) || (RegDst1 || Branch1 || MemWriteEn1) && (rt1 == DestReg2_EX)))
+							||(MemReadEn1_EX && ((rs2 == DestReg1_EX) || (RegDst2 || Branch2 || MemWriteEn2) && (rt2 == DestReg1_EX)))
+							||(MemReadEn2_EX && ((rs2 == DestReg2_EX) || (RegDst2 || Branch2 || MemWriteEn2) && (rt2 == DestReg2_EX)));
 						
-assign   jr_hazard = (jr1||jr2) && !ld_hazard; 
+assign   jr_hazard = (jr1_EX||jr2_EX) && !ld_hazard; 
 ////////////////////////////////////////
  
  
@@ -56,13 +61,13 @@ assign   jr_hazard = (jr1||jr2) && !ld_hazard;
 fetch_taken u_fetch_taken(
     .clk           ( clk ),
     .rst           ( rst ),
-    .jr            ( jr1_EX | jr2_EX),
+    .jr            ( jr1_EX | jr2_EX | jr1_in | jr2_in),
     .hold          (  ld_hazard  ),
 	 .BranchAddress_1(BranchAddress_1),
 	 .BranchAddress_2(BranchAddress_2),
     .correct_en    ( correct_en    ),
 	 .nextPC_out        (next_pc_out),
-    .reg1Addr      ( jr1_EX ? readData1_1_EX[9:0] : readData1_2_EX[9:0] ),
+    .reg1Addr      ( jr1_EX ? readData1_1_EX[9:0] : jr2_EX ? readData1_2_EX[9:0] : jr1_in ? jr_addr1_in : jr_addr2_in ),
     .correction    ( correction    ),
     .flush_second  ( flush_second  ),
     .return_addr1  ( return_addr1  ),
@@ -84,7 +89,7 @@ IFID #(52) ifid2(.Q({return_addr2_ID, instruction2_ID, BranchAddress2_ID}),
  
 					 .D({return_addr2, instruction_2, BranchAddress_2}),
 
-					 .clk(clk), .reset(rst || flush_second || jr_hazard || flush_IFID), .hold(ld_hazard ), .flush()); ///////////////////////////////////////
+					 .clk(clk), .reset(rst ), .hold(ld_hazard ), .flush(flush_second || jr_hazard || flush_IFID)); ///////////////////////////////////////
 
 
 decode u_decode(

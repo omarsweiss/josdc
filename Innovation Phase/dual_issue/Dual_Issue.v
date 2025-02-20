@@ -5,14 +5,14 @@ module Dual_Issue(input clk, rst, output [31:0] out1,out2);
 wire hold_pc_t ,hold_IFID_t, flush_IFID_t, flush_IDEX_t,correct_en_t,jal1_WB,jal2_WB,regWrite1_WB,regWrite2_WB,
 Branch1_t, Branch2_t, taken1_t, taken2_t,taken1_MEM_t,MemReadEn1_MEM_t,MemtoReg1_MEM_t,MemWriteEn1_MEM_t,RegWriteEn1_MEM_t,jal1_MEM_t,
 taken2_MEM_t,MemReadEn2_MEM_t,MemtoReg2_MEM_t,MemWriteEn2_MEM_t,RegWriteEn2_MEM_t,jal2_MEM_t,Branch1_MEM_t,Branch2_MEM_t,taken_pipe,
-MemtoReg1_WB,MemtoReg2_WB,Branch1_EX_t,Branch2_EX_t,Branch1_EX_n,Branch2_EX_n;
+MemtoReg1_WB,MemtoReg2_WB,Branch1_EX_t,Branch2_EX_t,Branch1_EX_n,Branch2_EX_n,jr1_t,jr2_t,jr1_n,jr2_n;
 
-wire[1:0] memFw1,memFw2,memFw1_n,memFw1_t;
+wire[1:0] memFw1,memFw2,memFw1_n,memFw2_n;
 wire [4:0] ForwardA_1_t,ForwardB_1_t,ForwardA_2_t,ForwardB_2_t,ForwardA_1_n,ForwardB_1_n,ForwardA_2_n,ForwardB_2_n;
 wire [4:0] writeReg1_WB, writeReg2_WB,DestReg1_MEM_t,DestReg2_MEM_t,rt1_MEM_t,rt2_MEM_t,
 rs1_t,rt1_t,rs2_t,rt2_t,rs1_n,rt1_n,rs2_n,rt2_n,destReg1_t,destReg2_t,destReg1_n,destReg2_n,DestReg1_EX_n,DestReg2_EX_n,DestReg1_EX_t,DestReg2_EX_t;
 wire [9:0] correction_t,return_addr2_ID_t,return_addr2_EX_t,return_addr1_MEM_t,return_addr2_MEM_t,BranchAddress1_EX_t,BranchAddress2_EX_t,
-next_pc_out_t,return_addr1_WB,return_addr2_WB,next_pc_out_n,BTA1,BTA2;
+next_pc_out_t,return_addr1_WB,return_addr2_WB,next_pc_out_n,BTA1,BTA2,jr_addr1_n,jr_addr2_n,jr_addr2_t,jr_addr1_t;
 wire [31:0] writeData1_WB, writeData2_WB,aluRes1_WB,aluRes2_WB,Dmem_res1_WB,Dmem_res2_WB,WBMuxOutput1,WBMuxOutput2,
 aluRes1_MEM,aluRes2_MEM,aluRes1_MEM_n,aluRes2_MEM_n,forwardBRes1_MEM_n,forwardBRes2_MEM_n,MEMmuxOutput1,MEMmuxOutput2;
 
@@ -99,7 +99,15 @@ t_pipe u_t_pipe(
 	 .aluRes1_MEM_fwd		(	MEMmuxOutput1			),
 	 .aluRes2_MEM_fwd		(	MEMmuxOutput2		),
 	 .RegWriteEn1_EX	(RegWriteEn1_EX_t		),
-	 .RegWriteEn2_EX	(RegWriteEn2_EX_t		)
+	 .RegWriteEn2_EX	(RegWriteEn2_EX_t		),
+	 	 	 .jr1_in							( jr1_n ),
+	 .jr2_in								( jr2_n ),
+	 .jr1_out							( jr1_t),
+	 .jr2_out						   ( jr2_t),
+	 .jr_addr1_in 						( jr_addr1_n),
+	 .jr_addr2_in  					( jr_addr2_n),
+	 .jr_addr1_out						( jr_addr1_t),
+	 .jr_addr2_out 					( jr_addr2_t)
 	 
 );
 
@@ -170,7 +178,15 @@ not_t_pipe u_not_t_pipe(
 	 .aluRes1_MEM_fwd		(	MEMmuxOutput1			),
 	 .aluRes2_MEM_fwd		(	MEMmuxOutput2		),
 	  .RegWriteEn1_EX	(RegWriteEn1_EX_n		),
-	 .RegWriteEn2_EX	(RegWriteEn2_EX_n		)
+	 .RegWriteEn2_EX	(RegWriteEn2_EX_n		),
+	 	 .jr1_in							( jr1_t ),
+	 .jr2_in								( jr2_t ),
+	 .jr1_out							( jr1_n),
+	 .jr2_out						   ( jr2_n),
+	 .jr_addr1_in 						( jr_addr1_t),
+	 .jr_addr2_in  					( jr_addr2_t),
+	 .jr_addr1_out						( jr_addr1_n),
+	 .jr_addr2_out 					( jr_addr2_n)
 );
 
 branch_control u_branch_control(
@@ -203,6 +219,7 @@ branch_control u_branch_control(
     .pipe_valid                 ( taken_pipe                 ),
     .correction_n               ( correction_n               ),
     .correction_t               ( correction_t               )
+
 );
 
 

@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/simulation/questa
 vlpm_abs
-Z1 !s110 1739985968
+Z1 !s110 1740061512
 !i10b 1
 !s100 O9i<YS?ECZC8XU2m2T>HQ0
 IX>0j6cdm<BTCOh_AFO15n0
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1739985968.000000
+Z7 !s108 1740061512.000000
 Z8 !s107 c:/intelfpga/23.1std/quartus/eda/sim_lib/220model.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|lpm_ver|c:/intelfpga/23.1std/quartus/eda/sim_lib/220model.v|
 !i113 1
@@ -72,7 +72,7 @@ R9
 R10
 R11
 vlpm_bipad
-Z12 !s110 1739985969
+R1
 !i10b 1
 !s100 2eZaafdWMNbm_oGJD`IS61
 IEBcP^G<cJ0J1YS=F:<fl43
@@ -283,7 +283,7 @@ R9
 R10
 R11
 vlpm_fifo
-R12
+R1
 !i10b 1
 !s100 MkW5lD_hnT<agW5lDCMNJ2
 IkgA4HhOf:9QeeR6UFH:KG0
@@ -304,7 +304,7 @@ R9
 R10
 R11
 vlpm_fifo_dc
-R12
+R1
 !i10b 1
 !s100 OX@8oU3SO:LJ;3_=8UL@^3
 I2Kcdcz87SW_6?3<Iz=bTg3
@@ -325,7 +325,7 @@ R9
 R10
 R11
 vlpm_fifo_dc_async
-R12
+R1
 !i10b 1
 !s100 W7]nBZXG1HNLF0lVB9i:n0
 IWlf6<A__HUB5d6?94A7hG1
@@ -346,7 +346,7 @@ R9
 R10
 R11
 vlpm_fifo_dc_dffpipe
-R12
+R1
 !i10b 1
 !s100 <2OGni`F^Mh0HMAddVi2B3
 IQ?3SK7<T<G@LaodFaPif43
@@ -367,7 +367,7 @@ R9
 R10
 R11
 vlpm_fifo_dc_fefifo
-R12
+R1
 !i10b 1
 !s100 RlCXejU>]z0ZLYIBZPn^`2
 IgGa<25`[JHh[]Ro:aXff`1
@@ -410,7 +410,7 @@ R10
 R11
 n@l@p@m_@h@i@n@t_@e@v@a@l@u@a@t@i@o@n
 vlpm_inpad
-R12
+R1
 !i10b 1
 !s100 V5b_N<Y1MO:^NFkHi2nm:1
 I__L3beXU3i=iDZ9C0C=Gj3
@@ -558,7 +558,7 @@ R9
 R10
 R11
 vlpm_outpad
-R12
+R1
 !i10b 1
 !s100 co;D>HcBWR;nkbnW:TU;e3
 Imh1z^ECJ2^KoPVDzZ:W@H0
@@ -579,7 +579,7 @@ R9
 R10
 R11
 vlpm_ram_dp
-R12
+R1
 !i10b 1
 !s100 @ZY2^og4WbO?9Xj=SKCDI2
 I81b9J1@Io<9>LRigm4ggD2
@@ -600,7 +600,7 @@ R9
 R10
 R11
 vlpm_ram_dq
-R12
+R1
 !i10b 1
 !s100 ZPNM`dJFE>ho=S95QY9V32
 I?OXg_SOjUc7>4Xh`BaPmH2
@@ -621,7 +621,7 @@ R9
 R10
 R11
 vlpm_ram_io
-R12
+R1
 !i10b 1
 !s100 gJ2W7zgl`a;W2CY34?2YX0
 I^[3_eidGnOTYbbFV@lQ;<1
@@ -642,7 +642,7 @@ R9
 R10
 R11
 vlpm_rom
-R12
+R1
 !i10b 1
 !s100 nF2Ej@GG7CioJC5oY3^^e3
 ICO[<eOokzTEjC6570>4X63

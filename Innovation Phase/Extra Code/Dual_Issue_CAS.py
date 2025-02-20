@@ -1,6 +1,6 @@
 def runCpu():
     instructions = []
-    with open("Innovation Phase\Extra Code\imem.txt", 'r') as inst:
+    with open("imem.txt", 'r') as inst:
         for line in inst:
             parts = line.split(":")
             if len(parts)>1:
@@ -59,18 +59,6 @@ def runCpu():
     EX_MEM = PipelineRegister()
     MEM_WB = PipelineRegister()
     state = PipelineState()
-    state.memory[0] = 11
-    state.memory[1] = 4
-    state.memory[2] = 14
-    state.memory[3] = 7
-    state.memory[4] = 931
-    state.memory[5] = 12
-    state.memory[6] = 152
-    state.memory[7] = 172
-    state.memory[8] = 201
-    state.memory[9] = 213
-    state.memory[10] = 3
-    state.memory[10] = 5
     opcodes = {
         0x0 : 'rtype', 0x8: 'addi', 0xd :'ori', 0xe: 'xori', 0xc:'andi', 0xa:'slti',
         0x23: 'lw', 0x2b : 'sw', 0x4:'beq', 0x2:'j', 0x3 : 'jal', 0x5:'bne'
@@ -87,6 +75,30 @@ def runCpu():
                 return data - (1 << 16)  
             else: return data
 
+    def hazard_unit(ID_EX, state, EX_MEM, MEM_WB, IF_ID):
+        ldHazardT = False
+        ldHazardNT = False
+        if IF_ID.done and ID_EX.done:
+            memReadT= opcodes[ID_EX.instruction1T.opcode] == 'lw'
+            if memReadT and ((IF_ID.rs1T == ID_EX.destreg1T) or (opcodes[IF_ID.instruction1T.opcode] == 'rtype' and (IF_ID.rt1T == ID_EX.destreg1T))):
+                ldHazardT = True
+            if memReadT and ((IF_ID.rs2T == ID_EX.destreg1T) or (opcodes[IF_ID.instruction2T.opcode] == 'rtype' and (IF_ID.rt2T == ID_EX.destreg1T))):
+                ldHazardT = True
+            if memReadT and ((IF_ID.rs1T == ID_EX.destreg2T) or (opcodes[IF_ID.instruction1T.opcode] == 'rtype' and (IF_ID.rt1T == ID_EX.destreg2T))):
+                ldHazardT = True
+            if memReadT and ((IF_ID.rs2T == ID_EX.destreg2T) or (opcodes[IF_ID.instruction2T.opcode] == 'rtype' and (IF_ID.rt2T == ID_EX.destreg2T))):
+                ldHazardT = True
+            memReadNT= opcodes[ID_EX.instruction1NT.opcode] == 'lw'
+            if memReadNT and ((IF_ID.rs1NT == ID_EX.destreg1NT) or (opcodes[IF_ID.instruction1NT.opcode] == 'rtype' and (IF_ID.rt1NT == ID_EX.destreg1NT))):
+                ldHazardNT = True
+            if memReadNT and ((IF_ID.rs2NT == ID_EX.destreg1NT) or (opcodes[IF_ID.instruction2NT.opcode] == 'rtype' and (IF_ID.rt2NT == ID_EX.destreg1NT))):
+                ldHazardNT = True
+            if memReadNT and ((IF_ID.rs1NT == ID_EX.destreg2NT) or (opcodes[IF_ID.instruction1NT.opcode] == 'rtype' and (IF_ID.rt1NT == ID_EX.destreg2NT))):
+                ldHazardNT = True
+            if memReadNT and ((IF_ID.rs2NT == ID_EX.destreg2NT) or (opcodes[IF_ID.instruction2NT.opcode] == 'rtype' and (IF_ID.rt2NT == ID_EX.destreg2NT))):
+                ldHazardNT = True
+            
+        return ldHazardT, ldHazardNT
 
     def forwarding_unit(EX_MEM, MEM_WB, ID_EX, state):
         if not EX_MEM.done and MEM_WB.done and ID_EX.done:
@@ -99,41 +111,45 @@ def runCpu():
                 op1T = EX_MEM.data1 
             elif writewb1 and MEM_WB.destreg1 == ID_EX.rs1T and MEM_WB.destreg1 !=0:
                 op1T = MEM_WB.data1
-            elif writeex2 and EX_MEM.destreg2 == ID_EX.rs1T and EX_MEM.destreg2 != 0:
+            else: op1T = state.registers[ID_EX.instruction1T.rs]     
+            if writeex2 and EX_MEM.destreg2 == ID_EX.rs1T and EX_MEM.destreg2 != 0:
                 op1T = EX_MEM.data2 
             elif writewb2 and MEM_WB.destreg2 == ID_EX.rs1T and MEM_WB.destreg2 !=0:
                 op1T = MEM_WB.data2
-            else: op1T = state.registers[ID_EX.instruction1T.rs]
             
             if writeex1 and EX_MEM.destreg1 == ID_EX.rs2T and EX_MEM.destreg1 != 0:
                 op1_2T = EX_MEM.data1 
             elif writewb1 and MEM_WB.destreg1 == ID_EX.rs2T and MEM_WB.destreg1 !=0:
                 op1_2T = MEM_WB.data1
-            elif writeex2 and EX_MEM.destreg2 == ID_EX.rs2T and EX_MEM.destreg2 != 0:
+            else: op1_2T = state.registers[ID_EX.instruction2T.rs]
+            
+            if writeex2 and EX_MEM.destreg2 == ID_EX.rs2T and EX_MEM.destreg2 != 0:
                 op1_2T = EX_MEM.data2 
             elif writewb2 and MEM_WB.destreg2 == ID_EX.rs2T and MEM_WB.destreg2 !=0:
                 op1_2T = MEM_WB.data2
-            else: op1_2T = state.registers[ID_EX.instruction2T.rs]
+
 
             if writeex1 and EX_MEM.destreg1 == ID_EX.rt1T and EX_MEM.destreg1 != 0:
                 op2T = EX_MEM.data1 
             elif writewb1 and MEM_WB.destreg1 == ID_EX.rt1T and MEM_WB.destreg1 !=0:
                 op2T = MEM_WB.data1
-            elif writeex2 and EX_MEM.destreg2 == ID_EX.rt1T and EX_MEM.destreg2 != 0:
+            else: op2T = state.registers[ID_EX.instruction1T.rt]
+            if writeex2 and EX_MEM.destreg2 == ID_EX.rt1T and EX_MEM.destreg2 != 0:
                 op2T = EX_MEM.data2 
             elif writewb2 and MEM_WB.destreg2 == ID_EX.rt1T and MEM_WB.destreg2 !=0:
                 op2T = MEM_WB.data2
-            else: op2T = state.registers[ID_EX.instruction1T.rt]
+            
             
             if writeex1 and EX_MEM.destreg1 == ID_EX.rt2T and EX_MEM.destreg1 != 0:
                 op2_2T = EX_MEM.data1 
             elif writewb1 and MEM_WB.destreg1 == ID_EX.rt2T and MEM_WB.destreg1 !=0:
                 op2_2T = MEM_WB.data1
-            elif writeex2 and EX_MEM.destreg2 == ID_EX.rt2T and EX_MEM.destreg2 != 0:
+            else: op2_2T = state.registers[ID_EX.instruction2T.rt]
+            if writeex2 and EX_MEM.destreg2 == ID_EX.rt2T and EX_MEM.destreg2 != 0:
                 op2_2T = EX_MEM.data2 
             elif writewb2 and MEM_WB.destreg2 == ID_EX.rt2T and MEM_WB.destreg2 !=0:
                 op2_2T = MEM_WB.data2
-            else: op2_2T = state.registers[ID_EX.instruction2T.rt]
+            
             
             
             #Not taken path forwarding=================================================
@@ -141,41 +157,45 @@ def runCpu():
                 op1NT = EX_MEM.data1 
             elif writewb1 and MEM_WB.destreg1 == ID_EX.rs1NT and MEM_WB.destreg1 !=0:
                 op1NT = MEM_WB.data1
-            elif writeex2 and EX_MEM.destreg2 == ID_EX.rs1NT and EX_MEM.destreg2 != 0:
+            else: op1NT = state.registers[ID_EX.instruction1NT.rs]
+            if writeex2 and EX_MEM.destreg2 == ID_EX.rs1NT and EX_MEM.destreg2 != 0:
                 op1NT = EX_MEM.data2 
             elif writewb2 and MEM_WB.destreg2 == ID_EX.rs1NT and MEM_WB.destreg2 !=0:
                 op1NT = MEM_WB.data2
-            else: op1NT = state.registers[ID_EX.instruction1NT.rs]
+            
             
             if writeex1 and EX_MEM.destreg1 == ID_EX.rs2NT and EX_MEM.destreg1 != 0:
                 op1_2NT = EX_MEM.data1 
             elif writewb1 and MEM_WB.destreg1 == ID_EX.rs2NT and MEM_WB.destreg1 !=0:
                 op1_2NT = MEM_WB.data1
-            elif writeex2 and EX_MEM.destreg2 == ID_EX.rs2NT and EX_MEM.destreg2 != 0:
+            else: op1_2NT = state.registers[ID_EX.instruction2NT.rs]
+            if writeex2 and EX_MEM.destreg2 == ID_EX.rs2NT and EX_MEM.destreg2 != 0:
                 op1_2NT = EX_MEM.data2 
             elif writewb2 and MEM_WB.destreg2 == ID_EX.rs2NT and MEM_WB.destreg2 !=0:
                 op1_2NT = MEM_WB.data2
-            else: op1_2NT = state.registers[ID_EX.instruction2NT.rs]
+            
 
             if writeex1 and EX_MEM.destreg1 == ID_EX.rt1NT and EX_MEM.destreg1 != 0:
                 op2NT = EX_MEM.data1 
             elif writewb1 and MEM_WB.destreg1 == ID_EX.rt1NT and MEM_WB.destreg1 !=0:
                 op2NT = MEM_WB.data1
-            elif writeex2 and EX_MEM.destreg2 == ID_EX.rt1NT and EX_MEM.destreg2 != 0:
+            else: op2NT = state.registers[ID_EX.instruction1NT.rt]
+            if writeex2 and EX_MEM.destreg2 == ID_EX.rt1NT and EX_MEM.destreg2 != 0:
                 op2NT = EX_MEM.data2 
             elif writewb2 and MEM_WB.destreg2 == ID_EX.rt1NT and MEM_WB.destreg2 !=0:
                 op2NT = MEM_WB.data2
-            else: op2NT = state.registers[ID_EX.instruction1NT.rt]
+            
             
             if writeex1 and EX_MEM.destreg1 == ID_EX.rt2NT and EX_MEM.destreg1 != 0:
                 op2_2NT = EX_MEM.data1 
             elif writewb1 and MEM_WB.destreg1 == ID_EX.rt2NT and MEM_WB.destreg1 !=0:
                 op2_2NT = MEM_WB.data1
-            elif writeex2 and EX_MEM.destreg2 == ID_EX.rt2NT and EX_MEM.destreg2 != 0:
+            else: op2_2NT = state.registers[ID_EX.instruction2NT.rt]
+            if writeex2 and EX_MEM.destreg2 == ID_EX.rt2NT and EX_MEM.destreg2 != 0:
                 op2_2NT = EX_MEM.data2 
             elif writewb2 and MEM_WB.destreg2 == ID_EX.rt2NT and MEM_WB.destreg2 !=0:
                 op2_2NT = MEM_WB.data2
-            else: op2_2NT = state.registers[ID_EX.instruction2NT.rt]
+            
             
             
             return op1T, op2T, op1_2T, op2_2T, op1NT, op2NT, op1_2NT, op2_2NT
@@ -248,10 +268,6 @@ def runCpu():
             
         elif opcodes[inst2T.opcode] == 'j' or opcodes[inst2T.opcode] =='jal':
             state.pcT = inst2T.imm &0b1111111111
-            
-        elif opcodes[inst2T.opcode] == 'rtype' and rtypes[inst2T.funct] == 'jr':
-            state.pcT = state.registers[inst2T.rs2] & 0b1111111111
-            
         else: 
             state.pcT += 2
             
@@ -270,8 +286,6 @@ def runCpu():
         IF_ID.pcp2NT = state.pcNT+2
         if opcodes[inst2NT.opcode] == 'j' or opcodes[inst2NT.opcode] =='jal':
             state.pcNT = inst2NT.imm &0b1111111111
-        elif opcodes[inst2NT.opcode] == 'rtype' and rtypes[inst2NT.funct] == 'jr':
-            state.pcNT = state.registers[inst2NT.rs] & 0b1111111111
         else: 
             state.pcNT += 2
                 
@@ -637,7 +651,19 @@ def runCpu():
                     state.idexFlushT = 1
                 else:
                     state.pcT = state.pcNT
-                    state.idexFlushT = 1   
+                    state.idexFlushT = 1
+        
+        if opcodes[inst2T.opcode] == 'rtype' and rtypes[inst2T.funct] == 'jr':
+            state.pcT = state.registers[inst2T.rs] & 0b1111111111
+            state.pcNT = state.pcT
+            state.ifidFlushT = 1
+            state.idexFlushNT = 1
+        if opcodes[inst2NT.opcode] == 'rtype' and rtypes[inst2NT.funct] == 'jr':
+            state.pcT = state.registers[inst2NT.rs] & 0b1111111111
+            state.pcNT = state.pcT
+            state.ifidFlushT = 1
+            state.idexFlushNT = 1
+               
         
                 
         taken = state.taken              
@@ -707,29 +733,32 @@ def runCpu():
                 op1 = MEM_WB.data1
             else:
                 op1 = EX_MEM.op1  
+                
             if writewb2 and MEM_WB.destreg2 == inst1.rt and MEM_WB.destreg2 !=0:
                 datastored = MEM_WB.data2
             elif writewb1 and MEM_WB.destreg1 == inst1.rt and MEM_WB.destreg1 !=0:
                 datastored = MEM_WB.data1
             else:
-                datastored = EX_MEM.data1  
+                datastored = state.registers[inst1.rt]
             state.memory[op1 + EX_MEM.imm_1] = datastored
            
         if opcodes[inst2.opcode] == 'lw':
             data2 = state.memory[EX_MEM.op1_2 + EX_MEM.imm_2]
+            
         elif opcodes[inst2.opcode] == 'sw':
+            
             if writewb2 and MEM_WB.destreg2 == inst2.rs and MEM_WB.destreg2 !=0:
                 op12 = MEM_WB.data2  
             elif writewb1 and MEM_WB.destreg1 == inst2.rs and MEM_WB.destreg1 !=0:
                 op12 = MEM_WB.data1
             else:
-                op12 = EX_MEM.op1  
+                op12 = EX_MEM.op1_2  
             if writewb2 and MEM_WB.destreg2 == inst2.rt and MEM_WB.destreg2 !=0:
                 datastored2 = MEM_WB.data2
             elif writewb1 and MEM_WB.destreg1 == inst2.rt and MEM_WB.destreg1 !=0:
                 datastored2 = MEM_WB.data1
             else:
-                datastored2 = EX_MEM.data1
+                datastored2 = state.registers[inst2.rt]
                 
             state.memory[op12 + EX_MEM.imm_2] = datastored2
         
@@ -799,7 +828,7 @@ def runCpu():
         return binary_values
 
 # Example usage
-    filename = "Innovation Phase\Extra Code\dmem.txt"
+    filename = "dmem.txt"
     binary_array = read_binary_file(filename)
     print(f'\nValues in the memory: \n{binary_array}\n')    
     #Initialize the pipeline state
@@ -825,15 +854,16 @@ def runCpu():
         if MEM_WB.last:break
         writeBack(state, MEM_WB)
         memory(state, EX_MEM, MEM_WB)
-        #ldHazard = hazard_unit(ID_EX, state, EX_MEM, MEM_WB, IF_ID)
-        #if ldHazard:
-            #state.pc = IF_ID.thisPC
-           # state.idexFlush = 1
-            #print("load hazard detected")
-            #countofstalls +=1
-        #else:
-            #state.ifidFlush = 0
-            #state.idexFlush = 0
+        ldHazardT, ldHazardNT = hazard_unit(ID_EX, state, EX_MEM, MEM_WB, IF_ID)
+        if ldHazardT:
+            state.pcT = IF_ID.thisPCT
+            state.idexFlushT = 1
+            print("load hazard detected")
+            countofstalls +=1
+        if ldHazardNT:
+            state.pcNT = IF_ID.thisPCNT
+            state.idexFlushNT = 1
+            
         execute(state, ID_EX, EX_MEM, IF_ID)
         decode(state, IF_ID, ID_EX)
         fetch(state, instructions, IF_ID)
@@ -842,7 +872,7 @@ def runCpu():
         printState(stages)
         print(f"{"-"*50}")
         for i in range(32):
-            print(f"M{i:2}: {state.memory[i]}")
+            print(f"M{i:2}: {state.registers[i]}")
         print(f"{"-"*50}")
         cycle +=1
     state.pc = 0

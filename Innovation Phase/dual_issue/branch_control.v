@@ -13,10 +13,10 @@ output reg [9:0] correction_n, correction_t
 always @(posedge clk, negedge rst)begin
 	if (~rst) pipe_valid <= 1'b1;
 	else begin
-		if (((Branch1_t || Branch2_t) && (taken1_t || taken2_t)) && pipe_valid || ((Branch1_n || Branch2_n) && (taken1_n || taken2_n))&& ~pipe_valid) begin
+		if (((Branch1_t || Branch2_t) && (taken1_t || taken2_t) && pipe_valid) || ((Branch1_n || Branch2_n) && (taken1_n || taken2_n)&& ~pipe_valid)) begin
 			pipe_valid <= 1'b1;
 		end
-		if (((Branch1_t || Branch2_t) && ~(taken1_t || taken2_t) && pipe_valid) || ((Branch1_n || Branch2_n) && ~(taken1_n || taken2_n)) && ~pipe_valid) begin
+		if (((Branch1_t || Branch2_t) && ~(taken1_t || taken2_t) && pipe_valid) || ((Branch1_n || Branch2_n) && ~(taken1_n || taken2_n) && ~pipe_valid)) begin
 			pipe_valid <= 1'b0;
 		end
 	end
@@ -60,8 +60,8 @@ always @(*) begin
 			end
 			
 		end
-		else if ((Branch1_t || Branch2_t || Branch1_n || Branch2_n)) begin
-			if (taken1_t || taken2_t || taken1_n || taken2_n) begin
+		else if (((Branch1_t || Branch2_t) && pipe_valid) || ((Branch1_n || Branch2_n) && ~pipe_valid) ) begin
+			if (((taken1_t || taken2_t) && pipe_valid) || ((taken1_n || taken2_n) && ~pipe_valid)) begin
 				correct_en_n = 1'b1;
 				correction_n = nextPC_t;
 				flush_IFID_n = 1'b1;

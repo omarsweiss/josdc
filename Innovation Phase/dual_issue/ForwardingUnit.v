@@ -81,57 +81,61 @@ module forwarding_unit(
         if (rst) begin
             // ForwardA1 logic
             casez ({
-                regwrite1_MEM & rs1_eq_d1mem & d1mem_valid,
+					regwrite2_EX  & rs1_eq_d2ex  & d2ex_valid,
+                regwrite1_EX  & rs1_eq_d1ex  & d1ex_valid,	
                 regwrite2_MEM & rs1_eq_d2mem & d2mem_valid,
-                regwrite1_EX  & rs1_eq_d1ex  & d1ex_valid,
-                regwrite2_EX  & rs1_eq_d2ex  & d2ex_valid
+                regwrite1_MEM & rs1_eq_d1mem & d1mem_valid
+                
             })
-                4'b1???: ForwardA1 = 5'b00100;
-                4'b01??: ForwardA1 = 5'b10000;
-                4'b001?: ForwardA1 = 5'b00010;
-                4'b0001: ForwardA1 = 5'b01000;
+                4'b1???: ForwardA1 = 5'b01000;
+                4'b01??: ForwardA1 = 5'b00010;
+                4'b001?: ForwardA1 = 5'b10000;
+                4'b0001: ForwardA1 = 5'b00100;
                 default: ForwardA1 = 5'b00001;
             endcase
 
             // ForwardA2 logic
             casez ({
-                regwrite1_MEM & rs2_eq_d1mem & d1mem_valid,
-                regwrite2_MEM & rs2_eq_d2mem & d2mem_valid,
+				regwrite2_EX  & rs2_eq_d2ex  & d2ex_valid,
                 regwrite1_EX  & rs2_eq_d1ex  & d1ex_valid,
-                regwrite2_EX  & rs2_eq_d2ex  & d2ex_valid
+                regwrite2_MEM & rs2_eq_d2mem & d2mem_valid,
+                regwrite1_MEM & rs2_eq_d1mem & d1mem_valid
+                
             })
-                4'b1???: ForwardA2 = 5'b00100;
-                4'b01??: ForwardA2 = 5'b10000;
-                4'b001?: ForwardA2 = 5'b00010;
-                4'b0001: ForwardA2 = 5'b01000;
+                4'b1???: ForwardA2 = 5'b01000;
+                4'b01??: ForwardA2 = 5'b00010;
+                4'b001?: ForwardA2 = 5'b10000;
+                4'b0001: ForwardA2 = 5'b00100;
                 default: ForwardA2 = 5'b00001;
             endcase
 
             // ForwardB1 logic
             casez ({
-                regwrite1_MEM & rt1_eq_d1mem & d1mem_valid,
-                regwrite2_MEM & rt1_eq_d2mem & d2mem_valid,
+					regwrite2_EX  & rt1_eq_d2ex  & d2ex_valid,
                 regwrite1_EX  & rt1_eq_d1ex  & d1ex_valid,
-                regwrite2_EX  & rt1_eq_d2ex  & d2ex_valid
+                regwrite2_MEM & rt1_eq_d2mem & d2mem_valid,
+                regwrite1_MEM & rt1_eq_d1mem & d1mem_valid
+                
             })
-                4'b1???: ForwardB1 = 5'b00100;
-                4'b01??: ForwardB1 = 5'b10000;
-                4'b001?: ForwardB1 = 5'b00010;
-                4'b0001: ForwardB1 = 5'b01000;
+                4'b1???: ForwardB1 = 5'b01000;
+                4'b01??: ForwardB1 = 5'b00010;
+                4'b001?: ForwardB1 = 5'b10000;
+                4'b0001: ForwardB1 = 5'b00100;
                 default: ForwardB1 = 5'b00001;
             endcase
 
             // ForwardB2 logic
             casez ({
-                regwrite1_MEM & rt2_eq_d1mem & d1mem_valid,
-                regwrite2_MEM & rt2_eq_d2mem & d2mem_valid,
+				regwrite2_EX  & rt2_eq_d2ex  & d2ex_valid,
                 regwrite1_EX  & rt2_eq_d1ex  & d1ex_valid,
-                regwrite2_EX  & rt2_eq_d2ex  & d2ex_valid
+                regwrite2_MEM & rt2_eq_d2mem & d2mem_valid,
+                regwrite1_MEM & rt2_eq_d1mem & d1mem_valid
+                
             })
-                4'b1???: ForwardB2 = 5'b00100;
-                4'b01??: ForwardB2 = 5'b10000;
-                4'b001?: ForwardB2 = 5'b00010;
-                4'b0001: ForwardB2 = 5'b01000;
+                4'b1???: ForwardB2 = 5'b01000;
+                4'b01??: ForwardB2 = 5'b00010;
+                4'b001?: ForwardB2 = 5'b10000;
+                4'b0001: ForwardB2 = 5'b00100;
                 default: ForwardB2 = 5'b00001;
             endcase
         end

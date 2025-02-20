@@ -1,5 +1,5 @@
 Flow report for Dual_Issue
-Wed Feb 19 20:25:53 2025
+Thu Feb 20 17:24:29 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Wed Feb 19 20:25:53 2025          ;
+; Flow Status                        ; Successful - Thu Feb 20 17:24:29 2025          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; Dual_Issue                                     ;
 ; Top-level Entity Name              ; testbench                                      ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/19/2025 20:25:45 ;
+; Start date & time ; 02/20/2025 17:24:21 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Dual_Issue          ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                              ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +----------------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                        ; 2546174103540.173998594520520          ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                        ; 2546174103540.174006146136056          ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME                     ; NA                                     ; --            ; --          ; testbench                         ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST              ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST              ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
@@ -129,8 +129,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:08     ; 1.0                     ; 4803 MB             ; 00:00:20                           ;
-; Total                  ; 00:00:08     ; --                      ; --                  ; 00:00:20                           ;
+; Analysis & Elaboration ; 00:00:08     ; 1.0                     ; 4803 MB             ; 00:00:19                           ;
+; Total                  ; 00:00:08     ; --                      ; --                  ; 00:00:19                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

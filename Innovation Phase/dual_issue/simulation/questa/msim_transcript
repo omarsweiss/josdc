@@ -13,7 +13,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {c:/intelfpga/23.1std/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:07 on Feb 19,2025
+# Start time: 17:25:11 on Feb 20,2025
 # vlog -reportprogress 300 -vlog01compat -work altera_ver c:/intelfpga/23.1std/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -95,7 +95,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 20:26:08 on Feb 19,2025, Elapsed time: 0:00:01
+# End time: 17:25:12 on Feb 20,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -106,7 +106,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {c:/intelfpga/23.1std/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:08 on Feb 19,2025
+# Start time: 17:25:12 on Feb 20,2025
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/intelfpga/23.1std/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -170,7 +170,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 20:26:09 on Feb 19,2025, Elapsed time: 0:00:01
+# End time: 17:25:12 on Feb 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -181,7 +181,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {c:/intelfpga/23.1std/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:09 on Feb 19,2025
+# Start time: 17:25:13 on Feb 20,2025
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/intelfpga/23.1std/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -223,7 +223,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 20:26:09 on Feb 19,2025, Elapsed time: 0:00:00
+# End time: 17:25:13 on Feb 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -234,7 +234,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {c:/intelfpga/23.1std/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:09 on Feb 19,2025
+# Start time: 17:25:13 on Feb 20,2025
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/intelfpga/23.1std/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -364,7 +364,7 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 20:26:10 on Feb 19,2025, Elapsed time: 0:00:01
+# End time: 17:25:14 on Feb 20,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -375,7 +375,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {c:/intelfpga/23.1std/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:10 on Feb 19,2025
+# Start time: 17:25:14 on Feb 20,2025
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/intelfpga/23.1std/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -458,7 +458,7 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 20:26:11 on Feb 19,2025, Elapsed time: 0:00:01
+# End time: 17:25:15 on Feb 20,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/fiftyfivenm_ver
@@ -469,7 +469,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work fiftyfivenm_ver {c:/intelfpga/23.1std/quartus/eda/sim_lib/fiftyfivenm_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:11 on Feb 19,2025
+# Start time: 17:25:15 on Feb 20,2025
 # vlog -reportprogress 300 -vlog01compat -work fiftyfivenm_ver c:/intelfpga/23.1std/quartus/eda/sim_lib/fiftyfivenm_atoms.v 
 # -- Compiling UDP FIFTYFIVENM_PRIM_DFFE
 # -- Compiling UDP FIFTYFIVENM_PRIM_DFFEAS
@@ -562,15 +562,15 @@
 # 	fiftyfivenm_jtag
 # 	fiftyfivenm_adcblock
 # 	fiftyfivenm_phase_detector
-# End time: 20:26:12 on Feb 19,2025, Elapsed time: 0:00:01
+# End time: 17:25:15 on Feb 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work fiftyfivenm_ver {c:/intelfpga/23.1std/quartus/eda/sim_lib/mentor/fiftyfivenm_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:12 on Feb 19,2025
+# Start time: 17:25:15 on Feb 20,2025
 # vlog -reportprogress 300 -vlog01compat -work fiftyfivenm_ver c:/intelfpga/23.1std/quartus/eda/sim_lib/mentor/fiftyfivenm_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 20:26:15 on Feb 19,2025, Elapsed time: 0:00:03
+# End time: 17:25:18 on Feb 20,2025, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -584,17 +584,17 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/dual_issue {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/testbench.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:15 on Feb 19,2025
+# Start time: 17:25:18 on Feb 20,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/testbench.v 
 # -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 20:26:15 on Feb 19,2025, Elapsed time: 0:00:00
+# End time: 17:25:18 on Feb 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/dual_issue {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux2x1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:15 on Feb 19,2025
+# Start time: 17:25:18 on Feb 20,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux2x1.v 
 # -- Compiling module mux2x1
 # -- Compiling module mux4x1
@@ -602,11 +602,11 @@
 # Top level modules:
 # 	mux2x1
 # 	mux4x1
-# End time: 20:26:15 on Feb 19,2025, Elapsed time: 0:00:00
+# End time: 17:25:18 on Feb 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/dual_issue {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:15 on Feb 19,2025
+# Start time: 17:25:18 on Feb 20,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v 
 # -- Compiling module IFID
 # -- Compiling module IDEX
@@ -618,203 +618,203 @@
 # 	IDEX
 # 	EXMEM
 # 	MEMWB
-# End time: 20:26:15 on Feb 19,2025, Elapsed time: 0:00:00
+# End time: 17:25:18 on Feb 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/dual_issue {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:15 on Feb 19,2025
+# Start time: 17:25:18 on Feb 20,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v 
 # -- Compiling module t_pipe
 # 
 # Top level modules:
 # 	t_pipe
-# End time: 20:26:15 on Feb 19,2025, Elapsed time: 0:00:00
+# End time: 17:25:18 on Feb 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/dual_issue {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/SignExtender.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:15 on Feb 19,2025
+# Start time: 17:25:18 on Feb 20,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/SignExtender.v 
 # -- Compiling module SignExtender
 # 
 # Top level modules:
 # 	SignExtender
-# End time: 20:26:15 on Feb 19,2025, Elapsed time: 0:00:00
+# End time: 17:25:18 on Feb 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/dual_issue {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/registerFile.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:15 on Feb 19,2025
+# Start time: 17:25:18 on Feb 20,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/registerFile.v 
 # -- Compiling module registerFile
 # 
 # Top level modules:
 # 	registerFile
-# End time: 20:26:15 on Feb 19,2025, Elapsed time: 0:00:00
+# End time: 17:25:18 on Feb 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/dual_issue {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/programCounter.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:15 on Feb 19,2025
+# Start time: 17:25:18 on Feb 20,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/programCounter.v 
 # -- Compiling module programCounter
 # 
 # Top level modules:
 # 	programCounter
-# End time: 20:26:15 on Feb 19,2025, Elapsed time: 0:00:00
+# End time: 17:25:18 on Feb 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/dual_issue {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/ForwardingUnit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:15 on Feb 19,2025
+# Start time: 17:25:18 on Feb 20,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/ForwardingUnit.v 
 # -- Compiling module forwarding_unit
 # 
 # Top level modules:
 # 	forwarding_unit
-# End time: 20:26:15 on Feb 19,2025, Elapsed time: 0:00:00
+# End time: 17:25:18 on Feb 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/dual_issue {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/controlUnit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:15 on Feb 19,2025
+# Start time: 17:25:19 on Feb 20,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/controlUnit.v 
 # -- Compiling module controlUnit
 # 
 # Top level modules:
 # 	controlUnit
-# End time: 20:26:15 on Feb 19,2025, Elapsed time: 0:00:00
+# End time: 17:25:19 on Feb 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/dual_issue {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/comparator.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:15 on Feb 19,2025
+# Start time: 17:25:19 on Feb 20,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/comparator.v 
 # -- Compiling module comparator
 # 
 # Top level modules:
 # 	comparator
-# End time: 20:26:15 on Feb 19,2025, Elapsed time: 0:00:00
+# End time: 17:25:19 on Feb 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/dual_issue {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/ALU.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:15 on Feb 19,2025
+# Start time: 17:25:19 on Feb 20,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/ALU.v 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 20:26:15 on Feb 19,2025, Elapsed time: 0:00:00
+# End time: 17:25:19 on Feb 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/dual_issue {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/instructionMemory.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:15 on Feb 19,2025
+# Start time: 17:25:19 on Feb 20,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/instructionMemory.v 
 # -- Compiling module instructionMemory
 # 
 # Top level modules:
 # 	instructionMemory
-# End time: 20:26:16 on Feb 19,2025, Elapsed time: 0:00:01
+# End time: 17:25:19 on Feb 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/dual_issue {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/fetch_taken.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:16 on Feb 19,2025
+# Start time: 17:25:19 on Feb 20,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/fetch_taken.v 
 # -- Compiling module fetch_taken
 # 
 # Top level modules:
 # 	fetch_taken
-# End time: 20:26:16 on Feb 19,2025, Elapsed time: 0:00:00
+# End time: 17:25:19 on Feb 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/dual_issue {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/decode.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:16 on Feb 19,2025
+# Start time: 17:25:19 on Feb 20,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/decode.v 
 # -- Compiling module decode
 # 
 # Top level modules:
 # 	decode
-# End time: 20:26:16 on Feb 19,2025, Elapsed time: 0:00:00
+# End time: 17:25:19 on Feb 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/dual_issue {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/execute.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:16 on Feb 19,2025
+# Start time: 17:25:19 on Feb 20,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/execute.v 
 # -- Compiling module execute
 # 
 # Top level modules:
 # 	execute
-# End time: 20:26:16 on Feb 19,2025, Elapsed time: 0:00:00
+# End time: 17:25:19 on Feb 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/dual_issue {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/fetch_not_taken.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:16 on Feb 19,2025
+# Start time: 17:25:19 on Feb 20,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/fetch_not_taken.v 
 # -- Compiling module fetch_not_taken
 # 
 # Top level modules:
 # 	fetch_not_taken
-# End time: 20:26:16 on Feb 19,2025, Elapsed time: 0:00:00
+# End time: 17:25:19 on Feb 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/dual_issue {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/not_t_pipe.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:16 on Feb 19,2025
+# Start time: 17:25:19 on Feb 20,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/not_t_pipe.v 
 # -- Compiling module not_t_pipe
 # 
 # Top level modules:
 # 	not_t_pipe
-# End time: 20:26:16 on Feb 19,2025, Elapsed time: 0:00:00
+# End time: 17:25:19 on Feb 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/dual_issue {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:16 on Feb 19,2025
+# Start time: 17:25:19 on Feb 20,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v 
 # -- Compiling module Dual_Issue
 # 
 # Top level modules:
 # 	Dual_Issue
-# End time: 20:26:16 on Feb 19,2025, Elapsed time: 0:00:00
+# End time: 17:25:19 on Feb 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/dual_issue {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:16 on Feb 19,2025
+# Start time: 17:25:19 on Feb 20,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v 
 # -- Compiling module dataMemory
 # 
 # Top level modules:
 # 	dataMemory
-# End time: 20:26:16 on Feb 19,2025, Elapsed time: 0:00:00
+# End time: 17:25:19 on Feb 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/dual_issue {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/branch_control.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:16 on Feb 19,2025
+# Start time: 17:25:19 on Feb 20,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/branch_control.v 
 # -- Compiling module branch_control
 # 
 # Top level modules:
 # 	branch_control
-# End time: 20:26:16 on Feb 19,2025, Elapsed time: 0:00:00
+# End time: 17:25:19 on Feb 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/dual_issue {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:16 on Feb 19,2025
+# Start time: 17:25:19 on Feb 20,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v 
 # -- Compiling module mux_test
 # 
 # Top level modules:
 # 	mux_test
-# End time: 20:26:16 on Feb 19,2025, Elapsed time: 0:00:00
+# End time: 17:25:19 on Feb 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/firas/Developement/josdc/josdc/Innovation\ Phase/dual_issue {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/testbench.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:26:16 on Feb 19,2025
+# Start time: 17:25:19 on Feb 20,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue" C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/testbench.v 
 # -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 20:26:16 on Feb 19,2025, Elapsed time: 0:00:00
+# End time: 17:25:19 on Feb 20,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  testbench
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" testbench 
-# Start time: 20:26:16 on Feb 19,2025
+# Start time: 17:25:19 on Feb 20,2025
 # Loading work.testbench
 # Loading work.Dual_Issue
 # Loading work.t_pipe
@@ -844,49 +844,47 @@
 # Loading altera_mf_ver.altsyncram_body
 # Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(152): [PCDPC] - Port size (160) does not match connection size (149) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(157): [PCDPC] - Port size (160) does not match connection size (149) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/idex1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(152): [PCDPC] - Port size (160) does not match connection size (149) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(157): [PCDPC] - Port size (160) does not match connection size (149) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/idex1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(158): [PCDPC] - Port size (160) does not match connection size (149) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(163): [PCDPC] - Port size (160) does not match connection size (149) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/idex2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(158): [PCDPC] - Port size (160) does not match connection size (149) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(163): [PCDPC] - Port size (160) does not match connection size (149) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/idex2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(190): [PCDPC] - Port size (100) does not match connection size (91) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(42).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(195): [PCDPC] - Port size (100) does not match connection size (91) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(42).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/exmem1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(190): [PCDPC] - Port size (100) does not match connection size (91) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(42).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(195): [PCDPC] - Port size (100) does not match connection size (91) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(42).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/exmem1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(197): [PCDPC] - Port size (100) does not match connection size (91) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(42).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(202): [PCDPC] - Port size (100) does not match connection size (91) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(42).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/exmem2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(197): [PCDPC] - Port size (100) does not match connection size (91) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(42).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(202): [PCDPC] - Port size (100) does not match connection size (91) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(42).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/exmem2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/not_t_pipe.v(153): [PCDPC] - Port size (160) does not match connection size (139) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_not_t_pipe/idex1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/not_t_pipe.v(153): [PCDPC] - Port size (160) does not match connection size (139) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_not_t_pipe/idex1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
 # ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/not_t_pipe.v(159): [PCDPC] - Port size (160) does not match connection size (139) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_not_t_pipe/idex2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_not_t_pipe/idex1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
 # ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/not_t_pipe.v(159): [PCDPC] - Port size (160) does not match connection size (139) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_not_t_pipe/idex1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/not_t_pipe.v(165): [PCDPC] - Port size (160) does not match connection size (139) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_not_t_pipe/idex2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(237): [PCDPC] - Port size (2) does not match connection size (1) for port 'memFw2'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/ForwardingUnit.v(26).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_forwarding_unit_n File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/ForwardingUnit.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(269): [PCDPC] - Port size (180) does not match connection size (178) for port 'data0x'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v(41).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/not_t_pipe.v(165): [PCDPC] - Port size (160) does not match connection size (139) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_not_t_pipe/idex2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(286): [PCDPC] - Port size (180) does not match connection size (178) for port 'data0x'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v(41).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memMUX File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(269): [PCDPC] - Port size (180) does not match connection size (178) for port 'data1x'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v(42).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(286): [PCDPC] - Port size (180) does not match connection size (178) for port 'data1x'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v(42).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memMUX File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(269): [PCDPC] - Port size (180) does not match connection size (178) for port 'result'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v(44).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(286): [PCDPC] - Port size (180) does not match connection size (178) for port 'result'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v(44).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memMUX File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(293): [PCDPC] - Port size (11) does not match connection size (32) for port 'address_a'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v(41).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(310): [PCDPC] - Port size (11) does not match connection size (32) for port 'address_a'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v(41).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/DM File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(293): [PCDPC] - Port size (11) does not match connection size (32) for port 'address_b'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v(42).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(310): [PCDPC] - Port size (11) does not match connection size (32) for port 'address_b'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v(42).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/DM File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(308): [PCDPC] - Port size (82) does not match connection size (49) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(61).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(325): [PCDPC] - Port size (82) does not match connection size (49) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(61).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memwb1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(308): [PCDPC] - Port size (82) does not match connection size (49) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(61).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(325): [PCDPC] - Port size (82) does not match connection size (49) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(61).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memwb1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(312): [PCDPC] - Port size (82) does not match connection size (49) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(61).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(329): [PCDPC] - Port size (82) does not match connection size (49) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(61).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memwb2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(312): [PCDPC] - Port size (82) does not match connection size (49) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(61).
+# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(329): [PCDPC] - Port size (82) does not match connection size (49) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(61).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memwb2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
 # 
 # add wave *
@@ -902,245 +900,8 @@
 # Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
 # Time: 0  Instance: testbench.uut.DM.altsyncram_component.m_default.altsyncram_inst
 # ** Note: $stop    : C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/testbench.v(12)
-#    Time: 1004 ns  Iteration: 0  Instance: /testbench
+#    Time: 39004 ns  Iteration: 0  Instance: /testbench
 # Break in Module testbench at C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/testbench.v line 12
-restart
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(152): [PCDPC] - Port size (160) does not match connection size (149) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/idex1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(152): [PCDPC] - Port size (160) does not match connection size (149) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/idex1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(158): [PCDPC] - Port size (160) does not match connection size (149) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/idex2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(158): [PCDPC] - Port size (160) does not match connection size (149) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/idex2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(190): [PCDPC] - Port size (100) does not match connection size (91) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(42).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/exmem1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(190): [PCDPC] - Port size (100) does not match connection size (91) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(42).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/exmem1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(197): [PCDPC] - Port size (100) does not match connection size (91) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(42).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/exmem2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(197): [PCDPC] - Port size (100) does not match connection size (91) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(42).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/exmem2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/not_t_pipe.v(153): [PCDPC] - Port size (160) does not match connection size (139) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_not_t_pipe/idex1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/not_t_pipe.v(153): [PCDPC] - Port size (160) does not match connection size (139) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_not_t_pipe/idex1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/not_t_pipe.v(159): [PCDPC] - Port size (160) does not match connection size (139) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_not_t_pipe/idex2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/not_t_pipe.v(159): [PCDPC] - Port size (160) does not match connection size (139) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_not_t_pipe/idex2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(237): [PCDPC] - Port size (2) does not match connection size (1) for port 'memFw2'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/ForwardingUnit.v(26).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_forwarding_unit_n File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/ForwardingUnit.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(269): [PCDPC] - Port size (180) does not match connection size (178) for port 'data0x'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v(41).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memMUX File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(269): [PCDPC] - Port size (180) does not match connection size (178) for port 'data1x'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v(42).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memMUX File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(269): [PCDPC] - Port size (180) does not match connection size (178) for port 'result'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v(44).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memMUX File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(293): [PCDPC] - Port size (11) does not match connection size (32) for port 'address_a'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v(41).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/DM File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(293): [PCDPC] - Port size (11) does not match connection size (32) for port 'address_b'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v(42).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/DM File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(308): [PCDPC] - Port size (82) does not match connection size (49) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(61).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memwb1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(308): [PCDPC] - Port size (82) does not match connection size (49) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(61).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memwb1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(312): [PCDPC] - Port size (82) does not match connection size (49) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(61).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memwb2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(312): [PCDPC] - Port size (82) does not match connection size (49) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(61).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memwb2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-run -all
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: testbench.uut.u_t_pipe.u_fetch_taken.IM.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: testbench.uut.u_not_t_pipe.u_fetch_not_taken.IM_nt.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: testbench.uut.DM.altsyncram_component.m_default.altsyncram_inst
-# ** Note: $stop    : C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/testbench.v(12)
-#    Time: 1004 ns  Iteration: 0  Instance: /testbench
-# Break in Module testbench at C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/testbench.v line 12
-run -all
-# Break key hit
-# Simulation stop requested.
-run -all
-# Break key hit
-# Break in Module decode at C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/decode.v line 55
-add wave -position end  sim:/testbench/uut/u_not_t_pipe/u_decode/rf/registers
-restart
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(152): [PCDPC] - Port size (160) does not match connection size (149) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/idex1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(152): [PCDPC] - Port size (160) does not match connection size (149) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/idex1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(158): [PCDPC] - Port size (160) does not match connection size (149) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/idex2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(158): [PCDPC] - Port size (160) does not match connection size (149) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/idex2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(190): [PCDPC] - Port size (100) does not match connection size (91) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(42).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/exmem1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(190): [PCDPC] - Port size (100) does not match connection size (91) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(42).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/exmem1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(197): [PCDPC] - Port size (100) does not match connection size (91) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(42).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/exmem2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(197): [PCDPC] - Port size (100) does not match connection size (91) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(42).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/exmem2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/not_t_pipe.v(153): [PCDPC] - Port size (160) does not match connection size (139) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_not_t_pipe/idex1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/not_t_pipe.v(153): [PCDPC] - Port size (160) does not match connection size (139) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_not_t_pipe/idex1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/not_t_pipe.v(159): [PCDPC] - Port size (160) does not match connection size (139) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_not_t_pipe/idex2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/not_t_pipe.v(159): [PCDPC] - Port size (160) does not match connection size (139) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_not_t_pipe/idex2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(237): [PCDPC] - Port size (2) does not match connection size (1) for port 'memFw2'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/ForwardingUnit.v(26).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_forwarding_unit_n File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/ForwardingUnit.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(269): [PCDPC] - Port size (180) does not match connection size (178) for port 'data0x'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v(41).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memMUX File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(269): [PCDPC] - Port size (180) does not match connection size (178) for port 'data1x'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v(42).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memMUX File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(269): [PCDPC] - Port size (180) does not match connection size (178) for port 'result'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v(44).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memMUX File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(293): [PCDPC] - Port size (11) does not match connection size (32) for port 'address_a'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v(41).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/DM File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(293): [PCDPC] - Port size (11) does not match connection size (32) for port 'address_b'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v(42).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/DM File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(308): [PCDPC] - Port size (82) does not match connection size (49) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(61).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memwb1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(308): [PCDPC] - Port size (82) does not match connection size (49) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(61).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memwb1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(312): [PCDPC] - Port size (82) does not match connection size (49) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(61).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memwb2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(312): [PCDPC] - Port size (82) does not match connection size (49) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(61).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memwb2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: testbench.uut.u_t_pipe.u_fetch_taken.IM.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: testbench.uut.u_not_t_pipe.u_fetch_not_taken.IM_nt.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: testbench.uut.DM.altsyncram_component.m_default.altsyncram_inst
-# ** Note: $stop    : C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/testbench.v(12)
-#    Time: 1004 ns  Iteration: 0  Instance: /testbench
-# Break in Module testbench at C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/testbench.v line 12
-restart
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(152): [PCDPC] - Port size (160) does not match connection size (149) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/idex1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(152): [PCDPC] - Port size (160) does not match connection size (149) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/idex1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(158): [PCDPC] - Port size (160) does not match connection size (149) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/idex2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(158): [PCDPC] - Port size (160) does not match connection size (149) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/idex2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(190): [PCDPC] - Port size (100) does not match connection size (91) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(42).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/exmem1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(190): [PCDPC] - Port size (100) does not match connection size (91) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(42).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/exmem1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(197): [PCDPC] - Port size (100) does not match connection size (91) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(42).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/exmem2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(197): [PCDPC] - Port size (100) does not match connection size (91) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(42).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/exmem2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/not_t_pipe.v(153): [PCDPC] - Port size (160) does not match connection size (139) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_not_t_pipe/idex1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/not_t_pipe.v(153): [PCDPC] - Port size (160) does not match connection size (139) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_not_t_pipe/idex1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/not_t_pipe.v(159): [PCDPC] - Port size (160) does not match connection size (139) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_not_t_pipe/idex2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/not_t_pipe.v(159): [PCDPC] - Port size (160) does not match connection size (139) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_not_t_pipe/idex2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(237): [PCDPC] - Port size (2) does not match connection size (1) for port 'memFw2'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/ForwardingUnit.v(26).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_forwarding_unit_n File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/ForwardingUnit.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(269): [PCDPC] - Port size (180) does not match connection size (178) for port 'data0x'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v(41).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memMUX File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(269): [PCDPC] - Port size (180) does not match connection size (178) for port 'data1x'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v(42).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memMUX File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(269): [PCDPC] - Port size (180) does not match connection size (178) for port 'result'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v(44).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memMUX File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(293): [PCDPC] - Port size (11) does not match connection size (32) for port 'address_a'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v(41).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/DM File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(293): [PCDPC] - Port size (11) does not match connection size (32) for port 'address_b'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v(42).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/DM File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(308): [PCDPC] - Port size (82) does not match connection size (49) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(61).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memwb1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(308): [PCDPC] - Port size (82) does not match connection size (49) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(61).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memwb1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(312): [PCDPC] - Port size (82) does not match connection size (49) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(61).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memwb2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(312): [PCDPC] - Port size (82) does not match connection size (49) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(61).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memwb2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: testbench.uut.u_t_pipe.u_fetch_taken.IM.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: testbench.uut.u_not_t_pipe.u_fetch_not_taken.IM_nt.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: testbench.uut.DM.altsyncram_component.m_default.altsyncram_inst
-# ** Note: $stop    : C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/testbench.v(12)
-#    Time: 1004 ns  Iteration: 0  Instance: /testbench
-# Break in Module testbench at C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/testbench.v line 12
-add wave -position 2  sim:/testbench/uut/u_not_t_pipe/u_fetch_not_taken/PC
-add wave -position 3  sim:/testbench/uut/u_t_pipe/u_fetch_taken/PC
-restart
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(152): [PCDPC] - Port size (160) does not match connection size (149) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/idex1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(152): [PCDPC] - Port size (160) does not match connection size (149) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/idex1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(158): [PCDPC] - Port size (160) does not match connection size (149) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/idex2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(158): [PCDPC] - Port size (160) does not match connection size (149) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/idex2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(190): [PCDPC] - Port size (100) does not match connection size (91) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(42).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/exmem1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(190): [PCDPC] - Port size (100) does not match connection size (91) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(42).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/exmem1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(197): [PCDPC] - Port size (100) does not match connection size (91) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(42).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/exmem2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v(197): [PCDPC] - Port size (100) does not match connection size (91) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(42).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_t_pipe/exmem2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/not_t_pipe.v(153): [PCDPC] - Port size (160) does not match connection size (139) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_not_t_pipe/idex1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/not_t_pipe.v(153): [PCDPC] - Port size (160) does not match connection size (139) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_not_t_pipe/idex1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/not_t_pipe.v(159): [PCDPC] - Port size (160) does not match connection size (139) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_not_t_pipe/idex2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/not_t_pipe.v(159): [PCDPC] - Port size (160) does not match connection size (139) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(20).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_not_t_pipe/idex2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(237): [PCDPC] - Port size (2) does not match connection size (1) for port 'memFw2'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/ForwardingUnit.v(26).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/u_forwarding_unit_n File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/ForwardingUnit.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(269): [PCDPC] - Port size (180) does not match connection size (178) for port 'data0x'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v(41).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memMUX File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(269): [PCDPC] - Port size (180) does not match connection size (178) for port 'data1x'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v(42).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memMUX File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(269): [PCDPC] - Port size (180) does not match connection size (178) for port 'result'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v(44).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memMUX File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(293): [PCDPC] - Port size (11) does not match connection size (32) for port 'address_a'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v(41).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/DM File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(293): [PCDPC] - Port size (11) does not match connection size (32) for port 'address_b'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v(42).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/DM File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(308): [PCDPC] - Port size (82) does not match connection size (49) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(61).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memwb1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(308): [PCDPC] - Port size (82) does not match connection size (49) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(61).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memwb1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(312): [PCDPC] - Port size (82) does not match connection size (49) for port 'Q'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(61).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memwb2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-# ** Warning: (vsim-3015) C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v(312): [PCDPC] - Port size (82) does not match connection size (49) for port 'D'. The port definition is at: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v(61).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/uut/memwb2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: testbench.uut.u_t_pipe.u_fetch_taken.IM.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: testbench.uut.u_not_t_pipe.u_fetch_not_taken.IM_nt.altsyncram_component.m_default.altsyncram_inst
-# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
-# Time: 0  Instance: testbench.uut.DM.altsyncram_component.m_default.altsyncram_inst
-# ** Note: $stop    : C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/testbench.v(12)
-#    Time: 1004 ns  Iteration: 0  Instance: /testbench
-# Break in Module testbench at C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/testbench.v line 12
-# End time: 20:32:22 on Feb 19,2025, Elapsed time: 0:06:06
-# Errors: 0, Warnings: 110
+do {C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/simulation/questa/wave.do}
+# End time: 17:26:55 on Feb 20,2025, Elapsed time: 0:01:36
+# Errors: 0, Warnings: 21
