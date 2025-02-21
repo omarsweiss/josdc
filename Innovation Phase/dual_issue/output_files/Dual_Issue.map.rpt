@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Dual_Issue
-Fri Feb 21 20:09:44 2025
+Fri Feb 21 22:19:50 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -10,9 +10,9 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
   4. Analysis & Elaboration IP Cores Summary
-  5. Source assignments for Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM_nt|altsyncram:altsyncram_component|altsyncram_t472:auto_generated
-  6. Source assignments for Dual_Issue:uut|not_t_pipe:u_not_t_pipe|fetch_not_taken:u_fetch_not_taken|instructionMemory:IM_nt|altsyncram:altsyncram_component|altsyncram_t472:auto_generated
-  7. Source assignments for Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component|altsyncram_hbl2:auto_generated
+  5. Source assignments for Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM_nt|altsyncram:altsyncram_component|altsyncram_k472:auto_generated
+  6. Source assignments for Dual_Issue:uut|not_t_pipe:u_not_t_pipe|fetch_not_taken:u_fetch_not_taken|instructionMemory:IM_nt|altsyncram:altsyncram_component|altsyncram_k472:auto_generated
+  7. Source assignments for Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8bl2:auto_generated
   8. Parameter Settings for User Entity Instance: Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM_nt|altsyncram:altsyncram_component
   9. Parameter Settings for User Entity Instance: Dual_Issue:uut|t_pipe:u_t_pipe|IFID:ifid1
  10. Parameter Settings for User Entity Instance: Dual_Issue:uut|t_pipe:u_t_pipe|IFID:ifid2
@@ -36,37 +36,30 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
  28. Parameter Settings for User Entity Instance: Dual_Issue:uut|not_t_pipe:u_not_t_pipe|EXMEM:exmem1
  29. Parameter Settings for User Entity Instance: Dual_Issue:uut|not_t_pipe:u_not_t_pipe|EXMEM:exmem2
  30. Parameter Settings for User Entity Instance: Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component
- 31. Parameter Settings for User Entity Instance: Dual_Issue:uut|mux2x1:WBMux1
- 32. Parameter Settings for User Entity Instance: Dual_Issue:uut|mux2x1:WBMux2
- 33. Parameter Settings for User Entity Instance: Dual_Issue:uut|MEMWB:memwb1
- 34. Parameter Settings for User Entity Instance: Dual_Issue:uut|MEMWB:memwb2
- 35. Parameter Settings for User Entity Instance: Dual_Issue:uut|mux2x1:WritePc1
- 36. Parameter Settings for User Entity Instance: Dual_Issue:uut|mux2x1:WritePc2
- 37. altsyncram Parameter Settings by Entity Instance
- 38. Analysis & Elaboration Settings
- 39. Port Connectivity Checks: "Dual_Issue:uut|mux2x1:WritePc2"
- 40. Port Connectivity Checks: "Dual_Issue:uut|mux2x1:WritePc1"
- 41. Port Connectivity Checks: "Dual_Issue:uut|MEMWB:memwb2"
- 42. Port Connectivity Checks: "Dual_Issue:uut|MEMWB:memwb1"
- 43. Port Connectivity Checks: "Dual_Issue:uut|dataMemory:DM"
- 44. Port Connectivity Checks: "Dual_Issue:uut|forwarding_unit:u_forwarding_unit_n"
- 45. Port Connectivity Checks: "Dual_Issue:uut|not_t_pipe:u_not_t_pipe|IDEX:idex2"
- 46. Port Connectivity Checks: "Dual_Issue:uut|not_t_pipe:u_not_t_pipe|IDEX:idex1"
- 47. Port Connectivity Checks: "Dual_Issue:uut|not_t_pipe:u_not_t_pipe|decode:u_decode"
- 48. Port Connectivity Checks: "Dual_Issue:uut|not_t_pipe:u_not_t_pipe"
- 49. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|EXMEM:exmem2"
- 50. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|EXMEM:exmem1"
- 51. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute|comparator:comp2"
- 52. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute|comparator:comp1"
- 53. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute|ALU:alu2"
- 54. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute|ALU:alu1"
- 55. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|IDEX:idex2"
- 56. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|IDEX:idex1"
- 57. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|decode:u_decode"
- 58. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe"
- 59. Port Connectivity Checks: "Dual_Issue:uut"
- 60. Analysis & Elaboration Messages
- 61. Analysis & Elaboration Suppressed Messages
+ 31. Parameter Settings for User Entity Instance: Dual_Issue:uut|MEMWB:memwb1
+ 32. Parameter Settings for User Entity Instance: Dual_Issue:uut|MEMWB:memwb2
+ 33. altsyncram Parameter Settings by Entity Instance
+ 34. Analysis & Elaboration Settings
+ 35. Port Connectivity Checks: "Dual_Issue:uut|MEMWB:memwb2"
+ 36. Port Connectivity Checks: "Dual_Issue:uut|MEMWB:memwb1"
+ 37. Port Connectivity Checks: "Dual_Issue:uut|dataMemory:DM"
+ 38. Port Connectivity Checks: "Dual_Issue:uut|not_t_pipe:u_not_t_pipe|IDEX:idex2"
+ 39. Port Connectivity Checks: "Dual_Issue:uut|not_t_pipe:u_not_t_pipe|IDEX:idex1"
+ 40. Port Connectivity Checks: "Dual_Issue:uut|not_t_pipe:u_not_t_pipe|decode:u_decode"
+ 41. Port Connectivity Checks: "Dual_Issue:uut|not_t_pipe:u_not_t_pipe"
+ 42. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|EXMEM:exmem2"
+ 43. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|EXMEM:exmem1"
+ 44. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute|comparator:comp2"
+ 45. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute|comparator:comp1"
+ 46. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute|ALU:alu2"
+ 47. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute|ALU:alu1"
+ 48. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|IDEX:idex2"
+ 49. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|IDEX:idex1"
+ 50. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe|decode:u_decode"
+ 51. Port Connectivity Checks: "Dual_Issue:uut|t_pipe:u_t_pipe"
+ 52. Port Connectivity Checks: "Dual_Issue:uut"
+ 53. Analysis & Elaboration Messages
+ 54. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -93,7 +86,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                      ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Fri Feb 21 20:09:44 2025          ;
+; Analysis & Elaboration Status      ; Successful - Fri Feb 21 22:19:50 2025          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; Dual_Issue                                     ;
 ; Top-level Entity Name              ; testbench                                      ;
@@ -140,30 +133,30 @@ https://fpgasoftware.intel.com/eula.
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM_nt|altsyncram:altsyncram_component|altsyncram_t472:auto_generated ;
-+---------------------------------+--------------------+------+----------------------------------------------------------------------------------------------------------+
-; Assignment                      ; Value              ; From ; To                                                                                                       ;
-+---------------------------------+--------------------+------+----------------------------------------------------------------------------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                                                        ;
-+---------------------------------+--------------------+------+----------------------------------------------------------------------------------------------------------+
+; Source assignments for Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM_nt|altsyncram:altsyncram_component|altsyncram_k472:auto_generated ;
++---------------------------------+-------+------+-----------------------------------------------------------------------------------------------------------------------+
+; Assignment                      ; Value ; From ; To                                                                                                                    ;
++---------------------------------+-------+------+-----------------------------------------------------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; OFF   ; -    ; -                                                                                                                     ;
++---------------------------------+-------+------+-----------------------------------------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for Dual_Issue:uut|not_t_pipe:u_not_t_pipe|fetch_not_taken:u_fetch_not_taken|instructionMemory:IM_nt|altsyncram:altsyncram_component|altsyncram_t472:auto_generated ;
-+---------------------------------+--------------------+------+--------------------------------------------------------------------------------------------------------------------------+
-; Assignment                      ; Value              ; From ; To                                                                                                                       ;
-+---------------------------------+--------------------+------+--------------------------------------------------------------------------------------------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                                                                        ;
-+---------------------------------+--------------------+------+--------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for Dual_Issue:uut|not_t_pipe:u_not_t_pipe|fetch_not_taken:u_fetch_not_taken|instructionMemory:IM_nt|altsyncram:altsyncram_component|altsyncram_k472:auto_generated ;
++---------------------------------+-------+------+---------------------------------------------------------------------------------------------------------------------------------------+
+; Assignment                      ; Value ; From ; To                                                                                                                                    ;
++---------------------------------+-------+------+---------------------------------------------------------------------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; OFF   ; -    ; -                                                                                                                                     ;
++---------------------------------+-------+------+---------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------+
-; Source assignments for Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component|altsyncram_hbl2:auto_generated ;
-+---------------------------------+--------------------+------+------------------------------------------------------+
-; Assignment                      ; Value              ; From ; To                                                   ;
-+---------------------------------+--------------------+------+------------------------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                    ;
-+---------------------------------+--------------------+------+------------------------------------------------------+
+; Source assignments for Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8bl2:auto_generated ;
++---------------------------------+-------+------+-------------------------------------------------------------------+
+; Assignment                      ; Value ; From ; To                                                                ;
++---------------------------------+-------+------+-------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; OFF   ; -    ; -                                                                 ;
++---------------------------------+-------+------+-------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -222,7 +215,7 @@ https://fpgasoftware.intel.com/eula.
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                   ; Untyped                                                                        ;
 ; WIDTH_ECCSTATUS                    ; 3                                       ; Untyped                                                                        ;
 ; DEVICE_FAMILY                      ; MAX 10                                  ; Untyped                                                                        ;
-; CBXI_PARAMETER                     ; altsyncram_t472                         ; Untyped                                                                        ;
+; CBXI_PARAMETER                     ; altsyncram_k472                         ; Untyped                                                                        ;
 +------------------------------------+-----------------------------------------+--------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -445,7 +438,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                   ; Untyped                                                                                        ;
 ; WIDTH_ECCSTATUS                    ; 3                                       ; Untyped                                                                                        ;
 ; DEVICE_FAMILY                      ; MAX 10                                  ; Untyped                                                                                        ;
-; CBXI_PARAMETER                     ; altsyncram_t472                         ; Untyped                                                                                        ;
+; CBXI_PARAMETER                     ; altsyncram_k472                         ; Untyped                                                                                        ;
 +------------------------------------+-----------------------------------------+------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -668,28 +661,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                            ; Untyped                           ;
 ; WIDTH_ECCSTATUS                    ; 3                                ; Untyped                           ;
 ; DEVICE_FAMILY                      ; MAX 10                           ; Untyped                           ;
-; CBXI_PARAMETER                     ; altsyncram_hbl2                  ; Untyped                           ;
+; CBXI_PARAMETER                     ; altsyncram_8bl2                  ; Untyped                           ;
 +------------------------------------+----------------------------------+-----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Dual_Issue:uut|mux2x1:WBMux1 ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; size           ; 32    ; Signed Integer                                   ;
-+----------------+-------+--------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Dual_Issue:uut|mux2x1:WBMux2 ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; size           ; 32    ; Signed Integer                                   ;
-+----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -710,26 +683,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-------------------------------------------------+
 ; size           ; 82    ; Signed Integer                                  ;
 +----------------+-------+-------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Dual_Issue:uut|mux2x1:WritePc1 ;
-+----------------+-------+----------------------------------------------------+
-; Parameter Name ; Value ; Type                                               ;
-+----------------+-------+----------------------------------------------------+
-; size           ; 32    ; Signed Integer                                     ;
-+----------------+-------+----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Dual_Issue:uut|mux2x1:WritePc2 ;
-+----------------+-------+----------------------------------------------------+
-; Parameter Name ; Value ; Type                                               ;
-+----------------+-------+----------------------------------------------------+
-; size           ; 32    ; Signed Integer                                     ;
-+----------------+-------+----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -775,109 +728,91 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                            ;
-+------------------------------------------------------------------+--------------------+--------------------+
-; Option                                                           ; Setting            ; Default Value      ;
-+------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                           ; 10M50DAF484C7G     ;                    ;
-; Top-level entity name                                            ; testbench          ; Dual_Issue         ;
-; Family name                                                      ; MAX 10             ; Cyclone V          ;
-; Maximum processors allowed for parallel compilation              ; All                ;                    ;
-; Restructure Multiplexers                                         ; Off                ; Auto               ;
-; Use smart compilation                                            ; Off                ; Off                ;
-; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
-; Enable compact report table                                      ; Off                ; Off                ;
-; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
-; Preserve fewer node names                                        ; On                 ; On                 ;
-; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
-; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
-; State Machine Processing                                         ; Auto               ; Auto               ;
-; Safe State Machine                                               ; Off                ; Off                ;
-; Extract Verilog State Machines                                   ; On                 ; On                 ;
-; Extract VHDL State Machines                                      ; On                 ; On                 ;
-; Ignore Verilog initial constructs                                ; Off                ; Off                ;
-; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
-; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
-; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
-; Parallel Synthesis                                               ; On                 ; On                 ;
-; DSP Block Balancing                                              ; Auto               ; Auto               ;
-; NOT Gate Push-Back                                               ; On                 ; On                 ;
-; Power-Up Don't Care                                              ; On                 ; On                 ;
-; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
-; Remove Duplicate Registers                                       ; On                 ; On                 ;
-; Ignore CARRY Buffers                                             ; Off                ; Off                ;
-; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
-; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
-; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
-; Ignore LCELL Buffers                                             ; Off                ; Off                ;
-; Ignore SOFT Buffers                                              ; On                 ; On                 ;
-; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
-; Optimization Technique                                           ; Balanced           ; Balanced           ;
-; Carry Chain Length                                               ; 70                 ; 70                 ;
-; Auto Carry Chains                                                ; On                 ; On                 ;
-; Auto Open-Drain Pins                                             ; On                 ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
-; Auto ROM Replacement                                             ; On                 ; On                 ;
-; Auto RAM Replacement                                             ; On                 ; On                 ;
-; Auto DSP Block Replacement                                       ; On                 ; On                 ;
-; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
-; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
-; Strict RAM Replacement                                           ; Off                ; Off                ;
-; Allow Synchronous Control Signals                                ; On                 ; On                 ;
-; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
-; Auto RAM Block Balancing                                         ; On                 ; On                 ;
-; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
-; Auto Resource Sharing                                            ; Off                ; Off                ;
-; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
-; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
-; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
-; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
-; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
-; Timing-Driven Synthesis                                          ; On                 ; On                 ;
-; Report Parameter Settings                                        ; On                 ; On                 ;
-; Report Source Assignments                                        ; On                 ; On                 ;
-; Report Connectivity Checks                                       ; On                 ; On                 ;
-; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
-; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
-; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
-; HDL message level                                                ; Level2             ; Level2             ;
-; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
-; Clock MUX Protection                                             ; On                 ; On                 ;
-; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
-; Block Design Naming                                              ; Auto               ; Auto               ;
-; SDC constraint protection                                        ; Off                ; Off                ;
-; Synthesis Effort                                                 ; Auto               ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
-; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
-; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
-; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
-; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
-+------------------------------------------------------------------+--------------------+--------------------+
-
-
-+------------------------------------------------------------+
-; Port Connectivity Checks: "Dual_Issue:uut|mux2x1:WritePc2" ;
-+-------------+-------+----------+---------------------------+
-; Port        ; Type  ; Severity ; Details                   ;
-+-------------+-------+----------+---------------------------+
-; in2[31..10] ; Input ; Info     ; Stuck at GND              ;
-+-------------+-------+----------+---------------------------+
-
-
-+------------------------------------------------------------+
-; Port Connectivity Checks: "Dual_Issue:uut|mux2x1:WritePc1" ;
-+-------------+-------+----------+---------------------------+
-; Port        ; Type  ; Severity ; Details                   ;
-+-------------+-------+----------+---------------------------+
-; in2[31..10] ; Input ; Info     ; Stuck at GND              ;
-+-------------+-------+----------+---------------------------+
++--------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                        ;
++------------------------------------------------------------------+----------------+--------------------+
+; Option                                                           ; Setting        ; Default Value      ;
++------------------------------------------------------------------+----------------+--------------------+
+; Device                                                           ; 10M50DAF484C7G ;                    ;
+; Top-level entity name                                            ; testbench      ; Dual_Issue         ;
+; Family name                                                      ; MAX 10         ; Cyclone V          ;
+; Maximum processors allowed for parallel compilation              ; All            ;                    ;
+; Restructure Multiplexers                                         ; Off            ; Auto               ;
+; Power Optimization During Synthesis                              ; Off            ; Normal compilation ;
+; Use smart compilation                                            ; Off            ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On             ; On                 ;
+; Enable compact report table                                      ; Off            ; Off                ;
+; Create Debugging Nodes for IP Cores                              ; Off            ; Off                ;
+; Preserve fewer node names                                        ; On             ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable         ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001   ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993      ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto           ; Auto               ;
+; Safe State Machine                                               ; Off            ; Off                ;
+; Extract Verilog State Machines                                   ; On             ; On                 ;
+; Extract VHDL State Machines                                      ; On             ; On                 ;
+; Ignore Verilog initial constructs                                ; Off            ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000           ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250            ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On             ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On             ; On                 ;
+; Parallel Synthesis                                               ; On             ; On                 ;
+; DSP Block Balancing                                              ; Auto           ; Auto               ;
+; NOT Gate Push-Back                                               ; On             ; On                 ;
+; Power-Up Don't Care                                              ; On             ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off            ; Off                ;
+; Remove Duplicate Registers                                       ; On             ; On                 ;
+; Ignore CARRY Buffers                                             ; Off            ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off            ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off            ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off            ; Off                ;
+; Ignore LCELL Buffers                                             ; Off            ; Off                ;
+; Ignore SOFT Buffers                                              ; On             ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off            ; Off                ;
+; Optimization Technique                                           ; Balanced       ; Balanced           ;
+; Carry Chain Length                                               ; 70             ; 70                 ;
+; Auto Carry Chains                                                ; On             ; On                 ;
+; Auto Open-Drain Pins                                             ; On             ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off            ; Off                ;
+; Auto ROM Replacement                                             ; On             ; On                 ;
+; Auto RAM Replacement                                             ; On             ; On                 ;
+; Auto DSP Block Replacement                                       ; On             ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto           ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto           ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On             ; On                 ;
+; Strict RAM Replacement                                           ; Off            ; Off                ;
+; Allow Synchronous Control Signals                                ; On             ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off            ; Off                ;
+; Auto RAM Block Balancing                                         ; On             ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off            ; Off                ;
+; Auto Resource Sharing                                            ; Off            ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off            ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off            ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off            ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On             ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off            ; Off                ;
+; Timing-Driven Synthesis                                          ; On             ; On                 ;
+; Report Parameter Settings                                        ; On             ; On                 ;
+; Report Source Assignments                                        ; On             ; On                 ;
+; Report Connectivity Checks                                       ; On             ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off            ; Off                ;
+; Synchronization Register Chain Length                            ; 2              ; 2                  ;
+; HDL message level                                                ; Level2         ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off            ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000           ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000           ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100            ; 100                ;
+; Clock MUX Protection                                             ; On             ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off            ; Off                ;
+; Block Design Naming                                              ; Auto           ; Auto               ;
+; SDC constraint protection                                        ; Off            ; Off                ;
+; Synthesis Effort                                                 ; Auto           ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On             ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off            ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium         ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto           ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On             ; On                 ;
++------------------------------------------------------------------+----------------+--------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -908,16 +843,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; address_a ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (12 bits) it drives.  The 20 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
 ; address_b ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (12 bits) it drives.  The 20 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
 +-----------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Dual_Issue:uut|forwarding_unit:u_forwarding_unit_n"                                   ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; memFw1 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; memFw2 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -963,6 +888,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; destReg1         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; destReg2         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; MemReadEn2_MEM   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; rt1_MEM          ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; rt2_MEM          ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; return_addr2_EX  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; forwardBRes2_MEM ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +------------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -1067,6 +994,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; destReg1          ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; destReg2          ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; MemReadEn2_MEM    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; rt1_MEM           ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; rt2_MEM           ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; return_addr2_EX   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; BranchAddress1_EX ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; BranchAddress2_EX ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
@@ -1092,7 +1021,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Fri Feb 21 20:09:36 2025
+    Info: Processing started: Fri Feb 21 22:19:43 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Dual_Issue -c Dual_Issue --analysis_and_elaboration
 Info (16303): Aggressive Performance optimization mode selected -- timing performance will be prioritized at the potential cost of increased logic area and compilation time
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -1150,9 +1079,11 @@ Warning (10755): Verilog HDL warning at testbench.v(15): assignments to clk crea
 Info (12128): Elaborating entity "Dual_Issue" for hierarchy "Dual_Issue:uut" File: D:/josdc-1/Innovation Phase/dual_issue/testbench.v Line: 17
 Warning (10036): Verilog HDL or VHDL warning at Dual_Issue.v(23): object "MemReadEn2_MEM" assigned a value but never read File: D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v Line: 23
 Warning (10036): Verilog HDL or VHDL warning at Dual_Issue.v(23): object "MemReadEn1_MEM" assigned a value but never read File: D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v Line: 23
+Warning (10036): Verilog HDL or VHDL warning at Dual_Issue.v(26): object "rt2_MEM" assigned a value but never read File: D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v Line: 26
+Warning (10036): Verilog HDL or VHDL warning at Dual_Issue.v(26): object "rt1_MEM" assigned a value but never read File: D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v Line: 26
 Warning (10036): Verilog HDL or VHDL warning at Dual_Issue.v(28): object "forwardBRes2_MEM" assigned a value but never read File: D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v Line: 28
-Info (12128): Elaborating entity "t_pipe" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe" File: D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v Line: 112
-Info (12128): Elaborating entity "fetch_taken" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken" File: D:/josdc-1/Innovation Phase/dual_issue/t_pipe.v Line: 77
+Info (12128): Elaborating entity "t_pipe" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe" File: D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v Line: 114
+Info (12128): Elaborating entity "fetch_taken" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken" File: D:/josdc-1/Innovation Phase/dual_issue/t_pipe.v Line: 78
 Info (12128): Elaborating entity "programCounter" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|programCounter:pc" File: D:/josdc-1/Innovation Phase/dual_issue/fetch_taken.v Line: 69
 Info (12128): Elaborating entity "instructionMemory" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM_nt" File: D:/josdc-1/Innovation Phase/dual_issue/fetch_taken.v Line: 70
 Info (12128): Elaborating entity "altsyncram" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM_nt|altsyncram:altsyncram_component" File: D:/josdc-1/Innovation Phase/dual_issue/instructionMemory.v Line: 100
@@ -1182,25 +1113,25 @@ Info (12133): Instantiated megafunction "Dual_Issue:uut|t_pipe:u_t_pipe|fetch_ta
     Info (12134): Parameter "width_byteena_a" = "1"
     Info (12134): Parameter "width_byteena_b" = "1"
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK0"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_t472.tdf
-    Info (12023): Found entity 1: altsyncram_t472 File: D:/josdc-1/Innovation Phase/dual_issue/db/altsyncram_t472.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_t472" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM_nt|altsyncram:altsyncram_component|altsyncram_t472:auto_generated" File: c:/intelfpga/23.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "IFID" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|IFID:ifid1" File: D:/josdc-1/Innovation Phase/dual_issue/t_pipe.v Line: 86
-Info (12128): Elaborating entity "decode" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|decode:u_decode" File: D:/josdc-1/Innovation Phase/dual_issue/t_pipe.v Line: 154
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_k472.tdf
+    Info (12023): Found entity 1: altsyncram_k472 File: D:/josdc-1/Innovation Phase/dual_issue/db/altsyncram_k472.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_k472" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM_nt|altsyncram:altsyncram_component|altsyncram_k472:auto_generated" File: c:/intelfpga/23.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "IFID" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|IFID:ifid1" File: D:/josdc-1/Innovation Phase/dual_issue/t_pipe.v Line: 87
+Info (12128): Elaborating entity "decode" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|decode:u_decode" File: D:/josdc-1/Innovation Phase/dual_issue/t_pipe.v Line: 155
 Info (12128): Elaborating entity "controlUnit" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|decode:u_decode|controlUnit:CU1" File: D:/josdc-1/Innovation Phase/dual_issue/decode.v Line: 41
 Info (12128): Elaborating entity "registerFile" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|decode:u_decode|registerFile:rf" File: D:/josdc-1/Innovation Phase/dual_issue/decode.v Line: 67
 Info (12128): Elaborating entity "SignExtender" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|decode:u_decode|SignExtender:SignExtend1" File: D:/josdc-1/Innovation Phase/dual_issue/decode.v Line: 98
-Info (12128): Elaborating entity "IDEX" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|IDEX:idex1" File: D:/josdc-1/Innovation Phase/dual_issue/t_pipe.v Line: 159
-Info (12128): Elaborating entity "execute" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute" File: D:/josdc-1/Innovation Phase/dual_issue/t_pipe.v Line: 190
+Info (12128): Elaborating entity "IDEX" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|IDEX:idex1" File: D:/josdc-1/Innovation Phase/dual_issue/t_pipe.v Line: 160
+Info (12128): Elaborating entity "execute" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute" File: D:/josdc-1/Innovation Phase/dual_issue/t_pipe.v Line: 191
 Info (12128): Elaborating entity "ALU" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute|ALU:alu1" File: D:/josdc-1/Innovation Phase/dual_issue/execute.v Line: 23
 Info (12128): Elaborating entity "comparator" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute|comparator:comp1" File: D:/josdc-1/Innovation Phase/dual_issue/execute.v Line: 27
-Info (12128): Elaborating entity "EXMEM" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|EXMEM:exmem1" File: D:/josdc-1/Innovation Phase/dual_issue/t_pipe.v Line: 199
-Info (12128): Elaborating entity "not_t_pipe" for hierarchy "Dual_Issue:uut|not_t_pipe:u_not_t_pipe" File: D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v Line: 190
-Info (12128): Elaborating entity "fetch_not_taken" for hierarchy "Dual_Issue:uut|not_t_pipe:u_not_t_pipe|fetch_not_taken:u_fetch_not_taken" File: D:/josdc-1/Innovation Phase/dual_issue/not_t_pipe.v Line: 78
-Info (12128): Elaborating entity "EXMEM" for hierarchy "Dual_Issue:uut|not_t_pipe:u_not_t_pipe|EXMEM:exmem1" File: D:/josdc-1/Innovation Phase/dual_issue/not_t_pipe.v Line: 202
-Info (12128): Elaborating entity "branch_control" for hierarchy "Dual_Issue:uut|branch_control:u_branch_control" File: D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v Line: 223
-Info (12128): Elaborating entity "forwarding_unit" for hierarchy "Dual_Issue:uut|forwarding_unit:u_forwarding_unit_t" File: D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v Line: 252
-Info (12128): Elaborating entity "dataMemory" for hierarchy "Dual_Issue:uut|dataMemory:DM" File: D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v Line: 325
+Info (12128): Elaborating entity "EXMEM" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|EXMEM:exmem1" File: D:/josdc-1/Innovation Phase/dual_issue/t_pipe.v Line: 200
+Info (12128): Elaborating entity "not_t_pipe" for hierarchy "Dual_Issue:uut|not_t_pipe:u_not_t_pipe" File: D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v Line: 194
+Info (12128): Elaborating entity "fetch_not_taken" for hierarchy "Dual_Issue:uut|not_t_pipe:u_not_t_pipe|fetch_not_taken:u_fetch_not_taken" File: D:/josdc-1/Innovation Phase/dual_issue/not_t_pipe.v Line: 79
+Info (12128): Elaborating entity "EXMEM" for hierarchy "Dual_Issue:uut|not_t_pipe:u_not_t_pipe|EXMEM:exmem1" File: D:/josdc-1/Innovation Phase/dual_issue/not_t_pipe.v Line: 203
+Info (12128): Elaborating entity "branch_control" for hierarchy "Dual_Issue:uut|branch_control:u_branch_control" File: D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v Line: 227
+Info (12128): Elaborating entity "forwarding_unit" for hierarchy "Dual_Issue:uut|forwarding_unit:u_forwarding_unit_t" File: D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v Line: 257
+Info (12128): Elaborating entity "dataMemory" for hierarchy "Dual_Issue:uut|dataMemory:DM" File: D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v Line: 331
 Info (12128): Elaborating entity "altsyncram" for hierarchy "Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component" File: D:/josdc-1/Innovation Phase/dual_issue/dataMemory.v Line: 98
 Info (12130): Elaborated megafunction instantiation "Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component" File: D:/josdc-1/Innovation Phase/dual_issue/dataMemory.v Line: 98
 Info (12133): Instantiated megafunction "Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component" with the following parameter: File: D:/josdc-1/Innovation Phase/dual_issue/dataMemory.v Line: 98
@@ -1231,22 +1162,21 @@ Info (12133): Instantiated megafunction "Dual_Issue:uut|dataMemory:DM|altsyncram
     Info (12134): Parameter "width_byteena_a" = "1"
     Info (12134): Parameter "width_byteena_b" = "1"
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK0"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_hbl2.tdf
-    Info (12023): Found entity 1: altsyncram_hbl2 File: D:/josdc-1/Innovation Phase/dual_issue/db/altsyncram_hbl2.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_hbl2" for hierarchy "Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component|altsyncram_hbl2:auto_generated" File: c:/intelfpga/23.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_8bl2.tdf
+    Info (12023): Found entity 1: altsyncram_8bl2 File: D:/josdc-1/Innovation Phase/dual_issue/db/altsyncram_8bl2.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_8bl2" for hierarchy "Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8bl2:auto_generated" File: c:/intelfpga/23.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Warning (113028): 2048 out of 4096 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: D:/josdc-1/Innovation Phase/dual_issue/dataMemoryInitializationFile.mif Line: 1
     Warning (113027): Addresses ranging from 2048 to 4095 are not initialized File: D:/josdc-1/Innovation Phase/dual_issue/dataMemoryInitializationFile.mif Line: 1
-Info (12128): Elaborating entity "mux2x1" for hierarchy "Dual_Issue:uut|mux2x1:WBMux1" File: D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v Line: 328
-Info (12128): Elaborating entity "MEMWB" for hierarchy "Dual_Issue:uut|MEMWB:memwb1" File: D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v Line: 334
+Info (12128): Elaborating entity "MEMWB" for hierarchy "Dual_Issue:uut|MEMWB:memwb1" File: D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v Line: 341
 Warning (12011): Net is missing source, defaulting to GND
     Warning (12110): Net "clk" is missing source, defaulting to GND File: D:/josdc-1/Innovation Phase/dual_issue/testbench.v Line: 4
 Warning (12241): 9 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (144001): Generated suppressed messages file D:/josdc-1/Innovation Phase/dual_issue/output_files/Dual_Issue.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 10 warnings
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 12 warnings
     Info: Peak virtual memory: 4787 megabytes
-    Info: Processing ended: Fri Feb 21 20:09:44 2025
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Processing ended: Fri Feb 21 22:19:50 2025
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:18
 
 
 +--------------------------------------------+

@@ -1,5 +1,5 @@
 Flow report for Dual_Issue
-Fri Feb 21 20:09:44 2025
+Fri Feb 21 22:19:50 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Fri Feb 21 20:09:44 2025          ;
+; Flow Status                        ; Successful - Fri Feb 21 22:19:50 2025          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; Dual_Issue                                     ;
 ; Top-level Entity Name              ; testbench                                      ;
@@ -67,62 +67,64 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/21/2025 20:09:37 ;
+; Start date & time ; 02/21/2025 22:19:43 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Dual_Issue          ;
 +-------------------+---------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                        ;
-+----------------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; Assignment Name                              ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
-+----------------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; ALM_REGISTER_PACKING_EFFORT                  ; Low                                    ; Medium        ; --          ; --                                ;
-; COMPILER_SIGNATURE_ID                        ; 2546174103540.174015777718964          ; --            ; --          ; --                                ;
-; EDA_DESIGN_INSTANCE_NAME                     ; NA                                     ; --            ; --          ; testbench                         ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST              ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST              ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST              ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST              ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH         ; testbench                              ; --            ; --          ; eda_simulation                    ;
-; EDA_OUTPUT_DATA_FORMAT                       ; Verilog Hdl                            ; --            ; --          ; eda_simulation                    ;
-; EDA_SIMULATION_TOOL                          ; QuestaSim (Verilog)                    ; <None>        ; --          ; --                                ;
-; EDA_TEST_BENCH_ENABLE_STATUS                 ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation                    ;
-; EDA_TEST_BENCH_FILE                          ; testbench.v                            ; --            ; --          ; testbench                         ;
-; EDA_TEST_BENCH_MODULE_NAME                   ; testbench                              ; --            ; --          ; testbench                         ;
-; EDA_TEST_BENCH_NAME                          ; testbench                              ; --            ; --          ; eda_simulation                    ;
-; EDA_TIME_SCALE                               ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
-; FITTER_EFFORT                                ; Standard Fit                           ; Auto Fit      ; --          ; --                                ;
-; MAX_CORE_JUNCTION_TEMP                       ; 85                                     ; --            ; --          ; --                                ;
-; MIN_CORE_JUNCTION_TEMP                       ; 0                                      ; --            ; --          ; --                                ;
-; MISC_FILE                                    ; instructionMemory_bb.v                 ; --            ; --          ; --                                ;
-; MISC_FILE                                    ; dataMemory_bb.v                        ; --            ; --          ; --                                ;
-; MISC_FILE                                    ; dataMemory_syn.v                       ; --            ; --          ; --                                ;
-; MISC_FILE                                    ; mux_test_bb.v                          ; --            ; --          ; --                                ;
-; MISC_FILE                                    ; mux_test_syn.v                         ; --            ; --          ; --                                ;
-; MUX_RESTRUCTURE                              ; Off                                    ; Auto          ; --          ; --                                ;
-; NUM_PARALLEL_PROCESSORS                      ; All                                    ; --            ; --          ; --                                ;
-; OPTIMIZATION_MODE                            ; Aggressive Performance                 ; Balanced      ; --          ; --                                ;
-; OUTPUT_IO_TIMING_FAR_END_VMEAS               ; Half Signal Swing                      ; --            ; --          ; --                                ;
-; OUTPUT_IO_TIMING_FAR_END_VMEAS               ; Half Signal Swing                      ; --            ; --          ; --                                ;
-; OUTPUT_IO_TIMING_NEAR_END_VMEAS              ; Half Vccio                             ; --            ; --          ; --                                ;
-; OUTPUT_IO_TIMING_NEAR_END_VMEAS              ; Half Vccio                             ; --            ; --          ; --                                ;
-; PARTITION_COLOR                              ; -- (Not supported for targeted family) ; --            ; testbench   ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL          ; -- (Not supported for targeted family) ; --            ; testbench   ; Top                               ;
-; PARTITION_NETLIST_TYPE                       ; -- (Not supported for targeted family) ; --            ; testbench   ; Top                               ;
-; PHYSICAL_SYNTHESIS_COMBO_LOGIC               ; On                                     ; Off           ; --          ; --                                ;
-; PHYSICAL_SYNTHESIS_COMBO_LOGIC_FOR_AREA      ; On                                     ; Off           ; --          ; --                                ;
-; PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION      ; On                                     ; Off           ; --          ; --                                ;
-; PHYSICAL_SYNTHESIS_REGISTER_RETIMING         ; On                                     ; Off           ; --          ; --                                ;
-; PLACEMENT_EFFORT_MULTIPLIER                  ; 4                                      ; 1.0           ; --          ; --                                ;
-; POWER_BOARD_THERMAL_MODEL                    ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
-; POWER_PRESET_COOLING_SOLUTION                ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
-; PROJECT_OUTPUT_DIRECTORY                     ; output_files                           ; --            ; --          ; --                                ;
-; ROUTER_LCELL_INSERTION_AND_LOGIC_DUPLICATION ; On                                     ; Auto          ; --          ; --                                ;
-; ROUTER_TIMING_OPTIMIZATION_LEVEL             ; MAXIMUM                                ; Normal        ; --          ; --                                ;
-; TOP_LEVEL_ENTITY                             ; testbench                              ; Dual_Issue    ; --          ; --                                ;
-+----------------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                             ;
++----------------------------------------------+----------------------------------------+--------------------+-------------+-----------------------------------+
+; Assignment Name                              ; Value                                  ; Default Value      ; Entity Name ; Section Id                        ;
++----------------------------------------------+----------------------------------------+--------------------+-------------+-----------------------------------+
+; ALM_REGISTER_PACKING_EFFORT                  ; Low                                    ; Medium             ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                        ; 2546174103540.174016558336656          ; --                 ; --          ; --                                ;
+; EDA_DESIGN_INSTANCE_NAME                     ; NA                                     ; --                 ; --          ; testbench                         ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST              ; Off                                    ; --                 ; --          ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST              ; Off                                    ; --                 ; --          ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST              ; Off                                    ; --                 ; --          ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST              ; Off                                    ; --                 ; --          ; eda_board_design_symbol           ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH         ; testbench                              ; --                 ; --          ; eda_simulation                    ;
+; EDA_OUTPUT_DATA_FORMAT                       ; Verilog Hdl                            ; --                 ; --          ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                          ; QuestaSim (Verilog)                    ; <None>             ; --          ; --                                ;
+; EDA_TEST_BENCH_ENABLE_STATUS                 ; TEST_BENCH_MODE                        ; --                 ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_FILE                          ; testbench.v                            ; --                 ; --          ; testbench                         ;
+; EDA_TEST_BENCH_MODULE_NAME                   ; testbench                              ; --                 ; --          ; testbench                         ;
+; EDA_TEST_BENCH_NAME                          ; testbench                              ; --                 ; --          ; eda_simulation                    ;
+; EDA_TIME_SCALE                               ; 1 ps                                   ; --                 ; --          ; eda_simulation                    ;
+; FITTER_EFFORT                                ; Standard Fit                           ; Auto Fit           ; --          ; --                                ;
+; MAX_CORE_JUNCTION_TEMP                       ; 85                                     ; --                 ; --          ; --                                ;
+; MIN_CORE_JUNCTION_TEMP                       ; 0                                      ; --                 ; --          ; --                                ;
+; MISC_FILE                                    ; instructionMemory_bb.v                 ; --                 ; --          ; --                                ;
+; MISC_FILE                                    ; dataMemory_bb.v                        ; --                 ; --          ; --                                ;
+; MISC_FILE                                    ; dataMemory_syn.v                       ; --                 ; --          ; --                                ;
+; MISC_FILE                                    ; mux_test_bb.v                          ; --                 ; --          ; --                                ;
+; MISC_FILE                                    ; mux_test_syn.v                         ; --                 ; --          ; --                                ;
+; MUX_RESTRUCTURE                              ; Off                                    ; Auto               ; --          ; --                                ;
+; NUM_PARALLEL_PROCESSORS                      ; All                                    ; --                 ; --          ; --                                ;
+; OPTIMIZATION_MODE                            ; Aggressive Performance                 ; Balanced           ; --          ; --                                ;
+; OPTIMIZE_POWER_DURING_SYNTHESIS              ; Off                                    ; Normal compilation ; --          ; --                                ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS               ; Half Signal Swing                      ; --                 ; --          ; --                                ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS               ; Half Signal Swing                      ; --                 ; --          ; --                                ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS              ; Half Vccio                             ; --                 ; --          ; --                                ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS              ; Half Vccio                             ; --                 ; --          ; --                                ;
+; PARTITION_COLOR                              ; -- (Not supported for targeted family) ; --                 ; testbench   ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL          ; -- (Not supported for targeted family) ; --                 ; testbench   ; Top                               ;
+; PARTITION_NETLIST_TYPE                       ; -- (Not supported for targeted family) ; --                 ; testbench   ; Top                               ;
+; PHYSICAL_SYNTHESIS_COMBO_LOGIC               ; On                                     ; Off                ; --          ; --                                ;
+; PHYSICAL_SYNTHESIS_COMBO_LOGIC_FOR_AREA      ; On                                     ; Off                ; --          ; --                                ;
+; PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION      ; On                                     ; Off                ; --          ; --                                ;
+; PHYSICAL_SYNTHESIS_REGISTER_RETIMING         ; On                                     ; Off                ; --          ; --                                ;
+; PLACEMENT_EFFORT_MULTIPLIER                  ; 4                                      ; 1.0                ; --          ; --                                ;
+; POWER_BOARD_THERMAL_MODEL                    ; None (CONSERVATIVE)                    ; --                 ; --          ; --                                ;
+; POWER_PRESET_COOLING_SOLUTION                ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --                 ; --          ; --                                ;
+; PROJECT_OUTPUT_DIRECTORY                     ; output_files                           ; --                 ; --          ; --                                ;
+; QII_AUTO_PACKED_REGISTERS                    ; Sparse Auto                            ; Auto               ; --          ; --                                ;
+; ROUTER_LCELL_INSERTION_AND_LOGIC_DUPLICATION ; On                                     ; Auto               ; --          ; --                                ;
+; ROUTER_TIMING_OPTIMIZATION_LEVEL             ; MAXIMUM                                ; Normal             ; --          ; --                                ;
+; TOP_LEVEL_ENTITY                             ; testbench                              ; Dual_Issue         ; --          ; --                                ;
++----------------------------------------------+----------------------------------------+--------------------+-------------+-----------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------+
@@ -130,8 +132,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:08     ; 1.0                     ; 4787 MB             ; 00:00:17                           ;
-; Total                  ; 00:00:08     ; --                      ; --                  ; 00:00:17                           ;
+; Analysis & Elaboration ; 00:00:07     ; 1.0                     ; 4787 MB             ; 00:00:18                           ;
+; Total                  ; 00:00:07     ; --                      ; --                  ; 00:00:18                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

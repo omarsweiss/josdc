@@ -35,7 +35,6 @@ vlib rtl_work
 vmap work rtl_work
 
 vlog -vlog01compat -work work +incdir+D:/josdc-1/Innovation\ Phase/dual_issue {D:/josdc-1/Innovation Phase/dual_issue/testbench.v}
-vlog -vlog01compat -work work +incdir+D:/josdc-1/Innovation\ Phase/dual_issue {D:/josdc-1/Innovation Phase/dual_issue/mux2x1.v}
 vlog -vlog01compat -work work +incdir+D:/josdc-1/Innovation\ Phase/dual_issue {D:/josdc-1/Innovation Phase/dual_issue/Pipes.v}
 vlog -vlog01compat -work work +incdir+D:/josdc-1/Innovation\ Phase/dual_issue {D:/josdc-1/Innovation Phase/dual_issue/t_pipe.v}
 vlog -vlog01compat -work work +incdir+D:/josdc-1/Innovation\ Phase/dual_issue {D:/josdc-1/Innovation Phase/dual_issue/SignExtender.v}

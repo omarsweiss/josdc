@@ -5,9 +5,9 @@ module Dual_Issue(input clk, rst, output [31:0] out1,out2);
 wire hold_pc_t ,hold_IFID_t, flush_IFID_t, flush_IDEX_t,correct_en_t,jal1_WB,jal2_WB,regWrite1_WB,regWrite2_WB,
 Branch1_t, Branch2_t, taken1_t, taken2_t,taken1_MEM_t,MemReadEn1_MEM_t,MemtoReg1_MEM_t,MemWriteEn1_MEM_t,RegWriteEn1_MEM_t,jal1_MEM_t,
 taken2_MEM_t,MemReadEn2_MEM_t,MemtoReg2_MEM_t,MemWriteEn2_MEM_t,RegWriteEn2_MEM_t,jal2_MEM_t,Branch1_MEM_t,Branch2_MEM_t,taken_pipe,
-MemtoReg1_WB,MemtoReg2_WB,Branch1_EX_t,Branch2_EX_t,Branch1_EX_n,Branch2_EX_n,jr1_t,jr2_t,jr1_n,jr2_n;
+MemtoReg1_WB,MemtoReg2_WB,Branch1_EX_t,Branch2_EX_t,Branch1_EX_n,Branch2_EX_n,jr1_t,jr2_t,jr1_n,jr2_n, MemWriteEn1_EX_t, MemWriteEn2_EX_t, MemWriteEn1_EX_n, MemWriteEn2_EX_n;
 
-wire[1:0] memFw1,memFw2,memFw1_n,memFw2_n;
+wire[1:0] memFw1,memFw2,memFw1_n,memFw2_n, memFw1_t, memFw2_t;
 wire [4:0] ForwardA_1_t,ForwardB_1_t,ForwardA_2_t,ForwardB_2_t,ForwardA_1_n,ForwardB_1_n,ForwardA_2_n,ForwardB_2_n;
 wire [4:0] writeReg1_WB, writeReg2_WB,DestReg1_MEM_t,DestReg2_MEM_t,rt1_MEM_t,rt2_MEM_t,
 rs1_t,rt1_t,rs2_t,rt2_t,rs1_n,rt1_n,rs2_n,rt2_n,destReg1_t,destReg2_t,destReg1_n,destReg2_n,DestReg1_EX_n,DestReg2_EX_n,DestReg1_EX_t,DestReg2_EX_t;
@@ -23,7 +23,7 @@ taken2_MEM_n,MemReadEn2_MEM_n,MemtoReg2_MEM_n,MemWriteEn2_MEM_n,RegWriteEn2_MEM_
 RegWriteEn1_MEM ,MemWriteEn2_MEM ,MemWriteEn1_MEM ,MemtoReg2_MEM ,MemtoReg1_MEM ,MemReadEn2_MEM ,MemReadEn1_MEM,RegWriteEn1_EX_t,
 RegWriteEn2_EX_t,RegWriteEn1_EX_n,RegWriteEn2_EX_n ;
 
-wire [4:0] DestReg1_MEM_n,DestReg2_MEM_n,rt1_MEM_n,rt2_MEM_n,rt2_MEM ,rt1_MEM ,DestReg2_MEM ,DestReg1_MEM;
+wire [4:0] DestReg1_MEM_n,DestReg2_MEM_n,rt1_MEM_n,rt2_MEM_n,rt2_MEM ,rt1_MEM ,DestReg2_MEM ,DestReg1_MEM, rt2_EX_n, rt1_EX_n, rt2_EX_t, rt1_EX_t;
 wire [9:0] return_addr2_MEM ,return_addr1_MEM,correction_n,return_addr2_ID_n,return_addr2_EX_n,return_addr1_MEM_n,return_addr2_MEM_n;
 wire [31:0] aluRes1_MEM_t,aluRes2_MEM_t,forwardBRes1_MEM_t,forwardBRes2_MEM_t,forwardBRes2_MEM ,forwardBRes1_MEM ,Dmem_res1,Dmem_res2;
 
@@ -107,7 +107,9 @@ t_pipe u_t_pipe(
 	 .jr_addr1_in 						( jr_addr1_n),
 	 .jr_addr2_in  					( jr_addr2_n),
 	 .jr_addr1_out						( jr_addr1_t),
-	 .jr_addr2_out 					( jr_addr2_t)
+	 .jr_addr2_out 					( jr_addr2_t),
+	 .rt1_EX(rt1_EX_t), .rt2_EX(rt2_EX_t),
+	 .MemWriteEn1_EX(MemWriteEn1_EX_t), .MemWriteEn2_EX(MemWriteEn2_EX_t)
 	 
 );
 
@@ -186,7 +188,9 @@ not_t_pipe u_not_t_pipe(
 	 .jr_addr1_in 						( jr_addr1_t),
 	 .jr_addr2_in  					( jr_addr2_t),
 	 .jr_addr1_out						( jr_addr1_n),
-	 .jr_addr2_out 					( jr_addr2_n)
+	 .jr_addr2_out 					( jr_addr2_n),
+	 .rt1_EX(rt1_EX_n), .rt2_EX(rt2_EX_n),
+	 .MemWriteEn1_EX(MemWriteEn1_EX_n), .MemWriteEn2_EX(MemWriteEn2_EX_n)
 );
 
 branch_control u_branch_control(
@@ -232,23 +236,24 @@ forwarding_unit u_forwarding_unit_t(
     .dest2_EX       ( DestReg2_EX_t    ),
 	 .dest1_MEM       ( DestReg1_MEM    ),
     .dest2_MEM       ( DestReg2_MEM    ),
-    .dest1_wb        ( writeReg1_WB   ),
-    .dest2_wb        ( writeReg2_WB ),
-    .rt1_mem         (  rt1_MEM     ),
-    .rt2_mem         (  rt2_MEM   ),
+    .dest1_wb        ( DestReg1_MEM   ),
+    .dest2_wb        ( DestReg2_MEM ),
+    .rt1_mem         (  rt1_EX_t     ),
+    .rt2_mem         (  rt2_EX_t   ),
     .rst             ( rst             ),
+	 .clk(clk),
     .regwrite1_EX   ( RegWriteEn1_EX_t ),
     .regwrite2_EX   ( RegWriteEn2_EX_t ),
     .regwrite1_MEM    ( RegWriteEn1_MEM    ),
     .regwrite2_MEM    ( RegWriteEn2_MEM    ),
-    .MemWriteEn1_MEM ( MemWriteEn1_MEM ),
-    .MemWriteEn2_MEM ( MemWriteEn2_MEM ),
+    .MemWriteEn1_MEM ( MemWriteEn1_EX_t ),
+    .MemWriteEn2_MEM ( MemWriteEn2_EX_t ),
     .ForwardA1       ( ForwardA_1_t       ),
     .ForwardB1       ( ForwardB_1_t       ),
     .ForwardA2       ( ForwardA_2_t       ),
     .ForwardB2       ( ForwardB_2_t      ),
-    .memFw1          ( memFw1          ),
-    .memFw2          ( memFw2          )
+    .memFw1          ( memFw1_t          ),
+    .memFw2          ( memFw2_t          )
 );
 
 forwarding_unit u_forwarding_unit_n(
@@ -260,17 +265,18 @@ forwarding_unit u_forwarding_unit_n(
     .dest2_EX       ( DestReg2_EX_n    ),
 	 .dest1_MEM       ( DestReg1_MEM    ),
     .dest2_MEM       ( DestReg2_MEM    ),
-    .dest1_wb        ( writeReg1_WB   ),
-    .dest2_wb        ( writeReg2_WB ),
-    .rt1_mem         (  rt1_MEM     ),
-    .rt2_mem         (  rt2_MEM   ),
+    .dest1_wb        ( DestReg1_MEM   ),
+    .dest2_wb        ( DestReg2_MEM ),
+    .rt1_mem         (  rt1_EX_n     ),
+    .rt2_mem         (  rt2_EX_n   ),
     .rst             ( rst             ),
+	 .clk(clk),
     .regwrite1_EX   ( RegWriteEn1_EX_n ),
     .regwrite2_EX   ( RegWriteEn2_EX_n ),
     .regwrite1_MEM    ( RegWriteEn1_MEM    ),
     .regwrite2_MEM    ( RegWriteEn2_MEM    ),
-    .MemWriteEn1_MEM ( MemWriteEn1_MEM ),
-    .MemWriteEn2_MEM ( MemWriteEn2_MEM ),
+    .MemWriteEn1_MEM ( MemWriteEn1_EX_n ),
+    .MemWriteEn2_MEM ( MemWriteEn2_EX_n ),
     .ForwardA1       ( ForwardA_1_n       ),
     .ForwardB1       ( ForwardB_1_n       ),
     .ForwardA2       ( ForwardA_2_n       ),
@@ -282,11 +288,11 @@ forwarding_unit u_forwarding_unit_n(
 
 
 
-assign {aluRes1_MEM,aluRes2_MEM,forwardBRes2_MEM ,forwardBRes1_MEM ,return_addr2_MEM ,return_addr1_MEM ,rt2_MEM ,rt1_MEM ,DestReg2_MEM ,
+assign {memFw1, memFw2, aluRes1_MEM,aluRes2_MEM,forwardBRes2_MEM ,forwardBRes1_MEM ,return_addr2_MEM ,return_addr1_MEM ,rt2_MEM ,rt1_MEM ,DestReg2_MEM ,
 								DestReg1_MEM ,jal2_MEM ,jal1_MEM ,RegWriteEn2_MEM ,RegWriteEn1_MEM ,MemWriteEn2_MEM ,MemWriteEn1_MEM ,
-								MemtoReg2_MEM ,MemtoReg1_MEM ,MemReadEn2_MEM ,MemReadEn1_MEM } = taken_pipe ? {aluRes1_MEM_t,aluRes2_MEM_t,forwardBRes2_MEM_t,forwardBRes1_MEM_t,return_addr2_MEM_t,return_addr1_MEM_t,rt2_MEM_t,rt1_MEM_t,DestReg2_MEM_t,
+								MemtoReg2_MEM ,MemtoReg1_MEM ,MemReadEn2_MEM ,MemReadEn1_MEM } = taken_pipe ? {memFw1_t, memFw2_t, aluRes1_MEM_t,aluRes2_MEM_t,forwardBRes2_MEM_t,forwardBRes1_MEM_t,return_addr2_MEM_t,return_addr1_MEM_t,rt2_MEM_t,rt1_MEM_t,DestReg2_MEM_t,
 								DestReg1_MEM_t,jal2_MEM_t,jal1_MEM_t,RegWriteEn2_MEM_t,RegWriteEn1_MEM_t,MemWriteEn2_MEM_t,MemWriteEn1_MEM_t,
-								MemtoReg2_MEM_t,MemtoReg1_MEM_t,MemReadEn2_MEM_t,MemReadEn1_MEM_t} : {aluRes1_MEM_n,aluRes2_MEM_n,forwardBRes2_MEM_n,forwardBRes1_MEM_n,return_addr2_MEM_n,return_addr1_MEM_n,rt2_MEM_n,rt1_MEM_n,DestReg2_MEM_n,
+								MemtoReg2_MEM_t,MemtoReg1_MEM_t,MemReadEn2_MEM_t,MemReadEn1_MEM_t} : {memFw1_n, memFw2_n, aluRes1_MEM_n,aluRes2_MEM_n,forwardBRes2_MEM_n,forwardBRes1_MEM_n,return_addr2_MEM_n,return_addr1_MEM_n,rt2_MEM_n,rt1_MEM_n,DestReg2_MEM_n,
 								DestReg1_MEM_n,jal2_MEM_n,jal1_MEM_n,RegWriteEn2_MEM_n,RegWriteEn1_MEM_n,MemWriteEn2_MEM_n,MemWriteEn1_MEM_n,
 						MemtoReg2_MEM_n,MemtoReg1_MEM_n,MemReadEn2_MEM_n,MemReadEn1_MEM_n};
 
@@ -325,9 +331,10 @@ dataMemory DM(.address_a(aluRes1_MEM),
 	.q_b(Dmem_res2));
 
 
-mux2x1 #(32) WBMux1(.in1(aluRes1_MEM), .in2(Dmem_res1), .s(MemtoReg1_MEM), .out(MEMmuxOutput1));
-mux2x1 #(32) WBMux2(.in1(aluRes2_MEM), .in2(Dmem_res2), .s(MemtoReg2_MEM), .out(MEMmuxOutput2));
-	
+//mux2x1 #(32) WBMux1(.in1(aluRes1_MEM), .in2(Dmem_res1), .s(MemtoReg1_MEM), .out(MEMmuxOutput1));
+//mux2x1 #(32) WBMux2(.in1(aluRes2_MEM), .in2(Dmem_res2), .s(MemtoReg2_MEM), .out(MEMmuxOutput2));
+assign MEMmuxOutput1 = MemtoReg1_MEM? Dmem_res1: aluRes1_MEM;
+assign MEMmuxOutput2 = MemtoReg2_MEM? Dmem_res2: aluRes2_MEM;
 	
 MEMWB #(82) memwb1(.Q({WBMuxOutput1, writeReg1_WB,  return_addr1_WB, jal1_WB,  regWrite1_WB}),
 .D({MEMmuxOutput1, DestReg1_MEM, return_addr1_MEM, jal1_MEM, RegWriteEn1_MEM}), 
@@ -338,11 +345,13 @@ MEMWB #(82) memwb2(.Q({WBMuxOutput2, writeReg2_WB,  return_addr2_WB, jal2_WB,  r
 .clk(clk), .reset(rst));	
 		
 
+
 	
-	
-mux2x1 #(32) WritePc1(.in1(WBMuxOutput1),.in2({22'b0,return_addr1_WB}),.s(jal1_WB),.out(writeData1_WB));
-mux2x1 #(32) WritePc2(.in1(WBMuxOutput2),.in2({22'b0,return_addr2_WB}),.s(jal2_WB),.out(writeData2_WB));
-	
+//mux2x1 #(32) WritePc1(.in1(WBMuxOutput1),.in2({22'b0,return_addr1_WB}),.s(jal1_WB),.out(writeData1_WB));
+//mux2x1 #(32) WritePc2(.in1(WBMuxOutput2),.in2({22'b0,return_addr2_WB}),.s(jal2_WB),.out(writeData2_WB));
+ 
+assign writeData1_WB = jal1_WB? {22'b0,return_addr1_WB}: WBMuxOutput1;
+assign writeData2_WB = jal2_WB? {22'b0,return_addr2_WB}: WBMuxOutput2;
 
 	
 

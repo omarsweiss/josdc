@@ -13,12 +13,13 @@ output Branch1,Branch2, taken1, taken2, taken1_MEM,  MemReadEn1_MEM, MemtoReg1_M
  taken2_MEM,  MemReadEn2_MEM, MemtoReg2_MEM, MemWriteEn2_MEM, RegWriteEn2_MEM,jal2_MEM, Branch2_EX,Branch1_EX,RegWriteEn1_EX,RegWriteEn2_EX,
  jr1_out,jr2_out,
  
-output [4:0]  DestReg1_MEM, rt1_MEM, DestReg2_MEM, rt2_MEM,rs1,rt1,rs2,rt2,destReg1,destReg2, DestReg1_EX, DestReg2_EX,
+output [4:0]  DestReg1_MEM, rt1_MEM, DestReg2_MEM, rt2_MEM,rs1,rt1,rs2,rt2,destReg1,destReg2, DestReg1_EX, DestReg2_EX, rt1_EX, rt2_EX,
 
 output [9:0] return_addr2_ID, return_addr2_EX, return_addr1_MEM, return_addr2_MEM, next_pc_out,BranchAddress_1_ID,BranchAddress_2_ID,
 jr_addr1_out, jr_addr2_out,
 
-output [31:0] aluRes1_MEM, forwardBRes1_MEM, aluRes2_MEM, forwardBRes2_MEM
+output [31:0] aluRes1_MEM, forwardBRes1_MEM, aluRes2_MEM, forwardBRes2_MEM,
+output MemWriteEn1_EX, MemWriteEn2_EX
       
 );
 
@@ -29,15 +30,15 @@ ForwardB1_EX,ForwardB2_EX,aluRes1,aluRes2,instruction1_ID,instruction2_ID;
 wire [9:0] return_addr1,return_addr2,reg1Addr,return_addr1_ID,return_addr1_EX,
 BranchAddress_1,BranchAddress_2;
 
-wire [4:0] shamt1,shamt2,rs2_EX, rt2_EX,rs1_EX, rt1_EX,shamt1_EX,shamt2_EX;
+wire [4:0] shamt1,shamt2,rs2_EX, rs1_EX, shamt1_EX,shamt2_EX;
 
 wire [3:0] AluOp1,AluOp2,ALUOp1_EX,ALUOp2_EX;
 
 
 wire  ld_hazard,jr_hazard, flush_second, MemReadEn1, MemtoReg1, MemWriteEn1, RegWriteEn1, ALUSrc1, jr1, jal1, RegDst1, bne1,jump1,
  MemReadEn2, MemtoReg2, MemWriteEn2, RegWriteEn2, ALUSrc2, jr2, jal2, RegDst2, bne2,jump2,MemReadEn1_EX, MemtoReg1_EX, 
- MemWriteEn1_EX,ALUSrc1_EX, jal1_EX, bne1_EX, jr1_EX,MemReadEn2_EX, MemtoReg2_EX, 
- MemWriteEn2_EX,ALUSrc2_EX, jal2_EX, bne2_EX, jr2_EX;
+ALUSrc1_EX, jal1_EX, bne1_EX, jr1_EX,MemReadEn2_EX, MemtoReg2_EX, 
+ ALUSrc2_EX, jal2_EX, bne2_EX, jr2_EX;
 
 assign jr1_out = jr1_EX;
 assign jr2_out = jr2_EX;

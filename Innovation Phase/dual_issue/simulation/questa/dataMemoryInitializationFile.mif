@@ -19,20 +19,9 @@ WIDTH=32;
 DEPTH=4096;
 
 ADDRESS_RADIX=UNS;
-DATA_RADIX=HEX;
+DATA_RADIX=UNS;
 
 CONTENT BEGIN
-	0: 1;
-	1: 0;
-	2: 0;
-	3: 0;
-	4: 3;
-	5: 5;
-	6: 0;
-	7: 0;
-	8: 0;
-	9: 0;
-	10: 22;
-	11: 0;
-	[12..2047]  :   0;
+	0: 0;
+	[1..2047]  :   0;
 END;

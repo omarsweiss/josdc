@@ -1,14 +1,14 @@
-Fitter Status : Successful - Fri Feb 21 20:05:18 2025
+Fitter Status : Successful - Fri Feb 21 21:47:14 2025
 Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : Dual_Issue
 Top-level Entity Name : Dual_Issue
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 12,004 / 49,760 ( 24 % )
-    Total combinational functions : 11,867 / 49,760 ( 24 % )
-    Dedicated logic registers : 2,031 / 49,760 ( 4 % )
-Total registers : 2031
+Total logic elements : 11,956 / 49,760 ( 24 % )
+    Total combinational functions : 11,877 / 49,760 ( 24 % )
+    Dedicated logic registers : 2,019 / 49,760 ( 4 % )
+Total registers : 2019
 Total pins : 66 / 360 ( 18 % )
 Total virtual pins : 0
 Total memory bits : 196,608 / 1,677,312 ( 12 % )

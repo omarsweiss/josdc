@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dD:/josdc-1/Innovation Phase/dual_issue/simulation/questa
 vALU
-Z1 !s110 1740157806
+Z1 !s110 1740165613
 !i10b 1
 !s100 3a[meDhSJQR3R6174;f8R1
 IfY[e1U2;6DVcDVUOIVdmK1
@@ -23,7 +23,7 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1740157806.000000
+Z5 !s108 1740165613.000000
 !s107 D:/josdc-1/Innovation Phase/dual_issue/ALU.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/josdc-1/Innovation Phase/dual_issue|D:/josdc-1/Innovation Phase/dual_issue/ALU.v|
 !i113 1
@@ -32,7 +32,7 @@ Z7 !s92 -vlog01compat -work work {+incdir+D:/josdc-1/Innovation Phase/dual_issue
 Z8 tCvgOpt 0
 n@a@l@u
 vbranch_control
-Z9 !s110 1740157807
+Z9 !s110 1740165614
 !i10b 1
 !s100 E6ImiYX5fBELVFi6Ym^>j3
 I3ld<5beOhW9]NnGCz^j@<3
@@ -46,7 +46,7 @@ R4
 r1
 !s85 0
 31
-Z10 !s108 1740157807.000000
+Z10 !s108 1740165614.000000
 !s107 D:/josdc-1/Innovation Phase/dual_issue/branch_control.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/josdc-1/Innovation Phase/dual_issue|D:/josdc-1/Innovation Phase/dual_issue/branch_control.v|
 !i113 1
@@ -146,11 +146,11 @@ R8
 vDual_Issue
 R9
 !i10b 1
-!s100 <Y[KFhXb0ARU^[e:JG=fI0
-IA=KOKenUc_biNeWKEiLl:3
+!s100 ?d70_^eVngG5INONVI8EL2
+IAEZB6`61P:OIb?kN0Fc5B3
 R2
 R0
-Z13 w1740148399
+w1740161018
 8D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v
 FD:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v
 L0 1
@@ -195,7 +195,7 @@ R1
 I3;6];UQcI;[iXge59LFEi2
 R2
 R0
-R13
+Z13 w1740148399
 Z14 8D:/josdc-1/Innovation Phase/dual_issue/Pipes.v
 Z15 FD:/josdc-1/Innovation Phase/dual_issue/Pipes.v
 L0 36
@@ -203,16 +203,16 @@ R4
 r1
 !s85 0
 31
-R5
-Z16 !s107 D:/josdc-1/Innovation Phase/dual_issue/Pipes.v|
-Z17 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/josdc-1/Innovation Phase/dual_issue|D:/josdc-1/Innovation Phase/dual_issue/Pipes.v|
+Z16 !s108 1740165612.000000
+Z17 !s107 D:/josdc-1/Innovation Phase/dual_issue/Pipes.v|
+Z18 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/josdc-1/Innovation Phase/dual_issue|D:/josdc-1/Innovation Phase/dual_issue/Pipes.v|
 !i113 1
 R6
 R7
 R8
 n@e@x@m@e@m
 vfetch_not_taken
-R9
+R1
 !i10b 1
 !s100 LzP;iBhfPe2NGCN;aF<;L2
 I:7KaJNM<0QMhC1da`a;RI1
@@ -226,7 +226,7 @@ R4
 r1
 !s85 0
 31
-R10
+R5
 !s107 D:/josdc-1/Innovation Phase/dual_issue/fetch_not_taken.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/josdc-1/Innovation Phase/dual_issue|D:/josdc-1/Innovation Phase/dual_issue/fetch_not_taken.v|
 !i113 1
@@ -258,11 +258,11 @@ R8
 vforwarding_unit
 R1
 !i10b 1
-!s100 Nb49emP4B]n>@<L8e[@o80
-I8HiQFg=J@=SD>bbVT5kmL0
+!s100 fHfh7`>A@P4bVC4RVe;=N0
+IC:]O[UzdaPIbBNY<c@Lm53
 R2
 R0
-R3
+w1740160778
 8D:/josdc-1/Innovation Phase/dual_issue/ForwardingUnit.v
 FD:/josdc-1/Innovation Phase/dual_issue/ForwardingUnit.v
 L0 1
@@ -292,9 +292,9 @@ R4
 r1
 !s85 0
 31
-R5
 R16
 R17
+R18
 !i113 1
 R6
 R7
@@ -315,9 +315,9 @@ R4
 r1
 !s85 0
 31
-R5
 R16
 R17
+R18
 !i113 1
 R6
 R7
@@ -361,66 +361,22 @@ R4
 r1
 !s85 0
 31
-R5
 R16
 R17
+R18
 !i113 1
 R6
 R7
 R8
 n@m@e@m@w@b
-vmux2x1
-R1
-!i10b 1
-!s100 9@GI2f]Q]h88AIAPU@>>i3
-I^IY>3HOFQ<hlKNSY0GO7i1
-R2
-R0
-R12
-Z18 8D:/josdc-1/Innovation Phase/dual_issue/mux2x1.v
-Z19 FD:/josdc-1/Innovation Phase/dual_issue/mux2x1.v
-L0 1
-R4
-r1
-!s85 0
-31
-R5
-Z20 !s107 D:/josdc-1/Innovation Phase/dual_issue/mux2x1.v|
-Z21 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/josdc-1/Innovation Phase/dual_issue|D:/josdc-1/Innovation Phase/dual_issue/mux2x1.v|
-!i113 1
-R6
-R7
-R8
-vmux4x1
-R1
-!i10b 1
-!s100 nAQZOOJ:]m^iX812:IzbJ1
-IBCoSM49589MbA;n`4OnR>2
-R2
-R0
-R12
-R18
-R19
-L0 15
-R4
-r1
-!s85 0
-31
-R5
-R20
-R21
-!i113 1
-R6
-R7
-R8
 vnot_t_pipe
 R9
 !i10b 1
-!s100 SWI@6l;6?gIb;3L:gXa:j1
-Ik^K]_23TgA?@z5KQQMecJ1
+!s100 ?La4TjQi<3LW;l:kZLFLN2
+I7TnKdTz2BFRiVTN:lf[Yh0
 R2
 R0
-R13
+Z19 w1740157968
 8D:/josdc-1/Innovation Phase/dual_issue/not_t_pipe.v
 FD:/josdc-1/Innovation Phase/dual_issue/not_t_pipe.v
 L0 1
@@ -428,7 +384,7 @@ R4
 r1
 !s85 0
 31
-R10
+R5
 !s107 D:/josdc-1/Innovation Phase/dual_issue/not_t_pipe.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/josdc-1/Innovation Phase/dual_issue|D:/josdc-1/Innovation Phase/dual_issue/not_t_pipe.v|
 !i113 1
@@ -507,11 +463,11 @@ n@sign@extender
 vt_pipe
 R1
 !i10b 1
-!s100 04EK;j?0[<m1@H[aKH;VE1
-I07AKSZ:84_nA@VLQnid5o2
+!s100 C^^Q_HJDl9K@?ILHZ5:;=0
+Ie8AYc?g@CAADcR4`G:lZM1
 R2
 R0
-w1740148400
+R19
 8D:/josdc-1/Innovation Phase/dual_issue/t_pipe.v
 FD:/josdc-1/Innovation Phase/dual_issue/t_pipe.v
 L0 1
@@ -533,7 +489,7 @@ R9
 IIz=RX8OOmFbMd9e2ODJoL2
 R2
 R0
-w1740152425
+w1740165367
 8D:/josdc-1/Innovation Phase/dual_issue/testbench.v
 FD:/josdc-1/Innovation Phase/dual_issue/testbench.v
 L0 2

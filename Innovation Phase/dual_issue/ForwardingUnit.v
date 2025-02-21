@@ -7,11 +7,12 @@ module forwarding_unit(
   input [4:0] dest2_EX,
   input [4:0] dest1_MEM,
   input [4:0] dest2_MEM,
-  input [4:0] dest1_wb,
-  input [4:0] dest2_wb,
-  input [4:0] rt1_mem,
-  input [4:0] rt2_mem,
+  input  [4:0] dest1_wb,
+  input  [4:0] dest2_wb,
+  input  [4:0] rt1_mem,
+  input  [4:0] rt2_mem,
   input rst,
+  input clk,
   input regwrite1_EX,
   input regwrite2_EX,
   input regwrite1_MEM,
@@ -26,20 +27,23 @@ module forwarding_unit(
   output reg [1:0] memFw2
 
   );
+
   
-   always @(*) begin
-		if(~rst) begin
-			memFw1 = 2'b0;
-			memFw2 = 2'b0;
-		end
+   always @(posedge clk, negedge rst) begin
+			if(~rst) begin
+				memFw1 <= 2'b0;
+				memFw2 <= 2'b0;
+			end
 		else begin
-			if (dest1_wb == rt1_mem && MemWriteEn1_MEM) memFw1 = 2'b01;
-			else if (dest2_wb == rt1_mem && MemWriteEn2_MEM) memFw1 = 2'b10;
-			else memFw1 = 2'b0;
+		
+			if ((dest1_wb == rt1_mem) && MemWriteEn1_MEM) memFw1 <= 2'b01;
+			else if ((dest2_wb == rt1_mem) && MemWriteEn2_MEM) memFw1 <= 2'b10;
+			else memFw1 <= 2'b0;
 			
-			if (dest1_wb == rt2_mem && MemWriteEn1_MEM) memFw2 = 2'b01;
-			else if (dest2_wb == rt2_mem && MemWriteEn2_MEM) memFw2 = 2'b10;
-			else memFw2 = 2'b0;
+			if ((dest1_wb == rt2_mem) && MemWriteEn1_MEM) memFw2 <= 2'b01;
+			else if ((dest2_wb == rt2_mem) && MemWriteEn2_MEM) memFw2 <= 2'b10;
+			else memFw2 <= 2'b0;
+			
 		end
 	end
 		
