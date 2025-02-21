@@ -20,7 +20,7 @@
 ## PROGRAM "Quartus Prime"
 ## VERSION "Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition"
 
-## DATE    "Thu Feb 20 21:32:35 2025"
+## DATE    "Fri Feb 21 20:09:28 2025"
 
 ##
 ## DEVICE  "10M50DAF484C7G"
@@ -39,7 +39,7 @@ set_time_format -unit ns -decimal_places 3
 # Create Clock
 #**************************************************************
 
-create_clock -name {clk} -period 15.000 -waveform { 0.000 7.500 } [get_ports { clk }]
+create_clock -name {clk} -period 15.300 -waveform { 0.000 7.650 } [get_ports { clk }]
 
 
 #**************************************************************

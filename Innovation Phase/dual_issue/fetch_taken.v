@@ -39,14 +39,15 @@ assign BranchAddress_2 = address_2 + pc_plus;
 
 
 always @(*) begin
-    casez ({rst, correct_en ,jr, Branch_1, jump_1, Branch_2, jump_2})
-        7'b0zzzzzz: nextPC = 10'b0000000000;      // Reset condition
-        7'b11zzzzz: nextPC = correction;
-		  7'b101zzzz: nextPC = reg1Addr;           // Jump register
-        7'b1001zzz: nextPC = BranchAddress_1;       
-        7'b10001zz: nextPC = address_1;            // J-type instruction
-        7'b100001z: nextPC = BranchAddress_2;
-		  7'b1000001: nextPC = address_2;
+    casez ({rst, hold, correct_en ,jr, Branch_1, jump_1, Branch_2, jump_2})
+        8'b0zzzzzzz: nextPC = 10'b0;      // Reset condition
+		  8'b11zzzzzz: nextPC = PC; 
+        8'b101zzzzz: nextPC = correction;
+		  8'b1001zzzz: nextPC = reg1Addr;           // Jump register
+        8'b10001zzz: nextPC = BranchAddress_1;       
+        8'b100001zz: nextPC = address_1;            // J-type instruction
+        8'b1000001z: nextPC = BranchAddress_2;
+		  8'b10000001: nextPC = address_2;
         default:         nextPC = pc_plus;            // Default case
     endcase
 end
@@ -54,19 +55,19 @@ end
 
 
 always @(*) begin
-    casez ({rst, jr, jump_1, jump_2})
-        4'b0zzz: nextPC_out = 10'b0000000000;      // Reset condition
-		  4'b11zz: nextPC_out = reg1Addr;           // Jump register
-        4'b101z: nextPC_out = address_1;            // J-type instruction
-		  4'b1001: nextPC_out = address_2;
+    casez ({rst, hold, jr, jump_1, jump_2})
+        5'b0zzzz: nextPC_out = 10'b0000000000;      // Reset condition
+		  5'b11zzz: nextPC_out = PC;
+		  5'b101zz: nextPC_out = reg1Addr;           // Jump register
+        5'b1001z: nextPC_out = address_1;            // J-type instruction
+		  5'b10001: nextPC_out = address_2;
         default:    nextPC_out = pc_plus;		  // Default case
     endcase
 end
 
 
 programCounter pc(.clk(clk), .rst(rst), .PCin(nextPC), .PCout(PC), .hold(hold));
-
-instructionMemory IM(.address_a(nextPC), .address_b(nextPC + 10'b1), .clock(clk), .q_a(instruction_1), .q_b(instruction_2));
+instructionMemory IM_nt(.address_a(nextPC), .address_b(nextPC + 10'b1), .clock(clk), .q_a(instruction_1), .q_b(instruction_2), .rden_a(rst), .rden_b(rst));
 
 
 

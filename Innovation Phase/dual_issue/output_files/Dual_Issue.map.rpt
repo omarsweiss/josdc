@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Dual_Issue
-Thu Feb 20 21:52:37 2025
+Fri Feb 21 20:09:44 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -10,10 +10,10 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
   4. Analysis & Elaboration IP Cores Summary
-  5. Source assignments for Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM|altsyncram:altsyncram_component|altsyncram_as52:auto_generated
-  6. Source assignments for Dual_Issue:uut|not_t_pipe:u_not_t_pipe|fetch_not_taken:u_fetch_not_taken|instructionMemory:IM_nt|altsyncram:altsyncram_component|altsyncram_as52:auto_generated
-  7. Source assignments for Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component|altsyncram_3pl2:auto_generated
-  8. Parameter Settings for User Entity Instance: Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM|altsyncram:altsyncram_component
+  5. Source assignments for Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM_nt|altsyncram:altsyncram_component|altsyncram_t472:auto_generated
+  6. Source assignments for Dual_Issue:uut|not_t_pipe:u_not_t_pipe|fetch_not_taken:u_fetch_not_taken|instructionMemory:IM_nt|altsyncram:altsyncram_component|altsyncram_t472:auto_generated
+  7. Source assignments for Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component|altsyncram_hbl2:auto_generated
+  8. Parameter Settings for User Entity Instance: Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM_nt|altsyncram:altsyncram_component
   9. Parameter Settings for User Entity Instance: Dual_Issue:uut|t_pipe:u_t_pipe|IFID:ifid1
  10. Parameter Settings for User Entity Instance: Dual_Issue:uut|t_pipe:u_t_pipe|IFID:ifid2
  11. Parameter Settings for User Entity Instance: Dual_Issue:uut|t_pipe:u_t_pipe|decode:u_decode|controlUnit:CU1
@@ -93,7 +93,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                      ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Thu Feb 20 21:52:37 2025          ;
+; Analysis & Elaboration Status      ; Successful - Fri Feb 21 20:09:44 2025          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; Dual_Issue                                     ;
 ; Top-level Entity Name              ; testbench                                      ;
@@ -133,23 +133,23 @@ https://fpgasoftware.intel.com/eula.
 +--------+--------------+---------+--------------+--------------+-------------------------------------------------------------------------------------------------------------+---------------------+
 ; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                                                                             ; IP Include File     ;
 +--------+--------------+---------+--------------+--------------+-------------------------------------------------------------------------------------------------------------+---------------------+
-; Altera ; RAM: 2-PORT  ; 22.1    ; N/A          ; N/A          ; |testbench|Dual_Issue:uut|dataMemory:DM                                                                     ; dataMemory.v        ;
-; Altera ; ROM: 2-PORT  ; 22.1    ; N/A          ; N/A          ; |testbench|Dual_Issue:uut|not_t_pipe:u_not_t_pipe|fetch_not_taken:u_fetch_not_taken|instructionMemory:IM_nt ; instructionMemory.v ;
-; Altera ; ROM: 2-PORT  ; 22.1    ; N/A          ; N/A          ; |testbench|Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM                    ; instructionMemory.v ;
+; Altera ; RAM: 2-PORT  ; 23.1    ; N/A          ; N/A          ; |testbench|Dual_Issue:uut|dataMemory:DM                                                                     ; dataMemory.v        ;
+; Altera ; ROM: 2-PORT  ; 23.1    ; N/A          ; N/A          ; |testbench|Dual_Issue:uut|not_t_pipe:u_not_t_pipe|fetch_not_taken:u_fetch_not_taken|instructionMemory:IM_nt ; instructionMemory.v ;
+; Altera ; ROM: 2-PORT  ; 23.1    ; N/A          ; N/A          ; |testbench|Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM_nt                 ; instructionMemory.v ;
 +--------+--------------+---------+--------------+--------------+-------------------------------------------------------------------------------------------------------------+---------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM|altsyncram:altsyncram_component|altsyncram_as52:auto_generated ;
-+---------------------------------+--------------------+------+-------------------------------------------------------------------------------------------------------+
-; Assignment                      ; Value              ; From ; To                                                                                                    ;
-+---------------------------------+--------------------+------+-------------------------------------------------------------------------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                                                     ;
-+---------------------------------+--------------------+------+-------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM_nt|altsyncram:altsyncram_component|altsyncram_t472:auto_generated ;
++---------------------------------+--------------------+------+----------------------------------------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                                                       ;
++---------------------------------+--------------------+------+----------------------------------------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                                                        ;
++---------------------------------+--------------------+------+----------------------------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for Dual_Issue:uut|not_t_pipe:u_not_t_pipe|fetch_not_taken:u_fetch_not_taken|instructionMemory:IM_nt|altsyncram:altsyncram_component|altsyncram_as52:auto_generated ;
+; Source assignments for Dual_Issue:uut|not_t_pipe:u_not_t_pipe|fetch_not_taken:u_fetch_not_taken|instructionMemory:IM_nt|altsyncram:altsyncram_component|altsyncram_t472:auto_generated ;
 +---------------------------------+--------------------+------+--------------------------------------------------------------------------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                                                                                       ;
 +---------------------------------+--------------------+------+--------------------------------------------------------------------------------------------------------------------------+
@@ -158,7 +158,7 @@ https://fpgasoftware.intel.com/eula.
 
 
 +--------------------------------------------------------------------------------------------------------------------+
-; Source assignments for Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component|altsyncram_3pl2:auto_generated ;
+; Source assignments for Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component|altsyncram_hbl2:auto_generated ;
 +---------------------------------+--------------------+------+------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                   ;
 +---------------------------------+--------------------+------+------------------------------------------------------+
@@ -166,64 +166,64 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------+--------------------+------+------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM|altsyncram:altsyncram_component ;
-+------------------------------------+-----------------------------------------+-----------------------------------------------------------------------------+
-; Parameter Name                     ; Value                                   ; Type                                                                        ;
-+------------------------------------+-----------------------------------------+-----------------------------------------------------------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                                       ; Untyped                                                                     ;
-; AUTO_CARRY_CHAINS                  ; ON                                      ; AUTO_CARRY                                                                  ;
-; IGNORE_CARRY_BUFFERS               ; OFF                                     ; IGNORE_CARRY                                                                ;
-; AUTO_CASCADE_CHAINS                ; ON                                      ; AUTO_CASCADE                                                                ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                                     ; IGNORE_CASCADE                                                              ;
-; WIDTH_BYTEENA                      ; 1                                       ; Untyped                                                                     ;
-; OPERATION_MODE                     ; BIDIR_DUAL_PORT                         ; Untyped                                                                     ;
-; WIDTH_A                            ; 32                                      ; Signed Integer                                                              ;
-; WIDTHAD_A                          ; 10                                      ; Signed Integer                                                              ;
-; NUMWORDS_A                         ; 1024                                    ; Signed Integer                                                              ;
-; OUTDATA_REG_A                      ; UNREGISTERED                            ; Untyped                                                                     ;
-; ADDRESS_ACLR_A                     ; NONE                                    ; Untyped                                                                     ;
-; OUTDATA_ACLR_A                     ; NONE                                    ; Untyped                                                                     ;
-; WRCONTROL_ACLR_A                   ; NONE                                    ; Untyped                                                                     ;
-; INDATA_ACLR_A                      ; NONE                                    ; Untyped                                                                     ;
-; BYTEENA_ACLR_A                     ; NONE                                    ; Untyped                                                                     ;
-; WIDTH_B                            ; 32                                      ; Signed Integer                                                              ;
-; WIDTHAD_B                          ; 10                                      ; Signed Integer                                                              ;
-; NUMWORDS_B                         ; 1024                                    ; Signed Integer                                                              ;
-; INDATA_REG_B                       ; CLOCK0                                  ; Untyped                                                                     ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK0                                  ; Untyped                                                                     ;
-; RDCONTROL_REG_B                    ; CLOCK1                                  ; Untyped                                                                     ;
-; ADDRESS_REG_B                      ; CLOCK0                                  ; Untyped                                                                     ;
-; OUTDATA_REG_B                      ; UNREGISTERED                            ; Untyped                                                                     ;
-; BYTEENA_REG_B                      ; CLOCK1                                  ; Untyped                                                                     ;
-; INDATA_ACLR_B                      ; NONE                                    ; Untyped                                                                     ;
-; WRCONTROL_ACLR_B                   ; NONE                                    ; Untyped                                                                     ;
-; ADDRESS_ACLR_B                     ; NONE                                    ; Untyped                                                                     ;
-; OUTDATA_ACLR_B                     ; NONE                                    ; Untyped                                                                     ;
-; RDCONTROL_ACLR_B                   ; NONE                                    ; Untyped                                                                     ;
-; BYTEENA_ACLR_B                     ; NONE                                    ; Untyped                                                                     ;
-; WIDTH_BYTEENA_A                    ; 1                                       ; Signed Integer                                                              ;
-; WIDTH_BYTEENA_B                    ; 1                                       ; Signed Integer                                                              ;
-; RAM_BLOCK_TYPE                     ; AUTO                                    ; Untyped                                                                     ;
-; BYTE_SIZE                          ; 8                                       ; Untyped                                                                     ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                               ; Untyped                                                                     ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                    ; Untyped                                                                     ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                    ; Untyped                                                                     ;
-; INIT_FILE                          ; instructionMemoryInitializationFile.mif ; Untyped                                                                     ;
-; INIT_FILE_LAYOUT                   ; PORT_A                                  ; Untyped                                                                     ;
-; MAXIMUM_DEPTH                      ; 0                                       ; Untyped                                                                     ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS                                  ; Untyped                                                                     ;
-; CLOCK_ENABLE_INPUT_B               ; BYPASS                                  ; Untyped                                                                     ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                                  ; Untyped                                                                     ;
-; CLOCK_ENABLE_OUTPUT_B              ; BYPASS                                  ; Untyped                                                                     ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                         ; Untyped                                                                     ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                         ; Untyped                                                                     ;
-; ENABLE_ECC                         ; FALSE                                   ; Untyped                                                                     ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                   ; Untyped                                                                     ;
-; WIDTH_ECCSTATUS                    ; 3                                       ; Untyped                                                                     ;
-; DEVICE_FAMILY                      ; MAX 10                                  ; Untyped                                                                     ;
-; CBXI_PARAMETER                     ; altsyncram_as52                         ; Untyped                                                                     ;
-+------------------------------------+-----------------------------------------+-----------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM_nt|altsyncram:altsyncram_component ;
++------------------------------------+-----------------------------------------+--------------------------------------------------------------------------------+
+; Parameter Name                     ; Value                                   ; Type                                                                           ;
++------------------------------------+-----------------------------------------+--------------------------------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                                       ; Untyped                                                                        ;
+; AUTO_CARRY_CHAINS                  ; ON                                      ; AUTO_CARRY                                                                     ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                     ; IGNORE_CARRY                                                                   ;
+; AUTO_CASCADE_CHAINS                ; ON                                      ; AUTO_CASCADE                                                                   ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                     ; IGNORE_CASCADE                                                                 ;
+; WIDTH_BYTEENA                      ; 1                                       ; Untyped                                                                        ;
+; OPERATION_MODE                     ; BIDIR_DUAL_PORT                         ; Untyped                                                                        ;
+; WIDTH_A                            ; 32                                      ; Signed Integer                                                                 ;
+; WIDTHAD_A                          ; 10                                      ; Signed Integer                                                                 ;
+; NUMWORDS_A                         ; 1024                                    ; Signed Integer                                                                 ;
+; OUTDATA_REG_A                      ; UNREGISTERED                            ; Untyped                                                                        ;
+; ADDRESS_ACLR_A                     ; NONE                                    ; Untyped                                                                        ;
+; OUTDATA_ACLR_A                     ; NONE                                    ; Untyped                                                                        ;
+; WRCONTROL_ACLR_A                   ; NONE                                    ; Untyped                                                                        ;
+; INDATA_ACLR_A                      ; NONE                                    ; Untyped                                                                        ;
+; BYTEENA_ACLR_A                     ; NONE                                    ; Untyped                                                                        ;
+; WIDTH_B                            ; 32                                      ; Signed Integer                                                                 ;
+; WIDTHAD_B                          ; 10                                      ; Signed Integer                                                                 ;
+; NUMWORDS_B                         ; 1024                                    ; Signed Integer                                                                 ;
+; INDATA_REG_B                       ; CLOCK0                                  ; Untyped                                                                        ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK0                                  ; Untyped                                                                        ;
+; RDCONTROL_REG_B                    ; CLOCK1                                  ; Untyped                                                                        ;
+; ADDRESS_REG_B                      ; CLOCK0                                  ; Untyped                                                                        ;
+; OUTDATA_REG_B                      ; UNREGISTERED                            ; Untyped                                                                        ;
+; BYTEENA_REG_B                      ; CLOCK1                                  ; Untyped                                                                        ;
+; INDATA_ACLR_B                      ; NONE                                    ; Untyped                                                                        ;
+; WRCONTROL_ACLR_B                   ; NONE                                    ; Untyped                                                                        ;
+; ADDRESS_ACLR_B                     ; NONE                                    ; Untyped                                                                        ;
+; OUTDATA_ACLR_B                     ; NONE                                    ; Untyped                                                                        ;
+; RDCONTROL_ACLR_B                   ; NONE                                    ; Untyped                                                                        ;
+; BYTEENA_ACLR_B                     ; NONE                                    ; Untyped                                                                        ;
+; WIDTH_BYTEENA_A                    ; 1                                       ; Signed Integer                                                                 ;
+; WIDTH_BYTEENA_B                    ; 1                                       ; Signed Integer                                                                 ;
+; RAM_BLOCK_TYPE                     ; AUTO                                    ; Untyped                                                                        ;
+; BYTE_SIZE                          ; 8                                       ; Untyped                                                                        ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                               ; Untyped                                                                        ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                    ; Untyped                                                                        ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                    ; Untyped                                                                        ;
+; INIT_FILE                          ; instructionMemoryInitializationFile.mif ; Untyped                                                                        ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                  ; Untyped                                                                        ;
+; MAXIMUM_DEPTH                      ; 0                                       ; Untyped                                                                        ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS                                  ; Untyped                                                                        ;
+; CLOCK_ENABLE_INPUT_B               ; BYPASS                                  ; Untyped                                                                        ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                                  ; Untyped                                                                        ;
+; CLOCK_ENABLE_OUTPUT_B              ; BYPASS                                  ; Untyped                                                                        ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                         ; Untyped                                                                        ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                         ; Untyped                                                                        ;
+; ENABLE_ECC                         ; FALSE                                   ; Untyped                                                                        ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                   ; Untyped                                                                        ;
+; WIDTH_ECCSTATUS                    ; 3                                       ; Untyped                                                                        ;
+; DEVICE_FAMILY                      ; MAX 10                                  ; Untyped                                                                        ;
+; CBXI_PARAMETER                     ; altsyncram_t472                         ; Untyped                                                                        ;
++------------------------------------+-----------------------------------------+--------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -445,7 +445,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                   ; Untyped                                                                                        ;
 ; WIDTH_ECCSTATUS                    ; 3                                       ; Untyped                                                                                        ;
 ; DEVICE_FAMILY                      ; MAX 10                                  ; Untyped                                                                                        ;
-; CBXI_PARAMETER                     ; altsyncram_as52                         ; Untyped                                                                                        ;
+; CBXI_PARAMETER                     ; altsyncram_t472                         ; Untyped                                                                                        ;
 +------------------------------------+-----------------------------------------+------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -625,8 +625,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; WIDTH_BYTEENA                      ; 1                                ; Untyped                           ;
 ; OPERATION_MODE                     ; BIDIR_DUAL_PORT                  ; Untyped                           ;
 ; WIDTH_A                            ; 32                               ; Signed Integer                    ;
-; WIDTHAD_A                          ; 11                               ; Signed Integer                    ;
-; NUMWORDS_A                         ; 2048                             ; Signed Integer                    ;
+; WIDTHAD_A                          ; 12                               ; Signed Integer                    ;
+; NUMWORDS_A                         ; 4096                             ; Signed Integer                    ;
 ; OUTDATA_REG_A                      ; UNREGISTERED                     ; Untyped                           ;
 ; ADDRESS_ACLR_A                     ; NONE                             ; Untyped                           ;
 ; OUTDATA_ACLR_A                     ; NONE                             ; Untyped                           ;
@@ -634,8 +634,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; INDATA_ACLR_A                      ; NONE                             ; Untyped                           ;
 ; BYTEENA_ACLR_A                     ; NONE                             ; Untyped                           ;
 ; WIDTH_B                            ; 32                               ; Signed Integer                    ;
-; WIDTHAD_B                          ; 11                               ; Signed Integer                    ;
-; NUMWORDS_B                         ; 2048                             ; Signed Integer                    ;
+; WIDTHAD_B                          ; 12                               ; Signed Integer                    ;
+; NUMWORDS_B                         ; 4096                             ; Signed Integer                    ;
 ; INDATA_REG_B                       ; CLOCK0                           ; Untyped                           ;
 ; WRCONTROL_WRADDRESS_REG_B          ; CLOCK0                           ; Untyped                           ;
 ; RDCONTROL_REG_B                    ; CLOCK1                           ; Untyped                           ;
@@ -653,8 +653,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; RAM_BLOCK_TYPE                     ; AUTO                             ; Untyped                           ;
 ; BYTE_SIZE                          ; 8                                ; Untyped                           ;
 ; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                        ; Untyped                           ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_WITH_NBE_READ           ; Untyped                           ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_WITH_NBE_READ           ; Untyped                           ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ             ; Untyped                           ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ             ; Untyped                           ;
 ; INIT_FILE                          ; dataMemoryInitializationFile.mif ; Untyped                           ;
 ; INIT_FILE_LAYOUT                   ; PORT_A                           ; Untyped                           ;
 ; MAXIMUM_DEPTH                      ; 0                                ; Untyped                           ;
@@ -668,7 +668,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                            ; Untyped                           ;
 ; WIDTH_ECCSTATUS                    ; 3                                ; Untyped                           ;
 ; DEVICE_FAMILY                      ; MAX 10                           ; Untyped                           ;
-; CBXI_PARAMETER                     ; altsyncram_3pl2                  ; Untyped                           ;
+; CBXI_PARAMETER                     ; altsyncram_hbl2                  ; Untyped                           ;
 +------------------------------------+----------------------------------+-----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -739,7 +739,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Name                                      ; Value                                                                                                                            ;
 +-------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
 ; Number of entity instances                ; 3                                                                                                                                ;
-; Entity Instance                           ; Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM|altsyncram:altsyncram_component                    ;
+; Entity Instance                           ; Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM_nt|altsyncram:altsyncram_component                 ;
 ;     -- OPERATION_MODE                     ; BIDIR_DUAL_PORT                                                                                                                  ;
 ;     -- WIDTH_A                            ; 32                                                                                                                               ;
 ;     -- NUMWORDS_A                         ; 1024                                                                                                                             ;
@@ -764,10 +764,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Entity Instance                           ; Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component                                                                     ;
 ;     -- OPERATION_MODE                     ; BIDIR_DUAL_PORT                                                                                                                  ;
 ;     -- WIDTH_A                            ; 32                                                                                                                               ;
-;     -- NUMWORDS_A                         ; 2048                                                                                                                             ;
+;     -- NUMWORDS_A                         ; 4096                                                                                                                             ;
 ;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                                                                     ;
 ;     -- WIDTH_B                            ; 32                                                                                                                               ;
-;     -- NUMWORDS_B                         ; 2048                                                                                                                             ;
+;     -- NUMWORDS_B                         ; 4096                                                                                                                             ;
 ;     -- ADDRESS_REG_B                      ; CLOCK0                                                                                                                           ;
 ;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                                                                     ;
 ;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                                                                             ;
@@ -905,8 +905,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port      ; Type  ; Severity ; Details                                                                                                                                                                             ;
 +-----------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; address_a ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (11 bits) it drives.  The 21 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; address_b ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (11 bits) it drives.  The 21 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; address_a ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (12 bits) it drives.  The 20 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; address_b ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (12 bits) it drives.  The 20 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
 +-----------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -1092,72 +1092,72 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Thu Feb 20 21:52:28 2025
+    Info: Processing started: Fri Feb 21 20:09:36 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Dual_Issue -c Dual_Issue --analysis_and_elaboration
 Info (16303): Aggressive Performance optimization mode selected -- timing performance will be prioritized at the potential cost of increased logic area and compilation time
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file testbench.v
-    Info (12023): Found entity 1: testbench File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/testbench.v Line: 2
+    Info (12023): Found entity 1: testbench File: D:/josdc-1/Innovation Phase/dual_issue/testbench.v Line: 2
 Info (12021): Found 2 design units, including 2 entities, in source file mux2x1.v
-    Info (12023): Found entity 1: mux2x1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux2x1.v Line: 1
-    Info (12023): Found entity 2: mux4x1 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux2x1.v Line: 15
+    Info (12023): Found entity 1: mux2x1 File: D:/josdc-1/Innovation Phase/dual_issue/mux2x1.v Line: 1
+    Info (12023): Found entity 2: mux4x1 File: D:/josdc-1/Innovation Phase/dual_issue/mux2x1.v Line: 15
 Info (12021): Found 4 design units, including 4 entities, in source file pipes.v
-    Info (12023): Found entity 1: IFID File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v Line: 1
-    Info (12023): Found entity 2: IDEX File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v Line: 17
-    Info (12023): Found entity 3: EXMEM File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v Line: 36
-    Info (12023): Found entity 4: MEMWB File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Pipes.v Line: 55
+    Info (12023): Found entity 1: IFID File: D:/josdc-1/Innovation Phase/dual_issue/Pipes.v Line: 1
+    Info (12023): Found entity 2: IDEX File: D:/josdc-1/Innovation Phase/dual_issue/Pipes.v Line: 17
+    Info (12023): Found entity 3: EXMEM File: D:/josdc-1/Innovation Phase/dual_issue/Pipes.v Line: 36
+    Info (12023): Found entity 4: MEMWB File: D:/josdc-1/Innovation Phase/dual_issue/Pipes.v Line: 55
 Info (12021): Found 1 design units, including 1 entities, in source file t_pipe.v
-    Info (12023): Found entity 1: t_pipe File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v Line: 1
+    Info (12023): Found entity 1: t_pipe File: D:/josdc-1/Innovation Phase/dual_issue/t_pipe.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file signextender.v
-    Info (12023): Found entity 1: SignExtender File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/SignExtender.v Line: 4
+    Info (12023): Found entity 1: SignExtender File: D:/josdc-1/Innovation Phase/dual_issue/SignExtender.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file registerfile.v
-    Info (12023): Found entity 1: registerFile File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/registerFile.v Line: 3
+    Info (12023): Found entity 1: registerFile File: D:/josdc-1/Innovation Phase/dual_issue/registerFile.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file programcounter.v
-    Info (12023): Found entity 1: programCounter File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/programCounter.v Line: 1
+    Info (12023): Found entity 1: programCounter File: D:/josdc-1/Innovation Phase/dual_issue/programCounter.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file hazard_detection.v
-    Info (12023): Found entity 1: hazard_detection File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/hazard_detection.v Line: 2
+    Info (12023): Found entity 1: hazard_detection File: D:/josdc-1/Innovation Phase/dual_issue/hazard_detection.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file forwardingunit.v
-    Info (12023): Found entity 1: forwarding_unit File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/ForwardingUnit.v Line: 1
+    Info (12023): Found entity 1: forwarding_unit File: D:/josdc-1/Innovation Phase/dual_issue/ForwardingUnit.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file controlunit.v
-    Info (12023): Found entity 1: controlUnit File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/controlUnit.v Line: 1
+    Info (12023): Found entity 1: controlUnit File: D:/josdc-1/Innovation Phase/dual_issue/controlUnit.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file comparator.v
-    Info (12023): Found entity 1: comparator File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/comparator.v Line: 2
+    Info (12023): Found entity 1: comparator File: D:/josdc-1/Innovation Phase/dual_issue/comparator.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: ALU File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/ALU.v Line: 1
+    Info (12023): Found entity 1: ALU File: D:/josdc-1/Innovation Phase/dual_issue/ALU.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file instructionmemory.v
-    Info (12023): Found entity 1: instructionMemory File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/instructionMemory.v Line: 40
+    Info (12023): Found entity 1: instructionMemory File: D:/josdc-1/Innovation Phase/dual_issue/instructionMemory.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file fetch_taken.v
-    Info (12023): Found entity 1: fetch_taken File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/fetch_taken.v Line: 1
+    Info (12023): Found entity 1: fetch_taken File: D:/josdc-1/Innovation Phase/dual_issue/fetch_taken.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file decode.v
-    Info (12023): Found entity 1: decode File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/decode.v Line: 1
+    Info (12023): Found entity 1: decode File: D:/josdc-1/Innovation Phase/dual_issue/decode.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file execute.v
-    Info (12023): Found entity 1: execute File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/execute.v Line: 1
+    Info (12023): Found entity 1: execute File: D:/josdc-1/Innovation Phase/dual_issue/execute.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fetch_not_taken.v
-    Info (12023): Found entity 1: fetch_not_taken File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/fetch_not_taken.v Line: 1
+    Info (12023): Found entity 1: fetch_not_taken File: D:/josdc-1/Innovation Phase/dual_issue/fetch_not_taken.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file not_t_pipe.v
-    Info (12023): Found entity 1: not_t_pipe File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/not_t_pipe.v Line: 1
+    Info (12023): Found entity 1: not_t_pipe File: D:/josdc-1/Innovation Phase/dual_issue/not_t_pipe.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file dual_issue.v
-    Info (12023): Found entity 1: Dual_Issue File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v Line: 1
+    Info (12023): Found entity 1: Dual_Issue File: D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file datamemory.v
-    Info (12023): Found entity 1: dataMemory File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v Line: 40
+    Info (12023): Found entity 1: dataMemory File: D:/josdc-1/Innovation Phase/dual_issue/dataMemory.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file branch_control.v
-    Info (12023): Found entity 1: branch_control File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/branch_control.v Line: 1
+    Info (12023): Found entity 1: branch_control File: D:/josdc-1/Innovation Phase/dual_issue/branch_control.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux_test.v
-    Info (12023): Found entity 1: mux_test File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/mux_test.v Line: 40
+    Info (12023): Found entity 1: mux_test File: D:/josdc-1/Innovation Phase/dual_issue/mux_test.v Line: 40
 Info (12127): Elaborating entity "testbench" for the top level hierarchy
-Warning (10175): Verilog HDL warning at testbench.v(12): ignoring unsupported system task File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/testbench.v Line: 12
-Warning (10755): Verilog HDL warning at testbench.v(15): assignments to clk create a combinational loop File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/testbench.v Line: 15
-Info (12128): Elaborating entity "Dual_Issue" for hierarchy "Dual_Issue:uut" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/testbench.v Line: 17
-Warning (10036): Verilog HDL or VHDL warning at Dual_Issue.v(23): object "MemReadEn2_MEM" assigned a value but never read File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v Line: 23
-Warning (10036): Verilog HDL or VHDL warning at Dual_Issue.v(23): object "MemReadEn1_MEM" assigned a value but never read File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v Line: 23
-Warning (10036): Verilog HDL or VHDL warning at Dual_Issue.v(28): object "forwardBRes2_MEM" assigned a value but never read File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v Line: 28
-Info (12128): Elaborating entity "t_pipe" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v Line: 112
-Info (12128): Elaborating entity "fetch_taken" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v Line: 77
-Info (12128): Elaborating entity "programCounter" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|programCounter:pc" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/fetch_taken.v Line: 67
-Info (12128): Elaborating entity "instructionMemory" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/fetch_taken.v Line: 69
-Info (12128): Elaborating entity "altsyncram" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM|altsyncram:altsyncram_component" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/instructionMemory.v Line: 94
-Info (12130): Elaborated megafunction instantiation "Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM|altsyncram:altsyncram_component" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/instructionMemory.v Line: 94
-Info (12133): Instantiated megafunction "Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/instructionMemory.v Line: 94
+Warning (10175): Verilog HDL warning at testbench.v(12): ignoring unsupported system task File: D:/josdc-1/Innovation Phase/dual_issue/testbench.v Line: 12
+Warning (10755): Verilog HDL warning at testbench.v(15): assignments to clk create a combinational loop File: D:/josdc-1/Innovation Phase/dual_issue/testbench.v Line: 15
+Info (12128): Elaborating entity "Dual_Issue" for hierarchy "Dual_Issue:uut" File: D:/josdc-1/Innovation Phase/dual_issue/testbench.v Line: 17
+Warning (10036): Verilog HDL or VHDL warning at Dual_Issue.v(23): object "MemReadEn2_MEM" assigned a value but never read File: D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v Line: 23
+Warning (10036): Verilog HDL or VHDL warning at Dual_Issue.v(23): object "MemReadEn1_MEM" assigned a value but never read File: D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v Line: 23
+Warning (10036): Verilog HDL or VHDL warning at Dual_Issue.v(28): object "forwardBRes2_MEM" assigned a value but never read File: D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v Line: 28
+Info (12128): Elaborating entity "t_pipe" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe" File: D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v Line: 112
+Info (12128): Elaborating entity "fetch_taken" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken" File: D:/josdc-1/Innovation Phase/dual_issue/t_pipe.v Line: 77
+Info (12128): Elaborating entity "programCounter" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|programCounter:pc" File: D:/josdc-1/Innovation Phase/dual_issue/fetch_taken.v Line: 69
+Info (12128): Elaborating entity "instructionMemory" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM_nt" File: D:/josdc-1/Innovation Phase/dual_issue/fetch_taken.v Line: 70
+Info (12128): Elaborating entity "altsyncram" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM_nt|altsyncram:altsyncram_component" File: D:/josdc-1/Innovation Phase/dual_issue/instructionMemory.v Line: 100
+Info (12130): Elaborated megafunction instantiation "Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM_nt|altsyncram:altsyncram_component" File: D:/josdc-1/Innovation Phase/dual_issue/instructionMemory.v Line: 100
+Info (12133): Instantiated megafunction "Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM_nt|altsyncram:altsyncram_component" with the following parameter: File: D:/josdc-1/Innovation Phase/dual_issue/instructionMemory.v Line: 100
     Info (12134): Parameter "address_reg_b" = "CLOCK0"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_input_b" = "BYPASS"
@@ -1182,28 +1182,28 @@ Info (12133): Instantiated megafunction "Dual_Issue:uut|t_pipe:u_t_pipe|fetch_ta
     Info (12134): Parameter "width_byteena_a" = "1"
     Info (12134): Parameter "width_byteena_b" = "1"
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK0"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_as52.tdf
-    Info (12023): Found entity 1: altsyncram_as52 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/db/altsyncram_as52.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_as52" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM|altsyncram:altsyncram_component|altsyncram_as52:auto_generated" File: c:/intelfpga/23.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "IFID" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|IFID:ifid1" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v Line: 86
-Info (12128): Elaborating entity "decode" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|decode:u_decode" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v Line: 154
-Info (12128): Elaborating entity "controlUnit" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|decode:u_decode|controlUnit:CU1" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/decode.v Line: 41
-Info (12128): Elaborating entity "registerFile" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|decode:u_decode|registerFile:rf" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/decode.v Line: 67
-Info (12128): Elaborating entity "SignExtender" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|decode:u_decode|SignExtender:SignExtend1" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/decode.v Line: 98
-Info (12128): Elaborating entity "IDEX" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|IDEX:idex1" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v Line: 159
-Info (12128): Elaborating entity "execute" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v Line: 190
-Info (12128): Elaborating entity "ALU" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute|ALU:alu1" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/execute.v Line: 23
-Info (12128): Elaborating entity "comparator" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute|comparator:comp1" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/execute.v Line: 27
-Info (12128): Elaborating entity "EXMEM" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|EXMEM:exmem1" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/t_pipe.v Line: 199
-Info (12128): Elaborating entity "not_t_pipe" for hierarchy "Dual_Issue:uut|not_t_pipe:u_not_t_pipe" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v Line: 190
-Info (12128): Elaborating entity "fetch_not_taken" for hierarchy "Dual_Issue:uut|not_t_pipe:u_not_t_pipe|fetch_not_taken:u_fetch_not_taken" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/not_t_pipe.v Line: 78
-Info (12128): Elaborating entity "EXMEM" for hierarchy "Dual_Issue:uut|not_t_pipe:u_not_t_pipe|EXMEM:exmem1" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/not_t_pipe.v Line: 202
-Info (12128): Elaborating entity "branch_control" for hierarchy "Dual_Issue:uut|branch_control:u_branch_control" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v Line: 223
-Info (12128): Elaborating entity "forwarding_unit" for hierarchy "Dual_Issue:uut|forwarding_unit:u_forwarding_unit_t" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v Line: 252
-Info (12128): Elaborating entity "dataMemory" for hierarchy "Dual_Issue:uut|dataMemory:DM" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v Line: 325
-Info (12128): Elaborating entity "altsyncram" for hierarchy "Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v Line: 98
-Info (12130): Elaborated megafunction instantiation "Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v Line: 98
-Info (12133): Instantiated megafunction "Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/dataMemory.v Line: 98
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_t472.tdf
+    Info (12023): Found entity 1: altsyncram_t472 File: D:/josdc-1/Innovation Phase/dual_issue/db/altsyncram_t472.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_t472" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|fetch_taken:u_fetch_taken|instructionMemory:IM_nt|altsyncram:altsyncram_component|altsyncram_t472:auto_generated" File: c:/intelfpga/23.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "IFID" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|IFID:ifid1" File: D:/josdc-1/Innovation Phase/dual_issue/t_pipe.v Line: 86
+Info (12128): Elaborating entity "decode" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|decode:u_decode" File: D:/josdc-1/Innovation Phase/dual_issue/t_pipe.v Line: 154
+Info (12128): Elaborating entity "controlUnit" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|decode:u_decode|controlUnit:CU1" File: D:/josdc-1/Innovation Phase/dual_issue/decode.v Line: 41
+Info (12128): Elaborating entity "registerFile" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|decode:u_decode|registerFile:rf" File: D:/josdc-1/Innovation Phase/dual_issue/decode.v Line: 67
+Info (12128): Elaborating entity "SignExtender" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|decode:u_decode|SignExtender:SignExtend1" File: D:/josdc-1/Innovation Phase/dual_issue/decode.v Line: 98
+Info (12128): Elaborating entity "IDEX" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|IDEX:idex1" File: D:/josdc-1/Innovation Phase/dual_issue/t_pipe.v Line: 159
+Info (12128): Elaborating entity "execute" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute" File: D:/josdc-1/Innovation Phase/dual_issue/t_pipe.v Line: 190
+Info (12128): Elaborating entity "ALU" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute|ALU:alu1" File: D:/josdc-1/Innovation Phase/dual_issue/execute.v Line: 23
+Info (12128): Elaborating entity "comparator" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|execute:u_execute|comparator:comp1" File: D:/josdc-1/Innovation Phase/dual_issue/execute.v Line: 27
+Info (12128): Elaborating entity "EXMEM" for hierarchy "Dual_Issue:uut|t_pipe:u_t_pipe|EXMEM:exmem1" File: D:/josdc-1/Innovation Phase/dual_issue/t_pipe.v Line: 199
+Info (12128): Elaborating entity "not_t_pipe" for hierarchy "Dual_Issue:uut|not_t_pipe:u_not_t_pipe" File: D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v Line: 190
+Info (12128): Elaborating entity "fetch_not_taken" for hierarchy "Dual_Issue:uut|not_t_pipe:u_not_t_pipe|fetch_not_taken:u_fetch_not_taken" File: D:/josdc-1/Innovation Phase/dual_issue/not_t_pipe.v Line: 78
+Info (12128): Elaborating entity "EXMEM" for hierarchy "Dual_Issue:uut|not_t_pipe:u_not_t_pipe|EXMEM:exmem1" File: D:/josdc-1/Innovation Phase/dual_issue/not_t_pipe.v Line: 202
+Info (12128): Elaborating entity "branch_control" for hierarchy "Dual_Issue:uut|branch_control:u_branch_control" File: D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v Line: 223
+Info (12128): Elaborating entity "forwarding_unit" for hierarchy "Dual_Issue:uut|forwarding_unit:u_forwarding_unit_t" File: D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v Line: 252
+Info (12128): Elaborating entity "dataMemory" for hierarchy "Dual_Issue:uut|dataMemory:DM" File: D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v Line: 325
+Info (12128): Elaborating entity "altsyncram" for hierarchy "Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component" File: D:/josdc-1/Innovation Phase/dual_issue/dataMemory.v Line: 98
+Info (12130): Elaborated megafunction instantiation "Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component" File: D:/josdc-1/Innovation Phase/dual_issue/dataMemory.v Line: 98
+Info (12133): Instantiated megafunction "Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component" with the following parameter: File: D:/josdc-1/Innovation Phase/dual_issue/dataMemory.v Line: 98
     Info (12134): Parameter "address_reg_b" = "CLOCK0"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_input_b" = "BYPASS"
@@ -1213,8 +1213,8 @@ Info (12133): Instantiated megafunction "Dual_Issue:uut|dataMemory:DM|altsyncram
     Info (12134): Parameter "init_file" = "dataMemoryInitializationFile.mif"
     Info (12134): Parameter "intended_device_family" = "MAX 10"
     Info (12134): Parameter "lpm_type" = "altsyncram"
-    Info (12134): Parameter "numwords_a" = "2048"
-    Info (12134): Parameter "numwords_b" = "2048"
+    Info (12134): Parameter "numwords_a" = "4096"
+    Info (12134): Parameter "numwords_b" = "4096"
     Info (12134): Parameter "operation_mode" = "BIDIR_DUAL_PORT"
     Info (12134): Parameter "outdata_aclr_a" = "NONE"
     Info (12134): Parameter "outdata_aclr_b" = "NONE"
@@ -1222,34 +1222,36 @@ Info (12133): Instantiated megafunction "Dual_Issue:uut|dataMemory:DM|altsyncram
     Info (12134): Parameter "outdata_reg_b" = "UNREGISTERED"
     Info (12134): Parameter "power_up_uninitialized" = "FALSE"
     Info (12134): Parameter "read_during_write_mode_mixed_ports" = "DONT_CARE"
-    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_WITH_NBE_READ"
-    Info (12134): Parameter "read_during_write_mode_port_b" = "NEW_DATA_WITH_NBE_READ"
-    Info (12134): Parameter "widthad_a" = "11"
-    Info (12134): Parameter "widthad_b" = "11"
+    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "read_during_write_mode_port_b" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "widthad_a" = "12"
+    Info (12134): Parameter "widthad_b" = "12"
     Info (12134): Parameter "width_a" = "32"
     Info (12134): Parameter "width_b" = "32"
     Info (12134): Parameter "width_byteena_a" = "1"
     Info (12134): Parameter "width_byteena_b" = "1"
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK0"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_3pl2.tdf
-    Info (12023): Found entity 1: altsyncram_3pl2 File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/db/altsyncram_3pl2.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_3pl2" for hierarchy "Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component|altsyncram_3pl2:auto_generated" File: c:/intelfpga/23.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "mux2x1" for hierarchy "Dual_Issue:uut|mux2x1:WBMux1" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v Line: 328
-Info (12128): Elaborating entity "MEMWB" for hierarchy "Dual_Issue:uut|MEMWB:memwb1" File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/Dual_Issue.v Line: 334
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_hbl2.tdf
+    Info (12023): Found entity 1: altsyncram_hbl2 File: D:/josdc-1/Innovation Phase/dual_issue/db/altsyncram_hbl2.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_hbl2" for hierarchy "Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component|altsyncram_hbl2:auto_generated" File: c:/intelfpga/23.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Warning (113028): 2048 out of 4096 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: D:/josdc-1/Innovation Phase/dual_issue/dataMemoryInitializationFile.mif Line: 1
+    Warning (113027): Addresses ranging from 2048 to 4095 are not initialized File: D:/josdc-1/Innovation Phase/dual_issue/dataMemoryInitializationFile.mif Line: 1
+Info (12128): Elaborating entity "mux2x1" for hierarchy "Dual_Issue:uut|mux2x1:WBMux1" File: D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v Line: 328
+Info (12128): Elaborating entity "MEMWB" for hierarchy "Dual_Issue:uut|MEMWB:memwb1" File: D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v Line: 334
 Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "clk" is missing source, defaulting to GND File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/testbench.v Line: 4
+    Warning (12110): Net "clk" is missing source, defaulting to GND File: D:/josdc-1/Innovation Phase/dual_issue/testbench.v Line: 4
 Warning (12241): 9 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (144001): Generated suppressed messages file C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/output_files/Dual_Issue.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 4803 megabytes
-    Info: Processing ended: Thu Feb 20 21:52:37 2025
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:19
+Info (144001): Generated suppressed messages file D:/josdc-1/Innovation Phase/dual_issue/output_files/Dual_Issue.map.smsg
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 4787 megabytes
+    Info: Processing ended: Fri Feb 21 20:09:44 2025
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:17
 
 
 +--------------------------------------------+
 ; Analysis & Elaboration Suppressed Messages ;
 +--------------------------------------------+
-The suppressed messages can be found in C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/output_files/Dual_Issue.map.smsg.
+The suppressed messages can be found in D:/josdc-1/Innovation Phase/dual_issue/output_files/Dual_Issue.map.smsg.
 
 

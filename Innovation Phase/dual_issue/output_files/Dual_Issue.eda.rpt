@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Dual_Issue
-Thu Feb 20 21:41:51 2025
+Fri Feb 21 20:05:37 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Feb 20 21:41:51 2025 ;
+; EDA Netlist Writer Status ; Successful - Fri Feb 21 20:05:37 2025 ;
 ; Revision Name             ; Dual_Issue                            ;
 ; Top-level Entity Name     ; Dual_Issue                            ;
 ; Family                    ; MAX 10                                ;
@@ -66,13 +66,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------------------------+---------------------+
 
 
-+-----------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                          ;
-+-----------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                     ;
-+-----------------------------------------------------------------------------------------------------+
-; C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/simulation/questa/Dual_Issue.vo ;
-+-----------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------+
+; Simulation Generated Files                                             ;
++------------------------------------------------------------------------+
+; Generated Files                                                        ;
++------------------------------------------------------------------------+
+; D:/josdc-1/Innovation Phase/dual_issue/simulation/questa/Dual_Issue.vo ;
++------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -81,13 +81,13 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Thu Feb 20 21:41:49 2025
+    Info: Processing started: Fri Feb 21 20:05:34 2025
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Dual_Issue -c Dual_Issue
-Info (204019): Generated file Dual_Issue.vo in folder "C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/simulation/questa/" for EDA simulation tool
+Info (204019): Generated file Dual_Issue.vo in folder "D:/josdc-1/Innovation Phase/dual_issue/simulation/questa/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4735 megabytes
-    Info: Processing ended: Thu Feb 20 21:41:51 2025
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Fri Feb 21 20:05:37 2025
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
 

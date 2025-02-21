@@ -25,4 +25,4 @@ def generate_mif(filename, values_str):
     print(f"MIF file '{filename}' updated successfully.")
 
 # Example usage
-generate_mif("Innovation Phase\dual_issue\dataMemoryInitializationFile.mif", "1, 0, 0, 0, 3, 55, 0, 0, 0, 0, 22, 0")
+generate_mif("Innovation Phase\dual_issue\dataMemoryInitializationFile.mif", "1, 0, 0, 0, 3, 5, 0, 0, 0, 0, 22, 0")

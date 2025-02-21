@@ -1,3 +1,3 @@
-Warning (10268): Verilog HDL information at registerFile.v(25): always construct contains both blocking and non-blocking assignments File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/registerFile.v Line: 25
-Info (10281): Verilog HDL Declaration information at fetch_taken.v(13): object "PC" differs only in case from object "pc" in the same scope File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/fetch_taken.v Line: 13
-Info (10281): Verilog HDL Declaration information at fetch_not_taken.v(12): object "PC" differs only in case from object "pc" in the same scope File: C:/Users/firas/Developement/josdc/josdc/Innovation Phase/dual_issue/fetch_not_taken.v Line: 12
+Warning (10268): Verilog HDL information at registerFile.v(25): always construct contains both blocking and non-blocking assignments File: D:/josdc-1/Innovation Phase/dual_issue/registerFile.v Line: 25
+Info (10281): Verilog HDL Declaration information at fetch_taken.v(13): object "PC" differs only in case from object "pc" in the same scope File: D:/josdc-1/Innovation Phase/dual_issue/fetch_taken.v Line: 13
+Info (10281): Verilog HDL Declaration information at fetch_not_taken.v(12): object "PC" differs only in case from object "pc" in the same scope File: D:/josdc-1/Innovation Phase/dual_issue/fetch_not_taken.v Line: 12
