@@ -1,5 +1,5 @@
 Flow report for Dual_Issue
-Fri Feb 21 22:19:50 2025
+Fri Feb 21 23:19:01 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Fri Feb 21 22:19:50 2025          ;
+; Flow Status                        ; Successful - Fri Feb 21 23:19:01 2025          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; Dual_Issue                                     ;
 ; Top-level Entity Name              ; testbench                                      ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/21/2025 22:19:43 ;
+; Start date & time ; 02/21/2025 23:18:54 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Dual_Issue          ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 ; Assignment Name                              ; Value                                  ; Default Value      ; Entity Name ; Section Id                        ;
 +----------------------------------------------+----------------------------------------+--------------------+-------------+-----------------------------------+
 ; ALM_REGISTER_PACKING_EFFORT                  ; Low                                    ; Medium             ; --          ; --                                ;
-; COMPILER_SIGNATURE_ID                        ; 2546174103540.174016558336656          ; --                 ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                        ; 2546174103540.174016913308428          ; --                 ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME                     ; NA                                     ; --                 ; --          ; testbench                         ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST              ; Off                                    ; --                 ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST              ; Off                                    ; --                 ; --          ; eda_board_design_boundary_scan    ;
@@ -121,6 +121,7 @@ https://fpgasoftware.intel.com/eula.
 ; POWER_PRESET_COOLING_SOLUTION                ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --                 ; --          ; --                                ;
 ; PROJECT_OUTPUT_DIRECTORY                     ; output_files                           ; --                 ; --          ; --                                ;
 ; QII_AUTO_PACKED_REGISTERS                    ; Sparse Auto                            ; Auto               ; --          ; --                                ;
+; ROUTER_EFFORT_MULTIPLIER                     ; 1                                      ; 1.0                ; --          ; --                                ;
 ; ROUTER_LCELL_INSERTION_AND_LOGIC_DUPLICATION ; On                                     ; Auto               ; --          ; --                                ;
 ; ROUTER_TIMING_OPTIMIZATION_LEVEL             ; MAXIMUM                                ; Normal             ; --          ; --                                ;
 ; TOP_LEVEL_ENTITY                             ; testbench                              ; Dual_Issue         ; --          ; --                                ;
@@ -132,8 +133,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name            ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Elaboration ; 00:00:07     ; 1.0                     ; 4787 MB             ; 00:00:18                           ;
-; Total                  ; 00:00:07     ; --                      ; --                  ; 00:00:18                           ;
+; Analysis & Elaboration ; 00:00:08     ; 1.0                     ; 4803 MB             ; 00:00:18                           ;
+; Total                  ; 00:00:08     ; --                      ; --                  ; 00:00:18                           ;
 +------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

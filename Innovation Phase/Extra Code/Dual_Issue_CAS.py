@@ -1,6 +1,9 @@
+import Assmebler_Scheduler
+import ImemMIFGenerator
+import DmemMIFGeneratort
 def runCpu():
     instructions = []
-    with open("imem.txt", 'r') as inst:
+    with open("Innovation Phase\Extra Code\imem.txt", 'r') as inst:
         for line in inst:
             parts = line.split(":")
             if len(parts)>1:
@@ -40,6 +43,14 @@ def runCpu():
     class PipelineRegister:
         def __init__(self):
             self.flush = 0
+            self.instruction1T = 0
+            self.instructionVal1T = 0
+            self.instruction2T = 0
+            self.instructionVal2T = 0
+            self.instruction1NT = 0
+            self.instructionVal1NT = 0
+            self.instruction2NT = 0
+            self.instructionVal2NT = 0
             self.instruction1 = 0
             self.instructionVal1 = 0
             self.instruction2 = 0
@@ -826,9 +837,9 @@ def runCpu():
                     binary_values.append(int(line.strip()))  # Remove any whitespace or newline characters
 
         return binary_values
-
-# Example usage
-    filename = "dmem.txt"
+    instr_countT = 0
+    instr_countNT = 0
+    filename = "Innovation Phase\Extra Code\dmem.txt"
     binary_array = read_binary_file(filename)
     print(f'\nValues in the memory: \n{binary_array}\n')    
     #Initialize the pipeline state
@@ -839,18 +850,11 @@ def runCpu():
     state = PipelineState()
     for i in range(len(binary_array)):
         state.memory[i] = binary_array[i]
-        
     cycle = 0
     countofstalls = 0
     cycles = 5000
     stages = {'IF_ID':IF_ID, 'ID_EX': ID_EX, 'EX_MEM': EX_MEM, 'MEM_WB': MEM_WB }
     while (cycle < cycles):
-        print(f"\n\n{'-' *50}")
-        print(f"Cycle {cycle}")
-        print(f"{'-'*50}")
-        print(f"PCT: {state.pcT}")
-        print(f"PCNT: {state.pcNT}")
-        print(f"Taken: {state.taken}")
         if MEM_WB.last:break
         writeBack(state, MEM_WB)
         memory(state, EX_MEM, MEM_WB)
@@ -868,16 +872,16 @@ def runCpu():
         decode(state, IF_ID, ID_EX)
         fetch(state, instructions, IF_ID)
         
-        #pipeline register states
-        printState(stages)
-        print(f"{"-"*50}")
-        for i in range(32):
-            print(f"M{i:2}: {state.registers[i]}")
-        print(f"{"-"*50}")
+        
         cycle +=1
     state.pc = 0
-
-
+    
+    
+    
+    
+    
+    print(f"\n\n{'-' *50}")
+    print(f"Cycle {cycle}")
     def print_registers(registers):
         print("\nFinal Register Values:")
         print(f"{'-' * 50}")
@@ -898,12 +902,47 @@ def runCpu():
     print("ld hazard count: ", countofstalls)
     print("branch flush count: ", state.branchflushcount)
     print("branch instruction count: ", state.branchInstruction )
-
     
 
 
             
-    
+instructions_nonBinary = Assmebler_Scheduler.schedule("""\
+ADDI $13, $0, 20
+ADD $11, $0, $0
+LOOP1:
+XOR $21, $11, $0
+# this line is commented, use it for byte addressing memory
+# SLL $21, $11, 2
+ADD $12, $0, $0
+LOOP2: 
+XOR $22, $12, $0
+# this line is commented, use it for byte addressing memory
+# SLL $22, $12, 2
+LW $8, 0x0($21)
+LW $9, 0x0($22)
+IF: 
+SLT $10, $8, $9
+BEQ $10, $0, ENDIF
+ADD $3, $8, $0
+ADD $8, $9, $0
+ADD $9, $3, $0
+SW $8, 0x0($21)
+SW $9, 0x0($22)
+ENDIF: 
+ADDI $12, $12, 1
+SLT $10, $12, $13
+BNE $10, $0, LOOP2
+ADDI $11, $11, 1
+SLT $10, $11, $13
+BNE $10, $0, LOOP1
+NOP
+                                          
+""")
+instructions = Assmebler_Scheduler.assembler(instructions_nonBinary)
+ImemMIFGenerator.generate_mif("Innovation Phase\Extra Code\imem.txt", instructions)
+ImemMIFGenerator.generate_mif("Innovation Phase\dual_issue\instructionMemoryInitializationFile.mif", instructions)
+DmemMIFGeneratort.generate_mif("Innovation Phase\Extra Code\dmem.txt", "0x5, 0x7, 0x2, 0xF, 0xA, 0x10, 0x30, 0x1, 0xFF, 0x55, 0x0, 0x6, 0xAB, 0xAD, 0x99, 0x33, 0x1, 0x16, 0x22, 0x79" )
+DmemMIFGeneratort.generate_mif("Innovation Phase\dual_issue\dataMemoryInitializationFile.mif", "0x5, 0x7, 0x2, 0xF, 0xA, 0x10, 0x30, 0x1, 0xFF, 0x55, 0x0, 0x6, 0xAB, 0xAD, 0x99, 0x33, 0x1, 0x16, 0x22, 0x79" )
 state = runCpu()
 
 

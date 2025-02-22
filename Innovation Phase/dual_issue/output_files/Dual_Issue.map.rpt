@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Dual_Issue
-Fri Feb 21 22:19:50 2025
+Fri Feb 21 23:19:01 2025
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -86,7 +86,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                      ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Fri Feb 21 22:19:50 2025          ;
+; Analysis & Elaboration Status      ; Successful - Fri Feb 21 23:19:01 2025          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; Dual_Issue                                     ;
 ; Top-level Entity Name              ; testbench                                      ;
@@ -1021,7 +1021,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Fri Feb 21 22:19:43 2025
+    Info: Processing started: Fri Feb 21 23:18:53 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Dual_Issue -c Dual_Issue --analysis_and_elaboration
 Info (16303): Aggressive Performance optimization mode selected -- timing performance will be prioritized at the potential cost of increased logic area and compilation time
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -1165,17 +1165,15 @@ Info (12133): Instantiated megafunction "Dual_Issue:uut|dataMemory:DM|altsyncram
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_8bl2.tdf
     Info (12023): Found entity 1: altsyncram_8bl2 File: D:/josdc-1/Innovation Phase/dual_issue/db/altsyncram_8bl2.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_8bl2" for hierarchy "Dual_Issue:uut|dataMemory:DM|altsyncram:altsyncram_component|altsyncram_8bl2:auto_generated" File: c:/intelfpga/23.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Warning (113028): 2048 out of 4096 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: D:/josdc-1/Innovation Phase/dual_issue/dataMemoryInitializationFile.mif Line: 1
-    Warning (113027): Addresses ranging from 2048 to 4095 are not initialized File: D:/josdc-1/Innovation Phase/dual_issue/dataMemoryInitializationFile.mif Line: 1
 Info (12128): Elaborating entity "MEMWB" for hierarchy "Dual_Issue:uut|MEMWB:memwb1" File: D:/josdc-1/Innovation Phase/dual_issue/Dual_Issue.v Line: 341
 Warning (12011): Net is missing source, defaulting to GND
     Warning (12110): Net "clk" is missing source, defaulting to GND File: D:/josdc-1/Innovation Phase/dual_issue/testbench.v Line: 4
 Warning (12241): 9 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (144001): Generated suppressed messages file D:/josdc-1/Innovation Phase/dual_issue/output_files/Dual_Issue.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 4787 megabytes
-    Info: Processing ended: Fri Feb 21 22:19:50 2025
-    Info: Elapsed time: 00:00:07
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 4803 megabytes
+    Info: Processing ended: Fri Feb 21 23:19:01 2025
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:18
 
 
