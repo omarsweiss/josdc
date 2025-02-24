@@ -907,42 +907,52 @@ def runCpu():
 
             
 instructions_nonBinary = Assmebler_Scheduler.schedule("""\
-ADDI $13, $0, 20
-ADD $11, $0, $0
+main:
+# Initialize registers
+ORI $2, $0, 0x0
+XORI $10, $0, 0x0
+ADDI $20, $0, 0xA
+ADD $5, $0, $0
+ADDI $1, $0, 0x1
+ADDI $22, $0, -1
 LOOP1:
-XOR $21, $11, $0
-# this line is commented, use it for byte addressing memory
-# SLL $21, $11, 2
-ADD $12, $0, $0
-LOOP2: 
-XOR $22, $12, $0
-# this line is commented, use it for byte addressing memory
-# SLL $22, $12, 2
-LW $8, 0x0($21)
-LW $9, 0x0($22)
-IF: 
-SLT $10, $8, $9
-BEQ $10, $0, ENDIF
-ADD $3, $8, $0
-ADD $8, $9, $0
-ADD $9, $3, $0
-SW $8, 0x0($21)
-SW $9, 0x0($22)
-ENDIF: 
-ADDI $12, $12, 1
-SLT $10, $12, $13
-BNE $10, $0, LOOP2
-ADDI $11, $11, 1
-SLT $10, $11, $13
-BNE $10, $0, LOOP1
+ADD $5, $1, $0 # Word Addressing mode
+# SLL $5, $1, 2 # Byte Addressing mode
+LW $15, 0x0($5)
+OR $10, $15, $0
+ADDI $2, $1, -1
+LOOP2:
+# use one line according to your addressing mode
+ADD $6, $2, $0 # Word Addressing mode
+# SLL $6, $2, 2 # Byte Addressing mode
+LW $16, 0x0($6)
+SGT $25, $2, $22
+SGT $26, $16, $10
+AND $27, $26, $25
+BEQ $27, $0, EXIT2
+ADDI $7, $2, 0x1
+# this line is commented, you may use it only if your memory is byte addressable
+# SLL $7, $7, 2
+SW $16, 0x0($7)
+ADDI $2, $2, -1
+J LOOP2
+EXIT2:
+ADDI $7, $2, 0x1
+# this line is commented, you may use it only if your memory is byte addressable
+# SLL $7, $7, 2
+SW $10, 0x0($7)
+ADDI $1, $1, 0x1
+SLT $28, $1, $20
+BNE $28, $0, LOOP1
+FINISH:
 NOP
                                           
 """)
 instructions = Assmebler_Scheduler.assembler(instructions_nonBinary)
 ImemMIFGenerator.generate_mif("Innovation Phase\Extra Code\imem.txt", instructions)
 ImemMIFGenerator.generate_mif("Innovation Phase\dual_issue\instructionMemoryInitializationFile.mif", instructions)
-DmemMIFGeneratort.generate_mif("Innovation Phase\Extra Code\dmem.txt", "0x5, 0x7, 0x2, 0xF, 0xA, 0x10, 0x30, 0x1, 0xFF, 0x55, 0x0, 0x6, 0xAB, 0xAD, 0x99, 0x33, 0x1, 0x16, 0x22, 0x79" )
-DmemMIFGeneratort.generate_mif("Innovation Phase\dual_issue\dataMemoryInitializationFile.mif", "0x5, 0x7, 0x2, 0xF, 0xA, 0x10, 0x30, 0x1, 0xFF, 0x55, 0x0, 0x6, 0xAB, 0xAD, 0x99, 0x33, 0x1, 0x16, 0x22, 0x79" )
+DmemMIFGeneratort.generate_mif("Innovation Phase\Extra Code\dmem.txt", "0x5, 0x7, 0x2, 0xF, 0xA, 0x10, 0x30, 0x1, 0xFF, 0x55" )
+DmemMIFGeneratort.generate_mif("Innovation Phase\dual_issue\dataMemoryInitializationFile.mif", "0x5, 0x7, 0x2, 0xF, 0xA, 0x10, 0x30, 0x1, 0xFF, 0x55" )
 state = runCpu()
 
 

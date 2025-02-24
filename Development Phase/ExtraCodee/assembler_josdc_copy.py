@@ -169,22 +169,24 @@ def unpseudo(instructions):
 
 
 
-instructions = """ ADDI $1, $0, 10
-ORI $2, $0, 11
-XORI $3, $0, 12
-ADD $4, $1, $2
-SUB $5, $4, $3
-AND $6, $1, $3
-OR $7, $2, $3
-NOR $8, $2, $3
-XOR $9, $1, $2
-SLT $10, $1, $2
-SLT $11 $1 $3
-SLL $12, $1, 2
-SRL $13, $2, 1
-LW $14, 0($0)
-SW $4, 0($0)
-SLL $0, $0, 0
+instructions = """ADDI $17, $0, 10 
+ANDI $18, $0, 0 
+XORI $24, $0, 2 
+Outer_Loop: ADD $19, $18, $0 
+LW $25, 0($19) 
+JAL Mul_Fun 
+SW $23, 0($19) 
+ADDI $18, $18, 1 
+SUB $20, $18, $17 
+BLTZ $20, Outer_Loop
+J Finish
+Mul_Fun: ANDI $23, $0, 0 
+ADDI $22, $25, -1 
+Mul_Loop: ADD $23, $23, $24 
+ADDI $22, $22, -1 
+BGEZ $22, Mul_Loop
+JR $31
+Finish: SLL $0, $0, 0
 """
 i = 0 
 instructions = instructions.lower()
